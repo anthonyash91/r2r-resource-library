@@ -35,6 +35,10 @@ import {
   getLocalizedHomepage,
 } from "@/i18n/localize-content";
 import { createTranslator } from "@/i18n/translator";
+import {
+  applySearchQueryFilter,
+  type LocationCatalog,
+} from "@/lib/resource-search";
 
 export async function getCategories(): Promise<Category[]> {
   const locale = await getServerLocale();
@@ -53,6 +57,15 @@ export async function getCategories(): Promise<Category[]> {
 
   if (error || !data) return localizeCategories(MOCK_CATEGORIES.filter((c) => c.is_active), locale);
   return localizeCategories(data as Category[], locale);
+}
+
+async function getLocationCatalog(): Promise<LocationCatalog> {
+  const [states, cities, counties] = await Promise.all([
+    getStates(),
+    getCities(),
+    getCounties(),
+  ]);
+  return { states, cities, counties };
 }
 
 export async function getResources(filters: ResourceFilters = {}): Promise<Resource[]> {
@@ -76,11 +89,6 @@ export async function getResources(filters: ResourceFilters = {}): Promise<Resou
     const cutoff = new Date(Date.now() - 14 * 86400000).toISOString();
     query = query.gte("created_at", cutoff);
   }
-  if (filters.query) {
-    query = query.or(
-      `name.ilike.%${filters.query}%,description.ilike.%${filters.query}%`
-    );
-  }
 
   query = query.order("name");
 
@@ -88,6 +96,10 @@ export async function getResources(filters: ResourceFilters = {}): Promise<Resou
   if (error || !data) return localizeResources(filterMockResources(filters), locale);
 
   let results = localizeResources(data as Resource[], locale);
+  if (filters.query?.trim()) {
+    const catalog = await getLocationCatalog();
+    results = applySearchQueryFilter(results, filters.query, catalog);
+  }
   if (filters.service) {
     const s = filters.service.toLowerCase();
     results = results.filter((r) =>

@@ -1,9 +1,11 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
+import { ResourcesHeroSection } from "@/components/home/hero-section";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
-import { CategoryPills } from "@/components/resources/category-pills";
+import { ResourceResultsSummary } from "@/components/resources/resource-results-summary";
 import { ResourceFiltersPanel } from "@/components/resources/resource-filters-panel";
 import { getServerTranslator } from "@/i18n/server";
+import { cn, sectionStackGap } from "@/lib/utils";
 import {
   getResources,
   getCategories,
@@ -67,40 +69,39 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
     ]);
 
   return (
-    <div className="px-4 py-8 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl">
-        <header className="mb-6">
-          <h1 className="mb-1 text-3xl font-bold sm:text-4xl">{t("resources.findResources")}</h1>
-          <p className="text-base text-muted-foreground">
-            {t("resources.programCount", { count: resources.length })}
-          </p>
-        </header>
+    <>
+      <Suspense fallback={<div className="h-48 animate-pulse bg-primary" aria-hidden="true" />}>
+        <ResourcesHeroSection />
+      </Suspense>
 
-        <Suspense fallback={<div className="mb-6 h-10 animate-pulse rounded-full bg-muted" />}>
-          <CategoryPills categories={categories} preserveParams className="mb-6" />
-        </Suspense>
+      <div className="px-4 pb-8 pt-6 sm:px-6 lg:px-8">
+        <div className={cn("mx-auto max-w-7xl", sectionStackGap)}>
+          <Suspense fallback={<div className="h-12 animate-pulse rounded-xl bg-muted" />}>
+            <ResourceFiltersPanel
+              categories={categories}
+              states={states}
+              counties={counties}
+              cities={cities}
+              services={services}
+            />
+          </Suspense>
 
-        <Suspense fallback={<div className="mb-6 h-12 animate-pulse rounded-2xl bg-muted" />}>
-          <ResourceFiltersPanel
-            categories={categories}
-            states={states}
-            counties={counties}
-            cities={cities}
-            services={services}
-          />
-        </Suspense>
-
-        <div className="mt-8">
           {resources.length === 0 ? (
-            <div className="rounded-2xl border border-border bg-card p-12 text-center">
+            <div className="rounded-xl border border-border bg-card p-12 text-center">
               <h2 className="mb-2 text-xl font-bold">{t("resources.noResults")}</h2>
               <p className="text-base text-muted-foreground">{t("resources.noResultsHint")}</p>
             </div>
           ) : (
-            <ResourceMasonry resources={resources} />
+            <>
+              <ResourceResultsSummary
+                count={resources.length}
+                label={t("resources.resultsSummary")}
+              />
+              <ResourceMasonry resources={resources} />
+            </>
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 }

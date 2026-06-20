@@ -5,6 +5,42 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+/** Shared inset padding for panel headers and matched page blocks */
+export const blockInsetPadding = "px-4 py-4 sm:px-5 sm:py-5";
+export const blockInsetPaddingY = "py-4 sm:py-5";
+export const blockInsetPaddingTop = "pt-4 sm:pt-5";
+/** Tighter top / roomier bottom so the hero band looks balanced around the search bar */
+export const resourcesHeroPadding = "pt-[36px] pb-[44px] sm:pt-[40px] sm:pb-[48px]";
+/** Consistent vertical gap between page sections */
+export const sectionStackGap = "space-y-6";
+
+function stableHash(input: string): number {
+  let hash = 2166136261;
+  for (let i = 0; i < input.length; i++) {
+    hash ^= input.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+export function truncateDescriptionPreview(
+  description: string,
+  seed: string,
+  { min = 95, max = 145 }: { min?: number; max?: number } = {}
+): string {
+  const text = description.trim();
+  if (!text) return "";
+
+  const limit = min + (stableHash(seed) % (max - min + 1));
+  if (text.length <= limit) return text;
+
+  const excerpt = text.slice(0, limit);
+  const lastSpace = excerpt.lastIndexOf(" ");
+  const breakAt = lastSpace > Math.floor(limit * 0.55) ? lastSpace : limit;
+
+  return `${text.slice(0, breakAt).trimEnd()}…`;
+}
+
 export function formatPhone(phone: string | null | undefined): string {
   if (!phone) return "";
   const digits = phone.replace(/\D/g, "");

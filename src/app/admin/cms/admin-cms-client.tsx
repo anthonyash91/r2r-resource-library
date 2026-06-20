@@ -1,28 +1,49 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Plus, Pencil } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Dropdown } from "@/components/ui/dropdown";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { CmsPage } from "@/types";
 import { useTranslations } from "@/i18n/locale-context";
 
+const emptyForm = { title: "", slug: "", content: "", status: "draft" };
+
 export function AdminCmsClient({ initialPages }: { initialPages: CmsPage[] }) {
   const { t } = useTranslations();
   const [pages, setPages] = useState(initialPages);
+  const [showForm, setShowForm] = useState(false);
   const [editing, setEditing] = useState<CmsPage | null>(null);
-  const [form, setForm] = useState({ title: "", slug: "", content: "", status: "draft" });
+  const [form, setForm] = useState(emptyForm);
+
+  const statusOptions = useMemo(
+    () => [
+      { value: "draft", label: t("admin.draft") },
+      { value: "published", label: t("admin.published") },
+      { value: "archived", label: t("admin.archived") },
+    ],
+    [t]
+  );
 
   const openNew = () => {
     setEditing(null);
-    setForm({ title: "", slug: "", content: "", status: "draft" });
+    setForm(emptyForm);
+    setShowForm(true);
   };
 
   const openEdit = (page: CmsPage) => {
     setEditing(page);
     setForm({ title: page.title, slug: page.slug, content: page.content, status: page.status });
+    setShowForm(true);
+  };
+
+  const closeForm = () => {
+    setShowForm(false);
+    setEditing(null);
+    setForm(emptyForm);
   };
 
   const handleSave = () => {
@@ -49,8 +70,7 @@ export function AdminCmsClient({ initialPages }: { initialPages: CmsPage[] }) {
       };
       setPages((prev) => [...prev, newPage]);
     }
-    setEditing(null);
-    setForm({ title: "", slug: "", content: "", status: "draft" });
+    closeForm();
   };
 
   const statusLabel = (status: string) => {
@@ -73,7 +93,7 @@ export function AdminCmsClient({ initialPages }: { initialPages: CmsPage[] }) {
         </Button>
       </header>
 
-      {(editing !== null || form.title || form.content) && (
+      {showForm && (
         <Card className="mb-6">
           <h2 className="mb-4 text-lg font-bold">{editing ? t("common.edit") : t("admin.newPage")}</h2>
           <div className="space-y-4">
@@ -89,18 +109,17 @@ export function AdminCmsClient({ initialPages }: { initialPages: CmsPage[] }) {
                 className="w-full rounded-xl border-2 border-border px-4 py-3 text-base focus:border-primary focus:outline-none"
               />
             </div>
-            <select
+            <Dropdown
+              label={t("admin.status")}
+              placeholder={t("admin.draft")}
               value={form.status}
-              onChange={(e) => setForm({ ...form, status: e.target.value })}
-              className="rounded-xl border-2 border-border px-4 py-3"
-            >
-              <option value="draft">{t("admin.draft")}</option>
-              <option value="published">{t("admin.published")}</option>
-              <option value="archived">{t("admin.archived")}</option>
-            </select>
+              onChange={(value) => setForm({ ...form, status: value })}
+              options={statusOptions}
+              searchable={false}
+            />
             <div className="flex gap-2">
               <Button onClick={handleSave}>{t("admin.savePage")}</Button>
-              <Button variant="outline" onClick={() => { setEditing(null); setForm({ title: "", slug: "", content: "", status: "draft" }); }}>{t("common.cancel")}</Button>
+              <Button variant="outline" onClick={closeForm}>{t("common.cancel")}</Button>
             </div>
           </div>
         </Card>

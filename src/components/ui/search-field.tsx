@@ -14,7 +14,7 @@ export const SearchField = forwardRef<HTMLInputElement, SearchFieldProps>(
     const inputId = id || label?.toLowerCase().replace(/\s+/g, "-") || "search";
 
     return (
-      <div className="w-full">
+      <div className="w-full min-w-0 max-w-full">
         {label && (
           <label htmlFor={inputId} className="mb-2 block text-base font-semibold text-foreground">
             {label}

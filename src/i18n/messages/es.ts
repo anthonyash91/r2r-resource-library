@@ -146,9 +146,12 @@ export const es = {
 
   resources: {
     findResources: "Buscar recursos",
+    heroSubheadline:
+      "Busque entre cientos de programas de vivienda, empleo, atención médica y más.",
     metadataDescription:
       "Busque y filtre recursos de reinserción por categoría, ubicación y tipo de servicio.",
     programCount: "{count} programas disponibles",
+    resultsSummary: "Programas que coinciden con su búsqueda",
     noResults: "No se encontraron recursos",
     noResultsHint:
       "Pruebe con otra categoría o abra los filtros para cambiar su búsqueda.",

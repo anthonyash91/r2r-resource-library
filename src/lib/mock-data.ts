@@ -8,6 +8,10 @@ import type {
 } from "@/types";
 import { MOCK_CATEGORIES } from "./mock-data-categories";
 import { KENTUCKY_RESOURCES } from "./kentucky/resources";
+import {
+  applySearchQueryFilter,
+  buildLocationCatalog,
+} from "./resource-search";
 
 export { MOCK_CATEGORIES };
 
@@ -38,18 +42,8 @@ export const MOCK_ADMIN_USER: Profile = {
 
 export function filterMockResources(filters: ResourceFilters): Resource[] {
   let results = MOCK_RESOURCES.filter((r) => r.status === (filters.status ?? "active"));
+  const catalog = buildLocationCatalog(MOCK_RESOURCES);
 
-  if (filters.query) {
-    const q = filters.query.toLowerCase();
-    results = results.filter(
-      (r) =>
-        r.name.toLowerCase().includes(q) ||
-        r.description.toLowerCase().includes(q) ||
-        r.services.some((s) => s.toLowerCase().includes(q)) ||
-        r.tags.some((t) => t.toLowerCase().includes(q)) ||
-        (r.eligibility?.toLowerCase().includes(q) ?? false)
-    );
-  }
   if (filters.state) results = results.filter((r) => r.state === filters.state);
   if (filters.county) results = results.filter((r) => r.county === filters.county);
   if (filters.city) results = results.filter((r) => r.city === filters.city);
@@ -76,6 +70,9 @@ export function filterMockResources(filters: ResourceFilters): Resource[] {
   }
   if (filters.featured) {
     results = results.filter((r) => r.is_featured);
+  }
+  if (filters.query) {
+    results = applySearchQueryFilter(results, filters.query, catalog);
   }
 
   return results;

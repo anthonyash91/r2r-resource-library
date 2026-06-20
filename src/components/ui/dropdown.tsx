@@ -165,7 +165,7 @@ export function Dropdown({
     : resolvedSearchPlaceholder;
 
   return (
-    <div ref={containerRef} className={cn("relative w-full", className)}>
+    <div ref={containerRef} className={cn("relative w-full min-w-0 max-w-full", className)}>
       {label && (
         <span
           id={labelId}
@@ -188,13 +188,13 @@ export function Dropdown({
         onClick={() => (open ? closeDropdown() : openDropdown())}
         onKeyDown={handleTriggerKeyDown}
         className={cn(
-          "flex w-full min-h-[48px] cursor-pointer items-center justify-between gap-3 rounded-xl border-2 border-border bg-card px-4 py-3 text-left text-base transition-colors",
+          "flex w-full min-w-0 min-h-[48px] cursor-pointer items-center justify-between gap-3 rounded-xl border-2 border-border bg-card px-4 py-3 text-left text-base transition-colors",
           "focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/30",
           disabled && "cursor-not-allowed opacity-50",
           !selected && "text-muted-foreground"
         )}
       >
-        <span className="truncate">{displayLabel}</span>
+        <span className="min-w-0 truncate">{displayLabel}</span>
         <ChevronDown
           className={cn("h-5 w-5 shrink-0 text-muted-foreground transition-transform", open && "rotate-180")}
           aria-hidden="true"
@@ -220,7 +220,7 @@ export function Dropdown({
                   placeholder={resolvedSearchPlaceholder}
                   aria-controls={listboxId}
                   aria-label={searchAriaLabel}
-                  className="w-full min-h-[40px] rounded-lg border border-border bg-background py-2 pl-9 pr-3 text-base text-foreground placeholder:text-muted-foreground focus:border-transparent focus:outline-none focus:ring-0 focus-visible:outline-none"
+                  className="w-full min-h-[40px] rounded-xl border border-border bg-background py-2 pl-9 pr-3 text-base text-foreground placeholder:text-muted-foreground focus:border-transparent focus:outline-none focus:ring-0 focus-visible:outline-none"
                 />
               </div>
             </div>
@@ -230,7 +230,7 @@ export function Dropdown({
             id={listboxId}
             role="listbox"
             aria-label={label ?? resolvedPlaceholder}
-            className="max-h-60 overflow-auto py-1"
+            className="max-h-[min(15rem,calc(100dvh-12rem))] overflow-auto py-1"
           >
             {filteredOptions.length === 0 ? (
               <li className="px-4 py-3 text-base text-muted-foreground">{resolvedNoResults}</li>

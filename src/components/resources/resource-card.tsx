@@ -5,7 +5,7 @@ import { Heart, MapPin, Phone, Globe } from "lucide-react";
 import type { Resource } from "@/types";
 import { CategoryBadge } from "@/components/resources/category-badge";
 import { Card } from "@/components/ui/card";
-import { formatPhone, formatWebsiteDisplay, cn } from "@/lib/utils";
+import { formatPhone, formatWebsiteDisplay, truncateDescriptionPreview, cn } from "@/lib/utils";
 import { useSaved } from "@/lib/saved-context";
 import { useAuth } from "@/lib/auth-context";
 import { useTranslations } from "@/i18n/locale-context";
@@ -14,14 +14,12 @@ interface ResourceCardProps {
   resource: Resource;
   showSave?: boolean;
   variant?: "default" | "compact";
-  clampDescription?: boolean;
 }
 
 export function ResourceCard({
   resource,
   showSave = true,
   variant = "default",
-  clampDescription = false,
 }: ResourceCardProps) {
   const { isSaved, toggleSave } = useSaved();
   const { user } = useAuth();
@@ -44,6 +42,12 @@ export function ResourceCard({
     resource.state ||
     resource.phone ||
     resource.website;
+
+  const descriptionPreview = truncateDescriptionPreview(
+    resource.description,
+    resource.id,
+    isCompact ? { min: 65, max: 105 } : { min: 95, max: 145 }
+  );
 
   return (
     <Card className={isCompact ? "p-4" : undefined}>
@@ -87,13 +91,11 @@ export function ResourceCard({
       </h3>
       <p
         className={cn(
-          "text-muted-foreground",
-          isCompact
-            ? "mb-0 line-clamp-2 text-sm leading-relaxed"
-            : cn("mb-0 text-base", clampDescription && "line-clamp-3 leading-relaxed")
+          "text-muted-foreground leading-relaxed",
+          isCompact ? "mb-0 text-sm" : "mb-0 text-base"
         )}
       >
-        {resource.description}
+        {descriptionPreview}
       </p>
 
       {hasContactInfo && (

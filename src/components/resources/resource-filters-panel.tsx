@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown, SlidersHorizontal } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, blockInsetPadding } from "@/lib/utils";
 import { ResourceFiltersBar } from "./resource-filters";
 import type { Category } from "@/types";
 import { useTranslations } from "@/i18n/locale-context";
@@ -20,20 +20,22 @@ export function ResourceFiltersPanel(props: ResourceFiltersPanelProps) {
   const { t } = useTranslations();
 
   return (
-    <div className="rounded-2xl border border-border bg-card">
+    <div className="w-full min-w-0 rounded-xl border border-border bg-card">
       <button
         type="button"
         className={cn(
-          "flex w-full cursor-pointer items-center justify-between gap-3 px-5 text-left",
-          open ? "py-3" : "min-h-[48px] py-3"
+          "flex w-full min-w-0 cursor-pointer items-center justify-between gap-3 text-left",
+          blockInsetPadding,
+          !open && "min-h-[52px] rounded-xl",
+          open && "rounded-t-xl"
         )}
         onClick={() => setOpen(!open)}
         aria-expanded={open}
         aria-controls="resource-filters-panel"
       >
-        <span className="flex items-center gap-2 text-base font-semibold">
-          <SlidersHorizontal className="h-5 w-5 text-primary" aria-hidden="true" />
-          {t("resources.locationFilters")}
+        <span className="flex min-w-0 flex-1 items-center gap-2 text-sm font-semibold leading-snug sm:text-base">
+          <SlidersHorizontal className="h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+          <span className="min-w-0">{t("resources.locationFilters")}</span>
         </span>
         <ChevronDown
           className={cn("h-5 w-5 shrink-0 transition-transform", open && "rotate-180")}
@@ -41,8 +43,11 @@ export function ResourceFiltersPanel(props: ResourceFiltersPanelProps) {
         />
       </button>
       {open && (
-        <div id="resource-filters-panel" className="border-t border-border px-5 pb-5 pt-4">
-          <ResourceFiltersBar {...props} hideCategory embedded />
+        <div
+          id="resource-filters-panel"
+          className="rounded-b-xl border-t border-border px-4 pb-5 pt-4 sm:px-5"
+        >
+          <ResourceFiltersBar {...props} embedded />
         </div>
       )}
     </div>

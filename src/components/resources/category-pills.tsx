@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
+import { useTransition } from "react";
 import type { Category } from "@/types";
 import { CategoryIcon } from "@/lib/category-icons";
+import { Dropdown } from "@/components/ui/dropdown";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "@/i18n/locale-context";
 
@@ -43,43 +45,95 @@ function PillLink({
   );
 }
 
+function useCategoryLabel() {
+  const { t } = useTranslations();
+
+  return (category: Category) => {
+    const key = `categories.${category.slug}.name`;
+    const translated = t(key);
+    return translated === key ? category.name : translated;
+  };
+}
+
+function CategorySelect({
+  categories,
+  activeSlug,
+  onChange,
+  hideLabel = false,
+}: {
+  categories: Category[];
+  activeSlug: string | null;
+  onChange: (slug: string) => void;
+  hideLabel?: boolean;
+}) {
+  const { t } = useTranslations();
+  const categoryLabel = useCategoryLabel();
+
+  const options = [
+    { value: "", label: t("common.all") },
+    ...categories.map((category) => ({
+      value: category.slug,
+      label: categoryLabel(category),
+    })),
+  ];
+
+  return (
+    <Dropdown
+      label={hideLabel ? undefined : t("resources.browseByCategory")}
+      hideLabel={hideLabel}
+      placeholder={t("resources.allCategories")}
+      value={activeSlug ?? ""}
+      onChange={onChange}
+      options={options}
+      searchPlaceholder={t("resources.searchCategories")}
+    />
+  );
+}
+
 function CategoryPillsList({
   categories,
   compact,
   activeSlug,
   buildHref,
+  onCategoryChange,
   wrap = false,
 }: {
   categories: Category[];
   compact: boolean;
   activeSlug: string | null;
   buildHref: (slug?: string) => string;
+  onCategoryChange: (slug: string) => void;
   wrap?: boolean;
 }) {
   const { t } = useTranslations();
-
-  const categoryLabel = (category: Category) => {
-    const key = `categories.${category.slug}.name`;
-    const translated = t(key);
-    return translated === key ? category.name : translated;
-  };
+  const categoryLabel = useCategoryLabel();
 
   return (
-    <div className={cn(!compact && "mb-0")}>
+    <div className={cn("w-full min-w-0", !compact && "mb-0")}>
       {!compact && (
-        <p className="mb-2 text-sm font-medium text-muted-foreground">
+        <p className="mb-2 hidden text-sm font-medium text-muted-foreground md:block">
           {t("resources.browseByCategory")}
         </p>
       )}
+
+      <div className="md:hidden w-full min-w-0 rounded-2xl border border-border bg-card px-4 pb-5 pt-4 sm:px-5">
+        <CategorySelect
+          categories={categories}
+          activeSlug={activeSlug}
+          onChange={onCategoryChange}
+          hideLabel={compact}
+        />
+      </div>
+
       <div
         className={cn(
-          "flex gap-2",
+          "hidden gap-2 md:flex",
           wrap ? "flex-wrap justify-center" : "overflow-x-auto pb-1"
         )}
         role="list"
         aria-label={t("resources.browseByCategory")}
       >
-        <PillLink href={buildHref()} isActive={false}>
+        <PillLink href={buildHref()} isActive={!activeSlug}>
           {t("common.all")}
         </PillLink>
         {categories.map((category) => (
@@ -103,7 +157,9 @@ function CategoryPillsWithParams({
   wrap,
   className,
 }: Omit<CategoryPillsProps, "preserveParams" | "activeSlug">) {
+  const router = useRouter();
   const searchParams = useSearchParams();
+  const [, startTransition] = useTransition();
   const activeSlug = searchParams.get("category");
 
   const buildHref = (slug?: string) => {
@@ -117,6 +173,12 @@ function CategoryPillsWithParams({
     return qs ? `/resources?${qs}` : "/resources";
   };
 
+  const onCategoryChange = (slug: string) => {
+    startTransition(() => {
+      router.push(buildHref(slug || undefined));
+    });
+  };
+
   return (
     <div className={className}>
       <CategoryPillsList
@@ -124,6 +186,7 @@ function CategoryPillsWithParams({
         compact={compact ?? false}
         activeSlug={activeSlug}
         buildHref={buildHref}
+        onCategoryChange={onCategoryChange}
         wrap={wrap}
       />
     </div>
@@ -138,6 +201,18 @@ export function CategoryPills({
   wrap = false,
   className,
 }: CategoryPillsProps) {
+  const router = useRouter();
+  const [, startTransition] = useTransition();
+
+  const buildHref = (slug?: string) =>
+    slug ? `/resources?category=${slug}` : "/resources";
+
+  const onCategoryChange = (slug: string) => {
+    startTransition(() => {
+      router.push(buildHref(slug || undefined));
+    });
+  };
+
   if (preserveParams) {
     return (
       <CategoryPillsWithParams
@@ -149,9 +224,6 @@ export function CategoryPills({
     );
   }
 
-  const buildHref = (slug?: string) =>
-    slug ? `/resources?category=${slug}` : "/resources";
-
   return (
     <div className={className}>
       <CategoryPillsList
@@ -159,6 +231,7 @@ export function CategoryPills({
         compact={compact}
         activeSlug={activeSlug}
         buildHref={buildHref}
+        onCategoryChange={onCategoryChange}
         wrap={wrap}
       />
     </div>

@@ -36,11 +36,15 @@ export function Header() {
   const navLinks = useMemo(
     () => [
       { href: "/resources", label: t("nav.findResources"), icon: Search },
-      { href: "/saved", label: t("nav.saved"), icon: Heart },
-      { href: "/dashboard", label: t("nav.dashboard"), icon: LayoutDashboard },
+      ...(user
+        ? [
+            { href: "/saved", label: t("nav.saved"), icon: Heart },
+            { href: "/dashboard", label: t("nav.dashboard"), icon: LayoutDashboard },
+          ]
+        : []),
       { href: "/faq", label: t("nav.faq"), icon: BookOpen },
     ],
-    [t]
+    [t, user]
   );
 
   const isActive = (href: string) =>

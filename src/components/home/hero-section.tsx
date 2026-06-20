@@ -1,24 +1,47 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { Search, CircleCheck } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, resourcesHeroPadding } from "@/lib/utils";
 import { useTranslations } from "@/i18n/locale-context";
 
 interface HeroSearchBarProps {
   placeholder?: string;
+  defaultValue?: string;
+  compact?: boolean;
+  preserveParams?: boolean;
 }
 
-export function HeroSearchBar({ placeholder }: HeroSearchBarProps) {
+export function HeroSearchBar({
+  placeholder,
+  defaultValue = "",
+  compact = false,
+  preserveParams = false,
+}: HeroSearchBarProps) {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { t } = useTranslations();
   const searchPlaceholder = placeholder ?? t("home.heroSearchPlaceholder");
+  const queryValue = preserveParams ? (searchParams.get("q") ?? "") : defaultValue;
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const query = formData.get("q") as string;
+
+    if (preserveParams) {
+      const params = new URLSearchParams(searchParams.toString());
+      if (query?.trim()) {
+        params.set("q", query.trim());
+      } else {
+        params.delete("q");
+      }
+      const qs = params.toString();
+      router.push(qs ? `/resources?${qs}` : "/resources");
+      return;
+    }
+
     if (query?.trim()) {
       router.push(`/resources?q=${encodeURIComponent(query.trim())}`);
     } else {
@@ -33,25 +56,45 @@ export function HeroSearchBar({ placeholder }: HeroSearchBarProps) {
       aria-label={t("resources.searchAria")}
       className="mx-auto w-full max-w-3xl"
     >
-      <div className="flex h-16 items-center rounded-full bg-card p-1.5 shadow-lg">
+      <div
+        className={cn(
+          "flex items-center rounded-full bg-card p-1.5",
+          compact ? "h-12 shadow-md sm:h-14" : "h-16 shadow-lg"
+        )}
+      >
         <div className="relative min-w-0 flex-1 self-stretch">
           <Search
-            className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground sm:left-5"
+            className={cn(
+              "pointer-events-none absolute top-1/2 -translate-y-1/2 text-muted-foreground",
+              compact
+                ? "left-3.5 h-4 w-4 sm:left-4 sm:h-5 sm:w-5"
+                : "left-4 h-5 w-5 sm:left-5"
+            )}
             aria-hidden="true"
           />
           <input
+            key={queryValue}
             name="q"
             type="text"
             inputMode="search"
             enterKeyHint="search"
+            defaultValue={queryValue}
             placeholder={searchPlaceholder}
             aria-label={t("resources.searchAria")}
-            className="hero-search-input h-full w-full bg-transparent pl-11 pr-4 text-base text-foreground placeholder:text-muted-foreground sm:pl-14 sm:text-lg"
+            className={cn(
+              "hero-search-input h-full w-full bg-transparent text-foreground placeholder:text-muted-foreground",
+              compact
+                ? "pl-10 pr-3 text-base sm:pl-12"
+                : "pl-11 pr-4 text-base sm:pl-14 sm:text-lg"
+            )}
           />
         </div>
         <button
           type="submit"
-          className="inline-flex h-full shrink-0 cursor-pointer items-center justify-center rounded-full bg-primary px-6 text-base font-semibold text-primary-foreground transition-colors hover:bg-primary-hover focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2 sm:px-10 sm:text-lg"
+          className={cn(
+            "inline-flex h-full shrink-0 cursor-pointer items-center justify-center rounded-full bg-primary font-semibold text-primary-foreground transition-colors hover:bg-primary-hover focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2",
+            compact ? "px-5 text-sm sm:px-8 sm:text-base" : "px-6 text-base sm:px-10 sm:text-lg"
+          )}
         >
           {t("common.search")}
         </button>
@@ -157,6 +200,38 @@ export function HeroSection({
             </li>
           ))}
         </ul>
+      </div>
+    </section>
+  );
+}
+
+export function ResourcesHeroSection() {
+  const { t } = useTranslations();
+
+  return (
+    <section
+      className={cn(
+        "relative overflow-hidden bg-gradient-to-br from-primary via-primary-hover to-accent px-4 sm:px-6 lg:px-8",
+        resourcesHeroPadding
+      )}
+    >
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+        <div className="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-primary-foreground/10 blur-3xl" />
+        <div className="absolute -right-16 top-6 h-48 w-48 rounded-full bg-primary-foreground/10 blur-3xl" />
+      </div>
+
+      <div className="relative mx-auto w-full max-w-7xl">
+        <div className="mx-auto flex w-full max-w-4xl flex-col items-center gap-4 text-center sm:gap-5">
+          <div className="space-y-2">
+            <h1 className="text-3xl font-bold leading-none text-primary-foreground sm:text-4xl">
+              {t("resources.findResources")}
+            </h1>
+            <p className="mx-auto max-w-2xl text-base leading-relaxed text-primary-foreground/90 sm:text-lg">
+              {t("resources.heroSubheadline")}
+            </p>
+          </div>
+          <HeroSearchBar compact preserveParams placeholder={t("resources.searchPlaceholder")} />
+        </div>
       </div>
     </section>
   );

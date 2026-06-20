@@ -144,9 +144,12 @@ export const en = {
 
   resources: {
     findResources: "Find Resources",
+    heroSubheadline:
+      "Search from hundreds of programs across housing, employment, healthcare, and more.",
     metadataDescription:
       "Search and filter reentry resources by category, location, and service type.",
     programCount: "{count} programs available",
+    resultsSummary: "Programs matching your search",
     noResults: "No resources found",
     noResultsHint:
       "Try a different category or open the filters to change your search.",
