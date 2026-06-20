@@ -30,10 +30,13 @@ export function resolveFeaturedResources(resources: Resource[]): Resource[] {
     const byId = new Map(resources.map((resource) => [resource.id, resource]));
     return storedIds
       .map((id) => byId.get(id))
-      .filter((resource): resource is Resource => Boolean(resource && resource.status === "active"));
+      .filter((resource): resource is Resource => Boolean(resource && resource.status === "active"))
+      .slice(0, MAX_FEATURED_RESOURCES);
   }
 
-  return resources.filter((resource) => resource.is_featured && resource.status === "active");
+  return resources
+    .filter((resource) => resource.is_featured && resource.status === "active")
+    .slice(0, MAX_FEATURED_RESOURCES);
 }
 
 export function getFeaturedIdsFromResources(resources: Resource[]): string[] {

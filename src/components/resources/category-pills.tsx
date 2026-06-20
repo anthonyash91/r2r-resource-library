@@ -30,7 +30,7 @@ function PillLink({
       href={href}
       role="listitem"
       className={cn(
-        "inline-flex shrink-0 cursor-pointer items-center gap-1.5 rounded-full border px-3.5 py-2 text-sm font-medium transition-colors",
+        "inline-flex shrink-0 cursor-pointer items-center justify-center gap-1.5 rounded-full border px-3.5 py-2 text-sm font-medium leading-none transition-colors",
         "focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring",
         isActive
           ? "border-primary bg-primary text-primary-foreground"
@@ -88,7 +88,7 @@ function CategoryPillsList({
             href={buildHref(category.slug)}
             isActive={activeSlug === category.slug}
           >
-            <CategoryIcon icon={category.icon} className="h-3.5 w-3.5" aria-hidden="true" />
+            <CategoryIcon icon={category.icon} className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
             {categoryLabel(category)}
           </PillLink>
         ))}

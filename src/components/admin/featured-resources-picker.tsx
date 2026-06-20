@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Search, Star, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { CategoryBadge } from "@/components/resources/category-badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import type { Resource } from "@/types";
@@ -98,7 +99,7 @@ export function FeaturedResourcesPicker({ resources }: FeaturedResourcesPickerPr
               >
                 <div className="min-w-0">
                   <div className="mb-1 flex flex-wrap items-center gap-2">
-                    {resource.category && <Badge variant="primary">{resource.category.name}</Badge>}
+                    {resource.category && <CategoryBadge category={resource.category} />}
                     <Badge variant="warning">{t("admin.featured")}</Badge>
                   </div>
                   <p className="truncate font-semibold">{resource.name}</p>

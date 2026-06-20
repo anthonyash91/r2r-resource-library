@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Plus, Download, Upload, Pencil, Archive, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { CategoryBadge } from "@/components/resources/category-badge";
 import { Card } from "@/components/ui/card";
 import type { Resource } from "@/types";
 import { formatDate, cn } from "@/lib/utils";
@@ -124,7 +125,7 @@ export function AdminResourcesClient({ initialResources }: AdminResourcesClientP
           <Card key={resource.id} className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex-1">
               <div className="mb-2 flex flex-wrap gap-2">
-                {resource.category && <Badge variant="primary">{resource.category.name}</Badge>}
+                {resource.category && <CategoryBadge category={resource.category} />}
                 {featuredIds.includes(resource.id) && (
                   <Badge variant="warning">{t("admin.featured")}</Badge>
                 )}

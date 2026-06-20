@@ -6,6 +6,7 @@ interface ResourceMasonryProps {
   resources: Resource[];
   columns?: 1 | 2 | 3;
   showSave?: boolean;
+  variant?: "default" | "compact";
   className?: string;
 }
 
@@ -19,13 +20,16 @@ export function ResourceMasonry({
   resources,
   columns = 3,
   showSave,
+  variant = "default",
   className,
 }: ResourceMasonryProps) {
+  const isCompact = variant === "compact";
+
   return (
-    <div className={cn(columnClasses[columns], "gap-6", className)}>
+    <div className={cn(columnClasses[columns], isCompact ? "gap-4" : "gap-6", className)}>
       {resources.map((resource) => (
-        <div key={resource.id} className="mb-6 break-inside-avoid">
-          <ResourceCard resource={resource} showSave={showSave} />
+        <div key={resource.id} className={cn("break-inside-avoid", isCompact ? "mb-4" : "mb-6")}>
+          <ResourceCard resource={resource} showSave={showSave} variant={variant} />
         </div>
       ))}
     </div>

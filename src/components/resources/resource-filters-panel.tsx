@@ -23,7 +23,10 @@ export function ResourceFiltersPanel(props: ResourceFiltersPanelProps) {
     <div className="rounded-2xl border border-border bg-card">
       <button
         type="button"
-        className="flex w-full min-h-[48px] cursor-pointer items-center justify-between gap-3 px-5 py-3 text-left"
+        className={cn(
+          "flex w-full cursor-pointer items-center justify-between gap-3 px-5 text-left",
+          open ? "py-3" : "min-h-[48px] py-3"
+        )}
         onClick={() => setOpen(!open)}
         aria-expanded={open}
         aria-controls="resource-filters-panel"
@@ -38,7 +41,7 @@ export function ResourceFiltersPanel(props: ResourceFiltersPanelProps) {
         />
       </button>
       {open && (
-        <div id="resource-filters-panel" className="border-t border-border p-5">
+        <div id="resource-filters-panel" className="border-t border-border px-5 pb-5 pt-4">
           <ResourceFiltersBar {...props} hideCategory embedded />
         </div>
       )}

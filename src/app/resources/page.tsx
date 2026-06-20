@@ -30,6 +30,7 @@ interface PageProps {
     city?: string;
     category?: string;
     service?: string;
+    tag?: string;
     filter?: string;
   }>;
 }
@@ -51,6 +52,7 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
     city: params.city,
     category: categoryId,
     service: params.service,
+    tag: params.tag,
     recentlyAdded: params.filter === "recent",
   };
 

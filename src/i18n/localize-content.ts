@@ -44,6 +44,13 @@ export function localizeCategories(categories: Category[], locale: Locale): Cate
 }
 
 export function localizeResource(resource: Resource, locale: Locale, index?: number): Resource {
+  if (resource.id.startsWith("res-ky-")) {
+    if (locale === "es" && resource.description_es) {
+      return { ...resource, description: resource.description_es };
+    }
+    return resource;
+  }
+
   if (locale === "en") return resource;
 
   const { t, messages } = createTranslator(locale);
@@ -80,7 +87,6 @@ export function localizeResource(resource: Resource, locale: Locale, index?: num
 }
 
 export function localizeResources(resources: Resource[], locale: Locale): Resource[] {
-  if (locale === "en") return resources;
   return resources.map((resource, index) => localizeResource(resource, locale, index));
 }
 
@@ -139,6 +145,36 @@ export function getLocalizedHomepage(
     hero_subheadline: t("home.heroSubheadline"),
     hero_headline_highlight: t("home.heroHighlight"),
   };
+}
+
+type DayKey = keyof ReturnType<typeof createTranslator>["messages"]["days"];
+
+const FULL_DAY_NAMES: [string, DayKey][] = [
+  ["Sunday", "sun"],
+  ["Saturday", "sat"],
+  ["Thursday", "thu"],
+  ["Wednesday", "wed"],
+  ["Tuesday", "tue"],
+  ["Monday", "mon"],
+  ["Friday", "fri"],
+  ["Domingo", "sun"],
+  ["Sábado", "sat"],
+  ["Miércoles", "wed"],
+  ["Martes", "tue"],
+  ["Jueves", "thu"],
+  ["Viernes", "fri"],
+  ["Lunes", "mon"],
+];
+
+export function formatOperatingHours(hours: string, locale: Locale): string {
+  const { messages } = createTranslator(locale);
+  const abbrev = messages.days;
+
+  return FULL_DAY_NAMES.reduce(
+    (result, [fullName, key]) =>
+      result.replace(new RegExp(`\\b${fullName}\\b`, "gi"), abbrev[key]),
+    hours
+  );
 }
 
 export function localizeDayLabels(days: string[], locale: Locale): string[] {

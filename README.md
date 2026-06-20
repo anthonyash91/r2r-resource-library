@@ -29,10 +29,12 @@ Open [http://localhost:8080](http://localhost:8080).
 
 ### Demo Mode (no Supabase)
 
-The app works out of the box with 16 sample resources across California, Texas, and New York.
+The app loads **20 verified Kentucky reentry resources** in demo mode. Edit `src/lib/kentucky/` and run `npx tsx scripts/generate-kentucky-seed.ts` to refresh `supabase/seed-kentucky.sql` for Supabase.
 
 - **Sign in**: any email/password (include `admin` in email for admin access)
 - **Admin portal**: `/admin`
+
+To reset a Supabase database, run `supabase/reset-data.sql` in the SQL Editor. In demo mode, clear browser localStorage key `reentry_featured_resources` if you pinned featured items previously.
 
 ### Production Setup (Supabase)
 
@@ -42,8 +44,11 @@ The app works out of the box with 16 sample resources across California, Texas, 
 
    ```
    supabase/migrations/001_initial_schema.sql
-   supabase/seed.sql
    ```
+
+   Optional: run `supabase/seed.sql` (empty by default) or add content via `/admin`.
+
+   To wipe content later: `supabase/reset-data.sql`
 
 4. Create an admin user in Supabase Auth, then:
 

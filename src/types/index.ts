@@ -33,6 +33,7 @@ export interface Resource {
   id: string;
   name: string;
   description: string;
+  description_es?: string | null;
   category_id: string;
   category?: Category;
   state: string | null;
@@ -125,6 +126,7 @@ export interface ResourceFilters {
   city?: string;
   category?: string;
   service?: string;
+  tag?: string;
   eligibility?: string;
   featured?: boolean;
   recentlyAdded?: boolean;

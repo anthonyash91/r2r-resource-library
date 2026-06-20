@@ -94,6 +94,10 @@ export async function getResources(filters: ResourceFilters = {}): Promise<Resou
       r.services.some((svc) => svc.toLowerCase().includes(s))
     );
   }
+  if (filters.tag) {
+    const tag = filters.tag.toLowerCase();
+    results = results.filter((r) => r.tags.some((t) => t.toLowerCase() === tag));
+  }
   if (filters.eligibility) {
     const e = filters.eligibility.toLowerCase();
     results = results.filter((r) => r.eligibility?.toLowerCase().includes(e));
