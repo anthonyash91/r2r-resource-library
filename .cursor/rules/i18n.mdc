@@ -1,0 +1,35 @@
+---
+description: Require English and Spanish translations for all user-facing text
+alwaysApply: true
+---
+
+# Internationalization (i18n)
+
+This app supports **English (`en`)** and **Spanish (`es`)**. Every user-facing string must exist in both languages.
+
+## Adding or changing text
+
+1. **Never hardcode user-facing English** in components, pages, metadata, alerts, or aria-labels.
+2. Add the key to **`src/i18n/messages/en.ts`** first (source of truth).
+3. Add the matching Spanish translation to **`src/i18n/messages/es.ts`** with the **same key path**.
+4. Use the key in code:
+   - Client components: `const { t } = useTranslations()` → `t("namespace.key")`
+   - Server components/pages: `const { t } = await getServerTranslator()` → `t("namespace.key")`
+5. Use `{param}` placeholders for dynamic values (e.g. `{count}`, `{name}`, `{year}`).
+
+## Mock / CMS content
+
+- Category, FAQ, announcement, homepage, and resource template copy lives in the message files under `categories`, `faqs`, `mock`, and `resourceTemplates`.
+- When adding mock data with user-facing text, extend **`src/i18n/localize-content.ts`** if new content types need runtime localization.
+
+## Language switcher
+
+- Locale is stored in the `reentry_locale` cookie (`en` | `es`).
+- Do not break `LocaleProvider` in `src/components/providers.tsx` or the header `LanguageSwitcher`.
+
+## Checklist before finishing
+
+- [ ] Key added to `en.ts` and `es.ts`
+- [ ] No leftover hardcoded UI strings in the changed files
+- [ ] Server pages use `getServerTranslator()`; client components use `useTranslations()`
+- [ ] Dates use `formatDate(date, locale)` when displayed to users

@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Reentry Resource Library
 
-## Getting Started
+A modern, accessible web application helping incarcerated and formerly incarcerated individuals find local, state, and national reentry resources.
 
-First, run the development server:
+## Features
+
+- **Resource Directory** — Searchable database with 16 categories, filtering by location, service type, and eligibility
+- **Save Resources** — Personal saved list with dashboard
+- **User Dashboard** — Saved resources, recently viewed, and recommendations
+- **Admin Portal** — Resource, category, user, and CMS management with analytics
+- **Accessibility** — WCAG-oriented design with large touch targets, keyboard navigation, skip links, and plain language
+- **Demo Mode** — Runs locally without Supabase using built-in sample data
+
+## Tech Stack
+
+- **Next.js 16** (App Router) + **TypeScript**
+- **Tailwind CSS 4**
+- **Supabase** (Auth, PostgreSQL, Row Level Security)
+- **Lucide React** icons
+
+## Quick Start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:8080](http://localhost:8080).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Demo Mode (no Supabase)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The app works out of the box with 16 sample resources across California, Texas, and New York.
 
-## Learn More
+- **Sign in**: any email/password (include `admin` in email for admin access)
+- **Admin portal**: `/admin`
 
-To learn more about Next.js, take a look at the following resources:
+### Production Setup (Supabase)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Create a [Supabase](https://supabase.com) project
+2. Copy `.env.example` to `.env.local` and add your keys
+3. Run the migration in Supabase SQL Editor:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```
+   supabase/migrations/001_initial_schema.sql
+   supabase/seed.sql
+   ```
 
-## Deploy on Vercel
+4. Create an admin user in Supabase Auth, then:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```sql
+   UPDATE profiles SET role = 'admin' WHERE email = 'your-admin@email.com';
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. Build and deploy:
+
+   ```bash
+   npm run build
+   npm start
+   ```
+
+## Project Structure
+
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── admin/              # Admin portal
+│   ├── dashboard/          # User dashboard
+│   ├── resources/          # Directory & detail pages
+│   ├── saved/              # Saved resources
+│   ├── login/ signup/      # Authentication
+│   └── faq/ about/         # CMS-driven pages
+├── components/
+│   ├── admin/              # Admin UI
+│   ├── layout/             # Header, footer
+│   ├── resources/          # Resource cards, filters, search
+│   └── ui/                 # Accessible UI primitives
+├── lib/
+│   ├── data.ts             # Data access layer (Supabase + mock fallback)
+│   ├── mock-data.ts        # Demo data
+│   └── supabase/           # Supabase clients
+└── types/                  # TypeScript definitions
+supabase/
+├── migrations/             # Database schema
+└── seed.sql                # Seed data
+docs/
+└── ARCHITECTURE.md         # Full architecture documentation
+```
+
+## Navigation
+
+| Route | Description |
+|-------|-------------|
+| `/` | Homepage with search, categories, featured resources |
+| `/resources` | Searchable resource directory |
+| `/resources/[id]` | Resource detail page |
+| `/saved` | Saved resources |
+| `/dashboard` | User dashboard |
+| `/admin` | Admin analytics dashboard |
+| `/admin/resources` | Resource management |
+| `/admin/categories` | Category management |
+| `/admin/users` | User management |
+| `/admin/cms` | Content pages |
+| `/admin/announcements` | Announcements |
+| `/admin/faqs` | FAQ management |
+| `/admin/homepage` | Homepage content editor |
+
+## Accessibility
+
+- 18px base font size with high-contrast palette
+- Minimum 44–48px touch targets
+- Skip-to-content link
+- Semantic HTML with ARIA labels
+- Keyboard-navigable accordions and menus
+- `prefers-reduced-motion` support
+
+## Future Expansion
+
+The database schema supports future features including:
+
+- AI-powered recommendations (`latitude`/`longitude` for distance search)
+- Case manager accounts (`case_manager` role)
+- Facility-specific libraries (`facility_id` on profiles)
+- Multilingual content
+- Offline access and mobile apps
+
+## License
+
+Private — for reentry program use.
