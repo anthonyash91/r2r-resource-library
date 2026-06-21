@@ -3,8 +3,7 @@
 import Link from "next/link";
 import { Heart, Clock, Star, LayoutGrid } from "lucide-react";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
-import { CategoryPills } from "@/components/resources/category-pills";
-import { Card, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/lib/auth-context";
 import { useSaved, useSavedResources } from "@/lib/saved-context";
@@ -122,7 +121,7 @@ export function DashboardClient({ categories, recommended }: DashboardClientProp
           </section>
         )}
 
-        <section className="mb-12" aria-labelledby="recommended-heading">
+        <section aria-labelledby="recommended-heading">
           <div className="mb-6 flex items-center gap-2">
             <Star className="h-6 w-6 text-warning" aria-hidden="true" />
             <h2 id="recommended-heading" className="text-2xl font-bold">
@@ -130,13 +129,6 @@ export function DashboardClient({ categories, recommended }: DashboardClientProp
             </h2>
           </div>
           <ResourceMasonry resources={recommended} />
-        </section>
-
-        <section aria-labelledby="categories-dash-heading">
-          <CardTitle className="mb-3 text-lg" id="categories-dash-heading">
-            {t("dashboard.browseByCategory")}
-          </CardTitle>
-          <CategoryPills categories={categories} compact />
         </section>
       </div>
     </div>

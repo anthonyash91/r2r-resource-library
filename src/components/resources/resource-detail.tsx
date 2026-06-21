@@ -25,6 +25,7 @@ import { useTranslations } from "@/i18n/locale-context";
 import { formatOperatingHours } from "@/i18n/localize-content";
 import { SaveResourceButton } from "@/components/resources/save-resource-button";
 import { resourceBadgeClass } from "@/components/layout/site-branding-styles";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 import { ServedCountiesLinks } from "@/components/resources/served-counties-links";
 import { countyCoverageLabel, isRegionalResource, shouldShowCountiesServed } from "@/lib/resource-coverage";
 
@@ -73,7 +74,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
     <div className={cn("bg-background", pageSectionPadding)}>
       <div className="mx-auto max-w-4xl">
         <Link
-          href="/resources"
+          href={buildResourcesPageHref()}
           className="mb-6 inline-flex items-center gap-2 text-base font-medium text-primary hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring rounded"
         >
           <ArrowLeft className="h-5 w-5" aria-hidden="true" />
@@ -238,7 +239,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
                     <span key={tag}>
                       {index > 0 && ", "}
                       <Link
-                        href={`/resources?tag=${encodeURIComponent(tag)}`}
+                        href={buildResourcesPageHref({ tag })}
                         className="text-primary hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring rounded"
                       >
                         {tag}

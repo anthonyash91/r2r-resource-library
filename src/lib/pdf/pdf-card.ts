@@ -14,6 +14,7 @@ export interface PdfFixedCardContent {
   lines?: string[];
   listItems?: string[];
   labeledValues?: PdfLabeledValue[];
+  variant?: "default" | "eligibility";
 }
 
 function measureFixedCardHeight(
@@ -79,16 +80,18 @@ function drawFixedCardBackground(
   y: number,
   width: number,
   height: number,
-  compact: typeof PDF_RESOURCE_PAGE
+  compact: typeof PDF_RESOURCE_PAGE,
+  variant: PdfFixedCardContent["variant"] = "default"
 ): void {
   const { colors, spacing } = PDF_THEME;
+  const isEligibility = variant === "eligibility";
 
   doc.save();
   doc
     .roundedRect(x, y, width, height, spacing.cardRadius)
-    .fillColor(colors.card)
+    .fillColor(isEligibility ? colors.eligibilityBg : colors.card)
     .fill()
-    .strokeColor(colors.border)
+    .strokeColor(isEligibility ? colors.eligibilityBorder : colors.border)
     .lineWidth(0.75)
     .stroke();
   doc.restore();
@@ -158,10 +161,12 @@ function writeFixedCardContent(
   if (content.listItems?.length) {
     doc.font("Helvetica").fontSize(fontSize.body).fillColor(PDF_THEME.colors.foreground);
     for (const item of content.listItems) {
-      doc.text(item, innerX, cursorY, {
-        width: innerW,
-        lineGap: spacing.lineGap,
-      });
+      doc
+        .fillColor(PDF_THEME.colors.checkAccent)
+        .text("✓ ", innerX, cursorY, { continued: true, lineBreak: false });
+      doc
+        .fillColor(PDF_THEME.colors.foreground)
+        .text(item, { width: innerW, lineGap: spacing.lineGap });
       cursorY = doc.y + spacing.sectionGap;
     }
   }
@@ -177,7 +182,7 @@ export function writeFixedPdfCard(
   compact: typeof PDF_RESOURCE_PAGE = PDF_RESOURCE_PAGE
 ): number {
   const cardHeight = measureFixedCardHeight(doc, width, content, compact);
-  drawFixedCardBackground(doc, x, y, width, cardHeight, compact);
+  drawFixedCardBackground(doc, x, y, width, cardHeight, compact, content.variant);
   writeFixedCardContent(doc, x, y, width, content, compact);
   return y + cardHeight + compact.spacing.cardGap;
 }

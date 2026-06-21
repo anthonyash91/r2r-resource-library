@@ -54,7 +54,7 @@ export function ResourceCard({
   );
 
   return (
-    <Card className={isCompact ? "p-4" : undefined}>
+    <Card className={isCompact ? "p-5 sm:p-6" : undefined}>
       <div className={cn("flex flex-wrap items-center justify-between gap-2", isCompact ? "mb-2" : "mb-3")}>
         <div className="flex flex-wrap items-center gap-2">
           {resource.category && (

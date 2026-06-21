@@ -13,6 +13,7 @@ import {
 } from "@/lib/data";
 import { AnnouncementsBanner } from "@/components/home/announcements-banner";
 import { cn, pageSectionPadding, checkIconClass } from "@/lib/utils";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 
 const POPULAR_TAG_SLUGS = [
   "housing",
@@ -120,7 +121,7 @@ export default async function HomePage() {
 
       <section
         id="how-it-works-heading"
-        className={cn("app-band-muted", pageSectionPadding)}
+        className={cn("bg-card", pageSectionPadding)}
         aria-labelledby="how-it-works-title"
       >
         <div className="mx-auto max-w-6xl">
@@ -152,7 +153,7 @@ export default async function HomePage() {
 
           <div className="mt-14 text-center">
             <Link
-              href="/resources"
+              href={buildResourcesPageHref()}
               className="inline-flex min-h-[52px] cursor-pointer items-center gap-2 rounded-xl bg-primary px-8 py-3 text-lg font-semibold text-primary-foreground transition-colors hover:bg-primary-hover focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2"
             >
               {t("home.startSearching")}
@@ -199,7 +200,7 @@ export default async function HomePage() {
                 <ArrowRight className="h-5 w-5" aria-hidden="true" />
               </Link>
               <Link
-                href="/resources"
+                href={buildResourcesPageHref()}
                 className="inline-flex min-h-[52px] cursor-pointer items-center gap-2 rounded-full border-2 border-primary-foreground/40 bg-transparent px-8 py-3 text-lg font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/10 focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2"
               >
                 {t("home.browseResources")}

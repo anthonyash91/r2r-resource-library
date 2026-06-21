@@ -67,7 +67,13 @@ function writeCategoryBadges(
     const pillWidth = Math.min(width, doc.widthOfString(categoryName) + pillPaddingX * 2);
     const textY = y + (pillHeight - fontSize.pill) / 2 + 1;
     doc.save();
-    doc.roundedRect(cursorX, y, pillWidth, pillHeight, pillHeight / 2).fillColor(PDF_THEME.colors.badgeBg).fill();
+    doc
+      .roundedRect(cursorX, y, pillWidth, pillHeight, 6)
+      .fillColor(PDF_THEME.colors.badgeBg)
+      .fill()
+      .strokeColor(PDF_THEME.colors.badgeBorder)
+      .lineWidth(0.5)
+      .stroke();
     doc.restore();
     doc
       .font("Helvetica-Bold")
@@ -82,7 +88,13 @@ function writeCategoryBadges(
     const pillWidth = Math.min(width - (cursorX - x), doc.widthOfString(coverage) + pillPaddingX * 2);
     const textY = y + (pillHeight - fontSize.pill) / 2 + 1;
     doc.save();
-    doc.roundedRect(cursorX, y, pillWidth, pillHeight, pillHeight / 2).fillColor(PDF_THEME.colors.secondary).fill();
+    doc
+      .roundedRect(cursorX, y, pillWidth, pillHeight, 6)
+      .fillColor(PDF_THEME.colors.badgeBg)
+      .fill()
+      .strokeColor(PDF_THEME.colors.badgeBorder)
+      .lineWidth(0.5)
+      .stroke();
     doc.restore();
     doc
       .font("Helvetica-Bold")
@@ -405,6 +417,7 @@ export function writeResourceSinglePage(
     leftY = writeFixedPdfCard(doc, leftX, leftY, leftWidth, {
       title: labels.eligibility,
       body: fittedEligibility,
+      variant: "eligibility",
     }, compact);
   }
 

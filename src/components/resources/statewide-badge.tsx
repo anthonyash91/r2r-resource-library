@@ -6,6 +6,7 @@ import {
   resourceBadgeClass,
   resourceBadgeSmClass,
 } from "@/components/layout/site-branding-styles";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "@/i18n/locale-context";
 import { isStatewideResource } from "@/lib/resource-coverage";
@@ -25,7 +26,7 @@ export function StatewideBadge({ resource, size = "default" }: StatewideBadgePro
 
   return (
     <Link
-      href="/resources?coverage=statewide"
+      href={buildResourcesPageHref({ coverage: "statewide" })}
       className={cn(
         isSmall ? resourceBadgeSmClass : resourceBadgeClass,
         "focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"

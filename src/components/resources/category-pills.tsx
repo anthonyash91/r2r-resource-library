@@ -7,6 +7,7 @@ import type { Category } from "@/types";
 import { CategoryIcon } from "@/lib/category-icons";
 import { Dropdown } from "@/components/ui/dropdown";
 import { cn } from "@/lib/utils";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 import { useTranslations } from "@/i18n/locale-context";
 import { useCategoryLabel } from "@/i18n/use-category-label";
 
@@ -183,8 +184,7 @@ function CategoryPillsWithParams({
     } else {
       params.delete("category");
     }
-    const qs = params.toString();
-    return qs ? `/resources?${qs}` : "/resources";
+    return buildResourcesPageHref(params);
   };
 
   const onCategoryChange = (slug: string) => {
@@ -223,7 +223,7 @@ export function CategoryPills({
   const [, startTransition] = useTransition();
 
   const buildHref = (slug?: string) =>
-    slug ? `/resources?category=${slug}` : "/resources";
+    buildResourcesPageHref(slug ? { category: slug } : undefined);
 
   const onCategoryChange = (slug: string) => {
     startTransition(() => {

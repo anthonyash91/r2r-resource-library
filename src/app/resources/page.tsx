@@ -5,6 +5,8 @@ import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { ResourceResultsSummary } from "@/components/resources/resource-results-summary";
 import { CountyFilteredResourceResults } from "@/components/resources/county-filtered-resource-results";
 import { ResourceFiltersPanel } from "@/components/resources/resource-filters-panel";
+import { ScrollToResourceResults } from "@/components/resources/scroll-to-resource-results";
+import { RESOURCE_RESULTS_ID } from "@/lib/resources-page";
 import { getServerTranslator } from "@/i18n/server";
 import { cn, pageSectionPadding, sectionStackGap } from "@/lib/utils";
 import { isValidCoverage, partitionResourcesByCountyFilter } from "@/lib/resource-coverage";
@@ -96,6 +98,10 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
 
       <div className={cn("app-band-alt", pageSectionPadding)}>
         <div className={cn("mx-auto max-w-7xl", sectionStackGap)}>
+          <Suspense fallback={null}>
+            <ScrollToResourceResults />
+          </Suspense>
+
           <Suspense fallback={<div className="h-12 animate-pulse rounded-xl bg-muted" />}>
             <ResourceFiltersPanel
               defaultOpen={filtersPanelOpen}
@@ -107,6 +113,10 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
             />
           </Suspense>
 
+          <div
+            id={RESOURCE_RESULTS_ID}
+            className={cn("scroll-mt-[var(--site-header-height)]", sectionStackGap)}
+          >
           {resources.length === 0 ? (
             <div className="rounded-xl border border-border bg-card p-12 text-center">
               <h2 className="mb-2 text-xl font-bold">{t("resources.noResults")}</h2>
@@ -147,6 +157,7 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
               <ResourceMasonry resources={resources} />
             </>
           )}
+          </div>
         </div>
       </div>
     </>

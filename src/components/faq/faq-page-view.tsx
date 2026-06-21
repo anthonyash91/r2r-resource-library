@@ -15,6 +15,7 @@ import { SearchField } from "@/components/ui/search-field";
 import { FaqAccordion } from "@/components/faq/faq-accordion";
 import { FAQ_CATEGORIES } from "@/lib/faq-categories";
 import { cn, pageSectionPadding } from "@/lib/utils";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 import { useTranslations } from "@/i18n/locale-context";
 import type { Faq } from "@/types";
 
@@ -106,7 +107,7 @@ export function FaqPageView({ faqs }: FaqPageViewProps) {
   const sidebarLinks = useMemo(
     () => [
       {
-        href: "/resources",
+        href: buildResourcesPageHref(),
         icon: BookOpen,
         title: t("faq.sidebarLinks.resourcesTitle"),
         description: t("faq.sidebarLinks.resourcesDesc"),
@@ -269,7 +270,7 @@ export function FaqPageView({ faqs }: FaqPageViewProps) {
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
-              href="/resources"
+              href={buildResourcesPageHref()}
               className={cn(
                 "inline-flex min-h-[52px] cursor-pointer items-center gap-2 rounded-xl bg-card px-8 py-3 text-lg font-semibold text-primary transition-colors",
                 "hover:bg-card/90 focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2"

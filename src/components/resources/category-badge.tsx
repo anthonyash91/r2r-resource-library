@@ -6,6 +6,7 @@ import {
   resourceBadgeClass,
   resourceBadgeSmClass,
 } from "@/components/layout/site-branding-styles";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 import { cn } from "@/lib/utils";
 import type { Category } from "@/types";
 import { useCategoryLabel } from "@/i18n/use-category-label";
@@ -21,7 +22,7 @@ export function CategoryBadge({ category, size = "default" }: CategoryBadgeProps
 
   return (
     <Link
-      href={`/resources?category=${category.slug}`}
+      href={buildResourcesPageHref({ category: category.slug })}
       className={cn(
         isSmall ? resourceBadgeSmClass : resourceBadgeClass,
         "focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"

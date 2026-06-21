@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Dropdown } from "@/components/ui/dropdown";
 import { Card } from "@/components/ui/card";
 import { cn, pageSectionPadding } from "@/lib/utils";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 import type { ContactPageContent } from "@/lib/contact-content-fields";
 import { useTranslations } from "@/i18n/locale-context";
 
@@ -56,7 +57,7 @@ export function ContactPageView({ content, initialSubject }: ContactPageViewProp
         description: content.helpLinks.faqs.description,
       },
       {
-        href: "/resources",
+        href: buildResourcesPageHref(),
         icon: BookOpen,
         title: content.helpLinks.resources.title,
         description: content.helpLinks.resources.description,

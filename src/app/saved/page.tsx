@@ -9,6 +9,7 @@ import { useSavedResources } from "@/lib/saved-context";
 import { useTranslations } from "@/i18n/locale-context";
 import { EmailSavedResourcesButton } from "@/components/saved/email-saved-resources-button";
 import { pageSectionPadding, cn } from "@/lib/utils";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 
 export default function SavedPage() {
   const { user, loading } = useAuth();
@@ -56,7 +57,7 @@ export default function SavedPage() {
             <Heart className="mx-auto mb-4 h-12 w-12 text-muted-foreground" aria-hidden="true" />
             <h2 className="mb-2 text-xl font-bold">{t("saved.emptyTitle")}</h2>
             <p className="mb-6 text-base text-muted-foreground">{t("saved.emptyDesc")}</p>
-            <Link href="/resources">
+            <Link href={buildResourcesPageHref()}>
               <Button size="lg">{t("saved.browseResources")}</Button>
             </Link>
           </div>

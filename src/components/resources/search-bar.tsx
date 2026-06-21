@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { Search } from "lucide-react";
 import { SearchField } from "@/components/ui/search-field";
 import { Button } from "@/components/ui/button";
-import { useTranslations } from "@/i18n/locale-context";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 
 interface SearchBarProps {
   placeholder?: string;
@@ -26,9 +26,9 @@ export function SearchBar({
     const formData = new FormData(e.currentTarget);
     const query = formData.get("q") as string;
     if (query?.trim()) {
-      router.push(`/resources?q=${encodeURIComponent(query.trim())}`);
+      router.push(buildResourcesPageHref({ q: query.trim() }));
     } else {
-      router.push("/resources");
+      router.push(buildResourcesPageHref());
     }
   };
 

@@ -15,6 +15,7 @@ import {
 import { PageHeroBand } from "@/components/layout/page-hero-band";
 import { Card } from "@/components/ui/card";
 import { cn, pageSectionPadding, checkIconClass } from "@/lib/utils";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 import type { AboutPageContent } from "@/lib/about-content-fields";
 import { getServerTranslator } from "@/i18n/server";
 
@@ -193,7 +194,7 @@ export async function AboutPageView({ content, stats }: AboutPageViewProps) {
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
-              href="/resources"
+              href={buildResourcesPageHref()}
               className={cn(
                 "inline-flex min-h-[52px] cursor-pointer items-center gap-2 rounded-xl bg-card px-8 py-3 text-lg font-semibold text-primary transition-colors",
                 "hover:bg-card/90 focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2"

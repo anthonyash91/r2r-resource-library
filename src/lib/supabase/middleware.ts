@@ -1,6 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { getAdminSession } from "@/lib/admin-auth";
+import { enforceApiRouteAccess } from "@/lib/api-auth";
 
 export async function updateSession(request: NextRequest) {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
@@ -32,6 +33,12 @@ export async function updateSession(request: NextRequest) {
   await supabase.auth.getUser();
 
   const pathname = request.nextUrl.pathname;
+
+  const apiBlock = await enforceApiRouteAccess(request, supabase);
+  if (apiBlock) {
+    return apiBlock;
+  }
+
   if (pathname.startsWith("/admin")) {
     const session = await getAdminSession(supabase);
     if (!session) {

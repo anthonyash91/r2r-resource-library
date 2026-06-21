@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Search, CircleCheck } from "lucide-react";
 import { cn, resourcesHeroPadding, checkIconClass } from "@/lib/utils";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 import { useTranslations } from "@/i18n/locale-context";
 
 interface HeroSearchBarProps {
@@ -37,15 +38,14 @@ export function HeroSearchBar({
       } else {
         params.delete("q");
       }
-      const qs = params.toString();
-      router.push(qs ? `/resources?${qs}` : "/resources");
+      router.push(buildResourcesPageHref(params));
       return;
     }
 
     if (query?.trim()) {
-      router.push(`/resources?q=${encodeURIComponent(query.trim())}`);
+      router.push(buildResourcesPageHref({ q: query.trim() }));
     } else {
-      router.push("/resources");
+      router.push(buildResourcesPageHref());
     }
   };
 
@@ -178,7 +178,7 @@ export function HeroSection({
           {popularTags.map(({ label, slug }) => (
             <Link
               key={slug}
-              href={`/resources?category=${slug}`}
+              href={buildResourcesPageHref({ category: slug })}
               className={cn(
                 "rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-1.5 text-sm font-medium text-primary-foreground transition-colors",
                 "hover:bg-primary-foreground/20 focus-visible:outline focus-visible:outline-3 focus-visible:outline-primary-foreground/60 focus-visible:outline-offset-2"

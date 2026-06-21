@@ -1,4 +1,5 @@
 import type { Resource, ResourceCoverage } from "@/types";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 
 export function isStatewideResource(
   resource: Pick<Resource, "coverage" | "tags">
@@ -118,5 +119,5 @@ export function buildCountyFilterHref(county: string, state?: string | null): st
   const params = new URLSearchParams();
   if (state?.trim()) params.set("state", state.trim());
   params.set("county", county);
-  return `/resources?${params.toString()}`;
+  return buildResourcesPageHref(params);
 }

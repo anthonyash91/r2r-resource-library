@@ -3,6 +3,7 @@
 import Link from "next/link";
 import type { Resource } from "@/types";
 import { buildCountyFilterHref } from "@/lib/resource-coverage";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 import { useTranslations } from "@/i18n/locale-context";
 
 interface ServedCountiesLinksProps {
@@ -15,7 +16,7 @@ export function ServedCountiesLinks({ resource }: ServedCountiesLinksProps) {
   if (resource.coverage === "statewide") {
     return (
       <Link
-        href="/resources?coverage=statewide"
+        href={buildResourcesPageHref({ coverage: "statewide" })}
         className="text-base text-primary hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring rounded"
       >
         {t("resources.coverageStatewide")}

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getServerTranslator } from "@/i18n/server";
 import { getSiteBranding } from "@/lib/data";
 import { FooterBrandingLockup } from "@/components/layout/footer-branding-lockup";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 
 const RESOURCE_CATEGORY_SLUGS = [
   "housing",
@@ -24,10 +25,10 @@ export async function Footer() {
 
   const resourceLinks = [
     ...RESOURCE_CATEGORY_SLUGS.map((slug) => ({
-      href: `/resources?category=${slug}`,
+      href: buildResourcesPageHref({ category: slug }),
       label: t(`categories.${slug}.name`),
     })),
-    { href: "/resources", label: t("footer.allCategories") },
+    { href: buildResourcesPageHref(), label: t("footer.allCategories") },
   ];
 
   const helpLinks = [

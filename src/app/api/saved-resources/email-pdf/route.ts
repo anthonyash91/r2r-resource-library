@@ -15,6 +15,7 @@ import {
 } from "@/lib/saved-pdf-email";
 import { LOCALE_COOKIE, type Locale } from "@/i18n/types";
 import { createTranslator } from "@/i18n/translator";
+import { requireAuthenticatedApiAccess } from "@/lib/api-auth";
 
 async function getRequestLocale(): Promise<Locale> {
   const cookieStore = await cookies();
@@ -26,15 +27,16 @@ function isValidEmail(value: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
 }
 
-async function getAuthenticatedProfile(supabase: NonNullable<Awaited<ReturnType<typeof createClient>>>) {
-  const {
-    data: { user: authUser },
-    error: authError,
-  } = await supabase.auth.getUser();
-
-  if (authError || !authUser) {
+async function getAuthenticatedProfile(
+  supabase: NonNullable<Awaited<ReturnType<typeof createClient>>>,
+  locale: Locale
+) {
+  const authResult = await requireAuthenticatedApiAccess(supabase, locale);
+  if (authResult instanceof NextResponse) {
     return { error: "signInRequired" as const };
   }
+
+  const { user: authUser } = authResult;
 
   const { data: profile, error: profileError } = await supabase
     .from("profiles")
@@ -62,7 +64,7 @@ export async function GET() {
     return NextResponse.json({ error: t("saved.email.unavailable") }, { status: 503 });
   }
 
-  const result = await getAuthenticatedProfile(supabase);
+  const result = await getAuthenticatedProfile(supabase, locale);
   if ("error" in result) {
     if (result.error === "signInRequired") {
       return NextResponse.json({ error: t("saved.email.signInRequired") }, { status: 401 });
@@ -92,7 +94,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: t("saved.email.unavailable") }, { status: 503 });
   }
 
-  const authResult = await getAuthenticatedProfile(supabase);
+  const authResult = await getAuthenticatedProfile(supabase, locale);
   if ("error" in authResult) {
     if (authResult.error === "signInRequired") {
       return NextResponse.json({ error: t("saved.email.signInRequired") }, { status: 401 });

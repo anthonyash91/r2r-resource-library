@@ -28,7 +28,7 @@ export function ResourceMasonry({
   return (
     <div className={cn(columnClasses[columns], isCompact ? "gap-4" : "gap-6", className)}>
       {resources.map((resource) => (
-        <div key={resource.id} className={cn("break-inside-avoid", isCompact ? "mb-4" : "mb-6")}>
+        <div key={resource.id} className={cn("break-inside-avoid", isCompact ? "mb-4 p-2" : "mb-6")}>
           <ResourceCard resource={resource} showSave={showSave} variant={variant} />
         </div>
       ))}

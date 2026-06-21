@@ -81,7 +81,11 @@ export function writePdfCoverBranding(
   const textWidth = contentWidth - (branding.coverLogo ? logoSize + 14 : 0);
 
   doc.save();
-  doc.rect(0, 0, pageWidth, bandHeight).fill(colors.primaryDark);
+  const coverGradient = doc.linearGradient(0, 0, pageWidth, bandHeight);
+  coverGradient.stop(0, colors.primaryDark);
+  coverGradient.stop(0.55, colors.primaryMid);
+  coverGradient.stop(1, colors.heroTeal);
+  doc.rect(0, 0, pageWidth, bandHeight).fill(coverGradient);
   doc.restore();
 
   const bandTextY = 28;
@@ -99,7 +103,7 @@ export function writePdfCoverBranding(
   doc
     .font("Helvetica-Bold")
     .fontSize(fontSize.coverTagline)
-    .fillColor(colors.primaryLight)
+    .fillColor(colors.brandTagline)
     .text(branding.brandTagline, textX, doc.y + 6, { width: textWidth });
 
   const contentStartY = bandHeight + 20;
@@ -197,7 +201,7 @@ export function writePdfPageHeader(
   doc
     .font("Helvetica-Bold")
     .fontSize(fontSize.pageHeader)
-    .fillColor(colors.primaryDark)
+    .fillColor(colors.primary)
     .text(brandName, marginLeft, headerY, { width: contentWidth, align: "center", lineBreak: false });
 }
 

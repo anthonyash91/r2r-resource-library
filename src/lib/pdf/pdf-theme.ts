@@ -27,11 +27,15 @@ export const PDF_RESOURCE_PAGE = {
 /** PDF design tokens aligned with src/app/globals.css */
 export const PDF_THEME = {
   colors: {
-    background: "#f8fafc",
+    background: "#f9fafb",
     foreground: "#0f172a",
     primary: "#2b4dd0",
+    primaryHover: "#2338bd",
     primaryDark: "#1e3a8a",
-    primaryLight: "#93c5fd",
+    primaryMid: "#2b4dd0",
+    heroTeal: "#14b8a6",
+    brandTagline: "#9ac5f3",
+    checkAccent: "#55b4a6",
     secondary: "#eff6ff",
     accent: "#0d9488",
     muted: "#64748b",
@@ -39,8 +43,11 @@ export const PDF_THEME = {
     card: "#ffffff",
     white: "#ffffff",
     success: "#059669",
-    badgeBg: "#e0e7ff",
-    badgeFg: "#4338ca",
+    badgeBg: "#eff6ff",
+    badgeFg: "#2b4dd0",
+    badgeBorder: "#d4ddf8",
+    eligibilityBg: "#fefce8",
+    eligibilityBorder: "#fef08a",
   },
   fontSize: {
     coverTitle: 24,

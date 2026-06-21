@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/server";
-import { requireAdminApiAccess } from "@/lib/admin-api-auth";
+import { requireAdminApiAccess } from "@/lib/api-auth";
 import { isTranslationConfigured, translateTextsToSpanish } from "@/lib/translation/deepl";
 import {
   EDITABLE_CONTACT_CONTENT_FIELDS,
