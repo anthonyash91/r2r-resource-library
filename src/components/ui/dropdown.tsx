@@ -81,8 +81,19 @@ export function Dropdown({
       }
     };
 
+    const handleScroll = (e: Event) => {
+      if (containerRef.current?.contains(e.target as Node)) {
+        return;
+      }
+      closeDropdown();
+    };
+
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    window.addEventListener("scroll", handleScroll, true);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener("scroll", handleScroll, true);
+    };
   }, [open]);
 
   useEffect(() => {
@@ -202,7 +213,7 @@ export function Dropdown({
       </button>
 
       {open && (
-        <div className="absolute z-50 mt-2 w-full overflow-hidden rounded-xl border border-border bg-card shadow-lg">
+        <div className="absolute z-40 mt-2 w-full overflow-hidden rounded-xl border border-border bg-card shadow-lg">
           {isSearchable && (
             <div className="sticky top-0 border-b border-border bg-card p-2">
               <div className="relative">

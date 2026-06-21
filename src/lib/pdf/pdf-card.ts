@@ -196,20 +196,20 @@ export function measureFixedPdfCard(
   return measureFixedCardHeight(doc, width, content, compact);
 }
 
-export function fitTextToHeight(
+export function splitTextToHeight(
   doc: PDFDocumentInstance,
   text: string,
   width: number,
   maxHeight: number,
   fontSize: number,
   lineGap: number
-): string {
+): { head: string; tail: string } {
   const trimmed = text.trim();
-  if (!trimmed) return "";
+  if (!trimmed) return { head: "", tail: "" };
 
   doc.font("Helvetica").fontSize(fontSize);
   if (doc.heightOfString(trimmed, { width, lineGap }) <= maxHeight) {
-    return trimmed;
+    return { head: trimmed, tail: "" };
   }
 
   let lo = 0;
@@ -217,7 +217,11 @@ export function fitTextToHeight(
 
   while (lo < hi) {
     const mid = Math.ceil((lo + hi) / 2);
-    const candidate = `${trimmed.slice(0, mid).trimEnd()}…`;
+    let candidate = trimmed.slice(0, mid).trimEnd();
+    const lastSpace = candidate.lastIndexOf(" ");
+    if (lastSpace > candidate.length * 0.6) {
+      candidate = candidate.slice(0, lastSpace).trimEnd();
+    }
     if (doc.heightOfString(candidate, { width, lineGap }) <= maxHeight) {
       lo = mid;
     } else {
@@ -225,12 +229,20 @@ export function fitTextToHeight(
     }
   }
 
-  if (lo >= trimmed.length) return trimmed;
-  return `${trimmed.slice(0, lo).trimEnd()}…`;
-}
+  let head = trimmed.slice(0, lo).trimEnd();
+  const lastSpace = head.lastIndexOf(" ");
+  if (lastSpace > head.length * 0.6) {
+    head = head.slice(0, lastSpace).trimEnd();
+  }
+  if (!head) {
+    head = trimmed.slice(0, lo).trimEnd();
+  }
 
-export function fitTextToMaxChars(text: string, maxChars: number): string {
-  const trimmed = text.trim();
-  if (trimmed.length <= maxChars) return trimmed;
-  return `${trimmed.slice(0, maxChars - 1).trimEnd()}…`;
+  if (!head) {
+    const forced = trimmed.slice(0, Math.max(1, lo));
+    return { head: forced, tail: trimmed.slice(forced.length).trimStart() };
+  }
+
+  const tail = trimmed.slice(head.length).trimStart();
+  return { head, tail: tail || "" };
 }

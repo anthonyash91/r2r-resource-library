@@ -17,13 +17,13 @@ import {
   sortResourcesByCountyRelevance,
   isStatewideResource,
 } from "./resource-coverage";
-import { KENTUCKY_COUNTIES } from "./kentucky/counties";
+import { getStateCounties } from "./states/counties";
 
 export { MOCK_CATEGORIES };
 
 const now = new Date().toISOString();
 
-/** Kentucky reentry resources researched and verified for Reentry to Recovery */
+/** @deprecated Demo mode removed — resources load from Supabase only. */
 export const MOCK_RESOURCES: Resource[] = KENTUCKY_RESOURCES;
 
 export const MOCK_FAQS: Faq[] = [];
@@ -130,7 +130,8 @@ export function getMockStates(): string[] {
 }
 
 export function getMockCounties(state?: string): string[] {
-  if (!state || state === "Kentucky") return [...KENTUCKY_COUNTIES];
+  const canonical = getStateCounties(state);
+  if (canonical.length) return [...canonical];
   const resources = MOCK_RESOURCES.filter((r) => r.state === state);
   return [...new Set(resources.map((r) => r.county).filter(Boolean) as string[])].sort();
 }

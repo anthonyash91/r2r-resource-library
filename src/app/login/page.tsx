@@ -81,12 +81,6 @@ function LoginForm() {
               {t("auth.createOneFree")}
             </Link>
           </p>
-
-          {!process.env.NEXT_PUBLIC_SUPABASE_URL && (
-            <p className="mt-4 rounded-lg bg-secondary p-3 text-sm text-muted-foreground">
-              {t("auth.demoMode")}
-            </p>
-          )}
         </Card>
       </div>
     </div>

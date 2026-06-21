@@ -9,7 +9,8 @@ A modern, accessible web application helping incarcerated and formerly incarcera
 - **User Dashboard** — Saved resources, recently viewed, and recommendations
 - **Admin Portal** — Resource, category, user, and CMS management with analytics
 - **Accessibility** — WCAG-oriented design with large touch targets, keyboard navigation, skip links, and plain language
-- **Demo Mode** — Runs locally without Supabase using built-in sample data
+
+Requires a configured **Supabase** project for authentication and data.
 
 ## Tech Stack
 
@@ -27,36 +28,38 @@ npm run dev
 
 Open [http://localhost:8080](http://localhost:8080).
 
-### Demo Mode (no Supabase)
-
-The app loads **20 verified Kentucky reentry resources** in demo mode. Edit `src/lib/kentucky/` and run `npx tsx scripts/generate-kentucky-seed.ts` to refresh `supabase/seed-kentucky.sql` for Supabase.
-
-- **Sign in**: any email/password (include `admin` in email for admin access)
-- **Admin portal**: `/admin`
-
-To reset a Supabase database, run `supabase/reset-data.sql` in the SQL Editor. In demo mode, clear browser localStorage key `reentry_featured_resources` if you pinned featured items previously.
-
-### Production Setup (Supabase)
+### Setup (Supabase required)
 
 1. Create a [Supabase](https://supabase.com) project
-2. Copy `.env.example` to `.env.local` and add your keys
-3. Run the migration in Supabase SQL Editor:
+2. Copy `.env.example` to `.env.local` and add your project URL and anon key
+3. Run migrations in the Supabase SQL Editor:
 
    ```
    supabase/migrations/001_initial_schema.sql
+   supabase/migrations/002_add_description_es.sql
+   supabase/migrations/004_add_eligibility_es_and_notes.sql
+   supabase/migrations/005_add_served_counties.sql
+   supabase/migrations/003_fix_profile_signup_trigger.sql
    ```
 
-   Optional: run `supabase/seed.sql` (empty by default) or add content via `/admin`.
+4. Load resources:
 
-   To wipe content later: `supabase/reset-data.sql`
+   ```bash
+   npm run seed:resources          # generates supabase/seed-resources.sql
+   npm run seed:resources:ohio     # generates supabase/seed-ohio-resources.sql
+   ```
 
-4. Create an admin user in Supabase Auth, then:
+   Run both SQL files in the Supabase SQL Editor (Kentucky first, then Ohio).
+
+   Or add `SUPABASE_SERVICE_ROLE_KEY` to `.env.local` and run `npm run db:push:ohio`.
+
+5. Create an admin user in Supabase Auth, then:
 
    ```sql
    UPDATE profiles SET role = 'admin' WHERE email = 'your-admin@email.com';
    ```
 
-5. Build and deploy:
+6. Build and deploy:
 
    ```bash
    npm run build
@@ -73,8 +76,7 @@ EMAIL_FROM="Reentry Resource Library <noreply@yourdomain.com>"
 ```
 
 - `EMAIL_FROM` must use a domain verified in Resend.
-- Without these variables, the **Email PDF** button shows a not-configured message when clicked.
-- In demo mode (no Supabase), email export is unavailable.
+- Without `RESEND_API_KEY` / `EMAIL_FROM`, the **Email PDF** button shows a not-configured message when clicked.
 
 ## Project Structure
 

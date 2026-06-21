@@ -11,18 +11,9 @@ import type {
 import { isSupabaseConfigured } from "@/lib/supabase/server";
 import { createClient } from "@/lib/supabase/server";
 import {
-  MOCK_RESOURCES,
-  MOCK_CATEGORIES,
-  MOCK_FAQS,
-  MOCK_ANNOUNCEMENTS,
-  MOCK_HOMEPAGE,
-  filterMockResources,
-  getMockAnalytics,
-  getMockStates,
-  getMockCounties,
-  getMockCities,
-  getMockServices,
-} from "@/lib/mock-data";
+  emptyAnalyticsSummary,
+  emptyRecentActivity,
+} from "@/lib/analytics-empty";
 import { MAX_FEATURED_RESOURCES } from "@/lib/featured-resources-storage";
 import { getServerLocale } from "@/i18n/server";
 import {
@@ -55,16 +46,14 @@ import {
   sortResourcesByCountyRelevance,
   isStatewideResource,
 } from "@/lib/resource-coverage";
-import { KENTUCKY_COUNTIES } from "@/lib/kentucky/counties";
+import { getStateCounties } from "@/lib/states/counties";
 
 export async function getCategories(): Promise<Category[]> {
   const locale = await getServerLocale();
-  if (!isSupabaseConfigured()) {
-    return localizeCategories(MOCK_CATEGORIES.filter((c) => c.is_active), locale);
-  }
+  if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
-  if (!supabase) return MOCK_CATEGORIES.filter((c) => c.is_active);
+  if (!supabase) return [];
 
   const { data, error } = await supabase
     .from("categories")
@@ -72,7 +61,7 @@ export async function getCategories(): Promise<Category[]> {
     .eq("is_active", true)
     .order("sort_order");
 
-  if (error || !data) return localizeCategories(MOCK_CATEGORIES.filter((c) => c.is_active), locale);
+  if (error || !data) return [];
   return localizeCategories(data as Category[], locale);
 }
 
@@ -87,10 +76,10 @@ async function getLocationCatalog(): Promise<LocationCatalog> {
 
 export async function getResources(filters: ResourceFilters = {}): Promise<Resource[]> {
   const locale = await getServerLocale();
-  if (!isSupabaseConfigured()) return localizeResources(filterMockResources(filters), locale);
+  if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
-  if (!supabase) return localizeResources(filterMockResources(filters), locale);
+  if (!supabase) return [];
 
   let query = supabase
     .from("resources")
@@ -109,7 +98,7 @@ export async function getResources(filters: ResourceFilters = {}): Promise<Resou
   query = query.order("name");
 
   const { data, error } = await query;
-  if (error || !data) return localizeResources(filterMockResources(filters), locale);
+  if (error || !data) return [];
 
   let results = localizeResources(data as Resource[], locale);
   if (filters.county) {
@@ -146,13 +135,13 @@ export async function getResources(filters: ResourceFilters = {}): Promise<Resou
 export type { SiteBranding };
 
 async function fetchHomepageContentRaw(): Promise<Record<string, string>> {
-  if (!isSupabaseConfigured()) return MOCK_HOMEPAGE;
+  if (!isSupabaseConfigured()) return {};
 
   const supabase = await createClient();
-  if (!supabase) return MOCK_HOMEPAGE;
+  if (!supabase) return {};
 
   const { data } = await supabase.from("homepage_content").select("key, value");
-  if (!data) return MOCK_HOMEPAGE;
+  if (!data) return {};
 
   return data.reduce(
     (acc, item) => ({ ...acc, [item.key]: item.value }),
@@ -229,20 +218,20 @@ export async function getHomepageContentAdmin(): Promise<Record<string, string>>
 }
 
 export async function getAllFaqsAdmin(): Promise<Faq[]> {
-  if (!isSupabaseConfigured()) return MOCK_FAQS;
+  if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
-  if (!supabase) return MOCK_FAQS;
+  if (!supabase) return [];
 
   const { data } = await supabase.from("faqs").select("*").order("sort_order");
-  return (data as Faq[]) ?? MOCK_FAQS;
+  return (data as Faq[]) ?? [];
 }
 
 export async function getAllAnnouncementsAdmin(): Promise<Announcement[]> {
-  if (!isSupabaseConfigured()) return MOCK_ANNOUNCEMENTS;
+  if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
-  if (!supabase) return MOCK_ANNOUNCEMENTS;
+  if (!supabase) return [];
 
   const { data } = await supabase
     .from("announcements")
@@ -250,21 +239,15 @@ export async function getAllAnnouncementsAdmin(): Promise<Announcement[]> {
     .order("is_pinned", { ascending: false })
     .order("created_at", { ascending: false });
 
-  return (data as Announcement[]) ?? MOCK_ANNOUNCEMENTS;
+  return (data as Announcement[]) ?? [];
 }
 
 export async function getResourceById(id: string): Promise<Resource | null> {
   const locale = await getServerLocale();
-  if (!isSupabaseConfigured()) {
-    const resource = MOCK_RESOURCES.find((r) => r.id === id) ?? null;
-    return resource ? localizeResource(resource, locale) : null;
-  }
+  if (!isSupabaseConfigured()) return null;
 
   const supabase = await createClient();
-  if (!supabase) {
-    const resource = MOCK_RESOURCES.find((r) => r.id === id) ?? null;
-    return resource ? localizeResource(resource, locale) : null;
-  }
+  if (!supabase) return null;
 
   const { data, error } = await supabase
     .from("resources")
@@ -272,10 +255,7 @@ export async function getResourceById(id: string): Promise<Resource | null> {
     .eq("id", id)
     .single();
 
-  if (error || !data) {
-    const resource = MOCK_RESOURCES.find((r) => r.id === id) ?? null;
-    return resource ? localizeResource(resource, locale) : null;
-  }
+  if (error || !data) return null;
   return localizeResource(data as Resource, locale);
 }
 
@@ -290,10 +270,10 @@ export async function getRelatedResources(
 }
 
 export async function getStates(): Promise<string[]> {
-  if (!isSupabaseConfigured()) return getMockStates();
+  if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
-  if (!supabase) return getMockStates();
+  if (!supabase) return [];
 
   const { data } = await supabase
     .from("resources")
@@ -301,19 +281,18 @@ export async function getStates(): Promise<string[]> {
     .eq("status", "active")
     .not("state", "is", null);
 
-  if (!data) return getMockStates();
+  if (!data) return [];
   return [...new Set(data.map((r) => r.state).filter(Boolean) as string[])].sort();
 }
 
 export async function getCounties(state?: string): Promise<string[]> {
-  if (!state || state === "Kentucky") {
-    return [...KENTUCKY_COUNTIES];
-  }
+  const canonical = getStateCounties(state);
+  if (canonical.length) return [...canonical];
 
-  if (!isSupabaseConfigured()) return getMockCounties(state);
+  if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
-  if (!supabase) return getMockCounties(state);
+  if (!supabase) return [];
 
   let query = supabase
     .from("resources")
@@ -323,21 +302,19 @@ export async function getCounties(state?: string): Promise<string[]> {
   if (state) query = query.eq("state", state);
 
   const { data } = await query;
-  if (!data) return getMockCounties(state);
+  if (!data) return [];
   const fromResources = new Set<string>();
   for (const row of data) {
     if (row.county) fromResources.add(row.county as string);
   }
-  return [...new Set([...KENTUCKY_COUNTIES, ...fromResources])].sort((a, b) =>
-    a.localeCompare(b)
-  );
+  return [...fromResources].sort((a, b) => a.localeCompare(b));
 }
 
 export async function getCities(state?: string, county?: string): Promise<string[]> {
-  if (!isSupabaseConfigured()) return getMockCities(state, county);
+  if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
-  if (!supabase) return getMockCities(state, county);
+  if (!supabase) return [];
 
   let query = supabase
     .from("resources")
@@ -347,7 +324,7 @@ export async function getCities(state?: string, county?: string): Promise<string
   if (state) query = query.eq("state", state);
 
   const { data } = await query;
-  if (!data) return getMockCities(state, county);
+  if (!data) return [];
 
   let rows = data as Pick<Resource, "city" | "county" | "served_counties" | "coverage">[];
   if (county) {
@@ -357,17 +334,17 @@ export async function getCities(state?: string, county?: string): Promise<string
 }
 
 export async function getServices(): Promise<string[]> {
-  if (!isSupabaseConfigured()) return getMockServices();
+  if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
-  if (!supabase) return getMockServices();
+  if (!supabase) return [];
 
   const { data } = await supabase
     .from("resources")
     .select("services")
     .eq("status", "active");
 
-  if (!data) return getMockServices();
+  if (!data) return [];
   const services = new Set<string>();
   data.forEach((r) => (r.services as string[]).forEach((s) => services.add(s)));
   return [...services].sort();
@@ -375,10 +352,10 @@ export async function getServices(): Promise<string[]> {
 
 export async function getFaqs(): Promise<Faq[]> {
   const locale = await getServerLocale();
-  if (!isSupabaseConfigured()) return localizeFaqs(MOCK_FAQS, locale);
+  if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
-  if (!supabase) return localizeFaqs(MOCK_FAQS, locale);
+  if (!supabase) return [];
 
   const { data } = await supabase
     .from("faqs")
@@ -386,15 +363,15 @@ export async function getFaqs(): Promise<Faq[]> {
     .eq("is_active", true)
     .order("sort_order");
 
-  return localizeFaqs((data as Faq[]) ?? MOCK_FAQS, locale);
+  return localizeFaqs((data as Faq[]) ?? [], locale);
 }
 
 export async function getAnnouncements(): Promise<Announcement[]> {
   const locale = await getServerLocale();
-  if (!isSupabaseConfigured()) return localizeAnnouncements(MOCK_ANNOUNCEMENTS, locale);
+  if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
-  if (!supabase) return localizeAnnouncements(MOCK_ANNOUNCEMENTS, locale);
+  if (!supabase) return [];
 
   const { data } = await supabase
     .from("announcements")
@@ -403,7 +380,7 @@ export async function getAnnouncements(): Promise<Announcement[]> {
     .order("is_pinned", { ascending: false })
     .order("created_at", { ascending: false });
 
-  return localizeAnnouncements((data as Announcement[]) ?? MOCK_ANNOUNCEMENTS, locale);
+  return localizeAnnouncements((data as Announcement[]) ?? [], locale);
 }
 
 export async function getHomepageContent(): Promise<Record<string, string>> {
@@ -415,7 +392,7 @@ export async function getHomepageContent(): Promise<Record<string, string>> {
 export async function getAnalytics(): Promise<AnalyticsSummary> {
   const locale = await getServerLocale();
   if (!isSupabaseConfigured()) {
-    const analytics = getMockAnalytics();
+    const analytics = emptyAnalyticsSummary();
     return {
       ...analytics,
       recentActivity: analytics.recentActivity.map((item) => ({
@@ -427,7 +404,7 @@ export async function getAnalytics(): Promise<AnalyticsSummary> {
 
   const supabase = await createClient();
   if (!supabase) {
-    const analytics = getMockAnalytics();
+    const analytics = emptyAnalyticsSummary();
     return {
       ...analytics,
       recentActivity: analytics.recentActivity.map((item) => ({
@@ -503,7 +480,7 @@ export async function getAnalytics(): Promise<AnalyticsSummary> {
       .sort((a, b) => b.count - a.count),
     mostViewed: (mostViewedRes.data ?? []) as Resource[],
     mostSaved: (mostSavedRes.data ?? []) as Resource[],
-    recentActivity: getMockAnalytics().recentActivity,
+    recentActivity: emptyRecentActivity(),
   };
 }
 
@@ -539,52 +516,36 @@ export async function getSavedResourcesForUser(
 
 export async function getAllResourcesAdmin(): Promise<Resource[]> {
   const locale = await getServerLocale();
-  if (!isSupabaseConfigured()) return localizeResources(MOCK_RESOURCES, locale);
+  if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
-  if (!supabase) return localizeResources(MOCK_RESOURCES, locale);
+  if (!supabase) return [];
 
   const { data } = await supabase
     .from("resources")
     .select("*, category:categories(*)")
     .order("updated_at", { ascending: false });
 
-  return localizeResources((data as Resource[]) ?? MOCK_RESOURCES, locale);
+  return localizeResources((data as Resource[]) ?? [], locale);
 }
 
 export async function getAllCategoriesAdmin(): Promise<Category[]> {
   const locale = await getServerLocale();
-  if (!isSupabaseConfigured()) return localizeCategories(MOCK_CATEGORIES, locale);
+  if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
-  if (!supabase) return localizeCategories(MOCK_CATEGORIES, locale);
+  if (!supabase) return [];
 
   const { data } = await supabase
     .from("categories")
     .select("*")
     .order("sort_order");
 
-  return localizeCategories((data as Category[]) ?? MOCK_CATEGORIES, locale);
+  return localizeCategories((data as Category[]) ?? [], locale);
 }
 
 export async function getAllUsersAdmin(): Promise<Profile[]> {
-  if (!isSupabaseConfigured()) {
-    return [
-      {
-        id: "user-1",
-        email: "user@example.com",
-        full_name: "John Smith",
-        role: "user",
-        is_active: true,
-        phone: null,
-        state: "California",
-        county: null,
-        city: "Los Angeles",
-        created_at: new Date().toISOString(),
-        updated_at: new Date().toISOString(),
-      },
-    ];
-  }
+  if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
   if (!supabase) return [];

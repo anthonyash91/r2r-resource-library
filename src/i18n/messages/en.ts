@@ -200,7 +200,7 @@ export const en = {
     locationFilters: "Location & advanced filters",
     browseByCategory: "Browse by category",
     showingCount: "Showing {visible} of {total} resources",
-    loadMore: "Load more",
+    loadMore: "Show more",
     backToResources: "Back to resources",
     servicesOffered: "Services Offered",
     eligibilityRequirements: "Eligibility Requirements",
@@ -212,6 +212,7 @@ export const en = {
     countyFilterHint:
       "Choose the county where you live now or plan to live after release to see resources that serve that area.",
     filterByCountyAria: "View resources serving {county} County",
+    stateBadgeAria: "View resources in {state}",
     contactInfo: "Contact Information",
     tags: "Tags",
     address: "Address",

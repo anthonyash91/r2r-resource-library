@@ -380,7 +380,6 @@ export const CURATED_BY_ID: Record<string, ServiceArea> = {
   "401": area(["Jefferson", "Bullitt", "Hardin", "Oldham", "Shelby"]),
   "430": area(["Jefferson"]),
   "474": area(["Jefferson"]),
-  "476": area(["Kenton"]),
   "526": area(["Jefferson", "Oldham"]),
 
   // Drug / specialty courts (county jurisdiction)

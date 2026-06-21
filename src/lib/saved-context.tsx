@@ -11,7 +11,6 @@ import {
 import type { Resource } from "@/types";
 import { useAuth } from "@/lib/auth-context";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/client";
-import { MOCK_RESOURCES } from "@/lib/mock-data";
 import {
   clearViewLoggedThisSession,
   getOrCreateSessionId,
@@ -54,18 +53,36 @@ export function SavedProvider({ children }: { children: React.ReactNode }) {
     [savedResourcesBase, locale]
   );
 
-  const syncMockSavedResources = useCallback((ids: Set<string>) => {
-    setSavedResourcesBase(MOCK_RESOURCES.filter((r) => ids.has(r.id)));
+  const resolveSavedResources = useCallback(async (ids: Set<string>) => {
+    if (!ids.size) {
+      setSavedResourcesBase([]);
+      return;
+    }
+
+    if (!isSupabaseConfigured()) {
+      setSavedResourcesBase([]);
+      return;
+    }
+
+    const supabase = createClient();
+    if (!supabase) return;
+
+    const { data } = await supabase
+      .from("resources")
+      .select("*, category:categories(*)")
+      .in("id", [...ids]);
+
+    setSavedResourcesBase((data as Resource[]) ?? []);
   }, []);
 
-  const loadLocal = useCallback(() => {
+  const loadLocal = useCallback(async () => {
     if (typeof window === "undefined") return;
     const saved = localStorage.getItem(SAVED_KEY);
     if (saved) {
       try {
         const ids = new Set<string>(JSON.parse(saved));
         setSavedIds(ids);
-        syncMockSavedResources(ids);
+        await resolveSavedResources(ids);
       } catch {
         localStorage.removeItem(SAVED_KEY);
       }
@@ -81,7 +98,7 @@ export function SavedProvider({ children }: { children: React.ReactNode }) {
         localStorage.removeItem(VIEWED_KEY);
       }
     }
-  }, [syncMockSavedResources]);
+  }, [resolveSavedResources]);
 
   const persistSaved = (ids: Set<string>) => {
     localStorage.setItem(SAVED_KEY, JSON.stringify([...ids]));
@@ -120,14 +137,12 @@ export function SavedProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (!user) {
-      loadLocal();
-      setLoading(false);
+      void loadLocal().finally(() => setLoading(false));
       return;
     }
 
     if (!isSupabaseConfigured()) {
-      loadLocal();
-      setLoading(false);
+      void loadLocal().finally(() => setLoading(false));
       return;
     }
 
@@ -147,10 +162,24 @@ export function SavedProvider({ children }: { children: React.ReactNode }) {
     setSavedIds(next);
     persistSaved(next);
 
-    if (!user || !isSupabaseConfigured()) return;
+    if (!isSupabaseConfigured()) return;
 
     const supabase = createClient();
     if (!supabase) return;
+
+    if (!user) {
+      if (!wasSaved) {
+        const { data } = await supabase
+          .from("resources")
+          .select("*, category:categories(*)")
+          .eq("id", resourceId)
+          .single();
+        if (data) {
+          setSavedResourcesBase((prev) => [data as Resource, ...prev]);
+        }
+      }
+      return;
+    }
 
     if (wasSaved) {
       await supabase

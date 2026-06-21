@@ -109,7 +109,7 @@ export function Header({ branding }: HeaderProps) {
   const mobileLinkIcon = "h-5 w-5 shrink-0 text-primary";
 
   return (
-    <header className="sticky top-0 z-50 min-h-[var(--site-header-height)] shrink-0 border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/90">
+    <header className="sticky top-0 z-[60] min-h-[var(--site-header-height)] shrink-0 border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/90">
       <a href="#main-content" className="skip-link">
         {t("common.skipToContent")}
       </a>

@@ -202,7 +202,7 @@ export const es = {
     locationFilters: "Ubicación y filtros avanzados",
     browseByCategory: "Explorar por categoría",
     showingCount: "Mostrando {visible} de {total} recursos",
-    loadMore: "Cargar más",
+    loadMore: "Mostrar más",
     backToResources: "Volver a recursos",
     servicesOffered: "Servicios ofrecidos",
     eligibilityRequirements: "Requisitos de elegibilidad",
@@ -214,6 +214,7 @@ export const es = {
     countyFilterHint:
       "Elija el condado donde vive ahora o donde planea vivir después de su liberación para ver recursos que atienden esa área.",
     filterByCountyAria: "Ver recursos que atienden el condado de {county}",
+    stateBadgeAria: "Ver recursos en {state}",
     contactInfo: "Información de contacto",
     tags: "Etiquetas",
     address: "Dirección",

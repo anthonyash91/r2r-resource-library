@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { ResourcesHeroSection } from "@/components/home/hero-section";
-import { ResourceMasonry } from "@/components/resources/resource-masonry";
+import { PaginatedResourceList } from "@/components/resources/paginated-resource-list";
 import { ResourceResultsSummary } from "@/components/resources/resource-results-summary";
 import { CountyFilteredResourceResults } from "@/components/resources/county-filtered-resource-results";
 import { ResourceFiltersPanel } from "@/components/resources/resource-filters-panel";
@@ -154,7 +154,7 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
                 count={resources.length}
                 label={resultsSummaryLabel}
               />
-              <ResourceMasonry resources={resources} />
+              <PaginatedResourceList resources={resources} />
             </>
           )}
           </div>

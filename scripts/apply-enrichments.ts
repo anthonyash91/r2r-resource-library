@@ -1,14 +1,15 @@
 /**
- * Merge enrichment JSON into data/resources.csv by resource id.
+ * Merge enrichment JSON into a resources CSV by resource id.
  *
  * Usage:
  *   npx tsx scripts/apply-enrichments.ts data/enrichments/batch-01.json
+ *   npx tsx scripts/apply-enrichments.ts data/enrichments/ohio-enriched.json data/ohio-resources.csv
  *   npm run seed:resources
  */
 import { readFileSync, writeFileSync } from "fs";
 import { resolve } from "path";
 
-const CSV_PATH = resolve(process.cwd(), "data/resources.csv");
+const CSV_PATH = resolve(process.cwd(), process.argv[3] ?? "data/resources.csv");
 const ENRICHMENT_PATH = resolve(process.cwd(), process.argv[2] ?? "data/enrichments/batch-01.json");
 
 const ALL_COLUMNS = [
@@ -153,6 +154,6 @@ for (const record of records) {
 const outRows = [header, ...records.map((record) => header.map((col) => record[col] ?? ""))];
 writeFileSync(CSV_PATH, serializeCsv(outRows));
 
-console.log(`Applied enrichments to ${updated} resource(s) in data/resources.csv`);
+console.log(`Applied enrichments to ${updated} resource(s) in ${CSV_PATH}`);
 console.log(`Source: ${ENRICHMENT_PATH}`);
-console.log("Next: npm run seed:resources → run supabase/seed-resources.sql in Supabase");
+console.log("Next: regenerate seed SQL for the target state CSV.");

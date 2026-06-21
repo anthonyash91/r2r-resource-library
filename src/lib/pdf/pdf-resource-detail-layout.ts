@@ -11,15 +11,56 @@ import { formatOperatingHours } from "@/i18n/localize-content";
 import { getCategoryLabel } from "@/i18n/category-label";
 import { PDF_RESOURCE_PAGE, PDF_THEME } from "@/lib/pdf/pdf-theme";
 import {
-  fitTextToHeight,
-  fitTextToMaxChars,
   measureFixedPdfCard,
+  splitTextToHeight,
   type PdfLabeledValue,
   writeFixedPdfCard,
 } from "@/lib/pdf/pdf-card";
 import type { SavedResourcesPdfLabels } from "@/lib/pdf/saved-resources-pdf";
 
 type PDFDocumentInstance = InstanceType<typeof import("pdfkit")>;
+
+interface ResourcePdfLayoutContext {
+  doc: PDFDocumentInstance;
+  contentTop: number;
+  getContentBottom: () => number;
+  newPage: () => void;
+  y: number;
+}
+
+function advancePage(ctx: ResourcePdfLayoutContext): void {
+  ctx.newPage();
+  ctx.y = ctx.contentTop;
+}
+
+function ensureSpace(ctx: ResourcePdfLayoutContext, neededHeight: number): void {
+  if (ctx.y + neededHeight > ctx.getContentBottom()) {
+    advancePage(ctx);
+  }
+}
+
+function drawCardBackground(
+  doc: PDFDocumentInstance,
+  x: number,
+  y: number,
+  width: number,
+  height: number,
+  variant: "default" | "eligibility" = "default"
+): void {
+  const { colors } = PDF_THEME;
+  const { cardRadius } = PDF_RESOURCE_PAGE.spacing;
+  const isEligibility = variant === "eligibility";
+
+  doc.save();
+  doc
+    .roundedRect(x, y, width, height, cardRadius)
+    .fillColor(isEligibility ? colors.eligibilityBg : colors.card)
+    .fill()
+    .strokeColor(isEligibility ? colors.eligibilityBorder : colors.border)
+    .lineWidth(0.75)
+    .stroke();
+  doc.restore();
+}
 
 function buildFullAddress(resource: Resource): string | null {
   const parts: string[] = [];
@@ -106,67 +147,217 @@ function writeCategoryBadges(
   return y + pillHeight + spacing.cardGap;
 }
 
-function measureTitleCardHeight(
-  doc: PDFDocumentInstance,
+function writePaginatedBodyCard(
+  ctx: ResourcePdfLayoutContext,
   x: number,
   width: number,
-  resource: Resource,
-  description: string,
-  coverageLabel: string | null
-): number {
-  const { fontSize, spacing } = PDF_RESOURCE_PAGE;
-  const innerW = width - spacing.cardPadding * 2;
-  let body = description.trim();
-  if (coverageLabel) body = `${coverageLabel}\n\n${body}`;
-
-  doc.font("Helvetica-Bold").fontSize(fontSize.resourceName);
-  const titleH = doc.heightOfString(resource.name, { width: innerW });
-  doc.font("Helvetica").fontSize(fontSize.body);
-  const bodyH = doc.heightOfString(body, { width: innerW, lineGap: spacing.lineGap });
-
-  return spacing.cardPadding * 2 + titleH + spacing.titleBodyGap + bodyH;
-}
-
-function writeTitleCard(
-  doc: PDFDocumentInstance,
-  x: number,
-  y: number,
-  width: number,
-  resource: Resource,
-  description: string,
-  coverageLabel: string | null
-): number {
+  options: {
+    title: string;
+    body: string;
+    variant?: "default" | "eligibility";
+  }
+): void {
+  const { doc } = ctx;
   const { fontSize, spacing } = PDF_RESOURCE_PAGE;
   const innerX = x + spacing.cardPadding;
   const innerW = width - spacing.cardPadding * 2;
-  let body = description.trim();
-  if (coverageLabel) body = `${coverageLabel}\n\n${body}`;
+  let remaining = options.body.trim();
+  let segment = 0;
 
-  const cardHeight = measureTitleCardHeight(doc, x, width, resource, description, coverageLabel);
+  while (segment === 0 || remaining) {
+    ensureSpace(ctx, spacing.cardPadding * 2 + fontSize.sectionLabel + 20);
 
-  doc.save();
-  doc
-    .roundedRect(x, y, width, cardHeight, spacing.cardRadius)
-    .fillColor(PDF_THEME.colors.card)
-    .fill()
-    .strokeColor(PDF_THEME.colors.border)
-    .lineWidth(0.75)
-    .stroke();
-  doc.restore();
+    doc.font("Helvetica-Bold").fontSize(fontSize.sectionLabel);
+    const titleText = segment === 0 ? options.title : `${options.title} (${segment + 1})`;
+    const titleHeight = doc.heightOfString(titleText, { width: innerW });
 
-  doc
-    .font("Helvetica-Bold")
-    .fontSize(fontSize.resourceName)
-    .fillColor(PDF_THEME.colors.foreground)
-    .text(resource.name, innerX, y + spacing.cardPadding, { width: innerW });
+    const textBudget =
+      ctx.getContentBottom() - ctx.y - spacing.cardPadding * 2 - titleHeight - spacing.titleBodyGap;
 
-  doc
-    .font("Helvetica")
-    .fontSize(fontSize.body)
-    .fillColor(PDF_THEME.colors.muted)
-    .text(body, innerX, doc.y + spacing.titleBodyGap, { width: innerW, lineGap: spacing.lineGap });
+    doc.font("Helvetica").fontSize(fontSize.body);
+    const { head, tail } = splitTextToHeight(
+      doc,
+      remaining,
+      innerW,
+      Math.max(24, textBudget),
+      fontSize.body,
+      spacing.lineGap
+    );
 
-  return y + cardHeight + spacing.cardGap;
+    if (!head && remaining) {
+      advancePage(ctx);
+      continue;
+    }
+
+    const bodyHeight = doc.heightOfString(head, { width: innerW, lineGap: spacing.lineGap });
+    const cardHeight =
+      spacing.cardPadding * 2 + titleHeight + spacing.titleBodyGap + bodyHeight;
+    const cardY = ctx.y;
+
+    drawCardBackground(doc, x, cardY, width, cardHeight, options.variant);
+
+    doc
+      .font("Helvetica-Bold")
+      .fontSize(fontSize.sectionLabel)
+      .fillColor(PDF_THEME.colors.foreground)
+      .text(titleText, innerX, cardY + spacing.cardPadding, { width: innerW });
+
+    doc
+      .font("Helvetica")
+      .fontSize(fontSize.body)
+      .fillColor(PDF_THEME.colors.muted)
+      .text(head, innerX, doc.y + spacing.titleBodyGap, { width: innerW, lineGap: spacing.lineGap });
+
+    ctx.y = cardY + cardHeight + spacing.cardGap;
+    remaining = tail;
+    segment += 1;
+
+    if (remaining) {
+      advancePage(ctx);
+    }
+  }
+}
+
+function writePaginatedServicesCard(
+  ctx: ResourcePdfLayoutContext,
+  x: number,
+  width: number,
+  title: string,
+  services: string[]
+): void {
+  const { doc } = ctx;
+  const { fontSize, spacing } = PDF_RESOURCE_PAGE;
+  const innerX = x + spacing.cardPadding;
+  const innerW = width - spacing.cardPadding * 2;
+  let index = 0;
+  let segment = 0;
+
+  while (index < services.length) {
+    ensureSpace(ctx, spacing.cardPadding * 2 + fontSize.sectionLabel + 20);
+
+    doc.font("Helvetica-Bold").fontSize(fontSize.sectionLabel);
+    const titleText = segment === 0 ? title : `${title} (${segment + 1})`;
+    const titleHeight = doc.heightOfString(titleText, { width: innerW });
+
+    const cardY = ctx.y;
+    let cursorY = cardY + spacing.cardPadding + titleHeight + spacing.titleBodyGap;
+    const bottomLimit = ctx.getContentBottom() - spacing.cardPadding;
+    const itemsInSegment: string[] = [];
+
+    doc.font("Helvetica").fontSize(fontSize.body);
+    while (index < services.length) {
+      const item = services[index];
+      const itemHeight =
+        doc.heightOfString(item, { width: innerW, lineGap: spacing.lineGap }) + spacing.sectionGap;
+      if (cursorY + itemHeight > bottomLimit && itemsInSegment.length > 0) {
+        break;
+      }
+      itemsInSegment.push(item);
+      cursorY += itemHeight;
+      index += 1;
+    }
+
+    const cardHeight = cursorY + spacing.cardPadding - cardY;
+    drawCardBackground(doc, x, cardY, width, cardHeight);
+
+    doc
+      .font("Helvetica-Bold")
+      .fontSize(fontSize.sectionLabel)
+      .fillColor(PDF_THEME.colors.foreground)
+      .text(titleText, innerX, cardY + spacing.cardPadding, { width: innerW });
+
+    let itemY = cardY + spacing.cardPadding + titleHeight + spacing.titleBodyGap;
+    doc.font("Helvetica").fontSize(fontSize.body);
+    for (const item of itemsInSegment) {
+      doc
+        .fillColor(PDF_THEME.colors.checkAccent)
+        .text("✓ ", innerX, itemY, { continued: true, lineBreak: false });
+      doc
+        .fillColor(PDF_THEME.colors.foreground)
+        .text(item, { width: innerW, lineGap: spacing.lineGap });
+      itemY = doc.y + spacing.sectionGap;
+    }
+
+    ctx.y = cardY + cardHeight + spacing.cardGap;
+    segment += 1;
+
+    if (index < services.length) {
+      advancePage(ctx);
+    }
+  }
+}
+
+function writeTitleAndDescription(
+  ctx: ResourcePdfLayoutContext,
+  x: number,
+  width: number,
+  resource: Resource,
+  description: string,
+  coverageLabel: string | null
+): void {
+  const { doc } = ctx;
+  const { fontSize, spacing } = PDF_RESOURCE_PAGE;
+  const innerX = x + spacing.cardPadding;
+  const innerW = width - spacing.cardPadding * 2;
+  let remaining = description.trim();
+  let segment = 0;
+
+  while (segment === 0 || remaining) {
+    ensureSpace(ctx, spacing.cardPadding * 2 + fontSize.resourceName + 20);
+
+    const segmentText =
+      segment === 0 && coverageLabel ? `${coverageLabel}\n\n${remaining}` : remaining;
+
+    doc.font(segment === 0 ? "Helvetica-Bold" : "Helvetica").fontSize(
+      segment === 0 ? fontSize.resourceName : fontSize.meta
+    );
+    const nameHeight =
+      doc.heightOfString(resource.name, { width: innerW }) + spacing.titleBodyGap;
+
+    const textBudget =
+      ctx.getContentBottom() - ctx.y - spacing.cardPadding * 2 - nameHeight - spacing.cardPadding;
+
+    doc.font("Helvetica").fontSize(fontSize.body);
+    const { head, tail } = splitTextToHeight(
+      doc,
+      segmentText,
+      innerW,
+      Math.max(24, textBudget),
+      fontSize.body,
+      spacing.lineGap
+    );
+
+    if (!head && remaining) {
+      advancePage(ctx);
+      continue;
+    }
+
+    const bodyHeight = doc.heightOfString(head, { width: innerW, lineGap: spacing.lineGap });
+    const cardHeight = spacing.cardPadding * 2 + nameHeight + bodyHeight;
+    const cardY = ctx.y;
+
+    drawCardBackground(doc, x, cardY, width, cardHeight);
+
+    doc
+      .font(segment === 0 ? "Helvetica-Bold" : "Helvetica")
+      .fontSize(segment === 0 ? fontSize.resourceName : fontSize.meta)
+      .fillColor(segment === 0 ? PDF_THEME.colors.foreground : PDF_THEME.colors.muted)
+      .text(resource.name, innerX, cardY + spacing.cardPadding, { width: innerW });
+
+    doc
+      .font("Helvetica")
+      .fontSize(fontSize.body)
+      .fillColor(PDF_THEME.colors.muted)
+      .text(head, innerX, doc.y + spacing.titleBodyGap, { width: innerW, lineGap: spacing.lineGap });
+
+    ctx.y = cardY + cardHeight + spacing.cardGap;
+    remaining = tail;
+    segment += 1;
+
+    if (remaining) {
+      advancePage(ctx);
+    }
+  }
 }
 
 function buildContactEntries(
@@ -199,127 +390,7 @@ function buildContactEntries(
   return entries;
 }
 
-function measureLeftColumnHeight(
-  doc: PDFDocumentInstance,
-  options: {
-    leftX: number;
-    leftWidth: number;
-    resource: Resource;
-    description: string;
-    coverageLabel: string | null;
-    labels: SavedResourcesPdfLabels;
-    services: string[];
-    eligibility: string | null;
-    notes: string | null;
-  }
-): number {
-  const { leftWidth, resource, description, coverageLabel, labels, services, eligibility, notes } =
-    options;
-  const compact = PDF_RESOURCE_PAGE;
-  let height = 0;
-
-  height += measureTitleCardHeight(doc, options.leftX, leftWidth, resource, description, coverageLabel);
-
-  if (services.length > 0) {
-    height += measureFixedPdfCard(
-      doc,
-      leftWidth,
-      { title: labels.services, listItems: services },
-      compact
-    );
-  }
-  if (eligibility) {
-    height += measureFixedPdfCard(doc, leftWidth, { title: labels.eligibility, body: eligibility }, compact);
-  }
-  if (notes) {
-    height += measureFixedPdfCard(doc, leftWidth, { title: labels.goodToKnow, body: notes }, compact);
-  }
-
-  return height;
-}
-
-function prepareContentForPage(
-  doc: PDFDocumentInstance,
-  resource: Resource,
-  options: {
-    leftX: number;
-    leftWidth: number;
-    coverageLabel: string | null;
-    labels: SavedResourcesPdfLabels;
-    services: string[];
-    eligibility: string | null;
-    notes: string | null;
-    columnStartY: number;
-    contentBottom: number;
-  }
-): { description: string; eligibility: string | null; notes: string | null } {
-  const { fontSize, spacing, maxDescriptionChars, maxEligibilityChars, maxNotesChars } =
-    PDF_RESOURCE_PAGE;
-  const innerW = options.leftWidth - spacing.cardPadding * 2;
-  const available = options.contentBottom - options.columnStartY - 8;
-
-  let description = fitTextToMaxChars(resource.description, maxDescriptionChars);
-  let eligibility = options.eligibility ? fitTextToMaxChars(options.eligibility, maxEligibilityChars) : null;
-  let notes = options.notes ? fitTextToMaxChars(options.notes, maxNotesChars) : null;
-
-  for (let attempt = 0; attempt < 8; attempt += 1) {
-    const leftHeight = measureLeftColumnHeight(doc, {
-      leftX: options.leftX,
-      leftWidth: options.leftWidth,
-      resource,
-      description,
-      coverageLabel: options.coverageLabel,
-      labels: options.labels,
-      services: options.services,
-      eligibility,
-      notes,
-    });
-
-    if (leftHeight <= available) {
-      return { description, eligibility, notes };
-    }
-
-    const titleOnlyHeight = measureTitleCardHeight(
-      doc,
-      options.leftX,
-      options.leftWidth,
-      resource,
-      "",
-      options.coverageLabel
-    );
-    const otherHeight =
-      leftHeight -
-      measureTitleCardHeight(
-        doc,
-        options.leftX,
-        options.leftWidth,
-        resource,
-        description,
-        options.coverageLabel
-      );
-    const descBudget = Math.max(36, available - titleOnlyHeight - otherHeight - spacing.cardGap);
-
-    description = fitTextToHeight(
-      doc,
-      resource.description,
-      innerW,
-      Math.max(24, descBudget - (options.coverageLabel ? 20 : 0)),
-      fontSize.body,
-      spacing.lineGap
-    );
-
-    if (attempt >= 4) {
-      eligibility = eligibility
-        ? fitTextToMaxChars(eligibility, Math.max(80, maxEligibilityChars - attempt * 40))
-        : null;
-      notes = notes ? fitTextToMaxChars(notes, Math.max(60, maxNotesChars - attempt * 30)) : null;
-    }
-  }
-
-  return { description, eligibility, notes };
-}
-
-/** Renders one resource on the current page. Caller must addPage() before invoking. */
+/** Renders one resource across as many pages as needed. Caller must addPage() before invoking. */
 export function writeResourceSinglePage(
   doc: PDFDocumentInstance,
   options: {
@@ -329,10 +400,12 @@ export function writeResourceSinglePage(
     marginLeft: number;
     contentWidth: number;
     contentTop: number;
-    contentBottom: number;
+    getContentBottom: () => number;
+    newPage: () => void;
   }
 ): void {
-  const { resource, labels, locale, marginLeft, contentWidth, contentTop, contentBottom } = options;
+  const { resource, labels, locale, marginLeft, contentWidth, contentTop, getContentBottom, newPage } =
+    options;
   const { t } = createTranslator(locale);
   const compact = PDF_RESOURCE_PAGE;
   const { spacing } = compact;
@@ -358,73 +431,108 @@ export function writeResourceSinglePage(
   });
 
   const columnStartY = y;
-  const services = resource.services.slice(0, PDF_RESOURCE_PAGE.maxServices);
-  const eligibility = resource.eligibility?.trim() || null;
-  const notes = resource.notes?.trim() || null;
+  const contentBottom = getContentBottom();
 
-  const { description, eligibility: fittedEligibility, notes: fittedNotes } =
-    prepareContentForPage(doc, resource, {
-      leftX,
-      leftWidth,
-      coverageLabel: titleCoverageLabel,
-      labels,
-      services,
-      eligibility,
-      notes,
-      columnStartY,
-      contentBottom,
-    });
-
-  let rightY = columnStartY;
   const contactEntries = buildContactEntries(resource, labels, locale);
   if (contactEntries.length > 0) {
-    rightY = writeFixedPdfCard(doc, rightX, rightY, rightWidth, {
-      title: labels.contactInfo,
-      labeledValues: contactEntries,
-    }, compact);
+    writeFixedPdfCard(
+      doc,
+      rightX,
+      columnStartY,
+      rightWidth,
+      { title: labels.contactInfo, labeledValues: contactEntries },
+      compact
+    );
   }
 
   const counties = buildCountiesText(resource, labels);
   if (counties) {
-    rightY = writeFixedPdfCard(doc, rightX, rightY, rightWidth, {
-      title: labels.countiesServed,
-      body: counties,
-    }, compact);
+    const contactHeight =
+      contactEntries.length > 0
+        ? measureFixedPdfCard(
+            doc,
+            rightWidth,
+            { title: labels.contactInfo, labeledValues: contactEntries },
+            compact
+          )
+        : 0;
+    writeFixedPdfCard(
+      doc,
+      rightX,
+      columnStartY + contactHeight,
+      rightWidth,
+      { title: labels.countiesServed, body: counties },
+      compact
+    );
   }
 
   const lastUpdatedText = t("resources.lastUpdated", {
     date: formatDate(resource.updated_at, locale),
   });
-  if (rightY + 14 <= contentBottom) {
+  let rightColumnHeight = 0;
+  if (contactEntries.length > 0) {
+    rightColumnHeight += measureFixedPdfCard(
+      doc,
+      rightWidth,
+      { title: labels.contactInfo, labeledValues: contactEntries },
+      compact
+    );
+  }
+  if (counties) {
+    rightColumnHeight += measureFixedPdfCard(
+      doc,
+      rightWidth,
+      { title: labels.countiesServed, body: counties },
+      compact
+    );
+  }
+  if (columnStartY + rightColumnHeight + 14 <= contentBottom) {
     doc
       .font("Helvetica")
       .fontSize(compact.fontSize.meta)
       .fillColor(PDF_THEME.colors.muted)
-      .text(lastUpdatedText, rightX, rightY, { width: rightWidth, align: "center" });
+      .text(lastUpdatedText, rightX, columnStartY + rightColumnHeight, {
+        width: rightWidth,
+        align: "center",
+      });
   }
 
-  let leftY = columnStartY;
-  leftY = writeTitleCard(doc, leftX, leftY, leftWidth, resource, description, titleCoverageLabel);
+  const ctx: ResourcePdfLayoutContext = {
+    doc,
+    contentTop,
+    getContentBottom,
+    newPage,
+    y: columnStartY,
+  };
 
+  writeTitleAndDescription(
+    ctx,
+    leftX,
+    leftWidth,
+    resource,
+    resource.description,
+    titleCoverageLabel
+  );
+
+  const services = resource.services.filter(Boolean);
   if (services.length > 0) {
-    leftY = writeFixedPdfCard(doc, leftX, leftY, leftWidth, {
-      title: labels.services,
-      listItems: services,
-    }, compact);
+    writePaginatedServicesCard(ctx, leftX, leftWidth, labels.services, services);
   }
 
-  if (fittedEligibility) {
-    leftY = writeFixedPdfCard(doc, leftX, leftY, leftWidth, {
+  const eligibility = resource.eligibility?.trim();
+  if (eligibility) {
+    writePaginatedBodyCard(ctx, leftX, leftWidth, {
       title: labels.eligibility,
-      body: fittedEligibility,
+      body: eligibility,
       variant: "eligibility",
-    }, compact);
+    });
   }
 
-  if (fittedNotes) {
-    writeFixedPdfCard(doc, leftX, leftY, leftWidth, {
+  const notes = resource.notes?.trim();
+  if (notes) {
+    writePaginatedBodyCard(ctx, leftX, leftWidth, {
       title: labels.goodToKnow,
-      body: fittedNotes,
-    }, compact);
+      body: notes,
+    });
   }
 }

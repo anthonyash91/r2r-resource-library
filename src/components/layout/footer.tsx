@@ -18,6 +18,9 @@ const footerLinkClass =
 const footerHeadingClass =
   "mb-4 text-xs font-semibold uppercase tracking-wider text-[var(--footer-foreground)]";
 
+const footerLinkColumnClass =
+  "min-w-0 text-left lg:w-max lg:justify-self-end";
+
 export async function Footer() {
   const { t } = await getServerTranslator();
   const branding = await getSiteBranding();
@@ -55,8 +58,8 @@ export async function Footer() {
   return (
     <footer className="footer-surface mt-auto">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.5fr)_repeat(3,minmax(0,1fr))] lg:gap-12">
-          <div className="sm:col-span-2 lg:col-span-1">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.5fr)_repeat(3,minmax(0,1fr))] lg:gap-12">
+          <div className="min-w-0 sm:col-span-2 lg:col-span-1">
             <FooterBrandingLockup
               brandName={branding.brandName}
               tagline={branding.footerTagline}
@@ -74,7 +77,7 @@ export async function Footer() {
             </p>
           </div>
 
-          <div className="w-max justify-self-end text-left">
+          <div className={footerLinkColumnClass}>
             <h2 className={footerHeadingClass}>{t("footer.resourcesHeading")}</h2>
             <ul className="space-y-2.5">
               {resourceLinks.map(({ href, label }) => (
@@ -87,7 +90,7 @@ export async function Footer() {
             </ul>
           </div>
 
-          <div className="w-max justify-self-end text-left">
+          <div className={footerLinkColumnClass}>
             <h2 className={footerHeadingClass}>{t("footer.helpHeading")}</h2>
             <ul className="space-y-2.5">
               {helpLinks.map(({ href, label }) => (
@@ -100,7 +103,7 @@ export async function Footer() {
             </ul>
           </div>
 
-          <div className="w-max justify-self-end text-left">
+          <div className={footerLinkColumnClass}>
             <h2 className={footerHeadingClass}>{t("footer.accountHeading")}</h2>
             <ul className="space-y-2.5">
               {accountLinks.map(({ href, label }) => (

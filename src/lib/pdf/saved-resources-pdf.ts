@@ -121,13 +121,6 @@ export async function generateSavedResourcesPdf(options: {
       lines: introLines,
     });
 
-    const contentBottom = () =>
-      getPdfContentBottom(doc, {
-        isFirstPage: false,
-        footerText: labels.footer,
-        contentWidth,
-      });
-
     resources.forEach((resource) => {
       doc.addPage();
       writeResourceSinglePage(doc, {
@@ -137,7 +130,15 @@ export async function generateSavedResourcesPdf(options: {
         marginLeft,
         contentWidth,
         contentTop,
-        contentBottom: contentBottom(),
+        getContentBottom: () =>
+          getPdfContentBottom(doc, {
+            isFirstPage: false,
+            footerText: labels.footer,
+            contentWidth,
+          }),
+        newPage: () => {
+          doc.addPage();
+        },
       });
     });
 

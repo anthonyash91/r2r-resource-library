@@ -18,9 +18,6 @@ export const PDF_RESOURCE_PAGE = {
     pillHeight: 20,
     pillPaddingX: 12,
   },
-  maxDescriptionChars: 520,
-  maxEligibilityChars: 280,
-  maxNotesChars: 220,
   maxServices: 10,
 } as const;
 

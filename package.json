@@ -8,6 +8,10 @@
     "start": "next start -p 8080",
     "lint": "eslint",
     "seed:resources": "npx tsx scripts/generate-resources-seed.ts data/resources.csv",
+    "seed:resources:ohio": "python3 scripts/build-ohio-resources.py && python3 scripts/enrich-resources.py data/ohio-resources.csv --write-json data/enrichments/ohio-enriched.json && RESOURCES_DEFAULT_STATE=Ohio RESOURCES_UUID_PREFIX=d2000001 RESOURCES_SEED_OUTPUT=supabase/seed-ohio-resources.sql RESOURCES_INCLUDE_CATEGORIES=false npx tsx scripts/generate-resources-seed.ts data/ohio-resources.csv",
+    "enrich:ohio": "python3 scripts/enrich-resources.py data/ohio-resources.csv --write-json data/enrichments/ohio-enriched.json",
+    "seed:resources:all": "npm run seed:resources && npm run seed:resources:ohio",
+    "db:push:ohio": "npx tsx scripts/push-ohio-resources.ts",
     "seed:enrich": "npx tsx scripts/apply-enrichments.ts",
     "migrate:eligibility": "npx tsx scripts/migrate-eligibility-fields.ts",
     "migrate:served-counties": "npx tsx scripts/migrate-served-counties.ts"

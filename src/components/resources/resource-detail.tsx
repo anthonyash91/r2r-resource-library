@@ -13,6 +13,7 @@ import {
   ArrowLeft,
 } from "lucide-react";
 import { CategoryBadge } from "@/components/resources/category-badge";
+import { StateBadge } from "@/components/resources/state-badge";
 import { StatewideBadge } from "@/components/resources/statewide-badge";
 import { RegionalBadge } from "@/components/resources/regional-badge";
 import { Card, CardDescription, CardHeader } from "@/components/ui/card";
@@ -87,6 +88,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
               {resource.category && (
                 <CategoryBadge category={resource.category} />
               )}
+              {resource.state && <StateBadge state={resource.state} />}
               <RegionalBadge resource={resource} />
               <StatewideBadge resource={resource} />
             </div>

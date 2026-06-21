@@ -1,5 +1,5 @@
 import type { Resource } from "@/types";
-import { ResourceMasonry } from "@/components/resources/resource-masonry";
+import { PaginatedResourceList } from "@/components/resources/paginated-resource-list";
 import { ResourceResultsSummary } from "@/components/resources/resource-results-summary";
 import { cn, sectionStackGap } from "@/lib/utils";
 
@@ -49,7 +49,7 @@ export function CountyFilteredResourceResults({
             </h2>
             <p className="text-base text-muted-foreground">{inCountyHint}</p>
           </header>
-          <ResourceMasonry resources={local} />
+          <PaginatedResourceList resources={local} />
         </section>
       ) : null}
 
@@ -64,7 +64,7 @@ export function CountyFilteredResourceResults({
             </h2>
             <p className="text-base text-muted-foreground">{statewideHint}</p>
           </header>
-          <ResourceMasonry resources={statewide} />
+          <PaginatedResourceList resources={statewide} />
         </section>
       ) : null}
     </div>

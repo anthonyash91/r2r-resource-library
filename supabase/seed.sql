@@ -2,8 +2,14 @@
 --
 -- Fresh resource import (CSV):
 --   1. supabase/reset-resources.sql          — delete all resources & categories
---   2. npm run seed:resources                — generate SQL from data/resources.csv
---   3. supabase/seed-resources.sql           — load your CSV data
+--   2. npm run seed:resources                — generate Kentucky SQL from data/resources.csv
+--   3. supabase/seed-resources.sql           — load Kentucky resources
+--   4. npm run seed:resources:ohio           — generate Ohio SQL + mock module
+--   5. supabase/seed-ohio-resources.sql      — load Ohio resources (after Kentucky)
+--
+-- Add Ohio without wiping Kentucky:
+--   npm run seed:resources:ohio
+--   Run supabase/seed-ohio-resources.sql in the Supabase SQL Editor
 --
 -- Other seeds (optional, run after reset-resources if you want defaults back):
 --   supabase/seed-faqs.sql

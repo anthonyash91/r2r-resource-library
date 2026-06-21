@@ -47,7 +47,9 @@ import { isValidCoverage } from "../src/lib/resource-coverage";
 
 const DEFAULT_STATE = process.env.RESOURCES_DEFAULT_STATE ?? "Kentucky";
 const INPUT = process.argv[2] ?? "data/resources.csv";
-const OUTPUT = "supabase/seed-resources.sql";
+const OUTPUT = process.env.RESOURCES_SEED_OUTPUT ?? "supabase/seed-resources.sql";
+const UUID_PREFIX = process.env.RESOURCES_UUID_PREFIX ?? "d1000001";
+const INCLUDE_CATEGORIES = process.env.RESOURCES_INCLUDE_CATEGORIES !== "false";
 
 const CATEGORY_UUID = Object.fromEntries(
   KENTUCKY_CATEGORIES.map((category, index) => [
@@ -176,7 +178,7 @@ function sqlArray(values: string[]) {
 }
 
 function resourceUuid(index: number) {
-  return `d1000001-${String(index + 1).padStart(4, "0")}-4000-8000-000000000001`;
+  return `${UUID_PREFIX}-${String(index + 1).padStart(4, "0")}-4000-8000-000000000001`;
 }
 
 function cell(row: Record<string, string>, key: string) {
@@ -323,17 +325,8 @@ const categoryList = KENTUCKY_CATEGORIES.map(
     `  (${sqlString(CATEGORY_UUID[c.slug])}, ${sqlString(c.name)}, ${sqlString(c.slug)}, ${sqlString(c.description)}, ${sqlString(c.icon)}, ${c.sort_order}, ${c.is_active})`
 ).join(",\n");
 
-const sql = `-- Resource import seed (generated from CSV)
--- Source file: ${INPUT}
--- Generated: ${new Date().toISOString()}
--- Run after: supabase/migrations/001_initial_schema.sql
---            supabase/migrations/002_add_description_es.sql
---            supabase/migrations/004_add_eligibility_es_and_notes.sql
---            supabase/migrations/005_add_served_counties.sql
---            supabase/seed-kentucky.sql (optional, if categories not yet loaded)
--- Regenerate: npx tsx scripts/generate-resources-seed.ts ${INPUT}
-
-INSERT INTO categories (id, name, slug, description, icon, sort_order, is_active) VALUES
+const categoriesSql = INCLUDE_CATEGORIES
+  ? `INSERT INTO categories (id, name, slug, description, icon, sort_order, is_active) VALUES
 ${categoryList}
 ON CONFLICT (slug) DO UPDATE SET
   name = EXCLUDED.name,
@@ -342,7 +335,23 @@ ON CONFLICT (slug) DO UPDATE SET
   sort_order = EXCLUDED.sort_order,
   is_active = EXCLUDED.is_active;
 
-INSERT INTO resources (
+`
+  : `-- Categories skipped (RESOURCES_INCLUDE_CATEGORIES=false); run Kentucky seed first.
+
+`;
+
+const sql = `-- Resource import seed (generated from CSV)
+-- Source file: ${INPUT}
+-- State: ${DEFAULT_STATE}
+-- UUID prefix: ${UUID_PREFIX}
+-- Generated: ${new Date().toISOString()}
+-- Run after: supabase/migrations/001_initial_schema.sql
+--            supabase/migrations/002_add_description_es.sql
+--            supabase/migrations/004_add_eligibility_es_and_notes.sql
+--            supabase/migrations/005_add_served_counties.sql
+-- Regenerate: RESOURCES_DEFAULT_STATE="${DEFAULT_STATE}" RESOURCES_UUID_PREFIX="${UUID_PREFIX}" RESOURCES_SEED_OUTPUT="${OUTPUT}" npx tsx scripts/generate-resources-seed.ts ${INPUT}
+
+${categoriesSql}INSERT INTO resources (
   id, name, description, description_es, category_id,
   state, county, city, address, phone, website, email, hours,
   eligibility, eligibility_es, notes, notes_es,
@@ -389,7 +398,10 @@ const gapRows = records
     const label = cell(row, "name") || sourceId;
     return { sourceId, label, missing };
   })
-  .filter((row): row is { sourceId: string; label: string; missing: string[] } => row !== null);
+  .filter(
+    (row): row is { sourceId: string; label: string; missing: (typeof OPTIONAL_FIELDS)[number][] } =>
+      row !== null
+  );
 
 if (gapRows.length) {
   console.log(`\n${gapRows.length} row(s) still have empty optional fields:`);
