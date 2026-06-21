@@ -8,24 +8,30 @@ import {
   getCategories,
   getResources,
   getHomepageContent,
+  getFeaturedResources,
+  getAnnouncements,
 } from "@/lib/data";
+import { AnnouncementsBanner } from "@/components/home/announcements-banner";
+import { cn, pageSectionPadding, checkIconClass } from "@/lib/utils";
 
 const POPULAR_TAG_SLUGS = [
   "housing",
   "employment",
   "healthcare",
   "legal-aid",
-  "mental-health",
-  "substance-abuse-recovery",
+  "substance-use-treatment",
+  "basic-needs",
 ] as const;
 
 export default async function HomePage() {
   const { t } = await getServerTranslator();
 
-  const [categories, resources, homepage] = await Promise.all([
+  const [categories, resources, homepage, featuredResources, announcements] = await Promise.all([
     getCategories(),
     getResources(),
     getHomepageContent(),
+    getFeaturedResources(),
+    getAnnouncements(),
   ]);
 
   const headline = homepage.hero_headline ?? t("home.heroHeadline");
@@ -80,6 +86,8 @@ export default async function HomePage() {
 
   return (
     <>
+      <AnnouncementsBanner announcements={announcements} />
+
       <HeroSection
         headline={headline}
         subheadline={subheadline}
@@ -89,7 +97,7 @@ export default async function HomePage() {
         popularTags={popularTags}
       />
 
-      <section className="px-4 py-16 sm:px-6 lg:px-8 lg:py-20" aria-labelledby="categories-heading">
+      <section className={cn("bg-background", pageSectionPadding)} aria-labelledby="categories-heading">
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 text-center">
             <h2 id="categories-heading" className="text-3xl font-bold sm:text-4xl">
@@ -100,13 +108,19 @@ export default async function HomePage() {
             </p>
           </header>
 
-          <CategoryPills categories={categories} compact wrap />
+          <CategoryPills
+            categories={categories}
+            compact
+            wrap
+            size="lg"
+            highlightAllWhenUnset={false}
+          />
         </div>
       </section>
 
       <section
         id="how-it-works-heading"
-        className="bg-muted px-4 py-16 sm:px-6 lg:px-8 lg:py-20"
+        className={cn("app-band-muted", pageSectionPadding)}
         aria-labelledby="how-it-works-title"
       >
         <div className="mx-auto max-w-6xl">
@@ -124,7 +138,7 @@ export default async function HomePage() {
                   <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary shadow-sm sm:h-[4.5rem] sm:w-[4.5rem]">
                     <Icon className="h-7 w-7 text-primary-foreground sm:h-8 sm:w-8" aria-hidden="true" />
                   </div>
-                  <span className="absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full bg-accent text-sm font-bold text-accent-foreground shadow-sm ring-2 ring-muted">
+                  <span className="how-it-works-step-number absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full text-sm font-bold shadow-sm ring-2 ring-muted">
                     {step}
                   </span>
                 </div>
@@ -148,10 +162,10 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <FeaturedResourcesSection resources={resources} />
+      <FeaturedResourcesSection resources={featuredResources} />
 
       <section
-        className="bg-gradient-to-br from-primary via-primary-hover to-accent px-4 py-16 sm:px-6 lg:px-8 lg:py-20"
+        className={cn("app-hero-surface", pageSectionPadding)}
         aria-labelledby="built-for-heading"
       >
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
@@ -167,9 +181,9 @@ export default async function HomePage() {
             </p>
             <ul className="mb-10 space-y-4">
               {builtForFeatures.map((item) => (
-                <li key={item} className="flex items-start gap-3">
+                <li key={item} className="flex items-center gap-2">
                   <CircleCheck
-                    className="mt-0.5 h-5 w-5 shrink-0 text-secondary"
+                    className={cn("h-5 w-5 shrink-0", checkIconClass)}
                     aria-hidden="true"
                   />
                   <span className="text-base text-primary-foreground/90">{item}</span>

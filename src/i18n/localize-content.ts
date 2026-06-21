@@ -1,4 +1,5 @@
 import type { Announcement, Category, Faq, Resource } from "@/types";
+import { resolveCategoryMessageSlug } from "./category-label";
 import { createTranslator } from "./translator";
 import type { Locale } from "./types";
 
@@ -21,44 +22,64 @@ const CATEGORY_SLUG_BY_ID: Record<string, string> = {
   "cat-emergency": "emergency-assistance",
 };
 
-function categorySlug(categoryId: string, slug?: string) {
-  return slug ?? CATEGORY_SLUG_BY_ID[categoryId] ?? categoryId;
+function categoryMessageSlug(categoryId: string, slug?: string): string {
+  const resolved = slug ?? CATEGORY_SLUG_BY_ID[categoryId] ?? categoryId;
+  return resolveCategoryMessageSlug(resolved);
+}
+
+export function localizeCategory(category: Category, locale: Locale): Category {
+  if (locale === "en") return category;
+
+  const { messages } = createTranslator(locale);
+  const slug = categoryMessageSlug(category.id, category.slug);
+  const localized = messages.categories[slug as keyof typeof messages.categories];
+  if (!localized) return category;
+
+  return {
+    ...category,
+    name: localized.name,
+    description: localized.description,
+  };
 }
 
 export function localizeCategories(categories: Category[], locale: Locale): Category[] {
   if (locale === "en") return categories;
-
-  const { t, messages } = createTranslator(locale);
-
-  return categories.map((category) => {
-    const slug = categorySlug(category.id, category.slug);
-    const localized = messages.categories[slug as keyof typeof messages.categories];
-    if (!localized) return category;
-
-    return {
-      ...category,
-      name: localized.name,
-      description: localized.description,
-    };
-  });
+  return categories.map((category) => localizeCategory(category, locale));
 }
 
 export function localizeResource(resource: Resource, locale: Locale, index?: number): Resource {
-  if (resource.id.startsWith("res-ky-")) {
-    if (locale === "es" && resource.description_es) {
-      return { ...resource, description: resource.description_es };
-    }
-    return resource;
-  }
-
   if (locale === "en") return resource;
 
+  const localizedCategory = resource.category
+    ? localizeCategory(resource.category, locale)
+    : resource.category;
+
+  const hasDbLocalization =
+    resource.id.startsWith("res-ky-") ||
+    resource.id.startsWith("d1000001-") ||
+    Boolean(resource.description_es || resource.eligibility_es || resource.notes_es);
+
+  if (hasDbLocalization) {
+    return {
+      ...resource,
+      ...(resource.description_es ? { description: resource.description_es } : {}),
+      ...(resource.eligibility_es ? { eligibility: resource.eligibility_es } : {}),
+      ...(resource.notes_es ? { notes: resource.notes_es } : {}),
+      ...(localizedCategory ? { category: localizedCategory } : {}),
+    };
+  }
+
   const { t, messages } = createTranslator(locale);
-  const slug = categorySlug(resource.category_id, resource.category?.slug);
+  const slug = categoryMessageSlug(resource.category_id, resource.category?.slug);
   const template = messages.resourceTemplates[slug as keyof typeof messages.resourceTemplates];
   const category = messages.categories[slug as keyof typeof messages.categories];
 
-  if (!template || !category) return resource;
+  if (!template || !category) {
+    return {
+      ...resource,
+      ...(localizedCategory ? { category: localizedCategory } : {}),
+    };
+  }
 
   const resourceIndex =
     index ?? (resource.id.startsWith("res-") ? Number.parseInt(resource.id.slice(4), 10) - 1 : 0);
@@ -68,12 +89,6 @@ export function localizeResource(resource: Resource, locale: Locale, index?: num
   const state = resource.state ?? "";
   const suffix = city ? ` – ${city}` : "";
 
-  const localizedCategory = {
-    ...resource.category!,
-    name: category.name,
-    description: category.description,
-  };
-
   return {
     ...resource,
     name: `${namePrefix}${suffix}`,
@@ -82,7 +97,7 @@ export function localizeResource(resource: Resource, locale: Locale, index?: num
     services: [...template.services],
     hours:
       slug === "emergency-assistance" ? template.hoursEmergency : template.hoursStandard,
-    category: resource.category ? localizedCategory : resource.category,
+    category: localizedCategory ?? resource.category,
   };
 }
 
@@ -91,59 +106,83 @@ export function localizeResources(resources: Resource[], locale: Locale): Resour
 }
 
 export function localizeFaqs(faqs: Faq[], locale: Locale): Faq[] {
-  if (locale === "en") return faqs;
-
-  const { t, messages } = createTranslator(locale);
-  const faqKeys = ["faq1", "faq2", "faq3", "faq4", "faq5"] as const;
-
-  return faqs.map((faq, index) => {
-    const key = faqKeys[index];
-    if (!key) return faq;
-    const localized = messages.faqs[key];
-    return {
-      ...faq,
-      question: localized.question,
-      answer: localized.answer,
-      category:
-        localized.category === "general"
-          ? t("faq.general")
-          : localized.category === "usingTheSite"
-            ? t("faq.usingTheSite")
-            : faq.category,
-    };
-  });
+  return faqs;
 }
 
 export function localizeAnnouncements(
   announcements: Announcement[],
-  locale: Locale
+  _locale: Locale
 ): Announcement[] {
-  if (locale === "en") return announcements;
-
-  const { t } = createTranslator(locale);
-
-  return announcements.map((announcement, index) => {
-    if (index !== 0) return announcement;
-    return {
-      ...announcement,
-      title: t("mock.announcementTitle"),
-      content: t("mock.announcementContent"),
-    };
-  });
+  return announcements;
 }
 
 export function getLocalizedHomepage(
   homepage: Record<string, string>,
   locale: Locale
 ): Record<string, string> {
-  if (locale === "en") return homepage;
-
   const { t } = createTranslator(locale);
+
+  if (locale === "es") {
+    return {
+      ...homepage,
+      hero_headline:
+        homepage.hero_headline_es || homepage.hero_headline || t("home.heroHeadline"),
+      hero_subheadline:
+        homepage.hero_subheadline_es ||
+        homepage.hero_subheadline ||
+        t("home.heroSubheadline"),
+      hero_headline_highlight:
+        homepage.hero_headline_highlight_es ||
+        homepage.hero_headline_highlight ||
+        t("home.heroHighlight"),
+    };
+  }
+
   return {
     ...homepage,
-    hero_headline: t("home.heroHeadline"),
-    hero_subheadline: t("home.heroSubheadline"),
-    hero_headline_highlight: t("home.heroHighlight"),
+    hero_headline: homepage.hero_headline || t("home.heroHeadline"),
+    hero_subheadline: homepage.hero_subheadline || t("home.heroSubheadline"),
+    hero_headline_highlight:
+      homepage.hero_headline_highlight || t("home.heroHighlight"),
+  };
+}
+
+export type SiteBranding = {
+  brandName: string;
+  navTagline: string;
+  footerTagline: string;
+  footerDescription: string;
+};
+
+function pickLocalizedSiteField(
+  homepage: Record<string, string>,
+  key: string,
+  locale: Locale,
+  fallbackKey: string
+): string {
+  const { t } = createTranslator(locale);
+
+  if (locale === "es") {
+    return homepage[`${key}_es`] || homepage[key] || t(fallbackKey);
+  }
+
+  return homepage[key] || t(fallbackKey);
+}
+
+export function resolveSiteBranding(
+  homepage: Record<string, string>,
+  locale: Locale
+): SiteBranding {
+  return {
+    brandName: pickLocalizedSiteField(homepage, "nav_brand_name", locale, "nav.brandName"),
+    navTagline: pickLocalizedSiteField(homepage, "nav_tagline", locale, "nav.tagline"),
+    footerTagline: pickLocalizedSiteField(homepage, "footer_tagline", locale, "footer.tagline"),
+    footerDescription: pickLocalizedSiteField(
+      homepage,
+      "footer_description",
+      locale,
+      "footer.description"
+    ),
   };
 }
 

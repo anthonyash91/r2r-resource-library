@@ -12,6 +12,12 @@ import {
   applySearchQueryFilter,
   buildLocationCatalog,
 } from "./resource-search";
+import {
+  resourceServesCounty,
+  sortResourcesByCountyRelevance,
+  isStatewideResource,
+} from "./resource-coverage";
+import { KENTUCKY_COUNTIES } from "./kentucky/counties";
 
 export { MOCK_CATEGORIES };
 
@@ -45,7 +51,10 @@ export function filterMockResources(filters: ResourceFilters): Resource[] {
   const catalog = buildLocationCatalog(MOCK_RESOURCES);
 
   if (filters.state) results = results.filter((r) => r.state === filters.state);
-  if (filters.county) results = results.filter((r) => r.county === filters.county);
+  if (filters.county) {
+    results = results.filter((r) => resourceServesCounty(r, filters.county!));
+    results = sortResourcesByCountyRelevance(results, filters.county);
+  }
   if (filters.city) results = results.filter((r) => r.city === filters.city);
   if (filters.category) {
     results = results.filter(
@@ -59,6 +68,12 @@ export function filterMockResources(filters: ResourceFilters): Resource[] {
   if (filters.tag) {
     const tag = filters.tag.toLowerCase();
     results = results.filter((r) => r.tags.some((t) => t.toLowerCase() === tag));
+  }
+  if (filters.coverage === "statewide") {
+    results = results.filter((r) => isStatewideResource(r));
+  }
+  if (filters.coverage === "multi") {
+    results = results.filter((r) => r.coverage === "multi");
   }
   if (filters.eligibility) {
     const e = filters.eligibility.toLowerCase();
@@ -79,14 +94,25 @@ export function filterMockResources(filters: ResourceFilters): Resource[] {
 }
 
 export function getMockAnalytics(): AnalyticsSummary {
+  const activeResources = MOCK_RESOURCES.filter((r) => r.status === "active");
+
   return {
-    totalResources: 0,
-    totalUsers: 0,
+    totalResources: MOCK_RESOURCES.length,
+    activeResources: activeResources.length,
+    featuredResources: activeResources.filter((r) => r.is_featured).length,
+    totalCategories: MOCK_CATEGORIES.filter((c) => c.is_active).length,
+    totalViews: MOCK_RESOURCES.reduce((sum, resource) => sum + resource.view_count, 0),
     totalSaves: 0,
     resourcesByState: [],
     resourcesByCategory: [],
-    mostViewed: [],
-    mostSaved: [],
+    mostViewed: [...activeResources]
+      .filter((r) => r.view_count > 0)
+      .sort((a, b) => b.view_count - a.view_count)
+      .slice(0, 5),
+    mostSaved: [...activeResources]
+      .filter((r) => r.save_count > 0)
+      .sort((a, b) => b.save_count - a.save_count)
+      .slice(0, 5),
     recentActivity: [
       { date: "Mon", views: 0, saves: 0 },
       { date: "Tue", views: 0, saves: 0 },
@@ -104,14 +130,17 @@ export function getMockStates(): string[] {
 }
 
 export function getMockCounties(state?: string): string[] {
-  const resources = state ? MOCK_RESOURCES.filter((r) => r.state === state) : MOCK_RESOURCES;
+  if (!state || state === "Kentucky") return [...KENTUCKY_COUNTIES];
+  const resources = MOCK_RESOURCES.filter((r) => r.state === state);
   return [...new Set(resources.map((r) => r.county).filter(Boolean) as string[])].sort();
 }
 
 export function getMockCities(state?: string, county?: string): string[] {
   let resources = MOCK_RESOURCES;
   if (state) resources = resources.filter((r) => r.state === state);
-  if (county) resources = resources.filter((r) => r.county === county);
+  if (county) {
+    resources = resources.filter((r) => resourceServesCounty(r, county));
+  }
   return [...new Set(resources.map((r) => r.city).filter(Boolean) as string[])].sort();
 }
 

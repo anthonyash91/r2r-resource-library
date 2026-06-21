@@ -27,6 +27,17 @@ This app supports **English (`en`)** and **Spanish (`es`)**. Every user-facing s
 - Locale is stored in the `reentry_locale` cookie (`en` | `es`).
 - Do not break `LocaleProvider` in `src/components/providers.tsx` or the header `LanguageSwitcher`.
 
+## Resource CSV / enrichments
+
+When editing `data/resources.csv` or `data/enrichments/batch-*.json`:
+
+- **`eligibility` / `eligibility_es`**: who qualifies (income limits, age, referral requirements, residency, criminal-record policies).
+- **`notes` / `notes_es`**: operational tips only (crisis lines, alternate locations, how to apply, seasonal hours)—**not** eligibility.
+- **`served_counties`**: pipe-separated Kentucky county names the resource serves (e.g. `Boyle|Lincoln|Garrard`).
+- **`coverage`**: `single` (one county), `multi` (listed counties), or `statewide`.
+- **`county`**: primary office / map location only—not the full service area.
+- **`description` / `description_es`**: program overview; do not duplicate eligibility or operational notes here.
+
 ## Checklist before finishing
 
 - [ ] Key added to `en.ts` and `es.ts`

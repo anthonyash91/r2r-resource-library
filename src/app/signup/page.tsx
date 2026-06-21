@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useAuth } from "@/lib/auth-context";
 import { useTranslations } from "@/i18n/locale-context";
+import { pageSectionPadding } from "@/lib/utils";
 
 export default function SignupPage() {
   const router = useRouter();
@@ -17,11 +18,13 @@ export default function SignupPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
+    setSuccess("");
     setLoading(true);
 
     const result = await signUp(email, password, fullName);
@@ -31,12 +34,18 @@ export default function SignupPage() {
       return;
     }
 
+    if (result.needsEmailConfirmation) {
+      setSuccess(t("auth.signUpConfirmEmail"));
+      setLoading(false);
+      return;
+    }
+
     router.push("/dashboard");
     router.refresh();
   };
 
   return (
-    <div className="px-4 py-16 sm:px-6 lg:px-8">
+    <div className={pageSectionPadding}>
       <div className="mx-auto max-w-md">
         <Card>
           <h1 className="mb-2 text-2xl font-bold">{t("auth.signUp")}</h1>
@@ -72,6 +81,11 @@ export default function SignupPage() {
             {error && (
               <p role="alert" className="text-base text-destructive">
                 {error}
+              </p>
+            )}
+            {success && (
+              <p role="status" className="text-base text-primary">
+                {success}
               </p>
             )}
             <Button type="submit" size="lg" className="w-full" disabled={loading}>

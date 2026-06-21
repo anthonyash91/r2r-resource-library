@@ -15,7 +15,7 @@ export default async function AdminDashboardPage() {
         <p className="text-lg text-muted-foreground">{t("admin.analyticsSubtitle")}</p>
       </header>
 
-      <div className="mb-8 grid gap-4 sm:grid-cols-3">
+      <div className="mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <Card>
           <CardTitle className="text-sm font-medium text-muted-foreground">
             {t("admin.totalResources")}
@@ -24,9 +24,27 @@ export default async function AdminDashboardPage() {
         </Card>
         <Card>
           <CardTitle className="text-sm font-medium text-muted-foreground">
-            {t("admin.totalUsers")}
+            {t("admin.activeResources")}
           </CardTitle>
-          <p className="mt-2 text-4xl font-bold">{analytics.totalUsers}</p>
+          <p className="mt-2 text-4xl font-bold">{analytics.activeResources}</p>
+        </Card>
+        <Card>
+          <CardTitle className="text-sm font-medium text-muted-foreground">
+            {t("admin.featuredResources")}
+          </CardTitle>
+          <p className="mt-2 text-4xl font-bold">{analytics.featuredResources}</p>
+        </Card>
+        <Card>
+          <CardTitle className="text-sm font-medium text-muted-foreground">
+            {t("admin.totalCategories")}
+          </CardTitle>
+          <p className="mt-2 text-4xl font-bold">{analytics.totalCategories}</p>
+        </Card>
+        <Card>
+          <CardTitle className="text-sm font-medium text-muted-foreground">
+            {t("admin.totalViews")}
+          </CardTitle>
+          <p className="mt-2 text-4xl font-bold">{analytics.totalViews}</p>
         </Card>
         <Card>
           <CardTitle className="text-sm font-medium text-muted-foreground">
@@ -65,40 +83,48 @@ export default async function AdminDashboardPage() {
       <div className="grid gap-6 lg:grid-cols-2">
         <Card>
           <CardTitle className="mb-4">{t("admin.mostViewed")}</CardTitle>
-          <ul className="space-y-3">
-            {analytics.mostViewed.map((r) => (
-              <li key={r.id}>
-                <Link
-                  href={`/resources/${r.id}`}
-                  className="flex items-center justify-between text-base hover:text-primary"
-                >
-                  <span className="font-medium">{r.name}</span>
-                  <Badge>
-                    {r.view_count} {t("admin.views")}
-                  </Badge>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          {analytics.mostViewed.length === 0 ? (
+            <p className="text-base text-muted-foreground">{t("admin.noMostViewed")}</p>
+          ) : (
+            <ul className="space-y-3">
+              {analytics.mostViewed.map((r) => (
+                <li key={r.id}>
+                  <Link
+                    href={`/resources/${r.id}`}
+                    className="flex items-center justify-between text-base hover:text-primary"
+                  >
+                    <span className="font-medium">{r.name}</span>
+                    <Badge>
+                      {r.view_count} {t("admin.views")}
+                    </Badge>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </Card>
 
         <Card>
           <CardTitle className="mb-4">{t("admin.mostSaved")}</CardTitle>
-          <ul className="space-y-3">
-            {analytics.mostSaved.map((r) => (
-              <li key={r.id}>
-                <Link
-                  href={`/resources/${r.id}`}
-                  className="flex items-center justify-between text-base hover:text-primary"
-                >
-                  <span className="font-medium">{r.name}</span>
-                  <Badge variant="success">
-                    {r.save_count} {t("admin.saves")}
-                  </Badge>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          {analytics.mostSaved.length === 0 ? (
+            <p className="text-base text-muted-foreground">{t("admin.noMostSaved")}</p>
+          ) : (
+            <ul className="space-y-3">
+              {analytics.mostSaved.map((r) => (
+                <li key={r.id}>
+                  <Link
+                    href={`/resources/${r.id}`}
+                    className="flex items-center justify-between text-base hover:text-primary"
+                  >
+                    <span className="font-medium">{r.name}</span>
+                    <Badge variant="success">
+                      {r.save_count} {t("admin.saves")}
+                    </Badge>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </Card>
       </div>
 

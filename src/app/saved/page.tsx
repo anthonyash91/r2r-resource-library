@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { useAuth } from "@/lib/auth-context";
 import { useSavedResources } from "@/lib/saved-context";
 import { useTranslations } from "@/i18n/locale-context";
+import { EmailSavedResourcesButton } from "@/components/saved/email-saved-resources-button";
+import { pageSectionPadding, cn } from "@/lib/utils";
 
 export default function SavedPage() {
   const { user, loading } = useAuth();
@@ -23,7 +25,7 @@ export default function SavedPage() {
 
   if (!user) {
     return (
-      <div className="px-4 py-16 text-center sm:px-6 lg:px-8">
+      <div className={cn(pageSectionPadding, "text-center")}>
         <div className="mx-auto max-w-lg">
           <Heart className="mx-auto mb-4 h-16 w-16 text-primary" aria-hidden="true" />
           <h1 className="mb-4 text-3xl font-bold">{t("saved.signInTitle")}</h1>
@@ -37,11 +39,16 @@ export default function SavedPage() {
   }
 
   return (
-    <div className="px-4 py-10 sm:px-6 lg:px-8">
+    <div className={pageSectionPadding}>
       <div className="mx-auto max-w-7xl">
-        <header className="mb-8">
-          <h1 className="mb-2 text-3xl font-bold sm:text-4xl">{t("saved.title")}</h1>
-          <p className="text-lg text-muted-foreground">{t("saved.subtitle")}</p>
+        <header className="mb-8 flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <h1 className="mb-2 text-3xl font-bold sm:text-4xl">{t("saved.title")}</h1>
+            <p className="text-lg text-muted-foreground">{t("saved.subtitle")}</p>
+          </div>
+          {savedResources.length > 0 ? (
+            <EmailSavedResourcesButton resourceCount={savedResources.length} />
+          ) : null}
         </header>
 
         {savedResources.length === 0 ? (

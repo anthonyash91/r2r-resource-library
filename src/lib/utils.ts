@@ -10,9 +10,16 @@ export const blockInsetPadding = "px-4 py-4 sm:px-5 sm:py-5";
 export const blockInsetPaddingY = "py-4 sm:py-5";
 export const blockInsetPaddingTop = "pt-4 sm:pt-5";
 /** Tighter top / roomier bottom so the hero band looks balanced around the search bar */
+/** Resources hero: extra bottom room for the search bar */
 export const resourcesHeroPadding = "pt-[36px] pb-[44px] sm:pt-[40px] sm:pb-[48px]";
+/** Standalone page heroes (About, Contact, FAQ): balanced vertical padding */
+export const pageHeroPadding = "py-[40px] sm:py-[44px]";
+/** Standard padding for page content sections below the hero */
+export const pageSectionPadding = "px-4 py-12 sm:px-6 sm:py-14 lg:px-8 lg:py-16";
 /** Consistent vertical gap between page sections */
 export const sectionStackGap = "space-y-6";
+/** Teal checkmark color used across list/feature icons */
+export const checkIconClass = "app-check-icon";
 
 function stableHash(input: string): number {
   let hash = 2166136261;

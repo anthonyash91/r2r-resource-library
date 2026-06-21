@@ -1,40 +1,38 @@
 import type { Metadata } from "next";
-import { getCmsPageBySlug } from "@/lib/data";
+import { AboutPageView } from "@/components/about/about-page-view";
+import { getAboutPageContent, getCategories, getResources } from "@/lib/data";
 import { getServerTranslator } from "@/i18n/server";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { t } = await getServerTranslator();
+  const content = await getAboutPageContent();
+
   return {
-    title: t("about.title"),
-    description: t("about.description"),
+    title: content.heroTitle || t("about.title"),
+    description: content.heroDescription || t("about.description"),
   };
 }
 
 export default async function AboutPage() {
-  const { t } = await getServerTranslator();
-  const page = await getCmsPageBySlug("about");
+  const [content, resources, categories] = await Promise.all([
+    getAboutPageContent(),
+    getResources(),
+    getCategories(),
+  ]);
 
-  if (!page) {
-    return (
-      <div className="px-4 py-10 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl">
-          <h1 className="mb-6 text-3xl font-bold sm:text-4xl">{t("about.defaultTitle")}</h1>
-          <div className="prose prose-lg max-w-none whitespace-pre-wrap text-base text-muted-foreground">
-            {t("about.defaultContent")}
-          </div>
-        </div>
-      </div>
-    );
-  }
+  const stateCount = new Set(resources.map((r) => r.state).filter(Boolean)).size;
+  const resourceCount =
+    resources.length >= 100 ? `${resources.length}+` : String(resources.length);
 
   return (
-    <div className="px-4 py-10 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-3xl">
-        <h1 className="mb-6 text-3xl font-bold sm:text-4xl">{page.title}</h1>
-        <div className="prose prose-lg max-w-none whitespace-pre-wrap text-base text-muted-foreground">
-          {page.content}
-        </div>
-      </div>
-    </div>
+    <AboutPageView
+      content={content}
+      stats={{
+        resourceCount,
+        stateCount: String(stateCount),
+        categoryCount: String(categories.length),
+        freeLabel: "100%",
+      }}
+    />
   );
 }

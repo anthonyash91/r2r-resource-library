@@ -1,16 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useAuth } from "@/lib/auth-context";
 import { useTranslations } from "@/i18n/locale-context";
+import { resolvePostLoginPath } from "@/lib/post-login-redirect";
+import { pageSectionPadding } from "@/lib/utils";
 
-export default function LoginPage() {
+function LoginForm() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { signIn } = useAuth();
   const { t } = useTranslations();
   const [email, setEmail] = useState("");
@@ -30,12 +33,16 @@ export default function LoginPage() {
       return;
     }
 
-    router.push(email.includes("admin") ? "/admin" : "/dashboard");
+    const destination = resolvePostLoginPath({
+      next: searchParams.get("next"),
+      isAdmin: result.isAdmin ?? false,
+    });
+    router.replace(destination);
     router.refresh();
   };
 
   return (
-    <div className="px-4 py-16 sm:px-6 lg:px-8">
+    <div className={pageSectionPadding}>
       <div className="mx-auto max-w-md">
         <Card>
           <h1 className="mb-2 text-2xl font-bold">{t("auth.signIn")}</h1>
@@ -83,5 +90,21 @@ export default function LoginPage() {
         </Card>
       </div>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  const { t } = useTranslations();
+
+  return (
+    <Suspense
+      fallback={
+        <div className="flex min-h-[40vh] items-center justify-center">
+          <p className="text-lg text-muted-foreground">{t("common.loading")}</p>
+        </div>
+      }
+    >
+      <LoginForm />
+    </Suspense>
   );
 }

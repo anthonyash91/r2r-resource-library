@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { BookOpen } from "lucide-react";
 import { getServerTranslator } from "@/i18n/server";
+import { getSiteBranding } from "@/lib/data";
+import { FooterBrandingLockup } from "@/components/layout/footer-branding-lockup";
 
 const RESOURCE_CATEGORY_SLUGS = [
   "housing",
@@ -18,6 +19,7 @@ const footerHeadingClass =
 
 export async function Footer() {
   const { t } = await getServerTranslator();
+  const branding = await getSiteBranding();
   const year = new Date().getFullYear();
 
   const resourceLinks = [
@@ -31,7 +33,8 @@ export async function Footer() {
   const helpLinks = [
     { href: "/#how-it-works-heading", label: t("footer.howItWorks") },
     { href: "/faq", label: t("footer.helpFaq") },
-    { href: "/about", label: t("footer.contactUs") },
+    { href: "/about", label: t("footer.aboutUs") },
+    { href: "/contact", label: t("footer.contactUs") },
     { href: "/faq", label: t("footer.reportIssue") },
   ];
 
@@ -43,9 +46,9 @@ export async function Footer() {
   ];
 
   const legalLinks = [
-    { href: "/about", label: t("footer.privacyPolicy") },
-    { href: "/about", label: t("footer.termsOfUse") },
-    { href: "/about", label: t("footer.accessibility") },
+    { href: "/privacy", label: t("footer.privacyPolicy") },
+    { href: "/terms", label: t("footer.termsOfUse") },
+    { href: "/accessibility", label: t("footer.accessibility") },
   ];
 
   return (
@@ -53,21 +56,13 @@ export async function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.5fr)_repeat(3,minmax(0,1fr))] lg:gap-12">
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="mb-5 flex items-start gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                <BookOpen className="h-5 w-5" aria-hidden="true" />
-              </div>
-              <div>
-                <span className="block text-lg font-bold leading-tight text-[var(--footer-foreground)]">
-                  {t("nav.brandName")}
-                </span>
-                <span className="mt-0.5 block text-sm font-medium text-[var(--footer-accent)]">
-                  {t("footer.tagline")}
-                </span>
-              </div>
-            </div>
+            <FooterBrandingLockup
+              brandName={branding.brandName}
+              tagline={branding.footerTagline}
+              className="mb-5"
+            />
             <p className="mb-4 max-w-md text-sm leading-relaxed text-[var(--footer-muted)]">
-              {t("footer.description")}
+              {branding.footerDescription}
             </p>
             <p className="text-sm text-[var(--footer-muted)]">
               {t("footer.builtWithLovePrefix")}{" "}
@@ -78,7 +73,7 @@ export async function Footer() {
             </p>
           </div>
 
-          <div>
+          <div className="w-max justify-self-end text-left">
             <h2 className={footerHeadingClass}>{t("footer.resourcesHeading")}</h2>
             <ul className="space-y-2.5">
               {resourceLinks.map(({ href, label }) => (
@@ -91,7 +86,7 @@ export async function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="w-max justify-self-end text-left">
             <h2 className={footerHeadingClass}>{t("footer.helpHeading")}</h2>
             <ul className="space-y-2.5">
               {helpLinks.map(({ href, label }) => (
@@ -104,7 +99,7 @@ export async function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="w-max justify-self-end text-left">
             <h2 className={footerHeadingClass}>{t("footer.accountHeading")}</h2>
             <ul className="space-y-2.5">
               {accountLinks.map(({ href, label }) => (

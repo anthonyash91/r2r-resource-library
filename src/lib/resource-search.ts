@@ -173,14 +173,34 @@ export function resolveSearchQuery(query: string, catalog: LocationCatalog): Res
   return { textQuery: normalized };
 }
 
+function categoryMatchesQuery(
+  category: Resource["category"],
+  textQuery: string
+): boolean {
+  if (!category) return false;
+
+  const q = textQuery.toLowerCase();
+  const slug = category.slug.toLowerCase();
+  const slugSpaced = slug.replace(/-/g, " ");
+
+  return (
+    category.name.toLowerCase().includes(q) ||
+    slug.includes(q) ||
+    slugSpaced.includes(q) ||
+    (category.description?.toLowerCase().includes(q) ?? false)
+  );
+}
+
 export function resourceMatchesTextQuery(resource: Resource, textQuery: string): boolean {
   const q = textQuery.toLowerCase();
   return (
+    categoryMatchesQuery(resource.category, textQuery) ||
     resource.name.toLowerCase().includes(q) ||
     resource.description.toLowerCase().includes(q) ||
     resource.services.some((service) => service.toLowerCase().includes(q)) ||
     resource.tags.some((tag) => tag.toLowerCase().includes(q)) ||
     (resource.eligibility?.toLowerCase().includes(q) ?? false) ||
+    (resource.notes?.toLowerCase().includes(q) ?? false) ||
     (resource.city?.toLowerCase().includes(q) ?? false) ||
     (resource.county?.toLowerCase().includes(q) ?? false) ||
     (resource.state?.toLowerCase().includes(q) ?? false) ||

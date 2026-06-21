@@ -37,19 +37,29 @@ export const en = {
 
   nav: {
     brandName: "Reentry Resource Library",
-    tagline: "Your path to support",
+    tagline: "Find resources. Build stability. Move forward.",
+    taglinePhrase1: "Find resources.",
+    taglinePhrase2: "Build stability.",
+    taglinePhrase3: "Move forward.",
     findResources: "Find Resources",
     saved: "Saved",
     dashboard: "My Dashboard",
     faq: "Help & FAQ",
+    faqShort: "Help & FAQ",
     signIn: "Sign In",
     signOut: "Sign Out",
     createAccount: "Create Account",
     admin: "Admin",
     adminPortal: "Admin Portal",
-    homeAriaLabel: "Reentry Resource Library — Home",
+    homeAriaLabel: "{brand} — Home",
     mainNav: "Main navigation",
     mobileNav: "Mobile navigation",
+  },
+
+  breadcrumb: {
+    ariaLabel: "Breadcrumb",
+    home: "Home",
+    resourceDetail: "Resource details",
   },
 
   footer: {
@@ -75,7 +85,7 @@ export const en = {
     crisisLine:
       "If you are in crisis, call or text 988 for immediate support.",
     faqLink: "FAQ page",
-    copyright: "© {year} Reentry Resource Library. All rights reserved.",
+    copyright: "© {year} Road to Reentry Library. All rights reserved.",
     findResources: "Find Resources",
     savedResources: "Saved Resources",
     myDashboard: "My Dashboard",
@@ -150,6 +160,16 @@ export const en = {
       "Search and filter reentry resources by category, location, and service type.",
     programCount: "{count} programs available",
     resultsSummary: "Programs matching your search",
+    resultsSummaryWithQuery: 'Programs matching your search "{query}"',
+    resultsSplitSummary: "{local} in {county} County · {statewide} statewide",
+    resultsInCountyHeading: "In {county} County",
+    resultsInCountyHint:
+      "Programs based in or specifically serving {county} County.",
+    resultsStatewideHeading: "Also available statewide",
+    resultsStatewideHint:
+      "These programs serve all Kentucky counties, including {county}.",
+    resultsNoLocalInCounty:
+      "No local or regional programs matched in {county} County. Statewide resources below may still help.",
     noResults: "No resources found",
     noResultsHint:
       "Try a different category or open the filters to change your search.",
@@ -184,6 +204,14 @@ export const en = {
     backToResources: "Back to resources",
     servicesOffered: "Services Offered",
     eligibilityRequirements: "Eligibility Requirements",
+    additionalInfo: "Good to Know",
+    countiesServed: "Counties served",
+    coverageInCounty: "In this county",
+    coverageRegional: "Regional",
+    coverageStatewide: "Statewide",
+    countyFilterHint:
+      "Choose the county where you live now or plan to live after release to see resources that serve that area.",
+    filterByCountyAria: "View resources serving {county} County",
     contactInfo: "Contact Information",
     tags: "Tags",
     address: "Address",
@@ -219,6 +247,12 @@ export const en = {
     demoMode:
       'Demo mode: use any email and password. Include "admin" in email for admin access.',
     authUnavailable: "Authentication is currently unavailable. Please try again later.",
+    signInFailed: "Could not sign in. Check your email and password and try again.",
+    signUpFailed: "Could not create your account. Please try again.",
+    signUpDatabaseError:
+      "Account setup failed because the database profile trigger is missing or misconfigured. In Supabase, open SQL Editor and run supabase/migrations/003_fix_profile_signup_trigger.sql, then try again.",
+    signUpConfirmEmail:
+      "Check your email for a confirmation link to finish creating your account.",
   },
 
   dashboard: {
@@ -247,12 +281,55 @@ export const en = {
     signInTitle: "Saved Resources",
     signInDesc: "Sign in to save resources and build your personal list.",
     browseResources: "Browse Resources",
+    pdf: {
+      documentTitle: "Saved Resources",
+      preparedFor: "Prepared for {name}",
+      generatedOn: "Generated on {date}",
+      resourceCount: "{count} programs included",
+      description: "Description",
+      location: "Location",
+      address: "Address",
+      brandTagline: "Prepare Today. Succeed Tomorrow.",
+      brandDescription:
+        "Road to Reentry empowers individuals preparing for or returning from incarceration with trusted resources, practical tools, and support to build stability, overcome barriers, and create a successful future.",
+      footer:
+        "Information is provided for reference. Contact each program to confirm eligibility and availability.",
+    },
+    email: {
+      button: "Email PDF",
+      buttonSending: "Sending…",
+      prompt: "Where should we send your saved resources PDF?",
+      addressLabel: "Email address",
+      addressPlaceholder: "you@example.com",
+      addressHint: "Enter the address where you'd like to receive the PDF.",
+      sendButton: "Send PDF",
+      invalidEmail: "Enter a valid email address.",
+      success: "PDF sent to {email}",
+      successTitle: "PDF sent successfully",
+      unavailable:
+        "Email export is available when signed in with a connected account.",
+      notConfigured: "Email is not configured on this site yet.",
+      signInRequired: "Sign in to email your saved resources.",
+      noEmail: "Your account does not have an email address on file.",
+      empty: "Save at least one resource before emailing a PDF.",
+      failed: "Could not send the PDF. Please try again later.",
+      usageGuidance:
+        "Save every resource you want before sending. This feature is meant for right before you leave jail, so your list is ready when you are back in the community.",
+      limitReminder: "You can send this PDF {limit} times. You have {remaining} left.",
+      limitReached: "You have used all {limit} PDF emails for this account.",
+      subject: "Your saved resources ({count} programs)",
+      filename: "saved-resources.pdf",
+      greeting: "Hello,",
+      greetingNamed: "Hello {name},",
+      body: "Attached is a PDF with {count} saved programs from the Reentry Resource Library.",
+    },
   },
 
   about: {
     title: "About Us",
-    description: "Learn about the Reentry Resource Library and our mission.",
-    defaultTitle: "About Us",
+    description:
+      "A free platform connecting people with housing, employment, healthcare, and other reentry support programs nationwide.",
+    defaultTitle: "About the Reentry Resource Library",
     defaultContent: `The Reentry Resource Library is a free platform designed to help individuals preparing for release or recently released from incarceration find the support they need to rebuild their lives.
 
 We connect people with local, state, and national programs for housing, employment, healthcare, recovery, education, legal assistance, and more.
@@ -265,6 +342,121 @@ Who We Serve
 • Reentry coordinators and case managers
 • Probation and parole officers
 • Community organizations`,
+    missionTitle: "Our Mission",
+    missionP1:
+      "The Reentry Resource Library is a free platform designed to help individuals preparing for release or recently released from incarceration find the support they need to rebuild their lives.",
+    missionP2:
+      "We connect people with local, state, and national programs for housing, employment, healthcare, recovery, education, legal assistance, and more — making vital information easy to find, understand, and act on.",
+    missionP3: "",
+    serveTitle: "Who We Serve",
+    serveIntro:
+      "Our library is built for anyone navigating reentry — and for the professionals and organizations who support them every day.",
+    audience: {
+      item1: "Individuals preparing for release",
+      item2: "Recently released individuals rebuilding their lives",
+      item3: "Family members and loved ones seeking help",
+      item4: "Reentry coordinators and case managers",
+      item5: "Probation and parole officers",
+      item6: "Community organizations and advocates",
+    },
+    serveCards: {
+      housing: {
+        title: "Housing & Shelter",
+        desc: "Transitional housing, emergency shelter, and rental assistance programs",
+      },
+      employment: {
+        title: "Employment & Training",
+        desc: "Job training, workforce programs, and employer partnerships",
+      },
+      healthcare: {
+        title: "Healthcare & Recovery",
+        desc: "Medical care, mental health services, and substance use recovery",
+      },
+      legal: {
+        title: "Legal Assistance",
+        desc: "Expungement help, legal aid clinics, and rights information",
+      },
+    },
+    valuesTitle: "What We Believe",
+    valuesSubtitle: "These principles guide everything we build and every resource we list.",
+    values: {
+      dignity: {
+        title: "Dignity First",
+        body: "Everyone deserves respect and a fair chance to rebuild. We design every experience with that belief at the center.",
+      },
+      accessibility: {
+        title: "Accessibility",
+        body: "Information should be easy to find and understand — regardless of language, device, or technical skill.",
+      },
+      community: {
+        title: "Community",
+        body: "Reentry happens in community. We connect people to local programs and the organizations that know their neighborhoods best.",
+      },
+      trust: {
+        title: "Trust",
+        body: "We strive to keep listings accurate and up to date, and we welcome corrections so people can rely on what they find here.",
+      },
+    },
+    ctaTitle: "Ready to Find Resources?",
+    ctaSubtitle: "Search hundreds of programs across all 50 states — free, no account required.",
+    ctaBrowse: "Browse Resources",
+    ctaContact: "Get in Touch",
+  },
+
+  contact: {
+    title: "Contact Us",
+    description: "Get in touch with the Reentry Resource Library team.",
+    defaultTitle: "Contact Us",
+    formTitle: "Send a Message",
+    yourName: "Your Name",
+    namePlaceholder: "Jane Smith",
+    emailAddress: "Email Address",
+    emailPlaceholder: "jane@example.com",
+    subjectLabel: "Subject",
+    messageLabel: "Message",
+    messagePlaceholder: "Tell us what's on your mind...",
+    sendMessage: "Send Message",
+    sending: "Sending...",
+    submitSuccess:
+      "Thank you! Your message has been received. We typically respond within 1–3 business days.",
+    otherWaysTitle: "Other ways to get help",
+    responseTimeTitle: "Response Time",
+    responseTimeframe: "1–3 business days",
+    responseTimeBody:
+      "We typically respond within {timeframe}. For urgent needs, please call the 988 Suicide & Crisis Lifeline or text HOME to 741741.",
+    subject: {
+      general: "General Question",
+      "suggest-resource": "Suggest a Resource",
+      "report-info": "Report outdated information",
+      account: "Account help",
+    },
+    helpLinks: {
+      faqsTitle: "Browse our FAQs",
+      faqsDesc: "Find answers to common questions",
+      resourcesTitle: "Find Resources",
+      resourcesDesc: "Search for programs near you",
+      suggestTitle: "Suggest a Resource",
+      suggestDesc: "Tell us about a program we should list",
+    },
+    defaultContent: `We are here to help you find resources and improve this library.
+
+Suggest a resource
+Know a program that should be listed? Send us the organization name, location, and services offered.
+
+Report outdated information
+If a listing has wrong hours, a phone number, or eligibility details, let us know so we can review it.
+
+General questions
+For help using the site, creating an account, or accessing saved resources, visit our FAQ page or send us a message.
+
+Email
+[Your program email address]
+
+Please include your city or county when asking about local resources so we can respond more helpfully.`,
+  },
+
+  cmsPage: {
+    exploreMore: "Explore more",
   },
 
   faq: {
@@ -273,8 +465,217 @@ Who We Serve
       "Frequently asked questions about using the Reentry Resource Library.",
     heading: "Help & FAQ",
     intro: "Answers to common questions about finding and using resources.",
+    empty: "No questions have been published yet. Check back soon.",
+    noResults: "No questions match your search. Try different keywords or contact us for help.",
+    searchLabel: "Search FAQs",
+    searchPlaceholder: "Search for a question...",
+    filterAll: "All Topics",
+    categoryFilterLabel: "Filter by topic",
+    stillNeedHelpTitle: "Still Have Questions?",
+    stillNeedHelpBody:
+      "Can't find what you're looking for? Our team is happy to help with anything not covered here.",
+    quickLinksTitle: "Quick Links",
+    sidebarLinks: {
+      resourcesTitle: "Find Resources",
+      resourcesDesc: "Search for programs near you",
+      contactTitle: "Contact Us",
+      contactDesc: "Send us a message directly",
+      suggestTitle: "Suggest a Resource",
+      suggestDesc: "Tell us about a program we should list",
+    },
+    crisisTitle: "Need Immediate Help?",
+    crisisBody:
+      "If you are in crisis, call or text 988 for the Suicide & Crisis Lifeline, or text HOME to 741741 for the Crisis Text Line.",
+    ctaTitle: "Ready to Find Resources?",
+    ctaSubtitle: "Search hundreds of programs across all 50 states — free, no account required.",
+    ctaBrowse: "Browse Resources",
+    ctaContact: "Get in Touch",
     general: "General",
     usingTheSite: "Using the Site",
+    accountsAndPrivacy: "Accounts & Privacy",
+  },
+
+  legal: {
+    lastUpdated: "Last updated: {date}",
+    contactLink: "contact us",
+    privacy: {
+      title: "Privacy Policy",
+      description: "We collect as little data as possible and never sell your information.",
+      intro:
+        "The Reentry Resource Library is committed to protecting your privacy. This policy explains what information we collect, how we use it, and the choices you have.",
+      lastUpdatedDate: "June 2026",
+      contactPrompt: "If you have questions about this Privacy Policy, please",
+      sections: {
+        s1: {
+          title: "1. Information We Collect",
+          body: "We collect only the information needed to operate the site. Depending on how you use the Reentry Resource Library, this may include information you provide directly (such as when you create an account or contact us), information collected automatically (such as basic usage data), and information related to resources you save or view while signed in.",
+        },
+        s2: {
+          title: "2. How We Use Your Information",
+          body: "We use the information we collect to:",
+          bullets: {
+            b1: "Provide, maintain, and improve the resource directory and site features",
+            b2: "Create and manage your account, including saved resources",
+            b3: "Respond to messages and support requests",
+            b4: "Understand how the site is used so we can improve accessibility and content",
+          },
+        },
+        s3: {
+          title: "3. Cookies and Similar Technologies",
+          body: "We use cookies and similar technologies to remember your language preference, keep you signed in, and understand general site usage. You can control cookies through your browser settings, though some features may not work correctly if cookies are disabled.",
+        },
+        s4: {
+          title: "4. Information Sharing",
+          body: "We do not sell your personal information. We may share limited data with service providers who help us operate the site (such as hosting and authentication services), when required by law, or to protect the rights and safety of users and the public. Any third-party providers we use are required to protect your information.",
+        },
+        s5: {
+          title: "5. Your Rights and Choices",
+          body: "Depending on where you live, you may have the right to:",
+          bullets: {
+            b1: "Access the personal information we hold about you",
+            b2: "Request correction of inaccurate information",
+            b3: "Request deletion of your account and associated data",
+            b4: "Opt out of non-essential communications",
+            b5: "Use the site without creating an account for basic searching and browsing",
+          },
+        },
+        s6: {
+          title: "6. Data Security",
+          body: "We use reasonable administrative, technical, and organizational measures to protect your information, including:",
+          bullets: {
+            b1: "Encrypted connections (HTTPS) for data in transit",
+            b2: "Access controls for administrative tools",
+            b3: "Regular review of our data practices",
+            b4: "Limiting collection to what is necessary for the service",
+          },
+        },
+        s7: {
+          title: "7. Children's Privacy",
+          body: "The Reentry Resource Library is intended for adults and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so we can delete it.",
+        },
+        s8: {
+          title: "8. Changes to This Policy",
+          body: "We may update this Privacy Policy from time to time. When we make changes, we will update the date at the bottom of this page. Continued use of the site after changes are posted means you accept the updated policy.",
+        },
+        s9: {
+          title: "9. Contact Us",
+          body: "",
+        },
+      },
+    },
+    terms: {
+      title: "Terms of Use",
+      description: "Plain-language terms for using the Reentry Resource Library.",
+      intro:
+        "By accessing or using the Reentry Resource Library (\"the Site\"), you agree to be bound by these Terms of Use. If you do not agree, please do not use the Site.",
+      lastUpdatedDate: "June 2026",
+      contactPrompt: "For questions about these Terms of Use, please",
+      sections: {
+        s1: {
+          title: "1. What This Site Is",
+          body: "The Reentry Resource Library is a free online directory that helps people find programs and services related to reentry, including housing, employment, healthcare, legal aid, and other community resources. We provide information to help you connect with organizations; we are not a service provider ourselves.",
+        },
+        s2: {
+          title: "2. Who Can Use the Site",
+          body: "Anyone may browse and search resources without an account. Some features, such as saving resources or accessing a personal dashboard, require you to create a free account. You must provide accurate information when registering and keep your login credentials secure.",
+        },
+        s3: {
+          title: "3. No Professional Advice",
+          body: "Information on this Site is provided for general informational purposes only. It is not legal, medical, financial, or other professional advice. Always verify details directly with the organization offering a program before relying on any listing.",
+        },
+        s4: {
+          title: "4. Acceptable Use",
+          body: "You agree not to misuse the Site. Prohibited activities include:",
+          bullets: {
+            b1: "Attempting to gain unauthorized access to the Site, accounts, or systems",
+            b2: "Scraping, harvesting, or bulk downloading content without permission",
+            b3: "Posting or transmitting harmful, unlawful, or misleading content",
+            b4: "Interfering with the Site's operation or other users' access",
+            b5: "Using the Site for commercial solicitation unrelated to reentry support",
+            b6: "Misrepresenting your identity or affiliation with any organization",
+          },
+        },
+        s5: {
+          title: "5. User Accounts",
+          body: "You are responsible for activity that occurs under your account. Notify us promptly if you suspect unauthorized access. We may suspend or terminate accounts that violate these terms or that we reasonably believe pose a risk to the Site or other users.",
+        },
+        s6: {
+          title: "6. Resource Listings",
+          body: "We strive to keep resource listings accurate and up to date, but we do not guarantee the completeness, accuracy, or availability of any program. Listings may change without notice. If you find outdated information, please report it through our contact page.",
+        },
+        s7: {
+          title: "7. Intellectual Property",
+          body: "The Site's design, text, and original content are owned by the Reentry Resource Library or its licensors and are protected by applicable copyright and other laws. You may use the Site for personal, non-commercial purposes. You may not copy, modify, or redistribute Site content without permission.",
+        },
+        s8: {
+          title: "8. Disclaimer of Warranties",
+          body: "The Site is provided \"as is\" and \"as available\" without warranties of any kind, whether express or implied. We do not warrant that the Site will be uninterrupted, error-free, or free of harmful components.",
+        },
+        s9: {
+          title: "9. Limitation of Liability",
+          body: "To the fullest extent permitted by law, the Reentry Resource Library and its contributors will not be liable for any indirect, incidental, special, or consequential damages arising from your use of the Site or reliance on any resource listing.",
+        },
+        s10: {
+          title: "10. Contact",
+          body: "",
+        },
+      },
+    },
+    accessibility: {
+      title: "Accessibility Statement",
+      description:
+        "We are committed to making the Reentry Resource Library accessible to everyone, including people with disabilities.",
+      lastUpdatedDate: "June 2026",
+      commitmentTitle: "Our Commitment",
+      commitmentP1:
+        "The Reentry Resource Library is designed to be usable by people with a wide range of abilities and assistive technologies. We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards.",
+      commitmentP2:
+        "Accessibility is an ongoing effort. We regularly review the site, test with assistive technologies, and update content and features based on user feedback and evolving best practices.",
+      wcagTitle: "WCAG 2.1 Principles",
+      principles: {
+        perceivable: {
+          title: "Perceivable",
+          body: "Information and interface components are presented in ways users can perceive, including sufficient color contrast and text alternatives where appropriate.",
+        },
+        operable: {
+          title: "Operable",
+          body: "Navigation and interactive elements can be used with a keyboard and other input methods, with enough time to read and use content.",
+        },
+        understandable: {
+          title: "Understandable",
+          body: "Content is written in plain language and the interface behaves in predictable ways.",
+        },
+        robust: {
+          title: "Robust",
+          body: "The site is built to work with current and future assistive technologies and browsers.",
+        },
+      },
+      featuresTitle: "Accessibility Features",
+      features: {
+        keyboard: {
+          title: "Keyboard Navigation",
+          body: "A skip link lets you jump past the header to main content. Links, buttons, search, filters, dropdown menus, and FAQ accordions work with a keyboard, and visible focus styles show where you are on the page.",
+        },
+        screenReader: {
+          title: "Screen Reader Support",
+          body: "Pages use landmarks such as header, main, and navigation. Search, filters, and forms include text labels or ARIA labels; decorative icons are hidden from assistive technology; and accordions and dropdowns report their open or closed state.",
+        },
+        plainLanguage: {
+          title: "Plain Language",
+          body: "Navigation, buttons, and built-in help content use clear, everyday language. The site interface is available in English and Spanish, and category names and resource descriptions are translated when you switch languages.",
+        },
+        mobile: {
+          title: "Mobile Accessible",
+          body: "Layouts adapt to phone, tablet, and desktop screen sizes. A mobile menu provides access to navigation and account options, and buttons and links use touch-friendly sizing.",
+        },
+      },
+      limitationsTitle: "Known Limitations",
+      limitationsBody:
+        "Some third-party content linked from resource listings (such as external organization websites or embedded maps) may not be fully under our control and may not meet the same accessibility standards. We encourage partner organizations to improve accessibility and welcome reports about barriers you encounter.",
+      reportTitle: "Report an Accessibility Issue",
+      reportBody:
+        "If you have trouble accessing any part of the Reentry Resource Library, or if you have suggestions for improvement, please let us know. Include the page URL and a description of the issue so we can investigate.",
+    },
   },
 
   notFound: {
@@ -300,12 +701,18 @@ Who We Serve
     analyticsTitle: "Analytics Dashboard",
     analyticsSubtitle: "Overview of platform usage and resource data.",
     totalResources: "Total Resources",
+    activeResources: "Active Resources",
+    featuredResources: "Featured Resources",
+    totalCategories: "Categories",
+    totalViews: "Total Views",
     totalUsers: "Total Users",
     totalSaves: "Total Saves",
     resourcesByState: "Resources by State",
     resourcesByCategory: "Resources by Category",
     mostViewed: "Most Viewed Resources",
     mostSaved: "Most Saved Resources",
+    noMostViewed: "No views recorded yet.",
+    noMostSaved: "No saves recorded yet.",
     weeklyActivity: "Weekly Activity",
     views: "views",
     saves: "saves",
@@ -320,6 +727,7 @@ Who We Serve
     featured: "Featured",
     feature: "Feature",
     importSuccess: "Imported {count} resources (demo mode — not persisted)",
+    importDbUnavailable: "Import is not available when connected to the database.",
     importInvalid: "Invalid JSON file",
     featuredMaxAlert:
       "You can feature up to {max} resources on the homepage.",
@@ -337,6 +745,9 @@ Who We Serve
     email: "Email",
     hours: "Hours",
     eligibility: "Eligibility",
+    eligibilityHint: "Who qualifies (income, age, referral requirements, etc.)",
+    notes: "Good to Know",
+    notesHint: "Operational tips: crisis lines, alternate locations, how to apply — not eligibility",
     services: "Services",
     tags: "Tags",
     servicesHint: "Separate services with commas",
@@ -347,9 +758,35 @@ Who We Serve
     updateResource: "Update Resource",
     createResource: "Create Resource",
     saving: "Saving...",
+    resourceSaveFailed: "Could not save resource. Please try again.",
+    homepageSaveFailed: "Could not save homepage content. Please try again.",
+    savingAndTranslating: "Saving & translating…",
+    homepageSavedWithTranslation: "Saved. Spanish translation updated automatically.",
+    translationUnavailable:
+      "Saved in English. Add DEEPL_API_KEY to .env.local to enable automatic Spanish translation.",
+    translationFailed: "Could not translate content to Spanish. Please try again.",
     homepageContent: "Homepage Content",
-    homepageContentDesc: "Edit the hero headline and subheadline on the homepage.",
+    homepageContentDesc:
+      "Edit site branding, hero content, and featured resources. Write in English — Spanish is generated automatically when you save.",
+    siteBrandingSection: "Site branding",
+    siteBrandingSectionDesc: "App name and taglines shown in the header and footer.",
+    navBrandName: "App name",
+    navBrandNameHint: "Shown in the header and footer.",
+    navTagline: "Header tagline",
+    navTaglineHint: "Short line under the app name in the top navigation.",
+    footerTagline: "Footer tagline",
+    footerTaglineHint: "Accent line under the app name in the footer.",
+    footerDescription: "Footer description",
+    footerDescriptionHint: "Short paragraph describing the platform in the footer.",
+    heroSection: "Homepage hero",
+    heroSectionDesc: "Main headline area on the homepage.",
+    homepageEnglishHint: "Write in English. A Spanish version is created automatically on save.",
     heroHeadline: "Hero headline",
+    heroHeadlineHighlight: "Gradient highlight text",
+    heroHeadlineHighlightHint:
+      "Enter the exact word or phrase from the headline that should use the gradient effect.",
+    heroHeadlineHighlightMismatch:
+      "This text was not found in the headline. It must match exactly, including capitalization.",
     heroSubheadline: "Hero subheadline",
     saveChanges: "Save Changes",
     saved: "Saved!",
@@ -368,11 +805,24 @@ Who We Serve
     pinHomepage: "Pin to homepage",
     newAnnouncement: "New Announcement",
     announcementsTitle: "Announcements",
+    announcementSaveFailed: "Could not publish announcement. Please try again.",
+    announcementDeleteFailed: "Could not delete announcement. Please try again.",
+    deleteAnnouncementConfirm: "Delete this announcement? This cannot be undone.",
     faqManagement: "FAQ Management",
     question: "Question",
     answer: "Answer",
     faqCategory: "Category",
     newFaq: "New FAQ",
+    editFaq: "Edit FAQ",
+    deleteFaq: "Delete",
+    deleteFaqConfirm: "Delete this FAQ? This cannot be undone.",
+    faqSaveFailed: "Could not save FAQ. Please try again.",
+    faqDeleteFailed: "Could not delete FAQ. Please try again.",
+    deletePage: "Delete",
+    deletePageConfirm: "Delete this page? This cannot be undone.",
+    pageSaveFailed: "Could not save page. Please try again.",
+    pageDeleteFailed: "Could not delete page. Please try again.",
+    viewPage: "View page",
     categoryManagement: "Category Management",
     categoryName: "Category name",
     slug: "Slug",
@@ -382,16 +832,103 @@ Who We Serve
     editCategory: "Edit Category",
     deleteCategory: "Delete Category",
     deleteCategoryConfirm: "Delete this category? Resources will need to be reassigned.",
+    categorySaveFailed: "Could not save category. Please try again.",
+    categoryDeleteFailed: "Could not delete category. It may still be assigned to resources.",
     userManagement: "User Management",
     noName: "No name",
     resetPassword: "Reset Password",
     resetPasswordAlert:
       "Password reset email would be sent to {email} (requires Supabase Auth)",
+    resetPasswordSent: "Password reset email sent to {email}.",
+    userUpdateFailed: "Could not update user. Please try again.",
     disable: "Disable",
     enable: "Enable",
     disableConfirm: "Disable this user account?",
     cmsTitle: "Page Management",
-    cmsDesc: "Create and edit content pages such as About Us.",
+    cmsDesc: "Create and edit content pages such as About Us and Contact.",
+    sitePages: "Site Pages",
+    sitePagesTitle: "Site Pages",
+    sitePagesDesc:
+      "Each public page has a dedicated editor that matches its layout. Use the links below to edit the right content.",
+    aboutPage: "About Page",
+    aboutPageTitle: "About Page Content",
+    aboutPageDesc:
+      "Edit the About page copy in English. The live layout stays the same; Spanish is generated automatically when you save.",
+    aboutSaveFailed: "Could not save About page content. Please try again.",
+    contactPage: "Contact Page",
+    contactPageTitle: "Contact Page Content",
+    contactPageDesc:
+      "Edit the Contact page copy in English. The form layout stays the same; Spanish is generated automatically when you save.",
+    contactSaveFailed: "Could not save Contact page content. Please try again.",
+    contactHeroSection: "Hero",
+    contactFormSection: "Contact form",
+    contactFormNote: "Form field labels and subject options stay in the translation files.",
+    contactSidebarSection: "Sidebar",
+    contactOtherWaysHeading: "Other ways to get help heading",
+    contactResponseTimeHeading: "Response time heading",
+    contactResponseTimeBody: "Response time message",
+    contactHelpLinksSection: "Help links",
+    contactHelpFaqs: "FAQ link",
+    contactHelpResources: "Resources link",
+    contactHelpSuggest: "Suggest a resource link",
+    legalSaveFailed: "Could not save page content. Please try again.",
+    legalPrivacyPageTitle: "Privacy Policy Content",
+    legalPrivacyPageDesc:
+      "Edit the Privacy Policy in English. The legal layout stays the same; Spanish is generated automatically when you save.",
+    legalTermsPageTitle: "Terms of Use Content",
+    legalTermsPageDesc:
+      "Edit the Terms of Use in English. The legal layout stays the same; Spanish is generated automatically when you save.",
+    legalAccessibilityPageTitle: "Accessibility Statement Content",
+    legalAccessibilityPageDesc:
+      "Edit the Accessibility Statement in English. The layout stays the same; Spanish is generated automatically when you save.",
+    legalDocumentHeader: "Page header",
+    legalIntro: "Introduction",
+    legalLastUpdatedDate: "Last updated date (shown in footer)",
+    legalContactPrompt: "Contact section prompt (before the contact link)",
+    legalSectionLabel: "Section {number}",
+    legalSectionBody: "Section body",
+    legalBulletLabel: "Bullet {number}",
+    legalContactSectionNote: "This section shows a contact link on the live page — no body text needed.",
+    legalAccessibilityCommitment: "Our commitment",
+    legalAccessibilityWcag: "WCAG principles",
+    legalAccessibilityFeatures: "Accessibility features",
+    legalAccessibilityLimitations: "Known limitations",
+    legalAccessibilityReport: "Report an issue",
+    aboutHeroSection: "Hero",
+    aboutMissionSection: "Mission",
+    aboutServeSection: "Who we serve",
+    aboutValuesSection: "Values",
+    aboutCtaSection: "Call to action",
+    sectionHeading: "Section heading",
+    sectionIntro: "Section introduction",
+    paragraphOne: "First paragraph",
+    paragraphTwo: "Second paragraph",
+    paragraphThree: "Third paragraph",
+    audienceItems: "Audience list items",
+    audienceItem: "Audience item {number}",
+    serviceCards: "Service area cards",
+    cardTitle: "Card title",
+    cardDescription: "Card description",
+    primaryButtonLabel: "Primary button label",
+    secondaryButtonLabel: "Secondary button label",
+    pages: {
+      about: "About Us",
+      contact: "Contact Us",
+      faq: "Help & FAQ",
+      privacy: "Privacy Policy",
+      terms: "Terms of Use",
+      accessibility: "Accessibility",
+      editAbout: "Edit About page",
+      editContact: "Edit Contact page",
+      editPrivacy: "Edit Privacy Policy",
+      editTerms: "Edit Terms of Use",
+      editAccessibility: "Edit Accessibility Statement",
+      editFaqs: "Edit FAQs",
+      contactNote:
+        "Edits the hero, sidebar copy, and help links. The contact form layout and field labels are fixed.",
+      badgeTemplate: "Template page",
+      badgeDedicated: "Dedicated editor",
+    },
     newPage: "New Page",
     pageTitle: "Page title",
     slugLabel: "URL slug",
@@ -481,6 +1018,56 @@ Who We Serve
       name: "Emergency Assistance",
       description: "Crisis help, hotlines, and immediate support",
       shortName: "Emergency",
+    },
+    "state-agency": {
+      name: "State Agency",
+      description: "Kentucky state government reentry programs and services",
+      shortName: "State Agency",
+    },
+    "substance-use-treatment": {
+      name: "Substance Use Treatment",
+      description: "Addiction treatment and recovery housing for justice-involved individuals",
+      shortName: "Treatment",
+    },
+    "food-nutrition": {
+      name: "Food & Nutrition",
+      description: "Food assistance and nutrition programs",
+      shortName: "Food",
+    },
+    "id-documentation": {
+      name: "ID & Documentation",
+      description: "Birth certificates, IDs, and vital records assistance",
+      shortName: "ID",
+    },
+    "family-children": {
+      name: "Family & Children",
+      description: "Family reunification and support for loved ones of incarcerated people",
+      shortName: "Family",
+    },
+    "peer-support": {
+      name: "Peer Support",
+      description: "Peer mentors and recovery community support",
+      shortName: "Peer Support",
+    },
+    veterans: {
+      name: "Veterans",
+      description: "Reentry services for justice-involved veterans",
+      shortName: "Veterans",
+    },
+    "basic-needs": {
+      name: "Basic Needs",
+      description: "Clothing, hygiene, and essential items at release",
+      shortName: "Basic Needs",
+    },
+    "probation-parole": {
+      name: "Probation & Parole",
+      description: "Community supervision and DOC contracted reentry centers",
+      shortName: "Probation",
+    },
+    "reentry-organizations": {
+      name: "Reentry Organizations",
+      description: "Nonprofit reentry coalitions and community-based reentry programs",
+      shortName: "Reentry",
     },
   },
 

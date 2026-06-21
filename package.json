@@ -6,7 +6,11 @@
     "dev": "next dev -p 8080",
     "build": "next build",
     "start": "next start -p 8080",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed:resources": "npx tsx scripts/generate-resources-seed.ts data/resources.csv",
+    "seed:enrich": "npx tsx scripts/apply-enrichments.ts",
+    "migrate:eligibility": "npx tsx scripts/migrate-eligibility-fields.ts",
+    "migrate:served-counties": "npx tsx scripts/migrate-served-counties.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.0",
@@ -15,19 +19,23 @@
     "date-fns": "^4.4.0",
     "lucide-react": "^1.21.0",
     "next": "16.2.9",
+    "pdfkit": "^0.17.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "resend": "^4.5.1",
     "tailwind-merge": "^3.6.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/pdfkit": "^0.13.9",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "tailwindcss": "^4",
+    "tsx": "^4.22.4",
     "typescript": "^5"
   }
 }

@@ -39,19 +39,29 @@ export const es = {
 
   nav: {
     brandName: "Biblioteca de Recursos para la Reinserción",
-    tagline: "Su camino hacia el apoyo",
+    tagline: "Encuentra recursos. Construye estabilidad. Sigue adelante.",
+    taglinePhrase1: "Encuentra recursos.",
+    taglinePhrase2: "Construye estabilidad.",
+    taglinePhrase3: "Sigue adelante.",
     findResources: "Buscar recursos",
     saved: "Guardados",
     dashboard: "Mi panel",
     faq: "Ayuda y preguntas frecuentes",
+    faqShort: "Ayuda",
     signIn: "Iniciar sesión",
     signOut: "Cerrar sesión",
     createAccount: "Crear cuenta",
     admin: "Administración",
     adminPortal: "Portal de administración",
-    homeAriaLabel: "Biblioteca de Recursos para la Reinserción — Inicio",
+    homeAriaLabel: "{brand} — Inicio",
     mainNav: "Navegación principal",
     mobileNav: "Navegación móvil",
+  },
+
+  breadcrumb: {
+    ariaLabel: "Ruta de navegación",
+    home: "Inicio",
+    resourceDetail: "Detalles del recurso",
   },
 
   footer: {
@@ -77,7 +87,7 @@ export const es = {
     crisisLine:
       "Si está en crisis, llame o envíe un mensaje de texto al 988 para recibir apoyo inmediato.",
     faqLink: "página de preguntas frecuentes",
-    copyright: "© {year} Biblioteca de Recursos para la Reinserción. Todos los derechos reservados.",
+    copyright: "© {year} Road to Reentry Library. Todos los derechos reservados.",
     findResources: "Buscar recursos",
     savedResources: "Recursos guardados",
     myDashboard: "Mi panel",
@@ -152,6 +162,16 @@ export const es = {
       "Busque y filtre recursos de reinserción por categoría, ubicación y tipo de servicio.",
     programCount: "{count} programas disponibles",
     resultsSummary: "Programas que coinciden con su búsqueda",
+    resultsSummaryWithQuery: 'Programas que coinciden con su búsqueda "{query}"',
+    resultsSplitSummary: "{local} en el condado de {county} · {statewide} estatales",
+    resultsInCountyHeading: "En el condado de {county}",
+    resultsInCountyHint:
+      "Programas ubicados en o que atienden específicamente al condado de {county}.",
+    resultsStatewideHeading: "También disponibles en todo el estado",
+    resultsStatewideHint:
+      "Estos programas atienden a los 120 condados de Kentucky, incluido {county}.",
+    resultsNoLocalInCounty:
+      "No hay programas locales o regionales en el condado de {county}. Los recursos estatales a continuación pueden ayudar.",
     noResults: "No se encontraron recursos",
     noResultsHint:
       "Pruebe con otra categoría o abra los filtros para cambiar su búsqueda.",
@@ -186,6 +206,14 @@ export const es = {
     backToResources: "Volver a recursos",
     servicesOffered: "Servicios ofrecidos",
     eligibilityRequirements: "Requisitos de elegibilidad",
+    additionalInfo: "Información útil",
+    countiesServed: "Condados atendidos",
+    coverageInCounty: "En este condado",
+    coverageRegional: "Regional",
+    coverageStatewide: "En todo el estado",
+    countyFilterHint:
+      "Elija el condado donde vive ahora o donde planea vivir después de su liberación para ver recursos que atienden esa área.",
+    filterByCountyAria: "Ver recursos que atienden el condado de {county}",
     contactInfo: "Información de contacto",
     tags: "Etiquetas",
     address: "Dirección",
@@ -222,6 +250,13 @@ export const es = {
       'Modo de demostración: use cualquier correo electrónico y contraseña. Incluya "admin" en el correo para acceso de administrador.',
     authUnavailable:
       "La autenticación no está disponible en este momento. Inténtelo de nuevo más tarde.",
+    signInFailed:
+      "No se pudo iniciar sesión. Verifique su correo y contraseña e inténtelo de nuevo.",
+    signUpFailed: "No se pudo crear su cuenta. Inténtelo de nuevo.",
+    signUpDatabaseError:
+      "No se pudo completar la configuración de la cuenta porque falta o está mal configurado el activador de perfiles en la base de datos. En Supabase, abra el Editor SQL y ejecute supabase/migrations/003_fix_profile_signup_trigger.sql, luego inténtelo de nuevo.",
+    signUpConfirmEmail:
+      "Revise su correo electrónico para encontrar un enlace de confirmación y terminar de crear su cuenta.",
   },
 
   dashboard: {
@@ -251,12 +286,55 @@ export const es = {
     signInTitle: "Recursos guardados",
     signInDesc: "Inicie sesión para guardar recursos y crear su lista personal.",
     browseResources: "Explorar recursos",
+    pdf: {
+      documentTitle: "Recursos guardados",
+      preparedFor: "Preparado para {name}",
+      generatedOn: "Generado el {date}",
+      resourceCount: "{count} programas incluidos",
+      description: "Descripción",
+      location: "Ubicación",
+      address: "Dirección",
+      brandTagline: "Prepárese hoy. Tenga éxito mañana.",
+      brandDescription:
+        "Road to Reentry ayuda a las personas que se preparan para salir de la cárcel o que ya regresaron a la comunidad con recursos confiables, herramientas prácticas y apoyo para construir estabilidad, superar barreras y crear un futuro exitoso.",
+      footer:
+        "La información se proporciona como referencia. Contacte cada programa para confirmar elegibilidad y disponibilidad.",
+    },
+    email: {
+      button: "Enviar PDF por correo",
+      buttonSending: "Enviando…",
+      prompt: "¿A qué dirección debemos enviar su PDF de recursos guardados?",
+      addressLabel: "Correo electrónico",
+      addressPlaceholder: "usted@ejemplo.com",
+      addressHint: "Ingrese la dirección donde desea recibir el PDF.",
+      sendButton: "Enviar PDF",
+      invalidEmail: "Ingrese una dirección de correo válida.",
+      success: "PDF enviado a {email}",
+      successTitle: "PDF enviado correctamente",
+      unavailable:
+        "La exportación por correo está disponible cuando inicia sesión con una cuenta conectada.",
+      notConfigured: "El correo aún no está configurado en este sitio.",
+      signInRequired: "Inicie sesión para enviar sus recursos guardados por correo.",
+      noEmail: "Su cuenta no tiene una dirección de correo registrada.",
+      empty: "Guarde al menos un recurso antes de enviar un PDF.",
+      failed: "No se pudo enviar el PDF. Inténtelo de nuevo más tarde.",
+      usageGuidance:
+        "Guarde todos los recursos que necesite antes de enviar. Esta función está pensada para usarla justo antes de salir de la cárcel, para tener su lista lista cuando regrese a la comunidad.",
+      limitReminder: "Puede enviar este PDF {limit} veces. Le quedan {remaining}.",
+      limitReached: "Ya usó los {limit} correos con PDF permitidos para esta cuenta.",
+      subject: "Sus recursos guardados ({count} programas)",
+      filename: "recursos-guardados.pdf",
+      greeting: "Hola,",
+      greetingNamed: "Hola {name},",
+      body: "Adjunto encontrará un PDF con {count} programas guardados de la Biblioteca de Recursos para la Reinserción.",
+    },
   },
 
   about: {
     title: "Acerca de nosotros",
-    description: "Conozca la Biblioteca de Recursos para la Reinserción y nuestra misión.",
-    defaultTitle: "Acerca de nosotros",
+    description:
+      "Una plataforma gratuita que conecta a las personas con programas de vivienda, empleo, atención médica y otros apoyos para la reinserción en todo el país.",
+    defaultTitle: "Acerca de la Biblioteca de Recursos para la Reinserción",
     defaultContent: `La Biblioteca de Recursos para la Reinserción es una plataforma gratuita diseñada para ayudar a las personas que se preparan para salir del sistema de justicia o que salieron recientemente a encontrar el apoyo que necesitan para reconstruir sus vidas.
 
 Conectamos a las personas con programas locales, estatales y nacionales de vivienda, empleo, atención médica, recuperación, educación, asistencia legal y más.
@@ -269,6 +347,122 @@ A quién servimos
 • Coordinadores de reinserción y gestores de casos
 • Oficiales de libertad condicional y supervisión
 • Organizaciones comunitarias`,
+    missionTitle: "Nuestra misión",
+    missionP1:
+      "La Biblioteca de Recursos para la Reinserción es una plataforma gratuita diseñada para ayudar a las personas que se preparan para salir del sistema de justicia o que salieron recientemente a encontrar el apoyo que necesitan para reconstruir sus vidas.",
+    missionP2:
+      "Conectamos a las personas con programas locales, estatales y nacionales de vivienda, empleo, atención médica, recuperación, educación, asistencia legal y más — haciendo que la información vital sea fácil de encontrar, entender y utilizar.",
+    missionP3: "",
+    serveTitle: "A quién servimos",
+    serveIntro:
+      "Nuestra biblioteca está pensada para quienes atraviesan la reinserción — y para los profesionales y organizaciones que los apoyan cada día.",
+    audience: {
+      item1: "Personas que se preparan para salir del sistema de justicia",
+      item2: "Personas que salieron recientemente y reconstruyen sus vidas",
+      item3: "Familiares y seres queridos que buscan ayuda",
+      item4: "Coordinadores de reinserción y gestores de casos",
+      item5: "Oficiales de libertad condicional y supervisión",
+      item6: "Organizaciones comunitarias y defensores",
+    },
+    serveCards: {
+      housing: {
+        title: "Vivienda y refugio",
+        desc: "Vivienda transitoria, refugio de emergencia y programas de asistencia para el alquiler",
+      },
+      employment: {
+        title: "Empleo y capacitación",
+        desc: "Capacitación laboral, programas de fuerza laboral y alianzas con empleadores",
+      },
+      healthcare: {
+        title: "Salud y recuperación",
+        desc: "Atención médica, servicios de salud mental y recuperación de sustancias",
+      },
+      legal: {
+        title: "Asistencia legal",
+        desc: "Ayuda con la eliminación de antecedentes, clínicas de ayuda legal e información sobre derechos",
+      },
+    },
+    valuesTitle: "Lo que creemos",
+    valuesSubtitle: "Estos principios guían todo lo que construimos y cada recurso que incluimos.",
+    values: {
+      dignity: {
+        title: "Dignidad primero",
+        body: "Toda persona merece respeto y una oportunidad justa de reconstruir su vida. Diseñamos cada experiencia con esa convicción en el centro.",
+      },
+      accessibility: {
+        title: "Accesibilidad",
+        body: "La información debe ser fácil de encontrar y entender — sin importar el idioma, el dispositivo o las habilidades técnicas.",
+      },
+      community: {
+        title: "Comunidad",
+        body: "La reinserción ocurre en comunidad. Conectamos a las personas con programas locales y las organizaciones que conocen mejor su entorno.",
+      },
+      trust: {
+        title: "Confianza",
+        body: "Nos esforzamos por mantener los listados precisos y actualizados, y agradecemos las correcciones para que las personas puedan confiar en lo que encuentran aquí.",
+      },
+    },
+    ctaTitle: "¿Listo para buscar recursos?",
+    ctaSubtitle:
+      "Busque cientos de programas en los 50 estados — gratis, sin necesidad de cuenta.",
+    ctaBrowse: "Explorar recursos",
+    ctaContact: "Contáctenos",
+  },
+
+  contact: {
+    title: "Contáctenos",
+    description: "Comuníquese con el equipo de la Biblioteca de Recursos para la Reinserción.",
+    defaultTitle: "Contáctenos",
+    formTitle: "Enviar un mensaje",
+    yourName: "Su nombre",
+    namePlaceholder: "María García",
+    emailAddress: "Correo electrónico",
+    emailPlaceholder: "maria@ejemplo.com",
+    subjectLabel: "Asunto",
+    messageLabel: "Mensaje",
+    messagePlaceholder: "Cuéntenos en qué podemos ayudarle...",
+    sendMessage: "Enviar mensaje",
+    sending: "Enviando...",
+    submitSuccess:
+      "¡Gracias! Hemos recibido su mensaje. Normalmente respondemos en un plazo de 1 a 3 días hábiles.",
+    otherWaysTitle: "Otras formas de obtener ayuda",
+    responseTimeTitle: "Tiempo de respuesta",
+    responseTimeframe: "1 a 3 días hábiles",
+    responseTimeBody:
+      "Normalmente respondemos en {timeframe}. Si tiene una necesidad urgente, llame o envíe un mensaje de texto al 988 (Línea de crisis) o envíe HOME al 741741.",
+    subject: {
+      general: "Pregunta general",
+      "suggest-resource": "Sugerir un recurso",
+      "report-info": "Reportar información desactualizada",
+      account: "Ayuda con la cuenta",
+    },
+    helpLinks: {
+      faqsTitle: "Ver preguntas frecuentes",
+      faqsDesc: "Encuentre respuestas a preguntas comunes",
+      resourcesTitle: "Buscar recursos",
+      resourcesDesc: "Busque programas cerca de usted",
+      suggestTitle: "Sugerir un recurso",
+      suggestDesc: "Cuéntenos sobre un programa que deberíamos incluir",
+    },
+    defaultContent: `Estamos aquí para ayudarle a encontrar recursos y mejorar esta biblioteca.
+
+Sugerir un recurso
+¿Conoce un programa que debería aparecer aquí? Envíenos el nombre de la organización, la ubicación y los servicios que ofrece.
+
+Reportar información desactualizada
+Si un listado tiene horarios, teléfono o requisitos de elegibilidad incorrectos, avísenos para que podamos revisarlo.
+
+Preguntas generales
+Para ayuda con el sitio, crear una cuenta o acceder a recursos guardados, visite nuestra página de preguntas frecuentes o envíenos un mensaje.
+
+Correo electrónico
+[Su correo del programa]
+
+Incluya su ciudad o condado cuando pregunte sobre recursos locales para que podamos responder con más utilidad.`,
+  },
+
+  cmsPage: {
+    exploreMore: "Explorar más",
   },
 
   faq: {
@@ -277,8 +471,219 @@ A quién servimos
       "Preguntas frecuentes sobre el uso de la Biblioteca de Recursos para la Reinserción.",
     heading: "Ayuda y preguntas frecuentes",
     intro: "Respuestas a preguntas comunes sobre cómo encontrar y usar recursos.",
+    empty: "Aún no hay preguntas publicadas. Vuelva pronto.",
+    noResults:
+      "Ninguna pregunta coincide con su búsqueda. Pruebe otras palabras clave o contáctenos para obtener ayuda.",
+    searchLabel: "Buscar en preguntas frecuentes",
+    searchPlaceholder: "Buscar una pregunta...",
+    filterAll: "Todos los temas",
+    categoryFilterLabel: "Filtrar por tema",
+    stillNeedHelpTitle: "¿Aún tiene preguntas?",
+    stillNeedHelpBody:
+      "¿No encuentra lo que busca? Nuestro equipo puede ayudarle con cualquier tema no cubierto aquí.",
+    quickLinksTitle: "Enlaces rápidos",
+    sidebarLinks: {
+      resourcesTitle: "Buscar recursos",
+      resourcesDesc: "Busque programas cerca de usted",
+      contactTitle: "Contáctenos",
+      contactDesc: "Envíenos un mensaje directamente",
+      suggestTitle: "Sugerir un recurso",
+      suggestDesc: "Cuéntenos sobre un programa que deberíamos incluir",
+    },
+    crisisTitle: "¿Necesita ayuda inmediata?",
+    crisisBody:
+      "Si está en crisis, llame o envíe un mensaje de texto al 988 (Línea de crisis) o envíe HOME al 741741 (Línea de texto de crisis).",
+    ctaTitle: "¿Listo para buscar recursos?",
+    ctaSubtitle:
+      "Busque cientos de programas en los 50 estados — gratis, sin necesidad de cuenta.",
+    ctaBrowse: "Explorar recursos",
+    ctaContact: "Contáctenos",
     general: "General",
     usingTheSite: "Uso del sitio",
+    accountsAndPrivacy: "Cuentas y privacidad",
+  },
+
+  legal: {
+    lastUpdated: "Última actualización: {date}",
+    contactLink: "contáctenos",
+    privacy: {
+      title: "Política de privacidad",
+      description: "Recopilamos la menor cantidad de datos posible y nunca vendemos su información.",
+      intro:
+        "La Biblioteca de Recursos para la Reinserción está comprometida con proteger su privacidad. Esta política explica qué información recopilamos, cómo la usamos y las opciones que tiene.",
+      lastUpdatedDate: "junio de 2026",
+      contactPrompt: "Si tiene preguntas sobre esta Política de privacidad, por favor",
+      sections: {
+        s1: {
+          title: "1. Información que recopilamos",
+          body: "Recopilamos solo la información necesaria para operar el sitio. Según cómo use la Biblioteca de Recursos para la Reinserción, esto puede incluir información que usted proporciona directamente (como al crear una cuenta o contactarnos), información recopilada automáticamente (como datos básicos de uso) e información relacionada con los recursos que guarda o consulta mientras tiene sesión iniciada.",
+        },
+        s2: {
+          title: "2. Cómo usamos su información",
+          body: "Usamos la información que recopilamos para:",
+          bullets: {
+            b1: "Proporcionar, mantener y mejorar el directorio de recursos y las funciones del sitio",
+            b2: "Crear y administrar su cuenta, incluidos los recursos guardados",
+            b3: "Responder mensajes y solicitudes de ayuda",
+            b4: "Entender cómo se usa el sitio para mejorar la accesibilidad y el contenido",
+          },
+        },
+        s3: {
+          title: "3. Cookies y tecnologías similares",
+          body: "Usamos cookies y tecnologías similares para recordar su preferencia de idioma, mantener su sesión iniciada y comprender el uso general del sitio. Puede controlar las cookies en la configuración de su navegador, aunque algunas funciones pueden no funcionar correctamente si las cookies están desactivadas.",
+        },
+        s4: {
+          title: "4. Compartir información",
+          body: "No vendemos su información personal. Podemos compartir datos limitados con proveedores de servicios que nos ayudan a operar el sitio (como alojamiento y autenticación), cuando la ley lo exija o para proteger los derechos y la seguridad de los usuarios y del público. Cualquier proveedor externo que usemos debe proteger su información.",
+        },
+        s5: {
+          title: "5. Sus derechos y opciones",
+          body: "Según donde viva, puede tener derecho a:",
+          bullets: {
+            b1: "Acceder a la información personal que tenemos sobre usted",
+            b2: "Solicitar la corrección de información inexacta",
+            b3: "Solicitar la eliminación de su cuenta y los datos asociados",
+            b4: "Optar por no recibir comunicaciones no esenciales",
+            b5: "Usar el sitio sin crear una cuenta para buscar y explorar recursos básicos",
+          },
+        },
+        s6: {
+          title: "6. Seguridad de los datos",
+          body: "Usamos medidas administrativas, técnicas y organizativas razonables para proteger su información, incluyendo:",
+          bullets: {
+            b1: "Conexiones cifradas (HTTPS) para los datos en tránsito",
+            b2: "Controles de acceso para herramientas administrativas",
+            b3: "Revisión periódica de nuestras prácticas de datos",
+            b4: "Limitar la recopilación a lo necesario para el servicio",
+          },
+        },
+        s7: {
+          title: "7. Privacidad de menores",
+          body: "La Biblioteca de Recursos para la Reinserción está destinada a adultos y no está dirigida a menores de 13 años. No recopilamos a sabiendas información personal de menores. Si cree que un menor nos ha proporcionado información personal, contáctenos para que podamos eliminarla.",
+        },
+        s8: {
+          title: "8. Cambios a esta política",
+          body: "Podemos actualizar esta Política de privacidad periódicamente. Cuando hagamos cambios, actualizaremos la fecha al final de esta página. El uso continuado del sitio después de publicar los cambios significa que acepta la política actualizada.",
+        },
+        s9: {
+          title: "9. Contáctenos",
+          body: "",
+        },
+      },
+    },
+    terms: {
+      title: "Términos de uso",
+      description: "Términos en lenguaje claro para usar la Biblioteca de Recursos para la Reinserción.",
+      intro:
+        "Al acceder o usar la Biblioteca de Recursos para la Reinserción (\"el Sitio\"), usted acepta quedar sujeto a estos Términos de uso. Si no está de acuerdo, por favor no use el Sitio.",
+      lastUpdatedDate: "junio de 2026",
+      contactPrompt: "Para preguntas sobre estos Términos de uso, por favor",
+      sections: {
+        s1: {
+          title: "1. Qué es este sitio",
+          body: "La Biblioteca de Recursos para la Reinserción es un directorio en línea gratuito que ayuda a las personas a encontrar programas y servicios relacionados con la reinserción, incluyendo vivienda, empleo, atención médica, ayuda legal y otros recursos comunitarios. Proporcionamos información para ayudarle a conectarse con organizaciones; nosotros no somos un proveedor de servicios.",
+        },
+        s2: {
+          title: "2. Quién puede usar el sitio",
+          body: "Cualquier persona puede explorar y buscar recursos sin una cuenta. Algunas funciones, como guardar recursos o acceder a un panel personal, requieren crear una cuenta gratuita. Debe proporcionar información precisa al registrarse y mantener seguras sus credenciales de acceso.",
+        },
+        s3: {
+          title: "3. Sin asesoramiento profesional",
+          body: "La información en este Sitio se proporciona solo con fines informativos generales. No constituye asesoramiento legal, médico, financiero u otro profesional. Verifique siempre los detalles directamente con la organización que ofrece un programa antes de confiar en cualquier listado.",
+        },
+        s4: {
+          title: "4. Uso aceptable",
+          body: "Usted acepta no hacer un uso indebido del Sitio. Las actividades prohibidas incluyen:",
+          bullets: {
+            b1: "Intentar obtener acceso no autorizado al Sitio, cuentas o sistemas",
+            b2: "Extraer, recopilar o descargar contenido de forma masiva sin permiso",
+            b3: "Publicar o transmitir contenido dañino, ilegal o engañoso",
+            b4: "Interferir con el funcionamiento del Sitio o el acceso de otros usuarios",
+            b5: "Usar el Sitio para solicitudes comerciales no relacionadas con apoyo para la reinserción",
+            b6: "Tergiversar su identidad o afiliación con cualquier organización",
+          },
+        },
+        s5: {
+          title: "5. Cuentas de usuario",
+          body: "Usted es responsable de la actividad que ocurra bajo su cuenta. Notifíquenos de inmediato si sospecha acceso no autorizado. Podemos suspender o cancelar cuentas que violen estos términos o que razonablemente creemos que representen un riesgo para el Sitio u otros usuarios.",
+        },
+        s6: {
+          title: "6. Listados de recursos",
+          body: "Nos esforzamos por mantener los listados de recursos precisos y actualizados, pero no garantizamos la integridad, exactitud o disponibilidad de ningún programa. Los listados pueden cambiar sin previo aviso. Si encuentra información desactualizada, repórtela a través de nuestra página de contacto.",
+        },
+        s7: {
+          title: "7. Propiedad intelectual",
+          body: "El diseño, texto y contenido original del Sitio son propiedad de la Biblioteca de Recursos para la Reinserción o sus licenciantes y están protegidos por las leyes de derechos de autor y otras leyes aplicables. Puede usar el Sitio con fines personales y no comerciales. No puede copiar, modificar ni redistribuir el contenido del Sitio sin permiso.",
+        },
+        s8: {
+          title: "8. Exclusión de garantías",
+          body: "El Sitio se proporciona \"tal cual\" y \"según disponibilidad\" sin garantías de ningún tipo, ya sean expresas o implícitas. No garantizamos que el Sitio sea ininterrumpido, libre de errores o libre de componentes dañinos.",
+        },
+        s9: {
+          title: "9. Limitación de responsabilidad",
+          body: "En la máxima medida permitida por la ley, la Biblioteca de Recursos para la Reinserción y sus colaboradores no serán responsables de daños indirectos, incidentales, especiales o consecuentes derivados de su uso del Sitio o de confiar en cualquier listado de recursos.",
+        },
+        s10: {
+          title: "10. Contacto",
+          body: "",
+        },
+      },
+    },
+    accessibility: {
+      title: "Declaración de accesibilidad",
+      description:
+        "Estamos comprometidos a hacer que la Biblioteca de Recursos para la Reinserción sea accesible para todos, incluidas las personas con discapacidades.",
+      lastUpdatedDate: "junio de 2026",
+      commitmentTitle: "Nuestro compromiso",
+      commitmentP1:
+        "La Biblioteca de Recursos para la Reinserción está diseñada para ser usable por personas con una amplia gama de capacidades y tecnologías de asistencia. Nuestro objetivo es cumplir con las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1 nivel AA.",
+      commitmentP2:
+        "La accesibilidad es un esfuerzo continuo. Revisamos regularmente el sitio, probamos con tecnologías de asistencia y actualizamos contenido y funciones según los comentarios de los usuarios y las mejores prácticas.",
+      wcagTitle: "Principios WCAG 2.1",
+      principles: {
+        perceivable: {
+          title: "Perceptible",
+          body: "La información y los componentes de la interfaz se presentan de formas que los usuarios pueden percibir, incluyendo contraste de color suficiente y alternativas de texto cuando corresponda.",
+        },
+        operable: {
+          title: "Operable",
+          body: "La navegación y los elementos interactivos pueden usarse con teclado y otros métodos de entrada, con tiempo suficiente para leer y usar el contenido.",
+        },
+        understandable: {
+          title: "Comprensible",
+          body: "El contenido está escrito en lenguaje claro y la interfaz se comporta de manera predecible.",
+        },
+        robust: {
+          title: "Robusto",
+          body: "El sitio está construido para funcionar con tecnologías de asistencia y navegadores actuales y futuros.",
+        },
+      },
+      featuresTitle: "Funciones de accesibilidad",
+      features: {
+        keyboard: {
+          title: "Navegación con teclado",
+          body: "Un enlace de salto le permite omitir el encabezado e ir al contenido principal. Enlaces, botones, búsqueda, filtros, menús desplegables y acordeones de preguntas frecuentes funcionan con teclado, y los estilos de foco visibles muestran dónde está en la página.",
+        },
+        screenReader: {
+          title: "Compatibilidad con lectores de pantalla",
+          body: "Las páginas usan puntos de referencia como encabezado, contenido principal y navegación. Búsqueda, filtros y formularios incluyen etiquetas de texto o ARIA; los iconos decorativos se ocultan de la tecnología de asistencia; y los acordeones y menús desplegables indican si están abiertos o cerrados.",
+        },
+        plainLanguage: {
+          title: "Lenguaje claro",
+          body: "La navegación, los botones y el contenido de ayuda integrado usan un lenguaje claro y cotidiano. La interfaz del sitio está disponible en inglés y español, y los nombres de categorías y las descripciones de recursos se traducen al cambiar de idioma.",
+        },
+        mobile: {
+          title: "Accesible en móviles",
+          body: "Los diseños se adaptan a teléfonos, tabletas y computadoras de escritorio. Un menú móvil da acceso a la navegación y las opciones de cuenta, y los botones y enlaces tienen un tamaño adecuado para el tacto.",
+        },
+      },
+      limitationsTitle: "Limitaciones conocidas",
+      limitationsBody:
+        "Parte del contenido de terceros enlazado desde los listados de recursos (como sitios web de organizaciones externas o mapas integrados) puede no estar completamente bajo nuestro control y puede no cumplir los mismos estándares de accesibilidad. Animamos a las organizaciones asociadas a mejorar la accesibilidad y agradecemos los informes sobre barreras que encuentre.",
+      reportTitle: "Reportar un problema de accesibilidad",
+      reportBody:
+        "Si tiene dificultades para acceder a cualquier parte de la Biblioteca de Recursos para la Reinserción, o si tiene sugerencias de mejora, avísenos. Incluya la URL de la página y una descripción del problema para que podamos investigarlo.",
+    },
   },
 
   notFound: {
@@ -304,12 +709,18 @@ A quién servimos
     analyticsTitle: "Panel de analíticas",
     analyticsSubtitle: "Resumen del uso de la plataforma y los datos de recursos.",
     totalResources: "Total de recursos",
+    activeResources: "Recursos activos",
+    featuredResources: "Recursos destacados",
+    totalCategories: "Categorías",
+    totalViews: "Total de vistas",
     totalUsers: "Total de usuarios",
     totalSaves: "Total de guardados",
     resourcesByState: "Recursos por estado",
     resourcesByCategory: "Recursos por categoría",
     mostViewed: "Recursos más vistos",
     mostSaved: "Recursos más guardados",
+    noMostViewed: "Aún no hay vistas registradas.",
+    noMostSaved: "Aún no hay guardados registrados.",
     weeklyActivity: "Actividad semanal",
     views: "vistas",
     saves: "guardados",
@@ -324,6 +735,7 @@ A quién servimos
     featured: "Destacado",
     feature: "Destacar",
     importSuccess: "Se importaron {count} recursos (modo de demostración — no se guardó)",
+    importDbUnavailable: "La importación no está disponible cuando está conectado a la base de datos.",
     importInvalid: "Archivo JSON no válido",
     featuredMaxAlert:
       "Puede destacar hasta {max} recursos en la página de inicio.",
@@ -341,6 +753,9 @@ A quién servimos
     email: "Correo electrónico",
     hours: "Horario",
     eligibility: "Elegibilidad",
+    eligibilityHint: "Quién califica (ingresos, edad, referidos, etc.)",
+    notes: "Información útil",
+    notesHint: "Consejos operativos: líneas de crisis, ubicaciones alternas, cómo solicitar — no elegibilidad",
     services: "Servicios",
     tags: "Etiquetas",
     servicesHint: "Separe los servicios con comas",
@@ -351,10 +766,35 @@ A quién servimos
     updateResource: "Actualizar recurso",
     createResource: "Crear recurso",
     saving: "Guardando...",
+    resourceSaveFailed: "No se pudo guardar el recurso. Inténtelo de nuevo.",
+    homepageSaveFailed: "No se pudo guardar el contenido de la página de inicio. Inténtelo de nuevo.",
+    savingAndTranslating: "Guardando y traduciendo…",
+    homepageSavedWithTranslation: "Guardado. La traducción al español se actualizó automáticamente.",
+    translationUnavailable:
+      "Guardado en inglés. Agregue DEEPL_API_KEY a .env.local para habilitar la traducción automática al español.",
+    translationFailed: "No se pudo traducir el contenido al español. Inténtelo de nuevo.",
     homepageContent: "Contenido de la página de inicio",
     homepageContentDesc:
-      "Edite el titular principal y el subtítulo de la página de inicio.",
+      "Edite la marca del sitio, el contenido principal y los recursos destacados. Escriba en inglés; el español se genera automáticamente al guardar.",
+    siteBrandingSection: "Marca del sitio",
+    siteBrandingSectionDesc: "Nombre de la aplicación y eslóganes del encabezado y pie de página.",
+    navBrandName: "Nombre de la aplicación",
+    navBrandNameHint: "Se muestra en el encabezado y el pie de página.",
+    navTagline: "Eslogan del encabezado",
+    navTaglineHint: "Línea breve bajo el nombre en la navegación superior.",
+    footerTagline: "Eslogan del pie de página",
+    footerTaglineHint: "Línea destacada bajo el nombre en el pie de página.",
+    footerDescription: "Descripción del pie de página",
+    footerDescriptionHint: "Párrafo breve que describe la plataforma en el pie de página.",
+    heroSection: "Sección principal",
+    heroSectionDesc: "Área del titular principal en la página de inicio.",
+    homepageEnglishHint: "Escriba en inglés. La versión en español se crea automáticamente al guardar.",
     heroHeadline: "Titular principal",
+    heroHeadlineHighlight: "Texto con gradiente",
+    heroHeadlineHighlightHint:
+      "Ingrese la palabra o frase exacta del titular que debe mostrar el efecto de gradiente.",
+    heroHeadlineHighlightMismatch:
+      "Este texto no aparece en el titular. Debe coincidir exactamente, incluidas mayúsculas y minúsculas.",
     heroSubheadline: "Subtítulo principal",
     saveChanges: "Guardar cambios",
     saved: "¡Guardado!",
@@ -373,11 +813,24 @@ A quién servimos
     pinHomepage: "Fijar en la página de inicio",
     newAnnouncement: "Nuevo anuncio",
     announcementsTitle: "Anuncios",
+    announcementSaveFailed: "No se pudo publicar el anuncio. Inténtelo de nuevo.",
+    announcementDeleteFailed: "No se pudo eliminar el anuncio. Inténtelo de nuevo.",
+    deleteAnnouncementConfirm: "¿Eliminar este anuncio? Esta acción no se puede deshacer.",
     faqManagement: "Gestión de preguntas frecuentes",
     question: "Pregunta",
     answer: "Respuesta",
     faqCategory: "Categoría",
     newFaq: "Nueva pregunta frecuente",
+    editFaq: "Editar pregunta frecuente",
+    deleteFaq: "Eliminar",
+    deleteFaqConfirm: "¿Eliminar esta pregunta frecuente? Esta acción no se puede deshacer.",
+    faqSaveFailed: "No se pudo guardar la pregunta frecuente. Inténtelo de nuevo.",
+    faqDeleteFailed: "No se pudo eliminar la pregunta frecuente. Inténtelo de nuevo.",
+    deletePage: "Eliminar",
+    deletePageConfirm: "¿Eliminar esta página? Esta acción no se puede deshacer.",
+    pageSaveFailed: "No se pudo guardar la página. Inténtelo de nuevo.",
+    pageDeleteFailed: "No se pudo eliminar la página. Inténtelo de nuevo.",
+    viewPage: "Ver página",
     categoryManagement: "Gestión de categorías",
     categoryName: "Nombre de la categoría",
     slug: "Identificador (slug)",
@@ -388,16 +841,106 @@ A quién servimos
     deleteCategory: "Eliminar categoría",
     deleteCategoryConfirm:
       "¿Eliminar esta categoría? Los recursos deberán reasignarse.",
+    categorySaveFailed: "No se pudo guardar la categoría. Inténtelo de nuevo.",
+    categoryDeleteFailed:
+      "No se pudo eliminar la categoría. Puede que aún esté asignada a recursos.",
     userManagement: "Gestión de usuarios",
     noName: "Sin nombre",
     resetPassword: "Restablecer contraseña",
     resetPasswordAlert:
       "Se enviaría un correo de restablecimiento de contraseña a {email} (requiere Supabase Auth)",
+    resetPasswordSent: "Correo de restablecimiento de contraseña enviado a {email}.",
+    userUpdateFailed: "No se pudo actualizar el usuario. Inténtelo de nuevo.",
     disable: "Desactivar",
     enable: "Activar",
     disableConfirm: "¿Desactivar esta cuenta de usuario?",
     cmsTitle: "Gestión de páginas",
-    cmsDesc: "Cree y edite páginas de contenido como Acerca de nosotros.",
+    cmsDesc: "Cree y edite páginas de contenido como Acerca de nosotros y Contacto.",
+    sitePages: "Páginas del sitio",
+    sitePagesTitle: "Páginas del sitio",
+    sitePagesDesc:
+      "Cada página pública tiene un editor dedicado que coincide con su diseño. Use los enlaces siguientes para editar el contenido correcto.",
+    aboutPage: "Página Acerca de",
+    aboutPageTitle: "Contenido de Acerca de",
+    aboutPageDesc:
+      "Edite el texto de la página Acerca de en inglés. El diseño en vivo no cambia; el español se genera automáticamente al guardar.",
+    aboutSaveFailed: "No se pudo guardar el contenido de Acerca de. Inténtelo de nuevo.",
+    contactPage: "Página de contacto",
+    contactPageTitle: "Contenido de la página de contacto",
+    contactPageDesc:
+      "Edite el texto de la página de contacto en inglés. El diseño del formulario no cambia; el español se genera automáticamente al guardar.",
+    contactSaveFailed: "No se pudo guardar el contenido de contacto. Inténtelo de nuevo.",
+    contactHeroSection: "Encabezado",
+    contactFormSection: "Formulario de contacto",
+    contactFormNote:
+      "Las etiquetas de los campos y las opciones de asunto permanecen en los archivos de traducción.",
+    contactSidebarSection: "Barra lateral",
+    contactOtherWaysHeading: "Título de otras formas de obtener ayuda",
+    contactResponseTimeHeading: "Título del tiempo de respuesta",
+    contactResponseTimeBody: "Mensaje del tiempo de respuesta",
+    contactHelpLinksSection: "Enlaces de ayuda",
+    contactHelpFaqs: "Enlace a preguntas frecuentes",
+    contactHelpResources: "Enlace a recursos",
+    contactHelpSuggest: "Enlace para sugerir un recurso",
+    legalSaveFailed: "No se pudo guardar el contenido de la página. Inténtelo de nuevo.",
+    legalPrivacyPageTitle: "Contenido de la política de privacidad",
+    legalPrivacyPageDesc:
+      "Edite la política de privacidad en inglés. El diseño legal no cambia; el español se genera automáticamente al guardar.",
+    legalTermsPageTitle: "Contenido de los términos de uso",
+    legalTermsPageDesc:
+      "Edite los términos de uso en inglés. El diseño legal no cambia; el español se genera automáticamente al guardar.",
+    legalAccessibilityPageTitle: "Contenido de la declaración de accesibilidad",
+    legalAccessibilityPageDesc:
+      "Edite la declaración de accesibilidad en inglés. El diseño no cambia; el español se genera automáticamente al guardar.",
+    legalDocumentHeader: "Encabezado de la página",
+    legalIntro: "Introducción",
+    legalLastUpdatedDate: "Fecha de última actualización (pie de página)",
+    legalContactPrompt: "Texto antes del enlace de contacto",
+    legalSectionLabel: "Sección {number}",
+    legalSectionBody: "Cuerpo de la sección",
+    legalBulletLabel: "Viñeta {number}",
+    legalContactSectionNote:
+      "Esta sección muestra un enlace de contacto en el sitio en vivo; no se necesita texto del cuerpo.",
+    legalAccessibilityCommitment: "Nuestro compromiso",
+    legalAccessibilityWcag: "Principios WCAG",
+    legalAccessibilityFeatures: "Funciones de accesibilidad",
+    legalAccessibilityLimitations: "Limitaciones conocidas",
+    legalAccessibilityReport: "Reportar un problema",
+    aboutHeroSection: "Encabezado",
+    aboutMissionSection: "Misión",
+    aboutServeSection: "A quién servimos",
+    aboutValuesSection: "Valores",
+    aboutCtaSection: "Llamado a la acción",
+    sectionHeading: "Título de sección",
+    sectionIntro: "Introducción de sección",
+    paragraphOne: "Primer párrafo",
+    paragraphTwo: "Segundo párrafo",
+    paragraphThree: "Tercer párrafo",
+    audienceItems: "Elementos de audiencia",
+    audienceItem: "Elemento de audiencia {number}",
+    serviceCards: "Tarjetas de áreas de servicio",
+    cardTitle: "Título de tarjeta",
+    cardDescription: "Descripción de tarjeta",
+    primaryButtonLabel: "Etiqueta del botón principal",
+    secondaryButtonLabel: "Etiqueta del botón secundario",
+    pages: {
+      about: "Acerca de nosotros",
+      contact: "Contáctenos",
+      faq: "Ayuda y preguntas frecuentes",
+      privacy: "Política de privacidad",
+      terms: "Términos de uso",
+      accessibility: "Accesibilidad",
+      editAbout: "Editar página Acerca de",
+      editContact: "Editar página de contacto",
+      editPrivacy: "Editar política de privacidad",
+      editTerms: "Editar términos de uso",
+      editAccessibility: "Editar declaración de accesibilidad",
+      editFaqs: "Editar preguntas frecuentes",
+      contactNote:
+        "Edita el encabezado, el texto de la barra lateral y los enlaces de ayuda. El diseño del formulario y las etiquetas de los campos son fijos.",
+      badgeTemplate: "Página con plantilla",
+      badgeDedicated: "Editor dedicado",
+    },
     newPage: "Nueva página",
     pageTitle: "Título de la página",
     slugLabel: "Identificador de URL",
@@ -487,6 +1030,56 @@ A quién servimos
       name: "Asistencia de emergencia",
       description: "Ayuda en crisis, líneas de ayuda y apoyo inmediato",
       shortName: "Emergencia",
+    },
+    "state-agency": {
+      name: "Agencia estatal",
+      description: "Programas y servicios de reintegración del gobierno de Kentucky",
+      shortName: "Agencia estatal",
+    },
+    "substance-use-treatment": {
+      name: "Tratamiento por uso de sustancias",
+      description: "Tratamiento de adicciones y vivienda de recuperación para personas con antecedentes de justicia",
+      shortName: "Tratamiento",
+    },
+    "food-nutrition": {
+      name: "Alimentación y nutrición",
+      description: "Programas de asistencia alimentaria y nutrición",
+      shortName: "Alimentos",
+    },
+    "id-documentation": {
+      name: "Identificación y documentación",
+      description: "Actas de nacimiento, identificaciones y asistencia con registros vitales",
+      shortName: "ID",
+    },
+    "family-children": {
+      name: "Familia e hijos",
+      description: "Reunificación familiar y apoyo para seres queridos de personas encarceladas",
+      shortName: "Familia",
+    },
+    "peer-support": {
+      name: "Apoyo entre pares",
+      description: "Mentores entre pares y apoyo de la comunidad de recuperación",
+      shortName: "Apoyo entre pares",
+    },
+    veterans: {
+      name: "Veteranos",
+      description: "Servicios de reintegración para veteranos con antecedentes de justicia",
+      shortName: "Veteranos",
+    },
+    "basic-needs": {
+      name: "Necesidades básicas",
+      description: "Ropa, artículos de higiene y elementos esenciales al salir de la cárcel",
+      shortName: "Necesidades básicas",
+    },
+    "probation-parole": {
+      name: "Libertad condicional y bajo palabra",
+      description: "Supervisión comunitaria y centros de reintegración contratados por el DOC",
+      shortName: "Libertad condicional",
+    },
+    "reentry-organizations": {
+      name: "Organizaciones de reintegración",
+      description: "Coaliciones de reintegración sin fines de lucro y programas comunitarios de reintegración",
+      shortName: "Reintegración",
     },
   },
 

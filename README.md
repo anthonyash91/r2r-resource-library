@@ -63,6 +63,19 @@ To reset a Supabase database, run `supabase/reset-data.sql` in the SQL Editor. I
    npm start
    ```
 
+### Email saved resources (PDF)
+
+To let signed-in users email a PDF of their saved resources, configure [Resend](https://resend.com):
+
+```bash
+RESEND_API_KEY=re_xxxxxxxx
+EMAIL_FROM="Reentry Resource Library <noreply@yourdomain.com>"
+```
+
+- `EMAIL_FROM` must use a domain verified in Resend.
+- Without these variables, the **Email PDF** button shows a not-configured message when clicked.
+- In demo mode (no Supabase), email export is unavailable.
+
 ## Project Structure
 
 ```

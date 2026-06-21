@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Search, CircleCheck } from "lucide-react";
-import { cn, resourcesHeroPadding } from "@/lib/utils";
+import { cn, resourcesHeroPadding, checkIconClass } from "@/lib/utils";
 import { useTranslations } from "@/i18n/locale-context";
 
 interface HeroSearchBarProps {
@@ -153,7 +153,7 @@ export function HeroSection({
   ];
 
   return (
-    <section className="relative flex min-h-[calc(100dvh-var(--site-header-height))] flex-col justify-center overflow-hidden bg-gradient-to-br from-primary via-primary-hover to-accent px-4 py-16 sm:px-6 lg:px-8">
+    <section className="app-hero-surface relative flex min-h-[calc(100dvh-var(--site-header-height))] flex-col justify-center overflow-hidden px-4 py-16 sm:px-6 lg:px-8">
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
         <div className="absolute -bottom-28 -left-28 h-80 w-80 rounded-full bg-primary-foreground/10 blur-3xl" />
         <div className="absolute -right-20 top-10 h-72 w-72 rounded-full bg-primary-foreground/10 blur-3xl" />
@@ -193,7 +193,7 @@ export function HeroSection({
           {statItems.map((item) => (
             <li key={item} className="flex items-center gap-2">
               <CircleCheck
-                className="h-5 w-5 shrink-0 text-[var(--hero-check-accent)]"
+                className={cn("h-5 w-5 shrink-0", checkIconClass)}
                 aria-hidden="true"
               />
               {item}
@@ -211,7 +211,7 @@ export function ResourcesHeroSection() {
   return (
     <section
       className={cn(
-        "relative overflow-hidden bg-gradient-to-br from-primary via-primary-hover to-accent px-4 sm:px-6 lg:px-8",
+        "app-hero-surface relative overflow-hidden px-4 sm:px-6 lg:px-8",
         resourcesHeroPadding
       )}
     >

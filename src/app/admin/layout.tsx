@@ -1,16 +1,24 @@
 import { AdminSidebar } from "@/components/admin/admin-sidebar";
+import { AdminContentGate } from "@/components/admin/admin-content-gate";
+import { AdminSessionGuard } from "@/components/admin/admin-session-guard";
+import { requireAdminPageAccess } from "@/lib/admin-auth";
+import { isSupabaseConfigured } from "@/lib/supabase/server";
 
-export default function AdminLayout({
+export default async function AdminLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  if (isSupabaseConfigured()) {
+    await requireAdminPageAccess();
+  }
+
   return (
-    <div className="flex">
-      <AdminSidebar />
-      <div className="flex-1 overflow-auto">
-        <div className="p-4 sm:p-6 lg:p-8">{children}</div>
+    <AdminSessionGuard>
+      <div className="flex">
+        <AdminSidebar />
+        <AdminContentGate>{children}</AdminContentGate>
       </div>
-    </div>
+    </AdminSessionGuard>
   );
 }

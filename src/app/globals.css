@@ -1,35 +1,56 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8f6f3;
-  --foreground: #1a2332;
-  --primary: #2d6a6a;
+  /* Core palette — blue/indigo hero gradient with teal accent */
+  --background: #f9fafb;
+  --foreground: #0f172a;
+  --primary: #2b4dd0;
   --primary-foreground: #ffffff;
-  --primary-hover: #245656;
-  --secondary: #e8f0ef;
-  --secondary-foreground: #1a2332;
-  --accent: #4a90a4;
+  --primary-hover: #2338bd;
+  --secondary: #eff6ff;
+  --secondary-foreground: #0f172a;
+  --accent: #0d9488;
   --accent-foreground: #ffffff;
-  --muted: #f0ece6;
-  --muted-foreground: #5a6578;
-  --border: #d4cfc7;
+  --muted: #f9fafb;
+  --muted-foreground: #64748b;
+  --border: #e2e8f0;
   --card: #ffffff;
-  --card-foreground: #1a2332;
-  --success: #2d7a4f;
-  --warning: #b8860b;
-  --destructive: #c0392b;
-  --ring: #2d6a6a;
+  --card-foreground: #0f172a;
+  --surface-alt: #f9fafb;
+  --success: #059669;
+  --warning: #d97706;
+  --destructive: #dc2626;
+  --ring: #2b4dd0;
   --radius: 0.75rem;
   --site-header-height: 5rem;
-  --hero-highlight-from: #b8e8e8;
-  --hero-highlight-to: #4a90a4;
-  --hero-check-accent: #8edcdc;
-  --footer-bg: #1a3838;
+
+  /* Hero gradient stops */
+  --hero-gradient-from: #1e3a8a;
+  --hero-gradient-via: #2b4dd0;
+  --hero-gradient-to: #14b8a6;
+  --hero-check-accent: #55b4a6;
+
+  /* Category / coverage badges */
+  --badge-bg: #e0e7ff;
+  --badge-fg: #4338ca;
+  --badge-hover-bg: #c7d2fe;
+
+  /* Eligibility callout */
+  --eligibility-bg: #fefce8;
+  --eligibility-border: #fef08a;
+
+  /* Crisis strip */
+  --crisis-bg: #1e3a8a;
+  --crisis-foreground: #ffffff;
+
+  /* Footer */
+  --footer-bg: #0f172a;
   --footer-foreground: #ffffff;
-  --footer-muted: rgba(232, 240, 239, 0.72);
+  --footer-muted: #94a3b8;
   --footer-border: rgba(255, 255, 255, 0.12);
-  --footer-accent: #7ec8c8;
-  --footer-heart: #f4a4a4;
+  --footer-accent: #60a5fa;
+  --footer-subheader: #9ac5f3;
+  --footer-heart: #f87171;
 }
 
 @theme inline {
@@ -47,10 +68,21 @@
   --color-border: var(--border);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
+  --color-surface-alt: var(--surface-alt);
   --color-success: var(--success);
   --color-warning: var(--warning);
   --color-destructive: var(--destructive);
   --color-ring: var(--ring);
+  --color-badge-bg: var(--badge-bg);
+  --color-badge-fg: var(--badge-fg);
+  --color-badge-hover-bg: var(--badge-hover-bg);
+  --color-crisis-bg: var(--crisis-bg);
+  --color-crisis-foreground: var(--crisis-foreground);
+  --color-eligibility-bg: var(--eligibility-bg);
+  --color-eligibility-border: var(--eligibility-border);
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-foreground: var(--footer-foreground);
+  --color-footer-muted: var(--footer-muted);
   --font-sans: var(--font-source-sans);
 }
 
@@ -95,10 +127,14 @@ body {
 }
 
 .hero-headline-highlight {
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
   background: linear-gradient(
-    100deg,
-    var(--hero-highlight-from) 0%,
-    var(--hero-highlight-to) 100%
+    135deg,
+    #ffffff 0%,
+    #93c5fd 48%,
+    #34d399 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -132,6 +168,61 @@ body {
 .footer-surface {
   background: var(--footer-bg);
   color: var(--footer-foreground);
+}
+
+.footer-tagline {
+  color: #9ac5f3;
+}
+
+.how-it-works-step-number {
+  background-color: #55b4a6;
+  color: #ffffff;
+}
+
+.app-check-icon {
+  color: var(--hero-check-accent);
+}
+
+.app-check-list-item::before {
+  color: var(--hero-check-accent);
+}
+
+/* Explicit surface classes — literal values so gradients/backgrounds always render */
+.app-hero-surface {
+  background-color: #1e3a8a;
+  background-image: linear-gradient(
+    135deg,
+    #1e3a8a 0%,
+    #2b4dd0 52%,
+    #14b8a6 100%
+  );
+}
+
+.app-band-alt {
+  background-color: #f9fafb;
+}
+
+.app-band-muted {
+  background-color: #f9fafb;
+}
+
+.app-crisis-bar {
+  background-color: #1e3a8a;
+  color: #ffffff;
+}
+
+.app-badge {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+
+.app-badge:hover {
+  background-color: #c7d2fe;
+}
+
+.app-eligibility-card {
+  background-color: #fefce8;
+  border-color: #fef08a;
 }
 
 a[href],

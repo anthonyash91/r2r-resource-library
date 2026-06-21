@@ -34,32 +34,24 @@ export function AdminSidebar() {
       { href: "/admin/resources", label: t("admin.resources"), icon: FolderOpen },
       { href: "/admin/categories", label: t("admin.categories"), icon: Tags },
       { href: "/admin/users", label: t("admin.users"), icon: Users },
-      { href: "/admin/cms", label: t("admin.pages"), icon: FileText },
+      { href: "/admin/homepage", label: t("admin.homepage"), icon: Home },
+      { href: "/admin/cms", label: t("admin.sitePages"), icon: FileText },
       { href: "/admin/announcements", label: t("admin.announcements"), icon: Megaphone },
       { href: "/admin/faqs", label: t("admin.faqs"), icon: HelpCircle },
-      { href: "/admin/homepage", label: t("admin.homepage"), icon: Home },
     ],
     [t]
   );
 
   if (loading) {
     return (
-      <div className="flex min-h-screen items-center justify-center">
-        <p className="text-lg">{t("common.loading")}</p>
+      <div className="flex min-h-[calc(100vh-4rem)] w-full items-center justify-center">
+        <p className="text-lg text-muted-foreground">{t("common.loading")}</p>
       </div>
     );
   }
 
   if (!user || !isAdmin) {
-    return (
-      <div className="flex min-h-[60vh] flex-col items-center justify-center px-4 text-center">
-        <h1 className="mb-4 text-2xl font-bold">{t("admin.accessRequired")}</h1>
-        <p className="mb-6 text-muted-foreground">{t("admin.accessRequiredDesc")}</p>
-        <Link href="/login">
-          <Button size="lg">{t("auth.signIn")}</Button>
-        </Link>
-      </div>
-    );
+    return null;
   }
 
   const NavContent = () => (
@@ -72,24 +64,34 @@ export function AdminSidebar() {
       </div>
       <nav aria-label={t("admin.portal")}>
         <ul className="space-y-1 px-2">
-          {adminLinks.map(({ href, label, icon: Icon }) => (
+          {adminLinks.map(({ href, label, icon: Icon }) => {
+            const isSitePagesSection =
+              href === "/admin/cms" &&
+              (pathname === "/admin/cms" ||
+                pathname.startsWith("/admin/about") ||
+                pathname.startsWith("/admin/contact") ||
+                pathname.startsWith("/admin/legal"));
+            const isActive = pathname === href || isSitePagesSection;
+
+            return (
             <li key={href}>
               <Link
                 href={href}
                 onClick={() => setMobileOpen(false)}
                 className={cn(
                   "flex min-h-[48px] cursor-pointer items-center gap-3 rounded-xl px-4 py-3 text-base font-medium transition-colors",
-                  pathname === href
+                  isActive
                     ? "bg-primary text-primary-foreground"
                     : "text-foreground hover:bg-muted"
                 )}
-                aria-current={pathname === href ? "page" : undefined}
+                aria-current={isActive ? "page" : undefined}
               >
                 <Icon className="h-5 w-5" aria-hidden="true" />
                 {label}
               </Link>
             </li>
-          ))}
+            );
+          })}
         </ul>
       </nav>
       <div className="mt-auto border-t border-border p-4">
@@ -102,9 +104,10 @@ export function AdminSidebar() {
         <Button
           variant="outline"
           className="w-full"
-          onClick={() => {
-            signOut();
-            router.push("/");
+          onClick={async () => {
+            await signOut();
+            router.replace("/login");
+            router.refresh();
           }}
         >
           <LogOut className="h-4 w-4" aria-hidden="true" />

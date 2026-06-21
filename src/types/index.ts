@@ -1,5 +1,6 @@
 export type UserRole = "user" | "case_manager" | "admin";
 export type ResourceStatus = "active" | "inactive" | "archived";
+export type ResourceCoverage = "single" | "multi" | "statewide";
 export type CmsPageStatus = "draft" | "published" | "archived";
 export type AnnouncementStatus = "draft" | "published" | "archived";
 
@@ -15,6 +16,7 @@ export interface Profile {
   city: string | null;
   created_at: string;
   updated_at: string;
+  saved_pdf_emails_sent?: number;
 }
 
 export interface Category {
@@ -45,6 +47,11 @@ export interface Resource {
   email: string | null;
   hours: string | null;
   eligibility: string | null;
+  eligibility_es?: string | null;
+  notes?: string | null;
+  notes_es?: string | null;
+  served_counties?: string[];
+  coverage?: ResourceCoverage;
   services: string[];
   tags: string[];
   latitude: number | null;
@@ -127,6 +134,7 @@ export interface ResourceFilters {
   category?: string;
   service?: string;
   tag?: string;
+  coverage?: ResourceCoverage;
   eligibility?: string;
   featured?: boolean;
   recentlyAdded?: boolean;
@@ -135,7 +143,10 @@ export interface ResourceFilters {
 
 export interface AnalyticsSummary {
   totalResources: number;
-  totalUsers: number;
+  activeResources: number;
+  featuredResources: number;
+  totalCategories: number;
+  totalViews: number;
   totalSaves: number;
   resourcesByState: { state: string; count: number }[];
   resourcesByCategory: { category: string; count: number }[];

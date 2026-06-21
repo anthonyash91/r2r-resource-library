@@ -1,0 +1,86 @@
+{
+  "165": {
+    "served_counties": "Adair|Bell|Breathitt|Casey|Clark|Clay|Clinton|Cumberland|Estill|Floyd|Garrard|Harlan|Jackson|Johnson|Knott|Knox|Laurel|Lawrence|Lee|Leslie|Letcher|Lincoln|Madison|Magoffin|Martin|McCreary|Monroe|Owsley|Perry|Pike|Powell|Pulaski|Rockcastle|Russell|Wayne|Whitley|Wolfe",
+    "coverage": "multi"
+  },
+  "182": {
+    "served_counties": "Anderson|Bath|Bell|Bourbon|Boyle|Breathitt|Carter|Clark|Clay|Elliott|Estill|Fayette|Fleming|Floyd|Franklin|Garrard|Harlan|Harrison|Jackson|Jessamine|Johnson|Knott|Knox|Laurel|Lee|Leslie|Letcher|Lewis|Lincoln|Madison|Magoffin|Martin|McCreary|Menifee|Mercer|Montgomery|Morgan|Nicholas|Owsley|Perry|Pike|Powell|Pulaski|Robertson|Rockcastle|Rowan|Scott|Whitley|Wolfe|Woodford",
+    "coverage": "multi"
+  },
+  "183": {
+    "served_counties": "Adair|Allen|Ballard|Barren|Breckinridge|Butler|Caldwell|Calloway|Carlisle|Casey|Christian|Clinton|Cumberland|Edmonson|Fulton|Graves|Grayson|Green|Hancock|Hardin|Hart|Hickman|Larue|Logan|Lyon|Marion|Marshall|McCracken|Meade|Metcalfe|Monroe|Muhlenberg|Nelson|Ohio|Russell|Simpson|Taylor|Todd|Trigg|Warren|Washington|Wayne",
+    "coverage": "multi"
+  },
+  "107": {
+    "served_counties": "Bell|Breathitt|Carter|Clay|Elliott|Floyd|Harlan|Jackson|Johnson|Knott|Knox|Lawrence|Lee|Leslie|Letcher|Magoffin|Martin|Menifee|Morgan|Owsley|Perry|Pike|Wolfe",
+    "coverage": "multi"
+  },
+  "281": {
+    "served_counties": "Bell|Breathitt|Carter|Clay|Elliott|Floyd|Harlan|Jackson|Johnson|Knott|Knox|Lawrence|Lee|Leslie|Letcher|Magoffin|Martin|Menifee|Morgan|Owsley|Perry|Pike|Wolfe",
+    "coverage": "multi"
+  },
+  "502": {
+    "served_counties": "Bell|Breathitt|Carter|Clay|Elliott|Floyd|Harlan|Jackson|Johnson|Knott|Knox|Lawrence|Lee|Leslie|Letcher|Magoffin|Martin|Menifee|Morgan|Owsley|Perry|Pike|Wolfe",
+    "coverage": "multi"
+  },
+  "478": {
+    "served_counties": "Bath|Boyd|Carter|Elliott|Fleming|Greenup|Lawrence|Lewis|Mason|Menifee|Montgomery|Morgan|Rowan|Wolfe",
+    "coverage": "multi"
+  },
+  "480": {
+    "served_counties": "Breathitt|Floyd|Harlan|Johnson|Knott|Knox|Lawrence|Leslie|Letcher|Magoffin|Martin|Morgan|Perry|Pike",
+    "coverage": "multi"
+  },
+  "506": {
+    "served_counties": "Ballard|Calloway|Carlisle|Fulton|Graves|Hickman|Livingston|Marshall|McCracken",
+    "coverage": "multi"
+  },
+  "507": {
+    "served_counties": "Daviess|Hancock|Henderson|McLean|Ohio|Union|Webster",
+    "coverage": "multi"
+  },
+  "483": {
+    "served_counties": "Bell|Clay|Harlan|Jackson|Knox|Laurel|McCreary|Rockcastle|Wayne|Whitley",
+    "coverage": "multi"
+  },
+  "494": {
+    "served_counties": "Caldwell|Christian|Crittenden|Hopkins|Lyon|Muhlenberg|Todd|Trigg",
+    "coverage": "multi"
+  },
+  "495": {
+    "served_counties": "Daviess|Hancock|Henderson|McLean|Ohio|Union|Webster",
+    "coverage": "multi"
+  },
+  "512": {
+    "served_counties": "Ballard|Calloway|Carlisle|Fulton|Graves|Hickman|Marshall|McCracken",
+    "coverage": "multi"
+  },
+  "511": {
+    "served_counties": "Livingston|Crittenden|Lyon|Caldwell|Hopkins|Muhlenberg|Trigg|Christian|Todd",
+    "coverage": "multi"
+  },
+  "503": {
+    "served_counties": "Taylor|Adair|Green|Casey|Russell|Pulaski|Clinton|Cumberland|Wayne|McCreary",
+    "coverage": "multi"
+  },
+  "504": {
+    "served_counties": "Livingston|Crittenden|Lyon|Caldwell|Hopkins|Muhlenberg|Trigg|Christian|Todd",
+    "coverage": "multi"
+  },
+  "181": {
+    "served_counties": "Jefferson|Bullitt|Henry|Oldham|Shelby|Spencer|Trimble",
+    "coverage": "multi"
+  },
+  "508": {
+    "served_counties": "Adair|Casey|Clinton|Cumberland|McCreary|Pulaski|Russell|Wayne",
+    "coverage": "multi"
+  },
+  "532": {
+    "served_counties": "Boyle|Green|LaRue|Marion|Mercer|Nelson|Taylor|Washington",
+    "coverage": "multi"
+  },
+  "484": {
+    "served_counties": "Jackson|Rockcastle|Laurel|Clay|Knox|Whitley|Bell|Harlan",
+    "coverage": "multi"
+  }
+}

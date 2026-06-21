@@ -2,6 +2,7 @@
 
 import { AuthProvider } from "@/lib/auth-context";
 import { SavedProvider } from "@/lib/saved-context";
+import { BreadcrumbProvider } from "@/lib/breadcrumb-context";
 import { LocaleProvider } from "@/i18n/locale-context";
 import type { Locale } from "@/i18n/types";
 
@@ -14,9 +15,11 @@ export function Providers({
 }) {
   return (
     <LocaleProvider initialLocale={initialLocale}>
-      <AuthProvider>
-        <SavedProvider>{children}</SavedProvider>
-      </AuthProvider>
+      <BreadcrumbProvider>
+        <AuthProvider>
+          <SavedProvider>{children}</SavedProvider>
+        </AuthProvider>
+      </BreadcrumbProvider>
     </LocaleProvider>
   );
 }

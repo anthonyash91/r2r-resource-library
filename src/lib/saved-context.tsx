@@ -1,13 +1,29 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState, useCallback } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  useCallback,
+  useMemo,
+} from "react";
 import type { Resource } from "@/types";
 import { useAuth } from "@/lib/auth-context";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/client";
 import { MOCK_RESOURCES } from "@/lib/mock-data";
+import {
+  clearViewLoggedThisSession,
+  getOrCreateSessionId,
+  hasLoggedViewThisSession,
+  markViewLoggedThisSession,
+} from "@/lib/view-tracking";
+import { useTranslations } from "@/i18n/locale-context";
+import { localizeResources } from "@/i18n/localize-content";
 
 interface SavedContextType {
   savedIds: Set<string>;
+  savedResources: Resource[];
   recentlyViewed: Resource[];
   toggleSave: (resourceId: string) => Promise<void>;
   isSaved: (resourceId: string) => boolean;
@@ -20,21 +36,42 @@ const SavedContext = createContext<SavedContextType | undefined>(undefined);
 const SAVED_KEY = "reentry_saved_resources";
 const VIEWED_KEY = "reentry_recently_viewed";
 
+type SavedRow = {
+  resource_id: string;
+  resource: Resource | null;
+};
+
 export function SavedProvider({ children }: { children: React.ReactNode }) {
   const { user } = useAuth();
+  const { locale } = useTranslations();
   const [savedIds, setSavedIds] = useState<Set<string>>(new Set());
+  const [savedResourcesBase, setSavedResourcesBase] = useState<Resource[]>([]);
   const [recentlyViewed, setRecentlyViewed] = useState<Resource[]>([]);
   const [loading, setLoading] = useState(true);
+
+  const savedResources = useMemo(
+    () => localizeResources(savedResourcesBase, locale),
+    [savedResourcesBase, locale]
+  );
+
+  const syncMockSavedResources = useCallback((ids: Set<string>) => {
+    setSavedResourcesBase(MOCK_RESOURCES.filter((r) => ids.has(r.id)));
+  }, []);
 
   const loadLocal = useCallback(() => {
     if (typeof window === "undefined") return;
     const saved = localStorage.getItem(SAVED_KEY);
     if (saved) {
       try {
-        setSavedIds(new Set(JSON.parse(saved)));
+        const ids = new Set<string>(JSON.parse(saved));
+        setSavedIds(ids);
+        syncMockSavedResources(ids);
       } catch {
         localStorage.removeItem(SAVED_KEY);
       }
+    } else {
+      setSavedIds(new Set());
+      setSavedResourcesBase([]);
     }
     const viewed = localStorage.getItem(VIEWED_KEY);
     if (viewed) {
@@ -44,7 +81,7 @@ export function SavedProvider({ children }: { children: React.ReactNode }) {
         localStorage.removeItem(VIEWED_KEY);
       }
     }
-  }, []);
+  }, [syncMockSavedResources]);
 
   const persistSaved = (ids: Set<string>) => {
     localStorage.setItem(SAVED_KEY, JSON.stringify([...ids]));
@@ -53,6 +90,33 @@ export function SavedProvider({ children }: { children: React.ReactNode }) {
   const persistViewed = (resources: Resource[]) => {
     localStorage.setItem(VIEWED_KEY, JSON.stringify(resources.slice(0, 10)));
   };
+
+  const fetchSavedFromSupabase = useCallback(async (userId: string) => {
+    const supabase = createClient();
+    if (!supabase) {
+      loadLocal();
+      setLoading(false);
+      return;
+    }
+
+    setLoading(true);
+    const { data } = await supabase
+      .from("saved_resources")
+      .select("resource_id, resource:resources(*, category:categories(*))")
+      .eq("user_id", userId)
+      .order("created_at", { ascending: false });
+
+    if (data) {
+      const rows = data as unknown as SavedRow[];
+      setSavedIds(new Set(rows.map((s) => s.resource_id)));
+      setSavedResourcesBase(
+        rows
+          .map((row) => row.resource)
+          .filter((resource): resource is Resource => resource != null)
+      );
+    }
+    setLoading(false);
+  }, [loadLocal]);
 
   useEffect(() => {
     if (!user) {
@@ -67,27 +131,8 @@ export function SavedProvider({ children }: { children: React.ReactNode }) {
       return;
     }
 
-    const supabase = createClient();
-    if (!supabase) {
-      loadLocal();
-      setLoading(false);
-      return;
-    }
-
-    const fetchSaved = async () => {
-      const { data } = await supabase
-        .from("saved_resources")
-        .select("resource_id")
-        .eq("user_id", user.id);
-
-      if (data) {
-        setSavedIds(new Set(data.map((s) => s.resource_id)));
-      }
-      setLoading(false);
-    };
-
-    fetchSaved();
-  }, [user, loadLocal]);
+    fetchSavedFromSupabase(user.id);
+  }, [user, loadLocal, fetchSavedFromSupabase]);
 
   const toggleSave = async (resourceId: string) => {
     const next = new Set(savedIds);
@@ -95,6 +140,7 @@ export function SavedProvider({ children }: { children: React.ReactNode }) {
 
     if (wasSaved) {
       next.delete(resourceId);
+      setSavedResourcesBase((prev) => prev.filter((r) => r.id !== resourceId));
     } else {
       next.add(resourceId);
     }
@@ -113,9 +159,23 @@ export function SavedProvider({ children }: { children: React.ReactNode }) {
         .eq("user_id", user.id)
         .eq("resource_id", resourceId);
     } else {
-      await supabase
+      const { error: insertError } = await supabase
         .from("saved_resources")
         .insert({ user_id: user.id, resource_id: resourceId });
+
+      if (!insertError) {
+        const { data } = await supabase
+          .from("resources")
+          .select("*, category:categories(*)")
+          .eq("id", resourceId)
+          .single();
+
+        if (data) {
+          setSavedResourcesBase((prev) => [data as Resource, ...prev]);
+        }
+      } else {
+        await fetchSavedFromSupabase(user.id);
+      }
     }
   };
 
@@ -129,23 +189,29 @@ export function SavedProvider({ children }: { children: React.ReactNode }) {
       return next;
     });
 
-    if (user && isSupabaseConfigured()) {
-      const supabase = createClient();
-      supabase?.from("resource_views").insert({
-        user_id: user.id,
-        resource_id: resource.id,
-      });
-    }
-  }, [user]);
+    if (!isSupabaseConfigured() || hasLoggedViewThisSession(resource.id)) return;
 
-  const getSavedResources = (): Resource[] => {
-    return MOCK_RESOURCES.filter((r) => savedIds.has(r.id));
-  };
+    const supabase = createClient();
+    if (!supabase) return;
+
+    markViewLoggedThisSession(resource.id);
+
+    const payload = {
+      user_id: user?.id ?? null,
+      resource_id: resource.id,
+      session_id: user ? null : getOrCreateSessionId(),
+    };
+
+    void supabase.from("resource_views").insert(payload).then(({ error }) => {
+      if (error) clearViewLoggedThisSession(resource.id);
+    });
+  }, [user]);
 
   return (
     <SavedContext.Provider
       value={{
         savedIds,
+        savedResources,
         recentlyViewed,
         toggleSave,
         isSaved,
@@ -165,6 +231,6 @@ export function useSaved() {
 }
 
 export function useSavedResources(): Resource[] {
-  const { savedIds } = useSaved();
-  return MOCK_RESOURCES.filter((r) => savedIds.has(r.id));
+  const { savedResources } = useSaved();
+  return savedResources;
 }

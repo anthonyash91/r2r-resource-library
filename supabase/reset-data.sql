@@ -1,11 +1,16 @@
 -- Reset all content data (keeps schema, auth users, and profiles)
--- Run in the Supabase SQL Editor when you want a clean slate.
+-- Run in the Supabase SQL Editor when you want a clean slate for everything.
+--
+-- To reset ONLY resources and categories (keeps FAQs, CMS, etc.), use:
+--   supabase/reset-resources.sql
 
-TRUNCATE TABLE saved_resources CASCADE;
-TRUNCATE TABLE resource_views CASCADE;
-TRUNCATE TABLE resources CASCADE;
-TRUNCATE TABLE categories CASCADE;
-TRUNCATE TABLE cms_pages CASCADE;
-TRUNCATE TABLE announcements CASCADE;
-TRUNCATE TABLE faqs CASCADE;
-TRUNCATE TABLE homepage_content CASCADE;
+TRUNCATE TABLE
+  saved_resources,
+  resource_views,
+  resources,
+  categories,
+  cms_pages,
+  announcements,
+  faqs,
+  homepage_content
+RESTART IDENTITY CASCADE;

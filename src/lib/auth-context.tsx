@@ -3,6 +3,7 @@
 import { createContext, useContext, useEffect, useState, useCallback } from "react";
 import type { Profile } from "@/types";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/client";
+import { formatAuthError, isProfileSetupError } from "@/lib/auth-errors";
 import { MOCK_ADMIN_USER } from "@/lib/mock-data";
 import { createTranslator } from "@/i18n/translator";
 import { DEFAULT_LOCALE, LOCALE_COOKIE, type Locale } from "@/i18n/types";
@@ -11,8 +12,12 @@ interface AuthContextType {
   user: Profile | null;
   loading: boolean;
   isAdmin: boolean;
-  signIn: (email: string, password: string) => Promise<{ error?: string }>;
-  signUp: (email: string, password: string, fullName: string) => Promise<{ error?: string }>;
+  signIn: (email: string, password: string) => Promise<{ error?: string; isAdmin?: boolean }>;
+  signUp: (
+    email: string,
+    password: string,
+    fullName: string
+  ) => Promise<{ error?: string; needsEmailConfirmation?: boolean }>;
   signOut: () => Promise<void>;
 }
 
@@ -26,8 +31,13 @@ function getClientLocale(): Locale {
   return match?.[1] === "es" ? "es" : DEFAULT_LOCALE;
 }
 
-function authUnavailableMessage() {
-  return createTranslator(getClientLocale()).t("auth.authUnavailable");
+function authMessage(key: "authUnavailable" | "signInFailed" | "signUpFailed" | "signUpDatabaseError") {
+  return createTranslator(getClientLocale()).t(`auth.${key}`);
+}
+
+function getAuthRedirectUrl() {
+  if (typeof window !== "undefined") return window.location.origin;
+  return process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:8080";
 }
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
@@ -106,14 +116,35 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           };
       localStorage.setItem(DEMO_USER_KEY, JSON.stringify(demoUser));
       setUser(demoUser);
-      return {};
+      return { isAdmin: demoUser.role === "admin" };
     }
 
     const supabase = createClient();
-    if (!supabase) return { error: authUnavailableMessage() };
+    if (!supabase) return { error: authMessage("authUnavailable") };
 
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    return error ? { error: error.message } : {};
+    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    if (error) {
+      const message = formatAuthError(error, authMessage("signInFailed"));
+      return { error: message };
+    }
+
+    const userId = data.user?.id;
+    if (!userId) {
+      return { error: authMessage("signInFailed") };
+    }
+
+    const { data: profile } = await supabase
+      .from("profiles")
+      .select("*")
+      .eq("id", userId)
+      .single();
+
+    if (profile) {
+      setUser(profile as Profile);
+      return { isAdmin: profile.role === "admin" };
+    }
+
+    return { isAdmin: false };
   };
 
   const signUp = async (email: string, password: string, fullName: string) => {
@@ -137,14 +168,30 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
 
     const supabase = createClient();
-    if (!supabase) return { error: authUnavailableMessage() };
+    if (!supabase) return { error: authMessage("authUnavailable") };
 
-    const { error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signUp({
       email,
       password,
-      options: { data: { full_name: fullName } },
+      options: {
+        data: { full_name: fullName },
+        emailRedirectTo: `${getAuthRedirectUrl()}/auth/callback?next=/dashboard`,
+      },
     });
-    return error ? { error: error.message } : {};
+
+    if (error) {
+      const message = formatAuthError(error, authMessage("signUpFailed"));
+      if (isProfileSetupError(message)) {
+        return { error: authMessage("signUpDatabaseError") };
+      }
+      return { error: message };
+    }
+
+    if (!data.session) {
+      return { needsEmailConfirmation: true };
+    }
+
+    return {};
   };
 
   const signOut = async () => {

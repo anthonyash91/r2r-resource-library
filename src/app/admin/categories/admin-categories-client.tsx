@@ -1,51 +1,135 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Plus, Pencil, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { Category } from "@/types";
+import { createClient, isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslations } from "@/i18n/locale-context";
 
 interface AdminCategoriesClientProps {
   initialCategories: Category[];
 }
 
+function slugify(name: string): string {
+  return name
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-");
+}
+
 export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClientProps) {
   const { t } = useTranslations();
+  const router = useRouter();
   const [categories, setCategories] = useState(initialCategories);
   const [editing, setEditing] = useState<string | null>(null);
   const [form, setForm] = useState({ name: "", description: "", icon: "search" });
   const [showNew, setShowNew] = useState(false);
+  const [saving, setSaving] = useState(false);
 
-  const handleSave = () => {
+  const resetForm = () => {
+    setForm({ name: "", description: "", icon: "search" });
+    setEditing(null);
+    setShowNew(false);
+  };
+
+  const handleSave = async () => {
+    const name = form.name.trim();
+    if (!name) return;
+
+    setSaving(true);
+
+    const payload = {
+      name,
+      description: form.description.trim() || null,
+      icon: form.icon.trim() || null,
+    };
+
     if (editing) {
+      if (isSupabaseConfigured()) {
+        const supabase = createClient();
+        if (supabase) {
+          const { error } = await supabase
+            .from("categories")
+            .update(payload)
+            .eq("id", editing);
+
+          if (error) {
+            alert(t("admin.categorySaveFailed"));
+            setSaving(false);
+            return;
+          }
+        }
+      }
+
       setCategories((prev) =>
-        prev.map((c) =>
-          c.id === editing
-            ? { ...c, name: form.name, description: form.description, icon: form.icon }
-            : c
+        prev.map((category) =>
+          category.id === editing
+            ? {
+                ...category,
+                ...payload,
+                description: payload.description ?? "",
+                icon: payload.icon ?? category.icon,
+                updated_at: new Date().toISOString(),
+              }
+            : category
         )
       );
-      setEditing(null);
-    } else {
-      const newCat: Category = {
-        id: `cat-${Date.now()}`,
-        name: form.name,
-        slug: form.name.toLowerCase().replace(/\s+/g, "-"),
-        description: form.description,
-        icon: form.icon,
-        sort_order: categories.length + 1,
-        is_active: true,
-        created_at: new Date().toISOString(),
-        updated_at: new Date().toISOString(),
-      };
-      setCategories((prev) => [...prev, newCat]);
-      setShowNew(false);
+      resetForm();
+      router.refresh();
+      setSaving(false);
+      return;
     }
-    setForm({ name: "", description: "", icon: "search" });
+
+    const insertPayload = {
+      ...payload,
+      slug: slugify(name),
+      sort_order: categories.length + 1,
+      is_active: true,
+    };
+
+    if (isSupabaseConfigured()) {
+      const supabase = createClient();
+      if (supabase) {
+        const { data, error } = await supabase
+          .from("categories")
+          .insert(insertPayload)
+          .select()
+          .single();
+
+        if (error || !data) {
+          alert(t("admin.categorySaveFailed"));
+          setSaving(false);
+          return;
+        }
+
+        setCategories((prev) => [...prev, data as Category]);
+        resetForm();
+        router.refresh();
+        setSaving(false);
+        return;
+      }
+    }
+
+    const newCategory: Category = {
+      id: `cat-${Date.now()}`,
+      name: insertPayload.name,
+      slug: insertPayload.slug,
+      description: insertPayload.description,
+      icon: insertPayload.icon,
+      sort_order: insertPayload.sort_order,
+      is_active: true,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    };
+    setCategories((prev) => [...prev, newCategory]);
+    resetForm();
+    setSaving(false);
   };
 
   const startEdit = (cat: Category) => {
@@ -54,9 +138,24 @@ export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClie
     setShowNew(false);
   };
 
-  const handleDelete = (id: string) => {
+  const handleDelete = async (id: string) => {
     if (!confirm(t("admin.deleteCategoryConfirm"))) return;
-    setCategories((prev) => prev.filter((c) => c.id !== id));
+
+    if (isSupabaseConfigured()) {
+      const supabase = createClient();
+      if (supabase) {
+        const { error } = await supabase.from("categories").delete().eq("id", id);
+
+        if (error) {
+          alert(t("admin.categoryDeleteFailed"));
+          return;
+        }
+      }
+    }
+
+    setCategories((prev) => prev.filter((category) => category.id !== id));
+    if (editing === id) resetForm();
+    router.refresh();
   };
 
   return (
@@ -66,7 +165,13 @@ export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClie
           <h1 className="mb-2 text-3xl font-bold">{t("admin.categoryManagement")}</h1>
           <p className="text-lg text-muted-foreground">{t("admin.categoryManagement")}</p>
         </div>
-        <Button onClick={() => { setShowNew(true); setEditing(null); setForm({ name: "", description: "", icon: "search" }); }}>
+        <Button
+          onClick={() => {
+            setShowNew(true);
+            setEditing(null);
+            setForm({ name: "", description: "", icon: "search" });
+          }}
+        >
           <Plus className="h-5 w-5" aria-hidden="true" />
           {t("admin.newCategory")}
         </Button>
@@ -78,12 +183,29 @@ export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClie
             {editing ? t("admin.editCategory") : t("admin.newCategory")}
           </h2>
           <div className="space-y-4">
-            <Input label={t("admin.categoryName")} value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} required />
-            <Input label={t("admin.description")} value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} />
-            <Input label={t("admin.icon")} value={form.icon} onChange={(e) => setForm({ ...form, icon: e.target.value })} />
+            <Input
+              label={t("admin.categoryName")}
+              value={form.name}
+              onChange={(e) => setForm({ ...form, name: e.target.value })}
+              required
+            />
+            <Input
+              label={t("admin.description")}
+              value={form.description}
+              onChange={(e) => setForm({ ...form, description: e.target.value })}
+            />
+            <Input
+              label={t("admin.icon")}
+              value={form.icon}
+              onChange={(e) => setForm({ ...form, icon: e.target.value })}
+            />
             <div className="flex gap-2">
-              <Button onClick={handleSave}>{t("common.save")}</Button>
-              <Button variant="outline" onClick={() => { setEditing(null); setShowNew(false); }}>{t("common.cancel")}</Button>
+              <Button onClick={handleSave} disabled={saving}>
+                {t("common.save")}
+              </Button>
+              <Button variant="outline" onClick={resetForm}>
+                {t("common.cancel")}
+              </Button>
             </div>
           </div>
         </Card>

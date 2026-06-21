@@ -1,41 +1,22 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Resource } from "@/types";
 import { ResourceCard } from "@/components/resources/resource-card";
-import { resolveFeaturedResources } from "@/lib/featured-resources-storage";
-import { useTranslations } from "@/i18n/locale-context";
+import { getServerTranslator } from "@/i18n/server";
+import { cn, pageSectionPadding } from "@/lib/utils";
 
 interface FeaturedResourcesSectionProps {
   resources: Resource[];
 }
 
-export function FeaturedResourcesSection({ resources }: FeaturedResourcesSectionProps) {
-  const { t } = useTranslations();
-  const [featured, setFeatured] = useState<Resource[]>(() => resolveFeaturedResources(resources));
+export async function FeaturedResourcesSection({ resources }: FeaturedResourcesSectionProps) {
+  const { t } = await getServerTranslator();
 
-  useEffect(() => {
-    const syncFeatured = () => {
-      setFeatured(resolveFeaturedResources(resources));
-    };
-
-    syncFeatured();
-    window.addEventListener("featured-resources-updated", syncFeatured);
-    window.addEventListener("storage", syncFeatured);
-
-    return () => {
-      window.removeEventListener("featured-resources-updated", syncFeatured);
-      window.removeEventListener("storage", syncFeatured);
-    };
-  }, [resources]);
-
-  if (featured.length === 0) return null;
+  if (resources.length === 0) return null;
 
   return (
     <section
-      className="border-y border-border bg-card px-4 py-16 sm:px-6 lg:px-8 lg:py-20"
+      className={cn("border-y border-border app-band-muted", pageSectionPadding)}
       aria-labelledby="featured-resources-heading"
     >
       <div className="mx-auto max-w-7xl">
@@ -49,7 +30,7 @@ export function FeaturedResourcesSection({ resources }: FeaturedResourcesSection
         </header>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {featured.map((resource) => (
+          {resources.map((resource) => (
             <ResourceCard key={resource.id} resource={resource} />
           ))}
         </div>

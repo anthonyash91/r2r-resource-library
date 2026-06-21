@@ -1,18 +1,16 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 import { Search, Star, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { CategoryBadge } from "@/components/resources/category-badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import type { Resource } from "@/types";
-import {
-  getFeaturedIdsFromResources,
-  MAX_FEATURED_RESOURCES,
-  setStoredFeaturedIds,
-  toggleStoredFeaturedId,
-} from "@/lib/featured-resources-storage";
+import { MAX_FEATURED_RESOURCES } from "@/lib/featured-resources-storage";
+import { setResourceFeatured } from "@/lib/admin-resources";
+import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "@/i18n/locale-context";
 
@@ -21,56 +19,65 @@ interface FeaturedResourcesPickerProps {
 }
 
 export function FeaturedResourcesPicker({ resources }: FeaturedResourcesPickerProps) {
+  const router = useRouter();
   const { t } = useTranslations();
   const activeResources = useMemo(
     () => resources.filter((resource) => resource.status === "active"),
     [resources]
   );
-  const [featuredIds, setFeaturedIds] = useState<string[]>(() =>
-    getFeaturedIdsFromResources(activeResources)
-  );
+  const [localResources, setLocalResources] = useState(activeResources);
   const [query, setQuery] = useState("");
+  const [busyId, setBusyId] = useState<string | null>(null);
 
   useEffect(() => {
-    const syncFeatured = () => {
-      setFeaturedIds(getFeaturedIdsFromResources(activeResources));
-    };
-
-    syncFeatured();
-    window.addEventListener("featured-resources-updated", syncFeatured);
-    window.addEventListener("storage", syncFeatured);
-
-    return () => {
-      window.removeEventListener("featured-resources-updated", syncFeatured);
-      window.removeEventListener("storage", syncFeatured);
-    };
+    setLocalResources(activeResources);
   }, [activeResources]);
 
-  const featuredResources = featuredIds
-    .map((id) => activeResources.find((resource) => resource.id === id))
-    .filter((resource): resource is Resource => Boolean(resource));
+  const featuredResources = localResources.filter((resource) => resource.is_featured);
 
-  const availableResources = activeResources.filter(
+  const availableResources = localResources.filter(
     (resource) =>
-      !featuredIds.includes(resource.id) &&
+      !resource.is_featured &&
       (query.trim() === "" ||
         resource.name.toLowerCase().includes(query.toLowerCase()) ||
         resource.category?.name.toLowerCase().includes(query.toLowerCase()))
   );
 
-  const handleToggle = (id: string) => {
-    const nextIds = toggleStoredFeaturedId(activeResources, id);
-    if (nextIds === featuredIds && !featuredIds.includes(id)) {
-      alert(t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }));
-      return;
+  const updateFeatured = async (id: string, featured: boolean, currentlyFeatured: boolean) => {
+    if (isSupabaseConfigured()) {
+      setBusyId(id);
+      const result = await setResourceFeatured(id, featured, currentlyFeatured);
+      setBusyId(null);
+
+      if (result.error === "max_featured") {
+        alert(t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }));
+        return false;
+      }
+      if (result.error) {
+        alert(t("admin.resourceSaveFailed"));
+        return false;
+      }
+      router.refresh();
     }
-    setFeaturedIds(nextIds);
+
+    setLocalResources((prev) =>
+      prev.map((resource) =>
+        resource.id === id ? { ...resource, is_featured: featured } : resource
+      )
+    );
+    return true;
   };
 
-  const handleRemove = (id: string) => {
-    const nextIds = featuredIds.filter((featuredId) => featuredId !== id);
-    setStoredFeaturedIds(nextIds);
-    setFeaturedIds(nextIds);
+  const handleToggle = async (id: string) => {
+    const resource = localResources.find((item) => item.id === id);
+    if (!resource) return;
+    await updateFeatured(id, true, resource.is_featured);
+  };
+
+  const handleRemove = async (id: string) => {
+    const resource = localResources.find((item) => item.id === id);
+    if (!resource) return;
+    await updateFeatured(id, false, resource.is_featured);
   };
 
   return (
@@ -112,6 +119,7 @@ export function FeaturedResourcesPicker({ resources }: FeaturedResourcesPickerPr
                   variant="ghost"
                   size="sm"
                   onClick={() => handleRemove(resource.id)}
+                  disabled={busyId === resource.id}
                   aria-label={t("admin.removeFeatured")}
                 >
                   <X className="h-4 w-4" aria-hidden="true" />
@@ -148,7 +156,7 @@ export function FeaturedResourcesPicker({ resources }: FeaturedResourcesPickerPr
               <button
                 type="button"
                 onClick={() => handleToggle(resource.id)}
-                disabled={featuredIds.length >= MAX_FEATURED_RESOURCES}
+                disabled={featuredResources.length >= MAX_FEATURED_RESOURCES || busyId === resource.id}
                 className={cn(
                   "flex w-full cursor-pointer items-center justify-between gap-3 rounded-xl border border-border px-4 py-3 text-left transition-colors hover:bg-secondary",
                   "disabled:cursor-not-allowed disabled:opacity-50"

@@ -8,6 +8,7 @@ import { CategoryIcon } from "@/lib/category-icons";
 import { Dropdown } from "@/components/ui/dropdown";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "@/i18n/locale-context";
+import { useCategoryLabel } from "@/i18n/use-category-label";
 
 interface CategoryPillsProps {
   categories: Category[];
@@ -16,15 +17,19 @@ interface CategoryPillsProps {
   activeSlug?: string | null;
   wrap?: boolean;
   className?: string;
+  highlightAllWhenUnset?: boolean;
+  size?: "default" | "lg";
 }
 
 function PillLink({
   href,
   isActive,
+  size = "default",
   children,
 }: {
   href: string;
   isActive: boolean;
+  size?: "default" | "lg";
   children: React.ReactNode;
 }) {
   return (
@@ -32,8 +37,11 @@ function PillLink({
       href={href}
       role="listitem"
       className={cn(
-        "inline-flex shrink-0 cursor-pointer items-center justify-center gap-1.5 rounded-full border px-3.5 py-2 text-sm font-medium leading-none transition-colors",
+        "inline-flex shrink-0 cursor-pointer items-center justify-center rounded-full border font-medium leading-none transition-colors",
         "focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring",
+        size === "lg"
+          ? "gap-2 px-5 py-3 text-base"
+          : "gap-1.5 px-3.5 py-2 text-sm",
         isActive
           ? "border-primary bg-primary text-primary-foreground"
           : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-secondary"
@@ -43,16 +51,6 @@ function PillLink({
       {children}
     </Link>
   );
-}
-
-function useCategoryLabel() {
-  const { t } = useTranslations();
-
-  return (category: Category) => {
-    const key = `categories.${category.slug}.name`;
-    const translated = t(key);
-    return translated === key ? category.name : translated;
-  };
 }
 
 function CategorySelect({
@@ -97,6 +95,8 @@ function CategoryPillsList({
   buildHref,
   onCategoryChange,
   wrap = false,
+  highlightAllWhenUnset = true,
+  size = "default",
 }: {
   categories: Category[];
   compact: boolean;
@@ -104,6 +104,8 @@ function CategoryPillsList({
   buildHref: (slug?: string) => string;
   onCategoryChange: (slug: string) => void;
   wrap?: boolean;
+  highlightAllWhenUnset?: boolean;
+  size?: "default" | "lg";
 }) {
   const { t } = useTranslations();
   const categoryLabel = useCategoryLabel();
@@ -127,13 +129,18 @@ function CategoryPillsList({
 
       <div
         className={cn(
-          "hidden gap-2 md:flex",
+          "hidden md:flex",
+          size === "lg" ? "gap-3" : "gap-2",
           wrap ? "flex-wrap justify-center" : "overflow-x-auto pb-1"
         )}
         role="list"
         aria-label={t("resources.browseByCategory")}
       >
-        <PillLink href={buildHref()} isActive={!activeSlug}>
+        <PillLink
+          href={buildHref()}
+          isActive={highlightAllWhenUnset && !activeSlug}
+          size={size}
+        >
           {t("common.all")}
         </PillLink>
         {categories.map((category) => (
@@ -141,8 +148,13 @@ function CategoryPillsList({
             key={category.id}
             href={buildHref(category.slug)}
             isActive={activeSlug === category.slug}
+            size={size}
           >
-            <CategoryIcon icon={category.icon} className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+            <CategoryIcon
+              icon={category.icon}
+              className={cn("shrink-0", size === "lg" ? "h-4 w-4" : "h-3.5 w-3.5")}
+              aria-hidden="true"
+            />
             {categoryLabel(category)}
           </PillLink>
         ))}
@@ -156,6 +168,8 @@ function CategoryPillsWithParams({
   compact,
   wrap,
   className,
+  highlightAllWhenUnset,
+  size,
 }: Omit<CategoryPillsProps, "preserveParams" | "activeSlug">) {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -188,6 +202,8 @@ function CategoryPillsWithParams({
         buildHref={buildHref}
         onCategoryChange={onCategoryChange}
         wrap={wrap}
+        highlightAllWhenUnset={highlightAllWhenUnset}
+        size={size}
       />
     </div>
   );
@@ -200,6 +216,8 @@ export function CategoryPills({
   activeSlug = null,
   wrap = false,
   className,
+  highlightAllWhenUnset = true,
+  size = "default",
 }: CategoryPillsProps) {
   const router = useRouter();
   const [, startTransition] = useTransition();
@@ -220,6 +238,8 @@ export function CategoryPills({
         compact={compact}
         wrap={wrap}
         className={className}
+        highlightAllWhenUnset={highlightAllWhenUnset}
+        size={size}
       />
     );
   }
@@ -233,6 +253,8 @@ export function CategoryPills({
         buildHref={buildHref}
         onCategoryChange={onCategoryChange}
         wrap={wrap}
+        highlightAllWhenUnset={highlightAllWhenUnset}
+        size={size}
       />
     </div>
   );

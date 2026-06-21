@@ -1,47 +1,30 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Input } from "@/components/ui/input";
-import { Select } from "@/components/ui/select";
+import { Dropdown } from "@/components/ui/dropdown";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import type { Category, Resource } from "@/types";
+import type { Category } from "@/types";
+import { MAX_FEATURED_RESOURCES } from "@/lib/featured-resources-storage";
 import {
-  MAX_FEATURED_RESOURCES,
-  getFeaturedIdsFromResources,
-  setStoredFeaturedFromFlag,
-} from "@/lib/featured-resources-storage";
-import { MOCK_RESOURCES } from "@/lib/mock-data";
+  createResource,
+  updateResource,
+  type ResourceFormData,
+} from "@/lib/admin-resources";
+import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslations } from "@/i18n/locale-context";
 
 interface ResourceFormProps {
   categories: Category[];
-  resource?: {
-    id?: string;
-    name: string;
-    description: string;
-    category_id: string;
-    state: string;
-    county: string;
-    city: string;
-    address: string;
-    phone: string;
-    website: string;
-    email: string;
-    hours: string;
-    eligibility: string;
-    services: string;
-    tags: string;
-    status: string;
-    is_featured?: boolean;
-  };
+  resource?: ResourceFormData & { id?: string };
 }
 
 export function ResourceForm({ categories, resource }: ResourceFormProps) {
   const router = useRouter();
   const { t } = useTranslations();
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<ResourceFormData>({
     name: resource?.name ?? "",
     description: resource?.description ?? "",
     category_id: resource?.category_id ?? categories[0]?.id ?? "",
@@ -54,23 +37,16 @@ export function ResourceForm({ categories, resource }: ResourceFormProps) {
     email: resource?.email ?? "",
     hours: resource?.hours ?? "",
     eligibility: resource?.eligibility ?? "",
+    notes: resource?.notes ?? "",
     services: resource?.services ?? "",
     tags: resource?.tags ?? "",
     status: resource?.status ?? "active",
     is_featured: resource?.is_featured ?? false,
   });
   const [saving, setSaving] = useState(false);
+  const wasFeatured = resource?.is_featured ?? false;
 
-  useEffect(() => {
-    const resourceId = resource?.id;
-    if (!resourceId) return;
-
-    const activeResources = MOCK_RESOURCES.filter((item) => item.status === "active") as Resource[];
-    const featuredIds = getFeaturedIdsFromResources(activeResources);
-    setForm((prev) => ({ ...prev, is_featured: featuredIds.includes(resourceId) }));
-  }, [resource?.id]);
-
-  const update = (key: string, value: string | boolean) => {
+  const update = (key: keyof ResourceFormData, value: string | boolean) => {
     setForm((prev) => ({ ...prev, [key]: value }));
   };
 
@@ -78,18 +54,43 @@ export function ResourceForm({ categories, resource }: ResourceFormProps) {
     e.preventDefault();
     setSaving(true);
 
+    if (!isSupabaseConfigured()) {
+      alert(t("admin.resourceSaveFailed"));
+      setSaving(false);
+      return;
+    }
+
     if (resource?.id) {
-      const activeResources = MOCK_RESOURCES.filter((item) => item.status === "active") as Resource[];
-      const nextIds = setStoredFeaturedFromFlag(activeResources, resource.id, form.is_featured);
-      if (form.is_featured && !nextIds.includes(resource.id)) {
+      const result = await updateResource(resource.id, form, wasFeatured);
+      if (result.error === "max_featured") {
+        alert(t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }));
+        setForm((prev) => ({ ...prev, is_featured: wasFeatured }));
+        setSaving(false);
+        return;
+      }
+      if (result.error) {
+        alert(t("admin.resourceSaveFailed"));
+        setSaving(false);
+        return;
+      }
+    } else {
+      const result = await createResource(form);
+      if (result.error === "max_featured") {
         alert(t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }));
         setForm((prev) => ({ ...prev, is_featured: false }));
+        setSaving(false);
+        return;
+      }
+      if (result.error) {
+        alert(t("admin.resourceSaveFailed"));
+        setSaving(false);
+        return;
       }
     }
 
-    await new Promise((r) => setTimeout(r, 500));
     setSaving(false);
     router.push("/admin/resources");
+    router.refresh();
   };
 
   return (
@@ -114,10 +115,10 @@ export function ResourceForm({ categories, resource }: ResourceFormProps) {
             className="w-full rounded-xl border-2 border-border bg-card px-4 py-3 text-base focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/30"
           />
         </div>
-        <Select
+        <Dropdown
           label={t("admin.categoryLabel")}
           value={form.category_id}
-          onChange={(e) => update("category_id", e.target.value)}
+          onChange={(value) => update("category_id", value)}
           options={categories.map((c) => ({ value: c.id, label: c.name }))}
         />
         <div className="grid gap-4 sm:grid-cols-3">
@@ -143,6 +144,20 @@ export function ResourceForm({ categories, resource }: ResourceFormProps) {
             rows={3}
             className="w-full rounded-xl border-2 border-border bg-card px-4 py-3 text-base focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/30"
           />
+          <p className="mt-1 text-sm text-muted-foreground">{t("admin.eligibilityHint")}</p>
+        </div>
+        <div>
+          <label htmlFor="notes" className="mb-2 block text-base font-semibold">
+            {t("admin.notes")}
+          </label>
+          <textarea
+            id="notes"
+            value={form.notes}
+            onChange={(e) => update("notes", e.target.value)}
+            rows={3}
+            className="w-full rounded-xl border-2 border-border bg-card px-4 py-3 text-base focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/30"
+          />
+          <p className="mt-1 text-sm text-muted-foreground">{t("admin.notesHint")}</p>
         </div>
         <Input
           label={t("admin.services")}
@@ -155,15 +170,16 @@ export function ResourceForm({ categories, resource }: ResourceFormProps) {
           value={form.tags}
           onChange={(e) => update("tags", e.target.value)}
         />
-        <Select
+        <Dropdown
           label={t("admin.status")}
           value={form.status}
-          onChange={(e) => update("status", e.target.value)}
+          onChange={(value) => update("status", value)}
           options={[
             { value: "active", label: t("common.active") },
             { value: "inactive", label: t("common.inactive") },
             { value: "archived", label: t("common.archived") },
           ]}
+          searchable={false}
         />
         <label className="flex cursor-pointer items-start gap-3 rounded-xl border border-border px-4 py-4">
           <input

@@ -1,45 +1,49 @@
-import { cn } from "@/lib/utils";
-import { forwardRef, type SelectHTMLAttributes } from "react";
+"use client";
 
-interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
+import { Dropdown, type DropdownOption } from "@/components/ui/dropdown";
+
+export type { DropdownOption as SelectOption };
+
+interface SelectProps {
   label?: string;
-  options: { value: string; label: string }[];
+  options: DropdownOption[];
   placeholder?: string;
+  value?: string;
+  onChange?: (e: { target: { value: string; name?: string } }) => void;
+  disabled?: boolean;
+  className?: string;
+  name?: string;
+  required?: boolean;
+  id?: string;
+  searchable?: boolean;
 }
 
-export const Select = forwardRef<HTMLSelectElement, SelectProps>(
-  ({ className, label, options, placeholder, id, ...props }, ref) => {
-    const selectId = id || label?.toLowerCase().replace(/\s+/g, "-");
+/** @deprecated Prefer `Dropdown` directly — this wraps the shared custom dropdown for legacy call sites. */
+export function Select({
+  label,
+  options,
+  placeholder,
+  value = "",
+  onChange,
+  disabled,
+  className,
+  searchable,
+}: SelectProps) {
+  const mergedOptions =
+    placeholder && !options.some((o) => o.value === "")
+      ? [{ value: "", label: placeholder }, ...options]
+      : options;
 
-    return (
-      <div className="w-full">
-        {label && (
-          <label htmlFor={selectId} className="mb-2 block text-base font-semibold text-foreground">
-            {label}
-          </label>
-        )}
-        <select
-          ref={ref}
-          id={selectId}
-          className={cn(
-            "w-full min-h-[48px] rounded-xl border-2 border-border bg-card px-4 py-3 text-base text-foreground",
-            "focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring/30",
-            className
-          )}
-          {...props}
-        >
-          {placeholder && (
-            <option value="">{placeholder}</option>
-          )}
-          {options.map((opt) => (
-            <option key={opt.value} value={opt.value}>
-              {opt.label}
-            </option>
-          ))}
-        </select>
-      </div>
-    );
-  }
-);
-
-Select.displayName = "Select";
+  return (
+    <Dropdown
+      label={label}
+      placeholder={placeholder}
+      value={value}
+      options={mergedOptions}
+      onChange={(next) => onChange?.({ target: { value: next } })}
+      disabled={disabled}
+      className={className}
+      searchable={searchable}
+    />
+  );
+}

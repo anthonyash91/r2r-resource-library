@@ -2,42 +2,56 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import {
   MapPin,
   Phone,
   Globe,
   Mail,
   Clock,
-  Heart,
   Share2,
   ArrowLeft,
 } from "lucide-react";
 import { CategoryBadge } from "@/components/resources/category-badge";
+import { StatewideBadge } from "@/components/resources/statewide-badge";
+import { RegionalBadge } from "@/components/resources/regional-badge";
 import { Badge } from "@/components/ui/badge";
-import { Card } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader } from "@/components/ui/card";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
-import { formatPhone, formatDate, formatWebsiteDisplay, shareResource, cn } from "@/lib/utils";
+import { formatPhone, formatDate, formatWebsiteDisplay, shareResource, cn, pageSectionPadding } from "@/lib/utils";
 import { useSaved } from "@/lib/saved-context";
 import { useAuth } from "@/lib/auth-context";
 import type { Resource } from "@/types";
 import { useTranslations } from "@/i18n/locale-context";
 import { formatOperatingHours } from "@/i18n/localize-content";
+import { SaveResourceButton } from "@/components/resources/save-resource-button";
+import { ServedCountiesLinks } from "@/components/resources/served-counties-links";
+import { countyCoverageLabel, isRegionalResource, shouldShowCountiesServed } from "@/lib/resource-coverage";
 
 interface ResourceDetailProps {
   resource: Resource;
   related: Resource[];
 }
 
+const sectionTitleClass = "text-xl font-bold";
+
 export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
   const { isSaved, toggleSave, recordView } = useSaved();
-  const { user } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const { t, locale } = useTranslations();
+  const searchParams = useSearchParams();
+  const selectedCounty = searchParams.get("county") ?? undefined;
   const saved = isSaved(resource.id);
+  const showRegionalBadge = isRegionalResource(resource);
+  const coverageLabel = countyCoverageLabel(resource, selectedCounty, t);
+  const showCoverageLabel =
+    coverageLabel &&
+    !(showRegionalBadge && coverageLabel === t("resources.coverageRegional"));
 
   useEffect(() => {
+    if (authLoading) return;
     recordView(resource);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [resource.id]);
+  }, [resource.id, authLoading, user?.id, recordView]);
 
   const fullAddress = [resource.address, resource.city, resource.state]
     .filter(Boolean)
@@ -56,7 +70,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
   };
 
   return (
-    <div className="px-4 py-10 sm:px-6 lg:px-8">
+    <div className={cn("bg-background", pageSectionPadding)}>
       <div className="mx-auto max-w-4xl">
         <Link
           href="/resources"
@@ -72,28 +86,19 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
               {resource.category && (
                 <CategoryBadge category={resource.category} />
               )}
+              <RegionalBadge resource={resource} />
+              <StatewideBadge resource={resource} />
             </div>
             <div className="flex items-center gap-2">
-              <button
-                type="button"
+              <SaveResourceButton
+                saved={saved}
                 onClick={handleSave}
-                aria-label={
+                ariaLabel={
                   saved
                     ? t("resources.removeSaveAria", { name: resource.name })
                     : t("resources.saveAria", { name: resource.name })
                 }
-                aria-pressed={saved}
-                className={cn(
-                  "inline-flex cursor-pointer items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium transition-colors",
-                  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring",
-                  saved
-                    ? "bg-primary text-primary-foreground hover:bg-primary-hover"
-                    : "border border-primary bg-transparent text-primary hover:bg-primary/10"
-                )}
-              >
-                <Heart className={cn("h-3.5 w-3.5", saved && "fill-current")} aria-hidden="true" />
-                {saved ? t("common.saved") : t("common.save")}
-              </button>
+              />
               <button
                 type="button"
                 onClick={handleShare}
@@ -113,17 +118,22 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
           <div className="space-y-6 lg:col-span-2">
             <Card>
               <h1 className="mb-4 text-xl font-bold">{resource.name}</h1>
+              {showCoverageLabel && (
+                <p className="mb-3 text-sm font-medium text-primary">{coverageLabel}</p>
+              )}
               <p className="text-base text-muted-foreground">{resource.description}</p>
             </Card>
 
             {resource.services.length > 0 && (
               <Card>
-                <h2 className="mb-4 text-xl font-bold">{t("resources.servicesOffered")}</h2>
-                <ul className="grid gap-2 sm:grid-cols-2">
+                <CardHeader>
+                  <h2 className={sectionTitleClass}>{t("resources.servicesOffered")}</h2>
+                </CardHeader>
+                <ul className="space-y-2">
                   {resource.services.map((service) => (
                     <li
                       key={service}
-                      className="flex items-center gap-2 text-base before:content-['✓'] before:font-bold before:text-success"
+                      className="flex items-center gap-2 text-base app-check-list-item before:content-['✓'] before:font-bold"
                     >
                       {service}
                     </li>
@@ -133,16 +143,29 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
             )}
 
             {resource.eligibility && (
+              <Card className="app-eligibility-card">
+                <CardHeader>
+                  <h2 className={sectionTitleClass}>{t("resources.eligibilityRequirements")}</h2>
+                </CardHeader>
+                <CardDescription>{resource.eligibility}</CardDescription>
+              </Card>
+            )}
+
+            {resource.notes && (
               <Card>
-                <h2 className="mb-4 text-xl font-bold">{t("resources.eligibilityRequirements")}</h2>
-                <p className="text-base text-muted-foreground">{resource.eligibility}</p>
+                <CardHeader>
+                  <h2 className={sectionTitleClass}>{t("resources.additionalInfo")}</h2>
+                </CardHeader>
+                <CardDescription>{resource.notes}</CardDescription>
               </Card>
             )}
           </div>
 
-          <aside className="space-y-4">
+          <aside className="min-w-0 space-y-6">
             <Card>
-              <h2 className="mb-4 text-xl font-bold">{t("resources.contactInfo")}</h2>
+              <CardHeader>
+                <h2 className={sectionTitleClass}>{t("resources.contactInfo")}</h2>
+              </CardHeader>
               <div className="space-y-3">
                 {fullAddress && (
                   <p className="flex items-start gap-2 text-base text-muted-foreground">
@@ -162,13 +185,14 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
                   </p>
                 )}
                 {resource.website && (
-                  <p className="flex items-center gap-2">
+                  <p className="flex min-w-0 items-center gap-2">
                     <Globe className="h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
                     <a
                       href={resource.website}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="break-all text-base text-primary hover:underline"
+                      title={formatWebsiteDisplay(resource.website)}
+                      className="min-w-0 truncate text-base text-primary hover:underline"
                     >
                       {formatWebsiteDisplay(resource.website)}
                     </a>
@@ -194,9 +218,20 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
               </div>
             </Card>
 
+            {shouldShowCountiesServed(resource) ? (
+              <Card>
+                <CardHeader>
+                  <h2 className={sectionTitleClass}>{t("resources.countiesServed")}</h2>
+                </CardHeader>
+                <ServedCountiesLinks resource={resource} />
+              </Card>
+            ) : null}
+
             {resource.tags.length > 0 && (
               <Card>
-                <h2 className="mb-4 text-xl font-bold">{t("resources.tags")}</h2>
+                <CardHeader>
+                  <h2 className={sectionTitleClass}>{t("resources.tags")}</h2>
+                </CardHeader>
                 <div className="flex flex-wrap gap-2">
                   {resource.tags.map((tag) => (
                     <Link
@@ -213,7 +248,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
               </Card>
             )}
 
-            <p className="text-sm text-muted-foreground">
+            <p className="text-center text-sm text-muted-foreground">
               {t("resources.lastUpdated", {
                 date: formatDate(resource.updated_at, locale),
               })}

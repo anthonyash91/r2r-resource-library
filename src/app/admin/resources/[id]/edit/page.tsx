@@ -39,6 +39,7 @@ export default async function EditResourcePage({ params }: PageProps) {
           email: resource.email ?? "",
           hours: resource.hours ?? "",
           eligibility: resource.eligibility ?? "",
+          notes: resource.notes ?? "",
           services: resource.services.join(", "),
           tags: resource.tags.join(", "),
           status: resource.status,

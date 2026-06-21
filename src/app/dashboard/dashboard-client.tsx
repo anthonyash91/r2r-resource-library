@@ -10,6 +10,8 @@ import { useAuth } from "@/lib/auth-context";
 import { useSaved, useSavedResources } from "@/lib/saved-context";
 import type { Category, Resource } from "@/types";
 import { useTranslations } from "@/i18n/locale-context";
+import { EmailSavedResourcesButton } from "@/components/saved/email-saved-resources-button";
+import { pageSectionPadding } from "@/lib/utils";
 
 interface DashboardClientProps {
   categories: Category[];
@@ -32,7 +34,7 @@ export function DashboardClient({ categories, recommended }: DashboardClientProp
 
   if (!user) {
     return (
-      <div className="px-4 py-16 text-center sm:px-6 lg:px-8">
+      <div className={pageSectionPadding}>
         <div className="mx-auto max-w-lg">
           <h1 className="mb-4 text-3xl font-bold">{t("dashboard.signInRequired")}</h1>
           <p className="mb-8 text-lg text-muted-foreground">{t("dashboard.signInRequiredDesc")}</p>
@@ -52,7 +54,7 @@ export function DashboardClient({ categories, recommended }: DashboardClientProp
   const firstName = user.full_name?.split(" ")[0];
 
   return (
-    <div className="px-4 py-10 sm:px-6 lg:px-8">
+    <div className={pageSectionPadding}>
       <div className="mx-auto max-w-7xl">
         <header className="mb-10">
           <h1 className="mb-2 text-3xl font-bold sm:text-4xl">
@@ -93,13 +95,19 @@ export function DashboardClient({ categories, recommended }: DashboardClientProp
 
         {savedResources.length > 0 && (
           <section className="mb-12" aria-labelledby="saved-heading">
-            <div className="mb-6 flex items-center justify-between">
+            <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
               <h2 id="saved-heading" className="text-2xl font-bold">
                 {t("dashboard.savedResources")}
               </h2>
-              <Link href="/saved" className="text-base font-semibold text-primary hover:underline">
-                {t("home.viewAllResources")}
-              </Link>
+              <div className="flex flex-wrap items-center gap-4">
+                <EmailSavedResourcesButton
+                  resourceCount={savedResources.length}
+                  size="sm"
+                />
+                <Link href="/saved" className="text-base font-semibold text-primary hover:underline">
+                  {t("home.viewAllResources")}
+                </Link>
+              </div>
             </div>
             <ResourceMasonry resources={savedResources.slice(0, 3)} />
           </section>

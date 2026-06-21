@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useMemo, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useMemo, useState, useEffect } from "react";
 import {
   Menu,
   X,
@@ -14,24 +14,77 @@ import {
   LogOut,
   Settings,
 } from "lucide-react";
+import { HeaderBrandingLockup } from "@/components/layout/header-branding-lockup";
+import { parseNavTaglinePhrases } from "@/lib/nav-tagline-phrases";
 import { cn } from "@/lib/utils";
 import { useAuth } from "@/lib/auth-context";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useTranslations } from "@/i18n/locale-context";
+import type { Locale } from "@/i18n/types";
 
-export function Header() {
+type NavLayout = "en" | "es-guest" | "es-user" | "es-admin";
+
+function getNavLayout(locale: Locale, loading: boolean, user: unknown, isAdmin: boolean): NavLayout {
+  if (locale !== "es") return "en";
+  if (loading) return "es-admin";
+  if (user && isAdmin) return "es-admin";
+  if (user) return "es-user";
+  return "es-guest";
+}
+
+const DESKTOP_NAV_CLASSES: Record<NavLayout, string> = {
+  en: "hidden min-[1400px]:flex",
+  "es-guest": "hidden min-[1180px]:flex",
+  "es-user": "hidden min-[1380px]:flex",
+  "es-admin": "hidden min-[1540px]:flex",
+};
+
+const MOBILE_NAV_CLASSES: Record<NavLayout, string> = {
+  en: "min-[1400px]:hidden",
+  "es-guest": "min-[1180px]:hidden",
+  "es-user": "min-[1380px]:hidden",
+  "es-admin": "min-[1540px]:hidden",
+};
+
+import type { SiteBranding } from "@/i18n/localize-content";
+
+interface HeaderProps {
+  branding: SiteBranding;
+}
+
+export function Header({ branding }: HeaderProps) {
   const pathname = usePathname();
+  const router = useRouter();
   const { user, isAdmin, signOut, loading } = useAuth();
   const [mobileOpen, setMobileOpen] = useState(false);
   const { t, locale } = useTranslations();
 
-  const desktopNavClasses =
-    locale === "es"
-      ? "hidden min-[1720px]:flex"
-      : "hidden min-[1400px]:flex";
-  const mobileNavClasses =
-    locale === "es" ? "min-[1720px]:hidden" : "min-[1400px]:hidden";
+  const handleSignOut = async () => {
+    await signOut();
+    if (pathname.startsWith("/admin")) {
+      router.replace("/login");
+      router.refresh();
+    }
+  };
+
+  const navLayout = getNavLayout(locale, loading, user, isAdmin);
+  const desktopNavClasses = DESKTOP_NAV_CLASSES[navLayout];
+  const mobileNavClasses = MOBILE_NAV_CLASSES[navLayout];
+
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [navLayout, locale]);
+
+  const taglinePhrases = useMemo(
+    () =>
+      parseNavTaglinePhrases(branding.navTagline, [
+        t("nav.taglinePhrase1"),
+        t("nav.taglinePhrase2"),
+        t("nav.taglinePhrase3"),
+      ]),
+    [branding.navTagline, t]
+  );
 
   const navLinks = useMemo(
     () => [
@@ -42,7 +95,7 @@ export function Header() {
             { href: "/dashboard", label: t("nav.dashboard"), icon: LayoutDashboard },
           ]
         : []),
-      { href: "/faq", label: t("nav.faq"), icon: BookOpen },
+      { href: "/faq", label: t("nav.faqShort"), icon: BookOpen },
     ],
     [t, user]
   );
@@ -61,32 +114,34 @@ export function Header() {
         {t("common.skipToContent")}
       </a>
 
-      <div className="mx-auto flex min-h-[var(--site-header-height)] max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+      <div
+        className={cn(
+          "mx-auto flex min-h-[var(--site-header-height)] w-full items-center justify-between gap-3 px-4 sm:gap-4 sm:px-6 lg:px-8",
+          locale === "es" ? "max-w-none" : "max-w-7xl"
+        )}
+      >
         <Link
           href="/"
-          className="flex items-center gap-3 rounded-lg focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring"
-          aria-label={t("nav.homeAriaLabel")}
+          className="flex min-w-0 shrink-0 items-center gap-3 rounded-lg focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring"
+          aria-label={t("nav.homeAriaLabel", { brand: branding.brandName })}
         >
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-            <BookOpen className="h-6 w-6" aria-hidden="true" />
-          </div>
-          <div className="hidden sm:block">
-            <span className="block text-lg font-bold leading-tight text-foreground">
-              {t("nav.brandName")}
-            </span>
-            <span className="block text-sm text-muted-foreground">
-              {t("nav.tagline")}
-            </span>
-          </div>
+          <HeaderBrandingLockup
+            brandName={branding.brandName}
+            taglinePhrases={taglinePhrases}
+            textWrapperClassName="hidden min-w-0 sm:flex"
+          />
         </Link>
 
-        <nav className={cn("items-center gap-1", desktopNavClasses)} aria-label={t("nav.mainNav")}>
+        <nav
+          className={cn("shrink-0 flex-nowrap items-center gap-1", desktopNavClasses)}
+          aria-label={t("nav.mainNav")}
+        >
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
               className={cn(
-                "rounded-xl px-4 py-2.5 text-base font-medium transition-colors cursor-pointer",
+                "shrink-0 whitespace-nowrap rounded-xl px-4 py-2.5 text-base font-medium transition-colors cursor-pointer",
                 "focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring",
                 isActive(href)
                   ? "bg-secondary text-primary"
@@ -99,27 +154,35 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           <LanguageSwitcher />
 
-          <div className={cn("items-center gap-2", desktopNavClasses)}>
+          <div className={cn("shrink-0 items-center gap-2", desktopNavClasses)}>
             {!loading && (
               <>
                 {user ? (
                   <>
                     {isAdmin && (
-                      <Link href="/admin">
-                        <Button variant="ghost" size="sm">
-                          <Settings className="h-5 w-5" aria-hidden="true" />
-                          {t("nav.admin")}
-                        </Button>
+                      <Link
+                        href="/admin"
+                        className={cn(
+                          "inline-flex h-11 min-h-11 shrink-0 items-center gap-2 whitespace-nowrap rounded-xl px-4 py-2.5 text-base font-medium transition-colors cursor-pointer",
+                          "focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring",
+                          isActive("/admin")
+                            ? "bg-secondary text-primary"
+                            : "text-foreground hover:bg-muted"
+                        )}
+                        aria-current={isActive("/admin") ? "page" : undefined}
+                      >
+                        <Settings className="h-5 w-5 shrink-0" aria-hidden="true" />
+                        {t("nav.admin")}
                       </Link>
                     )}
                     <Button
                       variant="outline"
                       size="sm"
-                      className="h-11 min-h-11 py-2.5"
-                      onClick={() => signOut()}
+                      className="h-11 min-h-11 shrink-0 whitespace-nowrap py-2.5"
+                      onClick={handleSignOut}
                     >
                       <LogOut className="h-5 w-5" aria-hidden="true" />
                       {t("nav.signOut")}
@@ -127,14 +190,16 @@ export function Header() {
                   </>
                 ) : (
                   <>
-                    <Link href="/login">
-                      <Button variant="ghost" size="sm">
+                    <Link href="/login" className="shrink-0">
+                      <Button variant="ghost" size="sm" className="whitespace-nowrap">
                         <LogIn className="h-5 w-5" aria-hidden="true" />
                         {t("nav.signIn")}
                       </Button>
                     </Link>
-                    <Link href="/signup">
-                      <Button size="sm">{t("nav.createAccount")}</Button>
+                    <Link href="/signup" className="shrink-0">
+                      <Button size="sm" className="whitespace-nowrap">
+                        {t("nav.createAccount")}
+                      </Button>
                     </Link>
                   </>
                 )}
@@ -207,7 +272,7 @@ export function Header() {
                           "w-full text-foreground hover:bg-muted"
                         )}
                         onClick={() => {
-                          signOut();
+                          void handleSignOut();
                           setMobileOpen(false);
                         }}
                       >

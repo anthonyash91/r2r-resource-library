@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Plus, Download, Upload, Pencil, Archive, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -9,11 +10,9 @@ import { CategoryBadge } from "@/components/resources/category-badge";
 import { Card } from "@/components/ui/card";
 import type { Resource } from "@/types";
 import { formatDate, cn } from "@/lib/utils";
-import {
-  getFeaturedIdsFromResources,
-  MAX_FEATURED_RESOURCES,
-  toggleStoredFeaturedId,
-} from "@/lib/featured-resources-storage";
+import { MAX_FEATURED_RESOURCES } from "@/lib/featured-resources-storage";
+import { archiveResourceById, setResourceFeatured } from "@/lib/admin-resources";
+import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslations } from "@/i18n/locale-context";
 
 interface AdminResourcesClientProps {
@@ -21,28 +20,14 @@ interface AdminResourcesClientProps {
 }
 
 export function AdminResourcesClient({ initialResources }: AdminResourcesClientProps) {
+  const router = useRouter();
   const { t, locale } = useTranslations();
   const [resources, setResources] = useState(initialResources);
-  const [featuredIds, setFeaturedIds] = useState<string[]>(() =>
-    getFeaturedIdsFromResources(initialResources.filter((resource) => resource.status === "active"))
-  );
+  const [busyId, setBusyId] = useState<string | null>(null);
 
   useEffect(() => {
-    const syncFeatured = () => {
-      setFeaturedIds(
-        getFeaturedIdsFromResources(resources.filter((resource) => resource.status === "active"))
-      );
-    };
-
-    syncFeatured();
-    window.addEventListener("featured-resources-updated", syncFeatured);
-    window.addEventListener("storage", syncFeatured);
-
-    return () => {
-      window.removeEventListener("featured-resources-updated", syncFeatured);
-      window.removeEventListener("storage", syncFeatured);
-    };
-  }, [resources]);
+    setResources(initialResources);
+  }, [initialResources]);
 
   const handleExport = () => {
     const blob = new Blob([JSON.stringify(resources, null, 2)], { type: "application/json" });
@@ -55,6 +40,12 @@ export function AdminResourcesClient({ initialResources }: AdminResourcesClientP
   };
 
   const handleImport = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (isSupabaseConfigured()) {
+      alert(t("admin.importDbUnavailable"));
+      e.target.value = "";
+      return;
+    }
+
     const file = e.target.files?.[0];
     if (!file) return;
     const reader = new FileReader();
@@ -70,21 +61,49 @@ export function AdminResourcesClient({ initialResources }: AdminResourcesClientP
     reader.readAsText(file);
   };
 
-  const archiveResource = (id: string) => {
+  const archiveResource = async (id: string) => {
     if (!confirm(t("admin.archiveConfirm"))) return;
+
+    if (isSupabaseConfigured()) {
+      setBusyId(id);
+      const result = await archiveResourceById(id);
+      setBusyId(null);
+      if (result.error) {
+        alert(t("admin.resourceSaveFailed"));
+        return;
+      }
+      router.refresh();
+    }
+
     setResources((prev) =>
-      prev.map((r) => (r.id === id ? { ...r, status: "archived" as const } : r))
+      prev.map((r) =>
+        r.id === id ? { ...r, status: "archived" as const, is_featured: false } : r
+      )
     );
   };
 
-  const toggleFeatured = (resource: Resource) => {
-    const activeResources = resources.filter((item) => item.status === "active");
-    const nextIds = toggleStoredFeaturedId(activeResources, resource.id);
-    if (nextIds === featuredIds && !featuredIds.includes(resource.id)) {
-      alert(t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }));
-      return;
+  const toggleFeatured = async (resource: Resource) => {
+    const nextFeatured = !resource.is_featured;
+
+    if (isSupabaseConfigured()) {
+      setBusyId(resource.id);
+      const result = await setResourceFeatured(resource.id, nextFeatured, resource.is_featured);
+      setBusyId(null);
+
+      if (result.error === "max_featured") {
+        alert(t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }));
+        return;
+      }
+      if (result.error) {
+        alert(t("admin.resourceSaveFailed"));
+        return;
+      }
+      router.refresh();
     }
-    setFeaturedIds(nextIds);
+
+    setResources((prev) =>
+      prev.map((r) => (r.id === resource.id ? { ...r, is_featured: nextFeatured } : r))
+    );
   };
 
   const statusLabel = (status: string) => {
@@ -126,7 +145,7 @@ export function AdminResourcesClient({ initialResources }: AdminResourcesClientP
             <div className="flex-1">
               <div className="mb-2 flex flex-wrap gap-2">
                 {resource.category && <CategoryBadge category={resource.category} />}
-                {featuredIds.includes(resource.id) && (
+                {resource.is_featured && (
                   <Badge variant="warning">{t("admin.featured")}</Badge>
                 )}
                 <Badge variant={resource.status === "active" ? "success" : "default"}>
@@ -142,21 +161,22 @@ export function AdminResourcesClient({ initialResources }: AdminResourcesClientP
             <div className="flex flex-wrap gap-2">
               {resource.status === "active" && (
                 <Button
-                  variant={featuredIds.includes(resource.id) ? "primary" : "outline"}
+                  variant={resource.is_featured ? "primary" : "outline"}
                   size="sm"
                   onClick={() => toggleFeatured(resource)}
-                  aria-pressed={featuredIds.includes(resource.id)}
+                  disabled={busyId === resource.id}
+                  aria-pressed={resource.is_featured}
                   aria-label={
-                    featuredIds.includes(resource.id)
+                    resource.is_featured
                       ? t("admin.removeFeatured")
                       : t("admin.featureOnHomepage")
                   }
                 >
                   <Star
-                    className={cn("h-4 w-4", featuredIds.includes(resource.id) && "fill-current")}
+                    className={cn("h-4 w-4", resource.is_featured && "fill-current")}
                     aria-hidden="true"
                   />
-                  {featuredIds.includes(resource.id) ? t("admin.featured") : t("admin.feature")}
+                  {resource.is_featured ? t("admin.featured") : t("admin.feature")}
                 </Button>
               )}
               <Link href={`/admin/resources/${resource.id}/edit`}>
@@ -165,7 +185,12 @@ export function AdminResourcesClient({ initialResources }: AdminResourcesClientP
                   {t("admin.edit")}
                 </Button>
               </Link>
-              <Button variant="ghost" size="sm" onClick={() => archiveResource(resource.id)}>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => archiveResource(resource.id)}
+                disabled={busyId === resource.id}
+              >
                 <Archive className="h-4 w-4" aria-hidden="true" />
                 {t("admin.archive")}
               </Button>

@@ -46,10 +46,6 @@ export function LocaleProvider({
     }
   }, [locale]);
 
-  useEffect(() => {
-    document.documentElement.lang = locale;
-  }, [locale]);
-
   const setLocale = useCallback(
     (nextLocale: Locale) => {
       writeCookieLocale(nextLocale);

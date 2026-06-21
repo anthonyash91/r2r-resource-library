@@ -1,5 +1,7 @@
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { SetBreadcrumbLabel } from "@/components/layout/set-breadcrumb-label";
 import { ResourceDetailView } from "@/components/resources/resource-detail";
 import { getResourceById, getRelatedResources } from "@/lib/data";
 import { getServerTranslator } from "@/i18n/server";
@@ -29,5 +31,12 @@ export default async function ResourceDetailPage({ params }: PageProps) {
 
   const related = await getRelatedResources(resource);
 
-  return <ResourceDetailView resource={resource} related={related} />;
+  return (
+    <>
+      <SetBreadcrumbLabel label={resource.name} />
+      <Suspense fallback={null}>
+        <ResourceDetailView resource={resource} related={related} />
+      </Suspense>
+    </>
+  );
 }

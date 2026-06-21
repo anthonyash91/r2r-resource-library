@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { Category } from "@/types";
 import { useTranslations } from "@/i18n/locale-context";
+import { useCategoryLabel } from "@/i18n/use-category-label";
 
 interface ResourceFiltersProps {
   categories: Category[];
@@ -30,6 +31,7 @@ export function ResourceFiltersBar({
   const searchParams = useSearchParams();
   const [isPending, startTransition] = useTransition();
   const { t } = useTranslations();
+  const categoryLabel = useCategoryLabel();
 
   const updateParams = useCallback(
     (key: string, value: string) => {
@@ -67,12 +69,6 @@ export function ResourceFiltersBar({
     ...items.map((item) => ({ value: item, label: item })),
   ];
 
-  const categoryLabel = (category: Category) => {
-    const key = `categories.${category.slug}.name`;
-    const translated = t(key);
-    return translated === key ? category.name : translated;
-  };
-
   return (
     <div
       className={cn(
@@ -108,9 +104,11 @@ export function ResourceFiltersBar({
           value={searchParams.get("county") ?? ""}
           onChange={(value) => updateParams("county", value)}
           options={withPlaceholder(counties, t("resources.allCounties"))}
-          disabled={!selectedState}
           searchPlaceholder={t("resources.searchCounties")}
         />
+        <p className="text-sm text-muted-foreground md:col-span-2 xl:col-span-3">
+          {t("resources.countyFilterHint")}
+        </p>
         <Dropdown
           label={t("resources.city")}
           placeholder={t("resources.allCities")}

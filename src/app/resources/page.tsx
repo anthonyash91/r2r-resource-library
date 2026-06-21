@@ -3,9 +3,12 @@ import type { Metadata } from "next";
 import { ResourcesHeroSection } from "@/components/home/hero-section";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { ResourceResultsSummary } from "@/components/resources/resource-results-summary";
+import { CountyFilteredResourceResults } from "@/components/resources/county-filtered-resource-results";
 import { ResourceFiltersPanel } from "@/components/resources/resource-filters-panel";
 import { getServerTranslator } from "@/i18n/server";
-import { cn, sectionStackGap } from "@/lib/utils";
+import { cn, pageSectionPadding, sectionStackGap } from "@/lib/utils";
+import { isValidCoverage, partitionResourcesByCountyFilter } from "@/lib/resource-coverage";
+import { hasActiveResourceFiltersFromParams } from "@/lib/resource-filter-params";
 import {
   getResources,
   getCategories,
@@ -33,6 +36,7 @@ interface PageProps {
     category?: string;
     service?: string;
     tag?: string;
+    coverage?: string;
     filter?: string;
   }>;
 }
@@ -55,6 +59,10 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
     category: categoryId,
     service: params.service,
     tag: params.tag,
+    coverage:
+      params.coverage && isValidCoverage(params.coverage)
+        ? params.coverage
+        : undefined,
     recentlyAdded: params.filter === "recent",
   };
 
@@ -63,10 +71,22 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
       getResources(filters),
       getCategories(),
       getStates(),
-      getCounties(params.state),
+      getCounties(params.state ?? "Kentucky"),
       getCities(params.state, params.county),
       getServices(),
     ]);
+
+  const searchQuery = params.q?.trim();
+  const selectedCounty = params.county?.trim();
+  const showCountySplit = Boolean(selectedCounty) && filters.coverage !== "statewide";
+  const resultsSummaryLabel = searchQuery
+    ? t("resources.resultsSummaryWithQuery", { query: searchQuery })
+    : t("resources.resultsSummary");
+  const { local: localResults, statewide: statewideResults } = showCountySplit
+    ? partitionResourcesByCountyFilter(resources, selectedCounty)
+    : { local: resources, statewide: [] as typeof resources };
+
+  const filtersPanelOpen = hasActiveResourceFiltersFromParams(params);
 
   return (
     <>
@@ -74,10 +94,11 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
         <ResourcesHeroSection />
       </Suspense>
 
-      <div className="px-4 pb-8 pt-6 sm:px-6 lg:px-8">
+      <div className={cn("app-band-alt", pageSectionPadding)}>
         <div className={cn("mx-auto max-w-7xl", sectionStackGap)}>
           <Suspense fallback={<div className="h-12 animate-pulse rounded-xl bg-muted" />}>
             <ResourceFiltersPanel
+              defaultOpen={filtersPanelOpen}
               categories={categories}
               states={states}
               counties={counties}
@@ -91,11 +112,37 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
               <h2 className="mb-2 text-xl font-bold">{t("resources.noResults")}</h2>
               <p className="text-base text-muted-foreground">{t("resources.noResultsHint")}</p>
             </div>
+          ) : showCountySplit ? (
+            <CountyFilteredResourceResults
+              county={selectedCounty!}
+              local={localResults}
+              statewide={statewideResults}
+              summaryLabel={t("resources.resultsSplitSummary", {
+                local: localResults.length,
+                statewide: statewideResults.length,
+                county: selectedCounty!,
+              })}
+              inCountyHeading={t("resources.resultsInCountyHeading", {
+                county: selectedCounty!,
+              })}
+              inCountyHint={t("resources.resultsInCountyHint", {
+                county: selectedCounty!,
+              })}
+              statewideHeading={t("resources.resultsStatewideHeading")}
+              statewideHint={t("resources.resultsStatewideHint", {
+                county: selectedCounty!,
+              })}
+              noLocalHint={
+                localResults.length === 0
+                  ? t("resources.resultsNoLocalInCounty", { county: selectedCounty! })
+                  : undefined
+              }
+            />
           ) : (
             <>
               <ResourceResultsSummary
                 count={resources.length}
-                label={t("resources.resultsSummary")}
+                label={resultsSummaryLabel}
               />
               <ResourceMasonry resources={resources} />
             </>

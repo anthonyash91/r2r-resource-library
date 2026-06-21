@@ -1,8 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { ChevronDown, SlidersHorizontal } from "lucide-react";
 import { cn, blockInsetPadding } from "@/lib/utils";
+import { hasActiveResourceFilters } from "@/lib/resource-filter-params";
 import { ResourceFiltersBar } from "./resource-filters";
 import type { Category } from "@/types";
 import { useTranslations } from "@/i18n/locale-context";
@@ -13,11 +15,25 @@ interface ResourceFiltersPanelProps {
   counties: string[];
   cities: string[];
   services: string[];
+  defaultOpen?: boolean;
 }
 
-export function ResourceFiltersPanel(props: ResourceFiltersPanelProps) {
-  const [open, setOpen] = useState(false);
+export function ResourceFiltersPanel({
+  defaultOpen = false,
+  ...props
+}: ResourceFiltersPanelProps) {
+  const searchParams = useSearchParams();
+  const filterParamsKey = searchParams.toString();
+  const [open, setOpen] = useState(
+    () => defaultOpen || hasActiveResourceFilters(searchParams)
+  );
   const { t } = useTranslations();
+
+  useEffect(() => {
+    if (hasActiveResourceFilters(searchParams)) {
+      setOpen(true);
+    }
+  }, [filterParamsKey, searchParams]);
 
   return (
     <div className="w-full min-w-0 rounded-xl border border-border bg-card">

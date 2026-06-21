@@ -1,5 +1,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
+import { getAdminSession } from "@/lib/admin-auth";
 
 export async function updateSession(request: NextRequest) {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
@@ -29,6 +30,24 @@ export async function updateSession(request: NextRequest) {
   });
 
   await supabase.auth.getUser();
+
+  const pathname = request.nextUrl.pathname;
+  if (pathname.startsWith("/admin")) {
+    const session = await getAdminSession(supabase);
+    if (!session) {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+
+      if (user) {
+        return NextResponse.redirect(new URL("/dashboard", request.url));
+      }
+
+      const loginUrl = new URL("/login", request.url);
+      loginUrl.searchParams.set("next", pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+  }
 
   return supabaseResponse;
 }

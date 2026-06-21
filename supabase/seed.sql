@@ -1,3 +1,13 @@
 -- Seed data for Reentry Resource Library
--- Kentucky reentry resources: run supabase/seed-kentucky.sql (generate with node scripts/generate-kentucky-seed.mjs)
--- To wipe existing content: supabase/reset-data.sql
+--
+-- Fresh resource import (CSV):
+--   1. supabase/reset-resources.sql          — delete all resources & categories
+--   2. npm run seed:resources                — generate SQL from data/resources.csv
+--   3. supabase/seed-resources.sql           — load your CSV data
+--
+-- Other seeds (optional, run after reset-resources if you want defaults back):
+--   supabase/seed-faqs.sql
+--   supabase/seed-cms-pages.sql
+--
+-- Full content wipe (resources + FAQs + CMS + announcements + homepage):
+--   supabase/reset-data.sql
