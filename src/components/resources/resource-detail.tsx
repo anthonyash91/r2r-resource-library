@@ -15,7 +15,6 @@ import {
 import { CategoryBadge } from "@/components/resources/category-badge";
 import { StatewideBadge } from "@/components/resources/statewide-badge";
 import { RegionalBadge } from "@/components/resources/regional-badge";
-import { Badge } from "@/components/ui/badge";
 import { Card, CardDescription, CardHeader } from "@/components/ui/card";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { formatPhone, formatDate, formatWebsiteDisplay, shareResource, cn, pageSectionPadding } from "@/lib/utils";
@@ -25,6 +24,7 @@ import type { Resource } from "@/types";
 import { useTranslations } from "@/i18n/locale-context";
 import { formatOperatingHours } from "@/i18n/localize-content";
 import { SaveResourceButton } from "@/components/resources/save-resource-button";
+import { resourceBadgeClass } from "@/components/layout/site-branding-styles";
 import { ServedCountiesLinks } from "@/components/resources/served-counties-links";
 import { countyCoverageLabel, isRegionalResource, shouldShowCountiesServed } from "@/lib/resource-coverage";
 
@@ -93,6 +93,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
               <SaveResourceButton
                 saved={saved}
                 onClick={handleSave}
+                showLabel
                 ariaLabel={
                   saved
                     ? t("resources.removeSaveAria", { name: resource.name })
@@ -103,11 +104,11 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
                 type="button"
                 onClick={handleShare}
                 className={cn(
-                  "inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-primary bg-transparent px-3 py-1 text-sm font-medium text-primary transition-colors",
-                  "hover:bg-primary/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"
+                  resourceBadgeClass,
+                  "cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"
                 )}
               >
-                <Share2 className="h-3.5 w-3.5" aria-hidden="true" />
+                <Share2 aria-hidden="true" />
                 {t("common.share")}
               </button>
             </div>
@@ -232,19 +233,19 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
                 <CardHeader>
                   <h2 className={sectionTitleClass}>{t("resources.tags")}</h2>
                 </CardHeader>
-                <div className="flex flex-wrap gap-2">
-                  {resource.tags.map((tag) => (
-                    <Link
-                      key={tag}
-                      href={`/resources?tag=${encodeURIComponent(tag)}`}
-                      className="inline-flex rounded-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"
-                    >
-                      <Badge variant="secondary" className="transition-colors hover:bg-muted">
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  {resource.tags.map((tag, index) => (
+                    <span key={tag}>
+                      {index > 0 && ", "}
+                      <Link
+                        href={`/resources?tag=${encodeURIComponent(tag)}`}
+                        className="text-primary hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring rounded"
+                      >
                         {tag}
-                      </Badge>
-                    </Link>
+                      </Link>
+                    </span>
                   ))}
-                </div>
+                </p>
               </Card>
             )}
 

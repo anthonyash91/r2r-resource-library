@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Resource } from "@/types";
-import { ResourceCard } from "@/components/resources/resource-card";
+import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { getServerTranslator } from "@/i18n/server";
 import { cn, pageSectionPadding } from "@/lib/utils";
 
@@ -29,11 +29,7 @@ export async function FeaturedResourcesSection({ resources }: FeaturedResourcesS
           </p>
         </header>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {resources.map((resource) => (
-            <ResourceCard key={resource.id} resource={resource} />
-          ))}
-        </div>
+        <ResourceMasonry resources={resources} columns={3} />
 
         <div className="mt-10 text-center">
           <Link

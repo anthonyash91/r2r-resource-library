@@ -6,19 +6,15 @@ interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
 }
 
 export function Badge({ className, variant = "default", children, ...props }: BadgeProps) {
-  const variants = {
-    default: "bg-muted text-foreground",
-    primary: "app-badge",
-    secondary: "bg-secondary text-secondary-foreground",
-    success: "bg-success/10 text-success",
-    warning: "bg-warning/10 text-warning",
-  };
-
   return (
     <span
       className={cn(
-        "inline-flex items-center justify-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium leading-none",
-        variants[variant],
+        variant === "primary" || variant === "secondary" ? "resource-badge" : null,
+        variant === "default" && "inline-flex items-center rounded-xl bg-muted px-3 py-1.5 text-sm font-medium text-foreground",
+        variant === "success" &&
+          "inline-flex items-center rounded-xl bg-success/10 px-3 py-1.5 text-sm font-medium text-success",
+        variant === "warning" &&
+          "inline-flex items-center rounded-xl bg-warning/10 px-3 py-1.5 text-sm font-medium text-warning",
         className
       )}
       {...props}

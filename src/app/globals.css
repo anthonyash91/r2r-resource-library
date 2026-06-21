@@ -31,9 +31,10 @@
   --hero-check-accent: #55b4a6;
 
   /* Category / coverage badges */
-  --badge-bg: #e0e7ff;
-  --badge-fg: #4338ca;
-  --badge-hover-bg: #c7d2fe;
+  --badge-bg: #eff6ff;
+  --badge-fg: #2b4dd0;
+  --badge-hover-bg: #eff6ff;
+  --badge-border: rgba(43, 77, 208, 0.15);
 
   /* Eligibility callout */
   --eligibility-bg: #fefce8;
@@ -212,12 +213,88 @@ body {
 }
 
 .app-badge {
-  background-color: #e0e7ff;
-  color: #4338ca;
+  background-color: #eff6ff;
+  color: #2b4dd0;
+  border: 1px solid rgba(43, 77, 208, 0.15);
 }
 
 .app-badge:hover {
-  background-color: #c7d2fe;
+  background-color: rgba(43, 77, 208, 0.05);
+}
+
+.resource-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(43, 77, 208, 0.15);
+  background-color: #eff6ff;
+  color: #2b4dd0;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.resource-badge:hover {
+  background-color: rgba(43, 77, 208, 0.05);
+  color: #2b4dd0;
+}
+
+.resource-badge--sm {
+  gap: 0.25rem;
+  padding: 0.375rem 0.625rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.resource-badge--sm svg {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.resource-badge svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  flex-shrink: 0;
+}
+
+.save-resource-button {
+  display: inline-flex;
+  box-sizing: border-box;
+  height: calc(1.25rem + 0.5rem + 2px);
+  width: calc(1.25rem + 0.5rem + 2px);
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(43, 77, 208, 0.15);
+  background-color: #eff6ff;
+  color: #2b4dd0;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.save-resource-button svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  flex-shrink: 0;
+}
+
+.save-resource-button:hover {
+  background-color: rgba(43, 77, 208, 0.05);
+}
+
+.save-resource-button--saved {
+  border-color: #2b4dd0;
+  background-color: #2b4dd0;
+  color: #ffffff;
+}
+
+.save-resource-button--saved:hover {
+  background-color: #2338bd;
+  border-color: #2338bd;
+  color: #ffffff;
 }
 
 .app-eligibility-card {

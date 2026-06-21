@@ -39,9 +39,11 @@ export function ResourceCard({
     toggleSave(resource.id);
   };
 
+  const locationLine =
+    [resource.address, resource.city, resource.state].filter(Boolean).join(", ") || null;
+
   const hasContactInfo =
-    resource.city ||
-    resource.state ||
+    locationLine ||
     resource.phone ||
     resource.website;
 
@@ -97,13 +99,15 @@ export function ResourceCard({
             isCompact ? "mb-3 mt-3 pt-3 text-xs" : "mb-4 mt-4 space-y-2 pt-4 text-sm"
           )}
         >
-          {(resource.city || resource.state) && (
-            <p className="flex items-center gap-2">
+          {locationLine && (
+            <p className="flex min-w-0 items-center gap-2">
               <MapPin
                 className={cn("shrink-0 text-primary", isCompact ? "h-3.5 w-3.5" : "h-4 w-4")}
                 aria-hidden="true"
               />
-              {[resource.city, resource.state].filter(Boolean).join(", ")}
+              <span className="min-w-0 truncate" title={locationLine}>
+                {locationLine}
+              </span>
             </p>
           )}
           {!isCompact && resource.phone && (

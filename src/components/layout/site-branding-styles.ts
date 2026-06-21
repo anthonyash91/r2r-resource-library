@@ -10,3 +10,7 @@ export const siteBrandLogoClass = "h-10 w-auto";
 export const siteBrandLockupGapClass = "gap-3";
 
 export const siteBrandTextOffsetClass = "translate-y-[2px]";
+
+/** Category/coverage badges — same surface as the save button */
+export const resourceBadgeClass = "resource-badge";
+export const resourceBadgeSmClass = "resource-badge resource-badge--sm";
