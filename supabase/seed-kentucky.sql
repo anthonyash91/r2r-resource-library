@@ -33,7 +33,7 @@ ON CONFLICT (slug) DO UPDATE SET
 INSERT INTO resources (
   id, name, description, description_es, category_id,
   state, county, city, address, phone, website, email, hours, eligibility,
-  services, tags, latitude, longitude, is_featured, status
+  services, tags, is_featured, status
 ) VALUES
   (
     'b1000001-0001-4000-8000-000000000001',
@@ -52,8 +52,6 @@ INSERT INTO resources (
     'Justice-involved individuals in Kentucky DOC custody or under DOC community supervision, and their families seeking reentry planning support.',
     ARRAY['Individualized reentry planning', 'Regional reentry coordinator referrals', 'Community partnership navigation', 'Pre-release programming coordination', 'Family support and guidance'],
     ARRAY['statewide', 'reentry', 'DOC', 'probation', 'parole', 'frankfort'],
-    38.2009,
-    -84.8733,
     true,
     'active'
   ),
@@ -74,8 +72,6 @@ INSERT INTO resources (
     'Kentucky DOC inmates with community custody status near parole eligibility, and eligible parolees and probationers referred through Probation and Parole.',
     ARRAY['Transitional residential placement', 'Vocational training', 'Educational programming', 'Cognitive behavioral programming', 'Substance use treatment (select sites)', 'Employment preparation'],
     ARRAY['statewide', 'RSC', 'probation', 'parole', 'halfway house', 'DOC'],
-    38.2009,
-    -84.8733,
     false,
     'active'
   ),
@@ -96,8 +92,6 @@ INSERT INTO resources (
     'Individuals with Jefferson County convictions who are legally eligible for expungement under Kentucky law and agree to participate in League support services.',
     ARRAY['Criminal record review', 'Expungement filing assistance', 'Court fee assistance', 'Community Health Navigator assessment', 'Job coaching referrals', 'Financial counseling referrals'],
     ARRAY['louisville', 'jefferson county', 'expungement', 'legal aid', 'reentry'],
-    38.2488,
-    -85.789,
     true,
     'active'
   ),
@@ -118,8 +112,6 @@ INSERT INTO resources (
     'Low-income individuals at or below 125% of the federal poverty guideline in Jefferson, Bullitt, Hardin, Oldham, Shelby, Spencer, and other served counties with civil legal needs including eligible expungements.',
     ARRAY['Criminal record expungement', 'Housing legal assistance', 'Public benefits advocacy', 'Family law assistance', 'Consumer legal help', 'Online and phone intake'],
     ARRAY['louisville', 'jefferson county', 'expungement', 'legal aid', 'civil legal'],
-    38.2467,
-    -85.7585,
     false,
     'active'
   ),
@@ -140,8 +132,6 @@ INSERT INTO resources (
     'Low-income individuals in LABG''s 33-county service area with civil legal needs, including eligible Kentucky criminal record expungements.',
     ARRAY['Criminal record expungement', 'Housing legal help', 'Public benefits assistance', 'Family law services', 'Consumer advocacy', 'Online application intake'],
     ARRAY['lexington', 'fayette county', 'northern kentucky', 'eastern kentucky', 'expungement', 'statewide'],
-    38.0464,
-    -84.497,
     false,
     'active'
   ),
@@ -162,8 +152,6 @@ INSERT INTO resources (
     'Open to all job seekers in the Louisville/Jefferson County area, including justice-involved individuals seeking employment and training support.',
     ARRAY['Resume and cover letter help', 'Interview coaching', 'Job search assistance', 'Career planning workshops', 'GED referrals', 'Training scholarship information', 'Employer connections'],
     ARRAY['louisville', 'jefferson county', 'employment', 'second chance', 'career center'],
-    38.2488,
-    -85.802,
     true,
     'active'
   ),
@@ -184,8 +172,6 @@ INSERT INTO resources (
     'Job seekers in Northern Kentucky, including individuals in reentry and recovery seeking employment and training services.',
     ARRAY['Career coaching', 'Job training referrals', 'Paid internships', 'Job placement assistance', 'Resume and interview support', 'Partner agency referrals', 'Hiring events and job fairs'],
     ARRAY['northern kentucky', 'covington', 'kenton county', 'employment', 'reentry', 'recovery'],
-    39.0837,
-    -84.5085,
     false,
     'active'
   ),
@@ -206,8 +192,6 @@ INSERT INTO resources (
     'Adults who have been released from incarceration within the past year (or meet CEO enrollment criteria) and live in the Louisville service area.',
     ARRAY['Paid transitional work', 'Job placement', 'Career coaching', 'Retention support', 'Employer partnerships', 'Life skills support'],
     ARRAY['louisville', 'jefferson county', 'employment', 'reentry', 'CEO', 'second chance'],
-    38.2527,
-    -85.7585,
     true,
     'active'
   ),
@@ -228,8 +212,6 @@ INSERT INTO resources (
     'Justice-involved individuals in the Lexington/Fayette County area seeking employment support through Goodwill Kentucky.',
     ARRAY['Employment coaching', 'Job placement assistance', 'Barrier removal support', 'Training referrals', 'Employer partner connections'],
     ARRAY['lexington', 'fayette county', 'employment', 'RISE', 'goodwill', 'second chance'],
-    38.0486,
-    -84.4545,
     false,
     'active'
   ),
@@ -250,8 +232,6 @@ INSERT INTO resources (
     'Young adults ages 18–24 in Fayette County with prior or current justice involvement willing to enroll in training and work pathways.',
     ARRAY['Career coaching', 'Job readiness training', 'BCTC credential pathways', 'Work and learn placements', 'Barrier reduction support', 'Online referral intake'],
     ARRAY['lexington', 'fayette county', 'young adults', 'education', 'employment', 'reentry'],
-    38.0486,
-    -84.4545,
     false,
     'active'
   ),
@@ -272,8 +252,6 @@ INSERT INTO resources (
     'Kentucky DOC inmates, parolees, and probationers referred to a Reentry Service Center through the Department of Corrections.',
     ARRAY['Transitional housing', 'Case management', 'Education programs', 'Employment support', 'Family reunification', 'Life skills programming'],
     ARRAY['louisville', 'jefferson county', 'RSC', 'housing', 'reentry', 'DOC'],
-    38.2439,
-    -85.7654,
     false,
     'active'
   ),
@@ -294,8 +272,6 @@ INSERT INTO resources (
     'At-risk and justice-involved adults in Northern Kentucky seeking life skills, career training, and reentry support; program application required.',
     ARRAY['Life skills curriculum', 'Career preparation', 'Recovery support coordination', 'Release essentials and clothing', 'Employment placement help', 'Reentry resource events'],
     ARRAY['northern kentucky', 'covington', 'kenton county', 'reentry', 'workforce', 'recovery'],
-    39.0837,
-    -84.5085,
     true,
     'active'
   ),
@@ -316,8 +292,6 @@ INSERT INTO resources (
     'Individuals incarcerated at Fayette County Detention Center with approximately six months or less remaining on their sentence, selected through program partnership.',
     ARRAY['Seven-week reentry course', 'Life skills training', 'Job readiness training', 'Post-release case support (1+ year)', 'Employment retention assistance'],
     ARRAY['lexington', 'fayette county', 'second chance', 'workforce', 'jail reentry'],
-    38.0464,
-    -84.497,
     false,
     'active'
   ),
@@ -338,8 +312,6 @@ INSERT INTO resources (
     'Incarcerated and recently released individuals participating in Mission jail classes or referred for reentry case management in the Lexington region.',
     ARRAY['In-jail reentry classes', 'Jobs for Life training', 'Genesis Process classes', 'Reentry case management', 'ID and document assistance', 'Housing and employment referrals', 'Family support groups'],
     ARRAY['lexington', 'fayette county', 'madison county', 'woodford county', 'reentry', 'faith-based'],
-    38.0464,
-    -84.497,
     false,
     'active'
   ),
@@ -360,8 +332,6 @@ INSERT INTO resources (
     'Kentucky DOC-referred individuals with substance use disorder and/or serious mental illness who meet clinical screening for SHARE programming.',
     ARRAY['Long-term residential recovery', 'Co-occurring disorder treatment', 'Serious mental illness support', 'Peer mentorship', 'Clinical case management', 'DOC partnership programming'],
     ARRAY['lexington', 'fayette county', 'SUD', 'mental health', 'RSC', 'recovery housing'],
-    38.0562,
-    -84.5015,
     false,
     'active'
   ),
@@ -382,8 +352,6 @@ INSERT INTO resources (
     'Kentucky DOC clients with substance use disorder requiring residential treatment who are approved through DOC Addiction Services clinical assessment.',
     ARRAY['Residential SUD treatment', 'Peer-driven recovery phases', '12-step based programming', 'Recovery housing', 'Life skills development', 'DOC program credit upon completion'],
     ARRAY['bowling green', 'warren county', 'recovery kentucky', 'SUD', 'DOC', 'western kentucky'],
-    37.0048,
-    -86.4436,
     false,
     'active'
   ),
@@ -404,8 +372,6 @@ INSERT INTO resources (
     'Anyone in Northern Kentucky seeking substance use treatment, recovery support, or reentry linkage, including justice-involved individuals and families.',
     ARRAY['24/7 phone support', 'Treatment assessment and placement', 'Recovery service referrals', 'Reentry resource linkage', 'Casey''s Law support', 'Harm reduction information'],
     ARRAY['northern kentucky', 'covington', 'SUD', 'helpline', 'recovery', 'reentry'],
-    39.0837,
-    -84.5085,
     false,
     'active'
   ),
@@ -426,8 +392,6 @@ INSERT INTO resources (
     'Justice-involved individuals in Southern Kentucky needing reentry navigation, basic needs, ID help, or referral to local services.',
     ARRAY['Reentry navigation', 'Transportation assistance', 'ID and driver''s license help', 'Housing referrals', 'Release care packages', 'Narcan distribution', 'Community scholarships'],
     ARRAY['bowling green', 'warren county', 'southern kentucky', 'reentry council', 'BRADD'],
-    36.9685,
-    -86.4808,
     false,
     'active'
   ),
@@ -448,8 +412,6 @@ INSERT INTO resources (
     'Kentucky DOC inmates with community custody near parole eligibility and eligible parolees/probationers referred through Probation and Parole.',
     ARRAY['Transitional housing', 'Cognitive behavioral programming', 'Vocational training', 'Educational programs', 'Substance use treatment', 'Employment preparation'],
     ARRAY['louisville', 'jefferson county', 'RSC', 'housing', 'DOC', 'reentry'],
-    38.2569,
-    -85.7784,
     false,
     'active'
   ),
@@ -470,8 +432,6 @@ INSERT INTO resources (
     'Individuals incarcerated at Louisville Metro Department of Corrections identified as vulnerable and enrolled in F2ACT discharge planning prior to release.',
     ARRAY['Discharge planning', 'Post-release service coordination (up to 6 months)', 'Clothing and basic needs', 'Transportation to placements', 'Shelter and treatment referrals', 'Warm handoff to community providers'],
     ARRAY['louisville', 'jefferson county', 'jail reentry', 'F2ACT', 'discharge planning', 'basic needs'],
-    38.2512,
-    -85.7585,
     false,
     'active'
   )
@@ -491,8 +451,6 @@ ON CONFLICT (id) DO UPDATE SET
   eligibility = EXCLUDED.eligibility,
   services = EXCLUDED.services,
   tags = EXCLUDED.tags,
-  latitude = EXCLUDED.latitude,
-  longitude = EXCLUDED.longitude,
   is_featured = EXCLUDED.is_featured,
   status = EXCLUDED.status,
   updated_at = NOW();

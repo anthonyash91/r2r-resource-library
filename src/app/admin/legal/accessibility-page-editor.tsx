@@ -12,6 +12,7 @@ import {
 } from "@/lib/legal-content-fields";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslations } from "@/i18n/locale-context";
+import { useConfirmDialog } from "@/components/ui/confirm-dialog";
 
 interface AccessibilityPageEditorProps {
   initial: AccessibilityContentFormValues;
@@ -20,6 +21,7 @@ interface AccessibilityPageEditorProps {
 export function AccessibilityPageEditor({ initial }: AccessibilityPageEditorProps) {
   const router = useRouter();
   const { t } = useTranslations();
+  const { alert } = useConfirmDialog();
   const [content, setContent] = useState(initial);
   const [saved, setSaved] = useState(false);
   const [saveMessage, setSaveMessage] = useState<string | null>(null);
@@ -31,7 +33,7 @@ export function AccessibilityPageEditor({ initial }: AccessibilityPageEditorProp
 
   const handleSave = async () => {
     if (!isSupabaseConfigured()) {
-      alert(t("admin.legalSaveFailed"));
+      await alert({ title: t("common.error"), message: t("admin.legalSaveFailed") });
       return;
     }
 
@@ -52,7 +54,10 @@ export function AccessibilityPageEditor({ initial }: AccessibilityPageEditorProp
       };
 
       if (!response.ok) {
-        alert(data.error ?? t("admin.legalSaveFailed"));
+        await alert({
+          title: t("common.error"),
+          message: data.error ?? t("admin.legalSaveFailed"),
+        });
         setSaving(false);
         return;
       }
@@ -67,7 +72,7 @@ export function AccessibilityPageEditor({ initial }: AccessibilityPageEditorProp
         setSaveMessage(null);
       }, 4000);
     } catch {
-      alert(t("admin.legalSaveFailed"));
+      await alert({ title: t("common.error"), message: t("admin.legalSaveFailed") });
     } finally {
       setSaving(false);
     }

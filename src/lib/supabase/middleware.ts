@@ -56,5 +56,23 @@ export async function updateSession(request: NextRequest) {
     }
   }
 
+  if (
+    request.nextUrl.searchParams.has("facility") &&
+    request.nextUrl.searchParams.has("pin") &&
+    !request.nextUrl.pathname.startsWith("/api/facility/enter")
+  ) {
+    const nextUrl = request.nextUrl.clone();
+    nextUrl.searchParams.delete("facility");
+    nextUrl.searchParams.delete("pin");
+    const enterUrl = new URL("/api/facility/enter", request.url);
+    enterUrl.searchParams.set("facility", request.nextUrl.searchParams.get("facility")!);
+    enterUrl.searchParams.set("pin", request.nextUrl.searchParams.get("pin")!);
+    enterUrl.searchParams.set(
+      "next",
+      `${nextUrl.pathname}${nextUrl.search ? `?${nextUrl.searchParams.toString()}` : ""}`
+    );
+    return NextResponse.redirect(enterUrl);
+  }
+
   return supabaseResponse;
 }

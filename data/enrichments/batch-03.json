@@ -10,9 +10,7 @@
     "hours": "Monday–Friday, 9:00 a.m.–4:30 p.m.",
     "tags": "northern-kentucky|homeless|shelter|rapid-rehousing|families|reentry",
     "services": "Emergency shelter|Rapid re-housing|Housing navigation|Case management|Supportive housing|Family stabilization",
-    "county": "Kenton",
-    "latitude": "39.0840",
-    "longitude": "-84.5080"
+    "county": "Kenton"
   },
   "31": {
     "description": "Transitions, Inc. has provided substance use treatment in Northern Kentucky since 1969. The Covington campus offers intake and triage, medically supervised detox, residential rehabilitation, intensive outpatient (IOP), standard outpatient services, targeted case management, and Casey's Law assessments. Accepts Kentucky, Ohio, and Indiana Medicaid and most commercial insurance. Multiple Covington locations serve the broader NKY region.",
@@ -24,9 +22,7 @@
     "hours": "Call for intake hours; outpatient IOP typically evenings",
     "tags": "covington|northern-kentucky|substance-use|detox|residential|outpatient|IOP",
     "services": "Intake and triage|Medical detox|Residential treatment|Intensive outpatient|Case management|Casey's Law assessment|Recovery housing referrals",
-    "county": "Kenton",
-    "latitude": "39.0870",
-    "longitude": "-84.5170"
+    "county": "Kenton"
   },
   "32": {
     "description": "Transitions' Grateful Life Center in Erlanger is a 110-bed Recovery Kentucky therapeutic community for men committed to long-term sobriety. The voluntary program uses peer accountability, a buddy system, 12-step sponsorship, onsite mental health therapy, and primary care access. Kentucky DOC lists Grateful Life as an affiliated reentry and recovery resource. Part of the statewide Recovery Kentucky network funded by KHC, DLG, and DOC.",
@@ -38,9 +34,7 @@
     "hours": "Call for admissions and visiting hours",
     "tags": "erlanger|northern-kentucky|recovery-kentucky|men|therapeutic-community|long-term",
     "services": "Long-term residential recovery|Peer accountability program|12-step support|Mental health therapy|Primary care access|Recovery Kentucky housing",
-    "county": "Kenton",
-    "latitude": "39.0080",
-    "longitude": "-84.6010"
+    "county": "Kenton"
   },
   "40": {
     "description": "The Men's Addiction Recovery Center (MARC) in Bowling Green is a free, nonprofit inpatient recovery program for adult men and a Recovery Kentucky affiliate. Uses a peer-driven 12-step model integrated with the Recovery Dynamics curriculum in a structured sober living community. No cost to clients. Kentucky DOC lists MARC as an approved recovery and reentry resource for men with substance use disorders.",
@@ -50,9 +44,7 @@
     "hours": "Call for admissions",
     "tags": "bowling-green|warren-county|recovery-kentucky|men|free|inpatient|12-step",
     "services": "Free inpatient recovery|Recovery Dynamics curriculum|12-step programming|Peer-driven sober living|Long-term residential care",
-    "county": "Warren",
-    "latitude": "36.9920",
-    "longitude": "-86.4280"
+    "county": "Warren"
   },
   "41": {
     "description": "Haven4Change is a licensed residential transitional living program in Bowling Green for women age 18+ recovering from substance abuse, and their children age 12 and younger. The 6–12 month structured program includes case management, weekly progress meetings, recovery-focused living, and connections to employment, benefits, and counseling. A second location serves Scottsville in Allen County. Goal: reunification with children and drug-free independent living.",
@@ -64,9 +56,7 @@
     "hours": "Call for intake and admissions",
     "tags": "bowling-green|women|children|transitional-living|recovery|reentry",
     "services": "Transitional housing for women|Children allowed|Case management|Recovery programming|Employment and benefits navigation|Family reunification support",
-    "county": "Warren",
-    "latitude": "36.9680",
-    "longitude": "-86.4620"
+    "county": "Warren"
   },
   "50": {
     "description": "The Bluegrass Career Development Center (BCDC) is a Kentucky DOC-contracted Reentry Service Center in Richmond operated by the Bluegrass Regional Recycling Corporation. The ~88-bed men's facility houses state inmates near parole eligibility and offers on-the-job training in recycling and manufacturing, plus certifications in CDL prep, culinary arts, forklift/OSHA, and other vocational tracks. DOC-approved courses may earn up to 90 days meritorious good-time credit per completed program.",
@@ -78,9 +68,7 @@
     "hours": "Call for intake; residential program operates 24/7",
     "tags": "richmond|madison-county|RSC|DOC-contract|vocational-training|recycling|career-development",
     "services": "Transitional reentry housing|Vocational certifications|Recycling and manufacturing training|CDL preparation|Culinary arts training|OSHA and forklift certification|Educational good-time credit",
-    "county": "Madison",
-    "latitude": "37.7480",
-    "longitude": "-84.2820"
+    "county": "Madison"
   },
   "51": {
     "description": "Liberty Place Recovery Center for Women in Richmond is a free, 108-bed Recovery Kentucky long-term residential program operated by Kentucky River Foothills Development Council. Serves women across Central and Eastern Kentucky (6th Congressional District) with a phased model: Safe Off the Streets entry, motivational tracks, on-site work responsibilities, and community reintegration planning. Services are free; program includes peer support, 12-step work, Recovery Dynamics, and employment preparation.",
@@ -91,9 +79,7 @@
     "hours": "Call (859) 625-0104 for SOS screening and admissions",
     "tags": "richmond|women|recovery-kentucky|free|long-term|substance-use",
     "services": "Free women's residential recovery|Safe Off the Streets entry|Recovery Dynamics|12-step programming|Employment preparation|Phased sober living|Peer support",
-    "county": "Madison",
-    "latitude": "37.7420",
-    "longitude": "-84.2980"
+    "county": "Madison"
   },
   "60": {
     "description": "Dismas Charities Owensboro is a Kentucky DOC-contracted Reentry Service Center providing residential reentry housing and structured programming for men and women in Western Kentucky. Residents receive community-based supervision support, employment assistance, substance abuse programming, and help reconnecting with family and employers. Referrals typically come from Kentucky DOC, federal Bureau of Prisons, or courts—call to confirm availability.",
@@ -103,9 +89,7 @@
     "hours": "Call for intake and visiting hours",
     "tags": "owensboro|daviess-county|RSC|DOC-contract|halfway-house|reentry",
     "services": "Residential reentry housing|Employment assistance|Substance abuse programming|Community supervision support|Family reunification",
-    "county": "Daviess",
-    "latitude": "37.7520",
-    "longitude": "-87.1280"
+    "county": "Daviess"
   },
   "70": {
     "description": "WestCare Kentucky's Lookout Center (Judi Patton Center for Healthy Families) in Elkhorn City is a Kentucky DOC-affiliated women's residential substance use treatment facility in Eastern Kentucky. Serves justice-involved women, veterans, and pregnant or postpartum women with substance use, opioid use, or co-occurring disorders. Offers intensive AOD treatment, gender-responsive counseling, vocational skills, 12-step introduction, and reentry coordination. Connected to WestCare's Pike County jail recovery and Hal Rogers Appalachian Recovery Center network.",
@@ -116,9 +100,7 @@
     "hours": "Call main line for admissions; after-hours (606) 772-3018",
     "tags": "elkhorn-city|eastern-kentucky|women|RSC|substance-use|DOC-affiliated|veterans",
     "services": "Women's residential treatment|Justice-involved programming|Prenatal and postpartum care|Vocational skills training|12-step introduction|Reentry coordination",
-    "county": "Pike",
-    "latitude": "37.4350",
-    "longitude": "-82.3510"
+    "county": "Pike"
   },
   "71": {
     "description": "Keeton Corrections Paducah is a Kentucky DOC-contracted Reentry Service Center providing residential transitional housing and reentry programming for Western Kentucky. The non-secure community confinement facility helps state inmates, parolees, and probationers transition back to the community with structured supervision, programming, and employment preparation. Referrals through Kentucky DOC Probation and Parole.",
@@ -129,9 +111,7 @@
     "hours": "Call for intake and visiting hours",
     "tags": "paducah|mccracken-county|RSC|DOC-contract|reentry|transitional-housing",
     "services": "Residential transitional housing|Reentry programming|Community confinement|Employment preparation|DOC supervision coordination",
-    "county": "McCracken",
-    "latitude": "37.0820",
-    "longitude": "-88.6100"
+    "county": "McCracken"
   },
   "80": {
     "description": "Oxford House Kentucky is the statewide network of self-run, self-supported sober living homes for people in recovery from substance use—including those leaving incarceration, treatment, or supervision. Each house is democratically operated; members share expenses and vote on admissions. A dedicated reentry coordinator (502-830-8082) helps justice-involved individuals find vacancies and navigate the interview process. Houses exist across Louisville, Lexington, NKY, Eastern, Southern, and Western Kentucky regions.",
@@ -141,9 +121,7 @@
     "notes_es": "Línea de reinserción: (502) 830-8082 o reentryky@oxfordhouse.us. Solicitud en línea en oxfordhouseky.org/reentry. Cada casa realiza su propia entrevista; puede requerirse aprobación de supervisión.",
     "hours": "Reentry coordinator responds within 24 hours; house interviews vary",
     "tags": "statewide|sober-living|oxford-house|recovery|self-help|reentry",
-    "services": "Sober living placement assistance|Reentry application support|Democratic self-run housing|Peer accountability|Statewide vacancy navigation",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "services": "Sober living placement assistance|Reentry application support|Democratic self-run housing|Peer accountability|Statewide vacancy navigation"
   },
   "100": {
     "description": "Goodwill Industries of Kentucky's RISE program (Reintegrating Individuals Successfully Every Day) provides free virtual two-week job-readiness training for justice-involved Kentuckians. Covers soft skills, financial literacy, digital literacy, communication, resume writing, mock interviews, and behavioral health topics. Graduates earn a Work Ready Certificate and may receive a Chromebook, stipend, and gym membership. Offered in Louisville, Lexington, Bowling Green, Pikeville, and other Opportunity Center locations serving 103 counties.",
@@ -154,9 +132,7 @@
     "hours": "Varies by Opportunity Center; call local center for RISE schedule",
     "tags": "statewide|employment|job-readiness|second-chance|RISE|goodwill|virtual-training",
     "services": "Job-readiness training|Work Ready Certificate|Resume and interview coaching|Financial and digital literacy|Chromebook and stipend incentives|Aspire pre-release program",
-    "county": "Jefferson",
-    "latitude": "38.2480",
-    "longitude": "-85.7900"
+    "county": "Jefferson"
   },
   "101": {
     "description": "Goodwill Industries of Kentucky partners with Legal Aid organizations statewide to host free expungement clinics for eligible criminal records. Attorneys review records, determine eligibility, and Goodwill covers filing fees in its 103-county service area. Over 8,500 records cleared to date. Clinics held throughout the year in cities including Louisville, Lexington, Corbin, and more—registration opens before each event. Does not cover counties outside Goodwill's service area (refer to Kentucky Legal Aid for those).",
@@ -167,9 +143,7 @@
     "hours": "Clinic dates vary; check website for registration",
     "tags": "statewide|expungement|legal-aid|second-chance|goodwill|record-clearing",
     "services": "Free expungement clinics|Attorney record review|Filing fee assistance|Eligibility screening|Statewide clinic events",
-    "county": "Jefferson",
-    "latitude": "38.2480",
-    "longitude": "-85.7900"
+    "county": "Jefferson"
   },
   "102": {
     "description": "The Kentucky Career Center in Louisville (KentuckianaWorks) is a free American Job Center helping job seekers—including those recently released from incarceration—with resume building, interview preparation, career counseling, workshops, and job placement connections. Career specialists provide individualized support at the Goodwill Opportunity Campus on West Broadway. All services are free. Also connects to GED assistance and training referrals.",
@@ -183,9 +157,7 @@
     "hours": "Monday–Friday, 8:30 a.m.–5:00 p.m.",
     "tags": "louisville|employment|job-center|american-job-center|reentry|free-services",
     "services": "Free job search assistance|Resume and interview coaching|Career counseling|Workshops|GED referrals|Training program connections",
-    "county": "Jefferson",
-    "latitude": "38.2480",
-    "longitude": "-85.7900"
+    "county": "Jefferson"
   },
   "103": {
     "description": "Kentucky Career Center – Bluegrass is the American Job Center serving 17 Central Kentucky counties including Fayette, Madison, Jessamine, and Woodford. Free services include job search assistance, resume workshops, career assessment, veterans' services, youth programs, and referrals to training and credentialing. Staff help justice-involved job seekers connect to employment opportunities and barrier-removal resources.",
@@ -197,9 +169,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "lexington|bluegrass|employment|job-center|american-job-center|17-counties",
     "services": "Free job search assistance|Resume workshops|Career assessment|Veterans services|Youth employment programs|Training referrals",
-    "county": "Fayette",
-    "latitude": "38.0180",
-    "longitude": "-84.4220"
+    "county": "Fayette"
   },
   "104": {
     "description": "The Northern Kentucky Kentucky Career Center connects job seekers and employers across Boone, Kenton, Campbell, and surrounding counties through a network of 20+ partner organizations. Free career coaching, job readiness workshops, resume services, WIOA training funding, and specialized support for veterans, people with disabilities, and individuals in addiction recovery. Weekly orientation events introduce partner services.",
@@ -212,9 +182,7 @@
     "hours": "Monday–Friday; Tuesday orientation 10:00–11:00 a.m.",
     "tags": "covington|northern-kentucky|employment|job-center|WIOA|recovery-friendly",
     "services": "Career coaching|Job readiness workshops|Resume services|WIOA training funding|Veterans and disability services|Recovery-informed employment support",
-    "county": "Kenton",
-    "latitude": "39.0840",
-    "longitude": "-84.5080"
+    "county": "Kenton"
   },
   "105": {
     "description": "The Kentucky Career Center in Bowling Green serves Warren County and the surrounding area with free American Job Center services: job search assistance, resume help, employment workshops, career counseling, and referrals to training programs. Part of the statewide workforce development network. Open to all job seekers including those with justice-involved backgrounds rebuilding employment history.",
@@ -226,9 +194,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "bowling-green|warren-county|employment|job-center|american-job-center",
     "services": "Free job search assistance|Resume help|Employment workshops|Career counseling|Training program referrals",
-    "county": "Warren",
-    "latitude": "36.9960",
-    "longitude": "-86.4420"
+    "county": "Warren"
   },
   "106": {
     "description": "Kentucky Career Center – TENCO serves northeastern Kentucky including Boyd, Greenup, Carter, Fleming, Lewis, Mason, and surrounding counties from its Ashland location. Free American Job Center services include career counseling, job preparation, portfolio building, WIOA training accounts, apprenticeships, and employer connections. Four center locations: Ashland, Maysville, Mt. Sterling, and Morehead.",
@@ -240,9 +206,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "ashland|northeast-kentucky|employment|job-center|WIOA|TENCO",
     "services": "Career counseling|Job preparation|WIOA training accounts|Apprenticeships|Employer recruiting support|Community resource navigation",
-    "county": "Boyd",
-    "latitude": "38.4780",
-    "longitude": "-82.6380"
+    "county": "Boyd"
   },
   "107": {
     "description": "EKCEP (Eastern Kentucky Concentrated Employment Program) administers the SITE program (Strategic Initiative for Transformational Employment) across 23 Appalachian counties, bridging addiction recovery and workforce participation. Recovery-informed employment specialists provide hands-on training, work experience, barrier relief (transportation, gear, certifications), and career advising for people in reentry or recovery. Headquartered in Hazard with Kentucky Career Center JobSight locations across the region.",
@@ -254,9 +218,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "hazard|eastern-kentucky|SITE|recovery|employment|workforce|23-counties",
     "services": "Recovery-informed job training|Work experience placements|Barrier relief assistance|Career advising|Certification support|Project REACH employment services",
-    "county": "Perry",
-    "latitude": "37.2500",
-    "longitude": "-83.1930"
+    "county": "Perry"
   },
   "108": {
     "description": "Kentucky's Department of Professional Licensing (DPL) oversees 25 occupational licensing boards. Under HB 185 (2026), individuals with criminal records can petition a licensing board for a predetermination on whether their conviction would disqualify them from a specific license—before investing in training or fees. Boards may only deny when a conviction directly relates to the occupation and must provide written findings. Contact DPL to be routed to the correct board.",
@@ -268,8 +230,6 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "statewide|licensing|occupational|HB-185|second-chance|employment-barriers",
     "services": "Licensing board referrals|HB 185 predetermination information|Occupational license guidance|Board contact routing",
-    "county": "Franklin",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "county": "Franklin"
   }
 }

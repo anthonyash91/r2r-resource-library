@@ -8,9 +8,7 @@
     "notes_es": "Ingreso central: 1-866-277-5733. Solicite en línea en ardfky.org. Si tiene corte en 3 días hábiles, llame de inmediato. Línea legal por desastres: 1-844-478-0099.",
     "hours": "Central intake Mon–Fri during business hours",
     "tags": "eastern-kentucky|legal-aid|free|expungement|37-counties|appalachian",
-    "services": "Free civil legal services|Expungement assistance|Housing and eviction defense|Public benefits appeals|Family law|Disaster legal services|Senior legal assistance",
-    "latitude": "37.4290",
-    "longitude": "-82.5120"
+    "services": "Free civil legal services|Expungement assistance|Housing and eviction defense|Public benefits appeals|Family law|Disaster legal services|Senior legal assistance"
   },
   "166": {
     "description": "The ACLU of Kentucky's ROVR (Restoration of Voting Rights) campaign helps Kentuckians with past felony convictions understand and exercise their voting rights. Under Governor Beshear's 2019 executive order, non-violent Kentucky state felony convictions are automatically restored upon completion of the full sentence including probation and parole. ACLU provides registration resources, eligibility guidance, and advocacy—violent offenses, federal convictions, and out-of-state felonies require a separate restoration application.",
@@ -21,9 +19,7 @@
     "hours": "Online resources; office Mon–Fri business hours",
     "tags": "statewide|voting-rights|ROVR|ACLU|civil-rights|reentry",
     "services": "Voting rights education|ROVR eligibility guidance|Voter registration resources|Civil rights advocacy",
-    "county": "Jefferson",
-    "latitude": "38.2567",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "167": {
     "description": "Kentucky's official Civil Rights Restoration program administers voting rights for people with felony convictions. Non-violent Kentucky state felony convictions are automatically restored when the full sentence is complete—including probation and parole. Those with violent felonies, treason, election bribery, human trafficking, or federal/out-of-state convictions must submit a free application to the Governor. Check eligibility online or contact DOC restoration staff.",
@@ -34,9 +30,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "statewide|voting-rights|civil-rights|restoration|reentry|DOC",
     "services": "Voting rights eligibility screening|Civil rights restoration applications|Automatic restoration verification|Probation and Parole application assistance",
-    "county": "Franklin",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "county": "Franklin"
   },
   "168": {
     "description": "Kentucky Equal Justice Center (KEJC) is a public-interest law and advocacy organization serving all of Kentucky. Works on poverty law issues affecting returning citizens including wage theft, Medicaid access, housing, and occupational licensing barriers. Operates the Maxwell Street Legal Clinic in Lexington and partners on voter registration drives for people restoring civil rights. Does not replace full-service legal aid for individual cases—contact regional legal aid for case representation.",
@@ -50,9 +44,7 @@
     "hours": "Monday–Friday during business hours",
     "tags": "statewide|advocacy|poverty-law|voter-registration|lexington|policy",
     "services": "Poverty law advocacy|Policy litigation|Voter registration partnerships|Maxwell Street Legal Clinic|Systemic barrier advocacy",
-    "county": "Fayette",
-    "latitude": "38.0420",
-    "longitude": "-84.4890"
+    "county": "Fayette"
   },
   "169": {
     "description": "Jefferson County Drug Court is a certified specialty court offering intensive supervised treatment as an alternative to incarceration for non-violent offenders with substance use disorders. Felony track requires a minimum of 18 months. Entry requires referral through the court system—a judge, prosecutor, defense attorney, or probation officer must initiate. Sessions held at the Jefferson County Judicial Center. Successful completion may result in reduced charges or dismissal.",
@@ -63,9 +55,7 @@
     "hours": "Court sessions during business hours; schedule set by Drug Court coordinator",
     "tags": "louisville|drug-court|specialty-court|treatment|alternative-sentencing|referral-required",
     "services": "Supervised substance use treatment|Alternative to incarceration|Judicial case management|Recovery-oriented sentencing|Potential charge reduction upon completion",
-    "county": "Jefferson",
-    "latitude": "38.2567",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "170": {
     "description": "Jefferson County Veterans Treatment Court (VTC), Kentucky's first VTC launched in 2012, is a voluntary specialty court for veterans with substance use or serious mental illness charges. Requires regular court appearances, treatment compliance, and peer mentor support through partnership with Robley Rex VA Medical Center. Accepts felony and misdemeanor cases from Jefferson County Circuit and District Courts. Referral through court system—contact VTC liaison or VA Justice Outreach team.",
@@ -78,9 +68,7 @@
     "hours": "Court and staffing meetings during business hours",
     "tags": "louisville|veterans|VTC|specialty-court|mental-health|substance-use|VA",
     "services": "Veterans specialty court programming|VA treatment coordination|Peer mentor support|Substance use and mental health treatment compliance|Alternative sentencing for veterans",
-    "county": "Jefferson",
-    "latitude": "38.2567",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "171": {
     "description": "Fayette County operates four certified Drug Court programs (District and Circuit tracks) serving residents with substance use disorders as an alternative to incarceration. Programs include judicial supervision, treatment compliance, drug testing, and recovery support. Access is through the court system only—prosecutors, defense attorneys, or judges refer eligible defendants. Contact the Fayette County Attorney's Specialty Courts division for program information.",
@@ -91,9 +79,7 @@
     "hours": "Monday–Friday during court business hours",
     "tags": "lexington|drug-court|specialty-court|fayette-county|treatment|referral-required",
     "services": "Certified Drug Court programs|Judicial supervision|Treatment compliance monitoring|Alternative to incarceration|Recovery support services",
-    "county": "Fayette",
-    "latitude": "38.0460",
-    "longitude": "-84.4970"
+    "county": "Fayette"
   },
   "172": {
     "description": "The Kentucky Court of Justice Specialty Courts directory is the statewide resource for finding Drug Courts, Veterans Treatment Courts, Mental Health Courts, and Family Recovery Courts in all 120 counties. Drug Court has served Kentucky since 1996 as a pilot program. Contact the Department of Specialty Courts for local office information, referral processes, and the Order Referring to Specialty Court form required to begin the referral process.",
@@ -106,9 +92,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "statewide|specialty-courts|drug-court|VTC|mental-health-court|directory",
     "services": "Statewide specialty court directory|Local Drug Court referrals|Veterans Treatment Court information|Mental Health Court information|Referral form guidance",
-    "county": "Franklin",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "county": "Franklin"
   },
   "180": {
     "description": "Apply for SNAP (Supplemental Nutrition Assistance Program/food stamps) through Kentucky's kynect portal, by phone, or at any DCBS office in all 120 counties. Kentucky has lifted the lifetime ban on SNAP for people with drug-related felony convictions—you may remain eligible if you meet requirements under KRS 205.2005. Benefits loaded on EBT card. Also use kynect for Medicaid and other benefits in one application.",
@@ -130,9 +114,7 @@
     "hours": "Warehouse Mon–Fri; partner pantry hours vary—check locator",
     "tags": "louisville|food-bank|SNAP|pantry|13-counties|emergency-food",
     "services": "Food pantry network|Online pantry locator|Emergency food distribution|Partner agency network|Community meal program referrals",
-    "county": "Jefferson",
-    "latitude": "38.1880",
-    "longitude": "-85.8420"
+    "county": "Jefferson"
   },
   "182": {
     "description": "God's Pantry Food Bank serves 50 counties across Central and Eastern Kentucky through 500+ partner food pantries and meal programs. Use godspantry.org/help to find the closest pantry or meal site by map—includes Lexington, Richmond, and rural Eastern Kentucky communities. Part of the Feeding Kentucky network. No single intake office for food—locator connects you directly to partner sites.",
@@ -144,9 +126,7 @@
     "hours": "Partner pantry hours vary; use online locator",
     "tags": "lexington|food-bank|pantry|50-counties|central-kentucky|eastern-kentucky",
     "services": "Food pantry network across 50 counties|Online pantry and meal locator|Emergency food distribution|Partner agency coordination|Senior and child nutrition programs",
-    "county": "Fayette",
-    "latitude": "38.0780",
-    "longitude": "-84.5120"
+    "county": "Fayette"
   },
   "183": {
     "description": "Feeding America Kentucky's Heartland distributes more than 11 million pounds of food annually through 242 partner agencies across 42 counties in central, southern, and western Kentucky—including Hardin, Warren, Daviess, and surrounding areas. Use their online county search tool to find food pantries and distribution sites near you. Headquartered in Elizabethtown.",
@@ -158,9 +138,7 @@
     "hours": "Partner agency hours vary; call (270) 769-6997 for assistance",
     "tags": "elizabethtown|food-bank|42-counties|western-kentucky|central-kentucky|pantry",
     "services": "Regional food bank distribution|County-based pantry locator|242 partner agency network|Emergency food assistance|Rural community food access",
-    "county": "Hardin",
-    "latitude": "37.6940",
-    "longitude": "-85.8590"
+    "county": "Hardin"
   },
   "184": {
     "description": "Feeding America's national food bank locator helps find food pantries, soup kitchens, and meal programs anywhere in Kentucky by zip code. Kentucky's seven regional food banks (Dare to Care, God's Pantry, Feeding America KY Heartland, Facing Hunger, Tri-State, Freestore, and others) cover all 120 counties through local partner agencies. Free tool—enter your zip code to see nearby options.",

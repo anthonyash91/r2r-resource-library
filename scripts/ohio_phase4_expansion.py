@@ -19,7 +19,7 @@ def register_phase4(add):
         hours="Open 24/7 for emergency shelter intake",
         tags="cleveland|cuyahoga|housing|emergency-shelter|men|reentry",
         services="Emergency shelter|Case management|Housing navigation|Employment referrals|Behavioral health referrals",
-        county="Cuyahoga", latitude="41.5120", longitude="-81.6880", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.lutheranmetro.org/ministries/2100-lakeside", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -36,7 +36,7 @@ def register_phase4(add):
         hours="Contact for program hours",
         tags="akron|summit|housing|transitional|reentry|orianahouse",
         services="Transitional housing|Supervision compliance support|Employment referrals|Treatment referrals|Case management",
-        county="Summit", latitude="41.0680", longitude="-81.4900", served_counties="Summit", coverage="single",
+        county="Summit", served_counties="Summit", coverage="single",
         _source="https://www.orianahouse.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -53,7 +53,7 @@ def register_phase4(add):
         hours="Contact for intake and visiting hours",
         tags="columbus|franklin|housing|halfway-house|reentry|alvis",
         services="Halfway house residency|Employment preparation|Treatment coordination|Structured programming",
-        county="Franklin", latitude="39.9690", longitude="-82.9400", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.alvis180.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -70,7 +70,7 @@ def register_phase4(add):
         hours="Contact for intake hours",
         tags="cincinnati|hamilton|housing|transitional|reentry|talberthouse",
         services="Transitional housing|Behavioral health support|Case management|Employment linkage",
-        county="Hamilton", latitude="39.1205", longitude="-84.5085", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.talberthouse.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -87,7 +87,7 @@ def register_phase4(add):
         hours="Contact for program-specific hours",
         tags="cleveland|cuyahoga|housing|shelter|recovery|reentry",
         services="Emergency shelter|Transitional housing|Addiction recovery programming|Case management",
-        county="Cuyahoga", latitude="41.4405", longitude="-81.7650", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://centralusa.salvationarmy.org/westpark/harbor-light-complex", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -104,7 +104,7 @@ def register_phase4(add):
         hours="Contact for intake hours",
         tags="columbus|franklin|housing|emergency-shelter|transitional|reentry",
         services="Emergency shelter|Transitional housing|Case management|Employment referrals|Benefits assistance",
-        county="Franklin", latitude="39.9795", longitude="-82.9950", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.thefaithmission.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -121,7 +121,7 @@ def register_phase4(add):
         hours="Contact for intake hours",
         tags="cleveland|cuyahoga|housing|women|reentry|transitional",
         services="Transitional housing for women|Employment readiness support|Community reintegration|Peer support",
-        county="Cuyahoga", latitude="41.4750", longitude="-81.6380", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.edwinashouse.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -138,7 +138,7 @@ def register_phase4(add):
         hours="Contact for intake hours",
         tags="cincinnati|hamilton|housing|women|recovery|reentry",
         services="Residential treatment|Transitional housing|Counseling|Recovery support",
-        county="Hamilton", latitude="39.1650", longitude="-84.5120", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.hitchcockcenter.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -155,7 +155,7 @@ def register_phase4(add):
         hours="Contact for intake hours",
         tags="cleveland|cuyahoga|housing|medical-respite|men|reentry",
         services="Medical respite housing|Case management|Housing navigation|Health coordination",
-        county="Cuyahoga", latitude="41.4970", longitude="-81.6580", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.josephshome.com", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -172,7 +172,7 @@ def register_phase4(add):
         hours="Contact for program hours",
         tags="dayton|montgomery|housing|emergency-shelter|reentry",
         services="Emergency shelter|Transitional housing|Case management|Youth and adult housing programs",
-        county="Montgomery", latitude="39.7620", longitude="-84.1860", served_counties="Montgomery", coverage="single",
+        county="Montgomery", served_counties="Montgomery", coverage="single",
         _source="https://www.accessinc.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -189,7 +189,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="columbus|franklin|housing|rapid-rehousing|reentry",
         services="Rapid rehousing coordination|Permanent supportive housing referrals|CoC funding navigation",
-        county="Franklin", latitude="39.9610", longitude="-82.9980", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.csb.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -206,7 +206,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="columbus|franklin|housing|women|supportive-housing|reentry",
         services="Permanent supportive housing|Family stabilization|Housing case management",
-        county="Franklin", latitude="39.9605", longitude="-82.9985", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.ywcacolumbus.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -223,7 +223,7 @@ def register_phase4(add):
         hours="Contact for intake hours",
         tags="cleveland|cuyahoga|housing|transitional|catholic-charities|reentry",
         services="Transitional living|Life skills training|Housing stabilization|Case management",
-        county="Cuyahoga", latitude="41.4410", longitude="-81.7520", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.ccdocle.org/services/housing-homeless-services", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -240,7 +240,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="akron|summit|housing|community-action|reentry",
         services="Homeless prevention|Rapid rehousing|Supportive housing referrals|Utility assistance",
-        county="Summit", latitude="41.0810", longitude="-81.5185", served_counties="Summit", coverage="single",
+        county="Summit", served_counties="Summit", coverage="single",
         _source="https://www.caasc.net", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -257,7 +257,7 @@ def register_phase4(add):
         hours="Contact for intake hours",
         tags="toledo|lucas|housing|shelter|recovery|reentry",
         services="Emergency shelter|Transitional housing|Recovery residence|Case management",
-        county="Lucas", latitude="41.6520", longitude="-83.5400", served_counties="Lucas", coverage="single",
+        county="Lucas", served_counties="Lucas", coverage="single",
         _source="https://www.victoryministries.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -274,7 +274,7 @@ def register_phase4(add):
         hours="Overnight shelter; intake hours vary—call ahead",
         tags="columbus|franklin|housing|emergency-shelter|low-barrier|reentry",
         services="Emergency overnight shelter|Meals|Housing referrals|Reentry resource connections",
-        county="Franklin", latitude="39.9555", longitude="-82.9980", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.theopenshelter.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -291,7 +291,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="columbus|franklin|housing|homeless-prevention|reentry",
         services="Homeless crisis response|Rental assistance|Emergency shelter referrals|Rehousing support",
-        county="Franklin", latitude="39.9680", longitude="-82.9750", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.impactcaa.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -308,7 +308,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="toledo|lucas|housing|navigation|reentry",
         services="Housing navigation|Coordinated entry|Transitional housing referrals|Permanent housing referrals",
-        county="Lucas", latitude="41.6680", longitude="-83.5580", served_counties="Lucas", coverage="single",
+        county="Lucas", served_counties="Lucas", coverage="single",
         _source="https://www.nwohousing.org", _source_type="nonprofit", _confidence="medium",
     )
 
@@ -327,7 +327,7 @@ def register_phase4(add):
         hours="Monday–Friday clinic hours vary by location",
         tags="cleveland|cuyahoga|healthcare|FQHC|primary-care|reentry",
         services="Primary medical care|Behavioral health|Dental care|Sliding-fee scale",
-        county="Cuyahoga", latitude="41.4210", longitude="-81.7340", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.nfpmedcenter.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -344,7 +344,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–5:00 p.m.",
         tags="cleveland|cuyahoga|healthcare|FQHC|homeless|reentry",
         services="Primary care|Behavioral health|HIV care|Medicaid enrollment assistance",
-        county="Cuyahoga", latitude="41.4980", longitude="-81.6650", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.carealliance.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -361,7 +361,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–5:00 p.m.",
         tags="columbus|franklin|healthcare|FQHC|behavioral-health|reentry",
         services="Primary care|Behavioral health|Substance use services|Sliding-fee scale",
-        county="Franklin", latitude="39.9550", longitude="-83.0350", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.lowerlights.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -378,7 +378,7 @@ def register_phase4(add):
         hours="Monday–Friday clinic hours vary by site",
         tags="columbus|franklin|healthcare|FQHC|dental|reentry",
         services="Primary care|Dental care|Behavioral health|Sliding-fee scale",
-        county="Franklin", latitude="40.0200", longitude="-82.9880", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.heartlandhealthcenters.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -395,7 +395,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:30 a.m.–5:00 p.m.",
         tags="columbus|franklin|healthcare|FQHC|Medicaid|reentry",
         services="Primary care|Preventive care|Medicaid enrollment support|Pediatric care",
-        county="Franklin", latitude="39.9580", longitude="-82.9250", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.eastsidehealthcenter.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -412,7 +412,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–5:00 p.m.",
         tags="cincinnati|hamilton|healthcare|FQHC|behavioral-health|reentry",
         services="Primary care|Behavioral health|Pharmacy services|Sliding-fee scale",
-        county="Hamilton", latitude="39.1280", longitude="-84.5080", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.crossroadhealth.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -429,7 +429,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="cincinnati|hamilton|healthcare|FQHC|primary-care|reentry",
         services="Primary care|Preventive services|Sliding-fee scale|Chronic disease management",
-        county="Hamilton", latitude="39.2380", longitude="-84.4550", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.lincolnheightshealthcenter.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -446,7 +446,7 @@ def register_phase4(add):
         hours="Monday–Friday clinic hours vary by location",
         tags="dayton|montgomery|healthcare|FQHC|dental|reentry",
         services="Primary care|Behavioral health|Dental care|Sliding-fee scale",
-        county="Montgomery", latitude="39.7800", longitude="-84.2200", served_counties="Montgomery", coverage="single",
+        county="Montgomery", served_counties="Montgomery", coverage="single",
         _source="https://www.fiverivershealthcenters.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -463,7 +463,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–5:00 p.m.",
         tags="toledo|lucas|healthcare|FQHC|primary-care|reentry",
         services="Primary care|Women's health|Behavioral health|Sliding-fee scale",
-        county="Lucas", latitude="41.6525", longitude="-83.5280", served_counties="Lucas", coverage="single",
+        county="Lucas", served_counties="Lucas", coverage="single",
         _source="https://www.neighborhoodhealthassociation.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -480,7 +480,7 @@ def register_phase4(add):
         hours="Monday–Friday clinic hours vary",
         tags="akron|summit|healthcare|FQHC|dental|reentry",
         services="Primary care|Dental care|Behavioral health|Sliding-fee scale",
-        county="Summit", latitude="41.0450", longitude="-81.4910",
+        county="Summit",
         served_counties="Summit|Portage", coverage="multi",
         _source="https://www.axesspointe.org", _source_type="nonprofit", _confidence="high",
     )
@@ -498,7 +498,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–5:00 p.m.",
         tags="canton|stark|healthcare|FQHC|primary-care|reentry",
         services="Primary care|Behavioral health|Sliding-fee scale|Chronic care management",
-        county="Stark", latitude="40.8400", longitude="-81.3750", served_counties="Stark", coverage="single",
+        county="Stark", served_counties="Stark", coverage="single",
         _source="https://www.commhealthservices.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -515,7 +515,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–5:00 p.m.",
         tags="dayton|montgomery|healthcare|FQHC|womens-health|reentry",
         services="Primary care|Women's health|Behavioral health|Medicaid enrollment assistance",
-        county="Montgomery", latitude="39.7700", longitude="-84.1950", served_counties="Montgomery", coverage="single",
+        county="Montgomery", served_counties="Montgomery", coverage="single",
         _source="https://www.winmed.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -532,7 +532,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:30 a.m.–5:00 p.m.",
         tags="cleveland|cuyahoga|healthcare|FQHC|primary-care|reentry",
         services="Primary care|Preventive care|Sliding-fee scale|Immunizations",
-        county="Cuyahoga", latitude="41.5230", longitude="-81.5790", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.fhs-ec.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -549,7 +549,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–5:00 p.m.",
         tags="cleveland|cuyahoga|healthcare|substance-use|outpatient|reentry",
         services="Outpatient addiction treatment|Intensive outpatient|Recovery support|Court-referred treatment",
-        county="Cuyahoga", latitude="41.5020", longitude="-81.6180", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.recoveryresources.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -566,7 +566,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="cleveland|cuyahoga|healthcare|behavioral-health|justice-involved|reentry",
         services="Outpatient mental health|Substance use treatment|Court-referred treatment|Family behavioral health",
-        county="Cuyahoga", latitude="41.4600", longitude="-81.7850", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.applewoodcenters.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -583,7 +583,7 @@ def register_phase4(add):
         hours="Clinic hours vary by semester; call for schedule",
         tags="athens|healthcare|free-clinic|uninsured|reentry",
         services="Primary care|Behavioral health referrals|Uninsured patient care|Preventive services",
-        county="Athens", latitude="39.3290", longitude="-82.0890", served_counties="Athens", coverage="single",
+        county="Athens", served_counties="Athens", coverage="single",
         _source="https://www.ohio.edu/medicine/community/clinic", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -600,7 +600,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="cleveland|cuyahoga|healthcare|behavioral-health|integrated-care|reentry",
         services="Integrated behavioral health|Counseling referrals|Addiction treatment referrals|Care coordination",
-        county="Cuyahoga", latitude="41.4210", longitude="-81.7340", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.nfpmedcenter.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -617,7 +617,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–5:00 p.m.",
         tags="columbus|franklin|healthcare|behavioral-health|reentry|case-management",
         services="Outpatient behavioral health|Primary care|Case management|Reentry-focused clinical services",
-        county="Franklin", latitude="39.9390", longitude="-82.9890", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.southeasthealthcare.org", _source_type="nonprofit", _confidence="high",
     )
 
@@ -636,7 +636,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="toledo|lucas|employment|ohiomeansjobs|fair-chance|reentry",
         services="Job search assistance|Training referrals|Resume help|Employer connections",
-        county="Lucas", latitude="41.6680", longitude="-83.5585", served_counties="Lucas", coverage="single",
+        county="Lucas", served_counties="Lucas", coverage="single",
         _source="https://www.omjlc.org", _source_type="government", _confidence="high",
     )
     add(
@@ -653,7 +653,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="cincinnati|hamilton|employment|ohiomeansjobs|fair-chance|reentry",
         services="Career counseling|Job placement|Training referrals|Workforce workshops",
-        county="Hamilton", latitude="39.1150", longitude="-84.5180", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.omjhc.org", _source_type="government", _confidence="high",
     )
     add(
@@ -670,7 +670,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="dayton|montgomery|employment|ohiomeansjobs|reentry|probation",
         services="Job search support|Skills training referrals|Employer services|Workforce workshops",
-        county="Montgomery", latitude="39.7500", longitude="-84.1980", served_counties="Montgomery", coverage="single",
+        county="Montgomery", served_counties="Montgomery", coverage="single",
         _source="https://www.omjmc.org", _source_type="government", _confidence="high",
     )
     add(
@@ -687,7 +687,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="akron|summit|employment|ohiomeansjobs|fair-chance|reentry",
         services="Job placement|Career training|Resume assistance|Employer networking",
-        county="Summit", latitude="41.1020", longitude="-81.4980", served_counties="Summit", coverage="single",
+        county="Summit", served_counties="Summit", coverage="single",
         _source="https://www.akronworks.com", _source_type="government", _confidence="high",
     )
     add(
@@ -704,7 +704,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="canton|stark|employment|ohiomeansjobs|reentry",
         services="Employment services|Training referrals|Job fair access|Career counseling",
-        county="Stark", latitude="40.8200", longitude="-81.3580", served_counties="Stark", coverage="single",
+        county="Stark", served_counties="Stark", coverage="single",
         _source="https://www.starkcountyohio.gov/ohio-means-jobs", _source_type="government", _confidence="high",
     )
     add(
@@ -721,7 +721,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="columbus|franklin|employment|goodwill|fair-chance|reentry",
         services="Job training|Career development|Employment placement|Skills certification",
-        county="Franklin", latitude="39.9900", longitude="-83.0300", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.goodwillcolumbus.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -738,7 +738,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="cleveland|cuyahoga|employment|goodwill|fair-chance|reentry",
         services="Job readiness training|Vocational services|Employment support|Career center services",
-        county="Cuyahoga", latitude="41.5080", longitude="-81.6600", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.goodwillcle.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -755,7 +755,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="cincinnati|hamilton|employment|fair-chance|coaching|reentry",
         services="Job readiness training|Employer partnerships|Employment retention coaching|Career navigation",
-        county="Hamilton", latitude="39.1035", longitude="-84.5105", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.cincinnatiworks.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -772,7 +772,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="cleveland|cuyahoga|employment|fair-chance|reentry|retention",
         services="Job training|Job placement|Retention support|Barrier-reduction coaching",
-        county="Cuyahoga", latitude="41.5010", longitude="-81.6710", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.towardsemployment.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -789,7 +789,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="youngstown|mahoning|employment|ohiomeansjobs|reentry",
         services="Career services|Training referrals|Employment assistance|Job search support",
-        county="Mahoning", latitude="41.0990", longitude="-80.6490", served_counties="Mahoning", coverage="single",
+        county="Mahoning", served_counties="Mahoning", coverage="single",
         _source="https://ohiomeansjobs.ohio.gov", _source_type="government", _confidence="medium",
     )
 
@@ -808,7 +808,7 @@ def register_phase4(add):
         hours="Class schedules vary by site; contact for current sessions",
         tags="columbus|franklin|education|GED|ABLE|reentry",
         services="GED preparation|High school equivalency classes|Adult literacy|Career pathway counseling",
-        county="Franklin", latitude="39.9610", longitude="-82.9920", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.ccsoh.us", _source_type="government", _confidence="high",
     )
     add(
@@ -825,7 +825,7 @@ def register_phase4(add):
         hours="Class schedules vary; contact Aspire office",
         tags="cleveland|cuyahoga|education|GED|aspire|reentry",
         services="GED preparation|Adult diploma|English language learning|Career bridge programs",
-        county="Cuyahoga", latitude="41.4960", longitude="-81.6780", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.tri-c.edu/programs/aspire", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -842,7 +842,7 @@ def register_phase4(add):
         hours="Class schedules vary by semester",
         tags="dayton|montgomery|education|GED|aspire|reentry",
         services="GED classes|Adult diploma|Workforce bridge training|Career counseling",
-        county="Montgomery", latitude="39.7580", longitude="-84.1960", served_counties="Montgomery", coverage="single",
+        county="Montgomery", served_counties="Montgomery", coverage="single",
         _source="https://www.sinclair.edu/academics/aspire", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -859,7 +859,7 @@ def register_phase4(add):
         hours="Contact for class schedules",
         tags="cincinnati|education|GED|ABLE|vocational|reentry",
         services="GED preparation|Adult diploma|Career-technical bridge|Workforce credentials",
-        county="Hamilton", latitude="39.2650", longitude="-84.3780",
+        county="Hamilton",
         served_counties="Hamilton|Butler|Clermont|Warren", coverage="multi",
         _source="https://www.greatoaks.com/adult-education", _source_type="nonprofit", _confidence="high",
     )
@@ -877,7 +877,7 @@ def register_phase4(add):
         hours="Class schedules vary",
         tags="lorain|education|GED|aspire|reentry",
         services="GED preparation|Adult high school equivalency|Career advising|English language learning",
-        county="Lorain", latitude="41.4130", longitude="-82.0700", served_counties="Lorain", coverage="single",
+        county="Lorain", served_counties="Lorain", coverage="single",
         _source="https://www.lorainccc.edu/aspire", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -894,7 +894,7 @@ def register_phase4(add):
         hours="Contact for class schedules",
         tags="canton|stark|education|GED|workforce|reentry",
         services="GED preparation|Workforce credentials|Adult education|Career training pathways",
-        county="Stark", latitude="40.8820", longitude="-81.4360", served_counties="Stark", coverage="single",
+        county="Stark", served_counties="Stark", coverage="single",
         _source="https://www.starkstate.edu/adult-education", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -911,7 +911,7 @@ def register_phase4(add):
         hours="Contact for schedules",
         tags="education|GED|ABLE|vocational|rural|reentry",
         services="GED preparation|Career-technical education|Adult literacy|Workforce pathways",
-        county="Logan", latitude="40.3610", longitude="-83.7600",
+        county="Logan",
         served_counties="Logan|Champaign|Hardin|Madison|Union", coverage="multi",
         _source="https://www.ohiohipoint.com", _source_type="nonprofit", _confidence="high",
     )
@@ -929,7 +929,7 @@ def register_phase4(add):
         hours="Contact for class schedules",
         tags="toledo|lucas|education|GED|vocational|reentry",
         services="GED preparation|Workforce training|Adult education|Career certifications",
-        county="Wood", latitude="41.5300", longitude="-83.6280",
+        county="Wood",
         served_counties="Lucas|Wood|Fulton|Ottawa|Sandusky", coverage="multi",
         _source="https://www.pentacareercenter.org", _source_type="nonprofit", _confidence="high",
     )
@@ -947,7 +947,7 @@ def register_phase4(add):
         hours="Contact for class schedules",
         tags="toledo|lucas|education|GED|workforce|reentry",
         services="GED preparation|Workforce readiness|Adult education|Job skills classes",
-        county="Lucas", latitude="41.6685", longitude="-83.5620", served_counties="Lucas", coverage="single",
+        county="Lucas", served_counties="Lucas", coverage="single",
         _source="https://www.oasisohio.org", _source_type="nonprofit", _confidence="medium",
     )
     add(
@@ -964,7 +964,7 @@ def register_phase4(add):
         hours="Contact for schedules",
         tags="cleveland|cuyahoga|education|GED|aspire|reentry",
         services="GED preparation|Adult education|Community-based classes|Workforce readiness",
-        county="Cuyahoga", latitude="41.5015", longitude="-81.6820", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.lifeworksohio.org", _source_type="nonprofit", _confidence="medium",
     )
     add(
@@ -981,7 +981,7 @@ def register_phase4(add):
         hours="Contact for schedules",
         tags="chillicothe|pickaway|ross|education|GED|reentry",
         services="GED preparation|Adult education|Career-technical pathways|Workforce readiness",
-        county="Ross", latitude="39.3530", longitude="-82.9780",
+        county="Ross",
         served_counties="Pickaway|Ross|Fayette|Pike", coverage="multi",
         _source="https://www.pickawayross.com", _source_type="nonprofit", _confidence="high",
     )
@@ -1001,7 +1001,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="cincinnati|hamilton|veterans|VJO|justice-involved|reentry",
         services="VJO case coordination|VA health care enrollment|Benefits assistance|Treatment referrals",
-        county="Hamilton", latitude="39.1450", longitude="-84.5080", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.va.gov/homeless/vjo.asp", _source_type="government", _confidence="high",
     )
     add(
@@ -1018,7 +1018,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="dayton|montgomery|veterans|VJO|justice-involved|reentry",
         services="VJO outreach|VA medical care linkage|Benefits enrollment|Mental health treatment referrals",
-        county="Montgomery", latitude="39.7490", longitude="-84.2580", served_counties="Montgomery", coverage="single",
+        county="Montgomery", served_counties="Montgomery", coverage="single",
         _source="https://www.va.gov/homeless/vjo.asp", _source_type="government", _confidence="high",
     )
     add(
@@ -1035,7 +1035,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="chillicothe|ross|veterans|VJO|justice-involved|reentry",
         services="VJO outreach|VA health services|Substance use treatment referrals|Housing resource linkage",
-        county="Ross", latitude="39.3450", longitude="-82.9780",
+        county="Ross",
         served_counties="Ross|Pike|Scioto|Jackson|Vinton", coverage="multi",
         _source="https://www.va.gov/homeless/vjo.asp", _source_type="government", _confidence="high",
     )
@@ -1053,7 +1053,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="columbus|franklin|veterans|VSO|benefits|reentry",
         services="VA benefits assistance|Emergency financial aid|Transportation to VA|Referral to reentry supports",
-        county="Franklin", latitude="39.9620", longitude="-82.9900", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.franklincountyvets.com", _source_type="government", _confidence="high",
     )
     add(
@@ -1070,7 +1070,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="cleveland|cuyahoga|veterans|VSO|benefits|reentry",
         services="Benefits counseling|Emergency assistance|VA claims help|Referral services",
-        county="Cuyahoga", latitude="41.5010", longitude="-81.6980", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.cuyahogacounty.gov/veterans", _source_type="government", _confidence="high",
     )
     add(
@@ -1087,7 +1087,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="cincinnati|hamilton|veterans|VSO|benefits|reentry",
         services="VA benefits navigation|Emergency aid|Community resource referrals|Claims assistance",
-        county="Hamilton", latitude="39.1067", longitude="-84.5047", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.veterans.hamiltoncountyohio.gov", _source_type="government", _confidence="high",
     )
     add(
@@ -1104,7 +1104,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="akron|summit|veterans|VSO|benefits|reentry",
         services="Benefits claims assistance|Emergency financial help|Healthcare referrals|Reentry program referrals",
-        county="Summit", latitude="41.0580", longitude="-81.4980", served_counties="Summit", coverage="single",
+        county="Summit", served_counties="Summit", coverage="single",
         _source="https://www.summitveterans.com", _source_type="government", _confidence="high",
     )
 
@@ -1123,7 +1123,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours; varies by site",
         tags="cleveland|cuyahoga|basic-needs|emergency-assistance|reentry",
         services="Emergency food|Clothing|Utility assistance|Household items",
-        county="Cuyahoga", latitude="41.4410", longitude="-81.7520", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.ccdocle.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -1140,7 +1140,7 @@ def register_phase4(add):
         hours="Hours vary by program site",
         tags="columbus|franklin|basic-needs|food-pantry|reentry",
         services="Food pantries|Clothing|Emergency financial assistance|Household support",
-        county="Franklin", latitude="39.9580", longitude="-82.9900", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.catholiccharitiesdc.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -1157,7 +1157,7 @@ def register_phase4(add):
         hours="Contact for site-specific hours",
         tags="cincinnati|hamilton|basic-needs|emergency-assistance|reentry",
         services="Emergency food|Clothing|Rent assistance|Utility assistance",
-        county="Hamilton", latitude="39.1950", longitude="-84.4580", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.ccswoh.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -1174,7 +1174,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="cleveland|cuyahoga|basic-needs|clothing|hygiene|reentry",
         services="Clothing distribution|Hygiene items|Basic needs support|Donation center services",
-        county="Cuyahoga", latitude="41.5080", longitude="-81.6180", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.lutheranmetro.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -1191,7 +1191,7 @@ def register_phase4(add):
         hours="Retail store hours vary; office Monday–Friday",
         tags="cincinnati|hamilton|basic-needs|clothing|goodwill|reentry",
         services="Low-cost clothing|Household goods|Agency voucher programs|Community donations",
-        county="Hamilton", latitude="39.2680", longitude="-84.5220", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.cincinnatigoodwill.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -1208,7 +1208,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="cincinnati|hamilton|basic-needs|clothing|hygiene|reentry",
         services="Clothing distribution to partners|Hygiene kits|Household item donations|Agency partnerships",
-        county="Hamilton", latitude="39.2685", longitude="-84.3480", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.m25m.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -1225,7 +1225,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–8:00 p.m.; Saturday, 9:00 a.m.–1:00 p.m.",
         tags="cleveland|cuyahoga|basic-needs|clothing|release-support|reentry",
         services="Free clothing closet|Hygiene items|Release-day support items|Professional attire",
-        county="Cuyahoga", latitude="41.5095", longitude="-81.6510", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.northstarreentry.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -1242,7 +1242,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="cleveland|cuyahoga|basic-needs|release-bags|hygiene|reentry",
         services="Release bags|Hygiene items|Clothing|Reentry resource information",
-        county="Cuyahoga", latitude="41.4980", longitude="-81.6650", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://mha.ohio.gov/community-partners/criminal-justice/re-entry-programs/circle-for-recovery-ohio", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -1259,7 +1259,7 @@ def register_phase4(add):
         hours="Varies by conference; district office Monday–Friday",
         tags="dayton|montgomery|basic-needs|emergency-assistance|reentry",
         services="Food assistance|Clothing|Furniture|Emergency financial help",
-        county="Montgomery", latitude="39.7580", longitude="-84.1920", served_counties="Montgomery", coverage="single",
+        county="Montgomery", served_counties="Montgomery", coverage="single",
         _source="https://www.svdpcdayton.org", _source_type="nonprofit", _confidence="high",
     )
 
@@ -1278,7 +1278,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="franklin|columbus|probation|court-supervision|reentry",
         services="Probation supervision|Community control monitoring|Resource referrals|Compliance support",
-        county="Franklin", latitude="39.9590", longitude="-82.9987", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://www.franklincountyohio.gov/Departments/Adult-Probation", _source_type="government", _confidence="high",
     )
     add(
@@ -1295,7 +1295,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:30 a.m.–4:30 p.m.",
         tags="cleveland|cuyahoga|probation|court-supervision|reentry",
         services="Felony probation supervision|Court compliance monitoring|Treatment referrals|Reentry resource referrals",
-        county="Cuyahoga", latitude="41.5040", longitude="-81.6930", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://probate.cuyahogacounty.gov/adult-probation", _source_type="government", _confidence="high",
     )
     add(
@@ -1312,7 +1312,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="cincinnati|hamilton|probation|court-supervision|reentry",
         services="Probation supervision|Community control|Resource referrals|Compliance monitoring",
-        county="Hamilton", latitude="39.1067", longitude="-84.5047", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.probation.hamiltoncountyohio.gov", _source_type="government", _confidence="high",
     )
     add(
@@ -1329,7 +1329,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="dayton|montgomery|probation|court-supervision|reentry",
         services="Probation supervision|Community control|Reentry partner referrals|Compliance support",
-        county="Montgomery", latitude="39.7589", longitude="-84.1916", served_counties="Montgomery", coverage="single",
+        county="Montgomery", served_counties="Montgomery", coverage="single",
         _source="https://www.mcohio.org/government/departments/adult_probation", _source_type="government", _confidence="high",
     )
     add(
@@ -1346,7 +1346,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="toledo|lucas|probation|court-supervision|reentry",
         services="Probation supervision|Court compliance|Treatment referrals|Reentry coalition referrals",
-        county="Lucas", latitude="41.6520", longitude="-83.5370", served_counties="Lucas", coverage="single",
+        county="Lucas", served_counties="Lucas", coverage="single",
         _source="https://co.lucas.oh.us", _source_type="government", _confidence="medium",
     )
     add(
@@ -1363,7 +1363,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="akron|summit|probation|court-supervision|reentry",
         services="Probation supervision|Community control monitoring|Coalition partner referrals|Treatment referrals",
-        county="Summit", latitude="41.0790", longitude="-81.5180", served_counties="Summit", coverage="single",
+        county="Summit", served_counties="Summit", coverage="single",
         _source="https://www.summitoh.net", _source_type="government", _confidence="medium",
     )
     add(
@@ -1380,7 +1380,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="canton|stark|probation|court-supervision|reentry",
         services="Probation supervision|Community control|Reentry coalition referrals|Compliance monitoring",
-        county="Stark", latitude="40.7980", longitude="-81.3750", served_counties="Stark", coverage="single",
+        county="Stark", served_counties="Stark", coverage="single",
         _source="https://www.starkcountyohio.gov", _source_type="government", _confidence="medium",
     )
     add(
@@ -1397,7 +1397,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="hamilton|butler|probation|court-supervision|reentry",
         services="Probation supervision|Community control|Reentry coalition referrals|Compliance support",
-        county="Butler", latitude="39.3990", longitude="-84.5610", served_counties="Butler", coverage="single",
+        county="Butler", served_counties="Butler", coverage="single",
         _source="https://www.butlercountyohio.org", _source_type="government", _confidence="medium",
     )
     add(
@@ -1414,7 +1414,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="statewide|parole|DOC|field-offices|reentry",
         services="Parole supervision|Regional field office services|Community resource referrals|Compliance monitoring",
-        county="Franklin", latitude="39.9612", longitude="-83.0069", served_counties="", coverage="statewide",
+        county="Franklin", served_counties="", coverage="statewide",
         _source="https://drc.ohio.gov/about-us/divisions-and-offices/adult-parole-authority", _source_type="government", _confidence="high",
     )
 
@@ -1433,7 +1433,7 @@ def register_phase4(add):
         hours="Monday–Friday, 7:30 a.m.–4:30 p.m.",
         tags="columbus|franklin|benefits|SNAP|Medicaid|reentry",
         services="Medicaid enrollment|SNAP application|Cash assistance|Child care subsidies|Restored citizen intake",
-        county="Franklin", latitude="39.9290", longitude="-82.9950", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://jfs.franklincountyohio.gov", _source_type="government", _confidence="high",
     )
     add(
@@ -1450,7 +1450,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="cleveland|cuyahoga|benefits|SNAP|Medicaid|reentry",
         services="Medicaid enrollment|SNAP benefits|Public assistance|Workforce connections",
-        county="Cuyahoga", latitude="41.5080", longitude="-81.6820", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://jfs.cuyahogacounty.gov", _source_type="government", _confidence="high",
     )
     add(
@@ -1467,7 +1467,7 @@ def register_phase4(add):
         hours="Monday–Friday, 7:30 a.m.–4:30 p.m.",
         tags="cincinnati|hamilton|benefits|SNAP|Medicaid|reentry",
         services="Medicaid application|SNAP enrollment|Emergency assistance|Benefits case management",
-        county="Hamilton", latitude="39.1100", longitude="-84.5120", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.hcjfs.org", _source_type="government", _confidence="high",
     )
 
@@ -1486,7 +1486,7 @@ def register_phase4(add):
         hours="Contact participating agency for hours",
         tags="columbus|franklin|peer-support|recovery|reentry",
         services="Certified peer support|Recovery coaching|Mentoring|Community recovery navigation",
-        county="Franklin", latitude="39.9625", longitude="-82.9988", served_counties="Franklin", coverage="single",
+        county="Franklin", served_counties="Franklin", coverage="single",
         _source="https://mha.ohio.gov/community-partners/recovery/peer-recovery-support", _source_type="government", _confidence="high",
     )
     add(
@@ -1503,7 +1503,7 @@ def register_phase4(add):
         hours="Contact local peer agency for hours",
         tags="statewide|peer-support|recovery-housing|reentry|justice-involved",
         services="Peer recovery support|Recovery housing connections|Community recovery mentoring|Agency referrals",
-        county="", latitude="", longitude="", served_counties="", coverage="statewide",
+        county="", served_counties="", coverage="statewide",
         _source="https://mha.ohio.gov/community-partners/recovery/recovery-housing", _source_type="government", _confidence="high",
     )
 
@@ -1522,7 +1522,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
         tags="cleveland|cuyahoga|id-documentation|birth-certificate|reentry",
         services="Birth certificate issuance|Death record copies|Vital records orders",
-        county="Cuyahoga", latitude="41.5030", longitude="-81.6580", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.cuyahogacounty.gov/vital-stats", _source_type="government", _confidence="high",
     )
     add(
@@ -1539,7 +1539,7 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–4:00 p.m.",
         tags="cincinnati|hamilton|id-documentation|birth-certificate|reentry",
         services="Birth certificates|Death certificates|Vital records verification",
-        county="Hamilton", latitude="39.1300", longitude="-84.5120", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.hamiltoncountyhealth.org/vital-records", _source_type="government", _confidence="high",
     )
 
@@ -1558,7 +1558,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="cleveland|cuyahoga|family-children|reunification|reentry",
         services="Family reunification support|Parenting services|Family preservation|Case management",
-        county="Cuyahoga", latitude="41.3980", longitude="-81.8350", served_counties="Cuyahoga", coverage="single",
+        county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
         _source="https://www.ohioguidestone.org", _source_type="nonprofit", _confidence="high",
     )
     add(
@@ -1575,7 +1575,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="cincinnati|hamilton|family-children|parenting|reentry",
         services="Parent education|Co-parenting support|Family strengthening|Reunification resources",
-        county="Hamilton", latitude="39.0750", longitude="-84.3480", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.beechacres.org", _source_type="nonprofit", _confidence="high",
     )
 
@@ -1594,7 +1594,7 @@ def register_phase4(add):
         hours="Sales office Monday–Friday business hours",
         tags="cincinnati|hamilton|transportation|reduced-fare|reentry",
         services="Reduced-fare bus passes|Affordable transit|Work and appointment transportation",
-        county="Hamilton", latitude="39.1080", longitude="-84.5220", served_counties="Hamilton", coverage="single",
+        county="Hamilton", served_counties="Hamilton", coverage="single",
         _source="https://www.go-metro.com/fares/reduced-fare", _source_type="government", _confidence="high",
     )
 
@@ -1613,7 +1613,7 @@ def register_phase4(add):
         hours="Monday–Friday business hours",
         tags="akron|summit|food-nutrition|food-bank|SNAP|reentry",
         services="Food pantry network|Mobile food distributions|SNAP application assistance|Partner agency referrals",
-        county="Summit", latitude="41.0810", longitude="-81.5190",
+        county="Summit",
         served_counties="Summit|Stark|Portage|Medina|Wayne|Carroll", coverage="multi",
         _source="https://www.akroncantonfoodbank.org", _source_type="nonprofit", _confidence="high",
     )
@@ -1633,7 +1633,7 @@ def register_phase4(add):
         hours="Academic year clinic hours; contact for intake",
         tags="columbus|franklin|legal-aid|expungement|reentry|clinic",
         services="Record sealing assistance|Collateral consequences relief|Reentry legal clinics|Opportunity Port partner services",
-        county="Franklin", latitude="40.0040", longitude="-83.0300", served_counties="", coverage="statewide",
+        county="Franklin", served_counties="", coverage="statewide",
         _source="https://opportunityport.org", _source_type="nonprofit", _confidence="high",
     )
 
@@ -1652,7 +1652,7 @@ def register_phase4(add):
         hours="WebCheck location hours vary",
         tags="statewide|id-documentation|background-check|BCI|reentry",
         services="Background checks|Fingerprinting|Record review|WebCheck services",
-        county="Madison", latitude="39.8850", longitude="-83.4480", served_counties="", coverage="statewide",
+        county="Madison", served_counties="", coverage="statewide",
         _source="https://www.ohioattorneygeneral.gov/law-enforcement/bureau-of-criminal-investigation", _source_type="government", _confidence="high",
     )
     add(
@@ -1669,6 +1669,6 @@ def register_phase4(add):
         hours="Monday–Friday, 8:00 a.m.–5:00 p.m.",
         tags="statewide|benefits|hotline|SNAP|Medicaid|reentry",
         services="Benefits navigation hotline|Medicaid information|SNAP assistance|County office referrals",
-        county="Franklin", latitude="39.9625", longitude="-82.9988", served_counties="", coverage="statewide",
+        county="Franklin", served_counties="", coverage="statewide",
         _source="https://jfs.ohio.gov", _source_type="government", _confidence="high",
     )

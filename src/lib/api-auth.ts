@@ -69,5 +69,13 @@ export async function enforceApiRouteAccess(
     return null;
   }
 
+  if (
+    pathname.startsWith("/api/auth/facility-signup") ||
+    pathname.startsWith("/api/auth/facility-reset-password") ||
+    pathname.startsWith("/api/facility/")
+  ) {
+    return null;
+  }
+
   return NextResponse.json({ error: "Not found" }, { status: 404 });
 }

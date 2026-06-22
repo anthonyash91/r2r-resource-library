@@ -2,7 +2,7 @@
  * Generates supabase/seed-resources.sql from a CSV file.
  *
  * Expected columns (header row):
- *   id,name,category,region,description,description_es,address,city,phone,email,website,eligibility,eligibility_es,notes,notes_es,hours,tags,services,county,latitude,longitude
+ *   id,name,category,region,description,description_es,address,city,phone,email,website,eligibility,eligibility_es,notes,notes_es,hours,tags,services,county,served_counties,coverage
  *
  * Column mapping:
  *   id            → stable UUID (row order); your id is kept in SQL comments for reference
@@ -24,8 +24,6 @@
  *   tags          → resources.tags — comma- or pipe-separated (optional)
  *   services      → resources.services — comma- or pipe-separated (optional)
  *   county        → resources.county — primary office county (optional)
- *   latitude      → resources.latitude (optional)
- *   longitude     → resources.longitude (optional)
  *   served_counties → resources.served_counties — pipe-separated KY county names
  *   coverage      → resources.coverage — single | multi | statewide
  *
@@ -193,12 +191,6 @@ function parseListField(value: string) {
     .filter(Boolean);
 }
 
-function parseCoordinate(value: string) {
-  if (!value.trim()) return null;
-  const num = Number(value);
-  return Number.isFinite(num) ? num : null;
-}
-
 const OPTIONAL_FIELDS = [
   "description_es",
   "address",
@@ -214,8 +206,6 @@ const OPTIONAL_FIELDS = [
   "tags",
   "services",
   "county",
-  "latitude",
-  "longitude",
   "served_counties",
   "coverage",
 ] as const;
@@ -261,8 +251,6 @@ const resourceInserts = records
 
     const uuid = resourceUuid(index);
     const county = cell(row, "county") || cell(row, "region") || null;
-    const latitude = parseCoordinate(cell(row, "latitude"));
-    const longitude = parseCoordinate(cell(row, "longitude"));
     const services = parseListField(cell(row, "services"));
     const tags = parseListField(cell(row, "tags"));
     const servedCounties = parseListField(cell(row, "served_counties"));
@@ -270,13 +258,6 @@ const resourceInserts = records
     const coverage = isValidCoverage(coverageRaw) ? coverageRaw : "single";
     if (cell(row, "coverage") && !isValidCoverage(coverageRaw)) {
       warnings.push(`Row ${index + 2} (${sourceId}): invalid coverage "${coverageRaw}", using single`);
-    }
-
-    if (cell(row, "latitude") && latitude === null) {
-      warnings.push(`Row ${index + 2} (${sourceId}): invalid latitude`);
-    }
-    if (cell(row, "longitude") && longitude === null) {
-      warnings.push(`Row ${index + 2} (${sourceId}): invalid longitude`);
     }
 
     return `  -- source id: ${sourceId.replace(/\n/g, " ")}
@@ -302,8 +283,6 @@ const resourceInserts = records
     ${sqlString(coverage)},
     ${sqlArray(services)},
     ${sqlArray(tags)},
-    ${latitude ?? "NULL"},
-    ${longitude ?? "NULL"},
     false,
     'active'
   )`;
@@ -356,7 +335,7 @@ ${categoriesSql}INSERT INTO resources (
   state, county, city, address, phone, website, email, hours,
   eligibility, eligibility_es, notes, notes_es,
   served_counties, coverage,
-  services, tags, latitude, longitude, is_featured, status
+  services, tags, is_featured, status
 ) VALUES
 ${resourceInserts}
 ON CONFLICT (id) DO UPDATE SET
@@ -380,8 +359,6 @@ ON CONFLICT (id) DO UPDATE SET
   coverage = EXCLUDED.coverage,
   services = EXCLUDED.services,
   tags = EXCLUDED.tags,
-  latitude = EXCLUDED.latitude,
-  longitude = EXCLUDED.longitude,
   is_featured = EXCLUDED.is_featured,
   status = EXCLUDED.status,
   updated_at = NOW();
@@ -409,7 +386,7 @@ if (gapRows.length) {
     console.log(`  • id ${sourceId} — ${label}`);
     console.log(`    missing: ${missing.join(", ")}`);
   });
-  console.log("\nTip: add hours, tags, services, county, latitude, longitude columns to the CSV.");
+  console.log("\nTip: add hours, tags, services, county, served_counties, and coverage columns to the CSV.");
 }
 
 if (warnings.length) {

@@ -5,6 +5,7 @@ import {
   EDITABLE_ABOUT_CONTENT_FIELDS,
   type AboutContentFormValues,
   type AboutPageContent,
+  type EditableAboutContentField,
 } from "@/lib/about-content-fields";
 import { createTranslator } from "@/i18n/translator";
 import type { Locale } from "@/i18n/types";

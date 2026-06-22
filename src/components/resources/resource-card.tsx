@@ -55,8 +55,14 @@ export function ResourceCard({
 
   return (
     <Card className={isCompact ? "p-5 sm:p-6" : undefined}>
-      <div className={cn("flex flex-wrap items-center justify-between gap-2", isCompact ? "mb-2" : "mb-3")}>
-        <div className="flex flex-wrap items-center gap-2">
+      <div
+        className={cn(
+          "items-start gap-x-2",
+          showSave && !isCompact ? "grid grid-cols-[1fr_auto]" : "flex flex-wrap gap-2",
+          isCompact ? "mb-2" : "mb-3"
+        )}
+      >
+        <div className="flex min-w-0 flex-wrap items-center gap-2">
           {resource.category && (
             <CategoryBadge category={resource.category} size={isCompact ? "sm" : "default"} />
           )}
@@ -66,6 +72,7 @@ export function ResourceCard({
           <SaveResourceButton
             saved={saved}
             onClick={handleSave}
+            className="shrink-0"
             ariaLabel={
               saved
                 ? t("resources.removeSaveAria", { name: resource.name })

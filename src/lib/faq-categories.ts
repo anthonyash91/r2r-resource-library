@@ -8,6 +8,14 @@ export const DEFAULT_FAQ_CATEGORY = FAQ_CATEGORIES[0].value;
 
 export type FaqCategoryValue = (typeof FAQ_CATEGORIES)[number]["value"];
 
+export function normalizeFaqCategory(category: string | null | undefined): FaqCategoryValue {
+  const value = category?.trim() ?? DEFAULT_FAQ_CATEGORY;
+  const match = FAQ_CATEGORIES.find(
+    (item) => item.value.toLowerCase() === value.toLowerCase()
+  );
+  return match?.value ?? DEFAULT_FAQ_CATEGORY;
+}
+
 export function faqCategoryLabel(t: (key: string) => string, category: string): string {
   const byValue = FAQ_CATEGORIES.find(
     (item) => item.value.toLowerCase() === category.toLowerCase()

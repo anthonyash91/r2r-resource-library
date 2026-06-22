@@ -114,8 +114,6 @@ async function main() {
     const categoryId = CATEGORY_UUID[slug];
     if (!categoryId) throw new Error(`Unknown category "${slug}" on row ${index + 2}`);
     const coverageRaw = cell(row, "coverage") || "single";
-    const lat = cell(row, "latitude");
-    const lon = cell(row, "longitude");
     return {
       id: resourceUuid(index),
       name: cell(row, "name"),
@@ -138,8 +136,6 @@ async function main() {
       coverage: isValidCoverage(coverageRaw) ? coverageRaw : "single",
       services: parseList(cell(row, "services")),
       tags: parseList(cell(row, "tags")),
-      latitude: lat ? Number(lat) : null,
-      longitude: lon ? Number(lon) : null,
       is_featured: false,
       status: "active" as const,
     };

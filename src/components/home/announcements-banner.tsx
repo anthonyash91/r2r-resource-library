@@ -1,12 +1,13 @@
 import { Megaphone } from "lucide-react";
 import type { Announcement } from "@/types";
+import { isAnnouncementActive } from "@/lib/announcements";
 
 interface AnnouncementsBannerProps {
   announcements: Announcement[];
 }
 
 export function AnnouncementsBanner({ announcements }: AnnouncementsBannerProps) {
-  const pinned = announcements.filter((item) => item.is_pinned);
+  const pinned = announcements.filter((item) => item.is_pinned && isAnnouncementActive(item));
   if (pinned.length === 0) return null;
 
   return (

@@ -56,8 +56,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Family support and guidance",
     ],
     tags: ["statewide", "reentry", "DOC", "probation", "parole", "frankfort"],
-    latitude: 38.2009,
-    longitude: -84.8733,
     is_featured: true,
   },
   {
@@ -87,8 +85,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Employment preparation",
     ],
     tags: ["statewide", "RSC", "probation", "parole", "halfway house", "DOC"],
-    latitude: 38.2009,
-    longitude: -84.8733,
   },
   {
     id: "res-ky-003",
@@ -117,8 +113,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Financial counseling referrals",
     ],
     tags: ["louisville", "jefferson county", "expungement", "legal aid", "reentry"],
-    latitude: 38.2488,
-    longitude: -85.789,
     is_featured: true,
   },
   {
@@ -148,8 +142,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Online and phone intake",
     ],
     tags: ["louisville", "jefferson county", "expungement", "legal aid", "civil legal"],
-    latitude: 38.2467,
-    longitude: -85.7585,
   },
   {
     id: "res-ky-005",
@@ -178,8 +170,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Online application intake",
     ],
     tags: ["lexington", "fayette county", "northern kentucky", "eastern kentucky", "expungement", "statewide"],
-    latitude: 38.0464,
-    longitude: -84.497,
   },
   {
     id: "res-ky-006",
@@ -209,8 +199,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Employer connections",
     ],
     tags: ["louisville", "jefferson county", "employment", "second chance", "career center"],
-    latitude: 38.2488,
-    longitude: -85.802,
     is_featured: true,
   },
   {
@@ -241,8 +229,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Hiring events and job fairs",
     ],
     tags: ["northern kentucky", "covington", "kenton county", "employment", "reentry", "recovery"],
-    latitude: 39.0837,
-    longitude: -84.5085,
   },
   {
     id: "res-ky-008",
@@ -271,8 +257,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Life skills support",
     ],
     tags: ["louisville", "jefferson county", "employment", "reentry", "CEO", "second chance"],
-    latitude: 38.2527,
-    longitude: -85.7585,
     is_featured: true,
   },
   {
@@ -301,8 +285,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Employer partner connections",
     ],
     tags: ["lexington", "fayette county", "employment", "RISE", "goodwill", "second chance"],
-    latitude: 38.0486,
-    longitude: -84.4545,
   },
   {
     id: "res-ky-010",
@@ -331,8 +313,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Online referral intake",
     ],
     tags: ["lexington", "fayette county", "young adults", "education", "employment", "reentry"],
-    latitude: 38.0486,
-    longitude: -84.4545,
   },
   {
     id: "res-ky-011",
@@ -361,8 +341,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Life skills programming",
     ],
     tags: ["louisville", "jefferson county", "RSC", "housing", "reentry", "DOC"],
-    latitude: 38.2439,
-    longitude: -85.7654,
   },
   {
     id: "res-ky-012",
@@ -391,8 +369,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Reentry resource events",
     ],
     tags: ["northern kentucky", "covington", "kenton county", "reentry", "workforce", "recovery"],
-    latitude: 39.0837,
-    longitude: -84.5085,
     is_featured: true,
   },
   {
@@ -421,8 +397,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Employment retention assistance",
     ],
     tags: ["lexington", "fayette county", "second chance", "workforce", "jail reentry"],
-    latitude: 38.0464,
-    longitude: -84.497,
   },
   {
     id: "res-ky-014",
@@ -452,8 +426,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Family support groups",
     ],
     tags: ["lexington", "fayette county", "madison county", "woodford county", "reentry", "faith-based"],
-    latitude: 38.0464,
-    longitude: -84.497,
   },
   {
     id: "res-ky-015",
@@ -482,8 +454,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "DOC partnership programming",
     ],
     tags: ["lexington", "fayette county", "SUD", "mental health", "RSC", "recovery housing"],
-    latitude: 38.0562,
-    longitude: -84.5015,
   },
   {
     id: "res-ky-016",
@@ -512,8 +482,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "DOC program credit upon completion",
     ],
     tags: ["bowling green", "warren county", "recovery kentucky", "SUD", "DOC", "western kentucky"],
-    latitude: 37.0048,
-    longitude: -86.4436,
   },
   {
     id: "res-ky-017",
@@ -542,8 +510,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Harm reduction information",
     ],
     tags: ["northern kentucky", "covington", "SUD", "helpline", "recovery", "reentry"],
-    latitude: 39.0837,
-    longitude: -84.5085,
   },
   {
     id: "res-ky-018",
@@ -573,8 +539,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Community scholarships",
     ],
     tags: ["bowling green", "warren county", "southern kentucky", "reentry council", "BRADD"],
-    latitude: 36.9685,
-    longitude: -86.4808,
   },
   {
     id: "res-ky-019",
@@ -603,8 +567,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Employment preparation",
     ],
     tags: ["louisville", "jefferson county", "RSC", "housing", "DOC", "reentry"],
-    latitude: 38.2569,
-    longitude: -85.7784,
   },
   {
     id: "res-ky-020",
@@ -633,8 +595,6 @@ const RESOURCE_SEEDS: ResourceSeed[] = [
       "Warm handoff to community providers",
     ],
     tags: ["louisville", "jefferson county", "jail reentry", "F2ACT", "discharge planning", "basic needs"],
-    latitude: 38.2512,
-    longitude: -85.7585,
   },
 ];
 

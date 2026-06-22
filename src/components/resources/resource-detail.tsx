@@ -18,7 +18,7 @@ import { StatewideBadge } from "@/components/resources/statewide-badge";
 import { RegionalBadge } from "@/components/resources/regional-badge";
 import { Card, CardDescription, CardHeader } from "@/components/ui/card";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
-import { formatPhone, formatDate, formatWebsiteDisplay, shareResource, cn, pageSectionPadding } from "@/lib/utils";
+import { formatPhone, formatDate, formatWebsiteDisplay, shareResource, cn, pageSectionPadding, pageSectionSubheadingClass } from "@/lib/utils";
 import { useSaved } from "@/lib/saved-context";
 import { useAuth } from "@/lib/auth-context";
 import type { Resource } from "@/types";
@@ -35,7 +35,7 @@ interface ResourceDetailProps {
   related: Resource[];
 }
 
-const sectionTitleClass = "text-xl font-bold";
+const sectionTitleClass = pageSectionSubheadingClass;
 
 export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
   const { isSaved, toggleSave, recordView } = useSaved();

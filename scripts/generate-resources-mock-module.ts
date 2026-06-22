@@ -116,12 +116,6 @@ function parseListField(value: string) {
     .filter(Boolean);
 }
 
-function parseCoordinate(value: string) {
-  if (!value.trim()) return null;
-  const num = Number(value);
-  return Number.isFinite(num) ? num : null;
-}
-
 function tsString(value: string | null | undefined) {
   if (value === null || value === undefined || !value.trim()) return "null";
   return JSON.stringify(value);
@@ -184,8 +178,6 @@ const seeds = records.map((row, index) => {
     coverage,
     services: parseListField(cell(row, "services")),
     tags: parseListField(cell(row, "tags")),
-    latitude: parseCoordinate(cell(row, "latitude")),
-    longitude: parseCoordinate(cell(row, "longitude")),
     sourceId,
   };
 });
@@ -222,8 +214,6 @@ const seedBlocks = seeds
     coverage: ${tsString(s.coverage)},
     services: ${tsArray(s.services)},
     tags: ${tsArray(s.tags)},
-    latitude: ${s.latitude ?? "null"},
-    longitude: ${s.longitude ?? "null"},
   }`
   )
   .join(",\n");

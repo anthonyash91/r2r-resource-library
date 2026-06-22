@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Dropdown } from "@/components/ui/dropdown";
 import { Card } from "@/components/ui/card";
-import { cn, pageSectionPadding } from "@/lib/utils";
+import { cn, pageSectionPadding, pageSectionSubheadingClass } from "@/lib/utils";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import type { ContactPageContent } from "@/lib/contact-content-fields";
 import { useTranslations } from "@/i18n/locale-context";
@@ -159,7 +159,7 @@ export function ContactPageView({ content, initialSubject }: ContactPageViewProp
 
             <div className="space-y-6">
               <Card className="p-6 sm:p-7">
-                <h2 className="mb-5 text-lg font-bold text-foreground">{content.otherWaysTitle}</h2>
+                <h2 className={cn("mb-5", pageSectionSubheadingClass)}>{content.otherWaysTitle}</h2>
                 <ul className="space-y-5">
                   {helpLinks.map(({ href, icon: Icon, title: linkTitle, description: linkDesc }) => (
                     <li key={href}>
@@ -188,7 +188,7 @@ export function ContactPageView({ content, initialSubject }: ContactPageViewProp
               </Card>
 
               <Card className="border-primary/15 bg-secondary/60 p-6 sm:p-7">
-                <h2 className="mb-3 text-lg font-bold text-foreground">{content.responseTimeTitle}</h2>
+                <h2 className={cn("mb-3", pageSectionSubheadingClass)}>{content.responseTimeTitle}</h2>
                 <p className="text-base leading-relaxed text-foreground/90">
                   {content.responseTimeBody}
                 </p>

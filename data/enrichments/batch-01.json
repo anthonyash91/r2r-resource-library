@@ -7,9 +7,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "statewide|reentry|DOC|RSC|probation|parole|frankfort",
     "services": "Individualized reentry planning|Regional reentry coordinator referrals|Reentry Service Center oversight|Community partnership navigation|Pre-release programming coordination",
-    "county": "Franklin",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "county": "Franklin"
   },
   "2": {
     "description": "Free statewide online hub from Kentucky DOC for people preparing for release or already in reentry. Curated links cover housing, jobs, education, public benefits (SNAP, Medicaid, K-TAP), substance use recovery, expungement, and local reentry councils. No account required—browse anytime from a phone or computer. Phone support depends on the specific program linked from the portal.",
@@ -40,9 +38,7 @@
     "hours": "Contact by phone or email; see website for public partnership meeting dates",
     "tags": "bowling-green|warren-county|reentry-council|southern-kentucky|networking",
     "services": "Resource navigation|Community partner referrals|Scholarship information|Reentry coalition meetings",
-    "county": "Warren",
-    "latitude": "36.9685",
-    "longitude": "-86.4808"
+    "county": "Warren"
   },
   "5": {
     "description": "Regional reentry council for northeastern Kentucky's FIVCO five-county area: Boyd, Carter, Elliott, Greenup, and Lawrence. Part of the statewide Kentucky Reentry Council network, FIVCO coordinates information among courts, corrections, faith-based groups, employers, and social service agencies. Does not operate housing or treatment programs—use this contact for local partner referrals and coalition meeting information.",
@@ -55,9 +51,7 @@
     "hours": "Contact for meeting times",
     "tags": "ashland|boyd-county|fivco|reentry-council|northeast-kentucky",
     "services": "Regional partner networking|Reentry information sharing|Community coordination",
-    "county": "Boyd",
-    "latitude": "38.3334",
-    "longitude": "-82.9488"
+    "county": "Boyd"
   },
   "10": {
     "description": "Kentucky DOC-contracted Reentry Service Center for men in community custody, operated by Community Transitional Services (CTS). Provides licensed transitional housing plus structured programming: Moral Reconation Therapy (MRT), employment preparation, substance use education, and case management aligned with parole and probation requirements. Admissions require a referral from Kentucky DOC Probation and Parole—call to confirm current bed availability.",
@@ -67,9 +61,7 @@
     "hours": "Visitation Saturday–Sunday, 12:00–3:00 p.m.; call for office hours",
     "tags": "louisville|jefferson-county|RSC|transitional-housing|DOC-contract",
     "services": "Transitional housing|Employment preparation|MRT classes|Substance abuse programming|Community referrals",
-    "county": "Jefferson",
-    "latitude": "38.2467",
-    "longitude": "-85.7655"
+    "county": "Jefferson"
   },
   "11": {
     "description": "Kentucky DOC-contracted Reentry Service Center in downtown Louisville, operated by The Healing Place. Serves men and women under community supervision with transitional housing integrated into long-term addiction recovery tracks. Combines sober living structure, peer-led recovery, clinical support, and employment readiness in one program. Access is through Kentucky DOC referral—call for admissions timeline and visiting hours.",
@@ -80,9 +72,7 @@
     "hours": "Call for admissions and visiting hours (DOC referral required)",
     "tags": "louisville|RSC|transitional-housing|recovery|DOC-contract|healing-place",
     "services": "Transitional housing|Addiction recovery programming|Reentry support|DOC supervision coordination",
-    "county": "Jefferson",
-    "latitude": "38.2567",
-    "longitude": "-85.7652"
+    "county": "Jefferson"
   },
   "12": {
     "description": "Federal and state residential reentry center (halfway house) in Louisville for men and women returning from prison. Dismas Charities provides structured sober living, case management, substance abuse programming, job readiness training, and support reuniting with family. Length of stay varies by referral source (Bureau of Prisons, Kentucky DOC, or courts). Intake typically requires an institutional referral—call to confirm bed availability and eligibility.",
@@ -92,9 +82,7 @@
     "hours": "Call for intake and visiting hours",
     "tags": "louisville|halfway-house|reentry|federal|state|dismas",
     "services": "Residential reentry housing|Employment assistance|Substance abuse treatment|Job training|Family reunification support",
-    "county": "Jefferson",
-    "latitude": "38.2342",
-    "longitude": "-85.7728"
+    "county": "Jefferson"
   },
   "13": {
     "description": "Dismas Charities halfway house in Louisville's Portland neighborhood for individuals released from incarceration. Offers gender-specific residential beds, daily structure and accountability, individualized reentry planning, employment assistance, and substance use programming in a faith-informed environment. Referrals usually come from the federal Bureau of Prisons, Kentucky DOC, or local courts—contact directly to inquire about openings and intake requirements.",
@@ -104,9 +92,7 @@
     "hours": "Call for intake and visiting hours",
     "tags": "louisville|halfway-house|reentry|portland|dismas",
     "services": "Halfway house housing|Reentry programming|Employment support|Substance abuse programming",
-    "county": "Jefferson",
-    "latitude": "38.2590",
-    "longitude": "-85.7830"
+    "county": "Jefferson"
   },
   "14": {
     "description": "Volunteers of America Mid-States operates Liberty Place (formerly the Halfway Back Program), a long-term residential treatment program for adult men on parole with substance use disorders. The six- to eight-month program includes housing, 12-step recovery, individual and group counseling, GED preparation, job training, and life skills development. Referrals often come from Kentucky DOC or court order. Located at the Shelby Campus in Louisville.",
@@ -118,8 +104,6 @@
     "hours": "Call for admissions",
     "tags": "louisville|liberty-place|substance-use|men|halfway-back|recovery",
     "services": "Residential treatment|12-step recovery|Individual and group counseling|GED and employment readiness|Life skills training",
-    "county": "Jefferson",
-    "latitude": "38.2270",
-    "longitude": "-85.7360"
+    "county": "Jefferson"
   }
 }

@@ -11,14 +11,22 @@ import {
   DEFAULT_FAQ_CATEGORY,
   faqCategoryLabel,
   faqCategoryOptions,
+  normalizeFaqCategory,
+  type FaqCategoryValue,
 } from "@/lib/faq-categories";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslations } from "@/i18n/locale-context";
+import { useConfirmDialog } from "@/components/ui/confirm-dialog";
 
-const emptyForm = { question: "", answer: "", category: DEFAULT_FAQ_CATEGORY };
+const emptyForm: { question: string; answer: string; category: FaqCategoryValue } = {
+  question: "",
+  answer: "",
+  category: DEFAULT_FAQ_CATEGORY,
+};
 
 export function AdminFaqsClient({ initial }: { initial: Faq[] }) {
   const { t } = useTranslations();
+  const { confirm, alert } = useConfirmDialog();
   const [faqs, setFaqs] = useState(initial);
   const [form, setForm] = useState(emptyForm);
   const [showForm, setShowForm] = useState(false);
@@ -38,7 +46,7 @@ export function AdminFaqsClient({ initial }: { initial: Faq[] }) {
     setForm({
       question: faq.question,
       answer: faq.answer,
-      category: faq.category ?? DEFAULT_FAQ_CATEGORY,
+      category: normalizeFaqCategory(faq.category),
     });
     setShowForm(true);
   };
@@ -76,7 +84,7 @@ export function AdminFaqsClient({ initial }: { initial: Faq[] }) {
             .eq("id", editing.id);
 
           if (error) {
-            alert(t("admin.faqSaveFailed"));
+            await alert({ title: t("common.error"), message: t("admin.faqSaveFailed") });
             setSaving(false);
             return;
           }
@@ -100,7 +108,7 @@ export function AdminFaqsClient({ initial }: { initial: Faq[] }) {
           const { data, error } = await supabase.from("faqs").insert(payload).select().single();
 
           if (error || !data) {
-            alert(t("admin.faqSaveFailed"));
+            await alert({ title: t("common.error"), message: t("admin.faqSaveFailed") });
             setSaving(false);
             return;
           }
@@ -126,7 +134,13 @@ export function AdminFaqsClient({ initial }: { initial: Faq[] }) {
   };
 
   const handleDelete = async (faq: Faq) => {
-    if (!confirm(t("admin.deleteFaqConfirm"))) return;
+    const confirmed = await confirm({
+      title: t("admin.deleteFaq"),
+      message: t("admin.deleteFaqConfirm"),
+      confirmLabel: t("admin.deleteFaq"),
+      destructive: true,
+    });
+    if (!confirmed) return;
 
     if (isSupabaseConfigured()) {
       const supabase = createClient();
@@ -134,7 +148,7 @@ export function AdminFaqsClient({ initial }: { initial: Faq[] }) {
         const { error } = await supabase.from("faqs").delete().eq("id", faq.id);
 
         if (error) {
-          alert(t("admin.faqDeleteFailed"));
+          await alert({ title: t("common.error"), message: t("admin.faqDeleteFailed") });
           return;
         }
       }
@@ -180,7 +194,7 @@ export function AdminFaqsClient({ initial }: { initial: Faq[] }) {
             label={t("admin.faqCategory")}
             placeholder={t("faq.general")}
             value={form.category}
-            onChange={(value) => setForm({ ...form, category: value })}
+            onChange={(value) => setForm({ ...form, category: normalizeFaqCategory(value) })}
             options={categoryOptions}
             searchable={false}
           />

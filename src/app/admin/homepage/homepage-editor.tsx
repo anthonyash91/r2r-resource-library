@@ -13,6 +13,7 @@ import {
 } from "@/lib/site-content-fields";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslations } from "@/i18n/locale-context";
+import { useConfirmDialog } from "@/components/ui/confirm-dialog";
 
 interface HomepageEditorProps {
   initial: SiteContentFormValues;
@@ -29,6 +30,7 @@ function buildInitialContent(initial: SiteContentFormValues): SiteContentFormVal
 export function HomepageEditor({ initial, resources }: HomepageEditorProps) {
   const router = useRouter();
   const { t } = useTranslations();
+  const { alert } = useConfirmDialog();
   const [content, setContent] = useState<SiteContentFormValues>(() => buildInitialContent(initial));
   const [saved, setSaved] = useState(false);
   const [saveMessage, setSaveMessage] = useState<string | null>(null);
@@ -40,7 +42,7 @@ export function HomepageEditor({ initial, resources }: HomepageEditorProps) {
 
   const handleSave = async () => {
     if (!isSupabaseConfigured()) {
-      alert(t("admin.homepageSaveFailed"));
+      await alert({ title: t("common.error"), message: t("admin.homepageSaveFailed") });
       return;
     }
 
@@ -61,7 +63,10 @@ export function HomepageEditor({ initial, resources }: HomepageEditorProps) {
       };
 
       if (!response.ok) {
-        alert(data.error ?? t("admin.homepageSaveFailed"));
+        await alert({
+          title: t("common.error"),
+          message: data.error ?? t("admin.homepageSaveFailed"),
+        });
         setSaving(false);
         return;
       }
@@ -76,7 +81,7 @@ export function HomepageEditor({ initial, resources }: HomepageEditorProps) {
         setSaveMessage(null);
       }, 4000);
     } catch {
-      alert(t("admin.homepageSaveFailed"));
+      await alert({ title: t("common.error"), message: t("admin.homepageSaveFailed") });
     } finally {
       setSaving(false);
     }

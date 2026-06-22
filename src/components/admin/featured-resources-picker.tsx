@@ -13,6 +13,7 @@ import { setResourceFeatured } from "@/lib/admin-resources";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "@/i18n/locale-context";
+import { useConfirmDialog } from "@/components/ui/confirm-dialog";
 
 interface FeaturedResourcesPickerProps {
   resources: Resource[];
@@ -21,6 +22,7 @@ interface FeaturedResourcesPickerProps {
 export function FeaturedResourcesPicker({ resources }: FeaturedResourcesPickerProps) {
   const router = useRouter();
   const { t } = useTranslations();
+  const { alert } = useConfirmDialog();
   const activeResources = useMemo(
     () => resources.filter((resource) => resource.status === "active"),
     [resources]
@@ -50,11 +52,14 @@ export function FeaturedResourcesPicker({ resources }: FeaturedResourcesPickerPr
       setBusyId(null);
 
       if (result.error === "max_featured") {
-        alert(t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }));
+        await alert({
+          title: t("common.notice"),
+          message: t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }),
+        });
         return false;
       }
       if (result.error) {
-        alert(t("admin.resourceSaveFailed"));
+        await alert({ title: t("common.error"), message: t("admin.resourceSaveFailed") });
         return false;
       }
       router.refresh();

@@ -14,6 +14,10 @@ export interface Profile {
   state: string | null;
   county: string | null;
   city: string | null;
+  facility_id?: string | null;
+  signup_context?: "standard" | "facility" | null;
+  priority_categories?: string[];
+  onboarding_completed_at?: string | null;
   created_at: string;
   updated_at: string;
   saved_pdf_emails_sent?: number;
@@ -54,8 +58,6 @@ export interface Resource {
   coverage?: ResourceCoverage;
   services: string[];
   tags: string[];
-  latitude: number | null;
-  longitude: number | null;
   is_featured: boolean;
   status: ResourceStatus;
   view_count: number;

@@ -30,8 +30,6 @@ const COLUMNS = [
   "tags",
   "services",
   "county",
-  "latitude",
-  "longitude",
 ] as const;
 
 type Column = (typeof COLUMNS)[number];

@@ -42,8 +42,6 @@ const COLUMNS = [
   "tags",
   "services",
   "county",
-  "latitude",
-  "longitude",
   "served_counties",
   "coverage",
 ] as const;

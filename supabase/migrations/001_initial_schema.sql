@@ -57,8 +57,6 @@ CREATE TABLE resources (
   eligibility TEXT,
   services TEXT[] NOT NULL DEFAULT '{}',
   tags TEXT[] NOT NULL DEFAULT '{}',
-  latitude DECIMAL(10, 8),
-  longitude DECIMAL(11, 8),
   is_featured BOOLEAN NOT NULL DEFAULT false,
   status resource_status NOT NULL DEFAULT 'active',
   view_count INT NOT NULL DEFAULT 0,

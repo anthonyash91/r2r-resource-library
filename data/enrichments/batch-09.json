@@ -11,9 +11,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "madisonville|GED|adult-education|MCC|KCTCS|Hopkins|Muhlenberg|jail-education|western-kentucky",
     "services": "Free GED preparation|Adult literacy and ESL|Corrections education in county jails|GED Ready testing|Workforce and college transition",
-    "county": "Hopkins",
-    "latitude": "37.3450",
-    "longitude": "-87.3280"
+    "county": "Hopkins"
   },
   "522": {
     "description": "Hazard Community and Technical College (HCTC) Adult Education provides free GED preparation and adult education for Perry, Breathitt, Knott, Leslie, Letcher, Lee, Owsley, and Harlan counties. KYAE provider with in-person and virtual classes at the Devert Owens Technical Center and GED instruction inside Perry County Detention Center and regional county jails. First-time GED test fees waived for eligible students.",
@@ -27,9 +25,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.; in-person classes Mon–Fri",
     "tags": "hazard|GED|HCTC|KCTCS|Perry|coalfields|eastern-kentucky|jail-education|8-counties",
     "services": "Free GED preparation|Virtual and in-person instruction|County jail GED classes|Adult literacy|Workforce education",
-    "county": "Perry",
-    "latitude": "37.2490",
-    "longitude": "-83.1930"
+    "county": "Perry"
   },
   "523": {
     "description": "Elizabethtown Community and Technical College (ECTC) hosts the Heartland Adult Education Consortium lead center, providing free GED preparation, ESL, citizenship, and college-readiness for Hardin, LaRue, Breckinridge, Grayson, and Hart counties. KYAE provider with in-person and virtual instruction plus corrections education at Hardin County Detention Center. All enrollment, tutoring, and graduation services are free.",
@@ -43,9 +39,7 @@
     "hours": "Monday–Friday during business hours; virtual and evening options available",
     "tags": "elizabethtown|GED|ECTC|Heartland|KCTCS|Hardin|5-counties|jail-education|Lincoln-Trail",
     "services": "Free GED preparation|ESL and citizenship classes|Corrections education|College and career readiness|Virtual and in-person instruction",
-    "county": "Hardin",
-    "latitude": "37.6940",
-    "longitude": "-85.8590"
+    "county": "Hardin"
   },
   "524": {
     "description": "Maysville Community and Technical College (MCTC) Adult Education provides free GED preparation, literacy, ESL, and college-readiness for Mason, Bath, Bracken, Fleming, Nicholas, Robertson, Harrison, and Lewis counties. KYAE provider with flexible in-person and online scheduling at the Maysville campus and instruction in county jail settings. Kentucky covers GED testing costs for eligible students.",
@@ -59,9 +53,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "maysville|GED|MCTC|KCTCS|Mason|northeast-kentucky|jail-education|8-counties",
     "services": "Free GED preparation|ESL and family literacy|County jail adult education|College placement prep|Flexible online scheduling",
-    "county": "Mason",
-    "latitude": "38.6410",
-    "longitude": "-83.7440"
+    "county": "Mason"
   },
   "525": {
     "description": "Hopkinsville Community College (HCC) Adult Education provides free GED preparation, adult literacy, and college-transition support for Christian and Todd counties through KYAE. Main center at the Technology Building with satellite classes in Oak Grove and Elkton. Offers corrections education inside Christian County Detention Center plus GED Plus pathways pairing GED with certificate programs.",
@@ -75,9 +67,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.; Monday evenings 5:00–7:00 p.m.",
     "tags": "hopkinsville|GED|HCC|KCTCS|Christian|Todd|Pennyrile|jail-education|GED-Plus",
     "services": "Free GED preparation|Jail-based adult education|GED Plus certificate pathways|ESL and college remediation|Satellite classes in Oak Grove and Elkton",
-    "county": "Christian",
-    "latitude": "36.8650",
-    "longitude": "-87.4880"
+    "county": "Christian"
   },
   "526": {
     "description": "Prodigal Ministries is a faith-based residential aftercare program founded in 1994, operating four transitional homes in Jefferson and Oldham counties. The Brown House in Buckner provides structured sober living for up to 10 men leaving incarceration, with case management, job-readiness coaching, weekly accountability meetings, and PCS mental health and addiction counseling. Accepts residents with felony records; Christ-centered but open to all seeking recovery.",
@@ -91,9 +81,7 @@
     "hours": "Office Mon–Fri business hours; residential program 24/7",
     "tags": "buckner|transitional-housing|faith-based|reentry|Oldham|men|felony-friendly|sober-living",
     "services": "Structured sober living for men|Case management and job readiness|PCS mental health and addiction counseling|Spiritual mentorship|Weekly house accountability meetings",
-    "county": "Oldham",
-    "latitude": "38.3830",
-    "longitude": "-85.4400"
+    "county": "Oldham"
   },
   "527": {
     "description": "Seven Counties Services Bullitt County office provides outpatient mental health, addiction, and psychiatric services for Bullitt County residents. Regional CMHC serving Bullitt, Henry, Jefferson, Oldham, Shelby, Spencer, and Trimble counties with explicit programming for justice-involved individuals on probation, parole, or recently released. 24/7 crisis line available.",
@@ -107,9 +95,7 @@
     "hours": "Monday–Friday, 8:30 a.m.–5:00 p.m.; crisis line 24/7",
     "tags": "shepherdsville|CMHC|Seven-Counties|mental-health|substance-use|Bullitt|justice-involved|crisis",
     "services": "Outpatient mental health therapy|Substance use counseling|Psychiatric evaluation and medication|Crisis intervention 24/7|Justice-involved reentry support",
-    "county": "Bullitt",
-    "latitude": "37.9890",
-    "longitude": "-85.7150"
+    "county": "Bullitt"
   },
   "528": {
     "description": "Seven Counties Services Oldham County office in La Grange provides outpatient mental health and substance use treatment for Henry, Oldham, and Trimble County residents. Regional CMHC serving justice-involved individuals on probation, parole, or reintegrating from incarceration with individual therapy, group counseling, psychiatric services, and peer support.",
@@ -123,9 +109,7 @@
     "hours": "Monday–Friday, 8:30 a.m.–5:00 p.m.; crisis line 24/7",
     "tags": "la-grange|CMHC|Seven-Counties|Henry|Oldham|Trimble|mental-health|justice-involved",
     "services": "Individual and group therapy|Substance use counseling|Psychiatric services|Peer support|Crisis intervention referrals",
-    "county": "Oldham",
-    "latitude": "38.4070",
-    "longitude": "-85.3790"
+    "county": "Oldham"
   },
   "529": {
     "description": "Seven Counties Services Spencer County office in Taylorsville provides outpatient mental health and substance use counseling for Spencer County residents. Part of the Louisville-area CMHC serving justice-involved individuals reintegrating from incarceration, on probation, or parole with therapy, psychiatric evaluation, medication management, and peer support.",
@@ -139,9 +123,7 @@
     "hours": "Monday–Friday, 8:30 a.m.–5:00 p.m.; crisis line 24/7",
     "tags": "taylorsville|CMHC|Seven-Counties|Spencer|mental-health|substance-use|justice-involved",
     "services": "Outpatient mental health therapy|Substance use counseling|Psychiatric evaluation|Medication management|Peer support referrals",
-    "county": "Spencer",
-    "latitude": "38.0320",
-    "longitude": "-85.3450"
+    "county": "Spencer"
   },
   "530": {
     "description": "Northern Kentucky Community Action Commission (NKCAC) Gallatin County Neighborhood Center in Warsaw provides LIHEAP utility assistance, weatherization, emergency aid, food security programs, and kynect benefits enrollment for Gallatin, Carroll, Grant, and Owen counties. Serves low-income individuals regardless of criminal history; reentry clients encouraged to apply for needs-based assistance.",
@@ -155,9 +137,7 @@
     "hours": "Monday–Friday, 12:00 p.m.–4:00 p.m. (Neighborhood Center)",
     "tags": "warsaw|NKCAC|LIHEAP|community-action|Gallatin|Carroll|Grant|Owen|reentry|utility-assistance",
     "services": "LIHEAP utility assistance|Weatherization|Emergency financial aid|Food security programs|kynect Medicaid and SNAP enrollment",
-    "county": "Gallatin",
-    "latitude": "38.7830",
-    "longitude": "-84.9010"
+    "county": "Gallatin"
   },
   "531": {
     "description": "Boyle County Detention Center (BCDC) hosts a Kentucky DOC-contracted Substance Abuse Program (SAP) for state-sentenced male inmates—a six-month intensive therapeutic community with 35 hours weekly of evidence-based curriculum, group therapy, and recovery activities. Operated by Shepherd's House under state contract. BCDC also offers MRT, GED, Jail to Job reentry, and PORTAL programs. Post-release IOP available through Shepherd's House Danville.",
@@ -171,9 +151,7 @@
     "hours": "SAP programming Mon–Fri 8:00 a.m.–4:00 p.m. for enrolled state inmates",
     "tags": "danville|SAP|jail-treatment|BCDC|Shepherds-House|state-inmates|reentry|MRT|DOC-contract",
     "services": "In-custody SAP therapeutic community (state inmates)|MRT and anger management|GED and Jail to Job reentry|PORTAL New Direction|Post-release IOP linkage via Shepherd's House",
-    "county": "Boyle",
-    "latitude": "37.6150",
-    "longitude": "-84.7690"
+    "county": "Boyle"
   },
   "532": {
     "description": "Kentucky Department of Corrections Probation & Parole District 6 office in Danville supervises individuals on felony probation, parole, or conditional discharge in Boyle, Green, LaRue, Marion, Mercer, Nelson, Taylor, and Washington counties. Provides reporting, case management, and referrals to community reentry resources. Call to confirm reporting schedule and walk-in availability.",
@@ -187,9 +165,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "danville|probation-parole|District-6|DOC|Boyle|8-counties|supervision|reentry",
     "services": "Felony probation and parole supervision|Conditional discharge reporting|Case management|Community reentry referrals|Walk-in reporting (call to confirm)",
-    "county": "Boyle",
-    "latitude": "37.6390",
-    "longitude": "-84.7740"
+    "county": "Boyle"
   },
   "533": {
     "description": "Bluegrass Community Action Partnership (BGCAP) Boyle County office in Danville provides LIHEAP utility assistance, weatherization, emergency financial aid, kynect benefits enrollment, and family support for low-income residents of Boyle and Garrard counties. Serves individuals regardless of criminal history; official kynector for Medicaid, SNAP, and health plan applications.",
@@ -203,9 +179,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:00 p.m.",
     "tags": "danville|BGCAP|LIHEAP|community-action|Boyle|Garrard|kynect|reentry|utility-assistance",
     "services": "LIHEAP utility assistance|Weatherization|Emergency financial aid|kynect Medicaid and SNAP enrollment|Family self-sufficiency programs",
-    "county": "Boyle",
-    "latitude": "37.6450",
-    "longitude": "-84.7700"
+    "county": "Boyle"
   },
   "534": {
     "description": "Bluegrass Community Action Partnership (BGCAP) Lincoln County office in Stanford provides LIHEAP utility assistance, weatherization, emergency financial aid, food referrals, and kynect benefits enrollment for low-income Lincoln County residents. Serves clients regardless of criminal history; walk-ins welcome—call ahead to confirm hours and seasonal program availability.",
@@ -219,9 +193,7 @@
     "hours": "Monday–Friday, 7:30 a.m.–4:00 p.m.",
     "tags": "stanford|BGCAP|LIHEAP|Lincoln|community-action|kynect|reentry|utility-assistance",
     "services": "LIHEAP utility assistance|Weatherization|Emergency financial aid|Food referrals|kynect benefits enrollment",
-    "county": "Lincoln",
-    "latitude": "37.5300",
-    "longitude": "-84.6620"
+    "county": "Lincoln"
   },
   "535": {
     "description": "Cliffview Recovery Center is a Mountain Comprehensive Care Center (MCCC) program offering residential and intensive outpatient substance use treatment on 42 acres at Herrington Lake near Lancaster. Serves adults with evidence-based practices including CBT, DBT, 12-step recovery, and Recovery Dynamics. Accepts court, jail, and community supervision referrals with discharge planning for reentry.",
@@ -236,9 +208,7 @@
     "hours": "Call for intake; residential program 24/7",
     "tags": "lancaster|Cliffview|MCCC|residential|IOP|substance-use|Garrard|court-referral|reentry",
     "services": "Residential substance use treatment|Intensive outpatient program|Outpatient aftercare up to one year|Life skills and recreational therapy|Court and jail referral intake",
-    "county": "Garrard",
-    "latitude": "37.6150",
-    "longitude": "-84.5770"
+    "county": "Garrard"
   },
   "536": {
     "description": "WestCare Kentucky's Estill County Community Involvement Center (CIC) in Irvine provides outpatient substance use treatment including individual and group counseling, DUI assessments, anger management, relapse prevention, and vocational assistance. Serves justice-involved individuals under community supervision or recently released with Medicaid, private insurance, and sliding-scale self-pay options.",
@@ -252,9 +222,7 @@
     "hours": "Monday–Friday, 9:00 a.m.–5:00 p.m.",
     "tags": "irvine|WestCare|CIC|substance-use|outpatient|Estill|DUI|justice-involved|eastern-kentucky",
     "services": "Outpatient substance use counseling|DUI assessments and education|Anger management|Relapse prevention|Vocational assistance and housing linkage",
-    "county": "Estill",
-    "latitude": "37.7010",
-    "longitude": "-83.9740"
+    "county": "Estill"
   },
   "537": {
     "description": "New Vista Estill County Outpatient Clinic in Irvine provides mental health, substance use, primary care, and crisis services for Estill County residents. Regional CMHC (Region 15) serving 17 Bluegrass counties with Open Access intake, walk-in assessments Tue/Thu, and 24/7 helpline. Serves justice-involved individuals on probation or parole.",
@@ -268,9 +236,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–5:00 p.m. (closed lunch 12–1 p.m.); crisis helpline 24/7",
     "tags": "irvine|New-Vista|CMHC|mental-health|substance-use|Estill|Open-Access|crisis|Region-15",
     "services": "Outpatient mental health therapy|Substance use and IOP programs|Psychiatric care and medication management|Primary care integration|24/7 crisis helpline and mobile crisis",
-    "county": "Estill",
-    "latitude": "37.6980",
-    "longitude": "-83.9720"
+    "county": "Estill"
   },
   "538": {
     "description": "NorthKey Community Care Carroll County office in Carrollton provides outpatient mental health, substance use, psychiatric, and IDD services for Carroll County residents. Northern Kentucky CMHC with Open Access at all offices and 24/7 crisis line. Serves justice-involved individuals on probation or parole with therapy, case management, peer support, and housing/vocational specialists.",
@@ -284,8 +250,6 @@
     "hours": "Monday–Friday, 8:30 a.m.–5:00 p.m.; first Tuesday until 7:00 p.m.; crisis line 24/7",
     "tags": "carrollton|NorthKey|CMHC|mental-health|substance-use|Carroll|crisis|Open-Access|justice-involved",
     "services": "Outpatient mental health and SUD therapy|Psychiatric services|Open Access intake|24/7 crisis line|Peer support and housing/vocational specialists",
-    "county": "Carroll",
-    "latitude": "38.6800",
-    "longitude": "-85.1790"
+    "county": "Carroll"
   }
 }

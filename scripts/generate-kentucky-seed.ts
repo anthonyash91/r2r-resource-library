@@ -53,8 +53,6 @@ const resourceInserts = KENTUCKY_RESOURCES.map((r) => {
     ${sqlString(r.eligibility)},
     ${sqlArray(r.services)},
     ${sqlArray(r.tags)},
-    ${r.latitude ?? "NULL"},
-    ${r.longitude ?? "NULL"},
     ${r.is_featured},
     ${sqlString(r.status)}
   )`;
@@ -79,7 +77,7 @@ ON CONFLICT (slug) DO UPDATE SET
 INSERT INTO resources (
   id, name, description, description_es, category_id,
   state, county, city, address, phone, website, email, hours, eligibility,
-  services, tags, latitude, longitude, is_featured, status
+  services, tags, is_featured, status
 ) VALUES
 ${resourceInserts}
 ON CONFLICT (id) DO UPDATE SET
@@ -98,8 +96,6 @@ ON CONFLICT (id) DO UPDATE SET
   eligibility = EXCLUDED.eligibility,
   services = EXCLUDED.services,
   tags = EXCLUDED.tags,
-  latitude = EXCLUDED.latitude,
-  longitude = EXCLUDED.longitude,
   is_featured = EXCLUDED.is_featured,
   status = EXCLUDED.status,
   updated_at = NOW();

@@ -105,12 +105,8 @@ Future API routes can be added at `src/app/api/` for:
 
 ### Future: Distance Search
 
-Schema includes `latitude` and `longitude` on resources. Future implementation:
+Not planned. Resources are located by county and address text; distance-based sorting would require geocoding at query time rather than stored coordinates.
 
-```sql
--- PostGIS or earthdistance extension
-ORDER BY location <-> ST_MakePoint(lng, lat)
-```
 
 ## Component Architecture
 

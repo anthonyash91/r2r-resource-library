@@ -15,6 +15,7 @@ import {
 } from "@/lib/admin-resources";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslations } from "@/i18n/locale-context";
+import { useConfirmDialog } from "@/components/ui/confirm-dialog";
 
 interface ResourceFormProps {
   categories: Category[];
@@ -24,6 +25,7 @@ interface ResourceFormProps {
 export function ResourceForm({ categories, resource }: ResourceFormProps) {
   const router = useRouter();
   const { t } = useTranslations();
+  const { alert } = useConfirmDialog();
   const [form, setForm] = useState<ResourceFormData>({
     name: resource?.name ?? "",
     description: resource?.description ?? "",
@@ -55,7 +57,7 @@ export function ResourceForm({ categories, resource }: ResourceFormProps) {
     setSaving(true);
 
     if (!isSupabaseConfigured()) {
-      alert(t("admin.resourceSaveFailed"));
+      await alert({ title: t("common.error"), message: t("admin.resourceSaveFailed") });
       setSaving(false);
       return;
     }
@@ -63,26 +65,32 @@ export function ResourceForm({ categories, resource }: ResourceFormProps) {
     if (resource?.id) {
       const result = await updateResource(resource.id, form, wasFeatured);
       if (result.error === "max_featured") {
-        alert(t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }));
+        await alert({
+          title: t("common.notice"),
+          message: t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }),
+        });
         setForm((prev) => ({ ...prev, is_featured: wasFeatured }));
         setSaving(false);
         return;
       }
       if (result.error) {
-        alert(t("admin.resourceSaveFailed"));
+        await alert({ title: t("common.error"), message: t("admin.resourceSaveFailed") });
         setSaving(false);
         return;
       }
     } else {
       const result = await createResource(form);
       if (result.error === "max_featured") {
-        alert(t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }));
+        await alert({
+          title: t("common.notice"),
+          message: t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }),
+        });
         setForm((prev) => ({ ...prev, is_featured: false }));
         setSaving(false);
         return;
       }
       if (result.error) {
-        alert(t("admin.resourceSaveFailed"));
+        await alert({ title: t("common.error"), message: t("admin.resourceSaveFailed") });
         setSaving(false);
         return;
       }

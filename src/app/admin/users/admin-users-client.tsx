@@ -8,14 +8,24 @@ import type { Profile } from "@/types";
 import { formatDate } from "@/lib/utils";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslations } from "@/i18n/locale-context";
+import { useConfirmDialog } from "@/components/ui/confirm-dialog";
 
-export function AdminUsersClient({ initialUsers }: { initialUsers: Profile[] }) {
+export function AdminUsersClient({ initialUsers }: { initialUsers: Profile[]}) {
   const { t, locale } = useTranslations();
+  const { confirm, alert } = useConfirmDialog();
   const [users, setUsers] = useState(initialUsers);
   const [busyId, setBusyId] = useState<string | null>(null);
 
   const toggleActive = async (user: Profile) => {
-    if (user.is_active && !confirm(t("admin.disableConfirm"))) return;
+    if (user.is_active) {
+      const confirmed = await confirm({
+        title: t("admin.disable"),
+        message: t("admin.disableConfirm"),
+        confirmLabel: t("admin.disable"),
+        destructive: true,
+      });
+      if (!confirmed) return;
+    }
 
     const nextActive = !user.is_active;
 
@@ -31,7 +41,7 @@ export function AdminUsersClient({ initialUsers }: { initialUsers: Profile[] }) 
         setBusyId(null);
 
         if (error) {
-          alert(t("admin.userUpdateFailed"));
+          await alert({ title: t("common.error"), message: t("admin.userUpdateFailed") });
           return;
         }
       }
@@ -43,8 +53,15 @@ export function AdminUsersClient({ initialUsers }: { initialUsers: Profile[] }) 
   };
 
   const resetPassword = async (email: string) => {
+    const confirmed = await confirm({
+      title: t("admin.resetPassword"),
+      message: t("admin.resetPasswordConfirm", { email }),
+      confirmLabel: t("admin.resetPassword"),
+    });
+    if (!confirmed) return;
+
     if (!isSupabaseConfigured()) {
-      alert(t("admin.resetPasswordAlert", { email }));
+      await alert({ title: t("common.notice"), message: t("admin.resetPasswordAlert", { email }) });
       return;
     }
 
@@ -58,11 +75,11 @@ export function AdminUsersClient({ initialUsers }: { initialUsers: Profile[] }) 
     setBusyId(null);
 
     if (error) {
-      alert(t("admin.userUpdateFailed"));
+      await alert({ title: t("common.error"), message: t("admin.userUpdateFailed") });
       return;
     }
 
-    alert(t("admin.resetPasswordSent", { email }));
+    await alert({ title: t("common.success"), message: t("admin.resetPasswordSent", { email }) });
   };
 
   return (

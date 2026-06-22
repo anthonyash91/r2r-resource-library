@@ -10,9 +10,7 @@
     "hours": "Monday–Friday during business hours; contact for appointment",
     "tags": "eastern-kentucky|EKCEP|SITE|recovery|reentry|peer-support|workforce|23-counties",
     "services": "Recovery-informed career advising|Barrier relief assistance|Peer support certification funding|Second-chance job placement|American Job Center services",
-    "county": "Perry",
-    "latitude": "37.2490",
-    "longitude": "-83.1930"
+    "county": "Perry"
   },
   "282": {
     "description": "Baptist Fellowship Center is a faith-based community ministry in west Louisville offering youth mentoring (S.O.Y. Save Our Youth program), family support, employment readiness, and life-skills training for individuals and families seeking stability after incarceration or justice involvement. Provides mentoring, budgeting help, and connections to community partners—not a state-contracted reentry facility, but a grassroots support hub open to returning citizens.",
@@ -23,9 +21,7 @@
     "hours": "Monday–Friday during business hours; call for appointment",
     "tags": "louisville|faith-based|mentoring|reentry|youth|family-support|west-end",
     "services": "Youth mentoring (S.O.Y.)|Family support and counseling|Employment readiness training|Community resource connections|Life skills development",
-    "county": "Jefferson",
-    "latitude": "38.2380",
-    "longitude": "-85.8120"
+    "county": "Jefferson"
   },
   "283": {
     "description": "Narcotics Anonymous Kentucky offers free peer-led recovery meetings for people seeking freedom from addiction. Meetings available in all Kentucky regions—in-person, online, and hybrid—with no dues, fees, or membership requirements. Use the meeting finder to locate the nearest group by city or zip code. Welcoming to people leaving incarceration, treatment, or active use.",
@@ -35,9 +31,7 @@
     "notes_es": "NA no está afiliado a ninguna otra organización. Formatos de reuniones varían. Reuniones virtuales en naky.org. No se requiere referido.",
     "hours": "Meeting times vary by group; many groups meet daily—check meeting finder",
     "tags": "statewide|NA|narcotics-anonymous|peer-support|recovery|free|meetings",
-    "services": "In-person NA meetings|Online and hybrid meetings|Meeting locator by county|Peer-led recovery support|No-cost participation",
-    "latitude": "37.8393",
-    "longitude": "-84.2700"
+    "services": "In-person NA meetings|Online and hybrid meetings|Meeting locator by county|Peer-led recovery support|No-cost participation"
   },
   "284": {
     "description": "Alcoholics Anonymous Kentucky provides free peer support meetings for people recovering from alcohol use disorder. Meetings held statewide in cities and rural communities, with many online options. No dues, fees, or professional counselors—members share experience, strength, and hope. Open to anyone with a desire to stop drinking, including people reentering from incarceration.",
@@ -47,9 +41,7 @@
     "notes_es": "Encuentre reuniones locales en aa-ky.org. Reuniones abiertas dan la bienvenida a todos; cerradas para quienes tienen un problema de alcohol.",
     "hours": "Meeting schedules vary; many groups meet daily—check aa-ky.org",
     "tags": "statewide|AA|alcoholics-anonymous|peer-support|recovery|free|meetings",
-    "services": "In-person AA meetings|Online meeting options|Area meeting directories|Peer-led sobriety support|Sponsorship connections",
-    "latitude": "37.8393",
-    "longitude": "-84.2700"
+    "services": "In-person AA meetings|Online meeting options|Area meeting directories|Peer-led sobriety support|Sponsorship connections"
   },
   "300": {
     "description": "Kentucky Community and Technical College System (KCTCS) administers free adult education and GED preparation statewide through 13 college-based Kentucky Adult Education (KYAE) providers in all 120 counties. Classes offered in communities, jails, and prisons. Kentucky pays for first GED test in each subject (plus limited retakes) for eligible test-takers who pass the free GED Ready practice test—use promo code KYFREEGED1. Over 4,460 GEDs awarded to incarcerated Kentuckians 2020–2024.",
@@ -59,9 +51,7 @@
     "notes_es": "Encuentre su centro en kyae.ky.gov. Edad mínima 19 sin exención. También ofrece ESL, certificaciones laborales y alfabetización familiar.",
     "hours": "Local center hours vary by KCTCS college—contact nearest provider",
     "tags": "statewide|KCTCS|GED|adult-education|KYAE|incarcerated-education|free-testing",
-    "services": "Free GED preparation classes|Corrections education in jails and prisons|GED Ready practice testing|Free first-time GED testing|ESL and workforce certifications",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "services": "Free GED preparation classes|Corrections education in jails and prisons|GED Ready practice testing|Free first-time GED testing|ESL and workforce certifications"
   },
   "301": {
     "description": "Bluegrass Community & Technical College (BCTC) Adult Education provides free GED preparation for adults in Central Kentucky—Fayette, Bourbon, Clark, Harrison, Jessamine, Mercer, Scott, and Woodford counties. In-person and online class options. Part of the statewide KYAE/KCTCS network with free GED Ready testing and state-funded first-time GED exam fees for eligible students.",
@@ -74,9 +64,7 @@
     "hours": "Monday–Friday during business hours; class schedules vary by location",
     "tags": "lexington|GED|adult-education|BCTC|central-kentucky|8-counties",
     "services": "Free GED classes|Online and in-person instruction|GED Ready testing|College transition support|Workforce certification referrals",
-    "county": "Fayette",
-    "latitude": "38.0310",
-    "longitude": "-84.5260"
+    "county": "Fayette"
   },
   "302": {
     "description": "Gateway Community & Technical College Adult Education offers free GED preparation in Northern Kentucky for Boone, Kenton, Campbell, Grant, Owen, and surrounding counties. Kentucky waives GED testing fees for first-time test takers working through a KYAE center. Classes at Florence campus and community sites. Gateway also recognizes GED College Ready scores for college enrollment.",
@@ -87,9 +75,7 @@
     "hours": "Monday–Friday during business hours",
     "tags": "northern-kentucky|GED|adult-education|Gateway-KCTCS|Florence|6-counties",
     "services": "Free GED preparation|Testing fee waiver assistance|GED Ready practice tests|College enrollment pathway|Workforce skills training",
-    "county": "Boone",
-    "latitude": "39.0250",
-    "longitude": "-84.6270"
+    "county": "Boone"
   },
   "303": {
     "description": "Southcentral Kentucky Community & Technical College (SKYCTC) Adult Education provides free GED classes for Warren, Barren, Simpson, and Metcalfe counties. Part of the KCTCS/KYAE statewide network with corrections education offerings. Kentucky covers first GED test fees for eligible students completing GED Ready through a local center.",
@@ -102,9 +88,7 @@
     "hours": "Monday–Friday during business hours",
     "tags": "bowling-green|GED|adult-education|SKYCTC|south-central-kentucky|4-counties",
     "services": "Free GED preparation|Skills assessment and intake|GED testing coordination|Workforce certification pathways|Corrections education",
-    "county": "Warren",
-    "latitude": "36.9680",
-    "longitude": "-86.4800"
+    "county": "Warren"
   },
   "304": {
     "description": "Kentucky Adult Education (KYAE) is the state office connecting residents to free adult education in all 120 counties—GED preparation, literacy, ESL, workforce certifications, and family literacy. Use the online locator to find your county's KCTCS-based adult education center. All GED seekers must pass the GED Ready practice test (free at KYAE centers) before qualifying for state-funded GED testing.",
@@ -114,9 +98,7 @@
     "notes_es": "Códigos promocionales: KYFREEGED1 (centro) u OPKYFREEGED (en línea). Inscripción no requerida pero recomendada para apoyo académico.",
     "hours": "Varies by county center—use locator for local contact",
     "tags": "statewide|KYAE|adult-education|GED-locator|120-counties|ESL|literacy",
-    "services": "County program locator|GED pathway information|ESL and literacy referrals|Workforce certification programs|Free GED Ready testing info",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "services": "County program locator|GED pathway information|ESL and literacy referrals|Workforce certification programs|Free GED Ready testing info"
   },
   "400": {
     "description": "Robley Rex VA Medical Center is a full-service VA hospital serving Louisville-area veterans 24/7. Offers primary care, mental health, substance use treatment, specialty care, and homeless veteran services. Justice-involved veterans can access Veterans Justice Outreach (VJO) coordinators embedded in mental health who work with courts, jails, and probation. Toll-free: 800-376-8387.",
@@ -127,9 +109,7 @@
     "hours": "Open 24 hours, 7 days a week",
     "tags": "louisville|VA|veterans|mental-health|substance-use|VJO|24-7|hospital",
     "services": "Primary and specialty medical care|Mental health and SUD treatment|Veterans Justice Outreach|Homeless veteran care coordination|Emergency services",
-    "county": "Jefferson",
-    "latitude": "38.2640",
-    "longitude": "-85.7050"
+    "county": "Jefferson"
   },
   "401": {
     "description": "Louisville VA Veterans Justice Outreach (VJO) places four coordinators at Robley Rex VA who work directly with courts, jails, and probation/parole to identify and engage justice-involved veterans. VJO helps veterans access VA mental health, substance use treatment, housing, and benefits as an alternative to incarceration when appropriate. Ask for Mental Health/VJO when calling the medical center.",
@@ -140,9 +120,7 @@
     "hours": "Coordinators available during business hours; crisis line 24/7",
     "tags": "louisville|VJO|veterans|justice-involved|courts|jails|mental-health|reentry",
     "services": "Court and jail outreach to veterans|VA benefits and treatment linkage|Alternative-to-incarceration coordination|Substance use and mental health referrals|Housing and reentry navigation",
-    "county": "Jefferson",
-    "latitude": "38.2640",
-    "longitude": "-85.7050"
+    "county": "Jefferson"
   },
   "402": {
     "description": "Lexington VA Health Care System serves Central and Eastern Kentucky veterans across Leestown and Sousley campuses. Full-service medical center with mental health, substance use treatment, primary care, and specialty services. Justice-involved veterans can connect with VJO coordinators and homeless veteran care teams for reentry support from jails and courts in the region.",
@@ -153,9 +131,7 @@
     "hours": "Varies by clinic; emergency services available—call for hours",
     "tags": "lexington|VA|veterans|central-kentucky|eastern-kentucky|mental-health|Leestown",
     "services": "Primary and specialty care|Mental health and SUD treatment|VJO coordination|Homeless veteran services|Telehealth options",
-    "county": "Fayette",
-    "latitude": "38.0580",
-    "longitude": "-84.5030"
+    "county": "Fayette"
   },
   "403": {
     "description": "Lexington VA Veterans Justice Outreach connects justice-involved veterans in Central and Eastern Kentucky to VA mental health, substance use, housing, and benefits through court and jail partnerships. VJO coordinators Kathy Vasquez and Janis Skilling serve Fayette County and surrounding regions including satellite Vet Center locations in Corbin, Lawrenceburg, London, Mt. Sterling, and Richmond.",
@@ -166,9 +142,7 @@
     "hours": "Business hours; after-hours crisis via Veterans Crisis Line 988 press 1",
     "tags": "lexington|VJO|veterans|justice-involved|central-kentucky|eastern-kentucky|courts",
     "services": "Court and jail veteran identification|VA treatment enrollment assistance|Housing and benefits navigation|Specialty court coordination|Regional satellite outreach",
-    "county": "Fayette",
-    "latitude": "38.0580",
-    "longitude": "-84.5030"
+    "county": "Fayette"
   },
   "404": {
     "description": "National Call Center for Homeless Veterans (877-4AID-VET) is a free, confidential 24/7 hotline connecting veterans— including those leaving incarceration without housing—to the nearest VA homeless program, emergency shelter, and case management. Critical first contact for veterans with no place to stay after release. Trained counselors assess needs and link to HUD-VASH, SSVF, and other VA housing resources.",
@@ -178,9 +152,7 @@
     "notes_es": "También chat en va.gov/homeless. Tenga DD-214 y SSN listos si están disponibles.",
     "hours": "24 hours a day, 7 days a week",
     "tags": "statewide|veterans|homeless|24-7|hotline|housing|reentry|VA",
-    "services": "24/7 homeless veteran triage|VA housing program referrals|Emergency shelter connections|Case management linkage|HUD-VASH and SSVF intake routing",
-    "latitude": "37.8393",
-    "longitude": "-84.2700"
+    "services": "24/7 homeless veteran triage|VA housing program referrals|Emergency shelter connections|Case management linkage|HUD-VASH and SSVF intake routing"
   },
   "405": {
     "description": "Veterans Crisis Line provides free, confidential crisis support for veterans and their families 24/7. Call or text 988 then press 1, or chat at veteranscrisisline.net. Trained responders—many veterans themselves—provide immediate support for suicidal crisis, PTSD episodes, and reentry stress. Also supports active duty, Guard, Reserve, and family members.",
@@ -190,9 +162,7 @@
     "notes_es": "Envíe mensaje al 838255. No requiere inscripción en VA. Si hay peligro inmediato, llame al 911. Soporte en español disponible.",
     "hours": "24 hours a day, 7 days a week",
     "tags": "statewide|veterans|crisis|988|24-7|PTSD|suicide-prevention|confidential",
-    "services": "Immediate crisis counseling|988 press 1 veteran line|Text and chat support|Connection to local VA resources|Family member support",
-    "latitude": "37.8393",
-    "longitude": "-84.2700"
+    "services": "Immediate crisis counseling|988 press 1 veteran line|Text and chat support|Connection to local VA resources|Family member support"
   },
   "406": {
     "description": "Louisville Vet Center provides free, confidential counseling in a non-VA community setting for combat veterans and their families—often easier to access than a medical center. Services include PTSD treatment, military sexual trauma (MST) support, readjustment counseling, bereavement, and reentry navigation. No cost regardless of discharge status for combat veterans. Same 877 number provides 24/7 crisis support.",
@@ -203,9 +173,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.; crisis line 24/7",
     "tags": "louisville|vet-center|veterans|PTSD|MST|counseling|reentry|combat-veterans",
     "services": "PTSD and readjustment counseling|MST support|Bereavement counseling|Reentry and family support|24/7 crisis line access",
-    "county": "Jefferson",
-    "latitude": "38.2350",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "407": {
     "description": "Lexington Vet Center offers free counseling and reentry support for combat veterans in a welcoming, non-clinical community setting. Satellite outreach locations in Corbin, Lawrenceburg, London, Mt. Sterling, and Richmond extend access across Central and Eastern Kentucky. Services include PTSD treatment, MST support, marriage and family counseling, and employment transition help.",
@@ -216,9 +184,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.; satellite hours vary—call to confirm",
     "tags": "lexington|vet-center|veterans|PTSD|central-kentucky|satellite-locations|counseling",
     "services": "Individual and group counseling|PTSD and MST treatment|Satellite outreach in 5 cities|Employment transition support|24/7 crisis line",
-    "county": "Fayette",
-    "latitude": "38.0580",
-    "longitude": "-84.5030"
+    "county": "Fayette"
   },
   "408": {
     "description": "Louisville VA Regional Benefit Office processes disability compensation claims, pension, education benefits (GI Bill), vocational rehabilitation (VR&E Chapter 31), and life insurance for Kentucky veterans. Chapter 31 VR&E helps veterans with service-connected disabilities prepare for, find, and keep employment—including justice-involved veterans rebuilding careers after incarceration.",
@@ -229,9 +195,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:00 p.m.",
     "tags": "louisville|VA-benefits|disability|Chapter-31|vocational-rehab|GI-Bill|employment",
     "services": "Disability compensation claims|Pension and education benefits|VR&E Chapter 31 employment services|Life insurance|Benefits counseling and appeals",
-    "county": "Jefferson",
-    "latitude": "38.2567",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "409": {
     "description": "HUD-VASH pairs HUD Section 8 rental vouchers with VA case management for homeless veterans, including those transitioning from incarceration. Entry point is through the VA Medical Center homeless team—call Robley Rex at (502) 287-4000 or the National Call Center at 877-424-3838. Louisville Metro Housing Authority administers local vouchers. VOA Mid-States provides SSVF (Supportive Services for Veteran Families) across Kentucky.",
@@ -242,9 +206,7 @@
     "hours": "VA intake during business hours; homeless hotline 24/7",
     "tags": "statewide|HUD-VASH|veterans|housing|homeless|SSVF|rental-vouchers|reentry",
     "services": "HUD rental voucher referral|VA case management|SSVF rapid rehousing|Homeless veteran intake|Housing search assistance",
-    "county": "Jefferson",
-    "latitude": "38.2640",
-    "longitude": "-85.7050"
+    "county": "Jefferson"
   },
   "410": {
     "description": "Kentucky Department of Veterans Affairs (KDVA) is the state agency supporting Kentucky's 290,000+ veterans with 20 federally accredited Veteran Service Officers (VSOs) in regional offices. Programs include Veterans High School Diploma, Homeless Veterans Program, Women Veterans Program, and free benefits claims assistance. VSOs help file VA disability, pension, and education claims at no charge.",
@@ -255,9 +217,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m. (regional offices; hours may vary)",
     "tags": "statewide|KDVA|VSO|benefits-claims|homeless-veterans|women-veterans|Frankfort",
     "services": "Free VA benefits claims assistance|Veterans High School Diploma Program|Homeless veterans state support|Women veterans resources|Regional VSO network",
-    "county": "Franklin",
-    "latitude": "38.1860",
-    "longitude": "-84.8750"
+    "county": "Franklin"
   },
   "411": {
     "description": "VFW Department of Kentucky provides free VA-accredited service officers who help veterans file disability compensation, pension, vocational rehabilitation, and employment benefit claims. Post-level VSOs located throughout the state—no membership required for claims assistance. Department headquarters in Louisville coordinates training and advocacy for Kentucky veterans.",
@@ -268,9 +228,7 @@
     "hours": "Department office Mon–Fri business hours; post hours vary",
     "tags": "statewide|VFW|VSO|benefits-claims|disability|free-assistance|veterans",
     "services": "VA disability claims assistance|Pension and benefits filing|Vocational rehabilitation claims|Post-level VSO network|Veterans advocacy",
-    "county": "Jefferson",
-    "latitude": "38.2380",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "412": {
     "description": "Kentucky American Legion operates a statewide network of free Veteran Service Officers helping veterans navigate VA disability claims, pension applications, and benefits appeals. Local posts in communities across all 120 counties provide claims assistance without requiring Legion membership. Department headquarters in Louisville.",
@@ -281,9 +239,7 @@
     "hours": "Department office Mon–Fri business hours; post schedules vary",
     "tags": "statewide|American-Legion|VSO|benefits-claims|veterans|120-counties|free",
     "services": "VA claims and appeals assistance|Benefits navigation|Pension and disability filing|Local post VSO network|Veterans advocacy",
-    "county": "Jefferson",
-    "latitude": "38.2465",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "430": {
     "description": "Wayside Christian Mission provides emergency shelter, meals, clothing, and hygiene supplies for men and women in downtown Louisville. Operates the Sober Living Recovery Program and Work Therapy Program for residents building stability after homelessness or incarceration. Accepts donated clothing and distributes to clients. 24/7 shelter access for those in crisis.",
@@ -294,9 +250,7 @@
     "hours": "Emergency shelter 24/7; administrative offices Mon–Fri business hours",
     "tags": "louisville|shelter|meals|clothing|sober-living|work-therapy|emergency|basic-needs",
     "services": "Emergency shelter and meals|Clothing and hygiene distribution|Sober Living Recovery Program|Work Therapy Program|Donation intake",
-    "county": "Jefferson",
-    "latitude": "38.2520",
-    "longitude": "-85.7480"
+    "county": "Jefferson"
   },
   "431": {
     "description": "St. Vincent de Paul Louisville operates a client-choice food pantry, Open Hand Kitchen daily meals, Ozanam Inn men's emergency shelter (58 beds with 24/7 case management), emergency financial assistance, and thrift stores with affordable clothing and household goods. Serves low-income Louisvillians including people reentering from incarceration who need food, clothing, and short-term shelter.",
@@ -307,9 +261,7 @@
     "hours": "Pantry and kitchen hours vary; call (502) 584-2480 for schedules",
     "tags": "louisville|food-pantry|shelter|Ozanam-Inn|thrift-store|emergency-assistance|basic-needs",
     "services": "Client-choice food pantry|Daily community meals|Men's emergency shelter (Ozanam Inn)|Emergency financial aid|Affordable thrift store clothing",
-    "county": "Jefferson",
-    "latitude": "38.2380",
-    "longitude": "-85.7480"
+    "county": "Jefferson"
   },
   "432": {
     "description": "Dress for Success Louisville provides professional attire, career coaching, and support services for women entering or re-entering the workforce—including after incarceration. Referral required from a partner agency such as Goodwill KY, Louisville Urban League, Kentucky Career Centers, or Seven Counties. Has served 16,500+ women with suiting, interview preparation, and ongoing career support.",
@@ -320,9 +272,7 @@
     "hours": "By appointment after referral; Mon–Fri typical scheduling",
     "tags": "louisville|dress-for-success|women|career|professional-clothing|referral-required|workforce",
     "services": "Professional interview attire|Career coaching and interview prep|Referral-based suiting appointments|Professional Women's Group|Workforce reentry support for women",
-    "county": "Jefferson",
-    "latitude": "38.1920",
-    "longitude": "-85.7420"
+    "county": "Jefferson"
   },
   "450": {
     "description": "Kentucky Department of Corrections Division of Probation and Parole Central Office oversees community supervision statewide for approximately 55,000 probationers and parolees. Contact for general policy questions, interstate compact matters, or referral to your local district office. Does not replace reporting to your assigned district—always contact your supervising officer for case-specific needs.",
@@ -333,9 +283,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "statewide|probation|parole|DOC|central-office|supervision|Frankfort",
     "services": "Central office information|District office referral|Interstate compact coordination|Home incarceration program info|Supervision policy guidance",
-    "county": "Franklin",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "county": "Franklin"
   },
   "451": {
     "description": "Jefferson County Probation & Parole offices at Chestnut Centre (410 W. Chestnut St.) house multiple DOC districts serving Louisville-area probationers and parolees. District 16 (7th floor, 502-896-1775) and District 4 (4th floor, 502-595-4035) among others share the building. Report to the district assigned on your release paperwork—call your officer if unsure.",
@@ -346,9 +294,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "louisville|probation|parole|Jefferson-County|DOC|reporting|Chestnut-Centre",
     "services": "Probation supervision|Parole supervision|Reporting and check-ins|Case officer contact|Referrals to reentry services",
-    "county": "Jefferson",
-    "latitude": "38.2520",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "452": {
     "description": "Kentucky DOC Probation & Parole District 9 serves Fayette County and surrounding Central Kentucky from the Mercer Road office. Supervises felony and misdemeanor probation, parole, and conditional discharge cases. Report on schedule assigned by your officer; call office for address verification or schedule changes.",
@@ -359,9 +305,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "lexington|probation|parole|District-9|Fayette|DOC|supervision",
     "services": "Probation and parole supervision|Scheduled reporting|Officer case management|Community supervision compliance|Reentry resource referrals",
-    "county": "Fayette",
-    "latitude": "38.0280",
-    "longitude": "-84.4890"
+    "county": "Fayette"
   },
   "453": {
     "description": "Kentucky DOC Probation & Parole District 7 serves Kenton County and Northern Kentucky from the Covington courthouse area. Supervises probationers and parolees in Boone, Campbell, Kenton, and surrounding NKY counties. Contact office for reporting schedule, officer assignment, and verification of compliance requirements.",
@@ -372,9 +316,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "northern-kentucky|probation|parole|District-7|Kenton|Covington|DOC",
     "services": "Probation and parole supervision|Reporting appointments|Case officer management|Compliance monitoring|Northern KY supervision",
-    "county": "Kenton",
-    "latitude": "39.0837",
-    "longitude": "-84.5085"
+    "county": "Kenton"
   },
   "454": {
     "description": "Kentucky DOC Probation & Parole District 3 serves Warren, Adair, Barren, Casey, Cumberland, and Metcalfe counties from Bowling Green. Regional supervision hub for south-central Kentucky parolees and probationers. Contact for reporting schedules, officer changes, and travel permission requests.",
@@ -385,9 +327,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "bowling-green|probation|parole|District-3|Warren|south-central-kentucky|DOC",
     "services": "Multi-county probation supervision|Parole reporting|Officer assignment|Travel and transfer requests|Compliance support",
-    "county": "Warren",
-    "latitude": "36.9680",
-    "longitude": "-86.4800"
+    "county": "Warren"
   },
   "455": {
     "description": "Kentucky DOC Probation & Parole District 1 serves McCracken County and Western Kentucky's Purchase region from Paducah. Entry point for probation and parole supervision in the far west of the state. Contact for reporting requirements and officer information after release to Paducah area.",
@@ -398,9 +338,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "paducah|probation|parole|District-1|McCracken|western-kentucky|DOC",
     "services": "Western KY probation supervision|Parole reporting|Purchase region case management|Officer contact|Compliance monitoring",
-    "county": "McCracken",
-    "latitude": "37.0860",
-    "longitude": "-88.5980"
+    "county": "McCracken"
   },
   "456": {
     "description": "Kentucky DOC Probation & Parole District 11 serves Pike County and surrounding Eastern Kentucky coalfield counties from Pikeville. Supervises probation and parole cases in one of Kentucky's most rural reentry regions. Contact office for reporting location and schedule after release to Eastern KY.",
@@ -411,9 +349,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "pikeville|probation|parole|District-11|Pike|eastern-kentucky|DOC",
     "services": "Eastern KY probation supervision|Parole reporting|Rural reentry supervision|Officer case management|Compliance monitoring",
-    "county": "Pike",
-    "latitude": "37.4790",
-    "longitude": "-82.5180"
+    "county": "Pike"
   },
   "470": {
     "description": "Center for Employment Opportunities (CEO) Louisville exclusively serves people recently released from incarceration who are on probation or parole. One-week job-readiness orientation leads to paid transitional work crews (daily pay), then job coaching, employer outreach, and up to one year of retention support after full-time placement. Referral through parole/probation officer required. Opened August 2019 in partnership with KY DOC and KYTC.",
@@ -425,9 +361,7 @@
     "hours": "Monday–Friday, 8:30 a.m.–4:30 p.m.",
     "tags": "louisville|CEO|employment|reentry|transitional-work|probation-required|paid-training",
     "services": "Paid transitional work crews|Job-readiness orientation|Job coaching and placement|Employer outreach|One-year retention support",
-    "county": "Jefferson",
-    "latitude": "38.2520",
-    "longitude": "-85.7480"
+    "county": "Jefferson"
   },
   "471": {
     "description": "Louisville Metro Reentry Task Force is a coalition coordinating reentry services across Louisville Metro agencies, nonprofits, and faith communities. Connects returning citizens with local resources and maintains communication channels for service providers. Contact for community-level reentry navigation—not a direct service provider but a coordination hub.",
@@ -438,9 +372,7 @@
     "hours": "Contact by email or phone during business hours",
     "tags": "louisville|reentry|coalition|coordination|task-force|community|navigation",
     "services": "Reentry resource coordination|Service provider network|Community reentry advocacy|Agency collaboration|Resource platform support",
-    "county": "Jefferson",
-    "latitude": "38.2527",
-    "longitude": "-85.7585"
+    "county": "Jefferson"
   },
   "472": {
     "description": "Louisville Metro Criminal Justice Commission operates the Kentucky Reentry Toolkit (reentrytool.ky.gov)—a free online platform with life skills resources, case coordination tools, and connections to Louisville Metro reentry services. Dedicated reentry coordinator available through the Commission for individuals and service providers navigating the reentry landscape.",
@@ -451,9 +383,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–5:00 p.m.",
     "tags": "louisville|reentry-toolkit|online-resources|CJC|life-skills|case-coordination",
     "services": "Kentucky Reentry Toolkit online platform|Life skills resource library|Reentry coordinator access|Service provider connections|Case coordination tools",
-    "county": "Jefferson",
-    "latitude": "38.2520",
-    "longitude": "-85.7620"
+    "county": "Jefferson"
   },
   "473": {
     "description": "Louisville Urban League Workforce Development Center provides career counseling, case management, job readiness training, placement referrals, and post-placement support for individuals facing employment barriers—including criminal records. Partners with Dress for Success for women clients. Serves Louisville Metro with emphasis on equitable access to living-wage employment.",
@@ -464,9 +394,7 @@
     "hours": "Monday–Friday during business hours",
     "tags": "louisville|urban-league|workforce|employment|job-readiness|second-chance|barriers",
     "services": "Career counseling and case management|Job readiness training|Employer placement referrals|Post-placement retention support|Dress for Success partner referrals",
-    "county": "Jefferson",
-    "latitude": "38.2380",
-    "longitude": "-85.7755"
+    "county": "Jefferson"
   },
   "474": {
     "description": "AMPED Louisville is a nonprofit serving Black and Latinx communities through technology workforce training, small business incubation, and economic mobility programming. Programs welcome individuals with justice involvement seeking digital skills, entrepreneurship pathways, and career advancement in Louisville's tech and business sectors.",
@@ -477,9 +405,7 @@
     "hours": "Program hours vary—contact for current cohort schedules",
     "tags": "louisville|AMPED|technology|workforce|Black-Latinx|entrepreneurship|justice-involved",
     "services": "Technology workforce training|Small business incubation|Economic mobility programming|Digital literacy|Entrepreneurship support",
-    "county": "Jefferson",
-    "latitude": "38.2380",
-    "longitude": "-85.8120"
+    "county": "Jefferson"
   },
   "475": {
     "description": "Brighton Center is a comprehensive human services nonprofit in Newport serving Campbell and surrounding Northern Kentucky counties. Offers workforce development, financial coaching, housing navigation, family stability services, and emergency assistance for people facing barriers including justice involvement. One-stop resource for NKY reentry support beyond employment alone.",
@@ -490,9 +416,7 @@
     "hours": "Monday–Friday, 8:30 a.m.–5:00 p.m.",
     "tags": "northern-kentucky|Brighton-Center|workforce|housing|financial-coaching|Campbell|reentry",
     "services": "Workforce development|Financial coaching and literacy|Housing navigation|Family stability programs|Emergency assistance",
-    "county": "Campbell",
-    "latitude": "39.0910",
-    "longitude": "-84.4950"
+    "county": "Campbell"
   },
   "476": {
     "description": "Life Learning Center in Covington provides workforce development for adults facing significant employment barriers including criminal records. Offers job-readiness training, digital literacy, placement assistance, and employer connections across Northern Kentucky. Holistic model addresses barriers beyond skills training to support sustainable employment.",
@@ -503,9 +427,7 @@
     "hours": "Monday–Friday during program hours—call for schedule",
     "tags": "northern-kentucky|Life-Learning-Center|workforce|job-readiness|criminal-records|Covington|digital-literacy",
     "services": "Job-readiness training|Digital literacy instruction|Employer placement connections|Personal development programming|Barrier-reduction support",
-    "county": "Kenton",
-    "latitude": "39.0837",
-    "longitude": "-84.5085"
+    "county": "Kenton"
   },
   "477": {
     "description": "Connect Ministries is a faith-based community outreach in Newport serving justice-involved individuals and people in recovery in Campbell County. Provides mentoring, peer support, basic needs assistance, and connections to housing and employment resources near the Campbell County Detention Center. Grassroots support for people reentering in Northern Kentucky.",
@@ -516,8 +438,6 @@
     "hours": "Contact for appointment; community outreach hours vary",
     "tags": "northern-kentucky|Connect-Ministries|faith-based|mentoring|peer-support|Campbell|recovery|reentry",
     "services": "Faith-based mentoring|Peer support groups|Basic needs assistance|Housing resource connections|Employment resource navigation",
-    "county": "Campbell",
-    "latitude": "39.0910",
-    "longitude": "-84.4900"
+    "county": "Campbell"
   }
 }

@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { PageHeroBand } from "@/components/layout/page-hero-band";
 import { Card } from "@/components/ui/card";
-import { cn, pageSectionPadding, checkIconClass } from "@/lib/utils";
+import { cn, pageSectionPadding, checkIconClass, pageSectionSubtitleClass, pageSectionSubtitleOnHeroClass, pageSectionSubheadingClass } from "@/lib/utils";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import type { AboutPageContent } from "@/lib/about-content-fields";
 import { getServerTranslator } from "@/i18n/server";
@@ -112,7 +112,7 @@ export async function AboutPageView({ content, stats }: AboutPageViewProps) {
             <h2 id="about-serve-heading" className="mb-4 text-3xl font-bold text-foreground sm:text-4xl">
               {content.serveTitle}
             </h2>
-            <p className="mb-8 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            <p className={cn("mb-8 leading-relaxed", pageSectionSubtitleClass)}>
               {content.serveIntro}
             </p>
             <ul className="space-y-4">
@@ -135,7 +135,7 @@ export async function AboutPageView({ content, stats }: AboutPageViewProps) {
                     <Icon className="h-6 w-6" aria-hidden="true" />
                   </span>
                   <span>
-                    <h3 className="font-bold text-foreground">{card.title}</h3>
+                    <h3 className={pageSectionSubheadingClass}>{card.title}</h3>
                     <p className="mt-1 text-sm leading-relaxed text-muted-foreground sm:text-base">
                       {card.description}
                     </p>
@@ -156,7 +156,7 @@ export async function AboutPageView({ content, stats }: AboutPageViewProps) {
             <h2 id="about-values-heading" className="text-3xl font-bold text-foreground sm:text-4xl">
               {content.valuesTitle}
             </h2>
-            <p className="mx-auto mt-3 max-w-2xl text-base text-muted-foreground sm:text-lg">
+            <p className={cn("mx-auto mt-3 max-w-2xl", pageSectionSubtitleClass)}>
               {content.valuesSubtitle}
             </p>
           </header>
@@ -171,7 +171,7 @@ export async function AboutPageView({ content, stats }: AboutPageViewProps) {
                     <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-secondary text-primary">
                       <Icon className="h-5 w-5" aria-hidden="true" />
                     </span>
-                    <h3 className="mb-2 text-lg font-bold text-foreground">{value.title}</h3>
+                    <h3 className={cn("mb-2", pageSectionSubheadingClass)}>{value.title}</h3>
                     <p className="text-base leading-relaxed text-muted-foreground">{value.body}</p>
                   </Card>
                 );
@@ -189,7 +189,7 @@ export async function AboutPageView({ content, stats }: AboutPageViewProps) {
           <h2 id="about-cta-heading" className="text-3xl font-bold text-primary-foreground sm:text-4xl">
             {content.ctaTitle}
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-primary-foreground/90 sm:text-lg">
+          <p className={cn("mx-auto mt-4 max-w-2xl", pageSectionSubtitleOnHeroClass)}>
             {content.ctaSubtitle}
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

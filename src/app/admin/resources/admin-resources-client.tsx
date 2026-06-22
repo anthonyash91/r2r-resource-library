@@ -14,6 +14,7 @@ import { MAX_FEATURED_RESOURCES } from "@/lib/featured-resources-storage";
 import { archiveResourceById, setResourceFeatured } from "@/lib/admin-resources";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslations } from "@/i18n/locale-context";
+import { useConfirmDialog } from "@/components/ui/confirm-dialog";
 
 interface AdminResourcesClientProps {
   initialResources: Resource[];
@@ -22,6 +23,7 @@ interface AdminResourcesClientProps {
 export function AdminResourcesClient({ initialResources }: AdminResourcesClientProps) {
   const router = useRouter();
   const { t, locale } = useTranslations();
+  const { confirm, alert } = useConfirmDialog();
   const [resources, setResources] = useState(initialResources);
   const [busyId, setBusyId] = useState<string | null>(null);
 
@@ -39,9 +41,9 @@ export function AdminResourcesClient({ initialResources }: AdminResourcesClientP
     URL.revokeObjectURL(url);
   };
 
-  const handleImport = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleImport = async (e: React.ChangeEvent<HTMLInputElement>) => {
     if (isSupabaseConfigured()) {
-      alert(t("admin.importDbUnavailable"));
+      await alert({ title: t("common.notice"), message: t("admin.importDbUnavailable") });
       e.target.value = "";
       return;
     }
@@ -49,27 +51,36 @@ export function AdminResourcesClient({ initialResources }: AdminResourcesClientP
     const file = e.target.files?.[0];
     if (!file) return;
     const reader = new FileReader();
-    reader.onload = (ev) => {
+    reader.onload = async (ev) => {
       try {
         const imported = JSON.parse(ev.target?.result as string) as Resource[];
         setResources((prev) => [...prev, ...imported]);
-        alert(t("admin.importSuccess", { count: imported.length }));
+        await alert({
+          title: t("common.success"),
+          message: t("admin.importSuccess", { count: imported.length }),
+        });
       } catch {
-        alert(t("admin.importInvalid"));
+        await alert({ title: t("common.error"), message: t("admin.importInvalid") });
       }
     };
     reader.readAsText(file);
   };
 
   const archiveResource = async (id: string) => {
-    if (!confirm(t("admin.archiveConfirm"))) return;
+    const confirmed = await confirm({
+      title: t("admin.archive"),
+      message: t("admin.archiveConfirm"),
+      confirmLabel: t("admin.archive"),
+      destructive: true,
+    });
+    if (!confirmed) return;
 
     if (isSupabaseConfigured()) {
       setBusyId(id);
       const result = await archiveResourceById(id);
       setBusyId(null);
       if (result.error) {
-        alert(t("admin.resourceSaveFailed"));
+        await alert({ title: t("common.error"), message: t("admin.resourceSaveFailed") });
         return;
       }
       router.refresh();
@@ -91,11 +102,14 @@ export function AdminResourcesClient({ initialResources }: AdminResourcesClientP
       setBusyId(null);
 
       if (result.error === "max_featured") {
-        alert(t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }));
+        await alert({
+          title: t("common.notice"),
+          message: t("admin.featuredMaxAlert", { max: MAX_FEATURED_RESOURCES }),
+        });
         return;
       }
       if (result.error) {
-        alert(t("admin.resourceSaveFailed"));
+        await alert({ title: t("common.error"), message: t("admin.resourceSaveFailed") });
         return;
       }
       router.refresh();

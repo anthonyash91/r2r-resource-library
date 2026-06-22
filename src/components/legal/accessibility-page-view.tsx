@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { PageHeroBand } from "@/components/layout/page-hero-band";
 import { Card } from "@/components/ui/card";
-import { cn, pageSectionPadding, checkIconClass } from "@/lib/utils";
+import { cn, pageSectionPadding, checkIconClass, pageSectionSubheadingClass } from "@/lib/utils";
 import type { AccessibilityPageContent } from "@/lib/legal-content";
 import { getServerTranslator } from "@/i18n/server";
 
@@ -86,7 +86,7 @@ export async function AccessibilityPageView({ content }: AccessibilityPageViewPr
                       <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-secondary text-primary">
                         <Icon className="h-5 w-5" aria-hidden="true" />
                       </span>
-                      <h3 className="mb-2 font-bold text-foreground">{title}</h3>
+                      <h3 className={cn("mb-2", pageSectionSubheadingClass)}>{title}</h3>
                       <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">
                         {body}
                       </p>

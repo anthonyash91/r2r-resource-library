@@ -12,8 +12,7 @@ DATE = "2026-06-20"
 COLUMNS = [
     "id", "name", "category", "region", "description", "description_es",
     "address", "city", "phone", "email", "website", "eligibility", "eligibility_es",
-    "notes", "notes_es", "hours", "tags", "services", "county",
-    "latitude", "longitude", "served_counties", "coverage",
+    "notes", "notes_es", "hours", "tags", "services", "county", "served_counties", "coverage",
 ]
 LOG_COLUMNS = ["source_url", "source_type", "date_accessed", "confidence", "notes", "id_reference"]
 
@@ -38,7 +37,7 @@ add(
     hours="Monday–Friday, 8:00 a.m.–4:30 p.m. ET",
     tags="statewide|reentry|DOC|probation|parole|hotline",
     services="Reentry planning coordination|Regional coalition referrals|Pre-release resource navigation|Community partner connections",
-    county="Franklin", latitude="39.9612", longitude="-83.0069", served_counties="", coverage="statewide",
+    county="Franklin", served_counties="", coverage="statewide",
     _source="https://drc.ohio.gov/reentry", _source_type="government", _confidence="high",
 )
 add(
@@ -55,7 +54,7 @@ add(
     hours="Available online 24/7; phone support Monday–Friday business hours",
     tags="statewide|online|reentry|referral-only|recovery",
     services="Online resource directory|Geo-located provider search|Reentry service navigation|Recovery resource referrals",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://drc.ohio.gov/systems-and-services/2-reentry-services/reentry-services", _source_type="government", _confidence="high",
 )
 add(
@@ -72,7 +71,7 @@ add(
     hours="Contact for current hours",
     tags="statewide|reentry|coalition|networking|referral-only",
     services="Coalition network coordination|Advocacy|Resource sharing|Local coalition referrals",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://dam.assets.ohio.gov/image/upload/drc.ohio.gov/Forms/Reentry_Coalitions_4-20-26.pdf", _source_type="government", _confidence="high",
 )
 add(
@@ -88,7 +87,7 @@ add(
     hours="Available 24/7",
     tags="statewide|hotline|211|referral-only|basic-needs",
     services="Information and referral|Housing resource navigation|Benefits referrals|Crisis resource connections",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://www.211.org/get-help/ohio", _source_type="directory", _confidence="high",
 )
 add(
@@ -104,7 +103,7 @@ add(
     hours="Available 24/7",
     tags="statewide|hotline|crisis|mental-health|988",
     services="Crisis counseling|Suicide prevention support|Mental health referrals|Substance use crisis support",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://988lifeline.org", _source_type="government", _confidence="high",
 )
 add(
@@ -120,7 +119,7 @@ add(
     hours="Phone line Monday–Friday, 8:30 a.m.–4:30 p.m. ET; website 24/7",
     tags="statewide|legal-aid|online|expungement|hotline",
     services="Legal information guides|Court form assistance|Local legal aid finder|Record sealing information",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://www.ohiolegalhelp.org", _source_type="nonprofit", _confidence="high",
 )
 add(
@@ -136,7 +135,7 @@ add(
     hours="Contact for current hours",
     tags="statewide|reentry|online|referral-only",
     services="Reentry resource navigation|Community partner referrals|Online resource directory",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://ohioreentryconnections.org", _source_type="nonprofit", _confidence="medium",
 )
 add(
@@ -153,7 +152,7 @@ add(
     hours="Online application available 24/7; DRC office Monday–Friday business hours",
     tags="statewide|CQE|employment|fair-chance|online",
     services="CQE application processing|Employment barrier relief|Occupational licensing guidance",
-    county="Franklin", latitude="39.9612", longitude="-83.0069", served_counties="", coverage="statewide",
+    county="Franklin", served_counties="", coverage="statewide",
     _source="https://drccqe.com", _source_type="government", _confidence="high",
 )
 add(
@@ -170,7 +169,7 @@ add(
     hours="Monday–Friday, 8:00 a.m.–4:30 p.m. ET",
     tags="statewide|parole|DOC|probation|supervision",
     services="Parole supervision|Community supervision|Parole board services|Supervision compliance support",
-    county="Franklin", latitude="39.9612", longitude="-83.0069", served_counties="", coverage="statewide",
+    county="Franklin", served_counties="", coverage="statewide",
     _source="https://drc.ohio.gov/about-us/divisions-and-offices/adult-parole-authority", _source_type="government", _confidence="high",
 )
 add(
@@ -186,7 +185,7 @@ add(
     hours="Online 24/7; county office hours vary",
     tags="statewide|benefits|SNAP|Medicaid|online",
     services="Medicaid application|SNAP enrollment|Cash assistance application|Benefits account management",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://benefits.ohio.gov", _source_type="government", _confidence="high",
 )
 add(
@@ -203,7 +202,7 @@ add(
     hours="Monday–Friday business hours",
     tags="statewide|hotline|mental-health|Medicaid|peer-support",
     services="Treatment referrals|Mental health resource navigation|Medicaid information|Consumer rights guidance",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://mha.ohio.gov/get-help/get-help-now/toll-free-bridge-line", _source_type="government", _confidence="high",
 )
 add(
@@ -220,7 +219,7 @@ add(
     hours="County office hours vary; state office Monday–Friday business hours",
     tags="statewide|benefits|reentry|employment|restored-citizens",
     services="Benefits enrollment assistance|Employment services referral|Reentry benefits navigation",
-    county="Franklin", latitude="39.9625", longitude="-82.9988", served_counties="", coverage="statewide",
+    county="Franklin", served_counties="", coverage="statewide",
     _source="https://jfs.ohio.gov/wps/portal/gov/jfs/help/help-for-families/restored-citizens", _source_type="government", _confidence="high",
 )
 add(
@@ -236,7 +235,7 @@ add(
     hours="Online 24/7",
     tags="statewide|housing|recovery|substance-use|online",
     services="Recovery housing search|Certified residence directory|County-based housing listings",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://mha.ohio.gov/community-partners/recovery/recovery-housing", _source_type="government", _confidence="high",
 )
 add(
@@ -253,7 +252,7 @@ add(
     hours="Contact participating agency for hours",
     tags="statewide|substance-use|recovery|veterans|vouchers",
     services="Recovery housing vouchers|Transportation assistance|Employment skills training|Peer recovery support",
-    county="Franklin", latitude="39.9625", longitude="-82.9988",
+    county="Franklin",
     served_counties="Columbiana|Cuyahoga|Franklin|Hamilton|Lorain|Mahoning|Montgomery|Stark|Summit", coverage="multi",
     _source="https://mha.ohio.gov/about-us/documents/access-to-recovery", _source_type="government", _confidence="high",
 )
@@ -270,7 +269,7 @@ add(
     hours="Available 24/7",
     tags="statewide|hotline|substance-use|treatment-referral|national",
     services="Treatment referrals|Substance use information|Mental health resource navigation",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://www.samhsa.gov/find-help/national-helpline", _source_type="government", _confidence="high",
 )
 add(
@@ -287,7 +286,7 @@ add(
     hours="Online 24/7; BHSIS support Mon–Fri 8 a.m.–6 p.m. ET",
     tags="statewide|substance-use|online|treatment-referral",
     services="Treatment facility search|Provider availability information|Mental health provider locator",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://findtreatment.gov", _source_type="government", _confidence="high",
 )
 
@@ -300,7 +299,6 @@ COALITIONS = [
     dict(name="Reentry Coalition of Allen County", region="Allen / Auglaize / Hardin",
          phone="(937) 528-6409", email="aahc.reentry@gesmv.org", county="Allen",
          served="Allen|Auglaize|Hardin", address="660 South Main Street", city="Lima",
-         lat="40.7389", lon="-84.1054",
          notes="Hosted by Goodwill Easterseals Miami Valley; contact Jen Bonifas for coalition meetings."),
     dict(name="Route 11 Reentry Coalition", region="Northeast Ohio — 5 counties",
          phone="(330) 743-3700", email="route11reentrycoalition@gmail.com", county="Ashtabula",
@@ -321,7 +319,6 @@ COALITIONS = [
     dict(name="Bridges Reentry Coalition", region="Champaign / Logan / Shelby",
          phone="(937) 617-4217", email="receptionist@bridgesap.org", county="Champaign",
          served="Champaign|Logan|Shelby", address="1512 South U.S. Highway 68", city="Urbana",
-         lat="40.1084", lon="-83.7524",
          notes="Hosted by Bridges Community Action Partnership; contact Marie Radcliff."),
     dict(name="Coshocton County Reentry Coalition", region="Coshocton",
          phone="(740) 622-4470", email="coshcoreentry@gmail.com", county="Coshocton",
@@ -337,7 +334,7 @@ COALITIONS = [
          notes="Contact Burbridge Cook at Connexion West; verify current phone on website."),
     dict(name="Franklin County Reentry Advisory Board", region="Columbus / Franklin County",
          phone="(614) 525-5955", email="reentryojpp@franklincountyohio.gov", county="Franklin",
-         served="Franklin", address="373 South High Street", city="Columbus", lat="39.9590", lon="-82.9987",
+         served="Franklin", address="373 South High Street", city="Columbus",
          notes="Part of Franklin County Office of Justice Policy and Programs; contact Shana Sanders."),
     dict(name="Northeast Ohio Reentry Coalition", region="Geauga County",
          phone="(440) 479-9930", email="reentry@familyprideonline.org", county="Geauga",
@@ -345,7 +342,7 @@ COALITIONS = [
          notes="Geauga County Reentry Collaboration via Family Pride; contact Angela Daugherty."),
     dict(name="Hamilton County Reentry Coalition", region="Cincinnati / Hamilton County",
          phone="(513) 946-4304", email="reentry@hamiltoncountyohio.gov", county="Hamilton",
-         served="Hamilton", address="230 East Ninth Street", city="Cincinnati", lat="39.1067", lon="-84.5047",
+         served="Hamilton", address="230 East Ninth Street", city="Cincinnati",
          notes="Hamilton County Office of Reentry; contact Director Trina Jackson for intake."),
     dict(name="Hancock County Reentry Coalition", region="Hancock",
          phone="(419) 455-6082", email="admin@welcometoanewlife.org", county="Hancock",
@@ -373,7 +370,7 @@ COALITIONS = [
          notes="Contact Stephanie Dunlap at Licking County Alcohol Prevention Program."),
     dict(name="Reentry Coalition of Northwest Ohio", region="Lucas / Toledo",
          phone="(419) 241-3235", email="reentry419@gmail.com", county="Lucas",
-         served="Lucas", city="Toledo", lat="41.6528", lon="-83.5379",
+         served="Lucas", city="Toledo",
          notes="Contact Karyn McConnell for coalition partner referrals."),
     dict(name="Central Ohio Restored Citizens Collaborative", region="Madison / Union",
          phone="(614) 733-4348", email="corccinfo@gmail.com", county="Madison",
@@ -385,7 +382,7 @@ COALITIONS = [
          notes="Hosted by Crawford-Marion ADAMH Board; contact Jamie Ervin."),
     dict(name="Summit, Portage & Medina Reentry Coalition", region="Summit / Portage / Medina",
          phone="(330) 289-9234", email="reentry@summitoh.net", county="Summit",
-         served="Medina|Portage|Summit", city="Akron", lat="41.0814", lon="-81.5190",
+         served="Medina|Portage|Summit", city="Akron",
          notes="South Street Ministries and Summit County ISC Reentry Collaborative; contact Joe Tucker."),
     dict(name="Mercer County Reentry Coalition", region="Mercer",
          phone="(260) 519-0688", email="reentry@grandlakechurch.org", county="Mercer",
@@ -394,7 +391,6 @@ COALITIONS = [
     dict(name="Muskingum Perry Morgan Community Reentry Coalition (Project Ready)", region="Muskingum / Perry / Morgan",
          phone="(740) 647-9791", email="info@projectready.net", county="Muskingum",
          served="Morgan|Muskingum|Perry", address="2845 Bell Street", city="Zanesville",
-         lat="39.9403", lon="-82.0132",
          notes="Project Ready provides direct reentry navigation plus coalition networking; contact Kuwan Mayle."),
     dict(name="Reentry toMorrow", region="Morrow",
          phone="(740) 856-0145", email="morrowcountyrc@southeastinc.com", county="Morrow",
@@ -444,7 +440,7 @@ for c in COALITIONS:
         tags=f"reentry|coalition|{'direct-service' if is_direct else 'referral-only'}|{c['county'].lower()}",
         services=("Reentry case navigation|Housing referrals|Employment referrals|Treatment referrals"
                   if is_direct else "Resource networking|Community partner referrals|Coalition meetings|Local reentry navigation"),
-        county=c["county"], latitude=c.get("lat", ""), longitude=c.get("lon", ""),
+        county=c["county"],
         served_counties=sc if cov == "multi" else (sc if sc else c["county"]),
         coverage=cov,
         _source="https://dam.assets.ohio.gov/image/upload/drc.ohio.gov/Forms/Reentry_Coalitions_4-20-26.pdf",
@@ -466,7 +462,7 @@ add(
     hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
     tags="clark|reentry|county-government|direct-service",
     services="Reentry case coordination|Housing referrals|Employment referrals|ID assistance referrals",
-    county="Clark", latitude="39.9242", longitude="-83.8088", served_counties="Clark", coverage="single",
+    county="Clark", served_counties="Clark", coverage="single",
     _source="https://dam.assets.ohio.gov/image/upload/drc.ohio.gov/Forms/Reentry_Coalitions_4-20-26.pdf",
     _source_type="government", _confidence="high",
 )
@@ -484,7 +480,7 @@ add(
     hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
     tags="montgomery|reentry|county-government|multi-county",
     services="Reentry navigation|Housing referrals|Employment support|Benefits enrollment assistance|Expungement clinic referrals",
-    county="Montgomery", latitude="39.7589", longitude="-84.1916",
+    county="Montgomery",
     served_counties="Darke|Greene|Miami|Montgomery|Preble", coverage="multi",
     _source="https://dam.assets.ohio.gov/image/upload/drc.ohio.gov/Forms/Reentry_Coalitions_4-20-26.pdf",
     _source_type="government", _confidence="high",
@@ -494,24 +490,24 @@ add(
 LEGAL_AIDS = [
     dict(name="Legal Aid Society of Cleveland", region="Northeast Ohio — 5 counties",
          phone="888-817-3777", website="https://lasclev.org", address="1223 West Sixth Street", city="Cleveland",
-         county="Cuyahoga", lat="41.4987", lon="-81.6998",
+         county="Cuyahoga",
          served="Ashtabula|Cuyahoga|Geauga|Lake|Lorain",
          desc="Provides free civil legal aid including record sealing, housing, benefits, and employment issues for low-income residents in five northeast Ohio counties."),
     dict(name="Legal Aid of Southeast and Central Ohio (LASCO)", region="Southeast / Central Ohio — 36 counties",
          phone="1-888-246-4420", website="https://www.lasco.org", address="1108 City Park Avenue, Suite 200", city="Columbus",
-         county="Franklin", lat="39.9400", lon="-82.9900", served="",
+         county="Franklin", served="",
          desc="Free noncriminal legal help for low-income people, seniors, and veterans across 36 southeast and central Ohio counties including record sealing and expungement."),
     dict(name="Legal Aid Society of Southwest Ohio", region="Cincinnati / Southwest Ohio",
          phone="1-800-582-2682", website="https://lascinti.org", address="215 East Ninth Street", city="Cincinnati",
-         county="Hamilton", lat="39.1050", lon="-84.5080", served="Hamilton|Butler|Clermont|Warren|Brown|Adams|Highland",
+         county="Hamilton", served="Hamilton|Butler|Clermont|Warren|Brown|Adams|Highland",
          desc="Free civil legal assistance for low-income residents in southwest Ohio including housing, family, employment, and criminal record relief."),
     dict(name="Legal Aid of Western Ohio (LAWO)", region="Western Ohio — 32 counties",
          phone="1-888-534-1432", website="https://www.lawolaw.org", address="525 Jefferson Avenue", city="Toledo",
-         county="Lucas", lat="41.6520", lon="-83.5370", served="",
+         county="Lucas", served="",
          desc="Free civil legal services for low-income residents across 32 western Ohio counties including record sealing assistance and housing defense."),
     dict(name="Community Legal Aid — Akron", region="Northeast Ohio — 8 counties",
          phone="1-800-998-9454", website="https://www.communitylegalaid.org", address="50 South Main Street", city="Akron",
-         county="Summit", lat="41.0810", lon="-81.5180",
+         county="Summit",
          served="Carroll|Holmes|Medina|Portage|Stark|Summit|Tuscarawas|Wayne",
          desc="Free civil legal aid for low-income residents in eight northeast Ohio counties including expungement clinics and reentry legal support."),
 ]
@@ -535,16 +531,16 @@ for la in LEGAL_AIDS:
         hours="Intake Monday–Friday mornings; call for appointment",
         tags="legal-aid|expungement|low-income|reentry",
         services="Record sealing assistance|Expungement help|Housing legal aid|Benefits advocacy|Civil legal representation",
-        county=la["county"], latitude=la["lat"], longitude=la["lon"],
+        county=la["county"],
         served_counties=la["served"], coverage=cov,
         _source=la["website"], _source_type="nonprofit", _confidence="high",
     )
 
 # --- CEOs ---
-for city, county, phone, addr, lat, lon, web in [
-    ("Columbus", "Franklin", "(614) 725-9210", "3220 West Broad Street", "39.9550", "-83.0890", "https://ceoworks.org/columbus"),
-    ("Cleveland", "Cuyahoga", "(216) 696-5750", "2421 Superior Avenue", "41.5030", "-81.6920", "https://ceoworks.org/cleveland"),
-    ("Cincinnati", "Hamilton", "(513) 651-2000", "1814 Young Street", "39.1200", "-84.5200", "https://ceoworks.org/cincinnati"),
+for city, county, phone, addr, web in [
+    ("Columbus", "Franklin", "(614) 725-9210", "3220 West Broad Street", "https://ceoworks.org/columbus"),
+    ("Cleveland", "Cuyahoga", "(216) 696-5750", "2421 Superior Avenue", "https://ceoworks.org/cleveland"),
+    ("Cincinnati", "Hamilton", "(513) 651-2000", "1814 Young Street", "https://ceoworks.org/cincinnati"),
 ]:
     add(
         name=f"Center for Employment Opportunities (CEO) — {city}",
@@ -559,7 +555,7 @@ for city, county, phone, addr, lat, lon, web in [
         hours="Monday–Friday business hours",
         tags="employment|fair-chance|reentry|transitional-jobs|ceo",
         services="Paid transitional work|Job coaching|Job placement|Retention support|Life skills training",
-        county=county, latitude=lat, longitude=lon, served_counties=county, coverage="single",
+        county=county, served_counties=county, coverage="single",
         _source=web, _source_type="nonprofit", _confidence="high",
     )
 
@@ -578,7 +574,7 @@ add(
     hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
     tags="cuyahoga|cleveland|reentry|county-government",
     services="Reentry program coordination|North Star NRRC oversight|Employment workshop referrals|Benefits navigation",
-    county="Cuyahoga", latitude="41.5080", longitude="-81.6370", served_counties="Cuyahoga", coverage="single",
+    county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
     _source="https://hhs.cuyahogacounty.gov/departments/office-of-reentry", _source_type="government", _confidence="high",
 )
 add(
@@ -595,7 +591,7 @@ add(
     hours="Monday–Friday, 8:00 a.m.–8:00 p.m.; Saturday, 9:00 a.m.–1:00 p.m.",
     tags="cuyahoga|cleveland|reentry|direct-service|one-stop",
     services="Employment readiness workshops|GED classes|ID and birth certificate vouchers|Benefits enrollment|Clothing closet|Computer training",
-    county="Cuyahoga", latitude="41.5095", longitude="-81.6510", served_counties="Cuyahoga", coverage="single",
+    county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
     _source="https://www.northstarreentry.org", _source_type="nonprofit", _confidence="high",
 )
 add(
@@ -612,7 +608,7 @@ add(
     hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
     tags="franklin|columbus|reentry|county-government",
     services="Reentry navigation|Policy coordination|Advisory board meetings|Partner agency referrals",
-    county="Franklin", latitude="39.9590", longitude="-82.9987", served_counties="Franklin", coverage="single",
+    county="Franklin", served_counties="Franklin", coverage="single",
     _source="https://www.franklincountyohio.gov/Departments/Office-of-Justice-Policy-and-Programs", _source_type="government", _confidence="high",
 )
 add(
@@ -629,7 +625,7 @@ add(
     hours="Clinic 1:00–4:00 p.m. twice monthly; call for schedule",
     tags="hamilton|cincinnati|expungement|legal-aid|clinic",
     services="Expungement eligibility screening|Record sealing assistance|Application preparation",
-    county="Hamilton", latitude="39.1030", longitude="-84.5120", served_counties="Hamilton", coverage="single",
+    county="Hamilton", served_counties="Hamilton", coverage="single",
     _source="https://www.hamiltoncountypd.org/fresh-start/", _source_type="government", _confidence="high",
 )
 add(
@@ -646,7 +642,7 @@ add(
     hours="Walk-in clinic hours vary; contact for schedule",
     tags="hamilton|cincinnati|legal-aid|CQE|second-chance",
     services="CQE assistance|Driver's license reinstatement|Criminal record barrier relief|Community legal clinics",
-    county="Hamilton", latitude="39.1050", longitude="-84.5080", served_counties="Hamilton", coverage="single",
+    county="Hamilton", served_counties="Hamilton", coverage="single",
     _source="https://www.hamiltoncountypd.org/fresh-start/other-legal-options/", _source_type="nonprofit", _confidence="high",
 )
 add(
@@ -663,7 +659,7 @@ add(
     hours="Online survey available 24/7",
     tags="statewide|expungement|online|legal-aid|second-chance",
     services="Record sealing application assistance|Expungement eligibility screening|Legal provider matching",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://www.ohiolegalhelp.org/resource/opportunity-port", _source_type="nonprofit", _confidence="high",
 )
 add(
@@ -680,7 +676,7 @@ add(
     hours="Monday–Friday business hours",
     tags="cincinnati|legal-aid|policy|reentry|second-chance",
     services="Policy advocacy|Record relief legal services|Reentry legal clinics|Civil rights representation",
-    county="Hamilton", latitude="39.1050", longitude="-84.5080", served_counties="", coverage="statewide",
+    county="Hamilton", served_counties="", coverage="statewide",
     _source="https://www.ohiojpc.org", _source_type="nonprofit", _confidence="high",
 )
 
@@ -699,7 +695,7 @@ add(
     hours="Contact local VJO specialist for hours",
     tags="veterans|statewide|VJO|justice-involved",
     services="VA benefits navigation|Treatment referrals|Housing referrals|Court and jail outreach",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://www.va.gov/homeless/vjo.asp", _source_type="government", _confidence="high",
 )
 add(
@@ -716,7 +712,7 @@ add(
     hours="Monday–Friday business hours",
     tags="veterans|cleveland|cuyahoga|VJO",
     services="VJO case coordination|VA health care enrollment|Benefits assistance|Reentry referrals",
-    county="Cuyahoga", latitude="41.5085", longitude="-81.6195", served_counties="Cuyahoga", coverage="single",
+    county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
     _source="https://www.va.gov/homeless/vjo.asp", _source_type="government", _confidence="high",
 )
 add(
@@ -733,7 +729,7 @@ add(
     hours="Contact VA for specialist availability",
     tags="veterans|statewide|HCRV|pre-release",
     services="Pre-release assessments|VA benefits linkage|Medical care enrollment|Post-release housing referrals",
-    county="", latitude="", longitude="", served_counties="", coverage="statewide",
+    county="", served_counties="", coverage="statewide",
     _source="https://www.va.gov/homeless/hcrv.asp", _source_type="government", _confidence="high",
 )
 
@@ -752,7 +748,7 @@ add(
     hours="Monday–Friday business hours",
     tags="cleveland|reentry|employment|nonprofit",
     services="Workforce development|Case management|Employment training|Community integration support",
-    county="Cuyahoga", latitude="41.5080", longitude="-81.6180", served_counties="Cuyahoga", coverage="single",
+    county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
     _source="https://www.lutheranmetro.org", _source_type="nonprofit", _confidence="high",
 )
 add(
@@ -769,7 +765,7 @@ add(
     hours="Contact for program hours",
     tags="columbus|reentry|halfway-house|ATR|residential",
     services="Halfway house programming|Employment support|Treatment referrals|Case management",
-    county="Franklin", latitude="39.9690", longitude="-82.9400", served_counties="Franklin", coverage="single",
+    county="Franklin", served_counties="Franklin", coverage="single",
     _source="https://mha.ohio.gov/about-us/documents/access-to-recovery", _source_type="nonprofit", _confidence="high",
 )
 
@@ -777,107 +773,107 @@ add(
 EXTRAS = [
     dict(name="OhioMeansJobs — Franklin County", category="employment", region="Columbus",
          phone="(614) 559-5052", website="https://omjfc.us", address="1111 East Broad Street", city="Columbus",
-         county="Franklin", lat="39.9650", lon="-82.9700", cov="single", served="Franklin",
+         county="Franklin", cov="single", served="Franklin",
          desc="Franklin County workforce center connecting job seekers including justice-involved individuals to training, job search, and employer services."),
     dict(name="OhioMeansJobs — Cuyahoga County", category="employment", region="Cleveland",
          phone="(216) 777-7655", website="https://www.omjcc.org", address="1910 Superior Avenue", city="Cleveland",
-         county="Cuyahoga", lat="41.5035", lon="-81.6925", cov="single", served="Cuyahoga",
+         county="Cuyahoga", cov="single", served="Cuyahoga",
          desc="Cuyahoga County workforce services including job placement, training referrals, and reentry-friendly employment resources."),
     dict(name="Talbert House — Reentry Services", category="substance-use-treatment", region="Cincinnati",
          phone="(513) 281-7880", website="https://www.talberthouse.org", address="2600 Victory Parkway", city="Cincinnati",
-         county="Hamilton", lat="39.1205", lon="-84.5085", cov="single", served="Hamilton",
+         county="Hamilton", cov="single", served="Hamilton",
          desc="Cincinnati behavioral health and reentry provider offering treatment, housing, and ATR care coordination for justice-involved individuals."),
     dict(name="Oriana House — Reentry Programs", category="reentry-organizations", region="Akron / Northeast Ohio",
          phone="(330) 996-7730", website="https://www.orianahouse.org", address="1050 East Market Street", city="Akron",
-         county="Summit", lat="41.0680", lon="-81.4900", cov="single", served="Summit",
+         county="Summit", cov="single", served="Summit",
          desc="Northeast Ohio reentry provider operating residential and community programs including North Star Cleveland and Summit County ATR services."),
     dict(name="Community Shelter Board — Reentry Housing", category="housing", region="Columbus",
          phone="(614) 715-2530", website="https://www.csb.org", address="60 East Broad Street", city="Columbus",
-         county="Franklin", lat="39.9610", lon="-82.9980", cov="single", served="Franklin",
+         county="Franklin", cov="single", served="Franklin",
          desc="Columbus homeless services coordinating body connecting individuals including returning citizens to emergency shelter and housing programs."),
     dict(name="Goodwill Easterseals Miami Valley — Reentry", category="employment", region="Dayton",
          phone="(937) 528-6409", website="https://www.gesmv.org", address="660 South Main Street", city="Lima",
-         county="Allen", lat="40.7389", lon="-84.1054", cov="multi", served="Allen|Auglaize|Champaign|Clark|Darke|Greene|Logan|Miami|Montgomery|Preble|Shelby",
+         county="Allen", cov="multi", served="Allen|Auglaize|Champaign|Clark|Darke|Greene|Logan|Miami|Montgomery|Preble|Shelby",
          desc="Goodwill Easterseals provides employment and reentry coalition support across west-central Ohio."),
     dict(name="Ohio BMV — Ex-Offender ID Information", category="id-documentation", region="Statewide",
          phone="(844) 644-6268", website="https://www.bmv.ohio.gov", address="", city="Columbus",
-         county="", lat="", lon="", cov="statewide", served="",
+         county="", cov="statewide", served="",
          desc="Ohio Bureau of Motor Vehicles provides state ID and driver's license services; reentry partners often assist with documentation requirements for restored citizens."),
     dict(name="Ohio Department of Health — Vital Records", category="id-documentation", region="Statewide",
          phone="(614) 466-2531", website="https://odh.ohio.gov/know-our-programs/vital-statistics", address="246 North High Street", city="Columbus",
-         county="Franklin", lat="39.9690", lon="-83.0040", cov="statewide", served="",
+         county="Franklin", cov="statewide", served="",
          desc="State vital records office for ordering birth certificates and death records needed for ID and benefits applications after release."),
     dict(name="Greater Cleveland Food Bank", category="food-nutrition", region="Cleveland",
          phone="(216) 738-2265", website="https://www.greaterclevelandfoodbank.org", address="15500 South Waterloo Road", city="Cleveland",
-         county="Cuyahoga", lat="41.4400", lon="-81.5300", cov="multi", served="Ashland|Ashtabula|Cuyahoga|Geauga|Lake|Richland|Wayne",
+         county="Cuyahoga", cov="multi", served="Ashland|Ashtabula|Cuyahoga|Geauga|Lake|Richland|Wayne",
          desc="Regional food bank connecting northeast Ohio residents including returning citizens to food pantries and SNAP application assistance."),
     dict(name="Mid-Ohio Food Collective", category="food-nutrition", region="Columbus",
          phone="(614) 274-7771", website="https://www.midohiofoodbank.org", address="3960 Brookham Drive", city="Grove City",
-         county="Franklin", lat="39.8800", lon="-83.0700", cov="multi", served="Delaware|Fairfield|Franklin|Hocking|Licking|Madison|Morrow|Perry|Pickaway|Union",
+         county="Franklin", cov="multi", served="Delaware|Fairfield|Franklin|Hocking|Licking|Madison|Morrow|Perry|Pickaway|Union",
          desc="Central Ohio food bank network providing pantry referrals and nutrition support for low-income residents including reentry populations."),
     dict(name="Freestore Foodbank — Cincinnati", category="food-nutrition", region="Cincinnati",
          phone="(513) 381-7627", website="https://freestorefoodbank.org", address="1141 Central Parkway", city="Cincinnati",
-         county="Hamilton", lat="39.1100", lon="-84.5200", cov="multi", served="Brown|Clermont|Hamilton|Warren",
+         county="Hamilton", cov="multi", served="Brown|Clermont|Hamilton|Warren",
          desc="Southwest Ohio food bank providing emergency food and benefits navigation for Hamilton County and surrounding areas."),
     dict(name="Circle for Recovery Ohio (CFRO)", category="substance-use-treatment", region="Statewide",
          phone="(614) 466-2596", website="https://mha.ohio.gov/community-partners/criminal-justice/re-entry-programs/circle-for-recovery-ohio", address="30 East Broad Street", city="Columbus",
-         county="Franklin", lat="39.9625", lon="-82.9988", cov="multi", served="Summit|Cuyahoga|Franklin|Hamilton|Lucas|Montgomery|Stark|Mahoning|Lorain",
+         county="Franklin", cov="multi", served="Summit|Cuyahoga|Franklin|Hamilton|Lucas|Montgomery|Stark|Mahoning|Lorain",
          desc="OhioMHAS reentry substance use program operating through UMADAOP agencies in major Ohio cities serving formerly incarcerated citizens."),
     dict(name="Maryhaven — Reentry Treatment", category="substance-use-treatment", region="Columbus",
          phone="(614) 445-8131", website="https://maryhaven.com", address="1791 Alum Creek Drive", city="Columbus",
-         county="Franklin", lat="39.9270", lon="-82.9470", cov="single", served="Franklin",
+         county="Franklin", cov="single", served="Franklin",
          desc="Central Ohio addiction treatment provider offering outpatient and residential services accepting justice-involved referrals."),
     dict(name="Coleman Professional Services — Reentry", category="healthcare", region="Northeast Ohio",
          phone="(330) 673-1347", website="https://www.colemanservices.org", address="3929 Hoover Road", city="Stow",
-         county="Summit", lat="41.1590", lon="-81.4400", cov="multi", served="Summit|Portage|Stark|Wayne",
+         county="Summit", cov="multi", served="Summit|Portage|Stark|Wayne",
          desc="Behavioral health provider serving northeast Ohio with mental health and substance use services for justice-involved clients."),
     dict(name="Welcome to a New Life — Hancock Reentry", category="peer-support", region="Findlay",
          phone="(419) 455-6082", website="https://www.welcometoanewlife.org", address="", city="Findlay",
-         county="Hancock", lat="", lon="", cov="single", served="Hancock",
+         county="Hancock", cov="single", served="Hancock",
          desc="Hancock County peer-led reentry support organization providing mentoring and community connections for returning citizens."),
     dict(name="Home for Good — Route 11 Coalition Host", category="reentry-organizations", region="Ashtabula",
          phone="(330) 743-3700", website="https://www.homeforgoodashtabula.org", address="", city="Ashtabula",
-         county="Ashtabula", lat="", lon="", cov="multi", served="Ashtabula|Columbiana|Jefferson|Mahoning|Trumbull",
+         county="Ashtabula", cov="multi", served="Ashtabula|Columbiana|Jefferson|Mahoning|Trumbull",
          desc="Ashtabula nonprofit hosting the Route 11 Reentry Coalition and providing direct housing and support services for returning citizens."),
     dict(name="The FourSeven — Butler Warren Reentry", category="reentry-organizations", region="Hamilton",
          phone="(513) 229-7947", website="https://www.thefourseven.org", address="", city="Hamilton",
-         county="Butler", lat="", lon="", cov="multi", served="Butler|Warren",
+         county="Butler", cov="multi", served="Butler|Warren",
          desc="Faith-based reentry organization hosting the Butler Warren Reentry Coalition with direct support services for returning citizens."),
     dict(name="Connections — Northeast Ohio Reentry", category="healthcare", region="Cleveland",
          phone="(216) 431-4130", website="https://www.connectionscleveland.org", address="8441 Madison Avenue", city="Cleveland",
-         county="Cuyahoga", lat="41.4750", lon="-81.7500", cov="single", served="Cuyahoga",
+         county="Cuyahoga", cov="single", served="Cuyahoga",
          desc="Cleveland behavioral health agency providing mental health and addiction treatment with justice-involved specialty programs."),
     dict(name="Volunteers of America Ohio — Reentry Housing", category="housing", region="Columbus",
          phone="(614) 870-7500", website="https://www.voaoh.org", address="1776 East Broad Street", city="Columbus",
-         county="Franklin", lat="39.9680", lon="-82.9600", cov="single", served="Franklin",
+         county="Franklin", cov="single", served="Franklin",
          desc="Columbus nonprofit providing transitional and supportive housing programs serving justice-involved individuals."),
     dict(name="Ohio Ex-Offender Reentry Coalition (via OALRC)", category="peer-support", region="Statewide",
          phone="(567) 200-6815", website="https://drc.ohio.gov/systems-and-services/2-reentry-services/reentry-coalitions", address="", city="",
-         county="", lat="", lon="", cov="statewide", served="",
+         county="", cov="statewide", served="",
          desc="Peer and community-led reentry advocacy network now organized as the Ohio Association of Local Reentry Coalitions supporting restored citizens statewide."),
     dict(name="findhelp.org — Ohio Social Services Portal", category="financial-assistance", region="Statewide",
          phone="", website="https://www.findhelp.org", address="", city="",
-         county="", lat="", lon="", cov="statewide", served="",
+         county="", cov="statewide", served="",
          desc="Online portal endorsed by Ohio DRC Office of Reentry for locating local food, housing, healthcare, and benefits programs by ZIP code. Referral hub—not a direct-service provider."),
     dict(name="Ohio Department of Education — Adult Diploma & GED", category="education", region="Statewide",
          phone="(877) 644-6338", website="https://education.ohio.gov/Topics/Ohio-Adult-Opportunities", address="25 South Front Street", city="Columbus",
-         county="Franklin", lat="39.9620", lon="-83.0005", cov="statewide", served="",
+         county="Franklin", cov="statewide", served="",
          desc="State resource connecting Ohio adults including returning citizens to GED, High School Equivalency, and Adult Diploma programs at local career centers and community schools."),
     dict(name="COTA — Reduced Fare Program", category="transportation", region="Columbus",
          phone="(614) 228-1776", website="https://www.cota.com", address="33 North High Street", city="Columbus",
-         county="Franklin", lat="39.9625", lon="-83.0008", cov="single", served="Franklin",
+         county="Franklin", cov="single", served="Franklin",
          desc="Central Ohio Transit Authority reduced-fare and accessibility programs helping low-income Franklin County residents including returning citizens access bus transportation to work and appointments."),
     dict(name="GCRTA — Reduced Fare Program", category="transportation", region="Cleveland",
          phone="(216) 621-9500", website="https://www.riderta.com", address="1240 West Sixth Street", city="Cleveland",
-         county="Cuyahoga", lat="41.4995", lon="-81.7030", cov="single", served="Cuyahoga",
+         county="Cuyahoga", cov="single", served="Cuyahoga",
          desc="Greater Cleveland Regional Transit Authority reduced-fare programs for eligible low-income and disability riders in Cuyahoga County."),
     dict(name="Amethyst Inc. — Family Reunification", category="family-children", region="Columbus",
          phone="(614) 242-1284", website="https://www.amethyst-inc.org", address="275 West Fifth Avenue", city="Columbus",
-         county="Franklin", lat="39.9790", lon="-83.0120", cov="single", served="Franklin",
+         county="Franklin", cov="single", served="Franklin",
          desc="Columbus nonprofit serving women in recovery and reunification with children, including justice-involved mothers seeking family stabilization after incarceration."),
     dict(name="St. Vincent de Paul — Cincinnati Reentry Support", category="basic-needs", region="Cincinnati",
          phone="(513) 421-0602", website="https://www.svdpcincinnati.org", address="1125 Bank Street", city="Cincinnati",
-         county="Hamilton", lat="39.1080", lon="-84.5180", cov="single", served="Hamilton",
+         county="Hamilton", cov="single", served="Hamilton",
          desc="Cincinnati charity providing clothing, furniture, utility assistance, and basic needs support for low-income residents including returning citizens."),
 ]
 for e in EXTRAS:
@@ -893,7 +889,7 @@ for e in EXTRAS:
         hours="",
         tags=f"reentry|{e.get('county', 'statewide').lower() or 'statewide'}",
         services="",
-        county=e.get("county", ""), latitude=e.get("lat", ""), longitude=e.get("lon", ""),
+        county=e.get("county", ""),
         served_counties=e.get("served", ""), coverage=e["cov"],
         _source=e["website"], _source_type="nonprofit", _confidence="medium",
     )

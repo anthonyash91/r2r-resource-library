@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { ResourcesHeroSection } from "@/components/home/hero-section";
 import { PaginatedResourceList } from "@/components/resources/paginated-resource-list";
@@ -6,11 +7,15 @@ import { ResourceResultsSummary } from "@/components/resources/resource-results-
 import { CountyFilteredResourceResults } from "@/components/resources/county-filtered-resource-results";
 import { ResourceFiltersPanel } from "@/components/resources/resource-filters-panel";
 import { ScrollToResourceResults } from "@/components/resources/scroll-to-resource-results";
-import { RESOURCE_RESULTS_ID } from "@/lib/resources-page";
+import { RESOURCE_RESULTS_ID, resourcesPageQueryWithPreferenceDefaults } from "@/lib/resources-page";
 import { getServerTranslator } from "@/i18n/server";
 import { cn, pageSectionPadding, sectionStackGap } from "@/lib/utils";
 import { isValidCoverage, partitionResourcesByCountyFilter } from "@/lib/resource-coverage";
 import { hasActiveResourceFiltersFromParams } from "@/lib/resource-filter-params";
+import { RecommendedResourcesSection } from "@/components/resources/recommended-resources-section";
+import { getRecommendedResources } from "@/lib/user-preferences/recommendations";
+import { getServerUserPreferences } from "@/lib/user-preferences/server";
+import { hasCompletedOnboarding } from "@/lib/user-preferences/parse";
 import {
   getResources,
   getCategories,
@@ -47,6 +52,12 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
   const { t } = await getServerTranslator();
   const params = await searchParams;
 
+  const preferences = await getServerUserPreferences();
+  const defaultQuery = resourcesPageQueryWithPreferenceDefaults(params, preferences);
+  if (defaultQuery !== null) {
+    redirect(`/resources?${defaultQuery}`);
+  }
+
   let categoryId = params.category;
   if (params.category) {
     const cat = await getCategoryBySlug(params.category);
@@ -68,7 +79,7 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
     recentlyAdded: params.filter === "recent",
   };
 
-  const [resources, categories, states, counties, cities, services] =
+  const [resources, categories, states, counties, cities, services, allResources] =
     await Promise.all([
       getResources(filters),
       getCategories(),
@@ -76,7 +87,13 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
       getCounties(params.state ?? "Kentucky"),
       getCities(params.state, params.county),
       getServices(),
+      getResources(),
     ]);
+
+  const personalized = hasCompletedOnboarding(preferences);
+  const recommended = personalized
+    ? getRecommendedResources(allResources, preferences)
+    : [];
 
   const searchQuery = params.q?.trim();
   const selectedCounty = params.county?.trim();
@@ -112,6 +129,16 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
               services={services}
             />
           </Suspense>
+
+          {recommended.length > 0 ? (
+            <RecommendedResourcesSection
+              resources={recommended}
+              county={preferences.county}
+              state={preferences.state}
+              priorityCategories={preferences.priorityCategories}
+              variant="resources"
+            />
+          ) : null}
 
           <div
             id={RESOURCE_RESULTS_ID}

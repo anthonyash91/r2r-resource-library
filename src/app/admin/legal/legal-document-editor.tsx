@@ -8,6 +8,7 @@ import { Card } from "@/components/ui/card";
 import { LEGAL_DOCUMENT_CONFIG, type LegalDocumentSlug } from "@/lib/legal-content-fields";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslations } from "@/i18n/locale-context";
+import { useConfirmDialog } from "@/components/ui/confirm-dialog";
 
 interface LegalDocumentEditorProps {
   document: LegalDocumentSlug;
@@ -17,6 +18,7 @@ interface LegalDocumentEditorProps {
 export function LegalDocumentEditor({ document, initial }: LegalDocumentEditorProps) {
   const router = useRouter();
   const { t } = useTranslations();
+  const { alert } = useConfirmDialog();
   const [content, setContent] = useState(initial);
   const [saved, setSaved] = useState(false);
   const [saveMessage, setSaveMessage] = useState<string | null>(null);
@@ -36,7 +38,7 @@ export function LegalDocumentEditor({ document, initial }: LegalDocumentEditorPr
 
   const handleSave = async () => {
     if (!isSupabaseConfigured()) {
-      alert(t("admin.legalSaveFailed"));
+      await alert({ title: t("common.error"), message: t("admin.legalSaveFailed") });
       return;
     }
 
@@ -57,7 +59,10 @@ export function LegalDocumentEditor({ document, initial }: LegalDocumentEditorPr
       };
 
       if (!response.ok) {
-        alert(data.error ?? t("admin.legalSaveFailed"));
+        await alert({
+          title: t("common.error"),
+          message: data.error ?? t("admin.legalSaveFailed"),
+        });
         setSaving(false);
         return;
       }
@@ -72,7 +77,7 @@ export function LegalDocumentEditor({ document, initial }: LegalDocumentEditorPr
         setSaveMessage(null);
       }, 4000);
     } catch {
-      alert(t("admin.legalSaveFailed"));
+      await alert({ title: t("common.error"), message: t("admin.legalSaveFailed") });
     } finally {
       setSaving(false);
     }

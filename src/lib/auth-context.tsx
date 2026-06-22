@@ -4,6 +4,12 @@ import { createContext, useContext, useEffect, useState, useCallback } from "rea
 import type { Profile } from "@/types";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/client";
 import { formatAuthError, isProfileSetupError } from "@/lib/auth-errors";
+import { writeClientPreferences } from "@/lib/user-preferences/client";
+import {
+  hasCompletedOnboarding,
+  preferencesFromProfile,
+} from "@/lib/user-preferences/parse";
+import { syncCookiePreferencesToProfile } from "@/lib/user-preferences/sync-profile";
 import { createTranslator } from "@/i18n/translator";
 import { DEFAULT_LOCALE, LOCALE_COOKIE, type Locale } from "@/i18n/types";
 
@@ -28,8 +34,29 @@ function getClientLocale(): Locale {
   return match?.[1] === "es" ? "es" : DEFAULT_LOCALE;
 }
 
-function authMessage(key: "authUnavailable" | "signInFailed" | "signUpFailed" | "signUpDatabaseError") {
+function authMessage(
+  key:
+    | "authUnavailable"
+    | "signInFailed"
+    | "signUpFailed"
+    | "signUpDatabaseError"
+) {
   return createTranslator(getClientLocale()).t(`auth.${key}`);
+}
+
+function facilityMessage(key: "pinMismatch") {
+  return createTranslator(getClientLocale()).t(`facility.${key}`);
+}
+
+async function verifyFacilityLoginAfterAuth(
+  supabase: NonNullable<ReturnType<typeof createClient>>
+): Promise<string | undefined> {
+  const response = await fetch("/api/facility/verify-login");
+  if (response.status === 403) {
+    await supabase.auth.signOut();
+    return facilityMessage("pinMismatch");
+  }
+  return undefined;
 }
 
 function getAuthRedirectUrl() {
@@ -59,7 +86,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         .select("*")
         .eq("id", userId)
         .single();
-      if (data) setUser(data as Profile);
+      if (data) {
+        const profile = data as Profile;
+        setUser(profile);
+        await syncCookiePreferencesToProfile(userId);
+        const profilePrefs = preferencesFromProfile(profile);
+        if (hasCompletedOnboarding(profilePrefs)) {
+          writeClientPreferences(profilePrefs);
+        }
+      }
     };
 
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -99,6 +134,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       return { error: authMessage("signInFailed") };
     }
 
+    const facilityError = await verifyFacilityLoginAfterAuth(supabase);
+    if (facilityError) {
+      setUser(null);
+      return { error: facilityError };
+    }
+
     const { data: profile } = await supabase
       .from("profiles")
       .select("*")
@@ -106,8 +147,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       .single();
 
     if (profile) {
-      setUser(profile as Profile);
-      return { isAdmin: profile.role === "admin" };
+      const typedProfile = profile as Profile;
+      setUser(typedProfile);
+      const profilePrefs = preferencesFromProfile(typedProfile);
+      if (hasCompletedOnboarding(profilePrefs)) {
+        writeClientPreferences(profilePrefs);
+      }
+      await syncCookiePreferencesToProfile(userId);
+      return { isAdmin: typedProfile.role === "admin" };
     }
 
     return { isAdmin: false };
@@ -140,6 +187,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     if (!data.session) {
       return { needsEmailConfirmation: true };
+    }
+
+    if (data.user?.id) {
+      await supabase
+        .from("profiles")
+        .update({ signup_context: "standard" })
+        .eq("id", data.user.id);
+      await syncCookiePreferencesToProfile(data.user.id);
     }
 
     return {};

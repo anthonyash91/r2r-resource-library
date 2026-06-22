@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import type { Category } from "@/types";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslations } from "@/i18n/locale-context";
+import { useConfirmDialog } from "@/components/ui/confirm-dialog";
 
 interface AdminCategoriesClientProps {
   initialCategories: Category[];
@@ -25,6 +26,7 @@ function slugify(name: string): string {
 
 export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClientProps) {
   const { t } = useTranslations();
+  const { confirm, alert } = useConfirmDialog();
   const router = useRouter();
   const [categories, setCategories] = useState(initialCategories);
   const [editing, setEditing] = useState<string | null>(null);
@@ -60,7 +62,7 @@ export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClie
             .eq("id", editing);
 
           if (error) {
-            alert(t("admin.categorySaveFailed"));
+            await alert({ title: t("common.error"), message: t("admin.categorySaveFailed") });
             setSaving(false);
             return;
           }
@@ -103,7 +105,7 @@ export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClie
           .single();
 
         if (error || !data) {
-          alert(t("admin.categorySaveFailed"));
+          await alert({ title: t("common.error"), message: t("admin.categorySaveFailed") });
           setSaving(false);
           return;
         }
@@ -139,7 +141,13 @@ export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClie
   };
 
   const handleDelete = async (id: string) => {
-    if (!confirm(t("admin.deleteCategoryConfirm"))) return;
+    const confirmed = await confirm({
+      title: t("admin.deleteCategory"),
+      message: t("admin.deleteCategoryConfirm"),
+      confirmLabel: t("admin.deleteCategory"),
+      destructive: true,
+    });
+    if (!confirmed) return;
 
     if (isSupabaseConfigured()) {
       const supabase = createClient();
@@ -147,7 +155,7 @@ export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClie
         const { error } = await supabase.from("categories").delete().eq("id", id);
 
         if (error) {
-          alert(t("admin.categoryDeleteFailed"));
+          await alert({ title: t("common.error"), message: t("admin.categoryDeleteFailed") });
           return;
         }
       }

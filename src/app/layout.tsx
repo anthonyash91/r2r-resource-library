@@ -6,6 +6,7 @@ import { BreadcrumbBar } from "@/components/layout/breadcrumb-bar";
 import { CrisisBar } from "@/components/layout/crisis-bar";
 import { Footer } from "@/components/layout/footer";
 import { Providers } from "@/components/providers";
+import { OnboardingPromptBanner } from "@/components/onboarding/onboarding-prompt-banner";
 import { getServerLocale, getServerTranslator } from "@/i18n/server";
 import { getSiteBranding } from "@/lib/data";
 
@@ -41,6 +42,7 @@ export default async function RootLayout({
       <body className="flex min-h-full flex-col antialiased" suppressHydrationWarning>
         <Providers initialLocale={locale}>
           <Header branding={branding} />
+          <OnboardingPromptBanner />
           <BreadcrumbBar />
           <main id="main-content" className="flex-1">
             {children}

@@ -12,8 +12,13 @@ import {
   getAnnouncements,
 } from "@/lib/data";
 import { AnnouncementsBanner } from "@/components/home/announcements-banner";
-import { cn, pageSectionPadding, checkIconClass } from "@/lib/utils";
+import { FacilitySessionBar } from "@/components/facility/facility-session-bar";
+import { RecommendedResourcesSection } from "@/components/resources/recommended-resources-section";
+import { cn, pageSectionPadding, checkIconClass, pageSectionHeadingClass, pageSectionSubtitleClass, pageSectionSubtitleOnHeroClass, pageSectionSubheadingClass } from "@/lib/utils";
 import { buildResourcesPageHref } from "@/lib/resources-page";
+import { getRecommendedResources } from "@/lib/user-preferences/recommendations";
+import { getServerUserPreferences } from "@/lib/user-preferences/server";
+import { hasCompletedOnboarding } from "@/lib/user-preferences/parse";
 
 const POPULAR_TAG_SLUGS = [
   "housing",
@@ -27,13 +32,20 @@ const POPULAR_TAG_SLUGS = [
 export default async function HomePage() {
   const { t } = await getServerTranslator();
 
-  const [categories, resources, homepage, featuredResources, announcements] = await Promise.all([
+  const [categories, resources, homepage, featuredResources, announcements, preferences] =
+    await Promise.all([
     getCategories(),
     getResources(),
     getHomepageContent(),
     getFeaturedResources(),
     getAnnouncements(),
+    getServerUserPreferences(),
   ]);
+
+  const personalized = hasCompletedOnboarding(preferences);
+  const recommended = personalized
+    ? getRecommendedResources(resources, preferences)
+    : [];
 
   const headline = homepage.hero_headline ?? t("home.heroHeadline");
   const subheadline = homepage.hero_subheadline ?? t("home.heroSubheadline");
@@ -85,9 +97,12 @@ export default async function HomePage() {
     { value: "100%", label: t("home.statFree") },
   ];
 
+  const showRecommended = recommended.length > 0;
+
   return (
     <>
       <AnnouncementsBanner announcements={announcements} />
+      <FacilitySessionBar />
 
       <HeroSection
         headline={headline}
@@ -98,13 +113,16 @@ export default async function HomePage() {
         popularTags={popularTags}
       />
 
-      <section className={cn("bg-background", pageSectionPadding)} aria-labelledby="categories-heading">
+      <section
+        className={cn(showRecommended ? "bg-card" : "app-band-muted", pageSectionPadding)}
+        aria-labelledby="categories-heading"
+      >
         <div className="mx-auto max-w-7xl">
           <header className="mb-10 text-center">
-            <h2 id="categories-heading" className="text-3xl font-bold sm:text-4xl">
+            <h2 id="categories-heading" className={pageSectionHeadingClass}>
               {t("home.browseByCategoryTitle")}
             </h2>
-            <p className="mt-1 text-base text-muted-foreground">
+            <p className={cn("mt-1", pageSectionSubtitleClass)}>
               {t("home.browseByCategorySubtitle")}
             </p>
           </header>
@@ -119,6 +137,16 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {recommended.length > 0 ? (
+        <RecommendedResourcesSection
+          resources={recommended}
+          county={preferences.county}
+          state={preferences.state}
+          priorityCategories={preferences.priorityCategories}
+          variant="home"
+        />
+      ) : null}
+
       <section
         id="how-it-works-heading"
         className={cn("bg-card", pageSectionPadding)}
@@ -126,10 +154,10 @@ export default async function HomePage() {
       >
         <div className="mx-auto max-w-6xl">
           <header className="mb-14 text-center">
-            <h2 id="how-it-works-title" className="mb-3 text-3xl font-bold text-foreground sm:text-4xl">
+            <h2 id="how-it-works-title" className={cn("mb-3 text-foreground", pageSectionHeadingClass)}>
               {t("home.howItWorksTitle")}
             </h2>
-            <p className="text-lg text-muted-foreground">{t("home.howItWorksSubtitle")}</p>
+            <p className={pageSectionSubtitleClass}>{t("home.howItWorksSubtitle")}</p>
           </header>
 
           <div className="grid gap-12 md:grid-cols-3 md:gap-8 lg:gap-12">
@@ -143,7 +171,7 @@ export default async function HomePage() {
                     {step}
                   </span>
                 </div>
-                <h3 className="mb-3 text-xl font-bold text-foreground">{title}</h3>
+                <h3 className={cn("mb-3", pageSectionSubheadingClass)}>{title}</h3>
                 <p className="mx-auto max-w-xs text-base leading-relaxed text-muted-foreground">
                   {description}
                 </p>
@@ -173,11 +201,11 @@ export default async function HomePage() {
           <div>
             <h2
               id="built-for-heading"
-              className="mb-4 text-3xl font-bold text-primary-foreground sm:text-4xl"
+              className={cn("mb-4 text-primary-foreground", pageSectionHeadingClass)}
             >
               {t("home.builtForTitle")}
             </h2>
-            <p className="mb-8 text-lg leading-relaxed text-primary-foreground/90">
+            <p className={cn("mb-8", pageSectionSubtitleOnHeroClass)}>
               {t("home.builtForDesc")}
             </p>
             <ul className="mb-10 space-y-4">

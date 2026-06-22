@@ -8,9 +8,7 @@
     "hours": "Outpatient Mon–Fri 8:30 a.m.–5 p.m. (extended hours at select offices); crisis line 24/7",
     "tags": "ashland|CMHC|mental-health|substance-use|crisis|14-counties|jail-programming|northeast-kentucky",
     "services": "Outpatient mental health and addiction treatment|24/7 mobile crisis|CRRU residential crisis and SUD recovery|In-jail behavioral health programming|Intellectual and developmental disability services",
-    "county": "Boyd",
-    "latitude": "38.4780",
-    "longitude": "-82.6380"
+    "county": "Boyd"
   },
   "479": {
     "description": "Addiction Recovery Care (ARC) operates 30+ CARF-accredited treatment centers across Eastern Kentucky with a Crisis to Career model combining detox, residential, outpatient, MAT, faith-based recovery, and vocational training. Headquartered in Russell/Louisa area. Intake coordinates insurance verification, transportation within 24 hours, and facility placement. Accepts Kentucky Medicaid and private insurance. Strong reentry focus with peer staff and internship-to-employment pathways.",
@@ -23,9 +21,7 @@
     "hours": "Intake line answered during business hours; admissions 24/7 coordination",
     "tags": "eastern-kentucky|ARC|substance-use|residential|MAT|Crisis-to-Career|reentry|vocational",
     "services": "Detox and residential treatment|Intensive and outpatient programs|Medication-assisted treatment|Vocational training and internships|Transportation to treatment",
-    "county": "Greenup",
-    "latitude": "38.3140",
-    "longitude": "-82.6970"
+    "county": "Greenup"
   },
   "480": {
     "description": "Mountain Comprehensive Care Center (MCCC) is the regional CMHC for 14 Eastern Kentucky counties including Breathitt, Floyd, Harlan, Johnson, Knott, Knox, Lawrence, Leslie, Letcher, Magoffin, Martin, Morgan, Perry, and Pike. Provides mental health, substance use, crisis, and developmental disability services with offices in Prestonsburg, Hazard, Whitesburg, Harlan, Pikeville, and more. Offers in-jail mental health screening and linkage at multiple county detention centers.",
@@ -36,9 +32,7 @@
     "hours": "Crisis line 24/7; outpatient hours vary by location",
     "tags": "eastern-kentucky|CMHC|MCCC|mental-health|substance-use|14-counties|jail-screening",
     "services": "Outpatient mental health and SUD treatment|24/7 crisis services|In-jail screening and linkage|Residential treatment referrals|Developmental disability support",
-    "county": "Floyd",
-    "latitude": "37.6650",
-    "longitude": "-82.7710"
+    "county": "Floyd"
   },
   "481": {
     "description": "Big Sandy Area Community Action Program (BSACAP) serves Floyd, Johnson, Lawrence, Magoffin, Martin, and Pike counties—the primary community action agency near Big Sandy Regional Jail. Provides LIHEAP utility assistance, emergency aid, food programs, housing support, Head Start, and case management for low-income individuals including those leaving local county jails.",
@@ -49,9 +43,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "eastern-kentucky|community-action|BSACAP|LIHEAP|emergency-aid|6-counties|reentry",
     "services": "LIHEAP utility assistance|Emergency financial aid|Food and housing support|Head Start|Reentry case management referrals",
-    "county": "Floyd",
-    "latitude": "37.6650",
-    "longitude": "-82.7710"
+    "county": "Floyd"
   },
   "482": {
     "description": "Appalachian Citizens' Law Center is a nonprofit law firm providing free civil legal representation to low-income Eastern Kentuckians, focused on Letcher, Harlan, Perry, Floyd, and Pike counties. Handles housing, public benefits, civil rights, expungement, black lung and mine safety claims, and workers' rights—critical for returning citizens navigating legal barriers to employment and housing.",
@@ -62,9 +54,7 @@
     "hours": "Monday–Friday during business hours",
     "tags": "eastern-kentucky|legal-aid|ACLC|expungement|housing|benefits|civil-rights|Whitesburg",
     "services": "Free civil legal representation|Expungement assistance|Housing and benefits appeals|Black lung and workers' rights|Civil rights cases",
-    "county": "Letcher",
-    "latitude": "37.1180",
-    "longitude": "-82.8560"
+    "county": "Letcher"
   },
   "483": {
     "description": "Cumberland River Behavioral Health (CRBH) is the CMHC for 10 southeastern Kentucky counties: Bell, Clay, Harlan, Jackson, Knox, Laurel, McCreary, Rockcastle, Wayne, and Whitley. Provides outpatient mental health, psychiatric services, substance use treatment, and 24/7 crisis intervention. Serves county jail populations in Corbin, Barbourville, London, and Williamsburg areas with in-jail and reentry linkage programming.",
@@ -75,9 +65,7 @@
     "hours": "Crisis line 24/7; outpatient Mon–Fri business hours",
     "tags": "southeastern-kentucky|CMHC|CRBH|mental-health|substance-use|crisis|10-counties|jail",
     "services": "Outpatient mental health therapy|Psychiatric evaluation and medication|Substance use treatment|24/7 crisis intervention|In-jail behavioral health linkage",
-    "county": "Knox",
-    "latitude": "36.9480",
-    "longitude": "-84.0970"
+    "county": "Knox"
   },
   "484": {
     "description": "Cumberland Valley Area Development District (CVADD) is the regional planning agency for Bell, Clay, Harlan, Jackson, Knox, Laurel, McCreary, Rockcastle, Wayne, and Whitley counties. Coordinates workforce, housing, transportation, and senior services across the 10-county Cumberland Valley region. Can connect individuals leaving county jails to local resources and American Job Center partner locations.",
@@ -88,9 +76,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "london|CVADD|regional-planning|10-counties|workforce|housing|reentry-coordination",
     "services": "Regional resource coordination|Workforce development partnerships|Transportation and senior services info|LIHEAP referral routing|Community planning support",
-    "county": "Laurel",
-    "latitude": "37.1290",
-    "longitude": "-84.0830"
+    "county": "Laurel"
   },
   "485": {
     "description": "Lake Cumberland Community Action Agency serves Pulaski, Russell, Casey, Clinton, Cumberland, and Wayne counties with emergency assistance, LIHEAP utility help, food programs, housing aid, weatherization, and case management. Key resource for individuals leaving Pulaski County Detention Center and surrounding south-central Kentucky county jails.",
@@ -101,9 +87,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "somerset|community-action|LIHEAP|emergency-aid|6-counties|Pulaski|reentry",
     "services": "LIHEAP utility assistance|Emergency financial aid|Food and housing programs|Weatherization|Case management for low-income households",
-    "county": "Pulaski",
-    "latitude": "37.0920",
-    "longitude": "-84.6040"
+    "county": "Pulaski"
   },
   "486": {
     "description": "Kentucky DOC Probation & Parole District 14 serves Perry County and surrounding Eastern Kentucky counties from Hazard. Supervises felony probation, parole, and conditional discharge cases in the coalfields region. Contact for reporting schedule, officer assignment, and compliance requirements after release to the Hazard area.",
@@ -114,9 +98,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "hazard|probation|parole|District-14|Perry|eastern-kentucky|DOC",
     "services": "Probation and parole supervision|Scheduled reporting|Officer case management|Compliance monitoring|Eastern KY supervision",
-    "county": "Perry",
-    "latitude": "37.2490",
-    "longitude": "-83.1930"
+    "county": "Perry"
   },
   "487": {
     "description": "Kentucky DOC Probation & Parole District 10 serves Laurel, Whitley, Knox, Bell, and surrounding Southeastern Kentucky counties from London. Regional supervision hub for the I-75 corridor and Cumberland Valley. Contact for reporting requirements—District 10 main line per DOC: (606) 330-2045.",
@@ -128,9 +110,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "london|probation|parole|District-10|Laurel|southeastern-kentucky|DOC",
     "services": "Multi-county probation supervision|Parole reporting|Officer assignment|Compliance monitoring|SE KY regional supervision",
-    "county": "Laurel",
-    "latitude": "37.1290",
-    "longitude": "-84.0830"
+    "county": "Laurel"
   },
   "488": {
     "description": "Lincoln Trail Behavioral Health System (part of Centerstone Kentucky network) is the CMHC for Hardin, LaRue, Marion, Meade, and Washington counties in the Elizabethtown/Lincoln Trail region. Provides outpatient mental health, substance use treatment, psychiatric services, and 24/7 crisis response. Partners with Hardin County and regional county jails for mental health screenings and in-jail programming.",
@@ -141,9 +121,7 @@
     "hours": "Crisis line 24/7; outpatient Mon–Fri business hours",
     "tags": "elizabethtown|CMHC|Lincoln-Trail|mental-health|substance-use|crisis|5-counties|jail",
     "services": "Outpatient mental health and SUD treatment|Psychiatric evaluation|24/7 crisis services|In-jail mental health screening|Reentry behavioral health linkage",
-    "county": "Hardin",
-    "latitude": "37.6940",
-    "longitude": "-85.8590"
+    "county": "Hardin"
   },
   "489": {
     "description": "Kentucky Career Center — Elizabethtown (Lincoln Trail Area Development District) is an American Job Center serving Hardin, LaRue, and surrounding Lincoln Trail counties. Free job search, resume workshops, career counseling, skills training funding (WIOA), and employer connections for individuals with criminal records and other employment barriers.",
@@ -154,9 +132,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "elizabethtown|American-Job-Center|workforce|Hardin|second-chance|WIOA|employment",
     "services": "Free job search assistance|Resume and interview workshops|WIOA training funding|Career counseling|Second-chance employer connections",
-    "county": "Hardin",
-    "latitude": "37.6940",
-    "longitude": "-85.8590"
+    "county": "Hardin"
   },
   "490": {
     "description": "Kentucky DOC Probation & Parole District 5 serves Hardin, LaRue, Marion, Meade, and Washington counties from Elizabethtown. Supervises probation and parole cases in the Lincoln Trail region including Fort Knox area communities. DOC contact line: (270) 766-5073.",
@@ -168,9 +144,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "elizabethtown|probation|parole|District-5|Hardin|Lincoln-Trail|DOC",
     "services": "Probation and parole supervision|Reporting and check-ins|Officer case management|Compliance monitoring|Lincoln Trail region supervision",
-    "county": "Hardin",
-    "latitude": "37.6940",
-    "longitude": "-85.8590"
+    "county": "Hardin"
   },
   "491": {
     "description": "LifeSkills Inc. Elizabethtown branch provides community mental health and substance use services for Hardin, LaRue, Meade, Breckinridge, and Grayson counties. Serves individuals leaving Hardin County Detention Center and surrounding facilities with outpatient therapy, psychiatric care, and crisis support. Part of LifeSkills 14-county south-central Kentucky CMHC network.",
@@ -181,9 +155,7 @@
     "hours": "Crisis line 24/7; outpatient Mon–Fri business hours",
     "tags": "elizabethtown|LifeSkills|CMHC|mental-health|substance-use|Hardin|crisis|reentry",
     "services": "Outpatient mental health therapy|Substance use counseling|Psychiatric services|24/7 crisis line|Jail reentry behavioral health linkage",
-    "county": "Hardin",
-    "latitude": "37.6940",
-    "longitude": "-85.8590"
+    "county": "Hardin"
   },
   "492": {
     "description": "Kentucky Career Center — Frankfort provides American Job Center services in Franklin County including free job search, resume help, career counseling, and WIOA training referrals. Serves individuals on probation or parole completing DOC employment requirements and Frankfort-area job seekers with barriers including criminal records.",
@@ -194,9 +166,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "frankfort|American-Job-Center|workforce|Franklin|probation|employment|WIOA",
     "services": "Job search and placement assistance|Resume and interview help|WIOA training referrals|Career counseling|Veterans employment services",
-    "county": "Franklin",
-    "latitude": "38.1860",
-    "longitude": "-84.8750"
+    "county": "Franklin"
   },
   "493": {
     "description": "Kentucky DOC Probation & Parole District 12 serves Franklin, Anderson, Owen, Carroll, Trimble, Henry, and Shelby counties from Frankfort. Supervises probation and parole in the capital region and north-central Kentucky. Office at 165 East Main Street, Frankfort.",
@@ -207,9 +177,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "frankfort|probation|parole|District-12|Franklin|7-counties|DOC",
     "services": "Probation and parole supervision|Multi-county reporting|Officer case management|Compliance monitoring|Capital region supervision",
-    "county": "Franklin",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "county": "Franklin"
   },
   "494": {
     "description": "Pennyroyal Center is the CMHC for Christian, Todd, Trigg, Caldwell, Crittenden, and Livingston counties in Western Kentucky's Pennyrile region. Provides outpatient mental health, psychiatric services, substance use treatment, and 24/7 crisis intervention. Offers in-jail mental health services at Christian County Jail and surrounding county detention centers.",
@@ -220,9 +188,7 @@
     "hours": "Crisis line 24/7; outpatient Mon–Fri business hours",
     "tags": "hopkinsville|CMHC|Pennyroyal|mental-health|substance-use|6-counties|jail|western-kentucky",
     "services": "Outpatient mental health and SUD treatment|Psychiatric evaluation|24/7 crisis intervention|In-jail mental health services|Reentry behavioral health linkage",
-    "county": "Christian",
-    "latitude": "36.8650",
-    "longitude": "-87.4880"
+    "county": "Christian"
   },
   "495": {
     "description": "Audubon Area Community Services serves Henderson, Ohio, and Daviess counties with emergency financial assistance, LIHEAP, food resources, housing support, Head Start, and case management. Supports low-income individuals including those leaving Henderson County Detention Center. Henderson County office available separately from Owensboro headquarters.",
@@ -233,9 +199,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "owensboro|community-action|Audubon|LIHEAP|emergency-aid|3-counties|reentry",
     "services": "LIHEAP utility assistance|Emergency financial aid|Food and housing support|Head Start|Case management",
-    "county": "Daviess",
-    "latitude": "37.7710",
-    "longitude": "-87.1110"
+    "county": "Daviess"
   },
   "496": {
     "description": "Kentucky DOC Probation & Parole District 2 serves Christian, Todd, Trigg, and surrounding Western Kentucky counties from Hopkinsville. Supervises probation and parole in the Pennyrile region. DOC listed phone: (270) 889-6530; office at 107 North Main Street.",
@@ -247,9 +211,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "hopkinsville|probation|parole|District-2|Christian|Pennyrile|DOC",
     "services": "Probation and parole supervision|Pennyrile region reporting|Officer case management|Compliance monitoring|Multi-county supervision",
-    "county": "Christian",
-    "latitude": "36.8650",
-    "longitude": "-87.4880"
+    "county": "Christian"
   },
   "497": {
     "description": "LifeSkills Inc. Bowling Green is the headquarters CMHC serving 14 south-central Kentucky counties: Barren, Breckinridge, Butler, Edmonson, Grayson, Green, Hart, LaRue, Marion, Metcalfe, Monroe, Nelson, Taylor, and Washington. Provides mental health, substance use, and 24/7 crisis services with jail programming across the region. Main hub for the LifeSkills network.",
@@ -260,9 +222,7 @@
     "hours": "Crisis line 24/7; outpatient Mon–Fri business hours",
     "tags": "bowling-green|LifeSkills|CMHC|14-counties|mental-health|substance-use|crisis|jail",
     "services": "Outpatient mental health and SUD treatment|Psychiatric services|24/7 crisis line|County jail programming|Regional CMHC hub",
-    "county": "Warren",
-    "latitude": "36.9680",
-    "longitude": "-86.4800"
+    "county": "Warren"
   },
   "500": {
     "description": "Kentucky Career Center — Paducah serves Western Kentucky's eight-county Purchase Area through the West Kentucky Workforce Development Board. Comprehensive American Job Center with free job search, resume workshops, WIOA training funding, career counseling, and second-chance employer connections for individuals with criminal records.",
@@ -273,9 +233,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "paducah|American-Job-Center|Purchase-Area|workforce|second-chance|WIOA|western-kentucky",
     "services": "Free job search and placement|Resume and skills workshops|WIOA training funding|Career counseling|Criminal record employment support",
-    "county": "McCracken",
-    "latitude": "37.0860",
-    "longitude": "-88.5980"
+    "county": "McCracken"
   },
   "501": {
     "description": "Kentucky Career Center — Green River in Owensboro serves Daviess, Hancock, Henderson, McLean, Ohio, Union, and Webster counties. Full-service American Job Center with job listings, skills assessment, resume help, WIOA training, and employer matching. Operated through Green River Workforce Development Board with county access points in rural communities.",
@@ -289,9 +247,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "owensboro|American-Job-Center|Green-River|7-counties|workforce|WIOA|second-chance",
     "services": "Comprehensive job seeker services|WIOA training funding|Resume and interview assistance|Employer job matching|Rural county access points",
-    "county": "Daviess",
-    "latitude": "37.7520",
-    "longitude": "-87.1300"
+    "county": "Daviess"
   },
   "502": {
     "description": "Kentucky Career Center — Pikeville is operated by EKCEP (Eastern Kentucky Concentrated Employment Program), the same organization running the SITE recovery/reentry program (id 281). Provides free job search, resume help, WIOA training, career counseling, and recovery-informed employment services for justice-involved individuals in Pike and surrounding Eastern Kentucky counties.",
@@ -302,9 +258,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "pikeville|EKCEP|American-Job-Center|SITE|recovery|eastern-kentucky|workforce",
     "services": "American Job Center services|Recovery-informed career advising|WIOA training funding|SITE reentry employment support|Resume and placement assistance",
-    "county": "Pike",
-    "latitude": "37.4790",
-    "longitude": "-82.5180"
+    "county": "Pike"
   },
   "503": {
     "description": "Kentucky Career Center — Somerset is the comprehensive one-stop center for the Lake Cumberland/Cumberlands workforce region, serving Pulaski and 12 surrounding counties. Free job search, resume assistance, employment workshops, veterans services, and WIOA training funding for individuals with criminal records and other barriers in south-central Kentucky.",
@@ -318,9 +272,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:00 p.m. EST",
     "tags": "somerset|American-Job-Center|Cumberlands|Lake-Cumberland|13-counties|workforce|WIOA",
     "services": "Comprehensive job seeker services|Employment workshops|Veterans employment services|WIOA training funding|Business and employer services",
-    "county": "Pulaski",
-    "latitude": "37.0920",
-    "longitude": "-84.6040"
+    "county": "Pulaski"
   },
   "504": {
     "description": "Kentucky Career Center — Hopkinsville serves Christian County and nine Pennyrile region counties through the Pennyrile Workforce Area. Free career services including job readiness workshops, WIOA skills training funding, resume help, and connections to second-chance employers for individuals with criminal records.",
@@ -331,9 +283,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "hopkinsville|American-Job-Center|Pennyrile|10-counties|workforce|second-chance|WIOA",
     "services": "Job readiness workshops|WIOA training funding|Resume and placement assistance|Second-chance employer connections|Career counseling",
-    "county": "Christian",
-    "latitude": "36.8650",
-    "longitude": "-87.4880"
+    "county": "Christian"
   },
   "505": {
     "description": "Kentucky Career Center partner location in Corbin serves Laurel County and the Cumberland Valley region through Cumberlands Workforce. Free job search, resume assistance, career coaching, and WIOA training referrals for individuals with criminal records across Laurel, Knox, Bell, Whitley, Harlan, Clay, and surrounding counties.",
@@ -347,9 +297,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m. (partner location; verify before visit)",
     "tags": "corbin|American-Job-Center|Cumberlands|Laurel|Cumberland-Valley|workforce|partner-location",
     "services": "Job search assistance|Resume workshops|WIOA training referrals|Career coaching|Criminal record employment support",
-    "county": "Whitley",
-    "latitude": "36.9480",
-    "longitude": "-84.0970"
+    "county": "Whitley"
   },
   "506": {
     "description": "Four Rivers Behavioral Health is the CMHC for nine western Kentucky Purchase Area counties: Ballard, Calloway, Carlisle, Fulton, Graves, Hickman, Livingston, Marshall, and McCracken. Provides integrated mental health, substance use, and intellectual/developmental disability services. Partners with McCracken County Regional Jail on overdose intervention and in-jail mental health screening. Turning Point recovery community center in Paducah.",
@@ -362,9 +310,7 @@
     "hours": "Crisis line 24/7; outpatient Mon–Fri business hours",
     "tags": "paducah|CMHC|Four-Rivers|mental-health|substance-use|Purchase-Area|9-counties|jail",
     "services": "Outpatient mental health and SUD treatment|Psychiatric services|24/7 crisis line|In-jail screening and overdose intervention|IDD services",
-    "county": "McCracken",
-    "latitude": "37.0860",
-    "longitude": "-88.5980"
+    "county": "McCracken"
   },
   "507": {
     "description": "River Valley Behavioral Health (RVBH) is the CMHC for Daviess County and six surrounding Green River region counties. Provides outpatient mental health therapy, psychiatric evaluation, medication management, substance use treatment, and 24/7 crisis services. Offers in-jail mental health linkage at Daviess County and Henderson County detention centers.",
@@ -375,9 +321,7 @@
     "hours": "Crisis line 24/7; outpatient Mon–Fri business hours",
     "tags": "owensboro|CMHC|River-Valley|mental-health|substance-use|Green-River|7-counties|jail",
     "services": "Outpatient mental health therapy|Psychiatric medication management|Substance use treatment|24/7 crisis services|In-jail mental health linkage",
-    "county": "Daviess",
-    "latitude": "37.7520",
-    "longitude": "-87.1300"
+    "county": "Daviess"
   },
   "508": {
     "description": "Adanta Group is the CMHC for eight south-central Kentucky counties: Adair, Casey, Clinton, Cumberland, McCreary, Pulaski, Russell, and Wayne. Provides behavioral health outpatient services, psychiatric care, substance use treatment, and crisis intervention with multiple county offices. Mental health linkage for individuals leaving Pulaski County Detention Center and surrounding jails.",
@@ -388,9 +332,7 @@
     "hours": "Crisis line 24/7; county office hours vary",
     "tags": "somerset|CMHC|Adanta|8-counties|mental-health|substance-use|Lake-Cumberland|jail",
     "services": "Outpatient behavioral health|Psychiatric care|Substance use treatment|Crisis intervention|Jail reentry mental health linkage",
-    "county": "Pulaski",
-    "latitude": "37.0920",
-    "longitude": "-84.6040"
+    "county": "Pulaski"
   },
   "509": {
     "description": "Kentucky DOC Probation & Parole District 13 serves Daviess, Hancock, Henderson, McLean, Muhlenberg, Ohio, Union, Webster, and Crittenden counties from Owensboro—not District 6 (which covers Boyle/Marion/Nelson). Office at 121 East Second Street, 4th Floor. Phone: (270) 687-7245 or 7246.",
@@ -404,9 +346,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "owensboro|probation|parole|District-13|Daviess|Green-River|9-counties|DOC",
     "services": "Probation and parole supervision|Green River region reporting|Officer case management|Compliance monitoring|Multi-county western KY supervision",
-    "county": "Daviess",
-    "latitude": "37.7520",
-    "longitude": "-87.1300"
+    "county": "Daviess"
   },
   "510": {
     "description": "Kentucky DOC Probation & Parole District 15 serves Boyd, Carter, Elliott, Greenup, and surrounding Northeast Kentucky counties from Catlettsburg (Ashland area)—not District 8 (which covers Madison/Richmond). Main office: 3000 Louisa Street, Suite 1, Catlettsburg. Phone: (606) 739-5833. Satellite offices in Maysville and Sandy Hook.",
@@ -420,9 +360,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "catlettsburg|ashland|probation|parole|District-15|Boyd|northeast-kentucky|DOC",
     "services": "NE Kentucky probation supervision|Parole reporting|Multi-county supervision|Satellite office network|Compliance monitoring",
-    "county": "Boyd",
-    "latitude": "38.4180",
-    "longitude": "-82.5970"
+    "county": "Boyd"
   },
   "511": {
     "description": "Pennyrile Allied Community Services (PACS) is a community action agency serving nine western and south-central Kentucky counties. Provides LIHEAP utility assistance, emergency financial aid, food programs, housing support, weatherization, Head Start, and case management—including for individuals leaving county jails in Christian, Hopkins, Muhlenberg, and surrounding counties.",
@@ -433,9 +371,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "hopkinsville|community-action|PACS|LIHEAP|9-counties|emergency-aid|reentry",
     "services": "LIHEAP utility assistance|Emergency financial aid|Food and housing programs|Weatherization|Head Start and case management",
-    "county": "Christian",
-    "latitude": "36.8650",
-    "longitude": "-87.4880"
+    "county": "Christian"
   },
   "512": {
     "description": "Purchase Area Development District (PADD) serves eight western Kentucky Purchase counties with LIHEAP energy assistance, housing programs, senior services, transportation coordination, and community planning. Connects individuals leaving McCracken County Regional Jail and surrounding detention centers with available local resources.",
@@ -446,9 +382,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "mayfield|PADD|Purchase-Area|LIHEAP|8-counties|regional-planning|reentry",
     "services": "LIHEAP energy assistance|Housing program referrals|Senior and aging services|Transportation coordination|Community resource navigation",
-    "county": "Graves",
-    "latitude": "36.7420",
-    "longitude": "-88.6350"
+    "county": "Graves"
   },
   "513": {
     "description": "Green River Area Development District (GRADD) serves seven western Kentucky counties (Daviess, Hancock, Henderson, McLean, Ohio, Union, Webster) with LIHEAP, senior services, transportation, housing programs, and workforce development coordination. Resource hub for individuals leaving Daviess County Detention Center and surrounding jails.",
@@ -459,9 +393,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "owensboro|GRADD|Green-River|7-counties|LIHEAP|regional-planning|reentry",
     "services": "LIHEAP utility assistance|Senior and disability services|Transportation coordination|Housing program info|Workforce development partnership",
-    "county": "Daviess",
-    "latitude": "37.7520",
-    "longitude": "-87.1300"
+    "county": "Daviess"
   },
   "514": {
     "description": "Buffalo Trace Area Development District (BTADD) serves six northeastern Kentucky counties: Bath, Bracken, Fleming, Mason, Nicholas, and Robertson. Provides LIHEAP utility assistance, housing programs, transportation, senior services, and emergency aid. Headquartered in Maysville—helps individuals leaving Mason County Detention Center navigate local resources.",
@@ -472,9 +404,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "maysville|BTADD|6-counties|LIHEAP|northeast-kentucky|regional-planning|reentry",
     "services": "LIHEAP energy assistance|Housing and emergency aid|Senior services|Transportation coordination|Community resource navigation",
-    "county": "Mason",
-    "latitude": "38.6410",
-    "longitude": "-83.7440"
+    "county": "Mason"
   },
   "515": {
     "description": "Barren River Area Development District (BRADD) serves eight south-central Kentucky counties: Barren, Butler, Edmonson, Hart, Logan, Metcalfe, Monroe, and Warren. Administers LIHEAP, senior and disability services, transportation coordination, housing programs, and workforce development—reaching rural communities beyond urban Bowling Green.",
@@ -485,9 +415,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "bowling-green|BRADD|8-counties|LIHEAP|south-central-kentucky|regional-planning",
     "services": "LIHEAP energy assistance|Senior and disability services|Transportation coordination|Housing programs|Workforce development partnership",
-    "county": "Warren",
-    "latitude": "36.9680",
-    "longitude": "-86.4800"
+    "county": "Warren"
   },
   "516": {
     "description": "Catholic Charities of the Diocese of Owensboro serves 33 counties across Western and South-Central Kentucky—one of the largest nonprofit footprints in the region. Provides emergency food, clothing, utility assistance, housing support, immigration services, and case management. Open to all regardless of faith, including returning citizens rebuilding stability.",
@@ -498,9 +426,7 @@
     "hours": "Monday–Friday during business hours; programs vary by location",
     "tags": "owensboro|Catholic-Charities|33-counties|emergency-aid|food|housing|faith-based|open-to-all",
     "services": "Emergency food and clothing|Utility and rent assistance|Housing support|Case management|Immigration and family services",
-    "county": "Daviess",
-    "latitude": "37.7520",
-    "longitude": "-87.1300"
+    "county": "Daviess"
   },
   "517": {
     "description": "Ashland Community & Technical College (ACTC) Adult Education provides free GED preparation and adult literacy for Boyd County and surrounding Northeast Kentucky counties. Part of the KCTCS/KYAE statewide network with classes in community and county jail settings. Kentucky waives first-time GED test fees for eligible students passing GED Ready at a KYAE center.",
@@ -511,9 +437,7 @@
     "hours": "Monday–Friday during business hours; class schedules vary",
     "tags": "ashland|GED|adult-education|ACTC|KCTCS|Boyd|northeast-kentucky|jail-classes",
     "services": "Free GED preparation|Adult literacy|Corrections education in jails|GED Ready testing|ESL and workforce certifications",
-    "county": "Boyd",
-    "latitude": "38.4780",
-    "longitude": "-82.6380"
+    "county": "Boyd"
   },
   "518": {
     "description": "Big Sandy Community & Technical College (BSCTC) Adult Education offers free GED classes for Floyd, Johnson, Lawrence, Magoffin, Martin, and Pike counties. Part of KCTCS/KYAE with instruction inside Big Sandy Regional Detention Center and Pike County Detention Center—critical for Eastern Kentucky reentry education.",
@@ -524,9 +448,7 @@
     "hours": "Monday–Friday during business hours",
     "tags": "prestonsburg|GED|BSCTC|KCTCS|6-counties|eastern-kentucky|jail-education|Big-Sandy-Jail",
     "services": "Free GED preparation|Jail-based GED instruction|GED Ready testing|Adult literacy|Workforce certification pathways",
-    "county": "Floyd",
-    "latitude": "37.6650",
-    "longitude": "-82.7710"
+    "county": "Floyd"
   },
   "519": {
     "description": "Somerset Community College (SCC) Adult Education provides free GED preparation and adult education for Pulaski County and the Lake Cumberland region. KCTCS/KYAE network member serving adults in community settings and county jails. State-funded first-time GED testing for eligible students.",
@@ -537,9 +459,7 @@
     "hours": "Monday–Friday during business hours",
     "tags": "somerset|GED|SCC|KCTCS|Pulaski|Lake-Cumberland|jail-education",
     "services": "Free GED preparation|County jail adult education|GED Ready testing|Adult literacy|Workforce skills training",
-    "county": "Pulaski",
-    "latitude": "37.0920",
-    "longitude": "-84.6040"
+    "county": "Pulaski"
   },
   "520": {
     "description": "Owensboro Community & Technical College (OCTC) Adult Education offers free GED preparation and adult literacy for Daviess County and surrounding Green River counties. KCTCS/KYAE provider with classes at community locations and Daviess County Detention Center. First-time GED test fees waived for KYAE-eligible students.",
@@ -550,8 +470,6 @@
     "hours": "Monday–Friday during business hours",
     "tags": "owensboro|GED|OCTC|KCTCS|Daviess|Green-River|jail-education",
     "services": "Free GED preparation|Jail-based adult education|GED Ready testing|ESL programs|Workplace certification training",
-    "county": "Daviess",
-    "latitude": "37.7520",
-    "longitude": "-87.1300"
+    "county": "Daviess"
   }
 }

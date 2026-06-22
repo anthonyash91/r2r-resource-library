@@ -5,6 +5,7 @@ import { Search } from "lucide-react";
 import { SearchField } from "@/components/ui/search-field";
 import { Button } from "@/components/ui/button";
 import { buildResourcesPageHref } from "@/lib/resources-page";
+import { useTranslations } from "@/i18n/locale-context";
 
 interface SearchBarProps {
   placeholder?: string;

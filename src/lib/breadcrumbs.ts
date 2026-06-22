@@ -17,7 +17,7 @@ const SEGMENT_KEYS: Record<string, string> = {
   admin: "admin.portal",
   categories: "admin.categories",
   users: "admin.users",
-  cms: "admin.pages",
+  cms: "admin.sitePages",
   announcements: "admin.announcements",
   faqs: "admin.faqs",
   homepage: "admin.homepage",

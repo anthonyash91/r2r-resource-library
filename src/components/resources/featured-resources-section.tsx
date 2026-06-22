@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import type { Resource } from "@/types";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { getServerTranslator } from "@/i18n/server";
-import { cn, pageSectionPadding } from "@/lib/utils";
+import { cn, pageSectionPadding, pageSectionHeadingClass, pageSectionSubtitleClass } from "@/lib/utils";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 
 interface FeaturedResourcesSectionProps {
@@ -22,10 +22,10 @@ export async function FeaturedResourcesSection({ resources }: FeaturedResourcesS
     >
       <div className="mx-auto max-w-7xl">
         <header className="mb-10 text-center">
-          <h2 id="featured-resources-heading" className="mb-3 text-3xl font-bold text-foreground sm:text-4xl">
+          <h2 id="featured-resources-heading" className={cn("mb-3 text-foreground", pageSectionHeadingClass)}>
             {t("home.featuredTitle")}
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+          <p className={cn("mx-auto max-w-2xl", pageSectionSubtitleClass)}>
             {t("home.featuredSubtitle")}
           </p>
         </header>

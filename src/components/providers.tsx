@@ -4,6 +4,7 @@ import { AuthProvider } from "@/lib/auth-context";
 import { SavedProvider } from "@/lib/saved-context";
 import { BreadcrumbProvider } from "@/lib/breadcrumb-context";
 import { LocaleProvider } from "@/i18n/locale-context";
+import { FacilityInactivityGuard } from "@/components/facility/facility-inactivity-guard";
 import type { Locale } from "@/i18n/types";
 
 export function Providers({
@@ -17,7 +18,9 @@ export function Providers({
     <LocaleProvider initialLocale={initialLocale}>
       <BreadcrumbProvider>
         <AuthProvider>
-          <SavedProvider>{children}</SavedProvider>
+          <FacilityInactivityGuard>
+            <SavedProvider>{children}</SavedProvider>
+          </FacilityInactivityGuard>
         </AuthProvider>
       </BreadcrumbProvider>
     </LocaleProvider>

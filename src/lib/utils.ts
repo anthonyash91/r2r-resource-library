@@ -16,8 +16,19 @@ export const resourcesHeroPadding = "pt-[36px] pb-[44px] sm:pt-[40px] sm:pb-[48p
 export const pageHeroPadding = "py-[40px] sm:py-[44px]";
 /** Standard padding for page content sections below the hero */
 export const pageSectionPadding = "px-4 py-12 sm:px-6 sm:py-14 lg:px-8 lg:py-16";
-/** Consistent vertical gap between page sections */
+/** Vertical spacing between stacked page sections */
 export const sectionStackGap = "space-y-6";
+/** Standard h2 size for full-width page sections (home, dashboard, about, etc.) */
+export const pageSectionHeadingClass = "text-3xl font-bold sm:text-4xl";
+
+/** Descriptive line under a page section h2 */
+export const pageSectionSubtitleClass = "text-lg text-muted-foreground";
+
+/** Same size as section subtitles on dark hero bands */
+export const pageSectionSubtitleOnHeroClass = "text-lg leading-relaxed text-primary-foreground/90";
+
+/** Secondary heading within a page section (step titles, FAQ groups, detail blocks) */
+export const pageSectionSubheadingClass = "text-xl font-bold sm:text-2xl text-foreground";
 /** Teal checkmark color used across list/feature icons */
 export const checkIconClass = "app-check-icon";
 

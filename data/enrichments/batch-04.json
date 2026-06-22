@@ -30,9 +30,7 @@
     "hours": "Crisis line 24/7; clinic hours vary by location",
     "tags": "louisville|CMHC|mental-health|substance-use|crisis|24-7|justice-involved",
     "services": "Outpatient mental health and substance use treatment|Detox and residential crisis care|24/7 mobile crisis team|988 crisis counseling|Recovery housing|IDD services",
-    "county": "Jefferson",
-    "latitude": "38.2480",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "122": {
     "description": "Centerstone Kentucky provides behavioral health services across the Louisville region including outpatient mental health care, substance use treatment, family and children's services, and crisis support. Multiple Louisville-area locations. 24/7 crisis line connects to trained counselors. Accepts Medicaid and most insurance. Open to adults and families including those navigating reentry, probation, or recovery.",
@@ -43,9 +41,7 @@
     "hours": "Crisis line 24/7; office hours vary by location",
     "tags": "louisville|behavioral-health|mental-health|substance-use|crisis|family-services",
     "services": "Outpatient mental health care|Substance use treatment|Family and children's services|24/7 crisis line|Medicaid and insurance billing",
-    "county": "Jefferson",
-    "latitude": "38.2400",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "123": {
     "description": "New Vista (formerly New Vista Behavioral Health) is the CMHC serving 17 Central Kentucky counties including Fayette, Madison, Jessamine, and Clark. Offers mental health, substance use, intellectual and developmental disability (IDD), and primary care services. Same-day Behavioral Health Urgent Care available for adults. 24/7 crisis line at 1-800-928-8000. Serves justice-involved individuals through outpatient and crisis services.",
@@ -56,9 +52,7 @@
     "hours": "Crisis line 24/7; urgent care during business hours",
     "tags": "lexington|CMHC|mental-health|substance-use|urgent-care|crisis|17-counties",
     "services": "Outpatient mental health and substance use treatment|Same-day behavioral health urgent care|IDD services|Primary care|24/7 crisis line|Mobile crisis response",
-    "county": "Fayette",
-    "latitude": "38.0620",
-    "longitude": "-84.4820"
+    "county": "Fayette"
   },
   "124": {
     "description": "NorthKey Community Care (formerly North Key) is the CMHC for Northern Kentucky serving Boone, Campbell, Kenton, Carroll, Gallatin, Grant, Owen, and Pendleton counties. Provides mental health, substance use, and developmental disability services with 24/7 crisis support. Multiple treatment centers in Covington, Newport, and surrounding NKY communities. Crisis walk-in available at Farrell Drive campus.",
@@ -69,9 +63,7 @@
     "hours": "Crisis line 24/7; walk-in crisis during extended hours at Farrell Drive",
     "tags": "covington|northern-kentucky|CMHC|mental-health|substance-use|crisis|24-7",
     "services": "Outpatient mental health and substance use treatment|Developmental disability services|24/7 crisis line|Walk-in crisis intervention|Residential crisis stabilization|Mobile crisis response",
-    "county": "Kenton",
-    "latitude": "39.0700",
-    "longitude": "-84.5120"
+    "county": "Kenton"
   },
   "125": {
     "description": "Call or text 988 to reach the National Suicide & Crisis Lifeline—free, confidential support 24/7 for mental health crises, emotional distress, or substance use concerns. Spanish-speaking counselors available (press 2). Veterans can press 1 for the Veterans Crisis Line. Available anywhere in Kentucky; no insurance required. Can also chat at 988lifeline.org.",
@@ -95,9 +87,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:00 p.m.",
     "tags": "louisville|HIV|Ryan-White|medical-care|PrEP|case-management|7-county",
     "services": "HIV primary medical care|Rapid Start treatment|PrEP clinic|Ryan White case management|Housing navigation|On-site pharmacy|Jail telehealth connections",
-    "county": "Jefferson",
-    "latitude": "38.2450",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "127": {
     "description": "Volunteers of America Mid-States provides HOPWA (Housing Opportunities for Persons with AIDS) emergency financial assistance for housing and utilities for low-income individuals with documented HIV/AIDS in the Louisville area. HOPWA case managers help clients achieve long-term housing stability. Note: VOA's dedicated street outreach HIV testing program ended in 2025; for free HIV testing, contact Louisville Metro Public Health Specialty Clinic at (502) 574-6699.",
@@ -109,9 +99,7 @@
     "hours": "Monday–Friday; call to schedule intake",
     "tags": "louisville|HIV|HOPWA|housing-assistance|utilities|VOA",
     "services": "HOPWA emergency rent assistance|Utility payment assistance|HIV/AIDS housing stability support|Long-term housing resource navigation",
-    "county": "Jefferson",
-    "latitude": "38.2480",
-    "longitude": "-85.7900"
+    "county": "Jefferson"
   },
   "128": {
     "description": "AVOL (AIDS Volunteers, Inc.) is Kentucky's statewide HIV/AIDS service organization headquartered in Lexington. Provides free confidential HIV and STI testing, care coordination for people living with HIV, HOPWA and other housing assistance, prevention education, outreach, and on-site PrEP medical services. Serves individuals across Kentucky including those recently released from incarceration. Toll-free line available statewide.",
@@ -123,9 +111,7 @@
     "hours": "Monday–Friday; call for testing appointment times",
     "tags": "lexington|statewide|HIV|testing|PrEP|housing|prevention",
     "services": "Free HIV and STI testing|PrEP medical services|Care coordination|HIV housing assistance|Prevention education and outreach|Statewide referrals",
-    "county": "Fayette",
-    "latitude": "38.0420",
-    "longitude": "-84.5020"
+    "county": "Fayette"
   },
   "129": {
     "description": "Louisville Metro Department of Public Health and Wellness Specialty Clinic offers HIV, syphilis, hepatitis C, gonorrhea, and chlamydia testing at 914 East Broadway, Suite 102. Free preliminary HIV screen available; sliding scale fees for full STI panels. Appointments recommended—call to schedule. Also coordinates mobile harm reduction outreach with free HIV testing at community sites across Louisville.",
@@ -138,9 +124,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:00 p.m. (2nd Friday closes at 2:00 p.m.)",
     "tags": "louisville|HIV|STI-testing|free-testing|harm-reduction|public-health",
     "services": "Free HIV screening|STI testing and treatment|Hepatitis C testing|Harm reduction outreach|Sliding scale fees|Spanish-language services",
-    "county": "Jefferson",
-    "latitude": "38.2450",
-    "longitude": "-85.7280"
+    "county": "Jefferson"
   },
   "140": {
     "description": "The Healing Place Men's Campus in Louisville offers free, peer-driven addiction recovery since 1989—one of the nation's largest social-model programs. Open 24/7 for detox and recovery entry. Program includes non-medical detox (3–10 days), Off the Streets motivational track, intensive Phase I peer mentoring using the SOBER180 curriculum, and transitional living. No insurance, Medicaid, or fees accepted—only a desire to get sober and in-person pre-screening required.",
@@ -151,9 +135,7 @@
     "hours": "Open 24/7 for detox and intake pre-screening",
     "tags": "louisville|men|free|recovery|detox|peer-driven|24-7|social-model",
     "services": "Free non-medical detox|Off the Streets motivational program|Phase I peer recovery|SOBER180 curriculum|Transitional living|Continuing care and employment referrals",
-    "county": "Jefferson",
-    "latitude": "38.2567",
-    "longitude": "-85.7652"
+    "county": "Jefferson"
   },
   "141": {
     "description": "The Healing Place Women's Campus is a free, peer-driven residential recovery program and Kentucky DOC-contracted Reentry Service Center in Louisville. Serves women 18+ with non-medical detox, Off the Streets track, intensive Phase I recovery, outpatient services, sober housing, and overnight shelter options. No cost to clients—must complete in-person pre-screening at 1503 South 15th Street. Open 24/7.",
@@ -165,9 +147,7 @@
     "hours": "Open 24/7 for detox and intake pre-screening",
     "tags": "louisville|women|free|recovery|RSC|DOC-contract|detox|24-7",
     "services": "Free women's residential recovery|DOC-contracted RSC|Non-medical detox|Off the Streets program|Outpatient services|Sober housing|Overnight shelter",
-    "county": "Jefferson",
-    "latitude": "38.2340",
-    "longitude": "-85.7780"
+    "county": "Jefferson"
   },
   "142": {
     "description": "Stepworks Recovery Centers operates six Kentucky locations offering medical detox, residential (ASAM 3.5/3.7), and outpatient substance use treatment. Facilities in Elizabethtown, Bowling Green, Nicholasville, London, and Paducah. Medical detox for opioids, alcohol, and benzodiazepines; accepts most insurance including Medicaid. Single statewide access line for referrals and admissions.",
@@ -178,9 +158,7 @@
     "notes_es": "Centro de acceso estatal: (800) 545-9031. Ubicación de London es residencial solo para hombres. Mujeres embarazadas aceptadas con aprobación obstétrica.",
     "hours": "Call access center 24/7 for admissions",
     "tags": "statewide|substance-use|detox|residential|outpatient|medical-detox|medicaid",
-    "services": "Medical detox|Residential substance use treatment|Intensive outpatient|Multi-location Kentucky access|Insurance and Medicaid billing|Referral and transportation coordination",
-    "latitude": "37.6940",
-    "longitude": "-85.8590"
+    "services": "Medical detox|Residential substance use treatment|Intensive outpatient|Multi-location Kentucky access|Insurance and Medicaid billing|Referral and transportation coordination"
   },
   "143": {
     "description": "SAMHSA's FindTreatment.gov and National Helpline help locate substance use and mental health treatment anywhere in Kentucky by zip code. Filter by care type (detox, residential, outpatient), payment options (Medicaid, sliding scale, free), and telehealth. The helpline at 1-800-662-4357 is free, confidential, and available 24/7 in English and Spanish. Text HELP4U (435748) with your zip code for referrals.",
@@ -202,9 +180,7 @@
     "hours": "Main office Mon–Fri 9:00 a.m.–5:00 p.m.; West Louisville Mon–Thu 9:00 a.m.–4:00 p.m.",
     "tags": "louisville|legal-aid|free|expungement|housing|benefits|15-counties",
     "services": "Free civil legal representation|Expungement assistance|Housing and eviction defense|Public benefits appeals|Family law|Domestic violence protection orders",
-    "county": "Jefferson",
-    "latitude": "38.2480",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "161": {
     "description": "Legal Aid of the Bluegrass provides free civil legal services for low-income individuals in 32 Central and Northern Kentucky counties including Fayette, Kenton, Boyd, and Madison. Handles expungement when criminal records block employment or housing, plus benefits, housing, family, and consumer matters. Partners with Goodwill Kentucky expungement clinics. Offices in Lexington, Covington, Ashland, and Morehead.",
@@ -215,9 +191,7 @@
     "hours": "Intake: Mon–Thu 10:00 a.m.–3:00 p.m.; Fri 10:00 a.m.–1:00 p.m.",
     "tags": "lexington|legal-aid|free|expungement|32-counties|bluegrass|northern-kentucky",
     "services": "Free civil legal services|Expungement representation|Housing and benefits cases|Family law|Consumer protection|Goodwill clinic partnership",
-    "county": "Fayette",
-    "latitude": "38.0460",
-    "longitude": "-84.4970"
+    "county": "Fayette"
   },
   "162": {
     "description": "Kentucky Legal Aid serves low-income residents in 35 western and south-central Kentucky counties including Warren, Daviess, Christian, and Hopkins. Free civil legal help with housing, public benefits, family matters, and expungement when records create employment or housing barriers. Statewide intake line routes callers to the nearest office in Bowling Green, Owensboro, or Paducah.",
@@ -228,9 +202,7 @@
     "hours": "Intake line Mon–Fri during business hours",
     "tags": "bowling-green|legal-aid|free|expungement|western-kentucky|35-counties",
     "services": "Free civil legal services|Expungement assistance|Housing and eviction help|Public benefits appeals|Family law|Statewide intake routing",
-    "county": "Warren",
-    "latitude": "36.9680",
-    "longitude": "-86.4620"
+    "county": "Warren"
   },
   "163": {
     "description": "Kentucky Legal Aid's Owensboro office provides free civil legal services for low-income residents in Western Kentucky counties including Daviess, Hancock, Henderson, and Ohio. Handles housing, benefits, family law, and expungement cases. Part of Kentucky Legal Aid's 35-county western and south-central service area—call the statewide intake line to apply.",
@@ -241,9 +213,7 @@
     "hours": "Call intake line Mon–Fri for appointment",
     "tags": "owensboro|legal-aid|free|expungement|western-kentucky|daviess-county",
     "services": "Free civil legal services|Expungement help|Housing cases|Public benefits|Family law|Statewide intake coordination",
-    "county": "Daviess",
-    "latitude": "37.7720",
-    "longitude": "-87.1110"
+    "county": "Daviess"
   },
   "164": {
     "description": "Kentucky Legal Aid's Paducah office provides free civil legal services for low-income residents in Western Kentucky's Jackson Purchase region including McCracken, Ballard, Carlisle, and Fulton counties. Handles housing, benefits, family matters, and expungement. Call the statewide intake line to apply and be connected to the appropriate western Kentucky office.",
@@ -254,8 +224,6 @@
     "hours": "Call intake line Mon–Fri for appointment",
     "tags": "paducah|legal-aid|free|expungement|western-kentucky|mccracken-county",
     "services": "Free civil legal services|Expungement assistance|Housing and benefits cases|Family law|Western Kentucky intake",
-    "county": "McCracken",
-    "latitude": "37.0830",
-    "longitude": "-88.6000"
+    "county": "McCracken"
   }
 }

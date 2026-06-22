@@ -8,9 +8,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m. EST (walk-in lobby until 3:30 p.m.; same-day not guaranteed after 3:45 p.m.)",
     "tags": "statewide|birth-certificate|vital-records|ID-documentation|Frankfort|VitalChek",
     "services": "Certified birth certificates|Death marriage divorce records|Mail and online ordering|Will-call pickup|Record amendments",
-    "county": "Franklin",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "county": "Franklin"
   },
   "201": {
     "description": "Kentucky Transportation Cabinet Driver Licensing (DRIVE) issues standard and REAL ID driver's licenses and personal identification cards at regional offices statewide. Returning citizens with felony convictions can use a Felon Release Letter from KDOC, Division of Probation and Parole, Federal Bureau of Prisons (Kentucky facility), or U.S. Probation Office—plus a certified U.S. birth certificate—as primary identity proof for a standard credential. Letter must be presented within 30 calendar days of its issue date. Use the IDocument Guide at drive.ky.gov to build a personalized document checklist before visiting.",
@@ -21,9 +19,7 @@
     "hours": "Regional office hours vary; appointments recommended—check drive.ky.gov for locations",
     "tags": "statewide|driver-license|state-ID|DRIVE|felon-release-letter|reentry|REAL-ID",
     "services": "Driver's licenses|State ID cards|Felon Release Letter processing|IDocument eligibility guide|Regional office appointments",
-    "county": "Franklin",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "county": "Franklin"
   },
   "202": {
     "description": "Kentucky Driver Licensing handles license reinstatement after suspensions. Standard reinstatement/re-licensing fee is $40 (pay online via myDrive, in person, by mail with certified check/money order payable to Kentucky State Treasurer, or by phone at 502-564-1257 with debit/credit). Paying the fee alone does not restore driving privileges—all suspension conditions (court orders, DUI classes, ignition interlock, etc.) must be satisfied first. If suspended more than one year, vision and written tests are required before reinstatement. Active ID card must be canceled before paying reinstatement fee.",
@@ -34,9 +30,7 @@
     "hours": "Reinstatement payments: online 24/7; phone and regional offices during business hours",
     "tags": "statewide|license-reinstatement|suspension|DRIVE|myDrive|DUI|fees",
     "services": "Reinstatement fee payment|Suspension requirement guidance|myDrive online portal|Testing referral information|Mail and phone payment options",
-    "county": "Franklin",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "county": "Franklin"
   },
   "203": {
     "description": "Social Security Administration field office in downtown Louisville (Gene Snyder U.S. Courthouse) handles Social Security card replacement, new cards, SSN verification, and retirement/disability benefit applications. A Social Security card or number verification is required for Kentucky driver's licenses, employment, and most public benefits. As of January 2025, SSA field offices operate on an appointment-focused model—call ahead or use ssa.gov to schedule in-person service. Many services available online at ssa.gov without a visit.",
@@ -47,9 +41,7 @@
     "hours": "Monday, Tuesday, Thursday, Friday 9:00 a.m.–4:00 p.m.; Wednesday 9:00 a.m.–12:00 p.m.",
     "tags": "louisville|SSA|social-security-card|ID-documentation|appointments|employment",
     "services": "Social Security card replacement|SSN verification|Retirement and disability applications|Medicare enrollment assistance|Appointment scheduling",
-    "county": "Jefferson",
-    "latitude": "38.2465",
-    "longitude": "-85.7590"
+    "county": "Jefferson"
   },
   "204": {
     "description": "SSA field office serving Fayette County and Central Kentucky, located off Winchester Road near the I-64/I-75 interchange. Provides Social Security card replacement, SSN verification, and benefit applications. Required for employment and obtaining Kentucky ID. Appointment recommended under SSA's appointment-focused service model effective January 2025—call local office or 1-800-772-1213. Ground-floor office; many transactions completable online at ssa.gov.",
@@ -60,9 +52,7 @@
     "hours": "Monday, Tuesday, Thursday, Friday 9:00 a.m.–4:00 p.m.; Wednesday 9:00 a.m.–12:00 p.m.",
     "tags": "lexington|SSA|social-security-card|ID-documentation|Fayette|appointments",
     "services": "Social Security card replacement|SSN verification|Retirement and disability applications|Medicare enrollment|Appointment scheduling",
-    "county": "Fayette",
-    "latitude": "38.0280",
-    "longitude": "-84.4420"
+    "county": "Fayette"
   },
   "205": {
     "description": "Use SSA's national office locator to find the nearest Social Security field office anywhere in Kentucky. A Social Security number and card (or SSA verification letter) is required to obtain a Kentucky driver's license or state ID and for most employment. Call 1-800-772-1213 for automated services and appointment scheduling, or visit ssa.gov for online card replacement and benefit applications. As of 2025, in-person field office visits generally require an appointment.",
@@ -72,9 +62,7 @@
     "notes_es": "Línea nacional: 1-800-772-1213 (lun–vie 8 a.m.–7 p.m.). TTY: 1-800-325-0778. Servicios en línea en ssa.gov/myaccount.",
     "hours": "National phone line Mon–Fri 8:00 a.m.–7:00 p.m.; field office hours vary by location",
     "tags": "statewide|SSA|office-locator|social-security-card|ID-documentation",
-    "services": "Office location search|Appointment scheduling referral|Online service directory|SSN and card information",
-    "latitude": "37.8393",
-    "longitude": "-84.2700"
+    "services": "Office location search|Appointment scheduling referral|Online service directory|SSN and card information"
   },
   "220": {
     "description": "Low Income Home Energy Assistance Program (LIHEAP) helps eligible Kentucky households pay heating, cooling, and crisis utility bills. Administered through local Community Action Agencies in all 120 counties via Community Action Kentucky (CAPKY). Three components: Subsidy (seasonal, typically November–December), Crisis (heating emergencies, January–March), and Summer Subsidy (cooling, July–September). Income at or below 150% of Federal Poverty Guidelines. Apply at your county's Community Action office—call 1-800-456-3452 or use capky.org/network to find your local agency.",
@@ -84,9 +72,7 @@
     "notes_es": "Componente Crisis requiere aviso de desconexión o combustible bajo. Traiga SSN de todos los miembros, comprobante de ingresos del mes anterior y facturas de servicios.",
     "hours": "Local agency hours vary; statewide info line during business hours",
     "tags": "statewide|LIHEAP|utility-assistance|Community-Action|heating|cooling|crisis",
-    "services": "Heating and cooling bill assistance|Crisis utility intervention|Subsidy payments to utility vendors|Local agency referral|Weatherization referrals",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "services": "Heating and cooling bill assistance|Crisis utility intervention|Subsidy payments to utility vendors|Local agency referral|Weatherization referrals"
   },
   "221": {
     "description": "Northern Kentucky Community Action Commission (NKCAC) administers LIHEAP and other financial assistance for Boone, Campbell, Carroll, Gallatin, Grant, Kenton, Owen, and Pendleton counties. LIHEAP Subsidy provides seasonal electric/heating credits; Crisis component assists households with disconnect notices or within four days of running out of bulk fuel (January–March, walk-ins accepted within 48 hours of disconnect). Also offers Head Start, job training, adult education, and weatherization. Schedule LIHEAP appointments online at nkcac.10to8.com or call (859) 484-8450.",
@@ -98,9 +84,7 @@
     "hours": "Monday–Friday, 8:30 a.m.–4:00 p.m. (neighborhood centers; LIHEAP by appointment)",
     "tags": "northern-kentucky|LIHEAP|Community-Action|NKCAC|utility-assistance|8-counties",
     "services": "LIHEAP Subsidy and Crisis|Weatherization|Head Start|Job training and adult education|Crisis financial assistance",
-    "county": "Kenton",
-    "latitude": "39.0837",
-    "longitude": "-84.5085"
+    "county": "Kenton"
   },
   "222": {
     "description": "kynect is Kentucky's online benefits portal for applying for KTAP (Kentucky Transitional Assistance Program) cash assistance, SNAP food benefits, Medicaid, Child Care Assistance Program (CCAP), and other programs. KTAP provides monthly cash aid to low-income families with dependent children, with a 60-month lifetime limit, plus work support through Kentucky Works. Apply online at kynect.ky.gov, by phone at 855-306-8959, or in person at any DCBS office in all 120 counties. Use the prescreening tool before applying to check potential eligibility.",
@@ -110,9 +94,7 @@
     "notes_es": "DCBS Call Services: 855-306-8959 (lun–vie 8 a.m.–5 p.m. ET). Requiere cuenta Kentucky Online Gateway (KOG). Beneficiarios KTAP pueden calificar para cuidado infantil y transporte.",
     "hours": "Phone line Monday–Friday, 8:00 a.m.–5:00 p.m. ET; online applications 24/7",
     "tags": "statewide|kynect|KTAP|TANF|cash-assistance|SNAP|Medicaid|DCBS",
-    "services": "KTAP cash assistance applications|SNAP and Medicaid enrollment|Child Care Assistance|Kentucky Works referrals|Online benefits management",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "services": "KTAP cash assistance applications|SNAP and Medicaid enrollment|Child Care Assistance|Kentucky Works referrals|Online benefits management"
   },
   "223": {
     "description": "Kentucky 211 connects residents to local emergency financial assistance, food, housing, utilities, mental health services, and other community resources. Dial 2-1-1 from any phone or text your zip code to 898211 to reach a trained specialist 24 hours a day, 7 days a week. Service provided through United Way of Kentucky's network covering all 120 counties. Free, confidential, and available in multiple languages with interpreter support. Also searchable online at kentucky211.org.",
@@ -122,9 +104,7 @@
     "notes_es": "Envíe código postal al 898211. 211 no proporciona efectivo directo—refiere a programas locales. Complementa kynect.ky.gov para beneficios.",
     "hours": "24 hours a day, 7 days a week",
     "tags": "statewide|211|crisis-navigation|United-Way|referrals|24-7",
-    "services": "Emergency resource navigation|Utility and housing referrals|Food assistance connections|Mental health resource referrals|Multi-language interpreter support",
-    "latitude": "37.8393",
-    "longitude": "-84.2700"
+    "services": "Emergency resource navigation|Utility and housing referrals|Food assistance connections|Mental health resource referrals|Multi-language interpreter support"
   },
   "224": {
     "description": "Bank On Louisville is a city-led coalition connecting Louisville residents—including those with ChexSystems or prior banking problems—to certified low-cost checking accounts at mainstream banks and credit unions. Certified accounts meet national Bank On standards: no overdraft or NSF fees, $5 or less monthly, free deposits/withdrawals/bill pay. Participating institutions include Bank of America, Chase, Fifth Third, PNC, U.S. Bank, Park Community Credit Union, and others. Also offers financial education and connects to the Louisville Financial Empowerment Center for free one-on-one counseling.",
@@ -135,9 +115,7 @@
     "hours": "Online resources 24/7; coalition office Mon–Fri business hours",
     "tags": "louisville|second-chance-banking|Bank-On|financial-empowerment|ChexSystems|low-fee",
     "services": "Certified low-fee checking account referrals|Financial education workshops|Financial Empowerment Center counseling|ChexSystems-friendly banking connections",
-    "county": "Jefferson",
-    "latitude": "38.2527",
-    "longitude": "-85.7585"
+    "county": "Jefferson"
   },
   "225": {
     "description": "Commonwealth Credit Union offers 20/20 Checking—a second-chance account for members rebuilding after negative banking history. No minimum balance; $10 monthly fee; free Visa debit card with mobile wallet access; digital banking included. After one year of responsible use, members may transition to a standard commonWEALTH Checking account. Serves Central Kentucky with 17 branch locations. Membership open to those who live, work, worship, or attend school in eligible Kentucky counties.",
@@ -151,9 +129,7 @@
     "hours": "Contact Center Mon–Fri 8:30 a.m.–5:00 p.m., Sat 9:00 a.m.–12:30 p.m.; branch hours vary",
     "tags": "central-kentucky|second-chance-banking|credit-union|20-20-checking|Lexington|Frankfort",
     "services": "20/20 second-chance checking|Visa debit card|Digital and mobile banking|Account upgrade pathway|Multiple Central KY branch locations",
-    "county": "Franklin",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "county": "Franklin"
   },
   "240": {
     "description": "Transit Authority of River City (TARC) operates public bus service throughout Louisville and Jefferson County with 24+ fixed routes and 3,400+ stops—primary transit for people without vehicles. Adult fare $2.25 per ride (effective March 2026); reduced fares $1.00 for seniors, students, and eligible riders. Passes: 24-hour ($5), 7-day ($25), 30-day ($75). Pay with MyTARC card, Token Transit app, or exact cash. TARC3 paratransit available for eligible riders with disabilities. Customer service at 1000 W. Broadway.",
@@ -164,9 +140,7 @@
     "hours": "Route hours vary; customer service Mon–Fri 8:00 a.m.–4:30 p.m.",
     "tags": "louisville|public-transit|TARC|bus|MyTARC|paratransit|affordable",
     "services": "Fixed-route bus service|TARC3 paratransit|MyTARC fare card|Token Transit mobile payment|Reduced fare programs",
-    "county": "Jefferson",
-    "latitude": "38.2465",
-    "longitude": "-85.7755"
+    "county": "Jefferson"
   },
   "241": {
     "description": "Lextran is Lexington and Fayette County's public bus system operating 26 fixed routes 7 days a week, 365 days a year. Standard fare $1.00 per trip; half fares ($0.50) for seniors 62+ and people with disabilities with Lextran ID card. Service spans 5:00 a.m.–12:30 a.m. weekdays/Saturdays and 5:00 a.m.–9:30 p.m. Sundays. Downtown Transit Center at 150 E. Vine Street is the route hub. Lextran Wheels paratransit serves riders who cannot use fixed routes.",
@@ -177,9 +151,7 @@
     "hours": "Routes approximately 5:00 a.m.–12:30 a.m. (weekdays); Transit Center M–F 6:00 a.m.–5:45 p.m., Sat 8:00 a.m.–4:00 p.m.",
     "tags": "lexington|public-transit|Lextran|bus|affordable|Fayette|paratransit",
     "services": "Fixed-route bus service|Lextran Wheels paratransit|Reduced and half fares|Daily weekly and monthly passes|Downtown Transit Center",
-    "county": "Fayette",
-    "latitude": "38.0480",
-    "longitude": "-84.4970"
+    "county": "Fayette"
   },
   "242": {
     "description": "Transit Authority of Northern Kentucky (TANK) provides public bus service in Boone, Campbell, and Kenton counties with connections to downtown Cincinnati. Operates 27 routes, 19 park-and-ride locations, and the RAMP paratransit program for riders with disabilities, 365 days a year. Covington Transit Center on Madison Avenue is a major hub. Essential transportation for NKY residents without vehicles traveling to work, appointments, and Cincinnati-area destinations.",
@@ -193,9 +165,7 @@
     "hours": "Route hours vary by line; administration Mon–Fri 7:00 a.m.–6:00 p.m.",
     "tags": "northern-kentucky|TANK|public-transit|bus|Cincinnati|Boone|Kenton|Campbell",
     "services": "Fixed-route bus service|RAMP paratransit|Cincinnati cross-river connections|Park-and-ride locations|Route planning and schedules",
-    "county": "Kenton",
-    "latitude": "39.0510",
-    "longitude": "-84.5340"
+    "county": "Kenton"
   },
   "260": {
     "description": "Kentucky's child support program is administered by the Office of the Attorney General as the Department of Child Support Services (DCSS), effective July 1, 2025 (previously under CHFS). Handles establishment of paternity and support orders, modification, enforcement, wage withholding, and payment tracking for cases statewide. Custodial and non-custodial parents can apply online, make payments, and manage cases through kentuckychildsupport.ky.gov. Hotline for case assistance; 24/7 automated payment info at 800-443-1576.",
@@ -206,9 +176,7 @@
     "hours": "Hotline Monday–Friday, 8:00 a.m.–4:30 p.m. ET; online portal 24/7",
     "tags": "statewide|child-support|Attorney-General|DCSS|enforcement|payments",
     "services": "Child support order establishment|Paternity establishment|Payment processing and tracking|Wage withholding enforcement|Online case management portal",
-    "county": "Franklin",
-    "latitude": "38.2009",
-    "longitude": "-84.8733"
+    "county": "Franklin"
   },
   "261": {
     "description": "Jefferson County Attorney's Office Child Support Division—Kentucky's largest county child support office with nearly 55,000 active cases—provides local enforcement for Jefferson County residents under contract with the state DCSS (Attorney General). Services include locating non-custodial parents, establishing and modifying orders, medical support, payment monitoring, and enforcement. Apply in person, online at kentuckychildsupport.ky.gov, or by phone. Cash payments accepted at Bishop Lane office and Hall of Justice downtown.",
@@ -219,9 +187,7 @@
     "hours": "Monday–Friday, 8:00 a.m.–5:00 p.m. (phones 8:30 a.m.–4:30 p.m.; payment window until 4:45 p.m.)",
     "tags": "louisville|child-support|Jefferson-County|enforcement|payments|DCSS",
     "services": "Local child support enforcement|Paternity and order establishment|Payment collection and monitoring|Non-custodial parent location|Medical support orders",
-    "county": "Jefferson",
-    "latitude": "38.2230",
-    "longitude": "-85.6520"
+    "county": "Jefferson"
   },
   "262": {
     "description": "KVC Kentucky is a nonprofit child welfare and behavioral health organization headquartered in Lexington, serving more than 22,000 children and families annually across eight Kentucky regions. Family First Preservation and Reunification Services help families stay together or reunify after out-of-home placement through in-home, evidence-based support coordinated with DCBS. Also provides behavioral health, substance abuse treatment, and foster care services. All preservation/reunification referrals come through the Department for Community Based Services (DCBS)—contact your DCBS worker to initiate.",
@@ -232,9 +198,7 @@
     "hours": "Monday–Friday during business hours; behavioral health intake by appointment",
     "tags": "statewide|family-reunification|preservation|KVC|DCBS-referral|behavioral-health|Lexington",
     "services": "Family preservation services|Family reunification support|In-home behavioral health|Substance abuse treatment|Foster care (separate program)",
-    "county": "Fayette",
-    "latitude": "38.0480",
-    "longitude": "-84.4420"
+    "county": "Fayette"
   },
   "263": {
     "description": "The Center for Women and Families provides 24/7 trauma-informed advocacy, crisis response, emergency shelter, and support for survivors of intimate partner violence and sexual assault across nine Kentuckiana counties (Jefferson, Bullitt, Henry, Oldham, Shelby, Spencer, Trimble in KY; Clark and Floyd in IN). Highly relevant for women leaving incarceration with domestic violence history. Louisville campus at 927 S. 2nd Street open 24 hours with emergency shelter. Toll-free crisis line available statewide.",
@@ -245,9 +209,7 @@
     "hours": "24/7 crisis line and Louisville campus; walk-in advocacy Mon–Fri 9:00 a.m.–5:00 p.m.",
     "tags": "louisville|domestic-violence|sexual-assault|24-7-crisis|shelter|trauma-informed|reentry",
     "services": "24/7 crisis hotline|Emergency shelter|Sexual assault forensic exams|Safety planning|Legal and housing advocacy|Children's services",
-    "county": "Jefferson",
-    "latitude": "38.2405",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "280": {
     "description": "Reflections of Hope provides Adult Peer Support Specialist (APSS) certification training dual-certified for both Kentucky and Ohio—one training yielding credentials in both states. Also offers Community Support Associate (CSA) training for Kentucky. Programs prepare individuals with lived experience in mental health or substance use recovery for peer support careers inside and outside the justice system, supporting reentry and recidivism reduction. Kentucky APSS requires 30+ hours of state-approved training, written and oral exams, and registration through DBHDID TRIS.",
@@ -257,8 +219,6 @@
     "notes_es": "Requisitos KY: 18+, diploma/GED, diagnóstico documentado de salud mental o sustancias con patrón de recuperación. Suba CEUs a tris.dbhdid.ky.gov. Certificación dual en línea de 40 horas disponible.",
     "hours": "Training schedules vary; online and in-person cohorts—check reflecthope.org",
     "tags": "statewide|peer-support|APSS|certification|dual-KY-OH|reentry|recovery|training",
-    "services": "Adult Peer Support Specialist dual KY/OH certification|Community Support Associate training|Online certification courses|CEU upload guidance|Reentry peer workforce preparation",
-    "latitude": "37.8393",
-    "longitude": "-84.2700"
+    "services": "Adult Peer Support Specialist dual KY/OH certification|Community Support Associate training|Online certification courses|CEU upload guidance|Reentry peer workforce preparation"
   }
 }

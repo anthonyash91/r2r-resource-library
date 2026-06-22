@@ -15,6 +15,7 @@ import {
   emptyRecentActivity,
 } from "@/lib/analytics-empty";
 import { MAX_FEATURED_RESOURCES } from "@/lib/featured-resources-storage";
+import { isAnnouncementActive } from "@/lib/announcements";
 import { getServerLocale } from "@/i18n/server";
 import {
   localizeAnnouncements,
@@ -380,7 +381,10 @@ export async function getAnnouncements(): Promise<Announcement[]> {
     .order("is_pinned", { ascending: false })
     .order("created_at", { ascending: false });
 
-  return localizeAnnouncements((data as Announcement[]) ?? [], locale);
+  const active = ((data as Announcement[]) ?? []).filter((announcement) =>
+    isAnnouncementActive(announcement)
+  );
+  return localizeAnnouncements(active, locale);
 }
 
 export async function getHomepageContent(): Promise<Record<string, string>> {

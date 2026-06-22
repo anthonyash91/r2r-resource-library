@@ -32,7 +32,7 @@ Include **statewide** hotlines/portals and **local** providers. Exclude generic 
 Produce a **CSV-ready dataset** with exactly these columns (header row required):
 
 ```text
-id,name,category,region,description,description_es,address,city,phone,email,website,eligibility,eligibility_es,notes,notes_es,hours,tags,services,county,latitude,longitude,served_counties,coverage
+id,name,category,region,description,description_es,address,city,phone,email,website,eligibility,eligibility_es,notes,notes_es,hours,tags,services,county,served_counties,coverage
 ```
 
 Also produce a companion **`research_log.csv`** with columns:
@@ -183,10 +183,6 @@ Each item should be a short phrase a user would recognize.
 **Primary office / map pin county only** — the county where the main address sits. Use official county name (e.g. `Franklin`, not `Franklin County` unless that is the state convention).
 
 For statewide resources with no physical office, leave blank.
-
-### `latitude`, `longitude`
-
-Decimal degrees for the **primary address**. Verify via geocoding from the official address. Leave blank if no address. Do not geocode a city centroid unless the org is city-wide with no street address published.
 
 ### `served_counties`
 

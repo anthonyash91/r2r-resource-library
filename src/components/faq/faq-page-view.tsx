@@ -14,7 +14,7 @@ import { Card } from "@/components/ui/card";
 import { SearchField } from "@/components/ui/search-field";
 import { FaqAccordion } from "@/components/faq/faq-accordion";
 import { FAQ_CATEGORIES } from "@/lib/faq-categories";
-import { cn, pageSectionPadding } from "@/lib/utils";
+import { cn, pageSectionPadding, pageSectionSubtitleOnHeroClass, pageSectionSubheadingClass } from "@/lib/utils";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import { useTranslations } from "@/i18n/locale-context";
 import type { Faq } from "@/types";
@@ -76,7 +76,7 @@ export function FaqPageView({ faqs }: FaqPageViewProps) {
       groups.set(category, existing);
     }
 
-    const orderedCategories =
+    const orderedCategories: string[] =
       activeCategory === "all"
         ? FAQ_CATEGORIES.map(({ value }) => value).filter((value) => groups.has(value))
         : groups.has(activeCategory)
@@ -84,7 +84,7 @@ export function FaqPageView({ faqs }: FaqPageViewProps) {
           : [];
 
     for (const category of groups.keys()) {
-      if (!orderedCategories.includes(category as CategoryFilter)) {
+      if (!orderedCategories.includes(category)) {
         orderedCategories.push(category);
       }
     }
@@ -191,7 +191,7 @@ export function FaqPageView({ faqs }: FaqPageViewProps) {
                   <section key={category} aria-labelledby={`faq-section-${category}`}>
                     <h2
                       id={`faq-section-${category}`}
-                      className="mb-4 text-xl font-bold text-foreground sm:text-2xl"
+                      className={cn("mb-4", pageSectionSubheadingClass)}
                     >
                       {label}
                     </h2>
@@ -203,7 +203,7 @@ export function FaqPageView({ faqs }: FaqPageViewProps) {
 
             <aside className="space-y-6">
               <Card className="p-6 sm:p-7">
-                <h2 className="mb-3 text-lg font-bold text-foreground">{t("faq.stillNeedHelpTitle")}</h2>
+                <h2 className={cn("mb-3", pageSectionSubheadingClass)}>{t("faq.stillNeedHelpTitle")}</h2>
                 <p className="mb-5 text-base leading-relaxed text-muted-foreground">
                   {t("faq.stillNeedHelpBody")}
                 </p>
@@ -220,7 +220,7 @@ export function FaqPageView({ faqs }: FaqPageViewProps) {
               </Card>
 
               <Card className="p-6 sm:p-7">
-                <h2 className="mb-5 text-lg font-bold text-foreground">{t("faq.quickLinksTitle")}</h2>
+                <h2 className={cn("mb-5", pageSectionSubheadingClass)}>{t("faq.quickLinksTitle")}</h2>
                 <ul className="space-y-5">
                   {sidebarLinks.map(({ href, icon: Icon, title, description }) => (
                     <li key={href}>
@@ -249,7 +249,7 @@ export function FaqPageView({ faqs }: FaqPageViewProps) {
               </Card>
 
               <Card className="border-primary/15 bg-secondary/60 p-6 sm:p-7">
-                <h2 className="mb-3 text-lg font-bold text-foreground">{t("faq.crisisTitle")}</h2>
+                <h2 className={cn("mb-3", pageSectionSubheadingClass)}>{t("faq.crisisTitle")}</h2>
                 <p className="text-base leading-relaxed text-foreground/90">{t("faq.crisisBody")}</p>
               </Card>
             </aside>
@@ -265,7 +265,7 @@ export function FaqPageView({ faqs }: FaqPageViewProps) {
           <h2 id="faq-cta-heading" className="text-3xl font-bold text-primary-foreground sm:text-4xl">
             {t("faq.ctaTitle")}
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-primary-foreground/90 sm:text-lg">
+          <p className={cn("mx-auto mt-4 max-w-2xl", pageSectionSubtitleOnHeroClass)}>
             {t("faq.ctaSubtitle")}
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

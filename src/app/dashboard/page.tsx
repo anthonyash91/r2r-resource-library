@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { DashboardClient } from "./dashboard-client";
 import { getCategories, getResources } from "@/lib/data";
 import { getServerTranslator } from "@/i18n/server";
+import { getRecommendedResources } from "@/lib/user-preferences/recommendations";
+import { getServerUserPreferences } from "@/lib/user-preferences/server";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { t } = await getServerTranslator();
@@ -12,14 +14,19 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function DashboardPage() {
-  const [categories, allResources] = await Promise.all([
+  const [categories, allResources, preferences] = await Promise.all([
     getCategories(),
     getResources(),
+    getServerUserPreferences(),
   ]);
 
-  const recommended = [...allResources]
-    .sort((a, b) => b.view_count - a.view_count)
-    .slice(0, 6);
+  const recommended = getRecommendedResources(allResources, preferences);
 
-  return <DashboardClient categories={categories} recommended={recommended} />;
+  return (
+    <DashboardClient
+      categories={categories}
+      recommended={recommended}
+      preferences={preferences}
+    />
+  );
 }

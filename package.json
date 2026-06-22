@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start -p 8080",
     "lint": "eslint",
+    "prepare": "bash scripts/install-git-hooks.sh",
     "seed:resources": "npx tsx scripts/generate-resources-seed.ts data/resources.csv",
     "seed:resources:ohio": "python3 scripts/build-ohio-resources.py && python3 scripts/enrich-resources.py data/ohio-resources.csv --write-json data/enrichments/ohio-enriched.json && RESOURCES_DEFAULT_STATE=Ohio RESOURCES_UUID_PREFIX=d2000001 RESOURCES_SEED_OUTPUT=supabase/seed-ohio-resources.sql RESOURCES_INCLUDE_CATEGORIES=false npx tsx scripts/generate-resources-seed.ts data/ohio-resources.csv",
     "enrich:ohio": "python3 scripts/enrich-resources.py data/ohio-resources.csv --write-json data/enrichments/ohio-enriched.json",

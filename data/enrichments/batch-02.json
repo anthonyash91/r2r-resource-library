@@ -11,9 +11,7 @@
     "hours": "Intake: call (502) 635-4530 anytime for admissions scheduling",
     "tags": "louisville|women|children|pregnancy|substance-use|family-treatment|VOA",
     "services": "Residential substance use treatment|Medication-assisted treatment|Family-centered care|Parenting classes|Reunification support|Life skills and vocational training",
-    "county": "Jefferson",
-    "latitude": "38.2270",
-    "longitude": "-85.7360"
+    "county": "Jefferson"
   },
   "16": {
     "description": "Re:Center Ministries is a faith-based organization serving Louisville's homeless and hurting since 1881. Offers emergency overnight shelter for men (reserve through Coordinated Shelter Access at 502-637-2337), a day shelter for women and children, and the LifeChange long-term recovery program for men completing a 90-day track with access to private suites. Also helps individuals obtain ID documents and a mailing address. Relocated to South Brook Street with expanded shelter capacity.",
@@ -26,9 +24,7 @@
     "hours": "Shelter check-in for men: 7:00–7:30 p.m.; check-out 6:30 a.m. Call for LifeChange and day shelter hours",
     "tags": "louisville|homeless|shelter|recovery|lifechange|faith-based|men",
     "services": "Emergency men's shelter|Women and children's day shelter|LifeChange addiction recovery|ID and mailing address assistance|Church partnerships",
-    "county": "Jefferson",
-    "latitude": "38.2405",
-    "longitude": "-85.7608"
+    "county": "Jefferson"
   },
   "17": {
     "description": "Exodus Scholar Homes provides small-scale transitional and recovery housing in Louisville's West End for individuals seeking stability after incarceration or during recovery. The program operates a duplex with four beds and offers case management, job training connections, and mental health counseling support. Office hours are weekdays; call ahead to confirm bed availability and intake requirements.",
@@ -39,9 +35,7 @@
     "hours": "Monday–Friday, 9:00 a.m.–7:00 p.m.",
     "tags": "louisville|transitional-housing|recovery|west-end|small-program",
     "services": "Transitional housing|Recovery housing|Case management|Job training referrals|Mental health counseling",
-    "county": "Jefferson",
-    "latitude": "38.2480",
-    "longitude": "-85.7900"
+    "county": "Jefferson"
   },
   "18": {
     "description": "Coordinated Shelter Access (formerly Single Point of Entry) is Louisville Metro's central phone and walk-in line for reserving emergency shelter beds and connecting to homelessness prevention services. Operated by the Coalition for the Homeless, CSA helps adults—including those recently released from jail or prison—find overnight shelter placement and referrals to housing navigation, benefits, and other social services. Also dial 2-1-1 for 24/7 assistance.",
@@ -54,9 +48,7 @@
     "hours": "Phone: daily 10:00 a.m.–1:00 p.m.; walk-in: Monday–Friday 10:00 a.m.–1:00 p.m.",
     "tags": "louisville|homeless|shelter|coordinated-entry|emergency-housing|reentry",
     "services": "Emergency shelter bed reservations|Homelessness prevention referrals|Housing navigation connections|Social service referrals",
-    "county": "Jefferson",
-    "latitude": "38.2305",
-    "longitude": "-85.7580"
+    "county": "Jefferson"
   },
   "20": {
     "description": "Chrysalis House is Kentucky's oldest and largest licensed residential substance use treatment program for women and a Kentucky DOC-contracted Reentry Service Center. Serves women age 18+ from across Kentucky; pregnant women and mothers may bring newborns and children under two full-time, with older children visiting on weekends. Offers residential and outpatient treatment, GED support, employment assistance, domestic violence counseling, and on-site early childhood education. Call admissions for a confidential screening.",
@@ -68,9 +60,7 @@
     "hours": "Admissions: Monday–Friday; call (859) 977-2501 for screening",
     "tags": "lexington|women|children|RSC|DOC-contract|substance-use|recovery",
     "services": "Residential substance use treatment|Outpatient treatment|Women and children's housing|GED assistance|Employment support|Domestic violence counseling|Early childhood education",
-    "county": "Fayette",
-    "latitude": "38.0420",
-    "longitude": "-84.5420"
+    "county": "Fayette"
   },
   "21": {
     "description": "The Hope Center's George Privett Recovery Center is a Kentucky DOC-contracted Reentry Service Center providing long-term residential recovery for men with substance use disorders. The 9–12 month peer-driven program uses the Recovery Dynamics curriculum with 12-step principles, accountability, life skills, and employment readiness. Many men enter through Safe Off the Streets (SOS) emergency shelter before transitioning into structured recovery. DOC Probation and Parole referrals accepted.",
@@ -81,9 +71,7 @@
     "hours": "Call (859) 225-4673 for admissions and program information",
     "tags": "lexington|men|RSC|DOC-contract|recovery|substance-use|long-term",
     "services": "Residential recovery program|Recovery Dynamics curriculum|12-step programming|Life skills training|Employment readiness|Safe Off the Streets entry",
-    "county": "Fayette",
-    "latitude": "38.0520",
-    "longitude": "-84.4980"
+    "county": "Fayette"
   },
   "22": {
     "description": "The Hope Center's Ball-Quantrell Jones Recovery Center for Women is a Kentucky DOC-contracted Reentry Service Center offering long-term residential recovery for women with substance use disorders. Since 2002, this gender-specific program combines trauma-informed care, the Recovery Dynamics curriculum, peer support, and professional supervision with employment readiness and health clinic access. Open to women across Kentucky seeking a safe structured environment for sustained sobriety.",
@@ -94,9 +82,7 @@
     "hours": "Call (859) 252-2002 for admissions and program information",
     "tags": "lexington|women|RSC|DOC-contract|recovery|trauma-informed|substance-use",
     "services": "Women's residential recovery|Trauma-informed care|Recovery Dynamics curriculum|Employment readiness|Health clinic access|Peer support",
-    "county": "Fayette",
-    "latitude": "38.0380",
-    "longitude": "-84.5180"
+    "county": "Fayette"
   },
   "23": {
     "description": "Dismas Charities Lexington is a Kentucky DOC-listed residential reentry center (halfway house) at 909 Georgetown Street for men and women returning from state and federal incarceration in Central Kentucky. Provides structured community-based supervision, employment assistance, substance abuse programming, and support reconnecting with family and employers. Referrals typically come from Kentucky DOC, the Bureau of Prisons, or courts—call to confirm bed availability.",
@@ -106,9 +92,7 @@
     "hours": "Call for intake and visiting hours",
     "tags": "lexington|halfway-house|reentry|federal|state|dismas|DOC-contract",
     "services": "Residential reentry housing|Employment assistance|Substance abuse programming|Community supervision support|Job placement",
-    "county": "Fayette",
-    "latitude": "38.0720",
-    "longitude": "-84.4820"
+    "county": "Fayette"
   },
   "24": {
     "description": "Shepherd's House is a long-term recovery organization in Lexington serving men with substance use disorders since 1989. The structured 12-month residential program emphasizes 12-step fellowship, peer accountability, individual therapy, employment, and daily life skills. Suitable for men on probation, parole, or court compliance who commit to sustained sobriety. Also operates DOC-affiliated programs in multiple Kentucky counties. Admissions line separate from main office.",
@@ -118,9 +102,7 @@
     "hours": "Call admissions at (859) 447-4020 for intake",
     "tags": "lexington|men|recovery|transitional-housing|12-step|probation|parole",
     "services": "Long-term residential recovery|12-step programming|Individual therapy|Employment support|Life skills training|DOC-affiliated programs",
-    "county": "Fayette",
-    "latitude": "38.0340",
-    "longitude": "-84.5020"
+    "county": "Fayette"
   },
   "25": {
     "description": "Lexington Rescue Mission's Breaking Chains re-entry program provides faith-based training and case management for incarcerated and formerly incarcerated men and women in Central Kentucky. In-jail classes (The Genesis Process and Jobs for Life) run at Fayette, Woodford, Madison, Jessamine, and other facilities; upon release, case managers help with IDs, transportation, clothing, housing, employment, and sobriety support. Partners with U.S. Probation and Parole.",
@@ -134,8 +116,6 @@
     "hours": "Monday–Friday, 8:00 a.m.–4:30 p.m.",
     "tags": "lexington|reentry|faith-based|case-management|jail-programs|employment",
     "services": "In-jail reentry classes|Genesis Process|Jobs for Life|Post-release case management|Mentor support|ID and housing assistance|Employment help",
-    "county": "Fayette",
-    "latitude": "38.0720",
-    "longitude": "-84.5080"
+    "county": "Fayette"
   }
 }

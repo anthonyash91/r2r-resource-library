@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Heart } from "lucide-react";
 import { PageHeroBand } from "@/components/layout/page-hero-band";
-import { cn, pageSectionPadding } from "@/lib/utils";
+import { cn, pageSectionPadding, pageSectionSubheadingClass } from "@/lib/utils";
 import { parseCmsContent } from "@/lib/parse-cms-content";
 
 interface RelatedLink {
@@ -62,7 +62,7 @@ export function CmsPageView({
                       className="py-6 first:pt-0 last:pb-0"
                     >
                       {block.title ? (
-                        <h2 className="mb-3 text-lg font-bold text-foreground">{block.title}</h2>
+                        <h2 className={cn("mb-3", pageSectionSubheadingClass)}>{block.title}</h2>
                       ) : null}
 
                       {block.body ? (
