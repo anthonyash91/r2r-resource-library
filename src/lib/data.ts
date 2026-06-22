@@ -6,14 +6,18 @@ import type {
   Announcement,
   AnalyticsSummary,
   Profile,
+  AdminUserListItem,
   CmsPage,
 } from "@/types";
 import { isSupabaseConfigured } from "@/lib/supabase/server";
 import { createClient } from "@/lib/supabase/server";
 import {
   emptyAnalyticsSummary,
-  emptyRecentActivity,
 } from "@/lib/analytics-empty";
+import {
+  aggregateRecentActivity,
+  recentActivitySinceIso,
+} from "@/lib/analytics-recent-activity";
 import { MAX_FEATURED_RESOURCES } from "@/lib/featured-resources-storage";
 import { isAnnouncementActive } from "@/lib/announcements";
 import { getServerLocale } from "@/i18n/server";
@@ -428,6 +432,8 @@ export async function getAnalytics(): Promise<AnalyticsSummary> {
     activeResourcesDetailRes,
     mostViewedRes,
     mostSavedRes,
+    recentViewsRes,
+    recentSavesRes,
   ] = await Promise.all([
     supabase.from("resources").select("id", { count: "exact", head: true }),
     supabase.from("resources").select("id", { count: "exact", head: true }).eq("status", "active"),
@@ -452,6 +458,14 @@ export async function getAnalytics(): Promise<AnalyticsSummary> {
       .gt("save_count", 0)
       .order("save_count", { ascending: false })
       .limit(5),
+    supabase
+      .from("resource_views")
+      .select("viewed_at")
+      .gte("viewed_at", recentActivitySinceIso()),
+    supabase
+      .from("saved_resources")
+      .select("created_at")
+      .gte("created_at", recentActivitySinceIso()),
   ]);
 
   const resources = (activeResourcesDetailRes.data ?? []) as Resource[];
@@ -469,6 +483,11 @@ export async function getAnalytics(): Promise<AnalyticsSummary> {
     0
   );
 
+  const recentActivityRaw = aggregateRecentActivity(
+    (recentViewsRes.data ?? []) as { viewed_at: string }[],
+    (recentSavesRes.data ?? []) as { created_at: string }[]
+  );
+
   return {
     totalResources: totalResourcesRes.count ?? 0,
     activeResources: activeResourcesRes.count ?? 0,
@@ -484,7 +503,10 @@ export async function getAnalytics(): Promise<AnalyticsSummary> {
       .sort((a, b) => b.count - a.count),
     mostViewed: (mostViewedRes.data ?? []) as Resource[],
     mostSaved: (mostSavedRes.data ?? []) as Resource[],
-    recentActivity: emptyRecentActivity(),
+    recentActivity: recentActivityRaw.map((item) => ({
+      ...item,
+      date: localizeDayLabels([item.date], locale)[0] ?? item.date,
+    })),
   };
 }
 
@@ -548,7 +570,7 @@ export async function getAllCategoriesAdmin(): Promise<Category[]> {
   return localizeCategories((data as Category[]) ?? [], locale);
 }
 
-export async function getAllUsersAdmin(): Promise<Profile[]> {
+export async function getAllUsersAdmin(): Promise<AdminUserListItem[]> {
   if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
@@ -556,10 +578,18 @@ export async function getAllUsersAdmin(): Promise<Profile[]> {
 
   const { data } = await supabase
     .from("profiles")
-    .select("*")
+    .select("*, facility:facilities(name)")
     .order("created_at", { ascending: false });
 
-  return (data as Profile[]) ?? [];
+  return ((data ?? []) as Array<Profile & { facility?: { name: string } | null }>).map(
+    (row) => {
+      const { facility, ...profile } = row;
+      return {
+        ...(profile as Profile),
+        facility_name: facility?.name ?? null,
+      };
+    }
+  );
 }
 
 export async function getCmsPages(): Promise<CmsPage[]> {

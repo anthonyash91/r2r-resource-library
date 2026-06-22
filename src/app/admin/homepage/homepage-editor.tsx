@@ -169,7 +169,7 @@ export function HomepageEditor({ initial, resources }: HomepageEditorProps) {
           />
         </div>
         <div className="space-y-2">
-          <Button size="lg" onClick={handleSave} disabled={saving}>
+          <Button size="lg" onClick={handleSave} loading={saving}>
             {saved
               ? t("admin.saved")
               : saving

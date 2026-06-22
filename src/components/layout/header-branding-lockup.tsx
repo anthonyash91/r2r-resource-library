@@ -14,6 +14,7 @@ interface HeaderBrandingLockupProps {
   taglinePhrases: string[];
   textWrapperClassName?: string;
   className?: string;
+  compact?: boolean;
 }
 
 export function HeaderBrandingLockup({
@@ -21,13 +22,32 @@ export function HeaderBrandingLockup({
   taglinePhrases,
   textWrapperClassName,
   className,
+  compact = false,
 }: HeaderBrandingLockupProps) {
   return (
     <div className={cn("flex min-w-0 items-center", siteBrandLockupGapClass, className)}>
-      <SiteLogoMark variant="green" />
-      <div className={cn("flex min-w-0 flex-col justify-center", siteBrandTextOffsetClass, textWrapperClassName)}>
-        <span className={cn(siteBrandTitleClass, "text-primary")}>{brandName}</span>
-        <RotatingNavTagline phrases={taglinePhrases} />
+      <SiteLogoMark
+        variant="green"
+        className={cn("transition-[height,width] duration-200 ease-out", compact ? "h-8" : "h-10")}
+      />
+      <div
+        className={cn(
+          "flex min-w-0 flex-col justify-center",
+          !compact && siteBrandTextOffsetClass,
+          textWrapperClassName
+        )}
+      >
+        <span
+          className={cn(
+            "block truncate font-bold text-primary transition-[font-size,line-height,height] duration-200 ease-out",
+            compact ? "h-8 text-base leading-8" : siteBrandTitleClass
+          )}
+        >
+          {brandName}
+        </span>
+        {!compact ? (
+          <RotatingNavTagline phrases={taglinePhrases} />
+        ) : null}
       </div>
     </div>
   );

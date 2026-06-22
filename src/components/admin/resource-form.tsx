@@ -204,7 +204,7 @@ export function ResourceForm({ categories, resource }: ResourceFormProps) {
           </span>
         </label>
         <div className="flex gap-3">
-          <Button type="submit" size="lg" disabled={saving}>
+          <Button type="submit" size="lg" loading={saving}>
             {saving
               ? t("admin.saving")
               : resource?.id

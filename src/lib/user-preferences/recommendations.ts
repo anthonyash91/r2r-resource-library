@@ -87,7 +87,7 @@ export function getRecommendedResources(
   const priorityCategories = prefs?.priorityCategories ?? [];
 
   if (!county || !state) {
-    return [...active].sort((a, b) => b.view_count - a.view_count).slice(0, limit);
+    return [];
   }
 
   const serving = active.filter((resource) => {

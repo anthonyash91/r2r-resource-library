@@ -70,7 +70,7 @@ function LoginForm() {
                 {error}
               </p>
             )}
-            <Button type="submit" size="lg" className="w-full" disabled={loading}>
+            <Button type="submit" size="lg" className="w-full" loading={loading}>
               {loading ? t("auth.signingIn") : t("auth.signIn")}
             </Button>
           </form>

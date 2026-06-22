@@ -10,6 +10,7 @@ import { Card } from "@/components/ui/card";
 import { formatPhone, formatWebsiteDisplay, truncateDescriptionPreview, cn } from "@/lib/utils";
 import { useSaved } from "@/lib/saved-context";
 import { useAuth } from "@/lib/auth-context";
+import { useSignInHref } from "@/hooks/use-sign-in-href";
 import { useTranslations } from "@/i18n/locale-context";
 
 interface ResourceCardProps {
@@ -25,6 +26,7 @@ export function ResourceCard({
 }: ResourceCardProps) {
   const { isSaved, toggleSave } = useSaved();
   const { user } = useAuth();
+  const signInHref = useSignInHref();
   const { t } = useTranslations();
   const saved = isSaved(resource.id);
   const isCompact = variant === "compact";
@@ -33,7 +35,7 @@ export function ResourceCard({
     e.preventDefault();
     e.stopPropagation();
     if (!user) {
-      window.location.href = "/login";
+      window.location.href = signInHref;
       return;
     }
     toggleSave(resource.id);

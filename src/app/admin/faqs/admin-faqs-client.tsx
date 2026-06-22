@@ -32,6 +32,7 @@ export function AdminFaqsClient({ initial }: { initial: Faq[] }) {
   const [showForm, setShowForm] = useState(false);
   const [editing, setEditing] = useState<Faq | null>(null);
   const [saving, setSaving] = useState(false);
+  const [busyId, setBusyId] = useState<string | null>(null);
 
   const categoryOptions = useMemo(() => faqCategoryOptions(t), [t]);
 
@@ -143,9 +144,12 @@ export function AdminFaqsClient({ initial }: { initial: Faq[] }) {
     if (!confirmed) return;
 
     if (isSupabaseConfigured()) {
+      setBusyId(faq.id);
       const supabase = createClient();
       if (supabase) {
         const { error } = await supabase.from("faqs").delete().eq("id", faq.id);
+
+        setBusyId(null);
 
         if (error) {
           await alert({ title: t("common.error"), message: t("admin.faqDeleteFailed") });
@@ -199,7 +203,7 @@ export function AdminFaqsClient({ initial }: { initial: Faq[] }) {
             searchable={false}
           />
           <div className="flex gap-2">
-            <Button onClick={handleSave} disabled={saving}>
+            <Button onClick={handleSave} loading={saving}>
               {t("common.save")}
             </Button>
             <Button variant="outline" onClick={closeForm}>
@@ -224,7 +228,7 @@ export function AdminFaqsClient({ initial }: { initial: Faq[] }) {
                 <Pencil className="h-4 w-4" aria-hidden="true" />
                 {t("common.edit")}
               </Button>
-              <Button variant="ghost" size="sm" onClick={() => handleDelete(faq)}>
+              <Button variant="ghost" size="sm" onClick={() => handleDelete(faq)} loading={busyId === faq.id}>
                 <Trash2 className="h-4 w-4" aria-hidden="true" />
                 {t("admin.deleteFaq")}
               </Button>

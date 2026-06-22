@@ -1,14 +1,17 @@
 "use client";
 
-import { useEffect, useState, type ReactNode } from "react";
+import { useSyncExternalStore, type ReactNode } from "react";
 import { ChevronDown, Star } from "lucide-react";
 import type { Resource } from "@/types";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { useTranslations } from "@/i18n/locale-context";
 import { cn, blockInsetPadding, pageSectionSubtitleClass } from "@/lib/utils";
-import { RECOMMENDED_RESOURCES_HASH, RECOMMENDED_RESOURCES_ID } from "@/lib/resources-page";
-
-const STORAGE_KEY = "reentry_resources_recommended_open";
+import { RECOMMENDED_RESOURCES_ID } from "@/lib/resources-page";
+import {
+  getRecommendedPanelOpen,
+  setRecommendedPanelOpen,
+  subscribeRecommendedPanelOpen,
+} from "@/lib/resources-recommended-panel";
 
 interface CollapsibleRecommendedResourcesSectionProps {
   title: string;
@@ -24,33 +27,14 @@ export function CollapsibleRecommendedResourcesSection({
   preferencesSummary,
 }: CollapsibleRecommendedResourcesSectionProps) {
   const { t } = useTranslations();
-  const [open, setOpen] = useState(true);
-
-  useEffect(() => {
-    const forceOpen = window.location.hash === RECOMMENDED_RESOURCES_HASH;
-    if (forceOpen) {
-      setOpen(true);
-      return;
-    }
-
-    try {
-      const stored = window.localStorage.getItem(STORAGE_KEY);
-      if (stored === "0") setOpen(false);
-    } catch {
-      // ignore
-    }
-  }, []);
+  const open = useSyncExternalStore(
+    subscribeRecommendedPanelOpen,
+    () => getRecommendedPanelOpen(window.location.hash),
+    () => true
+  );
 
   const toggle = () => {
-    setOpen((current) => {
-      const next = !current;
-      try {
-        window.localStorage.setItem(STORAGE_KEY, next ? "1" : "0");
-      } catch {
-        // ignore
-      }
-      return next;
-    });
+    setRecommendedPanelOpen(!open);
   };
 
   return (
@@ -70,34 +54,25 @@ export function CollapsibleRecommendedResourcesSection({
         aria-expanded={open}
         aria-controls="recommended-resources-panel"
       >
-        {open ? (
-          <>
-            <span className="min-w-0 flex-1">
-              <span className="mb-2 flex items-center gap-2">
-                <Star className="h-6 w-6 shrink-0 text-warning" aria-hidden="true" />
-                <h2 id="recommended-resources-heading" className="m-0 text-2xl font-bold leading-6">
-                  {title}
-                </h2>
-              </span>
-              <span className={cn("block", pageSectionSubtitleClass)}>{subtitle}</span>
-            </span>
-            <ChevronDown
-              className="mt-1 h-5 w-5 shrink-0 text-muted-foreground transition-transform rotate-180"
-              aria-hidden="true"
-            />
-          </>
-        ) : (
-          <>
+        <span className="min-w-0 flex-1">
+          <span className="flex items-center gap-2">
             <Star className="h-6 w-6 shrink-0 text-warning" aria-hidden="true" />
             <h2 id="recommended-resources-heading" className="m-0 min-w-0 flex-1 text-2xl font-bold leading-6">
               {title}
             </h2>
-            <ChevronDown
-              className="h-5 w-5 shrink-0 text-muted-foreground transition-transform"
-              aria-hidden="true"
-            />
-          </>
-        )}
+          </span>
+          {open ? (
+            <span className={cn("mt-2 block", pageSectionSubtitleClass)}>{subtitle}</span>
+          ) : null}
+        </span>
+        <ChevronDown
+          className={cn(
+            "h-5 w-5 shrink-0 text-muted-foreground transition-transform",
+            open ? "mt-0.5" : undefined,
+            open && "rotate-180"
+          )}
+          aria-hidden="true"
+        />
         <span className="sr-only">
           {open ? t("resources.recommendedCollapseAria") : t("resources.recommendedExpandAria")}
         </span>
@@ -106,10 +81,13 @@ export function CollapsibleRecommendedResourcesSection({
       {open ? (
         <div
           id="recommended-resources-panel"
-          className="rounded-b-xl border-t border-border px-4 pb-5 pt-4 sm:px-5"
+          className={cn(
+            "space-y-6 rounded-b-xl border-t border-border",
+            blockInsetPadding
+          )}
         >
           {preferencesSummary}
-          <ResourceMasonry resources={resources} columns={3} />
+          <ResourceMasonry resources={resources} columns={3} layout="masonry" contained />
         </div>
       ) : null}
     </section>

@@ -1,5 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 import { cn, pageHeroPadding } from "@/lib/utils";
+import { HeroSurfaceOrbs } from "@/components/layout/hero-surface-orbs";
 
 interface PageHeroBandProps {
   icon: LucideIcon;
@@ -15,10 +16,7 @@ export function PageHeroBand({ icon: Icon, title, description }: PageHeroBandPro
         pageHeroPadding
       )}
     >
-      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-        <div className="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-primary-foreground/10 blur-3xl" />
-        <div className="absolute -right-16 top-6 h-48 w-48 rounded-full bg-primary-foreground/10 blur-3xl" />
-      </div>
+      <HeroSurfaceOrbs />
 
       <div className="relative mx-auto max-w-3xl text-center">
         <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-foreground/15 text-primary-foreground ring-1 ring-primary-foreground/20">

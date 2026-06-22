@@ -1,12 +1,15 @@
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { createAdminClient } from "@/lib/supabase/admin";
-import { isSupabaseConfigured } from "@/lib/supabase/server";
+import { createClient, isSupabaseConfigured } from "@/lib/supabase/server";
 import { facilityAccountExistsByPinHash } from "@/lib/facility/data";
+import { buildFacilityAuthEmail } from "@/lib/facility/auth-email";
 import { hashRecoveryAnswer } from "@/lib/facility/crypto";
 import { readFacilitySession } from "@/lib/facility/session";
 import { LOCALE_COOKIE, type Locale } from "@/i18n/types";
 import { createTranslator } from "@/i18n/translator";
+import { PREFS_COOKIE } from "@/lib/user-preferences/constants";
+import { profilePreferenceFieldsFromCookie } from "@/lib/user-preferences/apply-cookie-to-profile";
 
 async function getRequestLocale(): Promise<Locale> {
   const cookieStore = await cookies();
@@ -57,7 +60,7 @@ export async function POST(request: Request) {
     body = {};
   }
 
-  const email = body.email?.trim() ?? "";
+  const contactEmail = body.email?.trim() ?? "";
   const password = body.password ?? "";
   const fullName = body.fullName?.trim() ?? "";
   const recoveryQuestion1 = body.recoveryQuestion1?.trim() ?? "";
@@ -66,8 +69,6 @@ export async function POST(request: Request) {
   const recoveryAnswer2 = body.recoveryAnswer2?.trim() ?? "";
 
   if (
-    !email ||
-    !isValidEmail(email) ||
     password.length < 8 ||
     !fullName ||
     !recoveryQuestion1 ||
@@ -78,8 +79,14 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: t("facility.signupInvalid") }, { status: 400 });
   }
 
+  if (contactEmail && !isValidEmail(contactEmail)) {
+    return NextResponse.json({ error: t("facility.signupInvalid") }, { status: 400 });
+  }
+
+  const authEmail = buildFacilityAuthEmail(session.facilityId, session.pin);
+
   const { data: created, error: createError } = await admin.auth.admin.createUser({
-    email,
+    email: authEmail,
     password,
     email_confirm: true,
     user_metadata: { full_name: fullName },
@@ -91,10 +98,17 @@ export async function POST(request: Request) {
 
   const userId = created.user.id;
 
+  const cookieStore = await cookies();
+  const preferenceFields = profilePreferenceFieldsFromCookie(
+    cookieStore.get(PREFS_COOKIE)?.value
+  );
+
   const { error: profileError } = await admin
     .from("profiles")
     .update({
       full_name: fullName,
+      email: authEmail,
+      contact_email: contactEmail || null,
       signup_context: "facility",
       facility_id: session.facilityId,
       inmate_pin_hash: session.pinHash,
@@ -102,6 +116,7 @@ export async function POST(request: Request) {
       recovery_answer_1_hash: hashRecoveryAnswer(recoveryAnswer1),
       recovery_question_2: recoveryQuestion2,
       recovery_answer_2_hash: hashRecoveryAnswer(recoveryAnswer2),
+      ...(preferenceFields ?? {}),
     })
     .eq("id", userId);
 
@@ -110,5 +125,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: t("auth.signUpFailed") }, { status: 500 });
   }
 
-  return NextResponse.json({ success: true, userId });
+  const supabase = await createClient();
+  if (supabase) {
+    await supabase.auth.signInWithPassword({ email: authEmail, password });
+  }
+
+  const response = NextResponse.json({ success: true, userId });
+  return response;
 }

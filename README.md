@@ -152,7 +152,9 @@ For jails and facilities that issue tablets:
 2. Tablet bookmark: `/?facility=SITE_ID&pin=FACILITY_PIN` → middleware → `/api/facility/enter`.
 3. Inmate creates **one account per (facility, PIN)** at `/facility/signup` with custom security questions (no email verification gate for PDF email).
 4. **Session bar** and **inactivity guard** (default 30 min) remind users to sign out on shared devices.
-5. Password reset via `/facility/forgot-password` and two security Q&As.
+5. **Password reset** at `/facility/forgot-password`: enter PIN → answer security questions → set a new password (with strength meter and confirm field).
+6. **Sign-up and reset** use show/hide password toggles, confirm-password fields, and a strength meter.
+7. Returning users at `/facility/login` see a masked PIN on the shared device; only the password is entered.
 
 Site IDs are hashed at rest; reversible encryption allows admins to reveal/copy IDs. Requires `FACILITY_CRYPTO_SECRET` and `SUPABASE_SERVICE_ROLE_KEY` for signup/reset APIs.
 
@@ -165,7 +167,7 @@ Site IDs are hashed at rest; reversible encryption allows admins to reveal/copy 
 | Feature | Description |
 |---------|-------------|
 | **Homepage** | Hero search, popular tags, browse-by-category pills, personalized “Picked for you” (when onboarded), How It Works, featured resources, built-for CTA, announcements banner |
-| **Resource directory** (`/resources`) | Collapsible location filters, auto state filter from preferences, collapsible “Picked for your needs” section with preference chips and edit link, county-split results (in-county vs statewide), paginated masonry grid |
+| **Resource directory** (`/resources`) | Sticky hero search, collapsible location filters, collapsible “Picked for your needs” section (open/closed state remembered), preference chips, county-split results, paginated masonry grid; scroll-to-results respects panel state |
 | **Resource detail** (`/resources/[id]`) | Category/coverage badges, eligibility & operational notes (EN/ES), served counties, contact info, directions, save & share, related resources |
 | **Onboarding** (`/get-started`) | 3-step wizard: state (KY/OH) → county → up to 3 priority categories; skip option; edit mode via `?edit=1` |
 | **Search & filters** | Keyword, category, state, county, city, service type, coverage, recently added |
@@ -181,8 +183,8 @@ Site IDs are hashed at rest; reversible encryption allows admins to reveal/copy 
 
 | Type | Sign up | Notes |
 |------|---------|-------|
-| **Standard** | `/signup` | Email + password; email confirmation via Supabase |
-| **Facility** | `/facility/signup` | Requires active facility session cookie; PIN-bound account |
+| **Standard** | `/signup` | Email + password with strength meter and confirm field; email confirmation via Supabase |
+| **Facility** | `/facility/signup` | Requires active facility session cookie; PIN-bound account; optional contact email; password strength + confirm |
 
 ### Admin portal (`/admin`)
 
@@ -192,7 +194,7 @@ Site IDs are hashed at rest; reversible encryption allows admins to reveal/copy 
 | **Resources** | CRUD, featured flag, eligibility/notes (EN/ES), served counties, coverage |
 | **Categories** | CRUD with icons and sort order |
 | **Facilities** | Register facilities, site ID reveal/copy, signup counts, active toggle |
-| **Users** | View users, roles |
+| **Users** | View users, reset passwords, delete accounts, read saved-resource counts |
 | **Homepage** | Hero headline, subheadline, highlight, branding |
 | **Site pages** | About, Contact, Privacy, Terms, Accessibility editors |
 | **Announcements** | Scheduled homepage banners |
@@ -274,6 +276,9 @@ supabase/migrations/007_announcement_schedule_rls.sql
 supabase/migrations/008_drop_resource_coordinates.sql
 supabase/migrations/009_add_profile_onboarding.sql
 supabase/migrations/010_facilities_and_auth.sql
+supabase/migrations/011_admin_read_saved_resources.sql
+supabase/migrations/012_facility_contact_email.sql
+supabase/migrations/013_admin_delete_user.sql
 ```
 
 ### Seed resources
@@ -377,7 +382,7 @@ docs/
 | `/?facility=…&pin=…` | Facility entry (redirects to enter API) |
 | `/facility/signup` | Create PIN-bound account |
 | `/facility/login` | Sign in (must match session PIN) |
-| `/facility/forgot-password` | Reset via security questions |
+| `/facility/forgot-password` | Reset via PIN, then security questions, then new password |
 
 ### Admin
 

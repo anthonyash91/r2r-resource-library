@@ -69,8 +69,25 @@ export async function enforceApiRouteAccess(
     return null;
   }
 
+  if (pathname.startsWith("/api/user/preferences")) {
+    const authResult = await requireAuthenticatedApiAccess(supabase, locale);
+    if (authResult instanceof NextResponse) {
+      return authResult;
+    }
+    return null;
+  }
+
+  if (pathname.startsWith("/api/auth/facility-contact-email")) {
+    const authResult = await requireAuthenticatedApiAccess(supabase, locale);
+    if (authResult instanceof NextResponse) {
+      return authResult;
+    }
+    return null;
+  }
+
   if (
     pathname.startsWith("/api/auth/facility-signup") ||
+    pathname.startsWith("/api/auth/facility-login") ||
     pathname.startsWith("/api/auth/facility-reset-password") ||
     pathname.startsWith("/api/facility/")
   ) {

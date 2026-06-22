@@ -16,11 +16,17 @@ export interface Profile {
   city: string | null;
   facility_id?: string | null;
   signup_context?: "standard" | "facility" | null;
+  contact_email?: string | null;
   priority_categories?: string[];
   onboarding_completed_at?: string | null;
   created_at: string;
   updated_at: string;
   saved_pdf_emails_sent?: number;
+}
+
+/** Profile row for admin user management (includes joined facility name). */
+export interface AdminUserListItem extends Profile {
+  facility_name: string | null;
 }
 
 export interface Category {

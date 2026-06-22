@@ -5,6 +5,7 @@ import { Heart } from "lucide-react";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/lib/auth-context";
+import { useSignInHref } from "@/hooks/use-sign-in-href";
 import { useSavedResources } from "@/lib/saved-context";
 import { useTranslations } from "@/i18n/locale-context";
 import { EmailSavedResourcesButton } from "@/components/saved/email-saved-resources-button";
@@ -12,11 +13,12 @@ import { pageSectionPadding, cn } from "@/lib/utils";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 
 export default function SavedPage() {
-  const { user, loading } = useAuth();
+  const { user, loading, signingOut } = useAuth();
+  const signInHref = useSignInHref();
   const savedResources = useSavedResources();
   const { t } = useTranslations();
 
-  if (loading) {
+  if (loading || signingOut) {
     return (
       <div className="flex min-h-[40vh] items-center justify-center">
         <p className="text-lg text-muted-foreground">{t("common.loading")}</p>
@@ -31,7 +33,7 @@ export default function SavedPage() {
           <Heart className="mx-auto mb-4 h-16 w-16 text-primary" aria-hidden="true" />
           <h1 className="mb-4 text-3xl font-bold">{t("saved.signInTitle")}</h1>
           <p className="mb-8 text-lg text-muted-foreground">{t("saved.signInDesc")}</p>
-          <Link href="/login">
+          <Link href={signInHref}>
             <Button size="lg">{t("auth.signIn")}</Button>
           </Link>
         </div>

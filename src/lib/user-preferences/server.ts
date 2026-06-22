@@ -1,5 +1,6 @@
 import { cookies } from "next/headers";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/server";
+import { getServerFacilitySessionPreferences } from "@/lib/facility/session-preferences";
 import { PREFS_COOKIE } from "./constants";
 import {
   mergePreferences,
@@ -26,7 +27,8 @@ export async function getServerUserPreferences(): Promise<UserPreferences> {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    return mergePreferences(cookiePrefs, null);
+    const facilityPrefs = await getServerFacilitySessionPreferences();
+    return mergePreferences(cookiePrefs, facilityPrefs);
   }
 
   const { data: profile } = await supabase

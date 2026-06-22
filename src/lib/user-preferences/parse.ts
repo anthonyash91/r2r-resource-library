@@ -159,6 +159,22 @@ export function shouldShowOnboardingPrompt(prefs: UserPreferences | null): boole
   return !hasCompletedOnboarding(prefs);
 }
 
+export function hasRestorablePreferences(prefs: UserPreferences | null): boolean {
+  if (!prefs?.state || !prefs.county) return false;
+  return prefs.priorityCategories.length > 0;
+}
+
+/** Treat saved county/needs as complete even if onboarding_completed_at was never set. */
+export function restorePreferencesRecord(prefs: UserPreferences): UserPreferences {
+  if (hasCompletedOnboarding(prefs)) return prefs;
+  if (!hasRestorablePreferences(prefs)) return prefs;
+  return normalizePreferences({
+    ...prefs,
+    completedAt: prefs.completedAt ?? new Date().toISOString(),
+    skipped: false,
+  });
+}
+
 export function hasCompletedOnboarding(prefs: UserPreferences | null): boolean {
   if (!prefs?.completedAt || !prefs.state || !prefs.county) return false;
   return prefs.priorityCategories.length > 0;

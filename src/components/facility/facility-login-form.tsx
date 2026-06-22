@@ -2,24 +2,25 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { useAuth } from "@/lib/auth-context";
 import { useTranslations } from "@/i18n/locale-context";
 import { pageSectionPadding } from "@/lib/utils";
 
+type FacilityStatus = {
+  pinMasked?: string;
+  hasAccount?: boolean;
+};
+
 export function FacilityLoginForm() {
-  const router = useRouter();
-  const { signIn } = useAuth();
   const { t } = useTranslations();
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [sessionReady, setSessionReady] = useState<boolean | null>(null);
   const [hasAccount, setHasAccount] = useState(true);
+  const [facilityStatus, setFacilityStatus] = useState<FacilityStatus>({});
 
   useEffect(() => {
     fetch("/api/facility/status")
@@ -28,9 +29,10 @@ export function FacilityLoginForm() {
           setSessionReady(false);
           return;
         }
-        const data = (await res.json()) as { hasAccount?: boolean };
+        const data = (await res.json()) as FacilityStatus;
         setSessionReady(true);
         setHasAccount(Boolean(data.hasAccount));
+        setFacilityStatus(data);
       })
       .catch(() => setSessionReady(false));
   }, []);
@@ -40,15 +42,20 @@ export function FacilityLoginForm() {
     setError("");
     setLoading(true);
 
-    const result = await signIn(email, password);
-    if (result.error) {
-      setError(result.error);
+    const result = await fetch("/api/auth/facility-login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ password }),
+    });
+
+    if (!result.ok) {
+      const payload = (await result.json().catch(() => ({}))) as { error?: string };
+      setError(payload.error ?? t("auth.signInFailed"));
       setLoading(false);
       return;
     }
 
-    router.replace("/dashboard");
-    router.refresh();
+    window.location.assign("/dashboard");
   };
 
   if (sessionReady === null) {
@@ -90,18 +97,23 @@ export function FacilityLoginForm() {
     <div className={pageSectionPadding}>
       <div className="mx-auto max-w-md">
         <Card>
-          <h1 className="mb-2 text-2xl font-bold">{t("facility.loginTitle")}</h1>
-          <p className="mb-8 text-base text-muted-foreground">{t("facility.loginSubtitle")}</p>
+          <h1 className="mb-4 text-2xl font-bold">{t("facility.loginTitle")}</h1>
 
           <form onSubmit={handleSubmit} className="space-y-5">
-            <Input
-              label={t("auth.email")}
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              autoComplete="email"
-            />
+            {facilityStatus.pinMasked ? (
+              <div className="space-y-3">
+                <Input
+                  label={t("facility.usernameLabel")}
+                  value={facilityStatus.pinMasked}
+                  disabled
+                  readOnly
+                  autoComplete="username"
+                />
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  {t("facility.loginPinNotNeededNote")}
+                </p>
+              </div>
+            ) : null}
             <Input
               label={t("auth.password")}
               type="password"
@@ -115,7 +127,7 @@ export function FacilityLoginForm() {
                 {error}
               </p>
             ) : null}
-            <Button type="submit" size="lg" className="w-full" disabled={loading}>
+            <Button type="submit" size="lg" className="w-full" loading={loading}>
               {loading ? t("auth.signingIn") : t("auth.signIn")}
             </Button>
           </form>

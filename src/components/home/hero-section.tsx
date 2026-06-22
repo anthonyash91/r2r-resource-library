@@ -1,9 +1,12 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Search, CircleCheck } from "lucide-react";
 import { cn, resourcesHeroPadding, checkIconClass } from "@/lib/utils";
+import { HeroSurfaceOrbs } from "@/components/layout/hero-surface-orbs";
+import { useSiteHeaderOffset } from "@/hooks/use-site-header-offset";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import { useTranslations } from "@/i18n/locale-context";
 
@@ -11,6 +14,7 @@ interface HeroSearchBarProps {
   placeholder?: string;
   defaultValue?: string;
   compact?: boolean;
+  sticky?: boolean;
   preserveParams?: boolean;
 }
 
@@ -18,6 +22,7 @@ export function HeroSearchBar({
   placeholder,
   defaultValue = "",
   compact = false,
+  sticky = false,
   preserveParams = false,
 }: HeroSearchBarProps) {
   const router = useRouter();
@@ -54,21 +59,23 @@ export function HeroSearchBar({
       onSubmit={handleSearch}
       role="search"
       aria-label={t("resources.searchAria")}
-      className="mx-auto w-full max-w-3xl"
+      className={cn("mx-auto w-full", sticky ? "max-w-2xl" : "max-w-3xl")}
     >
       <div
         className={cn(
-          "flex items-center rounded-full bg-card p-1.5",
-          compact ? "h-12 shadow-md sm:h-14" : "h-16 shadow-lg"
+          "flex items-center rounded-full bg-card",
+          sticky ? "h-10 p-1 shadow-sm" : compact ? "h-12 p-1.5 shadow-md sm:h-14" : "h-16 p-1.5 shadow-lg"
         )}
       >
         <div className="relative min-w-0 flex-1 self-stretch">
           <Search
             className={cn(
               "pointer-events-none absolute top-1/2 -translate-y-1/2 text-muted-foreground",
-              compact
-                ? "left-3.5 h-4 w-4 sm:left-4 sm:h-5 sm:w-5"
-                : "left-4 h-5 w-5 sm:left-5"
+              sticky
+                ? "left-3 h-3.5 w-3.5"
+                : compact
+                  ? "left-3.5 h-4 w-4 sm:left-4 sm:h-5 sm:w-5"
+                  : "left-4 h-5 w-5 sm:left-5"
             )}
             aria-hidden="true"
           />
@@ -83,9 +90,11 @@ export function HeroSearchBar({
             aria-label={t("resources.searchAria")}
             className={cn(
               "hero-search-input h-full w-full bg-transparent text-foreground placeholder:text-muted-foreground",
-              compact
-                ? "pl-10 pr-3 text-base sm:pl-12"
-                : "pl-11 pr-4 text-base sm:pl-14 sm:text-lg"
+              sticky
+                ? "pl-9 pr-2 text-sm"
+                : compact
+                  ? "pl-10 pr-3 text-base sm:pl-12"
+                  : "pl-11 pr-4 text-base sm:pl-14 sm:text-lg"
             )}
           />
         </div>
@@ -93,7 +102,11 @@ export function HeroSearchBar({
           type="submit"
           className={cn(
             "inline-flex h-full shrink-0 cursor-pointer items-center justify-center rounded-full bg-primary font-semibold text-primary-foreground transition-colors hover:bg-primary-hover focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2",
-            compact ? "px-5 text-sm sm:px-8 sm:text-base" : "px-6 text-base sm:px-10 sm:text-lg"
+            sticky
+              ? "px-4 text-sm"
+              : compact
+                ? "px-5 text-sm sm:px-8 sm:text-base"
+                : "px-6 text-base sm:px-10 sm:text-lg"
           )}
         >
           {t("common.search")}
@@ -154,11 +167,7 @@ export function HeroSection({
 
   return (
     <section className="app-hero-surface relative flex min-h-[calc(100dvh-var(--site-header-height))] flex-col justify-center overflow-hidden px-4 py-16 sm:px-6 lg:px-8">
-      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-        <div className="absolute -bottom-28 -left-28 h-80 w-80 rounded-full bg-primary-foreground/10 blur-3xl" />
-        <div className="absolute -right-20 top-10 h-72 w-72 rounded-full bg-primary-foreground/10 blur-3xl" />
-        <div className="absolute left-1/2 top-1/2 h-[28rem] w-[28rem] -translate-x-1/2 -translate-y-1/3 rounded-full bg-primary-foreground/5 blur-3xl" />
-      </div>
+      <HeroSurfaceOrbs variant="home" />
 
       <div className="relative mx-auto w-full max-w-5xl text-center">
         <h1 className="mb-5 text-4xl font-bold leading-[1.08] text-primary-foreground sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
@@ -207,32 +216,73 @@ export function HeroSection({
 
 export function ResourcesHeroSection() {
   const { t } = useTranslations();
+  const searchBarRef = useRef<HTMLDivElement | null>(null);
+  const [showStickySearch, setShowStickySearch] = useState(false);
+  const headerOffset = useSiteHeaderOffset();
+
+  useEffect(() => {
+    const node = searchBarRef.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setShowStickySearch(!entry.isIntersecting);
+      },
+      {
+        threshold: 0,
+        rootMargin: `-${headerOffset}px 0px 0px 0px`,
+      }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [headerOffset]);
 
   return (
-    <section
-      className={cn(
-        "app-hero-surface relative overflow-hidden px-4 sm:px-6 lg:px-8",
-        resourcesHeroPadding
-      )}
-    >
-      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-        <div className="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-primary-foreground/10 blur-3xl" />
-        <div className="absolute -right-16 top-6 h-48 w-48 rounded-full bg-primary-foreground/10 blur-3xl" />
-      </div>
-
-      <div className="relative mx-auto w-full max-w-7xl">
-        <div className="mx-auto flex w-full max-w-4xl flex-col items-center gap-4 text-center sm:gap-5">
-          <div className="space-y-2">
-            <h1 className="text-3xl font-bold leading-none text-primary-foreground sm:text-4xl">
-              {t("resources.findResources")}
-            </h1>
-            <p className="mx-auto max-w-2xl text-base leading-relaxed text-primary-foreground/90 sm:text-lg">
-              {t("resources.heroSubheadline")}
-            </p>
-          </div>
-          <HeroSearchBar compact preserveParams placeholder={t("resources.searchPlaceholder")} />
+    <>
+      <div
+        className={cn(
+          "app-hero-surface fixed inset-x-0 z-50 overflow-hidden border-b border-primary-foreground/20 px-4 py-1.5 transition-[transform,opacity] duration-200 ease-out sm:px-6 sm:py-2 lg:px-8",
+          showStickySearch
+            ? "pointer-events-auto translate-y-0 opacity-100"
+            : "pointer-events-none -translate-y-full opacity-0"
+        )}
+        style={{ top: headerOffset }}
+      >
+        <HeroSurfaceOrbs variant="sticky" />
+        <div className="relative mx-auto w-full max-w-4xl">
+          <HeroSearchBar sticky preserveParams placeholder={t("resources.searchPlaceholder")} />
         </div>
       </div>
-    </section>
+
+      <section
+        className={cn(
+          "app-hero-surface relative overflow-hidden px-4 sm:px-6 lg:px-8",
+          resourcesHeroPadding
+        )}
+      >
+        <HeroSurfaceOrbs />
+
+        <div className="relative mx-auto w-full max-w-7xl">
+          <div className="mx-auto flex w-full max-w-4xl flex-col items-center gap-4 text-center sm:gap-5">
+            <div className="space-y-2">
+              <h1 className="text-3xl font-bold leading-none text-primary-foreground sm:text-4xl">
+                {t("resources.findResources")}
+              </h1>
+              <p className="mx-auto max-w-2xl text-base leading-relaxed text-primary-foreground/90 sm:text-lg">
+                {t("resources.heroSubheadline")}
+              </p>
+            </div>
+            <div ref={searchBarRef} className="w-full">
+              <HeroSearchBar
+                compact
+                preserveParams
+                placeholder={t("resources.searchPlaceholder")}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

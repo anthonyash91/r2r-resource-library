@@ -21,6 +21,7 @@ import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { formatPhone, formatDate, formatWebsiteDisplay, shareResource, cn, pageSectionPadding, pageSectionSubheadingClass } from "@/lib/utils";
 import { useSaved } from "@/lib/saved-context";
 import { useAuth } from "@/lib/auth-context";
+import { useSignInHref } from "@/hooks/use-sign-in-href";
 import type { Resource } from "@/types";
 import { useTranslations } from "@/i18n/locale-context";
 import { formatOperatingHours } from "@/i18n/localize-content";
@@ -40,6 +41,7 @@ const sectionTitleClass = pageSectionSubheadingClass;
 export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
   const { isSaved, toggleSave, recordView } = useSaved();
   const { user, loading: authLoading } = useAuth();
+  const signInHref = useSignInHref();
   const { t, locale } = useTranslations();
   const searchParams = useSearchParams();
   const selectedCounty = searchParams.get("county") ?? undefined;
@@ -61,7 +63,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
 
   const handleSave = () => {
     if (!user) {
-      window.location.href = "/login";
+      window.location.href = signInHref;
       return;
     }
     toggleSave(resource.id);

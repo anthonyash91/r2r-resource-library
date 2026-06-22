@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { ResourcesHeroSection } from "@/components/home/hero-section";
+import { ResourcesPageSkeleton } from "@/components/resources/resources-page-skeleton";
 import { PaginatedResourceList } from "@/components/resources/paginated-resource-list";
 import { ResourceResultsSummary } from "@/components/resources/resource-results-summary";
 import { CountyFilteredResourceResults } from "@/components/resources/county-filtered-resource-results";
@@ -109,7 +110,7 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
 
   return (
     <>
-      <Suspense fallback={<div className="h-48 animate-pulse bg-primary" aria-hidden="true" />}>
+      <Suspense fallback={<ResourcesPageSkeleton loadingLabel={t("resources.loadingAria")} />}>
         <ResourcesHeroSection />
       </Suspense>
 

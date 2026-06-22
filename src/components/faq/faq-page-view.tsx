@@ -10,6 +10,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { PageHeroBand } from "@/components/layout/page-hero-band";
+import { HeroSurfaceOrbs } from "@/components/layout/hero-surface-orbs";
 import { Card } from "@/components/ui/card";
 import { SearchField } from "@/components/ui/search-field";
 import { FaqAccordion } from "@/components/faq/faq-accordion";
@@ -258,10 +259,11 @@ export function FaqPageView({ faqs }: FaqPageViewProps) {
       </div>
 
       <section
-        className={cn("app-hero-surface", pageSectionPadding)}
+        className={cn("app-hero-surface relative overflow-hidden", pageSectionPadding)}
         aria-labelledby="faq-cta-heading"
       >
-        <div className="mx-auto max-w-3xl text-center">
+        <HeroSurfaceOrbs />
+        <div className="relative mx-auto max-w-3xl text-center">
           <h2 id="faq-cta-heading" className="text-3xl font-bold text-primary-foreground sm:text-4xl">
             {t("faq.ctaTitle")}
           </h2>

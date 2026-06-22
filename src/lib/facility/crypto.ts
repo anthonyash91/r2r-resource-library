@@ -26,6 +26,11 @@ export function normalizePin(pin: string): string {
   return pin.trim();
 }
 
+export function maskPin(pin: string): string {
+  const normalized = normalizePin(pin);
+  return normalized ? "*".repeat(normalized.length) : "";
+}
+
 export function normalizeRecoveryAnswer(answer: string): string {
   return answer.trim().toLowerCase().replace(/\s+/g, " ");
 }

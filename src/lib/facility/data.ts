@@ -1,5 +1,7 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { createAdminClient } from "@/lib/supabase/admin";
+import { preferencesFromProfile } from "@/lib/user-preferences/parse";
+import type { UserPreferences } from "@/lib/user-preferences/types";
 import {
   decryptSiteId,
   hashInmatePin,
@@ -25,6 +27,57 @@ export interface FacilityListItem {
   updatedAt: string;
   siteIdMasked: string;
   signupCount: number;
+}
+
+export async function getFacilityById(facilityId: string): Promise<FacilityRecord | null> {
+  const supabase = createAdminClient();
+  if (!supabase) return null;
+
+  const { data, error } = await supabase
+    .from("facilities")
+    .select("*")
+    .eq("id", facilityId)
+    .maybeSingle();
+
+  if (error || !data) return null;
+  return data as FacilityRecord;
+}
+
+export async function getFacilityProfileByPinHash(
+  facilityId: string,
+  pinHash: string
+): Promise<{ id: string; email: string; contact_email: string | null } | null> {
+  const supabase = createAdminClient();
+  if (!supabase) return null;
+
+  const { data, error } = await supabase
+    .from("profiles")
+    .select("id, email, contact_email")
+    .eq("facility_id", facilityId)
+    .eq("inmate_pin_hash", pinHash)
+    .eq("signup_context", "facility")
+    .maybeSingle();
+
+  if (error || !data) return null;
+  return data as { id: string; email: string; contact_email: string | null };
+}
+
+export async function getFacilityProfilePreferencesByPinHash(
+  facilityId: string,
+  pinHash: string
+): Promise<UserPreferences | null> {
+  const supabase = createAdminClient();
+  if (!supabase) return null;
+
+  const { data, error } = await supabase
+    .from("profiles")
+    .select("state, county, priority_categories, onboarding_completed_at")
+    .eq("facility_id", facilityId)
+    .eq("inmate_pin_hash", pinHash)
+    .maybeSingle();
+
+  if (error || !data) return null;
+  return preferencesFromProfile(data);
 }
 
 export async function findFacilityBySiteId(siteId: string): Promise<FacilityRecord | null> {
@@ -59,6 +112,41 @@ export async function facilityAccountExists(
     .maybeSingle();
 
   return !error && Boolean(data);
+}
+
+export async function getFacilityProfileRecoveryByPinHash(
+  facilityId: string,
+  pinHash: string
+): Promise<{
+  id: string;
+  email: string;
+  recovery_question_1: string;
+  recovery_question_2: string;
+  recovery_answer_1_hash: string;
+  recovery_answer_2_hash: string;
+} | null> {
+  const supabase = createAdminClient();
+  if (!supabase) return null;
+
+  const { data, error } = await supabase
+    .from("profiles")
+    .select(
+      "id, email, recovery_question_1, recovery_question_2, recovery_answer_1_hash, recovery_answer_2_hash"
+    )
+    .eq("facility_id", facilityId)
+    .eq("inmate_pin_hash", pinHash)
+    .eq("signup_context", "facility")
+    .maybeSingle();
+
+  if (error || !data) return null;
+  return data as {
+    id: string;
+    email: string;
+    recovery_question_1: string;
+    recovery_question_2: string;
+    recovery_answer_1_hash: string;
+    recovery_answer_2_hash: string;
+  };
 }
 
 export async function facilityAccountExistsByPinHash(

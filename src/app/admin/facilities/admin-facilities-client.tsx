@@ -31,6 +31,7 @@ export function AdminFacilitiesClient({ initialFacilities }: AdminFacilitiesClie
   const [facilities, setFacilities] = useState(initialFacilities);
   const [showNew, setShowNew] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [busyId, setBusyId] = useState<string | null>(null);
   const [form, setForm] = useState({ name: "", siteId: "" });
   const [createdSiteId, setCreatedSiteId] = useState<string | null>(null);
 
@@ -85,7 +86,7 @@ export function AdminFacilitiesClient({ initialFacilities }: AdminFacilitiesClie
   };
 
   const toggleActive = async (facility: AdminFacilityRow) => {
-    setSaving(true);
+    setBusyId(facility.id);
     const res = await fetch(`/api/admin/facilities/${facility.id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
@@ -94,7 +95,7 @@ export function AdminFacilitiesClient({ initialFacilities }: AdminFacilitiesClie
 
     if (!res.ok) {
       await alert({ title: t("common.error"), message: t("admin.facilitySaveFailed") });
-      setSaving(false);
+      setBusyId(null);
       return;
     }
 
@@ -103,22 +104,26 @@ export function AdminFacilitiesClient({ initialFacilities }: AdminFacilitiesClie
         item.id === facility.id ? { ...item, isActive: !item.isActive } : item
       )
     );
-    setSaving(false);
+    setBusyId(null);
     router.refresh();
   };
 
   const revealSiteId = async (facilityId: string) => {
+    setBusyId(facilityId);
     const res = await fetch(`/api/admin/facilities/${facilityId}`);
     if (!res.ok) {
       await alert({ title: t("common.error"), message: t("admin.facilityNotFound") });
+      setBusyId(null);
       return;
     }
     const payload = (await res.json()) as { siteId?: string };
     if (!payload.siteId) {
       await alert({ title: t("common.error"), message: t("admin.facilityNotFound") });
+      setBusyId(null);
       return;
     }
     await navigator.clipboard.writeText(payload.siteId);
+    setBusyId(null);
     await alert({
       title: t("common.success"),
       message: `${t("admin.facilitySiteIdCopied")} (${payload.siteId})`,
@@ -157,7 +162,7 @@ export function AdminFacilitiesClient({ initialFacilities }: AdminFacilitiesClie
             </p>
           ) : null}
           <div className="flex flex-wrap gap-2">
-            <Button onClick={handleCreate} disabled={saving}>
+            <Button onClick={handleCreate} loading={saving}>
               {t("common.save")}
             </Button>
             <Button variant="outline" onClick={resetForm} disabled={saving}>
@@ -189,6 +194,7 @@ export function AdminFacilitiesClient({ initialFacilities }: AdminFacilitiesClie
                 variant="outline"
                 size="sm"
                 onClick={() => revealSiteId(facility.id)}
+                loading={busyId === facility.id}
               >
                 <Eye className="h-4 w-4" aria-hidden="true" />
                 {t("admin.facilityRevealSiteId")}
@@ -197,7 +203,7 @@ export function AdminFacilitiesClient({ initialFacilities }: AdminFacilitiesClie
                 variant="outline"
                 size="sm"
                 onClick={() => toggleActive(facility)}
-                disabled={saving}
+                loading={busyId === facility.id}
               >
                 {facility.isActive ? t("admin.facilityDeactivate") : t("admin.facilityActivate")}
               </Button>

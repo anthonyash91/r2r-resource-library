@@ -100,26 +100,28 @@ export async function RecommendedResourcesSection({
           </p>
         </header>
 
-        <RecommendedPreferencesSummary
-          state={state ?? null}
-          county={county ?? null}
-          priorityCategories={priorityCategories}
-          variant={variant}
-        />
+        <div className="space-y-6">
+          <RecommendedPreferencesSummary
+            state={state ?? null}
+            county={county ?? null}
+            priorityCategories={priorityCategories}
+            variant={variant}
+          />
 
-        <ResourceMasonry resources={resources} columns={3} />
+          <ResourceMasonry resources={resources} columns={3} layout="masonry" />
 
-        {variant === "home" ? (
-          <div className="mt-8 text-center">
-            <Link
-              href={browseHref}
-              className="inline-flex min-h-[48px] items-center gap-2 text-base font-semibold text-primary hover:text-primary-hover"
-            >
-              {t("dashboard.browseMyCounty")}
-              <ArrowRight className="h-5 w-5" aria-hidden="true" />
-            </Link>
-          </div>
-        ) : null}
+          {variant === "home" ? (
+            <div className="text-center">
+              <Link
+                href={browseHref}
+                className="inline-flex min-h-[48px] items-center gap-2 text-base font-semibold text-primary hover:text-primary-hover"
+              >
+                {t("dashboard.browseMyCounty")}
+                <ArrowRight className="h-5 w-5" aria-hidden="true" />
+              </Link>
+            </div>
+          ) : null}
+        </div>
       </div>
     </section>
   );

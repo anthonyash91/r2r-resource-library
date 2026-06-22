@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useMemo, useState, useEffect } from "react";
+import { useMemo, useState, useEffect, useRef } from "react";
 import {
   Menu,
   X,
@@ -12,6 +12,7 @@ import {
   LayoutDashboard,
   LogIn,
   LogOut,
+  Loader2,
   Settings,
 } from "lucide-react";
 import { HeaderBrandingLockup } from "@/components/layout/header-branding-lockup";
@@ -21,6 +22,8 @@ import { useAuth } from "@/lib/auth-context";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useTranslations } from "@/i18n/locale-context";
+import { useFacilityTabletStatus } from "@/hooks/use-facility-tablet-status";
+import { useSignInHref } from "@/hooks/use-sign-in-href";
 import type { Locale } from "@/i18n/types";
 
 type NavLayout = "en" | "es-guest" | "es-user" | "es-admin";
@@ -49,6 +52,17 @@ const MOBILE_NAV_CLASSES: Record<NavLayout, string> = {
 
 import type { SiteBranding } from "@/i18n/localize-content";
 
+const COMPACT_ENTER_Y = 72;
+const COMPACT_EXIT_Y = 8;
+const FULL_HEADER_HEIGHT = "5rem";
+const COMPACT_HEADER_HEIGHT = "3.5rem";
+
+function headerActionClass(isCompact: boolean) {
+  return isCompact
+    ? "!h-9 !min-h-9 !px-3 !py-1.5 text-sm"
+    : "!h-11 !min-h-11 !px-4 !py-2 text-base";
+}
+
 interface HeaderProps {
   branding: SiteBranding;
 }
@@ -56,9 +70,16 @@ interface HeaderProps {
 export function Header({ branding }: HeaderProps) {
   const pathname = usePathname();
   const router = useRouter();
-  const { user, isAdmin, signOut, loading } = useAuth();
+  const { user, isAdmin, signOut, loading, signingOut } = useAuth();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isCompact, setIsCompact] = useState(false);
+  const isCompactRef = useRef(false);
+  const scrollRafRef = useRef<number | null>(null);
   const { t, locale } = useTranslations();
+  const shouldFetchFacility = !loading && !user && !signingOut;
+  const { facilityMode } = useFacilityTabletStatus(shouldFetchFacility);
+  const signInHref = useSignInHref();
+  const showCreateAccount = !facilityMode;
 
   const handleSignOut = async () => {
     await signOut();
@@ -75,6 +96,45 @@ export function Header({ branding }: HeaderProps) {
   useEffect(() => {
     setMobileOpen(false);
   }, [navLayout, locale]);
+
+  useEffect(() => {
+    const applyCompact = (compact: boolean) => {
+      if (isCompactRef.current === compact) return;
+
+      isCompactRef.current = compact;
+      setIsCompact(compact);
+      document.documentElement.style.setProperty(
+        "--site-header-height",
+        compact ? COMPACT_HEADER_HEIGHT : FULL_HEADER_HEIGHT
+      );
+    };
+
+    const updateCompactFromScroll = () => {
+      scrollRafRef.current = null;
+      const y = window.scrollY;
+
+      if (!isCompactRef.current && y >= COMPACT_ENTER_Y) {
+        applyCompact(true);
+      } else if (isCompactRef.current && y <= COMPACT_EXIT_Y) {
+        applyCompact(false);
+      }
+    };
+
+    const onScroll = () => {
+      if (scrollRafRef.current !== null) return;
+      scrollRafRef.current = window.requestAnimationFrame(updateCompactFromScroll);
+    };
+
+    updateCompactFromScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (scrollRafRef.current !== null) {
+        window.cancelAnimationFrame(scrollRafRef.current);
+      }
+      document.documentElement.style.removeProperty("--site-header-height");
+    };
+  }, []);
 
   const taglinePhrases = useMemo(
     () =>
@@ -109,14 +169,25 @@ export function Header({ branding }: HeaderProps) {
   const mobileLinkIcon = "h-5 w-5 shrink-0 text-primary";
 
   return (
-    <header className="sticky top-0 z-[60] min-h-[var(--site-header-height)] shrink-0 border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/90">
+    <header
+      data-compact={isCompact || undefined}
+      className={cn(
+        "sticky top-0 z-[60] shrink-0 border-b border-border bg-card/95 backdrop-blur transition-[min-height,box-shadow] duration-200 ease-out supports-[backdrop-filter]:bg-card/90",
+        isCompact
+          ? "min-h-[var(--site-header-height-compact)] shadow-sm"
+          : "min-h-[var(--site-header-height)]"
+      )}
+    >
       <a href="#main-content" className="skip-link">
         {t("common.skipToContent")}
       </a>
 
       <div
         className={cn(
-          "mx-auto flex min-h-[var(--site-header-height)] w-full items-center justify-between gap-3 px-4 sm:gap-4 sm:px-6 lg:px-8",
+          "mx-auto flex w-full items-center justify-between gap-3 px-4 transition-[min-height] duration-200 ease-out sm:gap-4 sm:px-6 lg:px-8",
+          isCompact
+            ? "min-h-[var(--site-header-height-compact)]"
+            : "min-h-[var(--site-header-height)]",
           locale === "es" ? "max-w-none" : "max-w-7xl"
         )}
       >
@@ -129,6 +200,7 @@ export function Header({ branding }: HeaderProps) {
             brandName={branding.brandName}
             taglinePhrases={taglinePhrases}
             textWrapperClassName="hidden min-w-0 sm:flex"
+            compact={isCompact}
           />
         </Link>
 
@@ -141,7 +213,8 @@ export function Header({ branding }: HeaderProps) {
               key={href}
               href={href}
               className={cn(
-                "shrink-0 whitespace-nowrap rounded-xl px-4 py-2.5 text-base font-medium transition-colors cursor-pointer",
+                "shrink-0 whitespace-nowrap rounded-xl font-medium transition-[padding,font-size] duration-200 ease-out cursor-pointer",
+                isCompact ? "px-3 py-1.5 text-sm" : "px-4 py-2.5 text-base",
                 "focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring",
                 isActive(href)
                   ? "bg-secondary text-primary"
@@ -155,7 +228,7 @@ export function Header({ branding }: HeaderProps) {
         </nav>
 
         <div className="flex shrink-0 items-center gap-2">
-          <LanguageSwitcher />
+          <LanguageSwitcher compact={isCompact} />
 
           <div className={cn("shrink-0 items-center gap-2", desktopNavClasses)}>
             {!loading && (
@@ -166,7 +239,8 @@ export function Header({ branding }: HeaderProps) {
                       <Link
                         href="/admin"
                         className={cn(
-                          "inline-flex h-11 min-h-11 shrink-0 items-center gap-2 whitespace-nowrap rounded-xl px-4 py-2.5 text-base font-medium transition-colors cursor-pointer",
+                          "inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-xl font-medium transition-[padding,height,min-height,font-size] duration-200 ease-out cursor-pointer",
+                          headerActionClass(isCompact),
                           "focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring",
                           isActive("/admin")
                             ? "bg-secondary text-primary"
@@ -181,8 +255,12 @@ export function Header({ branding }: HeaderProps) {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="h-11 min-h-11 shrink-0 whitespace-nowrap py-2.5"
+                      className={cn(
+                        "shrink-0 whitespace-nowrap transition-[height,min-height,padding,font-size] duration-200 ease-out",
+                        headerActionClass(isCompact)
+                      )}
                       onClick={handleSignOut}
+                      loading={signingOut}
                     >
                       <LogOut className="h-5 w-5" aria-hidden="true" />
                       {t("nav.signOut")}
@@ -190,17 +268,23 @@ export function Header({ branding }: HeaderProps) {
                   </>
                 ) : (
                   <>
-                    <Link href="/login" className="shrink-0">
-                      <Button variant="ghost" size="sm" className="whitespace-nowrap">
+                    <Link href={signInHref} className="shrink-0">
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className={cn("whitespace-nowrap", headerActionClass(isCompact))}
+                      >
                         <LogIn className="h-5 w-5" aria-hidden="true" />
                         {t("nav.signIn")}
                       </Button>
                     </Link>
+                    {showCreateAccount ? (
                     <Link href="/signup" className="shrink-0">
-                      <Button size="sm" className="whitespace-nowrap">
+                      <Button size="sm" className={cn("whitespace-nowrap", headerActionClass(isCompact))}>
                         {t("nav.createAccount")}
                       </Button>
                     </Link>
+                    ) : null}
                   </>
                 )}
               </>
@@ -210,7 +294,8 @@ export function Header({ branding }: HeaderProps) {
           <button
             type="button"
             className={cn(
-              "flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl border border-border",
+              "flex cursor-pointer items-center justify-center rounded-xl border border-border transition-[width,height] duration-200 ease-out",
+              isCompact ? "h-9 w-9" : "h-11 w-11",
               mobileNavClasses
             )}
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -269,14 +354,22 @@ export function Header({ branding }: HeaderProps) {
                         type="button"
                         className={cn(
                           mobileLinkBase,
-                          "w-full text-foreground hover:bg-muted"
+                          "w-full text-foreground hover:bg-muted",
+                          signingOut && "cursor-not-allowed opacity-50"
                         )}
                         onClick={() => {
+                          if (signingOut) return;
                           void handleSignOut();
                           setMobileOpen(false);
                         }}
+                        disabled={signingOut}
+                        aria-busy={signingOut || undefined}
                       >
-                        <LogOut className={mobileLinkIcon} aria-hidden="true" />
+                        {signingOut ? (
+                          <Loader2 className={cn(mobileLinkIcon, "animate-spin")} aria-hidden="true" />
+                        ) : (
+                          <LogOut className={mobileLinkIcon} aria-hidden="true" />
+                        )}
                         {t("nav.signOut")}
                       </button>
                     </li>
@@ -285,7 +378,7 @@ export function Header({ branding }: HeaderProps) {
                   <>
                     <li>
                       <Link
-                        href="/login"
+                        href={signInHref}
                         className={cn(mobileLinkBase, "text-foreground hover:bg-muted")}
                         onClick={() => setMobileOpen(false)}
                       >
@@ -293,6 +386,7 @@ export function Header({ branding }: HeaderProps) {
                         {t("nav.signIn")}
                       </Link>
                     </li>
+                    {showCreateAccount ? (
                     <li>
                       <Link
                         href="/signup"
@@ -305,6 +399,7 @@ export function Header({ branding }: HeaderProps) {
                         {t("nav.createAccount")}
                       </Link>
                     </li>
+                    ) : null}
                   </>
                 )}
               </>

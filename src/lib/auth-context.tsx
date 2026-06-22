@@ -1,14 +1,15 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState, useCallback } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import type { Profile } from "@/types";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/client";
 import { formatAuthError, isProfileSetupError } from "@/lib/auth-errors";
-import { writeClientPreferences } from "@/lib/user-preferences/client";
+import { writeClientPreferences, clearClientPreferences } from "@/lib/user-preferences/client";
 import {
   hasCompletedOnboarding,
   preferencesFromProfile,
 } from "@/lib/user-preferences/parse";
+import { wipeTabletLocalState } from "@/lib/facility/tablet-handoff";
 import { syncCookiePreferencesToProfile } from "@/lib/user-preferences/sync-profile";
 import { createTranslator } from "@/i18n/translator";
 import { DEFAULT_LOCALE, LOCALE_COOKIE, type Locale } from "@/i18n/types";
@@ -16,6 +17,7 @@ import { DEFAULT_LOCALE, LOCALE_COOKIE, type Locale } from "@/i18n/types";
 interface AuthContextType {
   user: Profile | null;
   loading: boolean;
+  signingOut: boolean;
   isAdmin: boolean;
   signIn: (email: string, password: string) => Promise<{ error?: string; isAdmin?: boolean }>;
   signUp: (
@@ -53,6 +55,8 @@ async function verifyFacilityLoginAfterAuth(
 ): Promise<string | undefined> {
   const response = await fetch("/api/facility/verify-login");
   if (response.status === 403) {
+    wipeTabletLocalState();
+    await fetch("/api/facility/sign-out", { method: "POST" });
     await supabase.auth.signOut();
     return facilityMessage("pinMismatch");
   }
@@ -64,9 +68,17 @@ function getAuthRedirectUrl() {
   return process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:8080";
 }
 
+function shouldRedirectHomeAfterSignOut(isFacilityUser: boolean): boolean {
+  if (isFacilityUser) return true;
+  if (typeof window === "undefined") return false;
+  const path = window.location.pathname;
+  return path.startsWith("/dashboard") || path.startsWith("/saved");
+}
+
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
+  const [signingOut, setSigningOut] = useState(false);
 
   useEffect(() => {
     if (!isSupabaseConfigured()) {
@@ -97,20 +109,28 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
     };
 
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session?.user) fetchProfile(session.user.id);
-      setLoading(false);
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (session?.user) {
+        void fetchProfile(session.user.id);
+        return;
+      }
+      setUser(null);
     });
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      (_event, session) => {
+    void (async () => {
+      try {
+        const {
+          data: { session },
+        } = await supabase.auth.getSession();
         if (session?.user) {
-          fetchProfile(session.user.id);
-        } else {
-          setUser(null);
+          await fetchProfile(session.user.id);
         }
+      } finally {
+        setLoading(false);
       }
-    );
+    })();
 
     return () => subscription.unsubscribe();
   }, []);
@@ -201,14 +221,46 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   const signOut = async () => {
-    if (!isSupabaseConfigured()) {
-      setUser(null);
-      return;
-    }
+    const isFacilityUser = user?.signup_context === "facility";
+    const redirectHome = shouldRedirectHomeAfterSignOut(isFacilityUser);
 
-    const supabase = createClient();
-    if (supabase) await supabase.auth.signOut();
-    setUser(null);
+    setSigningOut(true);
+
+    try {
+      if (!isSupabaseConfigured()) {
+        if (isFacilityUser) {
+          wipeTabletLocalState();
+        }
+        if (redirectHome) {
+          window.location.assign("/");
+          return;
+        }
+        setUser(null);
+        return;
+      }
+
+      if (isFacilityUser) {
+        wipeTabletLocalState();
+        await fetch("/api/facility/sign-out", { method: "POST" });
+        window.location.assign("/");
+        return;
+      }
+
+      const supabase = createClient();
+      if (supabase) await supabase.auth.signOut();
+      clearClientPreferences();
+
+      if (redirectHome) {
+        window.location.assign("/");
+        return;
+      }
+
+      setUser(null);
+    } finally {
+      if (!redirectHome) {
+        setSigningOut(false);
+      }
+    }
   };
 
   return (
@@ -216,6 +268,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       value={{
         user,
         loading,
+        signingOut,
         isAdmin: user?.role === "admin",
         signIn,
         signUp,

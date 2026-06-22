@@ -1,10 +1,7 @@
 import type { AnalyticsSummary } from "@/types";
+import { emptyRecentActivity } from "@/lib/analytics-recent-activity";
 
-const DAY_LABELS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-
-export function emptyRecentActivity() {
-  return DAY_LABELS.map((date) => ({ date, views: 0, saves: 0 }));
-}
+export { emptyRecentActivity } from "@/lib/analytics-recent-activity";
 
 export function emptyAnalyticsSummary(): AnalyticsSummary {
   return {

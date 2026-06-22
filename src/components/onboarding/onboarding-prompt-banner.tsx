@@ -7,6 +7,7 @@ import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "@/i18n/locale-context";
 import { shouldShowOnboardingPrompt, readClientPreferences } from "@/lib/user-preferences";
+import { PREFS_UPDATED_EVENT } from "@/components/facility/facility-session-preferences-hydration";
 
 const DISMISS_KEY = "reentry_onboarding_banner_dismissed";
 
@@ -17,8 +18,14 @@ export function OnboardingPromptBanner() {
   const [showPrompt, setShowPrompt] = useState(false);
 
   useEffect(() => {
-    setDismissed(sessionStorage.getItem(DISMISS_KEY) === "1");
-    setShowPrompt(shouldShowOnboardingPrompt(readClientPreferences()));
+    const refresh = () => {
+      setDismissed(sessionStorage.getItem(DISMISS_KEY) === "1");
+      setShowPrompt(shouldShowOnboardingPrompt(readClientPreferences()));
+    };
+
+    refresh();
+    window.addEventListener(PREFS_UPDATED_EVENT, refresh);
+    return () => window.removeEventListener(PREFS_UPDATED_EVENT, refresh);
   }, [pathname]);
 
   const dismiss = () => {

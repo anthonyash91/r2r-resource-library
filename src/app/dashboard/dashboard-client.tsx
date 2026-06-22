@@ -8,6 +8,7 @@ import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/lib/auth-context";
+import { useSignInHref } from "@/hooks/use-sign-in-href";
 import { useSaved, useSavedResources } from "@/lib/saved-context";
 import type { Category, Resource } from "@/types";
 import { useTranslations } from "@/i18n/locale-context";
@@ -19,6 +20,7 @@ import {
 } from "@/lib/user-preferences";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import { pageSectionPadding } from "@/lib/utils";
+import { FacilityContactEmailSection } from "@/components/facility/facility-contact-email-section";
 import { PriorityCategoryBadge } from "@/components/resources/priority-category-badge";
 
 interface DashboardClientProps {
@@ -33,7 +35,8 @@ export function DashboardClient({
   preferences,
 }: DashboardClientProps) {
   const router = useRouter();
-  const { user, loading } = useAuth();
+  const { user, loading, signingOut } = useAuth();
+  const signInHref = useSignInHref();
   const { recentlyViewed } = useSaved();
   const savedResources = useSavedResources();
   const { t } = useTranslations();
@@ -47,7 +50,7 @@ export function DashboardClient({
     }
   }, [loading, user, preferences, router]);
 
-  if (loading) {
+  if (loading || signingOut) {
     return (
       <div className="flex min-h-[40vh] items-center justify-center">
         <p className="text-lg text-muted-foreground">{t("dashboard.loading")}</p>
@@ -62,7 +65,7 @@ export function DashboardClient({
           <h1 className="mb-4 text-3xl font-bold">{t("dashboard.signInRequired")}</h1>
           <p className="mb-8 text-lg text-muted-foreground">{t("dashboard.signInRequiredDesc")}</p>
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <Link href="/login">
+            <Link href={signInHref}>
               <Button size="lg">{t("auth.signIn")}</Button>
             </Link>
             <Link href="/signup">
@@ -141,6 +144,8 @@ export function DashboardClient({
           )}
         </header>
 
+        <FacilityContactEmailSection />
+
         <div className="mb-10 grid gap-4 sm:grid-cols-3">
           <Card className="flex items-center gap-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
@@ -176,7 +181,7 @@ export function DashboardClient({
         </div>
 
         {savedResources.length > 0 && (
-          <section className="mb-12" aria-labelledby="saved-heading">
+          <section className="mb-10" aria-labelledby="saved-heading">
             <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
               <h2 id="saved-heading" className="text-2xl font-bold">
                 {t("dashboard.savedResources")}
@@ -192,20 +197,22 @@ export function DashboardClient({
           </section>
         )}
 
-        <section className="mb-12" aria-labelledby="recommended-heading">
-          <div className="mb-6 flex flex-wrap items-center gap-2">
-            <Star className="h-6 w-6 text-warning" aria-hidden="true" />
-            <h2 id="recommended-heading" className="text-2xl font-bold">
-              {personalized && preferences.county
-                ? t("dashboard.recommendedPersonalized", { county: preferences.county })
-                : t("dashboard.recommended")}
-            </h2>
-          </div>
-          <ResourceMasonry resources={recommended} />
-        </section>
+        {recommended.length > 0 ? (
+          <section className="mb-10" aria-labelledby="recommended-heading">
+            <div className="mb-6 flex flex-wrap items-center gap-2">
+              <Star className="h-6 w-6 text-warning" aria-hidden="true" />
+              <h2 id="recommended-heading" className="text-2xl font-bold">
+                {personalized && preferences.county
+                  ? t("dashboard.recommendedPersonalized", { county: preferences.county })
+                  : t("dashboard.recommended")}
+              </h2>
+            </div>
+            <ResourceMasonry resources={recommended} layout="masonry" />
+          </section>
+        ) : null}
 
         {recentlyViewed.length > 0 && (
-          <section className="mb-12" aria-labelledby="recent-heading">
+          <section className="mb-10" aria-labelledby="recent-heading">
             <h2 id="recent-heading" className="mb-6 text-2xl font-bold">
               {t("dashboard.recentlyViewed")}
             </h2>

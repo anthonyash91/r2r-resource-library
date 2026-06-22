@@ -18,6 +18,8 @@ export {
   validatePreferencesInput,
   needsOnboarding,
   hasCompletedOnboarding,
+  hasRestorablePreferences,
+  restorePreferencesRecord,
   hasPersonalizedPreferences,
   shouldShowOnboardingPrompt,
   profileUpdateFromPreferences,

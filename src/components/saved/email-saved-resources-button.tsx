@@ -9,7 +9,9 @@ import { useAuth } from "@/lib/auth-context";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslations } from "@/i18n/locale-context";
 import { cn, checkIconClass } from "@/lib/utils";
+import { isFacilityAuthEmail } from "@/lib/facility/auth-email";
 import type { SavedPdfEmailStatus } from "@/lib/saved-pdf-email";
+import type { Profile } from "@/types";
 
 interface EmailSavedResourcesButtonProps {
   resourceCount: number;
@@ -19,6 +21,12 @@ interface EmailSavedResourcesButtonProps {
 
 function isValidEmail(value: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
+}
+
+function defaultPdfEmail(user: Profile): string {
+  if (user.contact_email?.trim()) return user.contact_email.trim();
+  if (user.signup_context === "facility" && isFacilityAuthEmail(user.email)) return "";
+  return user.email ?? "";
 }
 
 export function EmailSavedResourcesButton({
@@ -47,7 +55,7 @@ export function EmailSavedResourcesButton({
     setErrorMessage(null);
     setEmailError(null);
     setSuccessEmail(null);
-    setEmail(user.email ?? "");
+    setEmail(defaultPdfEmail(user));
     setOpen(true);
     setEmailStatus(null);
 
@@ -224,7 +232,8 @@ export function EmailSavedResourcesButton({
                 type="button"
                 size={size}
                 onClick={handleSend}
-                disabled={sending || loadingStatus || limitReached}
+                loading={sending}
+                disabled={loadingStatus || limitReached}
               >
                 <Mail className="h-5 w-5" aria-hidden="true" />
                 {sending ? t("saved.email.buttonSending") : t("saved.email.sendButton")}

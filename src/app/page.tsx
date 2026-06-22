@@ -14,6 +14,7 @@ import {
 import { AnnouncementsBanner } from "@/components/home/announcements-banner";
 import { FacilitySessionBar } from "@/components/facility/facility-session-bar";
 import { RecommendedResourcesSection } from "@/components/resources/recommended-resources-section";
+import { HeroSurfaceOrbs } from "@/components/layout/hero-surface-orbs";
 import { cn, pageSectionPadding, checkIconClass, pageSectionHeadingClass, pageSectionSubtitleClass, pageSectionSubtitleOnHeroClass, pageSectionSubheadingClass } from "@/lib/utils";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import { getRecommendedResources } from "@/lib/user-preferences/recommendations";
@@ -194,10 +195,11 @@ export default async function HomePage() {
       <FeaturedResourcesSection resources={featuredResources} />
 
       <section
-        className={cn("app-hero-surface", pageSectionPadding)}
+        className={cn("app-hero-surface relative overflow-hidden", pageSectionPadding)}
         aria-labelledby="built-for-heading"
       >
-        <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <HeroSurfaceOrbs />
+        <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <h2
               id="built-for-heading"

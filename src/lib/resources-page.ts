@@ -33,7 +33,7 @@ export function resourcesPageQueryWithPreferenceDefaults(
 
 export function buildResourcesPageHref(
   params?: URLSearchParams | Record<string, string | undefined | null>,
-  scrollTo: ResourcesPageScrollTarget = "results"
+  scrollTo: ResourcesPageScrollTarget = "none"
 ): string {
   const searchParams = new URLSearchParams();
 

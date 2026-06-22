@@ -28,7 +28,7 @@ interface GetStartedWizardProps {
 
 export function GetStartedWizard({ initialPrefs, editMode = false }: GetStartedWizardProps) {
   const router = useRouter();
-  const { user } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const { t } = useTranslations();
 
   const existing = initialPrefs ?? readClientPreferences();
@@ -89,6 +89,8 @@ export function GetStartedWizard({ initialPrefs, editMode = false }: GetStartedW
   };
 
   const handleSave = async () => {
+    if (authLoading) return;
+
     setSaving(true);
     setError(null);
     const result = await saveUserPreferences(
@@ -106,7 +108,7 @@ export function GetStartedWizard({ initialPrefs, editMode = false }: GetStartedW
 
   const canContinueStep1 = Boolean(state);
   const canContinueStep2 = Boolean(state && county);
-  const canFinish = Boolean(state && county && priorities.length > 0);
+  const canFinish = Boolean(state && county && priorities.length > 0) && !authLoading;
 
   return (
     <div className={pageSectionPadding}>
@@ -209,7 +211,7 @@ export function GetStartedWizard({ initialPrefs, editMode = false }: GetStartedW
           ) : null}
 
           <div className="flex flex-col-reverse gap-3 border-t border-border pt-6 sm:flex-row sm:items-center sm:justify-between">
-            <Button type="button" variant="ghost" onClick={handleSkip} disabled={saving}>
+            <Button type="button" variant="ghost" onClick={handleSkip} loading={saving}>
               {t("onboarding.skip")}
             </Button>
             <div className="flex flex-col-reverse gap-2 sm:flex-row">
@@ -222,14 +224,15 @@ export function GetStartedWizard({ initialPrefs, editMode = false }: GetStartedW
                 <Button
                   type="button"
                   onClick={() => setStep((s) => s + 1)}
+                  loading={saving}
                   disabled={
-                    saving || (step === 1 && !canContinueStep1) || (step === 2 && !canContinueStep2)
+                    (step === 1 && !canContinueStep1) || (step === 2 && !canContinueStep2)
                   }
                 >
                   {t("onboarding.continue")}
                 </Button>
               ) : (
-                <Button type="button" onClick={handleSave} disabled={saving || !canFinish}>
+                <Button type="button" onClick={handleSave} loading={saving} disabled={!canFinish}>
                   {saving ? t("onboarding.saving") : t("onboarding.finish")}
                 </Button>
               )}

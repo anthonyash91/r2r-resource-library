@@ -4,6 +4,24 @@ import { getAdminSession } from "@/lib/admin-auth";
 import { enforceApiRouteAccess } from "@/lib/api-auth";
 
 export async function updateSession(request: NextRequest) {
+  if (
+    request.nextUrl.searchParams.has("facility") &&
+    request.nextUrl.searchParams.has("pin") &&
+    !request.nextUrl.pathname.startsWith("/api/facility/enter")
+  ) {
+    const nextUrl = request.nextUrl.clone();
+    nextUrl.searchParams.delete("facility");
+    nextUrl.searchParams.delete("pin");
+    const enterUrl = new URL("/api/facility/enter", request.url);
+    enterUrl.searchParams.set("facility", request.nextUrl.searchParams.get("facility")!);
+    enterUrl.searchParams.set("pin", request.nextUrl.searchParams.get("pin")!);
+    enterUrl.searchParams.set(
+      "next",
+      `${nextUrl.pathname}${nextUrl.search ? `?${nextUrl.searchParams.toString()}` : ""}`
+    );
+    return NextResponse.redirect(enterUrl);
+  }
+
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
@@ -54,24 +72,6 @@ export async function updateSession(request: NextRequest) {
       loginUrl.searchParams.set("next", pathname);
       return NextResponse.redirect(loginUrl);
     }
-  }
-
-  if (
-    request.nextUrl.searchParams.has("facility") &&
-    request.nextUrl.searchParams.has("pin") &&
-    !request.nextUrl.pathname.startsWith("/api/facility/enter")
-  ) {
-    const nextUrl = request.nextUrl.clone();
-    nextUrl.searchParams.delete("facility");
-    nextUrl.searchParams.delete("pin");
-    const enterUrl = new URL("/api/facility/enter", request.url);
-    enterUrl.searchParams.set("facility", request.nextUrl.searchParams.get("facility")!);
-    enterUrl.searchParams.set("pin", request.nextUrl.searchParams.get("pin")!);
-    enterUrl.searchParams.set(
-      "next",
-      `${nextUrl.pathname}${nextUrl.search ? `?${nextUrl.searchParams.toString()}` : ""}`
-    );
-    return NextResponse.redirect(enterUrl);
   }
 
   return supabaseResponse;

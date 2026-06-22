@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Input } from "@/components/ui/input";
+import { NewPasswordFields, passwordsMatch } from "@/components/ui/new-password-fields";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useAuth } from "@/lib/auth-context";
@@ -17,14 +18,34 @@ export default function SignupPage() {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const [loading, setLoading] = useState(false);
+  const [guarding, setGuarding] = useState(true);
+
+  useEffect(() => {
+    fetch("/api/facility/status")
+      .then(async (res) => {
+        if (!res.ok) return;
+        const data = (await res.json()) as { hasAccount?: boolean };
+        if (data.hasAccount) {
+          router.replace("/facility/login");
+        }
+      })
+      .finally(() => setGuarding(false));
+  }, [router]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
     setSuccess("");
+
+    if (!passwordsMatch(password, confirmPassword)) {
+      setError(t("auth.passwordMismatch"));
+      return;
+    }
+
     setLoading(true);
 
     const result = await signUp(email, password, fullName);
@@ -43,6 +64,14 @@ export default function SignupPage() {
     router.push("/dashboard");
     router.refresh();
   };
+
+  if (guarding) {
+    return (
+      <div className={pageSectionPadding}>
+        <p className="text-center text-lg text-muted-foreground">{t("common.loading")}</p>
+      </div>
+    );
+  }
 
   return (
     <div className={pageSectionPadding}>
@@ -68,15 +97,13 @@ export default function SignupPage() {
               required
               autoComplete="email"
             />
-            <Input
-              label={t("auth.password")}
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-              minLength={8}
-              hint={t("auth.passwordHint")}
-              autoComplete="new-password"
+            <NewPasswordFields
+              password={password}
+              confirmPassword={confirmPassword}
+              onPasswordChange={setPassword}
+              onConfirmPasswordChange={setConfirmPassword}
+              passwordLabel={t("auth.password")}
+              confirmLabel={t("auth.confirmPassword")}
             />
             {error && (
               <p role="alert" className="text-base text-destructive">
@@ -88,7 +115,7 @@ export default function SignupPage() {
                 {success}
               </p>
             )}
-            <Button type="submit" size="lg" className="w-full" disabled={loading}>
+            <Button type="submit" size="lg" className="w-full" loading={loading}>
               {loading ? t("auth.creatingAccount") : t("auth.signUp")}
             </Button>
           </form>

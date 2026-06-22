@@ -33,6 +33,7 @@ export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClie
   const [form, setForm] = useState({ name: "", description: "", icon: "search" });
   const [showNew, setShowNew] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [busyId, setBusyId] = useState<string | null>(null);
 
   const resetForm = () => {
     setForm({ name: "", description: "", icon: "search" });
@@ -150,9 +151,12 @@ export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClie
     if (!confirmed) return;
 
     if (isSupabaseConfigured()) {
+      setBusyId(id);
       const supabase = createClient();
       if (supabase) {
         const { error } = await supabase.from("categories").delete().eq("id", id);
+
+        setBusyId(null);
 
         if (error) {
           await alert({ title: t("common.error"), message: t("admin.categoryDeleteFailed") });
@@ -208,7 +212,7 @@ export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClie
               onChange={(e) => setForm({ ...form, icon: e.target.value })}
             />
             <div className="flex gap-2">
-              <Button onClick={handleSave} disabled={saving}>
+              <Button onClick={handleSave} loading={saving}>
                 {t("common.save")}
               </Button>
               <Button variant="outline" onClick={resetForm}>
@@ -234,7 +238,7 @@ export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClie
                 <Pencil className="h-4 w-4" aria-hidden="true" />
                 {t("common.edit")}
               </Button>
-              <Button variant="ghost" size="sm" onClick={() => handleDelete(cat.id)}>
+              <Button variant="ghost" size="sm" onClick={() => handleDelete(cat.id)} loading={busyId === cat.id}>
                 <Trash2 className="h-4 w-4" aria-hidden="true" />
                 {t("admin.deleteCategory")}
               </Button>

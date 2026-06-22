@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Search, Star, X } from "lucide-react";
+import { Search, Star, X, Loader2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { CategoryBadge } from "@/components/resources/category-badge";
 import { Button } from "@/components/ui/button";
@@ -124,7 +124,7 @@ export function FeaturedResourcesPicker({ resources }: FeaturedResourcesPickerPr
                   variant="ghost"
                   size="sm"
                   onClick={() => handleRemove(resource.id)}
-                  disabled={busyId === resource.id}
+                  loading={busyId === resource.id}
                   aria-label={t("admin.removeFeatured")}
                 >
                   <X className="h-4 w-4" aria-hidden="true" />
@@ -162,6 +162,7 @@ export function FeaturedResourcesPicker({ resources }: FeaturedResourcesPickerPr
                 type="button"
                 onClick={() => handleToggle(resource.id)}
                 disabled={featuredResources.length >= MAX_FEATURED_RESOURCES || busyId === resource.id}
+                aria-busy={busyId === resource.id || undefined}
                 className={cn(
                   "flex w-full cursor-pointer items-center justify-between gap-3 rounded-xl border border-border px-4 py-3 text-left transition-colors hover:bg-secondary",
                   "disabled:cursor-not-allowed disabled:opacity-50"
@@ -175,7 +176,11 @@ export function FeaturedResourcesPicker({ resources }: FeaturedResourcesPickerPr
                     {[resource.city, resource.state].filter(Boolean).join(", ")}
                   </p>
                 </div>
-                <Star className="h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+                {busyId === resource.id ? (
+                  <Loader2 className="h-5 w-5 shrink-0 animate-spin text-primary" aria-hidden="true" />
+                ) : (
+                  <Star className="h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+                )}
               </button>
             </li>
           ))}

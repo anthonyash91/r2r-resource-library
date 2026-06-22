@@ -178,7 +178,7 @@ export function AdminResourcesClient({ initialResources }: AdminResourcesClientP
                   variant={resource.is_featured ? "primary" : "outline"}
                   size="sm"
                   onClick={() => toggleFeatured(resource)}
-                  disabled={busyId === resource.id}
+                  loading={busyId === resource.id}
                   aria-pressed={resource.is_featured}
                   aria-label={
                     resource.is_featured
@@ -203,7 +203,7 @@ export function AdminResourcesClient({ initialResources }: AdminResourcesClientP
                 variant="ghost"
                 size="sm"
                 onClick={() => archiveResource(resource.id)}
-                disabled={busyId === resource.id}
+                loading={busyId === resource.id}
               >
                 <Archive className="h-4 w-4" aria-hidden="true" />
                 {t("admin.archive")}

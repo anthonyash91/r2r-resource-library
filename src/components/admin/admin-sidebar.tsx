@@ -27,6 +27,7 @@ export function AdminSidebar() {
   const router = useRouter();
   const { user, isAdmin, loading, signOut } = useAuth();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [signingOut, setSigningOut] = useState(false);
   const { t } = useTranslations();
 
   const adminLinks = useMemo(
@@ -106,10 +107,16 @@ export function AdminSidebar() {
         <Button
           variant="outline"
           className="w-full"
+          loading={signingOut}
           onClick={async () => {
-            await signOut();
-            router.replace("/login");
-            router.refresh();
+            setSigningOut(true);
+            try {
+              await signOut();
+              router.replace("/login");
+              router.refresh();
+            } finally {
+              setSigningOut(false);
+            }
           }}
         >
           <LogOut className="h-4 w-4" aria-hidden="true" />

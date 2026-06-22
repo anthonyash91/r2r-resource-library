@@ -150,7 +150,7 @@ export function ContactPageView({ content, initialSubject }: ContactPageViewProp
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full" disabled={sending}>
+                  <Button type="submit" size="lg" className="w-full" loading={sending}>
                     {sending ? t("contact.sending") : t("contact.sendMessage")}
                   </Button>
                 </form>

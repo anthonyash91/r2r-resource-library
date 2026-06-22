@@ -174,7 +174,7 @@ export function LegalDocumentEditor({ document, initial }: LegalDocumentEditorPr
         ))}
 
         <div className="flex flex-wrap items-center gap-4">
-          <Button onClick={handleSave} disabled={saving}>
+          <Button onClick={handleSave} loading={saving}>
             {saving ? t("admin.saving") : t("admin.savePage")}
           </Button>
           {saved && saveMessage ? (

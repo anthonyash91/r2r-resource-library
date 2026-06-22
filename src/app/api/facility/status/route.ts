@@ -1,7 +1,12 @@
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
-import { facilityAccountExistsByPinHash } from "@/lib/facility/data";
+import {
+  facilityAccountExistsByPinHash,
+  getFacilityById,
+} from "@/lib/facility/data";
+import { getFacilitySessionProfilePreferences } from "@/lib/facility/session-preferences";
 import { readFacilitySession } from "@/lib/facility/session";
+import { maskPin } from "@/lib/facility/crypto";
 import { LOCALE_COOKIE, type Locale } from "@/i18n/types";
 import { createTranslator } from "@/i18n/translator";
 
@@ -20,13 +25,25 @@ export async function GET() {
     return NextResponse.json({ error: t("facility.sessionRequired") }, { status: 401 });
   }
 
+  const facility = await getFacilityById(session.facilityId);
+  if (!facility) {
+    return NextResponse.json({ error: t("facility.sessionRequired") }, { status: 401 });
+  }
+
   const hasAccount = await facilityAccountExistsByPinHash(
     session.facilityId,
     session.pinHash
   );
 
+  const preferences = hasAccount
+    ? await getFacilitySessionProfilePreferences(session.facilityId, session.pinHash)
+    : null;
+
   return NextResponse.json({
     facilityId: session.facilityId,
+    facilityName: facility.name,
+    ...(hasAccount ? { pinMasked: maskPin(session.pin) } : { pin: session.pin }),
     hasAccount,
+    preferences,
   });
 }

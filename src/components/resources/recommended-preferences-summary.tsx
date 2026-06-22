@@ -24,7 +24,7 @@ export async function RecommendedPreferencesSummary({
   return (
     <div
       className={cn(
-        "mb-6 rounded-xl border border-border bg-muted/50 p-4",
+        "rounded-xl border border-border bg-muted/50 p-4 sm:p-5",
         variant === "home" && "mx-auto max-w-3xl"
       )}
     >

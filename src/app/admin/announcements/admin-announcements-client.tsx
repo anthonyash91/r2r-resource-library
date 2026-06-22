@@ -33,6 +33,7 @@ export function AdminAnnouncementsClient({ initial }: { initial: Announcement[] 
   const [form, setForm] = useState(emptyForm);
   const [showForm, setShowForm] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [busyId, setBusyId] = useState<string | null>(null);
 
   const handleSave = async () => {
     if (!form.title.trim() || !form.content.trim()) return;
@@ -95,9 +96,12 @@ export function AdminAnnouncementsClient({ initial }: { initial: Announcement[] 
     if (!confirmed) return;
 
     if (isSupabaseConfigured()) {
+      setBusyId(announcement.id);
       const supabase = createClient();
       if (supabase) {
         const { error } = await supabase.from("announcements").delete().eq("id", announcement.id);
+
+        setBusyId(null);
 
         if (error) {
           await alert({ title: t("common.error"), message: t("admin.announcementDeleteFailed") });
@@ -158,7 +162,7 @@ export function AdminAnnouncementsClient({ initial }: { initial: Announcement[] 
             {t("admin.pinHomepage")}
           </label>
           <div className="flex gap-2">
-            <Button onClick={handleSave} disabled={saving}>
+            <Button onClick={handleSave} loading={saving}>
               {saving ? t("admin.saving") : t("admin.publish")}
             </Button>
             <Button variant="outline" onClick={() => setShowForm(false)}>
@@ -192,7 +196,7 @@ export function AdminAnnouncementsClient({ initial }: { initial: Announcement[] 
                   <p className="mt-2 text-sm text-muted-foreground">{expirationLabel}</p>
                 ) : null}
               </div>
-              <Button variant="ghost" size="sm" onClick={() => handleDelete(ann)}>
+              <Button variant="ghost" size="sm" onClick={() => handleDelete(ann)} loading={busyId === ann.id}>
                 <Trash2 className="h-4 w-4" aria-hidden="true" />
                 {t("common.remove")}
               </Button>
