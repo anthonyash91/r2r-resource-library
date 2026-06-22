@@ -40,7 +40,8 @@ export function ResourcesPageSkeleton({ loadingLabel }: ResourcesPageSkeletonPro
             <div className="mx-auto h-5 w-full max-w-2xl animate-pulse rounded bg-primary-foreground/15" />
             <div className="mx-auto h-5 w-5/6 max-w-xl animate-pulse rounded bg-primary-foreground/15" />
           </div>
-          <div className="h-12 w-full max-w-3xl animate-pulse rounded-full bg-primary-foreground/25 sm:h-14" />
+          <div className="h-12 w-full animate-pulse rounded-full bg-primary-foreground/25 sm:h-14" />
+          <div className="h-12 w-full animate-pulse rounded-xl bg-primary-foreground/15" />
         </div>
       </section>
 
@@ -52,7 +53,6 @@ export function ResourcesPageSkeleton({ loadingLabel }: ResourcesPageSkeletonPro
           aria-busy="true"
           aria-label={loadingLabel}
         >
-          <div className="h-12 animate-pulse rounded-xl border border-border bg-card" />
           <div className="h-5 w-56 animate-pulse rounded bg-muted" />
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {Array.from({ length: 6 }).map((_, index) => (

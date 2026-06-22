@@ -18,6 +18,8 @@ export const pageHeroPadding = "py-[40px] sm:py-[44px]";
 export const pageSectionPadding = "px-4 py-12 sm:px-6 sm:py-14 lg:px-8 lg:py-16";
 /** Vertical spacing between stacked page sections */
 export const sectionStackGap = "space-y-6";
+/** Space above a full-width section divider and padding below it */
+export const sectionDividerTop = "mt-10 border-t border-border pt-6";
 /** Standard h2 size for full-width page sections (home, dashboard, about, etc.) */
 export const pageSectionHeadingClass = "text-3xl font-bold sm:text-4xl";
 

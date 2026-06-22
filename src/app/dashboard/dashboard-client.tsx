@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Heart, Clock, Star, LayoutGrid, MapPin } from "lucide-react";
+import { ArrowRight, Heart, Clock, Star, LayoutGrid, MapPin } from "lucide-react";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -19,7 +19,7 @@ import {
   type UserPreferences,
 } from "@/lib/user-preferences";
 import { buildResourcesPageHref } from "@/lib/resources-page";
-import { pageSectionPadding } from "@/lib/utils";
+import { pageSectionPadding, cn } from "@/lib/utils";
 import { FacilityContactEmailSection } from "@/components/facility/facility-contact-email-section";
 import { PriorityCategoryBadge } from "@/components/resources/priority-category-badge";
 
@@ -80,7 +80,10 @@ export function DashboardClient({
   const firstName = user.full_name?.split(" ")[0];
   const countyBrowseHref =
     preferences.state && preferences.county
-      ? buildResourcesPageHref({ state: preferences.state, county: preferences.county })
+      ? buildResourcesPageHref(
+          { state: preferences.state, county: preferences.county },
+          "results"
+        )
       : buildResourcesPageHref();
 
   return (
@@ -193,12 +196,15 @@ export function DashboardClient({
                 </Link>
               </div>
             </div>
-            <ResourceMasonry resources={savedResources.slice(0, 3)} />
+            <ResourceMasonry resources={savedResources.slice(0, 3)} contained />
           </section>
         )}
 
         {recommended.length > 0 ? (
-          <section className="mb-10" aria-labelledby="recommended-heading">
+          <section
+            className={cn(recentlyViewed.length > 0 && "mb-10")}
+            aria-labelledby="recommended-heading"
+          >
             <div className="mb-6 flex flex-wrap items-center gap-2">
               <Star className="h-6 w-6 text-warning" aria-hidden="true" />
               <h2 id="recommended-heading" className="text-2xl font-bold">
@@ -207,16 +213,26 @@ export function DashboardClient({
                   : t("dashboard.recommended")}
               </h2>
             </div>
-            <ResourceMasonry resources={recommended} layout="masonry" />
+            <ResourceMasonry resources={recommended} layout="masonry" contained />
+            {preferences.state && preferences.county ? (
+              <div className="mt-10 flex justify-center">
+                <Link href={countyBrowseHref}>
+                  <Button size="lg" variant="outline" className="gap-2">
+                    {t("dashboard.browseMyCounty")}
+                    <ArrowRight className="h-5 w-5" aria-hidden="true" />
+                  </Button>
+                </Link>
+              </div>
+            ) : null}
           </section>
         ) : null}
 
         {recentlyViewed.length > 0 && (
-          <section className="mb-10" aria-labelledby="recent-heading">
+          <section aria-labelledby="recent-heading">
             <h2 id="recent-heading" className="mb-6 text-2xl font-bold">
               {t("dashboard.recentlyViewed")}
             </h2>
-            <ResourceMasonry resources={recentlyViewed.slice(0, 3)} />
+            <ResourceMasonry resources={recentlyViewed.slice(0, 3)} contained />
           </section>
         )}
       </div>

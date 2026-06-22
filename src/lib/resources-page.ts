@@ -13,7 +13,34 @@ export const RECOMMENDED_RESOURCES_ID = "recommended-resources";
 
 export const RECOMMENDED_RESOURCES_HASH = `#${RECOMMENDED_RESOURCES_ID}`;
 
+/** Query param consumed by ScrollToResourceResults (avoids fragile URL hash handling). */
+export const RESOURCES_PAGE_SCROLL_PARAM = "scroll";
+
 export type ResourcesPageScrollTarget = "results" | "recommended" | "none";
+
+/**
+ * Scroll intent for `/resources` links (via `?scroll=`, consumed by ScrollToResourceResults):
+ * - `none` — land at the hero/search (nav Find Resources, generic “browse”, empty search).
+ * - `results` — scroll to the filtered results block (search, filters, badges, county browse).
+ * - `recommended` — scroll to the picked-for-you section (onboarding finish).
+ *
+ * Preference auto-redirect on bare `/resources` never adds `scroll`, so nav stays at the top.
+ */
+export function parseResourcesPageScrollTarget(
+  searchParams: URLSearchParams | Pick<URLSearchParams, "get">,
+  hash = ""
+): ResourcesPageScrollTarget {
+  const scroll = searchParams.get(RESOURCES_PAGE_SCROLL_PARAM);
+  if (scroll === "recommended" || hash === RECOMMENDED_RESOURCES_HASH) return "recommended";
+  if (
+    scroll === "results" ||
+    hash === RESOURCE_RESULTS_HASH ||
+    hash.startsWith(`${RESOURCE_RESULTS_HASH}#`)
+  ) {
+    return "results";
+  }
+  return "none";
+}
 
 export function resourcesPageQueryWithPreferenceDefaults(
   params: Partial<Record<ResourceFilterParamKey, string | undefined>>,
@@ -39,25 +66,26 @@ export function buildResourcesPageHref(
 
   if (params instanceof URLSearchParams) {
     params.forEach((value, key) => {
+      if (key === RESOURCES_PAGE_SCROLL_PARAM) return;
       if (value.trim()) {
         searchParams.set(key, value);
       }
     });
   } else if (params) {
     for (const [key, value] of Object.entries(params)) {
+      if (key === RESOURCES_PAGE_SCROLL_PARAM) continue;
       if (value?.trim()) {
         searchParams.set(key, value.trim());
       }
     }
   }
 
-  const hash =
-    scrollTo === "recommended"
-      ? RECOMMENDED_RESOURCES_HASH
-      : scrollTo === "none"
-        ? ""
-        : RESOURCE_RESULTS_HASH;
+  if (scrollTo === "recommended") {
+    searchParams.set(RESOURCES_PAGE_SCROLL_PARAM, "recommended");
+  } else if (scrollTo === "results") {
+    searchParams.set(RESOURCES_PAGE_SCROLL_PARAM, "results");
+  }
 
   const qs = searchParams.toString();
-  return qs ? `/resources?${qs}${hash}` : `/resources${hash}`;
+  return qs ? `/resources?${qs}` : "/resources";
 }

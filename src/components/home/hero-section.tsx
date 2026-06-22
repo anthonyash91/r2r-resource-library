@@ -9,6 +9,8 @@ import { HeroSurfaceOrbs } from "@/components/layout/hero-surface-orbs";
 import { useSiteHeaderOffset } from "@/hooks/use-site-header-offset";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import { useTranslations } from "@/i18n/locale-context";
+import { ResourceFiltersPanel } from "@/components/resources/resource-filters-panel";
+import type { Category } from "@/types";
 
 interface HeroSearchBarProps {
   placeholder?: string;
@@ -43,12 +45,12 @@ export function HeroSearchBar({
       } else {
         params.delete("q");
       }
-      router.push(buildResourcesPageHref(params));
+      router.push(buildResourcesPageHref(params, "results"), { scroll: false });
       return;
     }
 
     if (query?.trim()) {
-      router.push(buildResourcesPageHref({ q: query.trim() }));
+      router.push(buildResourcesPageHref({ q: query.trim() }, "results"), { scroll: false });
     } else {
       router.push(buildResourcesPageHref());
     }
@@ -64,7 +66,11 @@ export function HeroSearchBar({
       <div
         className={cn(
           "flex items-center rounded-full bg-card",
-          sticky ? "h-10 p-1 shadow-sm" : compact ? "h-12 p-1.5 shadow-md sm:h-14" : "h-16 p-1.5 shadow-lg"
+          sticky
+            ? "h-10 p-1 shadow-sm"
+            : compact
+              ? "h-12 p-1.5 shadow-md sm:h-14"
+              : "h-16 p-1.5 shadow-lg"
         )}
       >
         <div className="relative min-w-0 flex-1 self-stretch">
@@ -187,7 +193,7 @@ export function HeroSection({
           {popularTags.map(({ label, slug }) => (
             <Link
               key={slug}
-              href={buildResourcesPageHref({ category: slug })}
+              href={buildResourcesPageHref({ category: slug }, "results")}
               className={cn(
                 "rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-1.5 text-sm font-medium text-primary-foreground transition-colors",
                 "hover:bg-primary-foreground/20 focus-visible:outline focus-visible:outline-3 focus-visible:outline-primary-foreground/60 focus-visible:outline-offset-2"
@@ -214,11 +220,25 @@ export function HeroSection({
   );
 }
 
-export function ResourcesHeroSection() {
+export function ResourcesHeroSection({
+  categories,
+  states,
+  counties,
+  cities,
+  services,
+}: {
+  categories: Category[];
+  states: string[];
+  counties: string[];
+  cities: string[];
+  services: string[];
+}) {
   const { t } = useTranslations();
   const searchBarRef = useRef<HTMLDivElement | null>(null);
   const [showStickySearch, setShowStickySearch] = useState(false);
   const headerOffset = useSiteHeaderOffset();
+
+  const filterProps = { categories, states, counties, cities, services };
 
   useEffect(() => {
     const node = searchBarRef.current;
@@ -250,7 +270,7 @@ export function ResourcesHeroSection() {
         style={{ top: headerOffset }}
       >
         <HeroSurfaceOrbs variant="sticky" />
-        <div className="relative mx-auto w-full max-w-4xl">
+        <div className="relative mx-auto w-full max-w-2xl">
           <HeroSearchBar sticky preserveParams placeholder={t("resources.searchPlaceholder")} />
         </div>
       </div>
@@ -273,12 +293,13 @@ export function ResourcesHeroSection() {
                 {t("resources.heroSubheadline")}
               </p>
             </div>
-            <div ref={searchBarRef} className="w-full">
+            <div ref={searchBarRef} className="mx-auto w-full max-w-3xl space-y-4">
               <HeroSearchBar
                 compact
                 preserveParams
                 placeholder={t("resources.searchPlaceholder")}
               />
+              <ResourceFiltersPanel {...filterProps} />
             </div>
           </div>
         </div>

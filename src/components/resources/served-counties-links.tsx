@@ -16,7 +16,7 @@ export function ServedCountiesLinks({ resource }: ServedCountiesLinksProps) {
   if (resource.coverage === "statewide") {
     return (
       <Link
-        href={buildResourcesPageHref({ coverage: "statewide" })}
+        href={buildResourcesPageHref({ coverage: "statewide" }, "results")}
         className="text-base text-primary hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring rounded"
       >
         {t("resources.coverageStatewide")}

@@ -2,11 +2,12 @@ import Link from "next/link";
 import { ArrowRight, Star } from "lucide-react";
 import type { Resource } from "@/types";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { getServerTranslator } from "@/i18n/server";
 import { cn, pageSectionPadding, pageSectionHeadingClass, pageSectionSubtitleClass } from "@/lib/utils";
 import { buildResourcesPageHref, RECOMMENDED_RESOURCES_ID } from "@/lib/resources-page";
 import { RecommendedPreferencesSummary } from "@/components/resources/recommended-preferences-summary";
-import { CollapsibleRecommendedResourcesSection } from "@/components/resources/collapsible-recommended-resources-section";
 
 interface RecommendedResourcesSectionProps {
   resources: Resource[];
@@ -36,24 +37,44 @@ export async function RecommendedResourcesSection({
 
   const browseHref =
     state && county
-      ? buildResourcesPageHref({ state, county })
+      ? buildResourcesPageHref({ state, county }, "results")
       : buildResourcesPageHref();
 
   if (variant === "resources") {
     return (
-      <CollapsibleRecommendedResourcesSection
-        title={title}
-        subtitle={t("home.recommendedSubtitle")}
-        resources={resources}
-        preferencesSummary={
-          <RecommendedPreferencesSummary
-            state={state ?? null}
-            county={county ?? null}
-            priorityCategories={priorityCategories}
-            variant={variant}
-          />
-        }
-      />
+      <section
+        id={RECOMMENDED_RESOURCES_ID}
+        className="scroll-mt-[var(--site-header-height)] w-full min-w-0"
+        aria-labelledby="recommended-resources-heading"
+      >
+        <header className="mb-4 space-y-2">
+          <div className="flex flex-wrap items-center gap-3">
+            <div className="flex min-w-0 items-center gap-2">
+              <Star className="h-5 w-5 shrink-0 text-warning" aria-hidden="true" />
+              <h2
+                id="recommended-resources-heading"
+                className="text-xl font-bold text-foreground"
+              >
+                {title}
+              </h2>
+            </div>
+            <Badge variant="primary" className="shrink-0 tabular-nums">
+              {resources.length}
+            </Badge>
+          </div>
+          <p className="text-base text-muted-foreground">
+            {t("resources.recommendedPreferencesHintBefore")}{" "}
+            <Link
+              href="/dashboard"
+              className="font-semibold text-primary hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"
+            >
+              {t("resources.recommendedPreferencesHintLink")}
+            </Link>
+            {t("resources.recommendedPreferencesHintAfter")}
+          </p>
+        </header>
+        <ResourceMasonry resources={resources} columns={3} layout="masonry" contained />
+      </section>
     );
   }
 
@@ -108,20 +129,19 @@ export async function RecommendedResourcesSection({
             variant={variant}
           />
 
-          <ResourceMasonry resources={resources} columns={3} layout="masonry" />
+          <ResourceMasonry resources={resources} columns={3} layout="masonry" contained />
+        </div>
 
-          {variant === "home" ? (
-            <div className="text-center">
-              <Link
-                href={browseHref}
-                className="inline-flex min-h-[48px] items-center gap-2 text-base font-semibold text-primary hover:text-primary-hover"
-              >
-                {t("dashboard.browseMyCounty")}
-                <ArrowRight className="h-5 w-5" aria-hidden="true" />
+        {variant === "home" ? (
+          <div className="mt-10 flex justify-center">
+              <Link href={browseHref} scroll={false}>
+                <Button size="lg" variant="outline" className="gap-2">
+                  {t("dashboard.browseMyCounty")}
+                  <ArrowRight className="h-5 w-5" aria-hidden="true" />
+                </Button>
               </Link>
             </div>
-          ) : null}
-        </div>
+        ) : null}
       </div>
     </section>
   );

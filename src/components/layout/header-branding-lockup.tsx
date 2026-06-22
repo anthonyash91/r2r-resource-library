@@ -5,6 +5,7 @@ import { SiteLogoMark } from "@/components/layout/site-logo-mark";
 import { RotatingNavTagline } from "@/components/layout/rotating-nav-tagline";
 import {
   siteBrandLockupGapClass,
+  siteBrandNavTitleColorClass,
   siteBrandTextOffsetClass,
   siteBrandTitleClass,
 } from "@/components/layout/site-branding-styles";
@@ -39,7 +40,8 @@ export function HeaderBrandingLockup({
       >
         <span
           className={cn(
-            "block truncate font-bold text-primary transition-[font-size,line-height,height] duration-200 ease-out",
+            "block truncate font-bold transition-[font-size,line-height,height] duration-200 ease-out",
+            siteBrandNavTitleColorClass,
             compact ? "h-8 text-base leading-8" : siteBrandTitleClass
           )}
         >

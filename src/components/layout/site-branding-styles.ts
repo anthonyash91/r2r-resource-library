@@ -1,3 +1,6 @@
+/** Nav header app name color */
+export const siteBrandNavTitleColorClass = "text-[#101729]";
+
 /** Shared typography + layout for header/footer site branding. */
 export const siteBrandTitleClass =
   "block h-5 truncate text-lg font-bold leading-5";

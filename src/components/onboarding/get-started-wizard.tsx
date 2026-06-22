@@ -102,7 +102,7 @@ export function GetStartedWizard({ initialPrefs, editMode = false }: GetStartedW
       setError(t("onboarding.saveFailed"));
       return;
     }
-    router.push(buildResourcesPageHref({ state, county }, "recommended"));
+    router.push(buildResourcesPageHref({ state, county }, "recommended"), { scroll: false });
     router.refresh();
   };
 
@@ -194,7 +194,8 @@ export function GetStartedWizard({ initialPrefs, editMode = false }: GetStartedW
               <p className="text-sm">
                 <Link
                   href={buildResourcesPageHref(
-                    state && county ? { state, county } : undefined
+                    state && county ? { state, county } : undefined,
+                    state && county ? "results" : "none"
                   )}
                   className="font-semibold text-primary hover:underline"
                 >

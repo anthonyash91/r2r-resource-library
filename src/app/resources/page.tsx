@@ -4,15 +4,13 @@ import type { Metadata } from "next";
 import { ResourcesHeroSection } from "@/components/home/hero-section";
 import { ResourcesPageSkeleton } from "@/components/resources/resources-page-skeleton";
 import { PaginatedResourceList } from "@/components/resources/paginated-resource-list";
-import { ResourceResultsSummary } from "@/components/resources/resource-results-summary";
+import { ResourceResultsSection } from "@/components/resources/resource-results-summary";
 import { CountyFilteredResourceResults } from "@/components/resources/county-filtered-resource-results";
-import { ResourceFiltersPanel } from "@/components/resources/resource-filters-panel";
 import { ScrollToResourceResults } from "@/components/resources/scroll-to-resource-results";
 import { RESOURCE_RESULTS_ID, resourcesPageQueryWithPreferenceDefaults } from "@/lib/resources-page";
 import { getServerTranslator } from "@/i18n/server";
-import { cn, pageSectionPadding, sectionStackGap } from "@/lib/utils";
+import { cn, pageSectionPadding, sectionDividerTop, sectionStackGap } from "@/lib/utils";
 import { isValidCoverage, partitionResourcesByCountyFilter } from "@/lib/resource-coverage";
-import { hasActiveResourceFiltersFromParams } from "@/lib/resource-filter-params";
 import { RecommendedResourcesSection } from "@/components/resources/recommended-resources-section";
 import { getRecommendedResources } from "@/lib/user-preferences/recommendations";
 import { getServerUserPreferences } from "@/lib/user-preferences/server";
@@ -99,36 +97,32 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
   const searchQuery = params.q?.trim();
   const selectedCounty = params.county?.trim();
   const showCountySplit = Boolean(selectedCounty) && filters.coverage !== "statewide";
-  const resultsSummaryLabel = searchQuery
+  const resultsHeading = searchQuery
     ? t("resources.resultsSummaryWithQuery", { query: searchQuery })
     : t("resources.resultsSummary");
+  const resultsHint = searchQuery
+    ? t("resources.resultsHintWithQuery", { query: searchQuery })
+    : t("resources.resultsHint");
   const { local: localResults, statewide: statewideResults } = showCountySplit
     ? partitionResourcesByCountyFilter(resources, selectedCounty)
     : { local: resources, statewide: [] as typeof resources };
 
-  const filtersPanelOpen = hasActiveResourceFiltersFromParams(params);
-
   return (
     <>
       <Suspense fallback={<ResourcesPageSkeleton loadingLabel={t("resources.loadingAria")} />}>
-        <ResourcesHeroSection />
+        <ResourcesHeroSection
+          categories={categories}
+          states={states}
+          counties={counties}
+          cities={cities}
+          services={services}
+        />
       </Suspense>
 
       <div className={cn("app-band-alt", pageSectionPadding)}>
         <div className={cn("mx-auto max-w-7xl", sectionStackGap)}>
           <Suspense fallback={null}>
             <ScrollToResourceResults />
-          </Suspense>
-
-          <Suspense fallback={<div className="h-12 animate-pulse rounded-xl bg-muted" />}>
-            <ResourceFiltersPanel
-              defaultOpen={filtersPanelOpen}
-              categories={categories}
-              states={states}
-              counties={counties}
-              cities={cities}
-              services={services}
-            />
           </Suspense>
 
           {recommended.length > 0 ? (
@@ -143,7 +137,11 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
 
           <div
             id={RESOURCE_RESULTS_ID}
-            className={cn("scroll-mt-[var(--site-header-height)]", sectionStackGap)}
+            className={cn(
+              "scroll-mt-[var(--site-header-height)]",
+              sectionStackGap,
+              recommended.length > 0 && sectionDividerTop
+            )}
           >
           {resources.length === 0 ? (
             <div className="rounded-xl border border-border bg-card p-12 text-center">
@@ -152,14 +150,8 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
             </div>
           ) : showCountySplit ? (
             <CountyFilteredResourceResults
-              county={selectedCounty!}
               local={localResults}
               statewide={statewideResults}
-              summaryLabel={t("resources.resultsSplitSummary", {
-                local: localResults.length,
-                statewide: statewideResults.length,
-                county: selectedCounty!,
-              })}
               inCountyHeading={t("resources.resultsInCountyHeading", {
                 county: selectedCounty!,
               })}
@@ -169,6 +161,7 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
               statewideHeading={t("resources.resultsStatewideHeading")}
               statewideHint={t("resources.resultsStatewideHint", {
                 county: selectedCounty!,
+                state: params.state?.trim() || "Kentucky",
               })}
               noLocalHint={
                 localResults.length === 0
@@ -177,13 +170,13 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
               }
             />
           ) : (
-            <>
-              <ResourceResultsSummary
-                count={resources.length}
-                label={resultsSummaryLabel}
-              />
+            <ResourceResultsSection
+              heading={resultsHeading}
+              hint={resultsHint}
+              count={resources.length}
+            >
               <PaginatedResourceList resources={resources} />
-            </>
+            </ResourceResultsSection>
           )}
           </div>
         </div>

@@ -26,7 +26,7 @@ export function StatewideBadge({ resource, size = "default" }: StatewideBadgePro
 
   return (
     <Link
-      href={buildResourcesPageHref({ coverage: "statewide" })}
+      href={buildResourcesPageHref({ coverage: "statewide" }, "results")}
       className={cn(
         isSmall ? resourceBadgeSmClass : resourceBadgeClass,
         "focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"

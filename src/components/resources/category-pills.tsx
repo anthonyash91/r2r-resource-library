@@ -184,12 +184,12 @@ function CategoryPillsWithParams({
     } else {
       params.delete("category");
     }
-    return buildResourcesPageHref(params);
+    return buildResourcesPageHref(params, "results");
   };
 
   const onCategoryChange = (slug: string) => {
     startTransition(() => {
-      router.push(buildHref(slug || undefined));
+      router.push(buildHref(slug || undefined), { scroll: false });
     });
   };
 
@@ -223,11 +223,11 @@ export function CategoryPills({
   const [, startTransition] = useTransition();
 
   const buildHref = (slug?: string) =>
-    buildResourcesPageHref(slug ? { category: slug } : undefined);
+    buildResourcesPageHref(slug ? { category: slug } : undefined, slug ? "results" : "none");
 
   const onCategoryChange = (slug: string) => {
     startTransition(() => {
-      router.push(buildHref(slug || undefined));
+      router.push(buildHref(slug || undefined), { scroll: false });
     });
   };
 

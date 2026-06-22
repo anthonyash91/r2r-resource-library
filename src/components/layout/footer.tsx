@@ -28,7 +28,7 @@ export async function Footer() {
 
   const resourceLinks = [
     ...RESOURCE_CATEGORY_SLUGS.map((slug) => ({
-      href: buildResourcesPageHref({ category: slug }),
+      href: buildResourcesPageHref({ category: slug }, "results"),
       label: t(`categories.${slug}.name`),
     })),
     { href: buildResourcesPageHref(), label: t("footer.allCategories") },

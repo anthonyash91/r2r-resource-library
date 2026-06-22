@@ -125,7 +125,7 @@ sequenceDiagram
   User->>Wizard: State, county, priorities
   Wizard->>Cookie: Save preferences
   Wizard->>Profile: Sync if signed in
-  Wizard->>Page: Redirect with #recommended-resources
+  Wizard->>Page: Redirect with ?scroll=recommended
   Page->>Page: Auto-apply state filter
   Page->>User: Picked for you + county results
 ```
@@ -167,7 +167,7 @@ Site IDs are hashed at rest; reversible encryption allows admins to reveal/copy 
 | Feature | Description |
 |---------|-------------|
 | **Homepage** | Hero search, popular tags, browse-by-category pills, personalized “Picked for you” (when onboarded), How It Works, featured resources, built-for CTA, announcements banner |
-| **Resource directory** (`/resources`) | Sticky hero search, collapsible location filters, collapsible “Picked for your needs” section (open/closed state remembered), preference chips, county-split results, paginated masonry grid; scroll-to-results respects panel state |
+| **Resource directory** (`/resources`) | Hero search with separate collapsible location filters (collapsed by default), sticky search bar, “Resources based on your chosen needs” section with dashboard link to edit preferences, county/statewide split with count badges in section headers, paginated masonry grid; `?scroll=results` or `?scroll=recommended` for deep links from homepage and dashboard |
 | **Resource detail** (`/resources/[id]`) | Category/coverage badges, eligibility & operational notes (EN/ES), served counties, contact info, directions, save & share, related resources |
 | **Onboarding** (`/get-started`) | 3-step wizard: state (KY/OH) → county → up to 3 priority categories; skip option; edit mode via `?edit=1` |
 | **Search & filters** | Keyword, category, state, county, city, service type, coverage, recently added |

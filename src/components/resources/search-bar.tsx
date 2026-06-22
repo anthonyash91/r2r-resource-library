@@ -27,7 +27,7 @@ export function SearchBar({
     const formData = new FormData(e.currentTarget);
     const query = formData.get("q") as string;
     if (query?.trim()) {
-      router.push(buildResourcesPageHref({ q: query.trim() }));
+      router.push(buildResourcesPageHref({ q: query.trim() }, "results"), { scroll: false });
     } else {
       router.push(buildResourcesPageHref());
     }

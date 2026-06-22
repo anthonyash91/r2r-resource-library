@@ -119,5 +119,5 @@ export function buildCountyFilterHref(county: string, state?: string | null): st
   const params = new URLSearchParams();
   if (state?.trim()) params.set("state", state.trim());
   params.set("county", county);
-  return buildResourcesPageHref(params);
+  return buildResourcesPageHref(params, "results");
 }

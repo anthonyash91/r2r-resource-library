@@ -23,7 +23,7 @@ export function StateBadge({ state, size = "default" }: StateBadgeProps) {
 
   return (
     <Link
-      href={buildResourcesPageHref({ state })}
+      href={buildResourcesPageHref({ state }, "results")}
       className={cn(
         isSmall ? resourceBadgeSmClass : resourceBadgeClass,
         "focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"

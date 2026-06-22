@@ -168,22 +168,25 @@ export const en = {
     programCount: "{count} programs available",
     resultsSummary: "Programs matching your search",
     resultsSummaryWithQuery: 'Programs matching your search "{query}"',
-    resultsSplitSummary: "{local} in {county} County · {statewide} statewide",
+    resultsHint: "Programs that match your current filters.",
+    resultsHintWithQuery:
+      'Programs related to "{query}" and your current filters.',
     resultsInCountyHeading: "In {county} County",
     resultsInCountyHint:
       "Programs based in or specifically serving {county} County.",
     resultsStatewideHeading: "Also available statewide",
     resultsStatewideHint:
-      "These programs serve all Kentucky counties, including {county}.",
+      "These programs serve all {state} counties, including {county}.",
     resultsNoLocalInCounty:
       "No local or regional programs matched in {county} County. Statewide resources below may still help.",
     noResults: "No resources found",
     noResultsHint:
       "Try a different category or open the filters to change your search.",
     loadingAria: "Loading resources",
-    recommendedPersonalized: "Picked for your needs in {county} County",
-    recommendedCollapseAria: "Collapse picked for you section",
-    recommendedExpandAria: "Expand picked for you section",
+    recommendedPersonalized: "Resources based on your chosen needs",
+    recommendedPreferencesHintBefore: "Change your location and priority needs on your",
+    recommendedPreferencesHintLink: "dashboard",
+    recommendedPreferencesHintAfter: ".",
     searchPlaceholder: "Try housing, jobs, food, legal help...",
     searchButton: "Search",
     searchAria: "Search resources",

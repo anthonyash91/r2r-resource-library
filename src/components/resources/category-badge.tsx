@@ -22,7 +22,7 @@ export function CategoryBadge({ category, size = "default" }: CategoryBadgeProps
 
   return (
     <Link
-      href={buildResourcesPageHref({ category: category.slug })}
+      href={buildResourcesPageHref({ category: category.slug }, "results")}
       className={cn(
         isSmall ? resourceBadgeSmClass : resourceBadgeClass,
         "focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"

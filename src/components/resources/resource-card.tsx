@@ -56,14 +56,15 @@ export function ResourceCard({
   );
 
   return (
-    <Card className={isCompact ? "p-5 sm:p-6" : undefined}>
-      <div
-        className={cn(
-          "items-start gap-x-2",
-          showSave && !isCompact ? "grid grid-cols-[1fr_auto]" : "flex flex-wrap gap-2",
-          isCompact ? "mb-2" : "mb-3"
-        )}
-      >
+    <Card className={cn("flex h-full w-full min-w-0 flex-col overflow-hidden", isCompact && "p-5 sm:p-6")}>
+      <div className="flex min-w-0 flex-1 flex-col">
+        <div
+          className={cn(
+            "min-w-0 items-start gap-x-2",
+            showSave && !isCompact ? "grid grid-cols-[minmax(0,1fr)_auto]" : "flex flex-wrap gap-2",
+            isCompact ? "mb-2" : "mb-3"
+          )}
+        >
         <div className="flex min-w-0 flex-wrap items-center gap-2">
           {resource.category && (
             <CategoryBadge category={resource.category} size={isCompact ? "sm" : "default"} />
@@ -86,7 +87,7 @@ export function ResourceCard({
 
       <h3
         className={cn(
-          "font-bold text-foreground",
+          "break-words font-bold text-foreground",
           isCompact ? "mb-1.5 line-clamp-2 text-lg leading-snug" : "mb-2 text-xl"
         )}
       >
@@ -94,58 +95,59 @@ export function ResourceCard({
       </h3>
       <p
         className={cn(
-          "text-muted-foreground leading-relaxed",
+          "break-words text-muted-foreground leading-relaxed",
           isCompact ? "mb-0 text-sm" : "mb-0 text-base"
         )}
       >
         {descriptionPreview}
-      </p>
+        </p>
 
-      {hasContactInfo && (
-        <div
-          className={cn(
-            "space-y-1.5 border-t border-border text-muted-foreground",
-            isCompact ? "mb-3 mt-3 pt-3 text-xs" : "mb-4 mt-4 space-y-2 pt-4 text-sm"
-          )}
-        >
-          {locationLine && (
-            <p className="flex min-w-0 items-center gap-2">
-              <MapPin
-                className={cn("shrink-0 text-primary", isCompact ? "h-3.5 w-3.5" : "h-4 w-4")}
-                aria-hidden="true"
-              />
-              <span className="min-w-0 truncate" title={locationLine}>
-                {locationLine}
-              </span>
-            </p>
-          )}
-          {!isCompact && resource.phone && (
-            <p className="flex items-center gap-2">
-              <Phone className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-              {formatPhone(resource.phone)}
-            </p>
-          )}
-          {!isCompact && resource.website && (
-            <p className="flex min-w-0 items-center gap-2">
-              <Globe className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-              <a
-                href={resource.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                title={formatWebsiteDisplay(resource.website)}
-                className="min-w-0 truncate text-primary hover:underline"
-              >
-                {formatWebsiteDisplay(resource.website)}
-              </a>
-            </p>
-          )}
-        </div>
-      )}
+        {hasContactInfo && (
+          <div
+            className={cn(
+              "min-w-0 space-y-1.5 border-t border-border text-muted-foreground",
+              isCompact ? "mt-3 pt-3 text-xs" : "mt-4 space-y-2 pt-4 text-sm"
+            )}
+          >
+            {locationLine && (
+              <p className="flex min-w-0 items-center gap-2">
+                <MapPin
+                  className={cn("shrink-0 text-primary", isCompact ? "h-3.5 w-3.5" : "h-4 w-4")}
+                  aria-hidden="true"
+                />
+                <span className="min-w-0 truncate" title={locationLine}>
+                  {locationLine}
+                </span>
+              </p>
+            )}
+            {!isCompact && resource.phone && (
+              <p className="flex min-w-0 items-center gap-2">
+                <Phone className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+                <span className="min-w-0 truncate">{formatPhone(resource.phone)}</span>
+              </p>
+            )}
+            {!isCompact && resource.website && (
+              <p className="flex min-w-0 items-center gap-2">
+                <Globe className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+                <a
+                  href={resource.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={formatWebsiteDisplay(resource.website)}
+                  className="block min-w-0 flex-1 truncate text-primary hover:underline"
+                >
+                  {formatWebsiteDisplay(resource.website)}
+                </a>
+              </p>
+            )}
+          </div>
+        )}
+      </div>
 
       <Link
         href={`/resources/${resource.id}`}
         className={cn(
-          "block w-full rounded-xl border-2 border-primary bg-transparent text-center font-semibold text-primary transition-colors",
+          "mt-4 block w-full shrink-0 rounded-xl border-2 border-primary bg-transparent text-center font-semibold text-primary transition-colors",
           "hover:bg-secondary focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2",
           isCompact ? "px-3 py-1.5 text-xs" : "px-3 py-2 text-sm"
         )}

@@ -2,12 +2,11 @@
 
 import { useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
-import { hasActiveResourceFilters } from "@/lib/resource-filter-params";
 import {
-  RECOMMENDED_RESOURCES_HASH,
+  parseResourcesPageScrollTarget,
   RECOMMENDED_RESOURCES_ID,
-  RESOURCE_RESULTS_HASH,
   RESOURCE_RESULTS_ID,
+  RESOURCES_PAGE_SCROLL_PARAM,
 } from "@/lib/resources-page";
 
 function readHeaderHeight(): number {
@@ -38,11 +37,28 @@ function scrollToElement(elementId: string) {
     return true;
   };
 
+  const clearScrollIntent = () => {
+    const params = new URLSearchParams(window.location.search);
+    const hadScrollParam = params.has(RESOURCES_PAGE_SCROLL_PARAM);
+    const hadHash = Boolean(window.location.hash);
+
+    if (!hadScrollParam && !hadHash) return;
+
+    params.delete(RESOURCES_PAGE_SCROLL_PARAM);
+    const qs = params.toString();
+    window.history.replaceState(
+      null,
+      "",
+      `${window.location.pathname}${qs ? `?${qs}` : ""}`
+    );
+  };
+
   const watchRecommendedLayout = () => {
     if (!scrollOnce()) return;
 
     const recommended = document.getElementById(RECOMMENDED_RESOURCES_ID);
     if (!recommended) {
+      clearScrollIntent();
       cleanup();
       return;
     }
@@ -63,12 +79,16 @@ function scrollToElement(elementId: string) {
 
       stableFrames += 1;
       if (stableFrames >= 2) {
+        clearScrollIntent();
         cleanup();
       }
     });
 
     resizeObserver.observe(recommended);
-    fallbackTimer = setTimeout(cleanup, 500);
+    fallbackTimer = setTimeout(() => {
+      clearScrollIntent();
+      cleanup();
+    }, 500);
   };
 
   const tryScroll = (attempts = 0) => {
@@ -98,23 +118,23 @@ export function ScrollToResourceResults() {
   useEffect(() => {
     if (pathname !== "/resources") return;
 
+    const scrollTarget = parseResourcesPageScrollTarget(
+      searchParams,
+      window.location.hash
+    );
+
     let cleanupScroll: (() => void) | undefined;
 
-    if (window.location.hash === RECOMMENDED_RESOURCES_HASH) {
+    if (scrollTarget === "recommended") {
       cleanupScroll = scrollToElement(RECOMMENDED_RESOURCES_ID);
       return () => cleanupScroll?.();
     }
 
-    const shouldScroll =
-      window.location.hash === RESOURCE_RESULTS_HASH ||
-      hasActiveResourceFilters(searchParams);
-
-    if (!shouldScroll) return;
-
-    cleanupScroll = scrollToElement(RESOURCE_RESULTS_ID);
-
-    return () => cleanupScroll?.();
-  }, [pathname, filterKey, searchParams]);
+    if (scrollTarget === "results") {
+      cleanupScroll = scrollToElement(RESOURCE_RESULTS_ID);
+      return () => cleanupScroll?.();
+    }
+  }, [pathname, filterKey]);
 
   return null;
 }

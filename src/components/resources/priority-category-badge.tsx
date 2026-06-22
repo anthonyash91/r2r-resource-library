@@ -31,7 +31,7 @@ export function PriorityCategoryBadge({ slug }: PriorityCategoryBadgeProps) {
 
   return (
     <Link
-      href={buildResourcesPageHref({ category: slug })}
+      href={buildResourcesPageHref({ category: slug }, "results")}
       className={cn(
         resourceBadgeClass,
         "focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring"

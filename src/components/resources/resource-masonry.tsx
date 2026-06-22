@@ -25,18 +25,6 @@ const masonryColumnClasses: Record<1 | 2 | 3, string> = {
   3: "columns-1 sm:columns-2 lg:columns-3",
 };
 
-function masonryContainedTrailingReset(columns: 1 | 2 | 3): string {
-  if (columns === 1) {
-    return "[&>*:last-child]:mb-0";
-  }
-
-  if (columns === 2) {
-    return "[&>*:nth-last-child(-n+2)]:mb-0";
-  }
-
-  return "[&>*:last-child]:mb-0 sm:[&>*:nth-last-child(-n+2)]:mb-0 lg:[&>*:nth-last-child(-n+3)]:mb-0";
-}
-
 export function ResourceMasonry({
   resources,
   columns = 3,
@@ -56,14 +44,16 @@ export function ResourceMasonry({
           masonryColumnClasses[columns],
           gapClass,
           !contained && (isCompact ? "-mb-4" : "-mb-6"),
-          contained && masonryContainedTrailingReset(columns),
           className
         )}
       >
         {resources.map((resource) => (
           <div
             key={resource.id}
-            className={cn("break-inside-avoid", isCompact ? "mb-4 p-2" : "mb-6")}
+            className={cn(
+              "w-full max-w-full break-inside-avoid",
+              isCompact ? "mb-4 p-2" : "mb-6"
+            )}
           >
             <ResourceCard resource={resource} showSave={showSave} variant={variant} />
           </div>
@@ -74,10 +64,10 @@ export function ResourceMasonry({
 
   return (
     <div
-      className={cn("grid items-start", gridColumnClasses[columns], gapClass, className)}
+      className={cn("grid items-stretch", gridColumnClasses[columns], gapClass, className)}
     >
       {resources.map((resource) => (
-        <div key={resource.id} className={cn(isCompact && "p-2")}>
+        <div key={resource.id} className={cn("min-w-0", isCompact ? "p-2" : "flex h-full")}>
           <ResourceCard resource={resource} showSave={showSave} variant={variant} />
         </div>
       ))}

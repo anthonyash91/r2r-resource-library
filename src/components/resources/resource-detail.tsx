@@ -243,7 +243,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
                     <span key={tag}>
                       {index > 0 && ", "}
                       <Link
-                        href={buildResourcesPageHref({ tag })}
+                        href={buildResourcesPageHref({ tag }, "results")}
                         className="text-primary hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring rounded"
                       >
                         {tag}

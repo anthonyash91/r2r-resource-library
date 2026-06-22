@@ -30,7 +30,7 @@ export function PaginatedResourceList({ resources }: PaginatedResourceListProps)
 
   return (
     <>
-      <ResourceMasonry resources={visible} />
+      <ResourceMasonry resources={visible} contained />
 
       {resources.length > PAGE_SIZE ? (
         <div className="mt-10 flex flex-col items-center gap-3">

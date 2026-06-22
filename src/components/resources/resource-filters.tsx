@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import type { Category } from "@/types";
 import { useTranslations } from "@/i18n/locale-context";
 import { useCategoryLabel } from "@/i18n/use-category-label";
+import { buildResourcesPageHref } from "@/lib/resources-page";
 
 interface ResourceFiltersProps {
   categories: Category[];
@@ -17,6 +18,7 @@ interface ResourceFiltersProps {
   cities: string[];
   services: string[];
   embedded?: boolean;
+  compact?: boolean;
 }
 
 export function ResourceFiltersBar({
@@ -26,6 +28,7 @@ export function ResourceFiltersBar({
   cities,
   services,
   embedded = false,
+  compact = false,
 }: ResourceFiltersProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -49,7 +52,7 @@ export function ResourceFiltersBar({
         params.delete("city");
       }
       startTransition(() => {
-        router.push(`/resources?${params.toString()}`, { scroll: false });
+        router.push(buildResourcesPageHref(params, "results"), { scroll: false });
       });
     },
     [router, searchParams]
@@ -78,7 +81,12 @@ export function ResourceFiltersBar({
       role="group"
       aria-label={t("resources.filterAria")}
     >
-      <div className="grid min-w-0 grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <div
+        className={cn(
+          "grid min-w-0 grid-cols-1 gap-4",
+          compact ? "sm:grid-cols-2 lg:grid-cols-3" : "md:grid-cols-2 xl:grid-cols-3"
+        )}
+      >
         <Dropdown
           label={t("resources.category")}
           placeholder={t("resources.allCategories")}
@@ -106,7 +114,12 @@ export function ResourceFiltersBar({
           options={withPlaceholder(counties, t("resources.allCounties"))}
           searchPlaceholder={t("resources.searchCounties")}
         />
-        <p className="text-sm text-muted-foreground md:col-span-2 xl:col-span-3">
+        <p
+          className={cn(
+            "text-sm text-muted-foreground",
+            compact ? "sm:col-span-2 lg:col-span-3" : "md:col-span-2 xl:col-span-3"
+          )}
+        >
           {t("resources.countyFilterHint")}
         </p>
         <Dropdown

@@ -171,22 +171,25 @@ export const es = {
     programCount: "{count} programas disponibles",
     resultsSummary: "Programas que coinciden con su búsqueda",
     resultsSummaryWithQuery: 'Programas que coinciden con su búsqueda "{query}"',
-    resultsSplitSummary: "{local} en el condado de {county} · {statewide} estatales",
+    resultsHint: "Programas que coinciden con sus filtros actuales.",
+    resultsHintWithQuery:
+      'Programas relacionados con "{query}" y sus filtros actuales.',
     resultsInCountyHeading: "En el condado de {county}",
     resultsInCountyHint:
       "Programas ubicados en o que atienden específicamente al condado de {county}.",
     resultsStatewideHeading: "También disponibles en todo el estado",
     resultsStatewideHint:
-      "Estos programas atienden a los 120 condados de Kentucky, incluido {county}.",
+      "Estos programas atienden a todos los condados de {state}, incluido {county}.",
     resultsNoLocalInCounty:
       "No hay programas locales o regionales en el condado de {county}. Los recursos estatales a continuación pueden ayudar.",
     noResults: "No se encontraron recursos",
     noResultsHint:
       "Pruebe con otra categoría o abra los filtros para cambiar su búsqueda.",
     loadingAria: "Cargando recursos",
-    recommendedPersonalized: "Seleccionados para sus necesidades en el condado de {county}",
-    recommendedCollapseAria: "Contraer la sección seleccionados para usted",
-    recommendedExpandAria: "Expandir la sección seleccionados para usted",
+    recommendedPersonalized: "Recursos basados en sus necesidades elegidas",
+    recommendedPreferencesHintBefore: "Cambie su ubicación y necesidades prioritarias en su",
+    recommendedPreferencesHintLink: "panel",
+    recommendedPreferencesHintAfter: ".",
     searchPlaceholder: "Pruebe vivienda, empleo, comida, ayuda legal...",
     searchButton: "Buscar",
     searchAria: "Buscar recursos",
