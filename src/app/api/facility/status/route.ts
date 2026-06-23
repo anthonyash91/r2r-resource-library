@@ -42,7 +42,7 @@ export async function GET() {
   return NextResponse.json({
     facilityId: session.facilityId,
     facilityName: facility.name,
-    ...(hasAccount ? { pinMasked: maskPin(session.pin) } : { pin: session.pin }),
+    pinMasked: maskPin("*".repeat(session.pinLength)),
     hasAccount,
     preferences,
   });

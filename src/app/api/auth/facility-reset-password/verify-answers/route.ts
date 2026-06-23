@@ -2,7 +2,12 @@ import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { isSupabaseConfigured } from "@/lib/supabase/server";
-import { hashInmatePin, hashRecoveryAnswer, normalizePin } from "@/lib/facility/crypto";
+import {
+  hashInmatePin,
+  hashRecoveryAnswer,
+  normalizePin,
+  secureCompareHex,
+} from "@/lib/facility/crypto";
 import { getFacilityProfileRecoveryByPinHash } from "@/lib/facility/data";
 import {
   buildFacilityResetData,
@@ -13,6 +18,9 @@ import { FACILITY_RESET_COOKIE } from "@/lib/facility/constants";
 import { readFacilitySession } from "@/lib/facility/session";
 import { LOCALE_COOKIE, type Locale } from "@/i18n/types";
 import { createTranslator } from "@/i18n/translator";
+import { checkRateLimit, getRequestClientIp } from "@/lib/rate-limit";
+
+const ANSWERS_VERIFY_LIMIT = { maxAttempts: 5, windowMs: 15 * 60 * 1000 };
 
 async function getRequestLocale(): Promise<Locale> {
   const cookieStore = await cookies();
@@ -54,6 +62,12 @@ export async function POST(request: Request) {
   }
 
   const pinHash = hashInmatePin(session.facilityId, pin);
+  const rateKey = `facility-reset-answers:${session.facilityId}:${pinHash}:${getRequestClientIp(request)}`;
+  const rate = checkRateLimit(rateKey, ANSWERS_VERIFY_LIMIT);
+  if (!rate.allowed) {
+    return NextResponse.json({ error: t("facility.rateLimited") }, { status: 429 });
+  }
+
   const profile = await getFacilityProfileRecoveryByPinHash(session.facilityId, pinHash);
 
   if (!profile) {
@@ -64,8 +78,8 @@ export async function POST(request: Request) {
   const answer2Hash = hashRecoveryAnswer(answer2);
 
   if (
-    answer1Hash !== profile.recovery_answer_1_hash ||
-    answer2Hash !== profile.recovery_answer_2_hash
+    !secureCompareHex(answer1Hash, profile.recovery_answer_1_hash) ||
+    !secureCompareHex(answer2Hash, profile.recovery_answer_2_hash)
   ) {
     return NextResponse.json({ error: t("facility.resetAnswersWrong") }, { status: 403 });
   }

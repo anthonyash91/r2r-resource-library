@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Plus, Pencil, Trash2 } from "lucide-react";
+import { Plus, Pencil, Trash2, CircleOff, Save, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
@@ -213,9 +213,11 @@ export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClie
             />
             <div className="flex gap-2">
               <Button onClick={handleSave} loading={saving}>
+                <Save className="h-4 w-4" aria-hidden="true" />
                 {t("common.save")}
               </Button>
               <Button variant="outline" onClick={resetForm}>
+                <X className="h-4 w-4" aria-hidden="true" />
                 {t("common.cancel")}
               </Button>
             </div>
@@ -229,18 +231,25 @@ export function AdminCategoriesClient({ initialCategories }: AdminCategoriesClie
             <div>
               <div className="flex items-center gap-2">
                 <h2 className="text-lg font-bold">{cat.name}</h2>
-                {!cat.is_active && <Badge>{t("admin.inactive")}</Badge>}
+                {!cat.is_active ? (
+                  <Badge icon={CircleOff}>{t("admin.inactive")}</Badge>
+                ) : null}
               </div>
               <p className="text-sm text-muted-foreground">{cat.description}</p>
             </div>
-            <div className="flex gap-2">
-              <Button variant="outline" size="sm" onClick={() => startEdit(cat)}>
-                <Pencil className="h-4 w-4" aria-hidden="true" />
+            <div className="flex items-center gap-2">
+              <Button variant="soft-primary" size="badge" onClick={() => startEdit(cat)}>
+                <Pencil className="h-3.5 w-3.5" aria-hidden="true" />
                 {t("common.edit")}
               </Button>
-              <Button variant="ghost" size="sm" onClick={() => handleDelete(cat.id)} loading={busyId === cat.id}>
-                <Trash2 className="h-4 w-4" aria-hidden="true" />
-                {t("admin.deleteCategory")}
+              <Button
+                variant="soft-destructive"
+                size="badge"
+                onClick={() => handleDelete(cat.id)}
+                loading={busyId === cat.id}
+              >
+                <Trash2 className="h-3.5 w-3.5" aria-hidden="true" />
+                {t("common.delete")}
               </Button>
             </div>
           </Card>

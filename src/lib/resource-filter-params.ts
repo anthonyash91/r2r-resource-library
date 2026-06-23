@@ -7,6 +7,7 @@ export const RESOURCE_FILTER_PARAM_KEYS = [
   "service",
   "tag",
   "coverage",
+  "intake",
   "filter",
 ] as const;
 

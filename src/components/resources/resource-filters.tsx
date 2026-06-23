@@ -10,6 +10,7 @@ import type { Category } from "@/types";
 import { useTranslations } from "@/i18n/locale-context";
 import { useCategoryLabel } from "@/i18n/use-category-label";
 import { buildResourcesPageHref } from "@/lib/resources-page";
+import { IntakeSignalFilters } from "./intake-signal-filters";
 
 interface ResourceFiltersProps {
   categories: Category[];
@@ -150,6 +151,8 @@ export function ResourceFiltersBar({
           ]}
         />
       </div>
+
+      <IntakeSignalFilters compact={compact} />
 
       {hasFilters && (
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">

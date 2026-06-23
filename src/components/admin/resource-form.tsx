@@ -6,8 +6,9 @@ import { Input } from "@/components/ui/input";
 import { Dropdown } from "@/components/ui/dropdown";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import type { Category } from "@/types";
+import type { Category, IntakeSignal } from "@/types";
 import { MAX_FEATURED_RESOURCES } from "@/lib/featured-resources-storage";
+import { INTAKE_SIGNALS } from "@/lib/intake-signals";
 import {
   createResource,
   updateResource,
@@ -42,14 +43,27 @@ export function ResourceForm({ categories, resource }: ResourceFormProps) {
     notes: resource?.notes ?? "",
     services: resource?.services ?? "",
     tags: resource?.tags ?? "",
+    intake_signals: resource?.intake_signals ?? [],
     status: resource?.status ?? "active",
     is_featured: resource?.is_featured ?? false,
   });
   const [saving, setSaving] = useState(false);
   const wasFeatured = resource?.is_featured ?? false;
 
-  const update = (key: keyof ResourceFormData, value: string | boolean) => {
+  const update = (key: keyof ResourceFormData, value: string | boolean | IntakeSignal[]) => {
     setForm((prev) => ({ ...prev, [key]: value }));
+  };
+
+  const toggleIntakeSignal = (signal: IntakeSignal) => {
+    setForm((prev) => {
+      const selected = prev.intake_signals.includes(signal);
+      return {
+        ...prev,
+        intake_signals: selected
+          ? prev.intake_signals.filter((item) => item !== signal)
+          : [...prev.intake_signals, signal],
+      };
+    });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -178,6 +192,28 @@ export function ResourceForm({ categories, resource }: ResourceFormProps) {
           value={form.tags}
           onChange={(e) => update("tags", e.target.value)}
         />
+        <fieldset className="space-y-3">
+          <legend className="mb-2 block text-base font-semibold">
+            {t("admin.intakeSignalsLabel")}
+          </legend>
+          <p className="text-sm text-muted-foreground">{t("admin.intakeSignalsHint")}</p>
+          <div className="space-y-2">
+            {INTAKE_SIGNALS.map((signal) => (
+              <label
+                key={signal}
+                className="flex cursor-pointer items-start gap-3 rounded-xl border border-border px-4 py-3"
+              >
+                <input
+                  type="checkbox"
+                  checked={form.intake_signals.includes(signal)}
+                  onChange={() => toggleIntakeSignal(signal)}
+                  className="mt-1 h-5 w-5 cursor-pointer accent-primary"
+                />
+                <span className="text-base">{t(`resources.intakeSignals.${signal}`)}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
         <Dropdown
           label={t("admin.status")}
           value={form.status}

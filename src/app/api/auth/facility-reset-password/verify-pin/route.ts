@@ -7,6 +7,9 @@ import { getFacilityProfileRecoveryByPinHash } from "@/lib/facility/data";
 import { readFacilitySession } from "@/lib/facility/session";
 import { LOCALE_COOKIE, type Locale } from "@/i18n/types";
 import { createTranslator } from "@/i18n/translator";
+import { checkRateLimit, getRequestClientIp } from "@/lib/rate-limit";
+
+const PIN_VERIFY_LIMIT = { maxAttempts: 5, windowMs: 15 * 60 * 1000 };
 
 async function getRequestLocale(): Promise<Locale> {
   const cookieStore = await cookies();
@@ -30,6 +33,12 @@ export async function POST(request: Request) {
   const session = await readFacilitySession();
   if (!session) {
     return NextResponse.json({ error: t("facility.sessionRequired") }, { status: 401 });
+  }
+
+  const rateKey = `facility-reset-pin:${session.facilityId}:${getRequestClientIp(request)}`;
+  const rate = checkRateLimit(rateKey, PIN_VERIFY_LIMIT);
+  if (!rate.allowed) {
+    return NextResponse.json({ error: t("facility.rateLimited") }, { status: 429 });
   }
 
   let body: { pin?: string } = {};

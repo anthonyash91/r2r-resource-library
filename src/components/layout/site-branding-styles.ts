@@ -17,3 +17,14 @@ export const siteBrandTextOffsetClass = "translate-y-[2px]";
 /** Category/coverage badges — same surface as the save button */
 export const resourceBadgeClass = "resource-badge";
 export const resourceBadgeSmClass = "resource-badge resource-badge--sm";
+
+/** Intake signal badges — same size as resource-badge, variant tints */
+export const intakeBadgeSuccessClass = "resource-badge resource-badge--success resource-badge--static";
+export const intakeBadgeSuccessSmClass =
+  "resource-badge resource-badge--success resource-badge--static resource-badge--sm";
+export const intakeBadgeWarningClass = "resource-badge resource-badge--warning resource-badge--static";
+export const intakeBadgeWarningSmClass =
+  "resource-badge resource-badge--warning resource-badge--static resource-badge--sm";
+export const intakeBadgeWalkInClass = "resource-badge resource-badge--walk-in resource-badge--static";
+export const intakeBadgeWalkInSmClass =
+  "resource-badge resource-badge--walk-in resource-badge--static resource-badge--sm";

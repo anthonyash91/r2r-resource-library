@@ -12,11 +12,11 @@ import { useTranslations } from "@/i18n/locale-context";
 import {
   MAX_PRIORITY_CATEGORIES,
   ONBOARDING_PRIORITY_SLUGS,
-  SUPPORTED_ONBOARDING_STATES,
   getCountiesForState,
   readClientPreferences,
   type UserPreferences,
 } from "@/lib/user-preferences";
+import { ONBOARDING_STATE_REGISTRY } from "@/lib/states/registry";
 import { saveUserPreferences } from "@/lib/user-preferences/save";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import { cn, pageSectionPadding } from "@/lib/utils";
@@ -42,9 +42,9 @@ export function GetStartedWizard({ initialPrefs, editMode = false }: GetStartedW
 
   const stateOptions = useMemo(
     () =>
-      SUPPORTED_ONBOARDING_STATES.map((value) => ({
-        value,
-        label: t(`onboarding.states.${value === "Kentucky" ? "kentucky" : "ohio"}`),
+      ONBOARDING_STATE_REGISTRY.map((entry) => ({
+        value: entry.name,
+        label: t(`onboarding.states.${entry.slug}`),
       })),
     [t]
   );
@@ -202,6 +202,18 @@ export function GetStartedWizard({ initialPrefs, editMode = false }: GetStartedW
                   {t("onboarding.browseAllCategories")}
                 </Link>
               </p>
+              {state && county ? (
+                <div className="rounded-xl border border-primary/20 bg-primary/5 p-4">
+                  <p className="text-base text-muted-foreground">
+                    {t("onboarding.pathwayHint")}
+                  </p>
+                  <Link href="/pathways/first-week" className="mt-3 inline-block">
+                    <Button type="button" variant="outline" size="sm">
+                      {t("onboarding.pathwayCta")}
+                    </Button>
+                  </Link>
+                </div>
+              ) : null}
             </div>
           )}
 

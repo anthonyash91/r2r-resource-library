@@ -15,6 +15,7 @@ export const en = {
     confirm: "Confirm",
     create: "Create",
     edit: "Edit",
+    delete: "Delete",
     remove: "Remove",
     featured: "Featured",
     active: "Active",
@@ -240,12 +241,26 @@ export const en = {
     viewDetails: "View details →",
     saveAria: "Save {name}",
     removeSaveAria: "Remove {name} from saved",
+    intakeFiltersLabel: "Eligibility & intake",
+    intakeFiltersHint:
+      "Show programs that match all selected signals. Leave blank to include every program.",
+    intakeSignalFilterAria: "Filter by {label}",
+    intakeMetaAria: "Intake: {labels}",
+    intakeSignals: {
+      accepts_criminal_record: "Accepts criminal record",
+      referral_required: "Referral required",
+      walk_in_ok: "Walk-in OK",
+    },
     resourceNotFound: "Resource Not Found",
   },
 
   auth: {
     signIn: "Sign In",
     signInSubtitle: "Access your saved resources and dashboard.",
+    staffSignInHint: "Staff or admin?",
+    staffSignInLink: "Sign in with your email",
+    facilityInmateSignInHint: "Inmate on a facility tablet?",
+    facilityInmateSignInLink: "Use facility sign-in",
     signUp: "Create Account",
     signUpSubtitle: "Free account to save resources and track your journey.",
     email: "Email",
@@ -337,6 +352,7 @@ export const en = {
     states: {
       kentucky: "Kentucky",
       ohio: "Ohio",
+      indiana: "Indiana",
     },
     priorities: {
       housing: "Housing",
@@ -350,11 +366,102 @@ export const en = {
       education: "Education & GED",
       "reentry-organizations": "Reentry navigation",
     },
+    pathwayHint:
+      "When you finish, open the first-week guide from your dashboard for a step-by-step checklist.",
+    pathwayCta: "Preview first-week guide",
+  },
+
+  pathways: {
+    notFoundTitle: "Guide not found",
+    disclaimer:
+      "This guide helps you find programs in our directory. It is not emergency care, legal advice, or a guarantee of services. Call or text 988 if you need immediate help.",
+    crisisTitle: "Need help right now?",
+    crisisBody:
+      "If you are in crisis, call or text 988 for the Suicide & Crisis Lifeline, or text HOME to 741741 for the Crisis Text Line. These services are free and available 24/7.",
+    setCountyBannerTitle: "Set your county for local matches",
+    setCountyBannerDesc:
+      "Programs shown here work statewide, but setting your county shows shelters, clinics, and offices near where you plan to live.",
+    setCountyCta: "Set county",
+    matchesYourNeeds: "Matches your needs",
+    localPrograms: "Programs serving {county} County",
+    statewidePrograms: "Statewide programs in {state}",
+    yourState: "your state",
+    noLocalMatches:
+      "We could not find local programs for this step in {county} County. Try the browse link below or call 211 for help finding services.",
+    noMatches:
+      "We could not find programs for this step with your current filters. Try browsing all resources in this category.",
+    browseCategory: "Browse all {category} programs",
+    browseCategoryInCounty: "Browse all {category} in {county} County",
+    browseCategoryInState: "Browse all {category} in {state}",
+    dashboardCardTitle: "First week after release",
+    dashboardCardDesc:
+      "A step-by-step checklist — ID, benefits, housing, treatment, jobs, and legal help — with programs matched to your county.",
+    dashboardCardCta: "Open first-week guide",
+    firstWeek: {
+      title: "First week after release",
+      metaDescription:
+        "A practical step-by-step guide to crisis support, ID, benefits, housing, treatment, employment, and legal help after release.",
+      introDefault:
+        "Seven practical steps for your first days home. Each step links to real programs from our directory.",
+      introByState: {
+        kentucky:
+          "Seven practical steps for your first days home in Kentucky. Each step links to real programs from our directory.",
+        ohio:
+          "Seven practical steps for your first days home in Ohio. Each step links to real programs from our directory.",
+        indiana:
+          "Seven practical steps for your first days home in Indiana. Each step links to real programs from our directory.",
+      },
+      steps: {
+        "crisis-support": {
+          title: "Get crisis support if you need it now",
+          description:
+            "If you feel unsafe or overwhelmed, reach out before anything else. Hotlines are free, confidential, and available 24/7.",
+        },
+        "id-documents": {
+          title: "Get ID and vital documents",
+          description:
+            "A state ID, birth certificate, or Social Security card unlocks housing, jobs, and benefits. Start here even if other steps feel urgent.",
+        },
+        benefits: {
+          title: "Apply for benefits (Medicaid, SNAP, and more)",
+          description:
+            "Health coverage and food assistance can stabilize your first weeks. Many programs help with the application process.",
+        },
+        housing: {
+          title: "Find a place to stay",
+          description:
+            "Emergency shelter, transitional housing, and rental help vary by county. Local programs are listed first when we know your county.",
+        },
+        treatment: {
+          title: "Connect to treatment or recovery support",
+          description:
+            "Substance use treatment, peer support, and healthcare programs can help you stay on track after release.",
+        },
+        employment: {
+          title: "Look for work or training",
+          description:
+            "Job readiness, training, and second-chance employers can help you earn income and build stability.",
+        },
+        legal: {
+          title: "Know your legal options",
+          description:
+            "Free legal help may be available for expungement, driver's license restoration, and other issues tied to your record.",
+        },
+      },
+    },
   },
 
   facility: {
     sessionRequiredTitle: "Sign in from your facility",
     sessionRequired: "Use a computer or tablet at your facility to sign in or create an account.",
+    enterErrorTitle: "Facility link could not be opened",
+    enterErrorInvalid:
+      "The site ID in this link does not match an active facility. Use the exact Site ID from Admin → Facilities (not the facility name), and recreate the facility if FACILITY_CRYPTO_SECRET changed after it was added.",
+    enterErrorUnconfigured:
+      "Facility tablet links are not configured on this server. Add SUPABASE_SERVICE_ROLE_KEY to .env.local and restart the dev server.",
+    enterErrorConfig:
+      "Facility encryption is not configured. Set FACILITY_CRYPTO_SECRET (or ALLOW_DEV_FACILITY_CRYPTO=1 for local dev) in .env.local and restart.",
+    enterErrorAdminLink: "Open Admin → Facilities",
     barTitle: "Create an account to save your resources",
     barSignInTitle: "Welcome back! Looks like you already have an account with us.",
     barSignInDesc:
@@ -365,6 +472,8 @@ export const en = {
     signupSubtitle:
       "Your username and facility are already set. Email is optional — you can add one later from your dashboard.",
     loginTitle: "Sign in",
+    loginStaffHint:
+      "That password did not match an inmate account on this tablet. Staff and admins should use email sign-in below.",
     loginPinNotNeededNote:
       "Your PIN is filled in automatically and hidden for privacy. Enter the password you created when you signed up.",
     facilityLabel: "Facility",
@@ -400,6 +509,7 @@ export const en = {
     noAccountTitle: "No account yet",
     noAccountDesc: "Create an account to save resources and email your list.",
     signupInvalid: "Please complete all fields with valid answers.",
+    passwordHint: "At least 12 characters",
     accountAlreadyExists: "An account already exists on this device.",
     pinMismatch: "This account does not match your PIN. Sign in from the device where you created your account.",
     forgotPassword: "Forgot password?",
@@ -410,6 +520,7 @@ export const en = {
     resetPinStepHint: "Use the PIN assigned to you at your facility.",
     resetPinRequired: "Enter your PIN to continue.",
     resetPinInvalid: "We could not find an account with that PIN.",
+    rateLimited: "Too many attempts. Please wait a few minutes and try again.",
     resetQuestionsStepDesc: "Answer your security questions to verify your identity.",
     resetPasswordStepDesc: "Choose a new password for your account.",
     resetContinue: "Continue",
@@ -629,6 +740,8 @@ Please include your city or county when asking about local resources so we can r
       "Can't find what you're looking for? Our team is happy to help with anything not covered here.",
     quickLinksTitle: "Quick Links",
     sidebarLinks: {
+      pathwayTitle: "First week guide",
+      pathwayDesc: "Step-by-step checklist after release",
       resourcesTitle: "Find Resources",
       resourcesDesc: "Search for programs near you",
       contactTitle: "Contact Us",
@@ -876,6 +989,12 @@ Please include your city or county when asking about local resources so we can r
     edit: "Edit",
     archive: "Archive",
     archiveConfirm: "Archive this resource?",
+    unarchive: "Restore",
+    unarchiveConfirm: "Restore this resource to the active directory?",
+    showActiveResources: "Active",
+    showArchivedResources: "Archived",
+    noArchivedResources: "No archived resources.",
+    noActiveResources: "No active resources.",
     featured: "Featured",
     feature: "Feature",
     importSuccess: "Imported {count} resources (demo mode — not persisted)",
@@ -903,6 +1022,9 @@ Please include your city or county when asking about local resources so we can r
     services: "Services",
     tags: "Tags",
     servicesHint: "Separate services with commas",
+    intakeSignalsLabel: "Intake signals",
+    intakeSignalsHint:
+      "Structured badges shown on listings and used for eligibility filters.",
     status: "Status",
     featureOnHomepage: "Feature on homepage",
     featureOnHomepageDesc:
@@ -1013,6 +1135,12 @@ Please include your city or county when asking about local resources so we can r
       "Save this site ID — you will need it to build tablet links: ?facility={siteId}&pin=…",
     facilityDeactivate: "Deactivate",
     facilityActivate: "Activate",
+    facilityDelete: "Delete facility",
+    facilityDeleteConfirm:
+      "Permanently delete {name}? Tablet links using this site ID will stop working. This cannot be undone.",
+    facilityDeleteWithAccountsConfirm:
+      "Permanently delete {name}? {count} inmate account(s) will be unlinked from this facility (accounts are not deleted). Tablet links will stop working. This cannot be undone.",
+    facilityDeleteFailed: "Could not delete facility. Please try again.",
     userManagement: "User Management",
     userManagementDesc:
       "Enable, disable, reset passwords, or permanently remove user accounts.",
@@ -1042,7 +1170,7 @@ Please include your city or county when asking about local resources so we can r
       "Set a new PIN and temporary password for this facility account. Share both with the user at the facility.",
     resetPinPinLabel: "New PIN",
     resetPinPasswordLabel: "New password",
-    resetPinPasswordHint: "At least 8 characters.",
+    resetPinPasswordHint: "At least 12 characters.",
     resetPinInvalid: "Enter a PIN and a password of at least 8 characters.",
     resetPinConflict: "This PIN is already in use at this facility.",
     resetPinSuccess: "PIN and password updated.",
@@ -1309,6 +1437,12 @@ Please include your city or county when asking about local resources so we can r
       answer:
         "Yes! Contact us through the About page or ask your case manager to submit a resource for review.",
       category: "general",
+    },
+    faq6: {
+      question: "Where do I start after release?",
+      answer:
+        "Open the First week after release guide from your dashboard or visit the first-week guide for a step-by-step checklist — crisis support, ID, benefits, housing, and more — with programs matched to your county.",
+      category: "usingTheSite",
     },
   },
 

@@ -14,10 +14,12 @@ import {
 import { FACILITY_SESSION_COOKIE } from "@/lib/facility/constants";
 import { TABLET_HANDOFF_PARAM } from "@/lib/facility/tablet-handoff";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/server";
+import { isAdminClientConfigured } from "@/lib/supabase/admin";
 import {
   buildPreferencesSetCookie,
   clearPreferencesSetCookie,
 } from "@/lib/user-preferences/cookie-options";
+import { safeInternalPath } from "@/lib/safe-redirect";
 
 export async function GET(request: NextRequest) {
   const url = new URL(request.url);
@@ -25,13 +27,27 @@ export async function GET(request: NextRequest) {
   const pinParam = url.searchParams.get("pin")?.trim();
   const next = url.searchParams.get("next")?.trim() || "/";
 
-  const redirectTarget = next.startsWith("/") ? next : "/";
+  const redirectTarget = safeInternalPath(next, "/");
 
   if (!facilityParam || !pinParam) {
     return NextResponse.redirect(new URL("/", url.origin));
   }
 
-  const facility = await findFacilityBySiteId(facilityParam);
+  if (!isAdminClientConfigured()) {
+    const failUrl = new URL(redirectTarget, url.origin);
+    failUrl.searchParams.set("facility_error", "unconfigured");
+    return NextResponse.redirect(failUrl);
+  }
+
+  let facility;
+  try {
+    facility = await findFacilityBySiteId(facilityParam);
+  } catch {
+    const failUrl = new URL(redirectTarget, url.origin);
+    failUrl.searchParams.set("facility_error", "config");
+    return NextResponse.redirect(failUrl);
+  }
+
   if (!facility) {
     const failUrl = new URL(redirectTarget, url.origin);
     failUrl.searchParams.set("facility_error", "invalid");

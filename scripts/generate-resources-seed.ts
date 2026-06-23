@@ -2,7 +2,7 @@
  * Generates supabase/seed-resources.sql from a CSV file.
  *
  * Expected columns (header row):
- *   id,name,category,region,description,description_es,address,city,phone,email,website,eligibility,eligibility_es,notes,notes_es,hours,tags,services,county,served_counties,coverage
+ *   id,name,category,region,description,description_es,address,city,phone,email,website,eligibility,eligibility_es,notes,notes_es,hours,tags,services,intake_signals,county,served_counties,coverage
  *
  * Column mapping:
  *   id            → stable UUID (row order); your id is kept in SQL comments for reference
@@ -23,6 +23,7 @@
  *   hours         → resources.hours (optional)
  *   tags          → resources.tags — comma- or pipe-separated (optional)
  *   services      → resources.services — comma- or pipe-separated (optional)
+ *   intake_signals→ resources.intake_signals — pipe-separated keys: accepts_criminal_record | referral_required | walk_in_ok
  *   county        → resources.county — primary office county (optional)
  *   served_counties → resources.served_counties — pipe-separated KY county names
  *   coverage      → resources.coverage — single | multi | statewide
@@ -205,6 +206,7 @@ const OPTIONAL_FIELDS = [
   "hours",
   "tags",
   "services",
+  "intake_signals",
   "county",
   "served_counties",
   "coverage",
@@ -253,6 +255,7 @@ const resourceInserts = records
     const county = cell(row, "county") || cell(row, "region") || null;
     const services = parseListField(cell(row, "services"));
     const tags = parseListField(cell(row, "tags"));
+    const intakeSignals = parseListField(cell(row, "intake_signals"));
     const servedCounties = parseListField(cell(row, "served_counties"));
     const coverageRaw = cell(row, "coverage") || "single";
     const coverage = isValidCoverage(coverageRaw) ? coverageRaw : "single";
@@ -283,6 +286,7 @@ const resourceInserts = records
     ${sqlString(coverage)},
     ${sqlArray(services)},
     ${sqlArray(tags)},
+    ${sqlArray(intakeSignals)},
     false,
     'active'
   )`;
@@ -328,6 +332,7 @@ const sql = `-- Resource import seed (generated from CSV)
 --            supabase/migrations/002_add_description_es.sql
 --            supabase/migrations/004_add_eligibility_es_and_notes.sql
 --            supabase/migrations/005_add_served_counties.sql
+--            supabase/migrations/014_add_intake_signals.sql
 -- Regenerate: RESOURCES_DEFAULT_STATE="${DEFAULT_STATE}" RESOURCES_UUID_PREFIX="${UUID_PREFIX}" RESOURCES_SEED_OUTPUT="${OUTPUT}" npx tsx scripts/generate-resources-seed.ts ${INPUT}
 
 ${categoriesSql}INSERT INTO resources (
@@ -335,7 +340,7 @@ ${categoriesSql}INSERT INTO resources (
   state, county, city, address, phone, website, email, hours,
   eligibility, eligibility_es, notes, notes_es,
   served_counties, coverage,
-  services, tags, is_featured, status
+  services, tags, intake_signals, is_featured, status
 ) VALUES
 ${resourceInserts}
 ON CONFLICT (id) DO UPDATE SET
@@ -359,6 +364,7 @@ ON CONFLICT (id) DO UPDATE SET
   coverage = EXCLUDED.coverage,
   services = EXCLUDED.services,
   tags = EXCLUDED.tags,
+  intake_signals = EXCLUDED.intake_signals,
   is_featured = EXCLUDED.is_featured,
   status = EXCLUDED.status,
   updated_at = NOW();
@@ -386,7 +392,7 @@ if (gapRows.length) {
     console.log(`  • id ${sourceId} — ${label}`);
     console.log(`    missing: ${missing.join(", ")}`);
   });
-  console.log("\nTip: add hours, tags, services, county, served_counties, and coverage columns to the CSV.");
+  console.log("\nTip: add hours, tags, services, intake_signals, county, served_counties, and coverage columns to the CSV.");
 }
 
 if (warnings.length) {

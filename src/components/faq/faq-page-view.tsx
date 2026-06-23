@@ -6,6 +6,7 @@ import {
   ArrowRight,
   BookOpen,
   HelpCircle,
+  ListOrdered,
   Mail,
   MessageCircle,
 } from "lucide-react";
@@ -107,6 +108,12 @@ export function FaqPageView({ faqs }: FaqPageViewProps) {
 
   const sidebarLinks = useMemo(
     () => [
+      {
+        href: "/pathways/first-week",
+        icon: ListOrdered,
+        title: t("faq.sidebarLinks.pathwayTitle"),
+        description: t("faq.sidebarLinks.pathwayDesc"),
+      },
       {
         href: buildResourcesPageHref(),
         icon: BookOpen,

@@ -98,3 +98,39 @@ export async function PATCH(request: Request, context: RouteContext) {
     },
   });
 }
+
+export async function DELETE(_request: Request, context: RouteContext) {
+  const locale = await getRequestLocale();
+  const { t } = createTranslator(locale);
+  const { id } = await context.params;
+
+  if (!isSupabaseConfigured()) {
+    return NextResponse.json({ error: t("admin.facilitiesUnavailable") }, { status: 503 });
+  }
+
+  const supabase = await createClient();
+  if (!supabase) {
+    return NextResponse.json({ error: t("admin.facilitiesUnavailable") }, { status: 503 });
+  }
+
+  const authResult = await requireAdminApiAccess(supabase, locale);
+  if (authResult instanceof NextResponse) return authResult;
+
+  const { data: existing, error: existingError } = await supabase
+    .from("facilities")
+    .select("id")
+    .eq("id", id)
+    .maybeSingle();
+
+  if (existingError || !existing) {
+    return NextResponse.json({ error: t("admin.facilityNotFound") }, { status: 404 });
+  }
+
+  const { error } = await supabase.from("facilities").delete().eq("id", id);
+
+  if (error) {
+    return NextResponse.json({ error: t("admin.facilityDeleteFailed") }, { status: 500 });
+  }
+
+  return NextResponse.json({ success: true });
+}

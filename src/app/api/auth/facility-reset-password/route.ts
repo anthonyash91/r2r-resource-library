@@ -7,6 +7,7 @@ import {
   readFacilityReset,
 } from "@/lib/facility/reset-session";
 import { FACILITY_RESET_COOKIE } from "@/lib/facility/constants";
+import { isFacilityPasswordValid } from "@/lib/facility/password-policy";
 import { readFacilitySession } from "@/lib/facility/session";
 import { LOCALE_COOKIE, type Locale } from "@/i18n/types";
 import { createTranslator } from "@/i18n/translator";
@@ -48,7 +49,7 @@ export async function POST(request: Request) {
   }
 
   const password = body.password ?? "";
-  if (password.length < 8) {
+  if (!isFacilityPasswordValid(password)) {
     return NextResponse.json({ error: t("facility.resetInvalid") }, { status: 400 });
   }
 

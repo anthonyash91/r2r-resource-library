@@ -3,10 +3,16 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { preferencesFromProfile } from "@/lib/user-preferences/parse";
 import type { UserPreferences } from "@/lib/user-preferences/types";
 import {
+  DEV_FACILITY_CRYPTO_SECRET,
   decryptSiteId,
+  encryptSiteId,
   hashInmatePin,
   hashSiteId,
+  hashSiteIdWithSecret,
   maskSiteId,
+  normalizeSiteId,
+  tryDecryptSiteId,
+  tryDecryptSiteIdWithSecret,
 } from "@/lib/facility/crypto";
 
 export interface FacilityRecord {
@@ -80,11 +86,34 @@ export async function getFacilityProfilePreferencesByPinHash(
   return preferencesFromProfile(data);
 }
 
+async function reindexFacilitySiteId(
+  supabase: NonNullable<ReturnType<typeof createAdminClient>>,
+  facilityId: string,
+  plainSiteId: string
+): Promise<FacilityRecord | null> {
+  const { data, error } = await supabase
+    .from("facilities")
+    .update({
+      site_id_hash: hashSiteId(plainSiteId),
+      site_id_encrypted: encryptSiteId(plainSiteId),
+    })
+    .eq("id", facilityId)
+    .select("*")
+    .single();
+
+  if (error || !data) return null;
+  return data as FacilityRecord;
+}
+
 export async function findFacilityBySiteId(siteId: string): Promise<FacilityRecord | null> {
   const supabase = createAdminClient();
   if (!supabase) return null;
 
+  const normalized = normalizeSiteId(siteId);
+  if (!normalized) return null;
+
   const siteIdHash = hashSiteId(siteId);
+
   const { data, error } = await supabase
     .from("facilities")
     .select("*")
@@ -92,8 +121,46 @@ export async function findFacilityBySiteId(siteId: string): Promise<FacilityReco
     .eq("is_active", true)
     .maybeSingle();
 
-  if (error || !data) return null;
-  return data as FacilityRecord;
+  if (!error && data) return data as FacilityRecord;
+
+  const { data: actives, error: listError } = await supabase
+    .from("facilities")
+    .select("*")
+    .eq("is_active", true);
+
+  if (!listError && actives?.length) {
+    for (const row of actives) {
+      const plain =
+        tryDecryptSiteId(row.site_id_encrypted) ??
+        (process.env.NODE_ENV !== "production"
+          ? tryDecryptSiteIdWithSecret(row.site_id_encrypted, DEV_FACILITY_CRYPTO_SECRET)
+          : null);
+
+      if (!plain || normalizeSiteId(plain) !== normalized) continue;
+
+      if (row.site_id_hash !== siteIdHash) {
+        return reindexFacilitySiteId(supabase, row.id, siteId);
+      }
+
+      return row as FacilityRecord;
+    }
+  }
+
+  if (process.env.NODE_ENV !== "production") {
+    const devHash = hashSiteIdWithSecret(siteId, DEV_FACILITY_CRYPTO_SECRET);
+    const { data: devRow } = await supabase
+      .from("facilities")
+      .select("*")
+      .eq("site_id_hash", devHash)
+      .eq("is_active", true)
+      .maybeSingle();
+
+    if (devRow) {
+      return reindexFacilitySiteId(supabase, devRow.id, siteId);
+    }
+  }
+
+  return null;
 }
 
 export async function facilityAccountExists(

@@ -136,6 +136,7 @@ async function main() {
       coverage: isValidCoverage(coverageRaw) ? coverageRaw : "single",
       services: parseList(cell(row, "services")),
       tags: parseList(cell(row, "tags")),
+      intake_signals: parseList(cell(row, "intake_signals")),
       is_featured: false,
       status: "active" as const,
     };

@@ -16,11 +16,19 @@ function parseSessionPayload(raw: string): FacilitySessionData | null {
   if (!decrypted) return null;
 
   try {
-    const parsed = JSON.parse(decrypted) as FacilitySessionData;
+    const parsed = JSON.parse(decrypted) as FacilitySessionData & { pin?: string };
     if (!parsed.facilityId || !parsed.pinHash || !parsed.expiresAt) return null;
-    if (!parsed.pin) return null;
     if (parsed.expiresAt < Date.now()) return null;
-    return parsed;
+    const pinLength =
+      parsed.pinLength ??
+      (typeof parsed.pin === "string" && parsed.pin.length > 0 ? parsed.pin.length : 0);
+    if (!pinLength) return null;
+    return {
+      facilityId: parsed.facilityId,
+      pinHash: parsed.pinHash,
+      pinLength,
+      expiresAt: parsed.expiresAt,
+    };
   } catch {
     return null;
   }
@@ -30,10 +38,11 @@ export function buildFacilitySessionData(
   facilityId: string,
   pin: string
 ): FacilitySessionData {
+  const normalizedPin = normalizePin(pin);
   return {
     facilityId,
     pinHash: hashInmatePin(facilityId, pin),
-    pin: normalizePin(pin),
+    pinLength: normalizedPin.length,
     expiresAt: Date.now() + FACILITY_SESSION_MAX_AGE * 1000,
   };
 }

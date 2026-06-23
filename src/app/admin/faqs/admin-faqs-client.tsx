@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Plus, Pencil, Trash2 } from "lucide-react";
+import { Plus, Pencil, Trash2, Save, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Dropdown } from "@/components/ui/dropdown";
@@ -204,9 +204,11 @@ export function AdminFaqsClient({ initial }: { initial: Faq[] }) {
           />
           <div className="flex gap-2">
             <Button onClick={handleSave} loading={saving}>
+              <Save className="h-4 w-4" aria-hidden="true" />
               {t("common.save")}
             </Button>
             <Button variant="outline" onClick={closeForm}>
+              <X className="h-4 w-4" aria-hidden="true" />
               {t("common.cancel")}
             </Button>
           </div>
@@ -223,13 +225,18 @@ export function AdminFaqsClient({ initial }: { initial: Faq[] }) {
               <h2 className="text-lg font-bold">{faq.question}</h2>
               <p className="text-muted-foreground">{faq.answer}</p>
             </div>
-            <div className="flex shrink-0 gap-2">
-              <Button variant="outline" size="sm" onClick={() => openEdit(faq)}>
-                <Pencil className="h-4 w-4" aria-hidden="true" />
+            <div className="flex shrink-0 items-center gap-2">
+              <Button variant="soft-primary" size="badge" onClick={() => openEdit(faq)}>
+                <Pencil className="h-3.5 w-3.5" aria-hidden="true" />
                 {t("common.edit")}
               </Button>
-              <Button variant="ghost" size="sm" onClick={() => handleDelete(faq)} loading={busyId === faq.id}>
-                <Trash2 className="h-4 w-4" aria-hidden="true" />
+              <Button
+                variant="soft-destructive"
+                size="badge"
+                onClick={() => handleDelete(faq)}
+                loading={busyId === faq.id}
+              >
+                <Trash2 className="h-3.5 w-3.5" aria-hidden="true" />
                 {t("admin.deleteFaq")}
               </Button>
             </div>

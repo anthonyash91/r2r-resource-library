@@ -10,12 +10,14 @@ import { useAuth } from "@/lib/auth-context";
 import { useTranslations } from "@/i18n/locale-context";
 import { resolvePostLoginPath } from "@/lib/post-login-redirect";
 import { pageSectionPadding } from "@/lib/utils";
+import { useFacilityTabletStatus } from "@/hooks/use-facility-tablet-status";
 
 function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { signIn } = useAuth();
   const { t } = useTranslations();
+  const { facilityMode } = useFacilityTabletStatus(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -75,7 +77,16 @@ function LoginForm() {
             </Button>
           </form>
 
-          <p className="mt-6 text-center text-base text-muted-foreground">
+          {facilityMode ? (
+            <p className="mt-6 text-center text-base text-muted-foreground">
+              {t("auth.facilityInmateSignInHint")}{" "}
+              <Link href="/facility/login" className="font-semibold text-primary hover:underline">
+                {t("auth.facilityInmateSignInLink")}
+              </Link>
+            </p>
+          ) : null}
+
+          <p className={facilityMode ? "mt-4 text-center text-base text-muted-foreground" : "mt-6 text-center text-base text-muted-foreground"}>
             {t("auth.noAccount")}{" "}
             <Link href="/signup" className="font-semibold text-primary hover:underline">
               {t("auth.createOneFree")}

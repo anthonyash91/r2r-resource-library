@@ -5,7 +5,9 @@ import { MapPin, Phone, Globe } from "lucide-react";
 import type { Resource } from "@/types";
 import { CategoryBadge } from "@/components/resources/category-badge";
 import { StatewideBadge } from "@/components/resources/statewide-badge";
+import { IntakeSignalMeta } from "@/components/resources/intake-signal-badges";
 import { SaveResourceButton } from "@/components/resources/save-resource-button";
+import { getResourceIntakeSignals } from "@/lib/intake-signals";
 import { Card } from "@/components/ui/card";
 import { formatPhone, formatWebsiteDisplay, truncateDescriptionPreview, cn } from "@/lib/utils";
 import { useSaved } from "@/lib/saved-context";
@@ -49,6 +51,9 @@ export function ResourceCard({
     resource.phone ||
     resource.website;
 
+  const hasIntakeSignals = getResourceIntakeSignals(resource).length > 0;
+  const showFooterMeta = hasContactInfo || hasIntakeSignals;
+
   const descriptionPreview = truncateDescriptionPreview(
     resource.description,
     resource.id,
@@ -65,27 +70,26 @@ export function ResourceCard({
             isCompact ? "mb-2" : "mb-3"
           )}
         >
-        <div className="flex min-w-0 flex-wrap items-center gap-2">
-          {resource.category && (
-            <CategoryBadge category={resource.category} size={isCompact ? "sm" : "default"} />
+          <div className="flex min-w-0 flex-wrap items-center gap-2">
+            {resource.category && (
+              <CategoryBadge category={resource.category} size={isCompact ? "sm" : "default"} />
+            )}
+            <StatewideBadge resource={resource} size={isCompact ? "sm" : "default"} />
+          </div>
+          {showSave && !isCompact && (
+            <SaveResourceButton
+              saved={saved}
+              onClick={handleSave}
+              className="shrink-0"
+              ariaLabel={
+                saved
+                  ? t("resources.removeSaveAria", { name: resource.name })
+                  : t("resources.saveAria", { name: resource.name })
+              }
+            />
           )}
-          <StatewideBadge resource={resource} size={isCompact ? "sm" : "default"} />
         </div>
-        {showSave && !isCompact && (
-          <SaveResourceButton
-            saved={saved}
-            onClick={handleSave}
-            className="shrink-0"
-            ariaLabel={
-              saved
-                ? t("resources.removeSaveAria", { name: resource.name })
-                : t("resources.saveAria", { name: resource.name })
-            }
-          />
-        )}
-      </div>
-
-      <h3
+        <h3
         className={cn(
           "break-words font-bold text-foreground",
           isCompact ? "mb-1.5 line-clamp-2 text-lg leading-snug" : "mb-2 text-xl"
@@ -102,13 +106,14 @@ export function ResourceCard({
         {descriptionPreview}
         </p>
 
-        {hasContactInfo && (
+        {showFooterMeta && (
           <div
             className={cn(
               "min-w-0 space-y-1.5 border-t border-border text-muted-foreground",
               isCompact ? "mt-3 pt-3 text-xs" : "mt-4 space-y-2 pt-4 text-sm"
             )}
           >
+            <IntakeSignalMeta resource={resource} compact={isCompact} />
             {locationLine && (
               <p className="flex min-w-0 items-center gap-2">
                 <MapPin

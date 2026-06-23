@@ -5,6 +5,7 @@ import { createClient, isSupabaseConfigured } from "@/lib/supabase/server";
 import { requireAdminApiAccess } from "@/lib/api-auth";
 import { buildFacilityAuthEmail } from "@/lib/facility/auth-email";
 import { hashInmatePin, normalizePin } from "@/lib/facility/crypto";
+import { isFacilityPasswordValid } from "@/lib/facility/password-policy";
 import { LOCALE_COOKIE, type Locale } from "@/i18n/types";
 import { createTranslator } from "@/i18n/translator";
 
@@ -50,7 +51,7 @@ export async function POST(request: Request, context: RouteContext) {
   const pin = normalizePin(body.pin ?? "");
   const password = body.password ?? "";
 
-  if (!pin || password.length < 8) {
+  if (!pin || !isFacilityPasswordValid(password)) {
     return NextResponse.json({ error: t("admin.resetPinInvalid") }, { status: 400 });
   }
 
@@ -90,7 +91,7 @@ export async function POST(request: Request, context: RouteContext) {
     }
   }
 
-  const authEmail = buildFacilityAuthEmail(facilityId, pin);
+  const authEmail = buildFacilityAuthEmail(facilityId, newPinHash);
 
   const { error: authError } = await admin.auth.admin.updateUserById(targetUserId, {
     email: authEmail,

@@ -8,6 +8,7 @@ import { ResourceResultsSection } from "@/components/resources/resource-results-
 import { CountyFilteredResourceResults } from "@/components/resources/county-filtered-resource-results";
 import { ScrollToResourceResults } from "@/components/resources/scroll-to-resource-results";
 import { RESOURCE_RESULTS_ID, resourcesPageQueryWithPreferenceDefaults } from "@/lib/resources-page";
+import { parseIntakeFilterParam } from "@/lib/intake-signals";
 import { getServerTranslator } from "@/i18n/server";
 import { cn, pageSectionPadding, sectionDividerTop, sectionStackGap } from "@/lib/utils";
 import { isValidCoverage, partitionResourcesByCountyFilter } from "@/lib/resource-coverage";
@@ -43,6 +44,7 @@ interface PageProps {
     service?: string;
     tag?: string;
     coverage?: string;
+    intake?: string;
     filter?: string;
   }>;
 }
@@ -75,6 +77,7 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
       params.coverage && isValidCoverage(params.coverage)
         ? params.coverage
         : undefined,
+    intake: parseIntakeFilterParam(params.intake),
     recentlyAdded: params.filter === "recent",
   };
 

@@ -143,7 +143,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const supabase = createClient();
     if (!supabase) return { error: authMessage("authUnavailable") };
 
-    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: email.trim(),
+      password,
+    });
     if (error) {
       const message = formatAuthError(error, authMessage("signInFailed"));
       return { error: message };

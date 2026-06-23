@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ExternalLink, ArrowRight } from "lucide-react";
+import { ExternalLink, ArrowRight, FileText, LayoutTemplate } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -17,6 +17,11 @@ function kindBadgeVariant(kind: SitePageKind): "primary" | "success" | "warning"
 function kindLabelKey(kind: SitePageKind): string {
   if (kind === "template") return "admin.pages.badgeTemplate";
   return "admin.pages.badgeDedicated";
+}
+
+function kindBadgeIcon(kind: SitePageKind) {
+  if (kind === "template") return FileText;
+  return LayoutTemplate;
 }
 
 export function AdminCmsClient() {
@@ -35,24 +40,26 @@ export function AdminCmsClient() {
             <div className="min-w-0 flex-1">
               <div className="mb-2 flex flex-wrap items-center gap-2">
                 <h2 className="text-lg font-bold">{t(page.labelKey)}</h2>
-                <Badge variant={kindBadgeVariant(page.kind)}>{t(kindLabelKey(page.kind))}</Badge>
+                <Badge variant={kindBadgeVariant(page.kind)} icon={kindBadgeIcon(page.kind)}>
+                  {t(kindLabelKey(page.kind))}
+                </Badge>
               </div>
               <p className="text-sm text-muted-foreground">{page.publicPath}</p>
               {page.noteKey ? (
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t(page.noteKey)}</p>
               ) : null}
             </div>
-            <div className="flex shrink-0 flex-wrap gap-2">
+            <div className="flex shrink-0 flex-wrap items-center gap-2">
               <Link href={page.publicPath}>
-                <Button variant="ghost" size="sm">
-                  <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                <Button variant="soft" size="badge">
+                  <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
                   {t("admin.viewPage")}
                 </Button>
               </Link>
               {page.editHref ? (
                 <Link href={page.editHref}>
-                  <Button variant="outline" size="sm">
-                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  <Button variant="soft-primary" size="badge">
+                    <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
                     {t(page.editLabelKey ?? "common.edit")}
                   </Button>
                 </Link>

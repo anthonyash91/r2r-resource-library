@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Plus, Eye } from "lucide-react";
+import { Plus, Eye, Trash2, CheckCircle, CircleOff, Save, X, Power, PowerOff } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
@@ -26,7 +26,7 @@ interface AdminFacilitiesClientProps {
 
 export function AdminFacilitiesClient({ initialFacilities }: AdminFacilitiesClientProps) {
   const { t } = useTranslations();
-  const { alert } = useConfirmDialog();
+  const { alert, confirm } = useConfirmDialog();
   const router = useRouter();
   const [facilities, setFacilities] = useState(initialFacilities);
   const [showNew, setShowNew] = useState(false);
@@ -108,6 +108,41 @@ export function AdminFacilitiesClient({ initialFacilities }: AdminFacilitiesClie
     router.refresh();
   };
 
+  const handleDelete = async (facility: AdminFacilityRow) => {
+    const message =
+      facility.signupCount > 0
+        ? t("admin.facilityDeleteWithAccountsConfirm", {
+            name: facility.name,
+            count: String(facility.signupCount),
+          })
+        : t("admin.facilityDeleteConfirm", { name: facility.name });
+
+    const confirmed = await confirm({
+      title: t("admin.facilityDelete"),
+      message,
+      confirmLabel: t("admin.facilityDelete"),
+      destructive: true,
+    });
+    if (!confirmed) return;
+
+    setBusyId(facility.id);
+    const res = await fetch(`/api/admin/facilities/${facility.id}`, { method: "DELETE" });
+
+    if (!res.ok) {
+      const payload = (await res.json().catch(() => ({}))) as { error?: string };
+      await alert({
+        title: t("common.error"),
+        message: payload.error ?? t("admin.facilityDeleteFailed"),
+      });
+      setBusyId(null);
+      return;
+    }
+
+    setFacilities((prev) => prev.filter((item) => item.id !== facility.id));
+    setBusyId(null);
+    router.refresh();
+  };
+
   const revealSiteId = async (facilityId: string) => {
     setBusyId(facilityId);
     const res = await fetch(`/api/admin/facilities/${facilityId}`);
@@ -163,9 +198,11 @@ export function AdminFacilitiesClient({ initialFacilities }: AdminFacilitiesClie
           ) : null}
           <div className="flex flex-wrap gap-2">
             <Button onClick={handleCreate} loading={saving}>
+              <Save className="h-4 w-4" aria-hidden="true" />
               {t("common.save")}
             </Button>
             <Button variant="outline" onClick={resetForm} disabled={saving}>
+              <X className="h-4 w-4" aria-hidden="true" />
               {t("common.cancel")}
             </Button>
           </div>
@@ -178,7 +215,10 @@ export function AdminFacilitiesClient({ initialFacilities }: AdminFacilitiesClie
             <div>
               <div className="mb-2 flex flex-wrap items-center gap-2">
                 <h2 className="text-xl font-bold">{facility.name}</h2>
-                <Badge variant={facility.isActive ? "success" : "secondary"}>
+                <Badge
+                  variant={facility.isActive ? "success" : "secondary"}
+                  icon={facility.isActive ? CheckCircle : CircleOff}
+                >
                   {facility.isActive ? t("admin.facilityActive") : t("admin.facilityInactive")}
                 </Badge>
               </div>
@@ -189,23 +229,37 @@ export function AdminFacilitiesClient({ initialFacilities }: AdminFacilitiesClie
                 {t("admin.facilitySignups")}: {facility.signupCount}
               </p>
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <Button
-                variant="outline"
-                size="sm"
+                variant="soft-primary"
+                size="badge"
                 onClick={() => revealSiteId(facility.id)}
                 loading={busyId === facility.id}
               >
-                <Eye className="h-4 w-4" aria-hidden="true" />
+                <Eye className="h-3.5 w-3.5" aria-hidden="true" />
                 {t("admin.facilityRevealSiteId")}
               </Button>
               <Button
-                variant="outline"
-                size="sm"
+                variant={facility.isActive ? "soft-warning" : "soft-success"}
+                size="badge"
                 onClick={() => toggleActive(facility)}
                 loading={busyId === facility.id}
               >
+                {facility.isActive ? (
+                  <PowerOff className="h-3.5 w-3.5" aria-hidden="true" />
+                ) : (
+                  <Power className="h-3.5 w-3.5" aria-hidden="true" />
+                )}
                 {facility.isActive ? t("admin.facilityDeactivate") : t("admin.facilityActivate")}
+              </Button>
+              <Button
+                variant="soft-destructive"
+                size="badge"
+                onClick={() => handleDelete(facility)}
+                loading={busyId === facility.id}
+              >
+                <Trash2 className="h-3.5 w-3.5" aria-hidden="true" />
+                {t("admin.facilityDelete")}
               </Button>
             </div>
           </Card>

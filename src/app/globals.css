@@ -19,6 +19,7 @@
   --surface-alt: #f9fafb;
   --success: #059669;
   --warning: #d97706;
+  --walk-in: #7c3aed;
   --destructive: #dc2626;
   --ring: #2b4dd0;
   --radius: 0.75rem;
@@ -73,6 +74,7 @@
   --color-surface-alt: var(--surface-alt);
   --color-success: var(--success);
   --color-warning: var(--warning);
+  --color-walk-in: var(--walk-in);
   --color-destructive: var(--destructive);
   --color-ring: var(--ring);
   --color-badge-bg: var(--badge-bg);
@@ -265,6 +267,51 @@ header {
   width: 0.875rem;
   height: 0.875rem;
   flex-shrink: 0;
+}
+
+.resource-badge--success {
+  border-color: color-mix(in srgb, var(--success) 15%, transparent);
+  background-color: color-mix(in srgb, var(--success) 10%, transparent);
+  color: var(--success);
+}
+
+.resource-badge--warning {
+  border-color: color-mix(in srgb, var(--warning) 15%, transparent);
+  background-color: color-mix(in srgb, var(--warning) 10%, transparent);
+  color: var(--warning);
+}
+
+.resource-badge--walk-in {
+  border-color: color-mix(in srgb, var(--walk-in) 15%, transparent);
+  background-color: color-mix(in srgb, var(--walk-in) 10%, transparent);
+  color: var(--walk-in);
+}
+
+/* Intake badges: hover matches resting state (no tint shift on pointer over) */
+.resource-badge--static:not(.resource-badge--success):not(.resource-badge--warning):not(
+    .resource-badge--walk-in
+  ):hover {
+  border-color: rgba(43, 77, 208, 0.15);
+  background-color: #eff6ff;
+  color: #2b4dd0;
+}
+
+.resource-badge--success.resource-badge--static:hover {
+  border-color: color-mix(in srgb, var(--success) 15%, transparent);
+  background-color: color-mix(in srgb, var(--success) 10%, transparent);
+  color: var(--success);
+}
+
+.resource-badge--warning.resource-badge--static:hover {
+  border-color: color-mix(in srgb, var(--warning) 15%, transparent);
+  background-color: color-mix(in srgb, var(--warning) 10%, transparent);
+  color: var(--warning);
+}
+
+.resource-badge--walk-in.resource-badge--static:hover {
+  border-color: color-mix(in srgb, var(--walk-in) 15%, transparent);
+  background-color: color-mix(in srgb, var(--walk-in) 10%, transparent);
+  color: var(--walk-in);
 }
 
 .save-resource-button {

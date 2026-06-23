@@ -21,6 +21,7 @@ import {
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import { pageSectionPadding, cn } from "@/lib/utils";
 import { FacilityContactEmailSection } from "@/components/facility/facility-contact-email-section";
+import { FirstWeekGuideCard } from "@/components/dashboard/first-week-guide-card";
 import { PriorityCategoryBadge } from "@/components/resources/priority-category-badge";
 
 interface DashboardClientProps {
@@ -146,6 +147,8 @@ export function DashboardClient({
             </div>
           )}
         </header>
+
+        <FirstWeekGuideCard />
 
         <FacilityContactEmailSection />
 

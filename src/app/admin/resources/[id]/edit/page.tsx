@@ -42,6 +42,7 @@ export default async function EditResourcePage({ params }: PageProps) {
           notes: resource.notes ?? "",
           services: resource.services.join(", "),
           tags: resource.tags.join(", "),
+          intake_signals: resource.intake_signals ?? [],
           status: resource.status,
           is_featured: resource.is_featured,
         }}

@@ -2,11 +2,12 @@
 -- Source file: data/ohio-resources.csv
 -- State: Ohio
 -- UUID prefix: d2000001
--- Generated: 2026-06-21T08:18:54.755Z
+-- Generated: 2026-06-23T02:50:25.421Z
 -- Run after: supabase/migrations/001_initial_schema.sql
 --            supabase/migrations/002_add_description_es.sql
 --            supabase/migrations/004_add_eligibility_es_and_notes.sql
 --            supabase/migrations/005_add_served_counties.sql
+--            supabase/migrations/014_add_intake_signals.sql
 -- Regenerate: RESOURCES_DEFAULT_STATE="Ohio" RESOURCES_UUID_PREFIX="d2000001" RESOURCES_SEED_OUTPUT="supabase/seed-ohio-resources.sql" npx tsx scripts/generate-resources-seed.ts data/ohio-resources.csv
 
 -- Categories skipped (RESOURCES_INCLUDE_CATEGORIES=false); run Kentucky seed first.
@@ -16,7 +17,7 @@ INSERT INTO resources (
   state, county, city, address, phone, website, email, hours,
   eligibility, eligibility_es, notes, notes_es,
   served_counties, coverage,
-  services, tags, is_featured, status
+  services, tags, intake_signals, is_featured, status
 ) VALUES
   -- source id: 1
   (
@@ -41,6 +42,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Reentry planning coordination', 'Regional coalition referrals', 'Pre-release resource navigation', 'Community partner connections'],
     ARRAY['statewide', 'reentry', 'DOC', 'probation', 'parole', 'hotline'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -67,6 +69,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Online resource directory', 'Geo-located provider search', 'Reentry service navigation', 'Recovery resource referrals'],
     ARRAY['statewide', 'online', 'reentry', 'referral-only', 'recovery'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -93,6 +96,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Coalition network coordination', 'Advocacy', 'Resource sharing', 'Local coalition referrals'],
     ARRAY['statewide', 'reentry', 'coalition', 'networking', 'referral-only'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -119,6 +123,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Information and referral', 'Housing resource navigation', 'Benefits referrals', 'Crisis resource connections'],
     ARRAY['statewide', 'hotline', '211', 'referral-only', 'basic-needs'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -145,6 +150,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Crisis counseling', 'Suicide prevention support', 'Mental health referrals', 'Substance use crisis support'],
     ARRAY['statewide', 'hotline', 'crisis', 'mental-health', '988'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -171,6 +177,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Legal information guides', 'Court form assistance', 'Local legal aid finder', 'Record sealing information'],
     ARRAY['statewide', 'legal-aid', 'online', 'expungement', 'hotline'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -197,6 +204,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Reentry resource navigation', 'Community partner referrals', 'Online resource directory'],
     ARRAY['statewide', 'reentry', 'online', 'referral-only', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -223,6 +231,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['CQE application processing', 'Employment barrier relief', 'Occupational licensing guidance'],
     ARRAY['statewide', 'CQE', 'employment', 'fair-chance', 'online'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -249,6 +258,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Parole supervision', 'Community supervision', 'Parole board services', 'Supervision compliance support'],
     ARRAY['statewide', 'parole', 'DOC', 'probation', 'supervision'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -275,6 +285,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Medicaid application', 'SNAP enrollment', 'Cash assistance application', 'Benefits account management'],
     ARRAY['statewide', 'benefits', 'SNAP', 'Medicaid', 'online'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -301,6 +312,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Treatment referrals', 'Mental health resource navigation', 'Medicaid information', 'Consumer rights guidance'],
     ARRAY['statewide', 'hotline', 'mental-health', 'Medicaid', 'peer-support'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -327,6 +339,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Benefits enrollment assistance', 'Employment services referral', 'Reentry benefits navigation'],
     ARRAY['statewide', 'benefits', 'reentry', 'employment', 'restored-citizens'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -353,6 +366,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Recovery housing search', 'Certified residence directory', 'County-based housing listings'],
     ARRAY['statewide', 'housing', 'recovery', 'substance-use', 'online'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -379,6 +393,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Recovery housing vouchers', 'Transportation assistance', 'Employment skills training', 'Peer recovery support'],
     ARRAY['statewide', 'substance-use', 'recovery', 'veterans', 'vouchers'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -405,6 +420,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Treatment referrals', 'Substance use information', 'Mental health resource navigation'],
     ARRAY['statewide', 'hotline', 'substance-use', 'treatment-referral', 'national'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -431,6 +447,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Treatment facility search', 'Provider availability information', 'Mental health provider locator'],
     ARRAY['statewide', 'substance-use', 'online', 'treatment-referral', 'reentry', 'ohio', 'substance-use-treatment'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -457,6 +474,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'adams', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -483,6 +501,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'allen', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -509,6 +528,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'ashtabula', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -535,6 +555,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'athens', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -561,6 +582,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'butler', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -587,6 +609,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'stark', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -613,6 +636,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'champaign', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -639,6 +663,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'coshocton', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -665,6 +690,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'delaware', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -691,6 +717,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'fairfield', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -717,6 +744,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'franklin', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -743,6 +771,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'geauga', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -769,6 +798,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'hamilton', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -795,6 +825,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'hancock', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -821,6 +852,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'henry', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -847,6 +879,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'wayne', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -873,6 +906,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'huron', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -899,6 +933,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'lake', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -925,6 +960,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'licking', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -951,6 +987,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'lucas', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -977,6 +1014,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'madison', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1003,6 +1041,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'crawford', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1029,6 +1068,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'summit', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1055,6 +1095,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'mercer', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1081,6 +1122,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Reentry case navigation', 'Housing referrals', 'Employment referrals', 'Treatment referrals'],
     ARRAY['reentry', 'coalition', 'direct-service', 'muskingum', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1107,6 +1149,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'morrow', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1133,6 +1176,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Reentry case navigation', 'Housing referrals', 'Employment referrals', 'Treatment referrals'],
     ARRAY['reentry', 'coalition', 'direct-service', 'pickaway', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1159,6 +1203,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'richland', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1185,6 +1230,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Resource networking', 'Community partner referrals', 'Coalition meetings', 'Local reentry navigation'],
     ARRAY['reentry', 'coalition', 'referral-only', 'ross', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1211,6 +1257,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Reentry case coordination', 'Housing referrals', 'Employment referrals', 'ID assistance referrals'],
     ARRAY['clark', 'reentry', 'county-government', 'direct-service', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1237,6 +1284,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Reentry navigation', 'Housing referrals', 'Employment support', 'Benefits enrollment assistance', 'Expungement clinic referrals'],
     ARRAY['montgomery', 'reentry', 'county-government', 'multi-county', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1263,6 +1311,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Record sealing assistance', 'Expungement help', 'Housing legal aid', 'Benefits advocacy', 'Civil legal representation'],
     ARRAY['legal-aid', 'expungement', 'low-income', 'reentry', 'ohio', 'cuyahoga'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1289,6 +1338,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Record sealing assistance', 'Expungement help', 'Housing legal aid', 'Benefits advocacy', 'Civil legal representation'],
     ARRAY['legal-aid', 'expungement', 'low-income', 'reentry', 'ohio', 'franklin'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1315,6 +1365,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Record sealing assistance', 'Expungement help', 'Housing legal aid', 'Benefits advocacy', 'Civil legal representation'],
     ARRAY['legal-aid', 'expungement', 'low-income', 'reentry', 'ohio', 'hamilton'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1341,6 +1392,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Record sealing assistance', 'Expungement help', 'Housing legal aid', 'Benefits advocacy', 'Civil legal representation'],
     ARRAY['legal-aid', 'expungement', 'low-income', 'reentry', 'ohio', 'lucas'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1367,6 +1419,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Record sealing assistance', 'Expungement help', 'Housing legal aid', 'Benefits advocacy', 'Civil legal representation'],
     ARRAY['legal-aid', 'expungement', 'low-income', 'reentry', 'ohio', 'summit'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1393,6 +1446,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Paid transitional work', 'Job coaching', 'Job placement', 'Retention support', 'Life skills training'],
     ARRAY['employment', 'fair-chance', 'reentry', 'transitional-jobs', 'ceo'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1419,6 +1473,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Paid transitional work', 'Job coaching', 'Job placement', 'Retention support', 'Life skills training'],
     ARRAY['employment', 'fair-chance', 'reentry', 'transitional-jobs', 'ceo'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1445,6 +1500,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Paid transitional work', 'Job coaching', 'Job placement', 'Retention support', 'Life skills training'],
     ARRAY['employment', 'fair-chance', 'reentry', 'transitional-jobs', 'ceo'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1471,6 +1527,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Reentry program coordination', 'North Star NRRC oversight', 'Employment workshop referrals', 'Benefits navigation'],
     ARRAY['cuyahoga', 'cleveland', 'reentry', 'county-government', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1497,6 +1554,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Employment readiness workshops', 'GED classes', 'ID and birth certificate vouchers', 'Benefits enrollment', 'Clothing closet', 'Computer training'],
     ARRAY['cuyahoga', 'cleveland', 'reentry', 'direct-service', 'one-stop'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1523,6 +1581,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Reentry navigation', 'Policy coordination', 'Advisory board meetings', 'Partner agency referrals'],
     ARRAY['franklin', 'columbus', 'reentry', 'county-government', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1549,6 +1608,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Expungement eligibility screening', 'Record sealing assistance', 'Application preparation'],
     ARRAY['hamilton', 'cincinnati', 'expungement', 'legal-aid', 'clinic'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1575,6 +1635,7 @@ INSERT INTO resources (
     'single',
     ARRAY['CQE assistance', 'Driver''s license reinstatement', 'Criminal record barrier relief', 'Community legal clinics'],
     ARRAY['hamilton', 'cincinnati', 'legal-aid', 'CQE', 'second-chance'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1601,6 +1662,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Record sealing application assistance', 'Expungement eligibility screening', 'Legal provider matching'],
     ARRAY['statewide', 'expungement', 'online', 'legal-aid', 'second-chance'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1627,6 +1689,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Policy advocacy', 'Record relief legal services', 'Reentry legal clinics', 'Civil rights representation'],
     ARRAY['cincinnati', 'legal-aid', 'policy', 'reentry', 'second-chance'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1653,6 +1716,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['VA benefits navigation', 'Treatment referrals', 'Housing referrals', 'Court and jail outreach'],
     ARRAY['veterans', 'statewide', 'VJO', 'justice-involved', 'reentry', 'ohio'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1679,6 +1743,7 @@ INSERT INTO resources (
     'single',
     ARRAY['VJO case coordination', 'VA health care enrollment', 'Benefits assistance', 'Reentry referrals'],
     ARRAY['veterans', 'cleveland', 'cuyahoga', 'VJO', 'reentry', 'ohio'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1705,6 +1770,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Pre-release assessments', 'VA benefits linkage', 'Medical care enrollment', 'Post-release housing referrals'],
     ARRAY['veterans', 'statewide', 'HCRV', 'pre-release', 'reentry', 'ohio'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1731,6 +1797,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Workforce development', 'Case management', 'Employment training', 'Community integration support'],
     ARRAY['cleveland', 'reentry', 'employment', 'nonprofit', 'ohio', 'cuyahoga', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1757,6 +1824,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Halfway house programming', 'Employment support', 'Treatment referrals', 'Case management'],
     ARRAY['columbus', 'reentry', 'halfway-house', 'ATR', 'residential'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1783,6 +1851,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Job search assistance', 'Resume help', 'Skills training', 'Fair-chance job placement', 'Workforce referrals'],
     ARRAY['reentry', 'franklin', 'ohio', 'employment'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1809,6 +1878,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Job search assistance', 'Resume help', 'Skills training', 'Fair-chance job placement', 'Workforce referrals'],
     ARRAY['reentry', 'cuyahoga', 'ohio', 'employment'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1835,6 +1905,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Outpatient treatment', 'Residential treatment', 'MAT referrals', 'Recovery support'],
     ARRAY['reentry', 'hamilton', 'ohio', 'substance-use-treatment'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1861,6 +1932,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Reentry navigation', 'Partner referrals', 'Coalition coordination', 'Resource networking'],
     ARRAY['reentry', 'summit', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1887,6 +1959,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency shelter', 'Transitional housing', 'Case management', 'Housing navigation', 'Landlord outreach'],
     ARRAY['reentry', 'franklin', 'ohio', 'housing'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1913,6 +1986,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Job search assistance', 'Resume help', 'Skills training', 'Fair-chance job placement', 'Workforce referrals'],
     ARRAY['reentry', 'allen', 'ohio', 'employment'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1939,6 +2013,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['ID application guidance', 'Birth certificate help', 'Document navigation'],
     ARRAY['reentry', 'statewide', 'ohio', 'id-documentation'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1965,6 +2040,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['ID application guidance', 'Birth certificate help', 'Document navigation'],
     ARRAY['reentry', 'franklin', 'ohio', 'id-documentation'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1991,6 +2067,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Food pantry referrals', 'SNAP application help', 'Emergency food distribution'],
     ARRAY['reentry', 'cuyahoga', 'ohio', 'food-nutrition'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2017,6 +2094,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Food pantry referrals', 'SNAP application help', 'Emergency food distribution'],
     ARRAY['reentry', 'franklin', 'ohio', 'food-nutrition'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2043,6 +2121,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Food pantry referrals', 'SNAP application help', 'Emergency food distribution'],
     ARRAY['reentry', 'hamilton', 'ohio', 'food-nutrition'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2069,6 +2148,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient treatment', 'Residential treatment', 'MAT referrals', 'Recovery support'],
     ARRAY['reentry', 'franklin', 'ohio', 'substance-use-treatment'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2095,6 +2175,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Outpatient treatment', 'Residential treatment', 'MAT referrals', 'Recovery support'],
     ARRAY['reentry', 'franklin', 'ohio', 'substance-use-treatment'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2121,6 +2202,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Primary medical care', 'Behavioral health services', 'Medicaid enrollment help', 'Sliding-fee care'],
     ARRAY['reentry', 'summit', 'ohio', 'healthcare'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2147,6 +2229,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Peer mentoring', 'Recovery coaching', 'Support groups'],
     ARRAY['reentry', 'hancock', 'ohio', 'peer-support'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2173,6 +2256,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Reentry navigation', 'Partner referrals', 'Coalition coordination', 'Resource networking'],
     ARRAY['reentry', 'ashtabula', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2199,6 +2283,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Reentry navigation', 'Partner referrals', 'Coalition coordination', 'Resource networking'],
     ARRAY['reentry', 'butler', 'ohio', 'reentry-organizations'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2225,6 +2310,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary medical care', 'Behavioral health services', 'Medicaid enrollment help', 'Sliding-fee care'],
     ARRAY['reentry', 'cuyahoga', 'ohio', 'healthcare'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2251,6 +2337,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency shelter', 'Transitional housing', 'Case management', 'Housing navigation', 'Landlord outreach'],
     ARRAY['reentry', 'franklin', 'ohio', 'housing'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2277,6 +2364,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Peer mentoring', 'Recovery coaching', 'Support groups'],
     ARRAY['reentry', 'statewide', 'ohio', 'peer-support'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2303,6 +2391,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Benefits enrollment', 'Medicaid application', 'SNAP assistance', 'Case management'],
     ARRAY['reentry', 'statewide', 'ohio', 'financial-assistance'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2329,6 +2418,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['GED preparation', 'Adult diploma programs', 'Workforce credentials', 'Career counseling'],
     ARRAY['reentry', 'franklin', 'ohio', 'education'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2355,6 +2445,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Reduced-fare transit', 'Bus pass assistance'],
     ARRAY['reentry', 'franklin', 'ohio', 'transportation'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2381,6 +2472,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Reduced-fare transit', 'Bus pass assistance'],
     ARRAY['reentry', 'cuyahoga', 'ohio', 'transportation'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2407,6 +2499,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Family reunification support', 'Parenting services', 'Case management'],
     ARRAY['reentry', 'franklin', 'ohio', 'family-children'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2433,6 +2526,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Clothing assistance', 'Hygiene supplies', 'Emergency basic needs', 'Furniture referrals'],
     ARRAY['reentry', 'hamilton', 'ohio', 'basic-needs'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2459,6 +2553,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency shelter', 'Case management', 'Housing navigation', 'Employment referrals', 'Behavioral health referrals'],
     ARRAY['cleveland', 'cuyahoga', 'housing', 'emergency-shelter', 'men', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2485,6 +2580,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Transitional housing', 'Supervision compliance support', 'Employment referrals', 'Treatment referrals', 'Case management'],
     ARRAY['akron', 'summit', 'housing', 'transitional', 'reentry', 'orianahouse'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2511,6 +2607,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Halfway house residency', 'Employment preparation', 'Treatment coordination', 'Structured programming'],
     ARRAY['columbus', 'franklin', 'housing', 'halfway-house', 'reentry', 'alvis'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2537,6 +2634,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Transitional housing', 'Behavioral health support', 'Case management', 'Employment linkage'],
     ARRAY['cincinnati', 'hamilton', 'housing', 'transitional', 'reentry', 'talberthouse'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2563,6 +2661,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency shelter', 'Transitional housing', 'Addiction recovery programming', 'Case management'],
     ARRAY['cleveland', 'cuyahoga', 'housing', 'shelter', 'recovery', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2589,6 +2688,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency shelter', 'Transitional housing', 'Case management', 'Employment referrals', 'Benefits assistance'],
     ARRAY['columbus', 'franklin', 'housing', 'emergency-shelter', 'transitional', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2615,6 +2715,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Transitional housing for women', 'Employment readiness support', 'Community reintegration', 'Peer support'],
     ARRAY['cleveland', 'cuyahoga', 'housing', 'women', 'reentry', 'transitional'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2641,6 +2742,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Residential treatment', 'Transitional housing', 'Counseling', 'Recovery support'],
     ARRAY['cincinnati', 'hamilton', 'housing', 'women', 'recovery', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2667,6 +2769,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Medical respite housing', 'Case management', 'Housing navigation', 'Health coordination'],
     ARRAY['cleveland', 'cuyahoga', 'housing', 'medical-respite', 'men', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2693,6 +2796,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency shelter', 'Transitional housing', 'Case management', 'Youth and adult housing programs'],
     ARRAY['dayton', 'montgomery', 'housing', 'emergency-shelter', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2719,6 +2823,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Rapid rehousing coordination', 'Permanent supportive housing referrals', 'CoC funding navigation'],
     ARRAY['columbus', 'franklin', 'housing', 'rapid-rehousing', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2745,6 +2850,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Permanent supportive housing', 'Family stabilization', 'Housing case management'],
     ARRAY['columbus', 'franklin', 'housing', 'women', 'supportive-housing', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2771,6 +2877,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Transitional living', 'Life skills training', 'Housing stabilization', 'Case management'],
     ARRAY['cleveland', 'cuyahoga', 'housing', 'transitional', 'catholic-charities', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2797,6 +2904,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Homeless prevention', 'Rapid rehousing', 'Supportive housing referrals', 'Utility assistance'],
     ARRAY['akron', 'summit', 'housing', 'community-action', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2823,6 +2931,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency shelter', 'Transitional housing', 'Recovery residence', 'Case management'],
     ARRAY['toledo', 'lucas', 'housing', 'shelter', 'recovery', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2849,6 +2958,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency overnight shelter', 'Meals', 'Housing referrals', 'Reentry resource connections'],
     ARRAY['columbus', 'franklin', 'housing', 'emergency-shelter', 'low-barrier', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2875,6 +2985,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Homeless crisis response', 'Rental assistance', 'Emergency shelter referrals', 'Rehousing support'],
     ARRAY['columbus', 'franklin', 'housing', 'homeless-prevention', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2901,6 +3012,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Housing navigation', 'Coordinated entry', 'Transitional housing referrals', 'Permanent housing referrals'],
     ARRAY['toledo', 'lucas', 'housing', 'navigation', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2927,6 +3039,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary medical care', 'Behavioral health', 'Dental care', 'Sliding-fee scale'],
     ARRAY['cleveland', 'cuyahoga', 'healthcare', 'FQHC', 'primary-care', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2953,6 +3066,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary care', 'Behavioral health', 'HIV care', 'Medicaid enrollment assistance'],
     ARRAY['cleveland', 'cuyahoga', 'healthcare', 'FQHC', 'homeless', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2979,6 +3093,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary care', 'Behavioral health', 'Substance use services', 'Sliding-fee scale'],
     ARRAY['columbus', 'franklin', 'healthcare', 'FQHC', 'behavioral-health', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3005,6 +3120,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary care', 'Dental care', 'Behavioral health', 'Sliding-fee scale'],
     ARRAY['columbus', 'franklin', 'healthcare', 'FQHC', 'dental', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3031,6 +3147,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary care', 'Preventive care', 'Medicaid enrollment support', 'Pediatric care'],
     ARRAY['columbus', 'franklin', 'healthcare', 'FQHC', 'Medicaid', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3057,6 +3174,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary care', 'Behavioral health', 'Pharmacy services', 'Sliding-fee scale'],
     ARRAY['cincinnati', 'hamilton', 'healthcare', 'FQHC', 'behavioral-health', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3083,6 +3201,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary care', 'Preventive services', 'Sliding-fee scale', 'Chronic disease management'],
     ARRAY['cincinnati', 'hamilton', 'healthcare', 'FQHC', 'primary-care', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3109,6 +3228,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary care', 'Behavioral health', 'Dental care', 'Sliding-fee scale'],
     ARRAY['dayton', 'montgomery', 'healthcare', 'FQHC', 'dental', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3135,6 +3255,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary care', 'Women''s health', 'Behavioral health', 'Sliding-fee scale'],
     ARRAY['toledo', 'lucas', 'healthcare', 'FQHC', 'primary-care', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3161,6 +3282,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Primary care', 'Dental care', 'Behavioral health', 'Sliding-fee scale'],
     ARRAY['akron', 'summit', 'healthcare', 'FQHC', 'dental', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3187,6 +3309,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary care', 'Behavioral health', 'Sliding-fee scale', 'Chronic care management'],
     ARRAY['canton', 'stark', 'healthcare', 'FQHC', 'primary-care', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3213,6 +3336,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary care', 'Women''s health', 'Behavioral health', 'Medicaid enrollment assistance'],
     ARRAY['dayton', 'montgomery', 'healthcare', 'FQHC', 'womens-health', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3239,6 +3363,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary care', 'Preventive care', 'Sliding-fee scale', 'Immunizations'],
     ARRAY['cleveland', 'cuyahoga', 'healthcare', 'FQHC', 'primary-care', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3265,6 +3390,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Outpatient addiction treatment', 'Intensive outpatient', 'Recovery support', 'Court-referred treatment'],
     ARRAY['cleveland', 'cuyahoga', 'healthcare', 'substance-use', 'outpatient', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3291,6 +3417,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Outpatient mental health', 'Substance use treatment', 'Court-referred treatment', 'Family behavioral health'],
     ARRAY['cleveland', 'cuyahoga', 'healthcare', 'behavioral-health', 'justice-involved', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3317,6 +3444,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary care', 'Behavioral health referrals', 'Uninsured patient care', 'Preventive services'],
     ARRAY['athens', 'healthcare', 'free-clinic', 'uninsured', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3343,6 +3471,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Integrated behavioral health', 'Counseling referrals', 'Addiction treatment referrals', 'Care coordination'],
     ARRAY['cleveland', 'cuyahoga', 'healthcare', 'behavioral-health', 'integrated-care', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3369,6 +3498,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Outpatient behavioral health', 'Primary care', 'Case management', 'Reentry-focused clinical services'],
     ARRAY['columbus', 'franklin', 'healthcare', 'behavioral-health', 'reentry', 'case-management'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3395,6 +3525,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Job search assistance', 'Training referrals', 'Resume help', 'Employer connections'],
     ARRAY['toledo', 'lucas', 'employment', 'ohiomeansjobs', 'fair-chance', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3421,6 +3552,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Career counseling', 'Job placement', 'Training referrals', 'Workforce workshops'],
     ARRAY['cincinnati', 'hamilton', 'employment', 'ohiomeansjobs', 'fair-chance', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3447,6 +3579,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Job search support', 'Skills training referrals', 'Employer services', 'Workforce workshops'],
     ARRAY['dayton', 'montgomery', 'employment', 'ohiomeansjobs', 'reentry', 'probation'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3473,6 +3606,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Job placement', 'Career training', 'Resume assistance', 'Employer networking'],
     ARRAY['akron', 'summit', 'employment', 'ohiomeansjobs', 'fair-chance', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3499,6 +3633,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Employment services', 'Training referrals', 'Job fair access', 'Career counseling'],
     ARRAY['canton', 'stark', 'employment', 'ohiomeansjobs', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3525,6 +3660,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Job training', 'Career development', 'Employment placement', 'Skills certification'],
     ARRAY['columbus', 'franklin', 'employment', 'goodwill', 'fair-chance', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3551,6 +3687,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Job readiness training', 'Vocational services', 'Employment support', 'Career center services'],
     ARRAY['cleveland', 'cuyahoga', 'employment', 'goodwill', 'fair-chance', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3577,6 +3714,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Job readiness training', 'Employer partnerships', 'Employment retention coaching', 'Career navigation'],
     ARRAY['cincinnati', 'hamilton', 'employment', 'fair-chance', 'coaching', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3603,6 +3741,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Job training', 'Job placement', 'Retention support', 'Barrier-reduction coaching'],
     ARRAY['cleveland', 'cuyahoga', 'employment', 'fair-chance', 'reentry', 'retention'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3629,6 +3768,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Career services', 'Training referrals', 'Employment assistance', 'Job search support'],
     ARRAY['youngstown', 'mahoning', 'employment', 'ohiomeansjobs', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3655,6 +3795,7 @@ INSERT INTO resources (
     'single',
     ARRAY['GED preparation', 'High school equivalency classes', 'Adult literacy', 'Career pathway counseling'],
     ARRAY['columbus', 'franklin', 'education', 'GED', 'ABLE', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3681,6 +3822,7 @@ INSERT INTO resources (
     'single',
     ARRAY['GED preparation', 'Adult diploma', 'English language learning', 'Career bridge programs'],
     ARRAY['cleveland', 'cuyahoga', 'education', 'GED', 'aspire', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3707,6 +3849,7 @@ INSERT INTO resources (
     'single',
     ARRAY['GED classes', 'Adult diploma', 'Workforce bridge training', 'Career counseling'],
     ARRAY['dayton', 'montgomery', 'education', 'GED', 'aspire', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3733,6 +3876,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['GED preparation', 'Adult diploma', 'Career-technical bridge', 'Workforce credentials'],
     ARRAY['cincinnati', 'education', 'GED', 'ABLE', 'vocational', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3759,6 +3903,7 @@ INSERT INTO resources (
     'single',
     ARRAY['GED preparation', 'Adult high school equivalency', 'Career advising', 'English language learning'],
     ARRAY['lorain', 'education', 'GED', 'aspire', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3785,6 +3930,7 @@ INSERT INTO resources (
     'single',
     ARRAY['GED preparation', 'Workforce credentials', 'Adult education', 'Career training pathways'],
     ARRAY['canton', 'stark', 'education', 'GED', 'workforce', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3811,6 +3957,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['GED preparation', 'Career-technical education', 'Adult literacy', 'Workforce pathways'],
     ARRAY['education', 'GED', 'ABLE', 'vocational', 'rural', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3837,6 +3984,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['GED preparation', 'Workforce training', 'Adult education', 'Career certifications'],
     ARRAY['toledo', 'lucas', 'education', 'GED', 'vocational', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3863,6 +4011,7 @@ INSERT INTO resources (
     'single',
     ARRAY['GED preparation', 'Workforce readiness', 'Adult education', 'Job skills classes'],
     ARRAY['toledo', 'lucas', 'education', 'GED', 'workforce', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3889,6 +4038,7 @@ INSERT INTO resources (
     'single',
     ARRAY['GED preparation', 'Adult education', 'Community-based classes', 'Workforce readiness'],
     ARRAY['cleveland', 'cuyahoga', 'education', 'GED', 'aspire', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3915,6 +4065,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['GED preparation', 'Adult education', 'Career-technical pathways', 'Workforce readiness'],
     ARRAY['chillicothe', 'pickaway', 'ross', 'education', 'GED', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3941,6 +4092,7 @@ INSERT INTO resources (
     'single',
     ARRAY['VJO case coordination', 'VA health care enrollment', 'Benefits assistance', 'Treatment referrals'],
     ARRAY['cincinnati', 'hamilton', 'veterans', 'VJO', 'justice-involved', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3967,6 +4119,7 @@ INSERT INTO resources (
     'single',
     ARRAY['VJO outreach', 'VA medical care linkage', 'Benefits enrollment', 'Mental health treatment referrals'],
     ARRAY['dayton', 'montgomery', 'veterans', 'VJO', 'justice-involved', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3993,6 +4146,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['VJO outreach', 'VA health services', 'Substance use treatment referrals', 'Housing resource linkage'],
     ARRAY['chillicothe', 'ross', 'veterans', 'VJO', 'justice-involved', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4019,6 +4173,7 @@ INSERT INTO resources (
     'single',
     ARRAY['VA benefits assistance', 'Emergency financial aid', 'Transportation to VA', 'Referral to reentry supports'],
     ARRAY['columbus', 'franklin', 'veterans', 'VSO', 'benefits', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4045,6 +4200,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Benefits counseling', 'Emergency assistance', 'VA claims help', 'Referral services'],
     ARRAY['cleveland', 'cuyahoga', 'veterans', 'VSO', 'benefits', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4071,6 +4227,7 @@ INSERT INTO resources (
     'single',
     ARRAY['VA benefits navigation', 'Emergency aid', 'Community resource referrals', 'Claims assistance'],
     ARRAY['cincinnati', 'hamilton', 'veterans', 'VSO', 'benefits', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4097,6 +4254,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Benefits claims assistance', 'Emergency financial help', 'Healthcare referrals', 'Reentry program referrals'],
     ARRAY['akron', 'summit', 'veterans', 'VSO', 'benefits', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4123,6 +4281,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency food', 'Clothing', 'Utility assistance', 'Household items'],
     ARRAY['cleveland', 'cuyahoga', 'basic-needs', 'emergency-assistance', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4149,6 +4308,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Food pantries', 'Clothing', 'Emergency financial assistance', 'Household support'],
     ARRAY['columbus', 'franklin', 'basic-needs', 'food-pantry', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4175,6 +4335,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency food', 'Clothing', 'Rent assistance', 'Utility assistance'],
     ARRAY['cincinnati', 'hamilton', 'basic-needs', 'emergency-assistance', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4201,6 +4362,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Clothing distribution', 'Hygiene items', 'Basic needs support', 'Donation center services'],
     ARRAY['cleveland', 'cuyahoga', 'basic-needs', 'clothing', 'hygiene', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4227,6 +4389,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Low-cost clothing', 'Household goods', 'Agency voucher programs', 'Community donations'],
     ARRAY['cincinnati', 'hamilton', 'basic-needs', 'clothing', 'goodwill', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4253,6 +4416,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Clothing distribution to partners', 'Hygiene kits', 'Household item donations', 'Agency partnerships'],
     ARRAY['cincinnati', 'hamilton', 'basic-needs', 'clothing', 'hygiene', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4279,6 +4443,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Free clothing closet', 'Hygiene items', 'Release-day support items', 'Professional attire'],
     ARRAY['cleveland', 'cuyahoga', 'basic-needs', 'clothing', 'release-support', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4305,6 +4470,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Release bags', 'Hygiene items', 'Clothing', 'Reentry resource information'],
     ARRAY['cleveland', 'cuyahoga', 'basic-needs', 'release-bags', 'hygiene', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4331,6 +4497,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Food assistance', 'Clothing', 'Furniture', 'Emergency financial help'],
     ARRAY['dayton', 'montgomery', 'basic-needs', 'emergency-assistance', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4357,6 +4524,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Probation supervision', 'Community control monitoring', 'Resource referrals', 'Compliance support'],
     ARRAY['franklin', 'columbus', 'probation', 'court-supervision', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4383,6 +4551,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Felony probation supervision', 'Court compliance monitoring', 'Treatment referrals', 'Reentry resource referrals'],
     ARRAY['cleveland', 'cuyahoga', 'probation', 'court-supervision', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4409,6 +4578,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Probation supervision', 'Community control', 'Resource referrals', 'Compliance monitoring'],
     ARRAY['cincinnati', 'hamilton', 'probation', 'court-supervision', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4435,6 +4605,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Probation supervision', 'Community control', 'Reentry partner referrals', 'Compliance support'],
     ARRAY['dayton', 'montgomery', 'probation', 'court-supervision', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4461,6 +4632,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Probation supervision', 'Court compliance', 'Treatment referrals', 'Reentry coalition referrals'],
     ARRAY['toledo', 'lucas', 'probation', 'court-supervision', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4487,6 +4659,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Probation supervision', 'Community control monitoring', 'Coalition partner referrals', 'Treatment referrals'],
     ARRAY['akron', 'summit', 'probation', 'court-supervision', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4513,6 +4686,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Probation supervision', 'Community control', 'Reentry coalition referrals', 'Compliance monitoring'],
     ARRAY['canton', 'stark', 'probation', 'court-supervision', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4539,6 +4713,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Probation supervision', 'Community control', 'Reentry coalition referrals', 'Compliance support'],
     ARRAY['hamilton', 'butler', 'probation', 'court-supervision', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4565,6 +4740,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Parole supervision', 'Regional field office services', 'Community resource referrals', 'Compliance monitoring'],
     ARRAY['statewide', 'parole', 'DOC', 'field-offices', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4591,6 +4767,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Medicaid enrollment', 'SNAP application', 'Cash assistance', 'Child care subsidies', 'Restored citizen intake'],
     ARRAY['columbus', 'franklin', 'benefits', 'SNAP', 'Medicaid', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4617,6 +4794,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Medicaid enrollment', 'SNAP benefits', 'Public assistance', 'Workforce connections'],
     ARRAY['cleveland', 'cuyahoga', 'benefits', 'SNAP', 'Medicaid', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4643,6 +4821,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Medicaid application', 'SNAP enrollment', 'Emergency assistance', 'Benefits case management'],
     ARRAY['cincinnati', 'hamilton', 'benefits', 'SNAP', 'Medicaid', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4669,6 +4848,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Certified peer support', 'Recovery coaching', 'Mentoring', 'Community recovery navigation'],
     ARRAY['columbus', 'franklin', 'peer-support', 'recovery', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4695,6 +4875,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Peer recovery support', 'Recovery housing connections', 'Community recovery mentoring', 'Agency referrals'],
     ARRAY['statewide', 'peer-support', 'recovery-housing', 'reentry', 'justice-involved'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4721,6 +4902,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Birth certificate issuance', 'Death record copies', 'Vital records orders'],
     ARRAY['cleveland', 'cuyahoga', 'id-documentation', 'birth-certificate', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4747,6 +4929,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Birth certificates', 'Death certificates', 'Vital records verification'],
     ARRAY['cincinnati', 'hamilton', 'id-documentation', 'birth-certificate', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4773,6 +4956,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Family reunification support', 'Parenting services', 'Family preservation', 'Case management'],
     ARRAY['cleveland', 'cuyahoga', 'family-children', 'reunification', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4799,6 +4983,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Parent education', 'Co-parenting support', 'Family strengthening', 'Reunification resources'],
     ARRAY['cincinnati', 'hamilton', 'family-children', 'parenting', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4825,6 +5010,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Reduced-fare bus passes', 'Affordable transit', 'Work and appointment transportation'],
     ARRAY['cincinnati', 'hamilton', 'transportation', 'reduced-fare', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4851,6 +5037,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Food pantry network', 'Mobile food distributions', 'SNAP application assistance', 'Partner agency referrals'],
     ARRAY['akron', 'summit', 'food-nutrition', 'food-bank', 'SNAP', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4877,6 +5064,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Record sealing assistance', 'Collateral consequences relief', 'Reentry legal clinics', 'Opportunity Port partner services'],
     ARRAY['columbus', 'franklin', 'legal-aid', 'expungement', 'reentry', 'clinic'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4903,6 +5091,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Background checks', 'Fingerprinting', 'Record review', 'WebCheck services'],
     ARRAY['statewide', 'id-documentation', 'background-check', 'BCI', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4929,6 +5118,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Benefits navigation hotline', 'Medicaid information', 'SNAP assistance', 'County office referrals'],
     ARRAY['statewide', 'benefits', 'hotline', 'SNAP', 'Medicaid', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   )
@@ -4953,6 +5143,7 @@ ON CONFLICT (id) DO UPDATE SET
   coverage = EXCLUDED.coverage,
   services = EXCLUDED.services,
   tags = EXCLUDED.tags,
+  intake_signals = EXCLUDED.intake_signals,
   is_featured = EXCLUDED.is_featured,
   status = EXCLUDED.status,
   updated_at = NOW();

@@ -168,9 +168,9 @@ Site IDs are hashed at rest; reversible encryption allows admins to reveal/copy 
 |---------|-------------|
 | **Homepage** | Hero search, popular tags, browse-by-category pills, personalized “Picked for you” (when onboarded), How It Works, featured resources, built-for CTA, announcements banner |
 | **Resource directory** (`/resources`) | Hero search with separate collapsible location filters (collapsed by default), sticky search bar, “Resources based on your chosen needs” section with dashboard link to edit preferences, county/statewide split with count badges in section headers, paginated masonry grid; `?scroll=results` or `?scroll=recommended` for deep links from homepage and dashboard |
-| **Resource detail** (`/resources/[id]`) | Category/coverage badges, eligibility & operational notes (EN/ES), served counties, contact info, directions, save & share, related resources |
+| **Resource detail** (`/resources/[id]`) | Category/coverage badges, intake signal badges (criminal record, referral, walk-in), eligibility & operational notes (EN/ES), served counties, contact info, directions, save & share, related resources |
 | **Onboarding** (`/get-started`) | 3-step wizard: state (KY/OH) → county → up to 3 priority categories; skip option; edit mode via `?edit=1` |
-| **Search & filters** | Keyword, category, state, county, city, service type, coverage, recently added |
+| **Search & filters** | Keyword, category, state, county, city, service type, coverage, recently added, intake signals (`?intake=accepts_criminal_record\|walk_in_ok` — AND logic) |
 | **Saved resources** (`/saved`) | Full saved list (sign-in required) |
 | **Dashboard** (`/dashboard`) | Welcome, location & priority summary, saved / recommended / recently viewed sections |
 | **Email PDF** | Signed-in users email a PDF of saved resources (Resend) |
@@ -191,7 +191,7 @@ Site IDs are hashed at rest; reversible encryption allows admins to reveal/copy 
 | Section | Capabilities |
 |---------|--------------|
 | **Analytics** | Most viewed / most saved resources |
-| **Resources** | CRUD, featured flag, eligibility/notes (EN/ES), served counties, coverage |
+| **Resources** | CRUD, featured flag, eligibility/notes (EN/ES), served counties, coverage, intake signal tags |
 | **Categories** | CRUD with icons and sort order |
 | **Facilities** | Register facilities, site ID reveal/copy, signup counts, active toggle |
 | **Users** | View users, reset passwords, delete accounts, read saved-resource counts |
@@ -279,6 +279,7 @@ supabase/migrations/010_facilities_and_auth.sql
 supabase/migrations/011_admin_read_saved_resources.sql
 supabase/migrations/012_facility_contact_email.sql
 supabase/migrations/013_admin_delete_user.sql
+supabase/migrations/014_add_intake_signals.sql
 ```
 
 ### Seed resources
@@ -290,20 +291,56 @@ npm run seed:resources
 # Ohio → supabase/seed-ohio-resources.sql
 npm run seed:resources:ohio
 
-# Both
+# Indiana → supabase/seed-indiana-resources.sql
+npm run seed:resources:indiana
+
+# All states
 npm run seed:resources:all
 ```
 
-Run the generated SQL files in Supabase (Kentucky first, then Ohio), or use:
+Run the generated SQL files in Supabase (Kentucky, then Ohio, then Indiana), or use:
 
 ```bash
-npm run db:push:ohio   # requires SUPABASE_SERVICE_ROLE_KEY
+npm run db:push:ohio      # requires SUPABASE_SERVICE_ROLE_KEY
+npm run db:push:indiana
 ```
 
-Apply CSV enrichments:
+Apply CSV enrichments (also auto-tags `intake_signals` from eligibility/notes):
 
 ```bash
-npm run seed:enrich
+npm run seed:enrich          # merge batch JSON → CSV + refresh intake signals
+npm run enrich:resources     # Kentucky full enrich pass
+npm run enrich:ohio          # Ohio full enrich pass
+npm run enrich:indiana       # Indiana full enrich pass
+```
+
+`python3 scripts/enrich-resources.py` expands descriptions and **sets `intake_signals`** on every row (heuristic). Optional LLM refinement afterward:
+
+```bash
+npm run tag:intake:dry   # preview heuristic-only re-tag
+npm run tag:intake:llm   # Claude/OpenAI second pass
+```
+
+Push tags to Supabase after CSV changes:
+
+```bash
+npm run db:push:intake
+```
+
+Optional LLM-only pass (API key required — not included with Claude.ai web subscription):
+
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...   # from console.anthropic.com
+npx tsx scripts/tag-intake-signals.ts data/resources.csv --llm
+# or: --llm-provider=openai with OPENAI_API_KEY
+```
+
+Default heuristic tagging (`npm run tag:intake`) is free and already applied to both state CSVs.
+
+Push tags to Supabase after tagging or LLM pass:
+
+```bash
+npm run db:push:intake
 ```
 
 ### Create an admin
@@ -423,6 +460,7 @@ Resource cards use a consistent **type badge** system (category, statewide, regi
 |-------|----------|---------|
 | Kentucky resources | `data/resources.csv` | `npm run seed:resources` |
 | Ohio resources | `data/ohio-resources.csv` | `npm run seed:resources:ohio` |
+| Indiana resources | `data/indiana-resources.csv` | `npm run seed:resources:indiana` |
 | Enrichments | `data/enrichments/batch-*.json` | `npm run seed:enrich` |
 | Field semantics | `.cursor/rules/i18n.mdc` | `eligibility` vs `notes` vs `served_counties` |
 

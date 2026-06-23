@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useTranslations } from "@/i18n/locale-context";
 import { pageSectionPadding } from "@/lib/utils";
+import { FACILITY_MIN_PASSWORD_LENGTH } from "@/lib/facility/password-policy";
 
 type ResetStep = "pin" | "questions" | "password";
 
@@ -231,6 +232,8 @@ export function FacilityForgotPasswordForm() {
                 confirmLabel={t("auth.confirmPassword")}
                 passwordId="reset-password"
                 confirmId="reset-confirm-password"
+                minLength={FACILITY_MIN_PASSWORD_LENGTH}
+                passwordHint={t("facility.passwordHint")}
               />
               {error ? (
                 <p role="alert" className="text-base text-destructive">

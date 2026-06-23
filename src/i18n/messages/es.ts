@@ -17,6 +17,7 @@ export const es = {
     confirm: "Confirmar",
     create: "Crear",
     edit: "Editar",
+    delete: "Eliminar",
     remove: "Quitar",
     featured: "Destacado",
     active: "Activo",
@@ -243,12 +244,26 @@ export const es = {
     viewDetails: "Ver detalles →",
     saveAria: "Guardar {name}",
     removeSaveAria: "Quitar {name} de guardados",
+    intakeFiltersLabel: "Elegibilidad e ingreso",
+    intakeFiltersHint:
+      "Muestre programas que cumplan todas las señales seleccionadas. Déjelo en blanco para incluir todos.",
+    intakeSignalFilterAria: "Filtrar por {label}",
+    intakeMetaAria: "Ingreso: {labels}",
+    intakeSignals: {
+      accepts_criminal_record: "Acepta antecedentes penales",
+      referral_required: "Se requiere referido",
+      walk_in_ok: "Se acepta sin cita",
+    },
     resourceNotFound: "Recurso no encontrado",
   },
 
   auth: {
     signIn: "Iniciar sesión",
     signInSubtitle: "Acceda a sus recursos guardados y su panel personal.",
+    staffSignInHint: "¿Personal o administrador?",
+    staffSignInLink: "Inicie sesión con su correo",
+    facilityInmateSignInHint: "¿Recluso en una tableta de la instalación?",
+    facilityInmateSignInLink: "Use el inicio de sesión de la instalación",
     signUp: "Crear cuenta",
     signUpSubtitle: "Cuenta gratuita para guardar recursos y seguir su proceso.",
     email: "Correo electrónico",
@@ -342,6 +357,7 @@ export const es = {
     states: {
       kentucky: "Kentucky",
       ohio: "Ohio",
+      indiana: "Indiana",
     },
     priorities: {
       housing: "Vivienda",
@@ -355,12 +371,103 @@ export const es = {
       education: "Educación y GED",
       "reentry-organizations": "Navegación de reinserción",
     },
+    pathwayHint:
+      "Cuando termine, abra la guía de la primera semana desde su panel para un checklist paso a paso.",
+    pathwayCta: "Vista previa de la guía de la primera semana",
+  },
+
+  pathways: {
+    notFoundTitle: "Guía no encontrada",
+    disclaimer:
+      "Esta guía le ayuda a encontrar programas en nuestro directorio. No es atención de emergencia, asesoría legal ni garantía de servicios. Llame o envíe un mensaje de texto al 988 si necesita ayuda inmediata.",
+    crisisTitle: "¿Necesita ayuda ahora mismo?",
+    crisisBody:
+      "Si está en crisis, llame o envíe un mensaje de texto al 988 para la Línea de Prevención del Suicidio y Crisis, o envíe HOME al 741741 para la Línea de Texto de Crisis. Estos servicios son gratuitos y están disponibles 24/7.",
+    setCountyBannerTitle: "Configure su condado para coincidencias locales",
+    setCountyBannerDesc:
+      "Los programas aquí funcionan a nivel estatal, pero configurar su condado muestra refugios, clínicas y oficinas cerca de donde planea vivir.",
+    setCountyCta: "Configurar condado",
+    matchesYourNeeds: "Coincide con sus necesidades",
+    localPrograms: "Programas que sirven al condado de {county}",
+    statewidePrograms: "Programas estatales en {state}",
+    yourState: "su estado",
+    noLocalMatches:
+      "No encontramos programas locales para este paso en el condado de {county}. Pruebe el enlace de exploración abajo o llame al 211 para ayuda.",
+    noMatches:
+      "No encontramos programas para este paso con sus filtros actuales. Intente explorar todos los recursos en esta categoría.",
+    browseCategory: "Explorar todos los programas de {category}",
+    browseCategoryInCounty: "Explorar todos los de {category} en el condado de {county}",
+    browseCategoryInState: "Explorar todos los de {category} en {state}",
+    dashboardCardTitle: "Primera semana después de la liberación",
+    dashboardCardDesc:
+      "Un checklist paso a paso — identificación, beneficios, vivienda, tratamiento, empleo y ayuda legal — con programas adaptados a su condado.",
+    dashboardCardCta: "Abrir guía de la primera semana",
+    firstWeek: {
+      title: "Primera semana después de la liberación",
+      metaDescription:
+        "Una guía práctica paso a paso para apoyo en crisis, identificación, beneficios, vivienda, tratamiento, empleo y ayuda legal después de la liberación.",
+      introDefault:
+        "Siete pasos prácticos para sus primeros días en casa. Cada paso enlaza a programas reales de nuestro directorio.",
+      introByState: {
+        kentucky:
+          "Siete pasos prácticos para sus primeros días en casa en Kentucky. Cada paso enlaza a programas reales de nuestro directorio.",
+        ohio:
+          "Siete pasos prácticos para sus primeros días en casa en Ohio. Cada paso enlaza a programas reales de nuestro directorio.",
+        indiana:
+          "Siete pasos prácticos para sus primeros días en casa en Indiana. Cada paso enlaza a programas reales de nuestro directorio.",
+      },
+      steps: {
+        "crisis-support": {
+          title: "Obtenga apoyo en crisis si lo necesita ahora",
+          description:
+            "Si no se siente seguro o está abrumado, busque ayuda antes que nada. Las líneas de ayuda son gratuitas, confidenciales y disponibles 24/7.",
+        },
+        "id-documents": {
+          title: "Obtenga identificación y documentos vitales",
+          description:
+            "Una identificación estatal, acta de nacimiento o tarjeta de Seguro Social abre puertas a vivienda, empleo y beneficios. Comience aquí aunque otros pasos parezcan urgentes.",
+        },
+        benefits: {
+          title: "Solicite beneficios (Medicaid, SNAP y más)",
+          description:
+            "La cobertura de salud y la asistencia alimentaria pueden estabilizar sus primeras semanas. Muchos programas ayudan con el proceso de solicitud.",
+        },
+        housing: {
+          title: "Encuentre un lugar donde quedarse",
+          description:
+            "Refugio de emergencia, vivienda transitoria y ayuda con el alquiler varían por condado. Los programas locales se listan primero cuando conocemos su condado.",
+        },
+        treatment: {
+          title: "Conéctese con tratamiento o apoyo de recuperación",
+          description:
+            "Tratamiento de sustancias, apoyo entre pares y programas de salud pueden ayudarle a mantenerse en el camino después de la liberación.",
+        },
+        employment: {
+          title: "Busque trabajo o capacitación",
+          description:
+            "Preparación laboral, capacitación y empleadores de segunda oportunidad pueden ayudarle a generar ingresos y estabilidad.",
+        },
+        legal: {
+          title: "Conozca sus opciones legales",
+          description:
+            "Puede haber ayuda legal gratuita para borrado de antecedentes, restauración de licencia de conducir y otros asuntos relacionados con su historial.",
+        },
+      },
+    },
   },
 
   facility: {
     sessionRequiredTitle: "Inicie sesión desde su instalación",
     sessionRequired:
       "Use una computadora o tableta en su instalación para iniciar sesión o crear una cuenta.",
+    enterErrorTitle: "No se pudo abrir el enlace de la instalación",
+    enterErrorInvalid:
+      "El ID de sitio de este enlace no coincide con una instalación activa. Use el ID de sitio exacto de Admin → Instalaciones (no el nombre), y vuelva a crear la instalación si FACILITY_CRYPTO_SECRET cambió después de añadirla.",
+    enterErrorUnconfigured:
+      "Los enlaces de tableta no están configurados en este servidor. Añada SUPABASE_SERVICE_ROLE_KEY a .env.local y reinicie el servidor de desarrollo.",
+    enterErrorConfig:
+      "El cifrado de instalaciones no está configurado. Defina FACILITY_CRYPTO_SECRET (o ALLOW_DEV_FACILITY_CRYPTO=1 en desarrollo) en .env.local y reinicie.",
+    enterErrorAdminLink: "Abrir Admin → Instalaciones",
     barTitle: "Cree una cuenta para guardar sus recursos",
     barSignInTitle: "¡Bienvenido de nuevo! Parece que ya tiene una cuenta con nosotros.",
     barSignInDesc:
@@ -372,6 +479,8 @@ export const es = {
     signupSubtitle:
       "Su nombre de usuario y la instalación ya están configurados. El correo es opcional — puede agregar uno después en su panel.",
     loginTitle: "Iniciar sesión",
+    loginStaffHint:
+      "Esa contraseña no coincide con una cuenta de recluso en esta tableta. El personal y los administradores deben usar el inicio de sesión con correo abajo.",
     loginPinNotNeededNote:
       "Su PIN se completa automáticamente y se oculta por privacidad. Ingrese la contraseña que creó cuando se registró.",
     facilityLabel: "Instalación",
@@ -408,6 +517,7 @@ export const es = {
     noAccountTitle: "Aún no hay cuenta",
     noAccountDesc: "Cree una cuenta para guardar recursos y enviar su lista por correo.",
     signupInvalid: "Complete todos los campos con respuestas válidas.",
+    passwordHint: "Al menos 12 caracteres",
     accountAlreadyExists: "Ya existe una cuenta en este dispositivo.",
     pinMismatch:
       "Esta cuenta no coincide con su PIN. Inicie sesión desde el dispositivo donde creó su cuenta.",
@@ -419,6 +529,7 @@ export const es = {
     resetPinStepHint: "Use el PIN que le asignaron en su instalación.",
     resetPinRequired: "Ingrese su PIN para continuar.",
     resetPinInvalid: "No encontramos una cuenta con ese PIN.",
+    rateLimited: "Demasiados intentos. Espere unos minutos e inténtelo de nuevo.",
     resetQuestionsStepDesc: "Responda sus preguntas de seguridad para verificar su identidad.",
     resetPasswordStepDesc: "Elija una nueva contraseña para su cuenta.",
     resetContinue: "Continuar",
@@ -643,6 +754,8 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       "¿No encuentra lo que busca? Nuestro equipo puede ayudarle con cualquier tema no cubierto aquí.",
     quickLinksTitle: "Enlaces rápidos",
     sidebarLinks: {
+      pathwayTitle: "Guía de la primera semana",
+      pathwayDesc: "Checklist paso a paso después de la liberación",
       resourcesTitle: "Buscar recursos",
       resourcesDesc: "Busque programas cerca de usted",
       contactTitle: "Contáctenos",
@@ -891,6 +1004,12 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
     edit: "Editar",
     archive: "Archivar",
     archiveConfirm: "¿Archivar este recurso?",
+    unarchive: "Restaurar",
+    unarchiveConfirm: "¿Restaurar este recurso al directorio activo?",
+    showActiveResources: "Activos",
+    showArchivedResources: "Archivados",
+    noArchivedResources: "No hay recursos archivados.",
+    noActiveResources: "No hay recursos activos.",
     featured: "Destacado",
     feature: "Destacar",
     importSuccess: "Se importaron {count} recursos (modo de demostración — no se guardó)",
@@ -918,6 +1037,9 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
     services: "Servicios",
     tags: "Etiquetas",
     servicesHint: "Separe los servicios con comas",
+    intakeSignalsLabel: "Señales de ingreso",
+    intakeSignalsHint:
+      "Insignias estructuradas en los listados y filtros de elegibilidad.",
     status: "Estado",
     featureOnHomepage: "Destacar en la página de inicio",
     featureOnHomepageDesc:
@@ -1032,6 +1154,12 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       "Guarde este ID de sitio — lo necesitará para los enlaces: ?facility={siteId}&pin=…",
     facilityDeactivate: "Desactivar",
     facilityActivate: "Activar",
+    facilityDelete: "Eliminar instalación",
+    facilityDeleteConfirm:
+      "¿Eliminar permanentemente {name}? Los enlaces de tableta con este ID de sitio dejarán de funcionar. No se puede deshacer.",
+    facilityDeleteWithAccountsConfirm:
+      "¿Eliminar permanentemente {name}? {count} cuenta(s) de recluso(s) se desvincularán de esta instalación (las cuentas no se eliminan). Los enlaces de tableta dejarán de funcionar. No se puede deshacer.",
+    facilityDeleteFailed: "No se pudo eliminar la instalación. Inténtelo de nuevo.",
     userManagement: "Gestión de usuarios",
     userManagementDesc:
       "Active, desactive, restablezca contraseñas o elimine cuentas de usuario de forma permanente.",
@@ -1063,7 +1191,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       "Establezca un PIN y una contraseña temporal nuevos para esta cuenta de instalación. Comparta ambos con el usuario en la instalación.",
     resetPinPinLabel: "PIN nuevo",
     resetPinPasswordLabel: "Contraseña nueva",
-    resetPinPasswordHint: "Al menos 8 caracteres.",
+    resetPinPasswordHint: "Al menos 12 caracteres.",
     resetPinInvalid: "Ingrese un PIN y una contraseña de al menos 8 caracteres.",
     resetPinConflict: "Este PIN ya está en uso en esta instalación.",
     resetPinSuccess: "PIN y contraseña actualizados.",
@@ -1332,6 +1460,12 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       answer:
         "¡Sí! Contáctenos a través de la página Acerca de nosotros o pida a su gestor de casos que envíe un recurso para revisión.",
       category: "general",
+    },
+    faq6: {
+      question: "¿Por dónde empiezo después de la liberación?",
+      answer:
+        "Abra la guía Primera semana después de la liberación desde su panel o visite la guía de la primera semana para un checklist paso a paso — apoyo en crisis, identificación, beneficios, vivienda y más — con programas adaptados a su condado.",
+      category: "usingTheSite",
     },
   },
 

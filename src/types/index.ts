@@ -1,6 +1,11 @@
 export type UserRole = "user" | "case_manager" | "admin";
 export type ResourceStatus = "active" | "inactive" | "archived";
 export type ResourceCoverage = "single" | "multi" | "statewide";
+
+export type IntakeSignal =
+  | "accepts_criminal_record"
+  | "referral_required"
+  | "walk_in_ok";
 export type CmsPageStatus = "draft" | "published" | "archived";
 export type AnnouncementStatus = "draft" | "published" | "archived";
 
@@ -64,6 +69,7 @@ export interface Resource {
   coverage?: ResourceCoverage;
   services: string[];
   tags: string[];
+  intake_signals?: IntakeSignal[];
   is_featured: boolean;
   status: ResourceStatus;
   view_count: number;
@@ -144,6 +150,7 @@ export interface ResourceFilters {
   tag?: string;
   coverage?: ResourceCoverage;
   eligibility?: string;
+  intake?: IntakeSignal[];
   featured?: boolean;
   recentlyAdded?: boolean;
   status?: ResourceStatus;

@@ -36,7 +36,7 @@ export async function POST(request: Request) {
   }
 
   const password = body.password ?? "";
-  if (password.length < 8) {
+  if (!password) {
     return NextResponse.json({ error: t("facility.loginInvalid") }, { status: 400 });
   }
 

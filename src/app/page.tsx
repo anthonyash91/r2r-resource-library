@@ -12,7 +12,7 @@ import {
   getAnnouncements,
 } from "@/lib/data";
 import { AnnouncementsBanner } from "@/components/home/announcements-banner";
-import { FacilitySessionBar } from "@/components/facility/facility-session-bar";
+import { FacilityEnterErrorBanner } from "@/components/facility/facility-enter-error-banner";
 import { RecommendedResourcesSection } from "@/components/resources/recommended-resources-section";
 import { HeroSurfaceOrbs } from "@/components/layout/hero-surface-orbs";
 import { cn, pageSectionPadding, checkIconClass, pageSectionHeadingClass, pageSectionSubtitleClass, pageSectionSubtitleOnHeroClass, pageSectionSubheadingClass } from "@/lib/utils";
@@ -30,8 +30,13 @@ const POPULAR_TAG_SLUGS = [
   "basic-needs",
 ] as const;
 
-export default async function HomePage() {
+export default async function HomePage({
+  searchParams,
+}: {
+  searchParams: Promise<{ facility_error?: string }>;
+}) {
   const { t } = await getServerTranslator();
+  const params = await searchParams;
 
   const [categories, resources, homepage, featuredResources, announcements, preferences] =
     await Promise.all([
@@ -102,8 +107,8 @@ export default async function HomePage() {
 
   return (
     <>
+      <FacilityEnterErrorBanner error={params.facility_error} />
       <AnnouncementsBanner announcements={announcements} />
-      <FacilitySessionBar />
 
       <HeroSection
         headline={headline}

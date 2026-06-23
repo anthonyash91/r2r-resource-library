@@ -1,6 +1,4 @@
-import { createClient, isSupabaseConfigured } from "@/lib/supabase/client";
-import type { ResourceStatus } from "@/types";
-import { MAX_FEATURED_RESOURCES } from "@/lib/featured-resources-storage";
+import type { ResourceStatus, IntakeSignal } from "@/types";
 
 export function parseListField(value: string): string[] {
   return value
@@ -25,81 +23,38 @@ export type ResourceFormData = {
   notes: string;
   services: string;
   tags: string;
+  intake_signals: IntakeSignal[];
   status: string;
   is_featured: boolean;
 };
 
-function toDbPayload(form: ResourceFormData) {
-  const county = form.county.trim();
-  const served_counties = county ? [county] : [];
-
-  return {
-    name: form.name.trim(),
-    description: form.description.trim(),
-    category_id: form.category_id,
-    state: form.state.trim() || null,
-    county: county || null,
-    city: form.city.trim() || null,
-    address: form.address.trim() || null,
-    phone: form.phone.trim() || null,
-    website: form.website.trim() || null,
-    email: form.email.trim() || null,
-    hours: form.hours.trim() || null,
-    eligibility: form.eligibility.trim() || null,
-    notes: form.notes.trim() || null,
-    services: parseListField(form.services),
-    tags: parseListField(form.tags),
-    status: form.status as ResourceStatus,
-    served_counties,
-    coverage: served_counties.length > 1 ? "multi" : "single",
-    is_featured: form.is_featured,
-  };
-}
-
-async function countActiveFeatured(excludeId?: string): Promise<number> {
-  const supabase = createClient();
-  if (!supabase) return MAX_FEATURED_RESOURCES;
-
-  let query = supabase
-    .from("resources")
-    .select("id", { count: "exact", head: true })
-    .eq("status", "active")
-    .eq("is_featured", true);
-
-  if (excludeId) {
-    query = query.neq("id", excludeId);
-  }
-
-  const { count } = await query;
-  return count ?? 0;
-}
-
-export async function canFeatureResource(
-  resourceId?: string,
-  currentlyFeatured = false
-): Promise<boolean> {
-  if (currentlyFeatured) return true;
-  const count = await countActiveFeatured(resourceId);
-  return count < MAX_FEATURED_RESOURCES;
+async function parseApiError(
+  response: Response,
+  fallback: string
+): Promise<{ error: string }> {
+  const payload = (await response.json().catch(() => ({}))) as { error?: string };
+  return { error: payload.error ?? fallback };
 }
 
 export async function createResource(
   form: ResourceFormData
 ): Promise<{ error?: string; id?: string }> {
-  if (!isSupabaseConfigured()) return { error: "unavailable" };
+  const response = await fetch("/api/admin/resources", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(form),
+  });
 
-  const supabase = createClient();
-  if (!supabase) return { error: "unavailable" };
-
-  if (form.is_featured && !(await canFeatureResource())) {
-    return { error: "max_featured" };
+  if (!response.ok) {
+    const payload = await parseApiError(response, "save_failed");
+    if (response.status === 409 && payload.error === "max_featured") {
+      return { error: "max_featured" };
+    }
+    return payload;
   }
 
-  const payload = toDbPayload(form);
-  const { data, error } = await supabase.from("resources").insert(payload).select("id").single();
-
-  if (error || !data) return { error: error?.message ?? "save_failed" };
-  return { id: data.id as string };
+  const data = (await response.json()) as { id?: string };
+  return { id: data.id };
 }
 
 export async function updateResource(
@@ -107,34 +62,44 @@ export async function updateResource(
   form: ResourceFormData,
   wasFeatured = false
 ): Promise<{ error?: string }> {
-  if (!isSupabaseConfigured()) return { error: "unavailable" };
+  const response = await fetch(`/api/admin/resources/${id}`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ form, wasFeatured }),
+  });
 
-  const supabase = createClient();
-  if (!supabase) return { error: "unavailable" };
-
-  if (form.is_featured && !(await canFeatureResource(id, wasFeatured))) {
-    return { error: "max_featured" };
+  if (!response.ok) {
+    const payload = await parseApiError(response, "save_failed");
+    if (response.status === 409 && payload.error === "max_featured") {
+      return { error: "max_featured" };
+    }
+    return payload;
   }
 
-  const payload = toDbPayload(form);
-  const { error } = await supabase.from("resources").update(payload).eq("id", id);
-
-  if (error) return { error: error.message };
   return {};
 }
 
 export async function archiveResourceById(id: string): Promise<{ error?: string }> {
-  if (!isSupabaseConfigured()) return { error: "unavailable" };
+  const response = await fetch(`/api/admin/resources/${id}/archive`, {
+    method: "POST",
+  });
 
-  const supabase = createClient();
-  if (!supabase) return { error: "unavailable" };
+  if (!response.ok) {
+    return parseApiError(response, "save_failed");
+  }
 
-  const { error } = await supabase
-    .from("resources")
-    .update({ status: "archived", is_featured: false })
-    .eq("id", id);
+  return {};
+}
 
-  if (error) return { error: error.message };
+export async function unarchiveResourceById(id: string): Promise<{ error?: string }> {
+  const response = await fetch(`/api/admin/resources/${id}/unarchive`, {
+    method: "POST",
+  });
+
+  if (!response.ok) {
+    return parseApiError(response, "save_failed");
+  }
+
   return {};
 }
 
@@ -143,17 +108,21 @@ export async function setResourceFeatured(
   featured: boolean,
   currentlyFeatured = false
 ): Promise<{ error?: string }> {
-  if (!isSupabaseConfigured()) return { error: "unavailable" };
+  const response = await fetch(`/api/admin/resources/${id}/featured`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ featured, currentlyFeatured }),
+  });
 
-  const supabase = createClient();
-  if (!supabase) return { error: "unavailable" };
-
-  if (featured && !(await canFeatureResource(id, currentlyFeatured))) {
-    return { error: "max_featured" };
+  if (!response.ok) {
+    const payload = await parseApiError(response, "save_failed");
+    if (response.status === 409 && payload.error === "max_featured") {
+      return { error: "max_featured" };
+    }
+    return payload;
   }
 
-  const { error } = await supabase.from("resources").update({ is_featured: featured }).eq("id", id);
-
-  if (error) return { error: error.message };
   return {};
 }
+
+export type { ResourceStatus };

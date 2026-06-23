@@ -16,6 +16,7 @@ import { CategoryBadge } from "@/components/resources/category-badge";
 import { StateBadge } from "@/components/resources/state-badge";
 import { StatewideBadge } from "@/components/resources/statewide-badge";
 import { RegionalBadge } from "@/components/resources/regional-badge";
+import { IntakeSignalBadges } from "@/components/resources/intake-signal-badges";
 import { Card, CardDescription, CardHeader } from "@/components/ui/card";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { formatPhone, formatDate, formatWebsiteDisplay, shareResource, cn, pageSectionPadding, pageSectionSubheadingClass } from "@/lib/utils";
@@ -118,6 +119,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
               </button>
             </div>
           </div>
+          <IntakeSignalBadges resource={resource} className="mt-3" />
         </header>
 
         <div className="grid gap-6 lg:grid-cols-3">

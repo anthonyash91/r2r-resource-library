@@ -18,6 +18,7 @@ import {
   isStatewideResource,
 } from "./resource-coverage";
 import { getStateCounties } from "./states/counties";
+import { filterResourcesByIntakeSignals } from "@/lib/intake-signals";
 
 export { MOCK_CATEGORIES };
 
@@ -78,6 +79,9 @@ export function filterMockResources(filters: ResourceFilters): Resource[] {
   if (filters.eligibility) {
     const e = filters.eligibility.toLowerCase();
     results = results.filter((r) => r.eligibility?.toLowerCase().includes(e));
+  }
+  if (filters.intake?.length) {
+    results = filterResourcesByIntakeSignals(results, filters.intake);
   }
   if (filters.recentlyAdded) {
     const cutoff = new Date(Date.now() - 14 * 86400000);

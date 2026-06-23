@@ -1,0 +1,24 @@
+version: "1"
+risk_level: moderate
+
+command_policy:
+  mode: approve-dangerous
+  blocked_patterns:
+    - "rm -rf /"
+    - "git push --force"
+  require_approval:
+    - "npm publish"
+    - "supabase db reset"
+
+scan:
+  # package-lock integrity hashes and SVG embeds can false-positive as AWS keys
+  exclude_paths:
+    - "public/"
+    - "package-lock.json"
+  # R-6675E: scripts/build-ohio-resources.py and enrich-resources.py use csv.DictWriter
+  # open() — no XML parsing; verified false positive (2026-06-22).
+
+docs:
+  - id: security-surfaces
+    path: docs/security-surfaces.md
+    tags: [auth, api, data]

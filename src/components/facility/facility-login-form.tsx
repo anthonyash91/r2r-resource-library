@@ -50,7 +50,9 @@ export function FacilityLoginForm() {
 
     if (!result.ok) {
       const payload = (await result.json().catch(() => ({}))) as { error?: string };
-      setError(payload.error ?? t("auth.signInFailed"));
+      const message = payload.error ?? t("auth.signInFailed");
+      const isCredentialError = /invalid login credentials/i.test(message);
+      setError(isCredentialError ? t("facility.loginStaffHint") : message);
       setLoading(false);
       return;
     }
@@ -135,6 +137,13 @@ export function FacilityLoginForm() {
           <p className="mt-6 text-center text-base">
             <Link href="/facility/forgot-password" className="font-semibold text-primary hover:underline">
               {t("facility.forgotPassword")}
+            </Link>
+          </p>
+
+          <p className="mt-4 text-center text-base text-muted-foreground">
+            {t("auth.staffSignInHint")}{" "}
+            <Link href="/login" className="font-semibold text-primary hover:underline">
+              {t("auth.staffSignInLink")}
             </Link>
           </p>
         </Card>

@@ -9,10 +9,11 @@ import { Card } from "@/components/ui/card";
 import { FacilitySessionFields } from "@/components/facility/facility-session-fields";
 import { useTranslations } from "@/i18n/locale-context";
 import { pageSectionPadding } from "@/lib/utils";
+import { FACILITY_MIN_PASSWORD_LENGTH } from "@/lib/facility/password-policy";
 
 type FacilityStatus = {
   facilityName?: string;
-  pin?: string;
+  pinMasked?: string;
   hasAccount?: boolean;
 };
 
@@ -127,10 +128,10 @@ export function FacilitySignupForm() {
           <p className="mb-8 text-base text-muted-foreground">{t("facility.signupSubtitle")}</p>
 
           <form onSubmit={handleSubmit} className="space-y-5">
-            {facilityStatus.facilityName && facilityStatus.pin ? (
+            {facilityStatus.facilityName && facilityStatus.pinMasked ? (
               <FacilitySessionFields
                 facilityName={facilityStatus.facilityName}
-                pin={facilityStatus.pin}
+                pin={facilityStatus.pinMasked}
               />
             ) : null}
             <Input
@@ -155,6 +156,8 @@ export function FacilitySignupForm() {
               onConfirmPasswordChange={setConfirmPassword}
               passwordLabel={t("auth.password")}
               confirmLabel={t("auth.confirmPassword")}
+              minLength={FACILITY_MIN_PASSWORD_LENGTH}
+              passwordHint={t("facility.passwordHint")}
             />
             <Input
               label={t("facility.recoveryQuestion1Label")}

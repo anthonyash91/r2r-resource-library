@@ -35,7 +35,9 @@ Produce a **CSV-ready dataset** with exactly these columns (header row required)
 id,name,category,region,description,description_es,address,city,phone,email,website,eligibility,eligibility_es,notes,notes_es,hours,tags,services,county,served_counties,coverage
 ```
 
-Also produce a companion **`research_log.csv`** with columns:
+Do **not** add an `intake_signals` column during research. After the CSV is saved, the enrichment script auto-tags each row (`accepts_criminal_record`, `referral_required`, `walk_in_ok`) from `eligibility`, `notes`, and description text. Write those fields clearly so tagging is accurate (e.g. “DOC referral required”, “walk-in clinic”, “justice-involved adults”).
+
+Also produce a companion `**research_log.csv`** with columns:
 
 ```text
 source_url,source_type,date_accessed,confidence,notes,id_reference
@@ -59,25 +61,27 @@ Assign sequential numeric `id` values starting at 1 for the new state batch.
 
 Must match **one** of these library categories (use exact name or slug):
 
-| Category | Slug | Include |
-|----------|------|---------|
-| State Agency | `state-agency` | DOC/DCR, reentry division, statewide portals, official hotlines |
-| Housing | `housing` | Transitional, recovery, sober living, emergency shelter with reentry focus |
-| Employment | `employment` | Job training, fair-chance hiring, workforce centers, ban-the-box programs |
-| Healthcare | `healthcare` | Medical, mental health, Medicaid navigation |
-| Substance Use Treatment | `substance-use-treatment` | SUD treatment, MAT, recovery residences |
-| Legal Aid | `legal-aid` | Expungement, record sealing, civil legal aid |
-| Food & Nutrition | `food-nutrition` | Food banks, SNAP application help |
-| ID & Documentation | `id-documentation` | ID clinics, birth certificate/vital records help |
-| Financial Assistance | `financial-assistance` | Benefits enrollment, emergency funds, financial coaching |
-| Transportation | `transportation` | Bus passes, rides to appointments/work |
-| Family & Children | `family-children` | Family reunification, children of incarcerated parents |
-| Peer Support | `peer-support` | Certified peer specialists, recovery coaches, mentor programs |
-| Education | `education` | GED, HiSET, vocational training, college reentry programs |
-| Veterans | `veterans` | Justice-involved veteran services |
-| Basic Needs | `basic-needs` | Clothing, hygiene kits, release bags |
-| Probation & Parole | `probation-parole` | Supervision offices, RSCs, community corrections contracted programs |
-| Reentry Organizations | `reentry-organizations` | Nonprofit coalitions, CBO reentry navigators, local reentry councils |
+
+| Category                | Slug                      | Include                                                                    |
+| ----------------------- | ------------------------- | -------------------------------------------------------------------------- |
+| State Agency            | `state-agency`            | DOC/DCR, reentry division, statewide portals, official hotlines            |
+| Housing                 | `housing`                 | Transitional, recovery, sober living, emergency shelter with reentry focus |
+| Employment              | `employment`              | Job training, fair-chance hiring, workforce centers, ban-the-box programs  |
+| Healthcare              | `healthcare`              | Medical, mental health, Medicaid navigation                                |
+| Substance Use Treatment | `substance-use-treatment` | SUD treatment, MAT, recovery residences                                    |
+| Legal Aid               | `legal-aid`               | Expungement, record sealing, civil legal aid                               |
+| Food & Nutrition        | `food-nutrition`          | Food banks, SNAP application help                                          |
+| ID & Documentation      | `id-documentation`        | ID clinics, birth certificate/vital records help                           |
+| Financial Assistance    | `financial-assistance`    | Benefits enrollment, emergency funds, financial coaching                   |
+| Transportation          | `transportation`          | Bus passes, rides to appointments/work                                     |
+| Family & Children       | `family-children`         | Family reunification, children of incarcerated parents                     |
+| Peer Support            | `peer-support`            | Certified peer specialists, recovery coaches, mentor programs              |
+| Education               | `education`               | GED, HiSET, vocational training, college reentry programs                  |
+| Veterans                | `veterans`                | Justice-involved veteran services                                          |
+| Basic Needs             | `basic-needs`             | Clothing, hygiene kits, release bags                                       |
+| Probation & Parole      | `probation-parole`        | Supervision offices, RSCs, community corrections contracted programs       |
+| Reentry Organizations   | `reentry-organizations`   | Nonprofit coalitions, CBO reentry navigators, local reentry councils       |
+
 
 If nothing fits, use the closest match and explain in `research_log`.
 
@@ -111,16 +115,16 @@ Write `description_es` as a natural Spanish translation, not machine-literal if 
 
 ### `address`, `city` (when applicable)
 
-- **`address`**: Street address of the **primary office or main intake location** only.
-- **`city`**: City name.
+- `**address`**: Street address of the **primary office or main intake location** only.
+- `**city`**: City name.
 - For **statewide phone/online-only** resources, leave both blank unless a headquarters address is clearly the public contact point.
 - Do not put full service area in `address`.
 
 ### `phone`, `email`, `website`
 
-- **`phone`**: Main public intake/referral line. Use consistent formatting; toll-free acceptable.
-- **`email`**: Public contact email if published; otherwise blank.
-- **`website`**: Canonical HTTPS URL for the **specific program page**, not a generic parent org homepage when a dedicated program URL exists.
+- `**phone`**: Main public intake/referral line. Use consistent formatting; toll-free acceptable.
+- `**email**`: Public contact email if published; otherwise blank.
+- `**website**`: Canonical HTTPS URL for the **specific program page**, not a generic parent org homepage when a dedicated program URL exists.
 - Verify links are live.
 
 ### `eligibility` / `eligibility_es`
@@ -199,37 +203,32 @@ Rules:
 
 One of:
 
-- **`statewide`** — Serves all of {STATE} (hotlines, state agencies, online portals)
-- **`multi`** — Serves a defined list of 2+ counties (`served_counties` required)
-- **`single`** — Serves one county only (`county` required; `served_counties` optional)
+- `**statewide`** — Serves all of {STATE} (hotlines, state agencies, online portals)
+- `**multi**` — Serves a defined list of 2+ counties (`served_counties` required)
+- `**single**` — Serves one county only (`county` required; `served_counties` optional)
 
 ---
 
 ## Content quality rules (critical)
 
 1. **Separate the three narrative fields:**
-   - `description` = what it is
-   - `eligibility` = who can use it
-   - `notes` = how to access it / practical tips
-
+  - `description` = what it is
+  - `eligibility` = who can use it
+  - `notes` = how to access it / practical tips
 2. **Distinguish direct service vs referral hub:**
-   - Coalitions, councils, and portals must say clearly if they **do not** provide direct services.
-
+  - Coalitions, councils, and portals must say clearly if they **do not** provide direct services.
 3. **Criminal justice specificity:**
-   - Prefer programs that mention reentry, justice-involved, parole, probation, or fair chance.
-   - Note exclusions (e.g. certain offense types, active warrants policy) in `eligibility`.
-
+  - Prefer programs that mention reentry, justice-involved, parole, probation, or fair chance.
+  - Note exclusions (e.g. certain offense types, active warrants policy) in `eligibility`.
 4. **No duplicate entries:**
-   - Same org + same location + same program = one row.
-   - Separate rows for distinct programs at the same org (e.g. housing vs employment track).
-
+  - Same org + same location + same program = one row.
+  - Separate rows for distinct programs at the same org (e.g. housing vs employment track).
 5. **Bilingual:**
-   - Provide `description_es`, `eligibility_es`, `notes_es` for every row when possible.
-   - Flag rows missing Spanish in `research_log`.
-
+  - Provide `description_es`, `eligibility_es`, `notes_es` for every row when possible.
+  - Flag rows missing Spanish in `research_log`.
 6. **Accuracy over completeness:**
-   - Blank field > wrong field.
-   - Include `source_url` for every row in research log.
+  - Blank field > wrong field.
+  - Include `source_url` for every row in research log.
 
 ---
 
@@ -240,23 +239,19 @@ One of:
 Search for and document first:
 
 1. **Department of Corrections / Community Corrections**
-   - `{STATE} department of corrections reentry`
-   - `{STATE} probation parole reentry services`
-   - `{STATE} reentry service centers` / transitional centers
-
+  - `{STATE} department of corrections reentry`
+  - `{STATE} probation parole reentry services`
+  - `{STATE} reentry service centers` / transitional centers
 2. **Official reentry portals & toolkits**
-   - `{STATE} second chance portal`, `{STATE} reentry resource guide PDF`
-
+  - `{STATE} second chance portal`, `{STATE} reentry resource guide PDF`
 3. **Statewide hotlines**
-   - Substance use helpline, 211, veterans crisis, legal aid intake
-
+  - Substance use helpline, 211, veterans crisis, legal aid intake
 4. **State reentry council / collaborative network**
-   - Regional reentry councils affiliated with a statewide association
-
+  - Regional reentry councils affiliated with a statewide association
 5. **Benefits & ID**
-   - `{STATE} Medicaid application help justice involved`
-   - `{STATE} SNAP employment training`
-   - `{STATE} ID for people leaving prison`
+  - `{STATE} Medicaid application help justice involved`
+  - `{STATE} SNAP employment training`
+  - `{STATE} ID for people leaving prison`
 
 ### Phase 2 — Major metros & correctional hubs
 
@@ -347,13 +342,15 @@ python3 scripts/enrich-resources.py --check-only data/{state-slug}-resources.csv
 
 Or manually confirm:
 
-| Metric | Target |
-|--------|--------|
-| Median `description` length | ≥ 350 characters |
-| Rows with generic eligibility | 0 |
-| Rows with “Contact program for current intake” in description | 0 |
-| Rows missing `description_es` | 0 |
-| `services` with only generic placeholders | 0 |
+
+| Metric                                                        | Target           |
+| ------------------------------------------------------------- | ---------------- |
+| Median `description` length                                   | ≥ 350 characters |
+| Rows with generic eligibility                                 | 0                |
+| Rows with “Contact program for current intake” in description | 0                |
+| Rows missing `description_es`                                 | 0                |
+| `services` with only generic placeholders                     | 0                |
+
 
 If metrics fail, **expand weak rows in place** before marking the state complete. Optional `data/enrichments/{state}-*.json` files are for **targeted corrections only**, not bulk first-pass content.
 
@@ -427,15 +424,17 @@ site:.gov "{STATE}" reentry
 
 ## Expansive coverage standard
 
-Every state dataset should be **library-ready at depth**, not a thin coalition directory. Use **`data/resources.csv` (Kentucky)** as the density reference for mid-size states.
+Every state dataset should be **library-ready at depth**, not a thin coalition directory. Use `**data/resources.csv` (Kentucky)** as the density reference for mid-size states.
 
 ### Row-count targets
 
-| State size | Target resources | Notes |
-|------------|------------------|-------|
-| Mid-size (e.g. KY, OH, IN, TN) | **150–200** | Match Kentucky reference density (~190 rows) |
-| Large (CA, TX, FL) | **250–400+** | Scale metros and rural regions proportionally |
-| Small (e.g. DE, RI, VT) | **75–120** | Still require program-level depth in all categories |
+
+| State size                     | Target resources | Notes                                               |
+| ------------------------------ | ---------------- | --------------------------------------------------- |
+| Mid-size (e.g. KY, OH, IN, TN) | **150–200**      | Match Kentucky reference density (~190 rows)        |
+| Large (CA, TX, FL)             | **250–400+**     | Scale metros and rural regions proportionally       |
+| Small (e.g. DE, RI, VT)        | **75–120**       | Still require program-level depth in all categories |
+
 
 **75 rows is a floor for discovery, not a completion target.** If category minimums below are unmet, keep researching.
 
@@ -443,25 +442,27 @@ Every state dataset should be **library-ready at depth**, not a thin coalition d
 
 Count only **direct-service or specialty program** rows toward these minimums. Reentry coalitions, councils, and referral-only portals **do not** count toward housing, healthcare, employment, education, veterans, or basic-needs minimums (they belong in `reentry-organizations`).
 
-| Category slug | Minimum rows | Examples |
-|---------------|-------------:|----------|
-| `housing` | 20 | Transitional housing, recovery residences, reentry shelter programs |
-| `healthcare` | 20 | FQHCs, mental health clinics, Medicaid navigators |
-| `employment` | 15 | Workforce centers, CEO, Goodwill reentry, fair-chance training |
-| `probation-parole` | 10 | Field offices, RSCs, community corrections contractors |
-| `legal-aid` | 12 | Regional legal aid + expungement clinics |
-| `education` | 12 | GED/HiSET sites, adult diploma, vocational reentry |
-| `veterans` | 10 | VJO specialists, VSOs, HCRV, veteran treatment courts |
-| `basic-needs` | 10 | Clothing closets, release bags, hygiene programs |
-| `substance-use-treatment` | 6 | MAT, residential SUD, ATR providers |
-| `financial-assistance` | 6 | Benefits enrollment, emergency assistance |
-| `food-nutrition` | 4 | Regional food banks + SNAP help |
-| `id-documentation` | 4 | ID clinics, vital records, BMV guidance |
-| `peer-support` | 4 | Certified peer specialists, mentor programs |
-| `transportation` | 3 | Reduced-fare transit, ride programs |
-| `family-children` | 3 | Reunification, children of incarcerated parents |
-| `state-agency` | 4 | DOC, benefits portals, official hotlines |
-| `reentry-organizations` | 5–40 | Coalitions + CBO navigators (deduplicated) |
+
+| Category slug             | Minimum rows | Examples                                                            |
+| ------------------------- | ------------ | ------------------------------------------------------------------- |
+| `housing`                 | 20           | Transitional housing, recovery residences, reentry shelter programs |
+| `healthcare`              | 20           | FQHCs, mental health clinics, Medicaid navigators                   |
+| `employment`              | 15           | Workforce centers, CEO, Goodwill reentry, fair-chance training      |
+| `probation-parole`        | 10           | Field offices, RSCs, community corrections contractors              |
+| `legal-aid`               | 12           | Regional legal aid + expungement clinics                            |
+| `education`               | 12           | GED/HiSET sites, adult diploma, vocational reentry                  |
+| `veterans`                | 10           | VJO specialists, VSOs, HCRV, veteran treatment courts               |
+| `basic-needs`             | 10           | Clothing closets, release bags, hygiene programs                    |
+| `substance-use-treatment` | 6            | MAT, residential SUD, ATR providers                                 |
+| `financial-assistance`    | 6            | Benefits enrollment, emergency assistance                           |
+| `food-nutrition`          | 4            | Regional food banks + SNAP help                                     |
+| `id-documentation`        | 4            | ID clinics, vital records, BMV guidance                             |
+| `peer-support`            | 4            | Certified peer specialists, mentor programs                         |
+| `transportation`          | 3            | Reduced-fare transit, ride programs                                 |
+| `family-children`         | 3            | Reunification, children of incarcerated parents                     |
+| `state-agency`            | 4            | DOC, benefits portals, official hotlines                            |
+| `reentry-organizations`   | 5–40         | Coalitions + CBO navigators (deduplicated)                          |
+
 
 All **17 category slugs** must be represented. Compare your counts to Kentucky before marking complete.
 
@@ -500,10 +501,11 @@ After research:
 
 1. Save as `data/{state-slug}-resources.csv` with **publication-ready content** (see standard above—do not ship thin rows).
 2. Optional quality gate: `python3 scripts/enrich-resources.py --check-only data/{state-slug}-resources.csv`
-3. If the gate fails, expand weak rows in the CSV or run:  
-   `python3 scripts/enrich-resources.py data/{state-slug}-resources.csv --write-json data/enrichments/{state}-enriched.json`
-4. Generate seed SQL:  
-   `RESOURCES_DEFAULT_STATE="{STATE}" RESOURCES_UUID_PREFIX=d3000001 RESOURCES_SEED_OUTPUT=supabase/seed-{state-slug}-resources.sql RESOURCES_INCLUDE_CATEGORIES=false npx tsx scripts/generate-resources-seed.ts data/{state-slug}-resources.csv`
+3. If the gate fails, expand weak rows in the CSV or run:
+  `python3 scripts/enrich-resources.py data/{state-slug}-resources.csv --write-json data/enrichments/{state}-enriched.json`  
+   This pass also fills `**intake_signals`** (`accepts_criminal_record`, `referral_required`, `walk_in_ok`) from the enriched eligibility/notes text.
+4. Generate seed SQL:
+  `RESOURCES_DEFAULT_STATE="{STATE}" RESOURCES_UUID_PREFIX=d3000001 RESOURCES_SEED_OUTPUT=supabase/seed-{state-slug}-resources.sql RESOURCES_INCLUDE_CATEGORIES=false npx tsx scripts/generate-resources-seed.ts data/{state-slug}-resources.csv`
 5. Load seed in Supabase SQL Editor (or `npm run db:push:{state}` with service role key).
 6. Admin review for category assignment, coverage, and Spanish quality before publish.
 
@@ -530,6 +532,13 @@ See also:
 > Phase 4: program-level expansion until **150–200 total rows** and **category minimums** match `data/resources.csv` (Kentucky reference).
 > Phase 5: verification pass + **publication-ready content** self-check (descriptions enriched on first pass—no thin CSV).
 >
+> **Post-research pipeline (required before seed/deploy):**
+>
+> 1. `python3 scripts/enrich-resources.py --check-only data/{state-slug}-resources.csv` — quality gate
+> 2. If needed: `python3 scripts/enrich-resources.py data/{state-slug}-resources.csv --write-json data/enrichments/{state}-enriched.json` — expands weak rows **and auto-fills `intake_signals`**
+> 3. Generate seed SQL + load in Supabase; run `npm run db:push:intake` if DB already exists
+>
 > Output: `data/{state-slug}-resources.csv` + `data/{state-slug}-research-log.csv`.
 > Flag uncertain rows in the log; do not fabricate eligibility or hours.
 > Compare final category counts to Kentucky before marking complete.
+

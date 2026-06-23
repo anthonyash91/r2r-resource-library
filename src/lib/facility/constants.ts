@@ -8,6 +8,7 @@ export const FACILITY_RESET_MAX_AGE = 15 * 60;
 export interface FacilitySessionData {
   facilityId: string;
   pinHash: string;
-  pin: string;
+  /** Mask length for UI only — never stores the PIN value. */
+  pinLength: number;
   expiresAt: number;
 }

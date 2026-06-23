@@ -112,7 +112,7 @@ export function FeaturedResourcesPicker({ resources }: FeaturedResourcesPickerPr
                 <div className="min-w-0">
                   <div className="mb-1 flex flex-wrap items-center gap-2">
                     {resource.category && <CategoryBadge category={resource.category} />}
-                    <Badge variant="warning">{t("admin.featured")}</Badge>
+                    <Badge variant="warning" icon={Star}>{t("admin.featured")}</Badge>
                   </div>
                   <p className="truncate font-semibold">{resource.name}</p>
                   <p className="truncate text-sm text-muted-foreground">
@@ -121,13 +121,13 @@ export function FeaturedResourcesPicker({ resources }: FeaturedResourcesPickerPr
                 </div>
                 <Button
                   type="button"
-                  variant="ghost"
-                  size="sm"
+                  variant="soft-destructive"
+                  size="badge"
                   onClick={() => handleRemove(resource.id)}
                   loading={busyId === resource.id}
                   aria-label={t("admin.removeFeatured")}
                 >
-                  <X className="h-4 w-4" aria-hidden="true" />
+                  <X className="h-3.5 w-3.5" aria-hidden="true" />
                   {t("common.remove")}
                 </Button>
               </li>

@@ -20,7 +20,7 @@ export function FacilityInactivityGuard({ children }: { children: React.ReactNod
 
   const scheduleSignOut = useCallback(() => {
     clearTimer();
-    if (!facilityModeRef.current || !user) return;
+    if (!facilityModeRef.current || !user || user.role === "admin") return;
 
     timeoutRef.current = setTimeout(() => {
       void signOut();

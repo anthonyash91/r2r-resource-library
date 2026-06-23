@@ -1,0 +1,359 @@
+{
+  "1": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "2": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "7": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "9": {
+    "intake_signals": "referral_required"
+  },
+  "12": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "13": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "31": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "32": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "33": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "34": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "35": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "36": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "37": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "38": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "39": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "40": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "41": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "42": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "43": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "44": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "45": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "46": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "47": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "53": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "54": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "55": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "56": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "57": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "58": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "59": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "60": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "61": {
+    "intake_signals": "walk_in_ok"
+  },
+  "62": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "63": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "64": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "65": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "67": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "68": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "69": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "72": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "73": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "76": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "77": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "78": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "80": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "81": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "82": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "84": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "85": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "90": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "91": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "92": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "93": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "94": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "95": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "96": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "98": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "99": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "101": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "102": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "103": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "105": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "106": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "107": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "108": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "109": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "110": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "111": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "113": {
+    "intake_signals": ""
+  },
+  "116": {
+    "intake_signals": ""
+  },
+  "118": {
+    "intake_signals": ""
+  },
+  "121": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "123": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "124": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "125": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "126": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "127": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "128": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "130": {
+    "intake_signals": "walk_in_ok"
+  },
+  "131": {
+    "intake_signals": "walk_in_ok"
+  },
+  "132": {
+    "intake_signals": "walk_in_ok"
+  },
+  "133": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "134": {
+    "intake_signals": "walk_in_ok"
+  },
+  "136": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "138": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "139": {
+    "intake_signals": "walk_in_ok"
+  },
+  "151": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "152": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "153": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "154": {
+    "intake_signals": "walk_in_ok"
+  },
+  "158": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "159": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "160": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "161": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "163": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "164": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "165": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "166": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "167": {
+    "intake_signals": "referral_required"
+  },
+  "168": {
+    "intake_signals": "referral_required"
+  },
+  "169": {
+    "intake_signals": "referral_required"
+  },
+  "170": {
+    "intake_signals": "referral_required"
+  },
+  "171": {
+    "intake_signals": "referral_required"
+  },
+  "172": {
+    "intake_signals": "referral_required"
+  },
+  "173": {
+    "intake_signals": "referral_required"
+  },
+  "174": {
+    "intake_signals": "referral_required"
+  },
+  "175": {
+    "intake_signals": "referral_required"
+  },
+  "176": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "177": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "178": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "179": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "181": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "182": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "183": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "184": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "185": {
+    "intake_signals": ""
+  },
+  "186": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "187": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "188": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  }
+}

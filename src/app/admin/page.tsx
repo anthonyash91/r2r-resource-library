@@ -2,6 +2,7 @@ import { getAnalytics } from "@/lib/data";
 import { Card, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import { Bookmark, Eye, FolderOpen, MapPin } from "lucide-react";
 import { getServerTranslator } from "@/i18n/server";
 
 export default async function AdminDashboardPage() {
@@ -61,7 +62,7 @@ export default async function AdminDashboardPage() {
             {analytics.resourcesByState.map(({ state, count }) => (
               <li key={state} className="flex items-center justify-between text-base">
                 <span>{state}</span>
-                <Badge variant="primary">{count}</Badge>
+                <Badge variant="primary" icon={MapPin}>{count}</Badge>
               </li>
             ))}
           </ul>
@@ -73,7 +74,7 @@ export default async function AdminDashboardPage() {
             {analytics.resourcesByCategory.map(({ category, count }) => (
               <li key={category} className="flex items-center justify-between text-base">
                 <span>{category}</span>
-                <Badge variant="secondary">{count}</Badge>
+                <Badge variant="secondary" icon={FolderOpen}>{count}</Badge>
               </li>
             ))}
           </ul>
@@ -94,7 +95,7 @@ export default async function AdminDashboardPage() {
                     className="flex items-center justify-between text-base hover:text-primary"
                   >
                     <span className="font-medium">{r.name}</span>
-                    <Badge>
+                    <Badge icon={Eye}>
                       {r.view_count} {t("admin.views")}
                     </Badge>
                   </Link>
@@ -117,7 +118,7 @@ export default async function AdminDashboardPage() {
                     className="flex items-center justify-between text-base hover:text-primary"
                   >
                     <span className="font-medium">{r.name}</span>
-                    <Badge variant="success">
+                    <Badge variant="success" icon={Bookmark}>
                       {r.save_count} {t("admin.saves")}
                     </Badge>
                   </Link>

@@ -6,11 +6,25 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Modal } from "@/components/ui/modal";
+import {
+  Ban,
+  Building2,
+  CheckCircle,
+  CircleOff,
+  KeyRound,
+  Mail,
+  Shield,
+  Trash2,
+  User,
+  UserCheck,
+  X,
+} from "lucide-react";
 import type { AdminUserListItem } from "@/types";
 import { formatDate } from "@/lib/utils";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/client";
 import { useAuth } from "@/lib/auth-context";
 import { isFacilityAuthEmail } from "@/lib/facility/auth-email";
+import { FACILITY_MIN_PASSWORD_LENGTH } from "@/lib/facility/password-policy";
 import { useTranslations } from "@/i18n/locale-context";
 import { useConfirmDialog } from "@/components/ui/confirm-dialog";
 
@@ -208,8 +222,13 @@ export function AdminUsersClient({ initialUsers }: { initialUsers: AdminUserList
               <div>
                 <div className="mb-1 flex flex-wrap gap-2">
                   <h2 className="text-lg font-bold">{user.full_name || t("admin.noName")}</h2>
-                  <Badge variant={user.role === "admin" ? "warning" : "primary"}>{user.role}</Badge>
-                  <Badge variant={user.is_active ? "success" : "default"}>
+                  <Badge variant={user.role === "admin" ? "warning" : "primary"} icon={user.role === "admin" ? Shield : User}>
+                    {user.role}
+                  </Badge>
+                  <Badge
+                    variant={user.is_active ? "success" : "default"}
+                    icon={user.is_active ? CheckCircle : CircleOff}
+                  >
                     {user.is_active ? t("common.active") : t("admin.inactive")}
                   </Badge>
                 </div>
@@ -229,42 +248,49 @@ export function AdminUsersClient({ initialUsers }: { initialUsers: AdminUserList
                   {user.state && ` · ${user.state}`}
                 </p>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 {isFacilityUser ? (
                   <Button
-                    variant="outline"
-                    size="sm"
+                    variant="soft-primary"
+                    size="badge"
                     onClick={() => openFacilityPinReset(user)}
                     loading={busyId === user.id}
                   >
+                    <KeyRound className="h-3.5 w-3.5" aria-hidden="true" />
                     {t("admin.resetPin")}
                   </Button>
                 ) : email ? (
                   <Button
-                    variant="outline"
-                    size="sm"
+                    variant="soft-primary"
+                    size="badge"
                     onClick={() => resetPassword(email)}
                     loading={busyId === user.email}
                   >
+                    <Mail className="h-3.5 w-3.5" aria-hidden="true" />
                     {t("admin.resetPassword")}
                   </Button>
                 ) : null}
                 <Button
-                  variant={user.is_active ? "ghost" : "primary"}
-                  size="sm"
+                  variant={user.is_active ? "soft-warning" : "soft-success"}
+                  size="badge"
                   onClick={() => toggleActive(user)}
                   loading={busyId === user.id}
                 >
+                  {user.is_active ? (
+                    <Ban className="h-3.5 w-3.5" aria-hidden="true" />
+                  ) : (
+                    <UserCheck className="h-3.5 w-3.5" aria-hidden="true" />
+                  )}
                   {user.is_active ? t("admin.disable") : t("admin.enable")}
                 </Button>
                 {canDelete ? (
                   <Button
-                    variant="ghost"
-                    size="sm"
-                    className="text-destructive hover:text-destructive"
+                    variant="soft-destructive"
+                    size="badge"
                     onClick={() => deleteUser(user)}
                     loading={busyId === user.id}
                   >
+                    <Trash2 className="h-3.5 w-3.5" aria-hidden="true" />
                     {t("admin.deleteUser")}
                   </Button>
                 ) : null}
@@ -300,7 +326,7 @@ export function AdminUsersClient({ initialUsers }: { initialUsers: AdminUserList
               onChange={(e) => setNewPassword(e.target.value)}
               hint={t("admin.resetPinPasswordHint")}
               autoComplete="new-password"
-              minLength={8}
+              minLength={FACILITY_MIN_PASSWORD_LENGTH}
               required
             />
             {resetPinError ? (
@@ -316,9 +342,11 @@ export function AdminUsersClient({ initialUsers }: { initialUsers: AdminUserList
               onClick={closeFacilityPinReset}
               disabled={busyId === facilityResetUser?.id}
             >
+              <X className="h-4 w-4" aria-hidden="true" />
               {t("common.cancel")}
             </Button>
             <Button type="submit" loading={busyId === facilityResetUser?.id}>
+              <KeyRound className="h-4 w-4" aria-hidden="true" />
               {t("admin.resetPin")}
             </Button>
           </div>

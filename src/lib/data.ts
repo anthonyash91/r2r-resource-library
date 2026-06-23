@@ -52,6 +52,7 @@ import {
   isStatewideResource,
 } from "@/lib/resource-coverage";
 import { getStateCounties } from "@/lib/states/counties";
+import { filterResourcesByIntakeSignals } from "@/lib/intake-signals";
 
 export async function getCategories(): Promise<Category[]> {
   const locale = await getServerLocale();
@@ -133,6 +134,9 @@ export async function getResources(filters: ResourceFilters = {}): Promise<Resou
   if (filters.eligibility) {
     const e = filters.eligibility.toLowerCase();
     results = results.filter((r) => r.eligibility?.toLowerCase().includes(e));
+  }
+  if (filters.intake?.length) {
+    results = filterResourcesByIntakeSignals(results, filters.intake);
   }
   return results;
 }

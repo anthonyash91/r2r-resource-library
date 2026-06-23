@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Plus, Trash2 } from "lucide-react";
+import { Plus, Trash2, Send, X, CheckCircle, Clock, Pin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
@@ -163,9 +163,11 @@ export function AdminAnnouncementsClient({ initial }: { initial: Announcement[] 
           </label>
           <div className="flex gap-2">
             <Button onClick={handleSave} loading={saving}>
+              <Send className="h-4 w-4" aria-hidden="true" />
               {saving ? t("admin.saving") : t("admin.publish")}
             </Button>
             <Button variant="outline" onClick={() => setShowForm(false)}>
+              <X className="h-4 w-4" aria-hidden="true" />
               {t("common.cancel")}
             </Button>
           </div>
@@ -183,11 +185,13 @@ export function AdminAnnouncementsClient({ initial }: { initial: Announcement[] 
             <Card key={ann.id} className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div>
                 <div className="mb-2 flex flex-wrap gap-2">
-                  <Badge variant={active ? "success" : "default"}>
+                  <Badge variant={active ? "success" : "default"} icon={active ? CheckCircle : Clock}>
                     {active ? t("admin.published") : t("admin.announcementExpired")}
                   </Badge>
                   {ann.is_pinned && active ? (
-                    <Badge variant="warning">{t("admin.pinHomepage")}</Badge>
+                    <Badge variant="warning" icon={Pin}>
+                      {t("admin.pinHomepage")}
+                    </Badge>
                   ) : null}
                 </div>
                 <h2 className="text-lg font-bold">{ann.title}</h2>
@@ -196,8 +200,13 @@ export function AdminAnnouncementsClient({ initial }: { initial: Announcement[] 
                   <p className="mt-2 text-sm text-muted-foreground">{expirationLabel}</p>
                 ) : null}
               </div>
-              <Button variant="ghost" size="sm" onClick={() => handleDelete(ann)} loading={busyId === ann.id}>
-                <Trash2 className="h-4 w-4" aria-hidden="true" />
+              <Button
+                variant="soft-destructive"
+                size="badge"
+                onClick={() => handleDelete(ann)}
+                loading={busyId === ann.id}
+              >
+                <Trash2 className="h-3.5 w-3.5" aria-hidden="true" />
                 {t("common.remove")}
               </Button>
             </Card>

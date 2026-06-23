@@ -8,6 +8,10 @@
  */
 import { readFileSync, writeFileSync } from "fs";
 import { resolve } from "path";
+import {
+  classifyIntakeSignalsHeuristic,
+  serializeIntakeSignals,
+} from "./lib/classify-intake-signals";
 
 const CSV_PATH = resolve(process.cwd(), process.argv[3] ?? "data/resources.csv");
 const ENRICHMENT_PATH = resolve(process.cwd(), process.argv[2] ?? "data/enrichments/batch-01.json");
@@ -31,6 +35,7 @@ const ALL_COLUMNS = [
   "hours",
   "tags",
   "services",
+  "intake_signals",
   "county",
   "served_counties",
   "coverage",
@@ -132,6 +137,19 @@ const OVERWRITE_FIELDS = new Set<Column>([
   "coverage",
 ]);
 
+function applyIntakeSignals(record: Record<string, string>) {
+  const signals = classifyIntakeSignalsHeuristic({
+    name: record.name,
+    category: record.category,
+    description: record.description,
+    eligibility: record.eligibility,
+    notes: record.notes,
+    services: record.services,
+    tags: record.tags,
+  });
+  record.intake_signals = serializeIntakeSignals(signals);
+}
+
 let updated = 0;
 for (const record of records) {
   const patch = enrichments[record.id];
@@ -149,9 +167,17 @@ for (const record of records) {
   updated++;
 }
 
+let intakeUpdated = 0;
+for (const record of records) {
+  const before = record.intake_signals ?? "";
+  applyIntakeSignals(record);
+  if (record.intake_signals !== before) intakeUpdated++;
+}
+
 const outRows = [header, ...records.map((record) => header.map((col) => record[col] ?? ""))];
 writeFileSync(CSV_PATH, serializeCsv(outRows));
 
 console.log(`Applied enrichments to ${updated} resource(s) in ${CSV_PATH}`);
+console.log(`Intake signals refreshed on ${records.length} row(s) (${intakeUpdated} changed)`);
 console.log(`Source: ${ENRICHMENT_PATH}`);
 console.log("Next: regenerate seed SQL for the target state CSV.");

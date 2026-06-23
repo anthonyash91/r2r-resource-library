@@ -2,11 +2,12 @@
 -- Source file: data/resources.csv
 -- State: Kentucky
 -- UUID prefix: d1000001
--- Generated: 2026-06-21T08:18:54.191Z
+-- Generated: 2026-06-23T02:50:24.942Z
 -- Run after: supabase/migrations/001_initial_schema.sql
 --            supabase/migrations/002_add_description_es.sql
 --            supabase/migrations/004_add_eligibility_es_and_notes.sql
 --            supabase/migrations/005_add_served_counties.sql
+--            supabase/migrations/014_add_intake_signals.sql
 -- Regenerate: RESOURCES_DEFAULT_STATE="Kentucky" RESOURCES_UUID_PREFIX="d1000001" RESOURCES_SEED_OUTPUT="supabase/seed-resources.sql" npx tsx scripts/generate-resources-seed.ts data/resources.csv
 
 INSERT INTO categories (id, name, slug, description, icon, sort_order, is_active) VALUES
@@ -39,7 +40,7 @@ INSERT INTO resources (
   state, county, city, address, phone, website, email, hours,
   eligibility, eligibility_es, notes, notes_es,
   served_counties, coverage,
-  services, tags, is_featured, status
+  services, tags, intake_signals, is_featured, status
 ) VALUES
   -- source id: 1
   (
@@ -64,6 +65,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Individualized reentry planning', 'Regional reentry coordinator referrals', 'Reentry Service Center oversight', 'Community partnership navigation', 'Pre-release programming coordination'],
     ARRAY['statewide', 'reentry', 'DOC', 'RSC', 'probation', 'parole', 'frankfort'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -90,6 +92,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Online resource navigation', 'Employment and benefits links', 'Recovery resource referrals', 'Expungement information'],
     ARRAY['statewide', 'online', 'second-chance', 'benefits', 'employment', 'housing'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -116,6 +119,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Substance use screening', 'Treatment referrals', 'Family support', 'FindHelpNow provider connections'],
     ARRAY['statewide', 'substance-use', 'hotline', 'treatment-referral', 'recovery', 'operation-unite'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -142,6 +146,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Resource navigation', 'Community partner referrals', 'Scholarship information', 'Reentry coalition meetings'],
     ARRAY['bowling-green', 'warren-county', 'reentry-council', 'southern-kentucky', 'networking'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -168,6 +173,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Regional partner networking', 'Reentry information sharing', 'Community coordination'],
     ARRAY['ashland', 'boyd-county', 'fivco', 'reentry-council', 'northeast-kentucky'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -194,6 +200,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Transitional housing', 'Employment preparation', 'MRT classes', 'Substance abuse programming', 'Community referrals'],
     ARRAY['louisville', 'jefferson-county', 'RSC', 'transitional-housing', 'DOC-contract'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -220,6 +227,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Transitional housing', 'Addiction recovery programming', 'Reentry support', 'DOC supervision coordination'],
     ARRAY['louisville', 'RSC', 'transitional-housing', 'recovery', 'DOC-contract', 'healing-place'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -246,6 +254,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Residential reentry housing', 'Employment assistance', 'Substance abuse treatment', 'Job training', 'Family reunification support'],
     ARRAY['louisville', 'halfway-house', 'reentry', 'federal', 'state', 'dismas'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -272,6 +281,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Halfway house housing', 'Reentry programming', 'Employment support', 'Substance abuse programming'],
     ARRAY['louisville', 'halfway-house', 'reentry', 'portland', 'dismas'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -298,6 +308,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Residential treatment', '12-step recovery', 'Individual and group counseling', 'GED and employment readiness', 'Life skills training'],
     ARRAY['louisville', 'liberty-place', 'substance-use', 'men', 'halfway-back', 'recovery'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -324,6 +335,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Residential substance use treatment', 'Medication-assisted treatment', 'Family-centered care', 'Parenting classes', 'Reunification support', 'Life skills and vocational training'],
     ARRAY['louisville', 'women', 'children', 'pregnancy', 'substance-use', 'family-treatment', 'VOA'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -350,6 +362,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency men''s shelter', 'Women and children''s day shelter', 'LifeChange addiction recovery', 'ID and mailing address assistance', 'Church partnerships'],
     ARRAY['louisville', 'homeless', 'shelter', 'recovery', 'lifechange', 'faith-based', 'men'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -376,6 +389,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Transitional housing', 'Recovery housing', 'Case management', 'Job training referrals', 'Mental health counseling'],
     ARRAY['louisville', 'transitional-housing', 'recovery', 'west-end', 'small-program'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -402,6 +416,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency shelter bed reservations', 'Homelessness prevention referrals', 'Housing navigation connections', 'Social service referrals'],
     ARRAY['louisville', 'homeless', 'shelter', 'coordinated-entry', 'emergency-housing', 'reentry'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -428,6 +443,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Residential substance use treatment', 'Outpatient treatment', 'Women and children''s housing', 'GED assistance', 'Employment support', 'Domestic violence counseling', 'Early childhood education'],
     ARRAY['lexington', 'women', 'children', 'RSC', 'DOC-contract', 'substance-use', 'recovery'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -454,6 +470,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Residential recovery program', 'Recovery Dynamics curriculum', '12-step programming', 'Life skills training', 'Employment readiness', 'Safe Off the Streets entry'],
     ARRAY['lexington', 'men', 'RSC', 'DOC-contract', 'recovery', 'substance-use', 'long-term'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -480,6 +497,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Women''s residential recovery', 'Trauma-informed care', 'Recovery Dynamics curriculum', 'Employment readiness', 'Health clinic access', 'Peer support'],
     ARRAY['lexington', 'women', 'RSC', 'DOC-contract', 'recovery', 'trauma-informed', 'substance-use'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -506,6 +524,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Residential reentry housing', 'Employment assistance', 'Substance abuse programming', 'Community supervision support', 'Job placement'],
     ARRAY['lexington', 'halfway-house', 'reentry', 'federal', 'state', 'dismas', 'DOC-contract'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -532,6 +551,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Long-term residential recovery', '12-step programming', 'Individual therapy', 'Employment support', 'Life skills training', 'DOC-affiliated programs'],
     ARRAY['lexington', 'men', 'recovery', 'transitional-housing', '12-step', 'probation', 'parole'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -558,6 +578,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['In-jail reentry classes', 'Genesis Process', 'Jobs for Life', 'Post-release case management', 'Mentor support', 'ID and housing assistance', 'Employment help'],
     ARRAY['lexington', 'reentry', 'faith-based', 'case-management', 'jail-programs', 'employment'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -584,6 +605,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency shelter', 'Rapid re-housing', 'Housing navigation', 'Case management', 'Supportive housing', 'Family stabilization'],
     ARRAY['northern-kentucky', 'homeless', 'shelter', 'rapid-rehousing', 'families', 'reentry'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -610,6 +632,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Intake and triage', 'Medical detox', 'Residential treatment', 'Intensive outpatient', 'Case management', 'Casey''s Law assessment', 'Recovery housing referrals'],
     ARRAY['covington', 'northern-kentucky', 'substance-use', 'detox', 'residential', 'outpatient', 'IOP'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -636,6 +659,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Long-term residential recovery', 'Peer accountability program', '12-step support', 'Mental health therapy', 'Primary care access', 'Recovery Kentucky housing'],
     ARRAY['erlanger', 'northern-kentucky', 'recovery-kentucky', 'men', 'therapeutic-community', 'long-term'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -662,6 +686,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Free inpatient recovery', 'Recovery Dynamics curriculum', '12-step programming', 'Peer-driven sober living', 'Long-term residential care'],
     ARRAY['bowling-green', 'warren-county', 'recovery-kentucky', 'men', 'free', 'inpatient', '12-step'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -688,6 +713,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Transitional housing for women', 'Children allowed', 'Case management', 'Recovery programming', 'Employment and benefits navigation', 'Family reunification support'],
     ARRAY['bowling-green', 'women', 'children', 'transitional-living', 'recovery', 'reentry'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -714,6 +740,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Transitional reentry housing', 'Vocational certifications', 'Recycling and manufacturing training', 'CDL preparation', 'Culinary arts training', 'OSHA and forklift certification', 'Educational good-time credit'],
     ARRAY['richmond', 'madison-county', 'RSC', 'DOC-contract', 'vocational-training', 'recycling', 'career-development'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -740,6 +767,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Free women''s residential recovery', 'Safe Off the Streets entry', 'Recovery Dynamics', '12-step programming', 'Employment preparation', 'Phased sober living', 'Peer support'],
     ARRAY['richmond', 'women', 'recovery-kentucky', 'free', 'long-term', 'substance-use'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -766,6 +794,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Residential reentry housing', 'Employment assistance', 'Substance abuse programming', 'Community supervision support', 'Family reunification'],
     ARRAY['owensboro', 'daviess-county', 'RSC', 'DOC-contract', 'halfway-house', 'reentry'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -792,6 +821,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Women''s residential treatment', 'Justice-involved programming', 'Prenatal and postpartum care', 'Vocational skills training', '12-step introduction', 'Reentry coordination'],
     ARRAY['elkhorn-city', 'eastern-kentucky', 'women', 'RSC', 'substance-use', 'DOC-affiliated', 'veterans'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -818,6 +848,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Residential transitional housing', 'Reentry programming', 'Community confinement', 'Employment preparation', 'DOC supervision coordination'],
     ARRAY['paducah', 'mccracken-county', 'RSC', 'DOC-contract', 'reentry', 'transitional-housing'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -844,6 +875,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Sober living placement assistance', 'Reentry application support', 'Democratic self-run housing', 'Peer accountability', 'Statewide vacancy navigation'],
     ARRAY['statewide', 'sober-living', 'oxford-house', 'recovery', 'self-help', 'reentry'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -870,6 +902,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Job-readiness training', 'Work Ready Certificate', 'Resume and interview coaching', 'Financial and digital literacy', 'Chromebook and stipend incentives', 'Aspire pre-release program'],
     ARRAY['statewide', 'employment', 'job-readiness', 'second-chance', 'RISE', 'goodwill', 'virtual-training'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -896,6 +929,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Free expungement clinics', 'Attorney record review', 'Filing fee assistance', 'Eligibility screening', 'Statewide clinic events'],
     ARRAY['statewide', 'expungement', 'legal-aid', 'second-chance', 'goodwill', 'record-clearing'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -922,6 +956,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free job search assistance', 'Resume and interview coaching', 'Career counseling', 'Workshops', 'GED referrals', 'Training program connections'],
     ARRAY['louisville', 'employment', 'job-center', 'american-job-center', 'reentry', 'free-services'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -948,6 +983,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free job search assistance', 'Resume workshops', 'Career assessment', 'Veterans services', 'Youth employment programs', 'Training referrals'],
     ARRAY['lexington', 'bluegrass', 'employment', 'job-center', 'american-job-center', '17-counties'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -974,6 +1010,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Career coaching', 'Job readiness workshops', 'Resume services', 'WIOA training funding', 'Veterans and disability services', 'Recovery-informed employment support'],
     ARRAY['covington', 'northern-kentucky', 'employment', 'job-center', 'WIOA', 'recovery-friendly'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1000,6 +1037,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free job search assistance', 'Resume help', 'Employment workshops', 'Career counseling', 'Training program referrals'],
     ARRAY['bowling-green', 'warren-county', 'employment', 'job-center', 'american-job-center'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1026,6 +1064,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Career counseling', 'Job preparation', 'WIOA training accounts', 'Apprenticeships', 'Employer recruiting support', 'Community resource navigation'],
     ARRAY['ashland', 'northeast-kentucky', 'employment', 'job-center', 'WIOA', 'TENCO'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1052,6 +1091,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Recovery-informed job training', 'Work experience placements', 'Barrier relief assistance', 'Career advising', 'Certification support', 'Project REACH employment services'],
     ARRAY['hazard', 'eastern-kentucky', 'SITE', 'recovery', 'employment', 'workforce', '23-counties'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -1078,6 +1118,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Licensing board referrals', 'HB 185 predetermination information', 'Occupational license guidance', 'Board contact routing'],
     ARRAY['statewide', 'licensing', 'occupational', 'HB-185', 'second-chance', 'employment-barriers'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1104,6 +1145,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Occupational licensing reform advocacy', 'Select litigation against government licensing barriers', 'Online case intake for economic liberty violations', 'Kentucky HB 185 policy resources'],
     ARRAY['statewide', 'licensing', 'legal-advocacy', 'HB-185', 'second-chance', 'nonprofit'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1130,6 +1172,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Medicaid enrollment', 'SNAP and KTAP applications', 'Childcare assistance', 'Pre-release Medicaid screening', 'Reentry health coverage navigation', 'DCBS office referrals'],
     ARRAY['statewide', 'medicaid', 'SNAP', 'benefits', 'kynect', 'reentry', '1115-waiver'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1156,6 +1199,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health and substance use treatment', 'Detox and residential crisis care', '24/7 mobile crisis team', '988 crisis counseling', 'Recovery housing', 'IDD services'],
     ARRAY['louisville', 'CMHC', 'mental-health', 'substance-use', 'crisis', '24-7', 'justice-involved'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -1182,6 +1226,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Outpatient mental health care', 'Substance use treatment', 'Family and children''s services', '24/7 crisis line', 'Medicaid and insurance billing'],
     ARRAY['louisville', 'behavioral-health', 'mental-health', 'substance-use', 'crisis', 'family-services'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1208,6 +1253,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health and substance use treatment', 'Same-day behavioral health urgent care', 'IDD services', 'Primary care', '24/7 crisis line', 'Mobile crisis response'],
     ARRAY['lexington', 'CMHC', 'mental-health', 'substance-use', 'urgent-care', 'crisis', '17-counties'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1234,6 +1280,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health and substance use treatment', 'Developmental disability services', '24/7 crisis line', 'Walk-in crisis intervention', 'Residential crisis stabilization', 'Mobile crisis response'],
     ARRAY['covington', 'northern-kentucky', 'CMHC', 'mental-health', 'substance-use', 'crisis', '24-7'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -1260,6 +1307,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['24/7 crisis counseling', 'Suicide prevention support', 'Substance use crisis support', 'Spanish-language counselors', 'Veterans Crisis Line connection', 'Online chat support'],
     ARRAY['statewide', 'crisis', '988', 'suicide-prevention', 'mental-health', '24-7', 'spanish'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1286,6 +1334,7 @@ INSERT INTO resources (
     'single',
     ARRAY['HIV primary medical care', 'Rapid Start treatment', 'PrEP clinic', 'Ryan White case management', 'Housing navigation', 'On-site pharmacy', 'Jail telehealth connections'],
     ARRAY['louisville', 'HIV', 'Ryan-White', 'medical-care', 'PrEP', 'case-management', '7-county'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -1312,6 +1361,7 @@ INSERT INTO resources (
     'single',
     ARRAY['HOPWA emergency rent assistance', 'Utility payment assistance', 'HIV/AIDS housing stability support', 'Long-term housing resource navigation'],
     ARRAY['louisville', 'HIV', 'HOPWA', 'housing-assistance', 'utilities', 'VOA'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1338,6 +1388,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Free HIV and STI testing', 'PrEP medical services', 'Care coordination', 'HIV housing assistance', 'Prevention education and outreach', 'Statewide referrals'],
     ARRAY['lexington', 'statewide', 'HIV', 'testing', 'PrEP', 'housing', 'prevention'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -1364,6 +1415,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Free HIV screening', 'STI testing and treatment', 'Hepatitis C testing', 'Harm reduction outreach', 'Sliding scale fees', 'Spanish-language services'],
     ARRAY['louisville', 'HIV', 'STI-testing', 'free-testing', 'harm-reduction', 'public-health'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -1390,6 +1442,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Free non-medical detox', 'Off the Streets motivational program', 'Phase I peer recovery', 'SOBER180 curriculum', 'Transitional living', 'Continuing care and employment referrals'],
     ARRAY['louisville', 'men', 'free', 'recovery', 'detox', 'peer-driven', '24-7', 'social-model'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -1416,6 +1469,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Free women''s residential recovery', 'DOC-contracted RSC', 'Non-medical detox', 'Off the Streets program', 'Outpatient services', 'Sober housing', 'Overnight shelter'],
     ARRAY['louisville', 'women', 'free', 'recovery', 'RSC', 'DOC-contract', 'detox', '24-7'],
+    ARRAY['accepts_criminal_record', 'referral_required', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -1442,6 +1496,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Medical detox', 'Residential substance use treatment', 'Intensive outpatient', 'Multi-location Kentucky access', 'Insurance and Medicaid billing', 'Referral and transportation coordination'],
     ARRAY['statewide', 'substance-use', 'detox', 'residential', 'outpatient', 'medical-detox', 'medicaid'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1468,6 +1523,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Treatment facility search by zip code', '24/7 referral helpline', 'Payment and insurance filtering', 'Telehealth provider search', 'Spanish-language helpline support'],
     ARRAY['statewide', 'SAMHSA', 'treatment-locator', 'helpline', 'substance-use', 'mental-health', '24-7'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1494,6 +1550,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free civil legal representation', 'Expungement assistance', 'Housing and eviction defense', 'Public benefits appeals', 'Family law', 'Domestic violence protection orders'],
     ARRAY['louisville', 'legal-aid', 'free', 'expungement', 'housing', 'benefits', '15-counties'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1520,6 +1577,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free civil legal services', 'Expungement representation', 'Housing and benefits cases', 'Family law', 'Consumer protection', 'Goodwill clinic partnership'],
     ARRAY['lexington', 'legal-aid', 'free', 'expungement', '32-counties', 'bluegrass', 'northern-kentucky'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1546,6 +1604,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free civil legal services', 'Expungement assistance', 'Housing and eviction help', 'Public benefits appeals', 'Family law', 'Statewide intake routing'],
     ARRAY['bowling-green', 'legal-aid', 'free', 'expungement', 'western-kentucky', '35-counties'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1572,6 +1631,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free civil legal services', 'Expungement help', 'Housing cases', 'Public benefits', 'Family law', 'Statewide intake coordination'],
     ARRAY['owensboro', 'legal-aid', 'free', 'expungement', 'western-kentucky', 'daviess-county'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1598,6 +1658,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free civil legal services', 'Expungement assistance', 'Housing and benefits cases', 'Family law', 'Western Kentucky intake'],
     ARRAY['paducah', 'legal-aid', 'free', 'expungement', 'western-kentucky', 'mccracken-county'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1624,6 +1685,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free civil legal services', 'Expungement assistance', 'Housing and eviction defense', 'Public benefits appeals', 'Family law', 'Disaster legal services', 'Senior legal assistance'],
     ARRAY['eastern-kentucky', 'legal-aid', 'free', 'expungement', '37-counties', 'appalachian'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1650,6 +1712,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Voting rights education', 'ROVR eligibility guidance', 'Voter registration resources', 'Civil rights advocacy'],
     ARRAY['statewide', 'voting-rights', 'ROVR', 'ACLU', 'civil-rights', 'reentry'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -1676,6 +1739,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Voting rights eligibility screening', 'Civil rights restoration applications', 'Automatic restoration verification', 'Probation and Parole application assistance'],
     ARRAY['statewide', 'voting-rights', 'civil-rights', 'restoration', 'reentry', 'DOC'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -1702,6 +1766,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Poverty law advocacy', 'Policy litigation', 'Voter registration partnerships', 'Maxwell Street Legal Clinic', 'Systemic barrier advocacy'],
     ARRAY['statewide', 'advocacy', 'poverty-law', 'voter-registration', 'lexington', 'policy'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -1728,6 +1793,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Supervised substance use treatment', 'Alternative to incarceration', 'Judicial case management', 'Recovery-oriented sentencing', 'Potential charge reduction upon completion'],
     ARRAY['louisville', 'drug-court', 'specialty-court', 'treatment', 'alternative-sentencing', 'referral-required'],
+    ARRAY['referral_required', 'accepts_criminal_record'],
     false,
     'active'
   ),
@@ -1754,6 +1820,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Veterans specialty court programming', 'VA treatment coordination', 'Peer mentor support', 'Substance use and mental health treatment compliance', 'Alternative sentencing for veterans'],
     ARRAY['louisville', 'veterans', 'VTC', 'specialty-court', 'mental-health', 'substance-use', 'VA'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -1780,6 +1847,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Certified Drug Court programs', 'Judicial supervision', 'Treatment compliance monitoring', 'Alternative to incarceration', 'Recovery support services'],
     ARRAY['lexington', 'drug-court', 'specialty-court', 'fayette-county', 'treatment', 'referral-required'],
+    ARRAY['referral_required', 'accepts_criminal_record'],
     false,
     'active'
   ),
@@ -1806,6 +1874,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Statewide specialty court directory', 'Local Drug Court referrals', 'Veterans Treatment Court information', 'Mental Health Court information', 'Referral form guidance'],
     ARRAY['statewide', 'specialty-courts', 'drug-court', 'VTC', 'mental-health-court', 'directory'],
+    ARRAY['referral_required', 'accepts_criminal_record'],
     false,
     'active'
   ),
@@ -1832,6 +1901,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['SNAP food assistance applications', 'EBT card benefits', 'Drug felony eligibility under KRS 205.2005', 'Combined benefits application with Medicaid', 'DCBS office referrals'],
     ARRAY['statewide', 'SNAP', 'food-stamps', 'kynect', 'benefits', 'EBT', 'drug-felony-eligible'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -1858,6 +1928,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Food pantry network', 'Online pantry locator', 'Emergency food distribution', 'Partner agency network', 'Community meal program referrals'],
     ARRAY['louisville', 'food-bank', 'SNAP', 'pantry', '13-counties', 'emergency-food'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1884,6 +1955,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Food pantry network across 50 counties', 'Online pantry and meal locator', 'Emergency food distribution', 'Partner agency coordination', 'Senior and child nutrition programs'],
     ARRAY['lexington', 'food-bank', 'pantry', '50-counties', 'central-kentucky', 'eastern-kentucky'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1910,6 +1982,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Regional food bank distribution', 'County-based pantry locator', '242 partner agency network', 'Emergency food assistance', 'Rural community food access'],
     ARRAY['elizabethtown', 'food-bank', '42-counties', 'western-kentucky', 'central-kentucky', 'pantry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1936,6 +2009,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['National food bank search by zip code', 'Links to regional Kentucky food banks', 'Pantry and meal program directory', 'Emergency food resource navigation'],
     ARRAY['statewide', 'food-bank', 'pantry-locator', 'feeding-america', 'emergency-food', 'zip-code-search'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -1962,6 +2036,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Certified birth certificates', 'Death marriage divorce records', 'Mail and online ordering', 'Will-call pickup', 'Record amendments'],
     ARRAY['statewide', 'birth-certificate', 'vital-records', 'ID-documentation', 'Frankfort', 'VitalChek'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -1988,6 +2063,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Driver''s licenses', 'State ID cards', 'Felon Release Letter processing', 'IDocument eligibility guide', 'Regional office appointments'],
     ARRAY['statewide', 'driver-license', 'state-ID', 'DRIVE', 'felon-release-letter', 'reentry', 'REAL-ID'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -2014,6 +2090,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Reinstatement fee payment', 'Suspension requirement guidance', 'myDrive online portal', 'Testing referral information', 'Mail and phone payment options'],
     ARRAY['statewide', 'license-reinstatement', 'suspension', 'DRIVE', 'myDrive', 'DUI', 'fees'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -2040,6 +2117,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Social Security card replacement', 'SSN verification', 'Retirement and disability applications', 'Medicare enrollment assistance', 'Appointment scheduling'],
     ARRAY['louisville', 'SSA', 'social-security-card', 'ID-documentation', 'appointments', 'employment'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -2066,6 +2144,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Social Security card replacement', 'SSN verification', 'Retirement and disability applications', 'Medicare enrollment', 'Appointment scheduling'],
     ARRAY['lexington', 'SSA', 'social-security-card', 'ID-documentation', 'Fayette', 'appointments'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -2092,6 +2171,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Office location search', 'Appointment scheduling referral', 'Online service directory', 'SSN and card information'],
     ARRAY['statewide', 'SSA', 'office-locator', 'social-security-card', 'ID-documentation'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -2118,6 +2198,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Heating and cooling bill assistance', 'Crisis utility intervention', 'Subsidy payments to utility vendors', 'Local agency referral', 'Weatherization referrals'],
     ARRAY['statewide', 'LIHEAP', 'utility-assistance', 'Community-Action', 'heating', 'cooling', 'crisis'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2144,6 +2225,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['LIHEAP Subsidy and Crisis', 'Weatherization', 'Head Start', 'Job training and adult education', 'Crisis financial assistance'],
     ARRAY['northern-kentucky', 'LIHEAP', 'Community-Action', 'NKCAC', 'utility-assistance', '8-counties'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -2170,6 +2252,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['KTAP cash assistance applications', 'SNAP and Medicaid enrollment', 'Child Care Assistance', 'Kentucky Works referrals', 'Online benefits management'],
     ARRAY['statewide', 'kynect', 'KTAP', 'TANF', 'cash-assistance', 'SNAP', 'Medicaid', 'DCBS'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2196,6 +2279,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Emergency resource navigation', 'Utility and housing referrals', 'Food assistance connections', 'Mental health resource referrals', 'Multi-language interpreter support'],
     ARRAY['statewide', '211', 'crisis-navigation', 'United-Way', 'referrals', '24-7'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2222,6 +2306,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Certified low-fee checking account referrals', 'Financial education workshops', 'Financial Empowerment Center counseling', 'ChexSystems-friendly banking connections'],
     ARRAY['louisville', 'second-chance-banking', 'Bank-On', 'financial-empowerment', 'ChexSystems', 'low-fee'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2248,6 +2333,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['20/20 second-chance checking', 'Visa debit card', 'Digital and mobile banking', 'Account upgrade pathway', 'Multiple Central KY branch locations'],
     ARRAY['central-kentucky', 'second-chance-banking', 'credit-union', '20-20-checking', 'Lexington', 'Frankfort'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2274,6 +2360,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Fixed-route bus service', 'TARC3 paratransit', 'MyTARC fare card', 'Token Transit mobile payment', 'Reduced fare programs'],
     ARRAY['louisville', 'public-transit', 'TARC', 'bus', 'MyTARC', 'paratransit', 'affordable'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2300,6 +2387,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Fixed-route bus service', 'Lextran Wheels paratransit', 'Reduced and half fares', 'Daily weekly and monthly passes', 'Downtown Transit Center'],
     ARRAY['lexington', 'public-transit', 'Lextran', 'bus', 'affordable', 'Fayette', 'paratransit'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2326,6 +2414,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Fixed-route bus service', 'RAMP paratransit', 'Cincinnati cross-river connections', 'Park-and-ride locations', 'Route planning and schedules'],
     ARRAY['northern-kentucky', 'TANK', 'public-transit', 'bus', 'Cincinnati', 'Boone', 'Kenton', 'Campbell'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2352,6 +2441,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Child support order establishment', 'Paternity establishment', 'Payment processing and tracking', 'Wage withholding enforcement', 'Online case management portal'],
     ARRAY['statewide', 'child-support', 'Attorney-General', 'DCSS', 'enforcement', 'payments'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2378,6 +2468,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Local child support enforcement', 'Paternity and order establishment', 'Payment collection and monitoring', 'Non-custodial parent location', 'Medical support orders'],
     ARRAY['louisville', 'child-support', 'Jefferson-County', 'enforcement', 'payments', 'DCSS'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2404,6 +2495,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Family preservation services', 'Family reunification support', 'In-home behavioral health', 'Substance abuse treatment', 'Foster care (separate program)'],
     ARRAY['statewide', 'family-reunification', 'preservation', 'KVC', 'DCBS-referral', 'behavioral-health', 'Lexington'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -2430,6 +2522,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['24/7 crisis hotline', 'Emergency shelter', 'Sexual assault forensic exams', 'Safety planning', 'Legal and housing advocacy', 'Children''s services'],
     ARRAY['louisville', 'domestic-violence', 'sexual-assault', '24-7-crisis', 'shelter', 'trauma-informed', 'reentry'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -2456,6 +2549,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Adult Peer Support Specialist dual KY/OH certification', 'Community Support Associate training', 'Online certification courses', 'CEU upload guidance', 'Reentry peer workforce preparation'],
     ARRAY['statewide', 'peer-support', 'APSS', 'certification', 'dual-KY-OH', 'reentry', 'recovery', 'training'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -2482,6 +2576,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Recovery-informed career advising', 'Barrier relief assistance', 'Peer support certification funding', 'Second-chance job placement', 'American Job Center services'],
     ARRAY['eastern-kentucky', 'EKCEP', 'SITE', 'recovery', 'reentry', 'peer-support', 'workforce', '23-counties'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -2508,6 +2603,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Youth mentoring (S.O.Y.)', 'Family support and counseling', 'Employment readiness training', 'Community resource connections', 'Life skills development'],
     ARRAY['louisville', 'faith-based', 'mentoring', 'reentry', 'youth', 'family-support', 'west-end'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -2534,6 +2630,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['In-person NA meetings', 'Online and hybrid meetings', 'Meeting locator by county', 'Peer-led recovery support', 'No-cost participation'],
     ARRAY['statewide', 'NA', 'narcotics-anonymous', 'peer-support', 'recovery', 'free', 'meetings'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -2560,6 +2657,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['In-person AA meetings', 'Online meeting options', 'Area meeting directories', 'Peer-led sobriety support', 'Sponsorship connections'],
     ARRAY['statewide', 'AA', 'alcoholics-anonymous', 'peer-support', 'recovery', 'free', 'meetings'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -2586,6 +2684,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Free GED preparation classes', 'Corrections education in jails and prisons', 'GED Ready practice testing', 'Free first-time GED testing', 'ESL and workforce certifications'],
     ARRAY['statewide', 'KCTCS', 'GED', 'adult-education', 'KYAE', 'incarcerated-education', 'free-testing'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2612,6 +2711,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free GED classes', 'Online and in-person instruction', 'GED Ready testing', 'College transition support', 'Workforce certification referrals'],
     ARRAY['lexington', 'GED', 'adult-education', 'BCTC', 'central-kentucky', '8-counties'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2638,6 +2738,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free GED preparation', 'Testing fee waiver assistance', 'GED Ready practice tests', 'College enrollment pathway', 'Workforce skills training'],
     ARRAY['northern-kentucky', 'GED', 'adult-education', 'Gateway-KCTCS', 'Florence', '6-counties'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2664,6 +2765,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free GED preparation', 'Skills assessment and intake', 'GED testing coordination', 'Workforce certification pathways', 'Corrections education'],
     ARRAY['bowling-green', 'GED', 'adult-education', 'SKYCTC', 'south-central-kentucky', '4-counties'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2690,6 +2792,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['County program locator', 'GED pathway information', 'ESL and literacy referrals', 'Workforce certification programs', 'Free GED Ready testing info'],
     ARRAY['statewide', 'KYAE', 'adult-education', 'GED-locator', '120-counties', 'ESL', 'literacy'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2716,6 +2819,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary and specialty medical care', 'Mental health and SUD treatment', 'Veterans Justice Outreach', 'Homeless veteran care coordination', 'Emergency services'],
     ARRAY['louisville', 'VA', 'veterans', 'mental-health', 'substance-use', 'VJO', '24-7', 'hospital'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -2742,6 +2846,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Court and jail outreach to veterans', 'VA benefits and treatment linkage', 'Alternative-to-incarceration coordination', 'Substance use and mental health referrals', 'Housing and reentry navigation'],
     ARRAY['louisville', 'VJO', 'veterans', 'justice-involved', 'courts', 'jails', 'mental-health', 'reentry'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -2768,6 +2873,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Primary and specialty care', 'Mental health and SUD treatment', 'VJO coordination', 'Homeless veteran services', 'Telehealth options'],
     ARRAY['lexington', 'VA', 'veterans', 'central-kentucky', 'eastern-kentucky', 'mental-health', 'Leestown'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -2794,6 +2900,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Court and jail veteran identification', 'VA treatment enrollment assistance', 'Housing and benefits navigation', 'Specialty court coordination', 'Regional satellite outreach'],
     ARRAY['lexington', 'VJO', 'veterans', 'justice-involved', 'central-kentucky', 'eastern-kentucky', 'courts'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -2820,6 +2927,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['24/7 homeless veteran triage', 'VA housing program referrals', 'Emergency shelter connections', 'Case management linkage', 'HUD-VASH and SSVF intake routing'],
     ARRAY['statewide', 'veterans', 'homeless', '24-7', 'hotline', 'housing', 'reentry', 'VA'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -2846,6 +2954,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Immediate crisis counseling', '988 press 1 veteran line', 'Text and chat support', 'Connection to local VA resources', 'Family member support'],
     ARRAY['statewide', 'veterans', 'crisis', '988', '24-7', 'PTSD', 'suicide-prevention', 'confidential'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -2872,6 +2981,7 @@ INSERT INTO resources (
     'single',
     ARRAY['PTSD and readjustment counseling', 'MST support', 'Bereavement counseling', 'Reentry and family support', '24/7 crisis line access'],
     ARRAY['louisville', 'vet-center', 'veterans', 'PTSD', 'MST', 'counseling', 'reentry', 'combat-veterans'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -2898,6 +3008,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Individual and group counseling', 'PTSD and MST treatment', 'Satellite outreach in 5 cities', 'Employment transition support', '24/7 crisis line'],
     ARRAY['lexington', 'vet-center', 'veterans', 'PTSD', 'central-kentucky', 'satellite-locations', 'counseling'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -2924,6 +3035,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Disability compensation claims', 'Pension and education benefits', 'VR&E Chapter 31 employment services', 'Life insurance', 'Benefits counseling and appeals'],
     ARRAY['louisville', 'VA-benefits', 'disability', 'Chapter-31', 'vocational-rehab', 'GI-Bill', 'employment'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -2950,6 +3062,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['HUD rental voucher referral', 'VA case management', 'SSVF rapid rehousing', 'Homeless veteran intake', 'Housing search assistance'],
     ARRAY['statewide', 'HUD-VASH', 'veterans', 'housing', 'homeless', 'SSVF', 'rental-vouchers', 'reentry'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -2976,6 +3089,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Free VA benefits claims assistance', 'Veterans High School Diploma Program', 'Homeless veterans state support', 'Women veterans resources', 'Regional VSO network'],
     ARRAY['statewide', 'KDVA', 'VSO', 'benefits-claims', 'homeless-veterans', 'women-veterans', 'Frankfort'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3002,6 +3116,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['VA disability claims assistance', 'Pension and benefits filing', 'Vocational rehabilitation claims', 'Post-level VSO network', 'Veterans advocacy'],
     ARRAY['statewide', 'VFW', 'VSO', 'benefits-claims', 'disability', 'free-assistance', 'veterans'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3028,6 +3143,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['VA claims and appeals assistance', 'Benefits navigation', 'Pension and disability filing', 'Local post VSO network', 'Veterans advocacy'],
     ARRAY['statewide', 'American-Legion', 'VSO', 'benefits-claims', 'veterans', '120-counties', 'free'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3054,6 +3170,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Emergency shelter and meals', 'Clothing and hygiene distribution', 'Sober Living Recovery Program', 'Work Therapy Program', 'Donation intake'],
     ARRAY['louisville', 'shelter', 'meals', 'clothing', 'sober-living', 'work-therapy', 'emergency', 'basic-needs'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -3080,6 +3197,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Client-choice food pantry', 'Daily community meals', 'Men''s emergency shelter (Ozanam Inn)', 'Emergency financial aid', 'Affordable thrift store clothing'],
     ARRAY['louisville', 'food-pantry', 'shelter', 'Ozanam-Inn', 'thrift-store', 'emergency-assistance', 'basic-needs'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -3106,6 +3224,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Professional interview attire', 'Career coaching and interview prep', 'Referral-based suiting appointments', 'Professional Women''s Group', 'Workforce reentry support for women'],
     ARRAY['louisville', 'dress-for-success', 'women', 'career', 'professional-clothing', 'referral-required', 'workforce'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -3132,6 +3251,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Central office information', 'District office referral', 'Interstate compact coordination', 'Home incarceration program info', 'Supervision policy guidance'],
     ARRAY['statewide', 'probation', 'parole', 'DOC', 'central-office', 'supervision', 'Frankfort'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3158,6 +3278,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Probation supervision', 'Parole supervision', 'Reporting and check-ins', 'Case officer contact', 'Referrals to reentry services'],
     ARRAY['louisville', 'probation', 'parole', 'Jefferson-County', 'DOC', 'reporting', 'Chestnut-Centre'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -3184,6 +3305,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Probation and parole supervision', 'Scheduled reporting', 'Officer case management', 'Community supervision compliance', 'Reentry resource referrals'],
     ARRAY['lexington', 'probation', 'parole', 'District-9', 'Fayette', 'DOC', 'supervision'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -3210,6 +3332,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Probation and parole supervision', 'Reporting appointments', 'Case officer management', 'Compliance monitoring', 'Northern KY supervision'],
     ARRAY['northern-kentucky', 'probation', 'parole', 'District-7', 'Kenton', 'Covington', 'DOC'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -3236,6 +3359,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Multi-county probation supervision', 'Parole reporting', 'Officer assignment', 'Travel and transfer requests', 'Compliance support'],
     ARRAY['bowling-green', 'probation', 'parole', 'District-3', 'Warren', 'south-central-kentucky', 'DOC'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -3262,6 +3386,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Western KY probation supervision', 'Parole reporting', 'Purchase region case management', 'Officer contact', 'Compliance monitoring'],
     ARRAY['paducah', 'probation', 'parole', 'District-1', 'McCracken', 'western-kentucky', 'DOC'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -3288,6 +3413,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Eastern KY probation supervision', 'Parole reporting', 'Rural reentry supervision', 'Officer case management', 'Compliance monitoring'],
     ARRAY['pikeville', 'probation', 'parole', 'District-11', 'Pike', 'eastern-kentucky', 'DOC'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -3314,6 +3440,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Paid transitional work crews', 'Job-readiness orientation', 'Job coaching and placement', 'Employer outreach', 'One-year retention support'],
     ARRAY['louisville', 'CEO', 'employment', 'reentry', 'transitional-work', 'probation-required', 'paid-training'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -3340,6 +3467,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Reentry resource coordination', 'Service provider network', 'Community reentry advocacy', 'Agency collaboration', 'Resource platform support'],
     ARRAY['louisville', 'reentry', 'coalition', 'coordination', 'task-force', 'community', 'navigation'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -3366,6 +3494,7 @@ INSERT INTO resources (
     'statewide',
     ARRAY['Kentucky Reentry Toolkit online platform', 'Life skills resource library', 'Reentry coordinator access', 'Service provider connections', 'Case coordination tools'],
     ARRAY['louisville', 'reentry-toolkit', 'online-resources', 'CJC', 'life-skills', 'case-coordination'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -3392,6 +3521,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Career counseling and case management', 'Job readiness training', 'Employer placement referrals', 'Post-placement retention support', 'Dress for Success partner referrals'],
     ARRAY['louisville', 'urban-league', 'workforce', 'employment', 'job-readiness', 'second-chance', 'barriers'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -3418,6 +3548,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Technology workforce training', 'Small business incubation', 'Economic mobility programming', 'Digital literacy', 'Entrepreneurship support'],
     ARRAY['louisville', 'AMPED', 'technology', 'workforce', 'Black-Latinx', 'entrepreneurship', 'justice-involved'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -3444,6 +3575,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Workforce development', 'Financial coaching and literacy', 'Housing navigation', 'Family stability programs', 'Emergency assistance'],
     ARRAY['northern-kentucky', 'Brighton-Center', 'workforce', 'housing', 'financial-coaching', 'Campbell', 'reentry'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -3470,6 +3602,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Job-readiness training', 'Digital literacy instruction', 'Employer placement connections', 'Personal development programming', 'Barrier-reduction support'],
     ARRAY['northern-kentucky', 'Life-Learning-Center', 'workforce', 'job-readiness', 'criminal-records', 'Covington', 'digital-literacy'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -3496,6 +3629,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Faith-based mentoring', 'Peer support groups', 'Basic needs assistance', 'Housing resource connections', 'Employment resource navigation'],
     ARRAY['northern-kentucky', 'Connect-Ministries', 'faith-based', 'mentoring', 'peer-support', 'Campbell', 'recovery', 'reentry'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -3522,6 +3656,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health and addiction treatment', '24/7 mobile crisis', 'CRRU residential crisis and SUD recovery', 'In-jail behavioral health programming', 'Intellectual and developmental disability services'],
     ARRAY['ashland', 'CMHC', 'mental-health', 'substance-use', 'crisis', '14-counties', 'jail-programming', 'northeast-kentucky'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3548,6 +3683,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Detox and residential treatment', 'Intensive and outpatient programs', 'Medication-assisted treatment', 'Vocational training and internships', 'Transportation to treatment'],
     ARRAY['eastern-kentucky', 'ARC', 'substance-use', 'residential', 'MAT', 'Crisis-to-Career', 'reentry', 'vocational'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3574,6 +3710,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health and SUD treatment', '24/7 crisis services', 'In-jail screening and linkage', 'Residential treatment referrals', 'Developmental disability support'],
     ARRAY['eastern-kentucky', 'CMHC', 'MCCC', 'mental-health', 'substance-use', '14-counties', 'jail-screening'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3600,6 +3737,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['LIHEAP utility assistance', 'Emergency financial aid', 'Food and housing support', 'Head Start', 'Reentry case management referrals'],
     ARRAY['eastern-kentucky', 'community-action', 'BSACAP', 'LIHEAP', 'emergency-aid', '6-counties', 'reentry'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -3626,6 +3764,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free civil legal representation', 'Expungement assistance', 'Housing and benefits appeals', 'Black lung and workers'' rights', 'Civil rights cases'],
     ARRAY['eastern-kentucky', 'legal-aid', 'ACLC', 'expungement', 'housing', 'benefits', 'civil-rights', 'Whitesburg'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3652,6 +3791,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health therapy', 'Psychiatric evaluation and medication', 'Substance use treatment', '24/7 crisis intervention', 'In-jail behavioral health linkage'],
     ARRAY['southeastern-kentucky', 'CMHC', 'CRBH', 'mental-health', 'substance-use', 'crisis', '10-counties', 'jail'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3678,6 +3818,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Regional resource coordination', 'Workforce development partnerships', 'Transportation and senior services info', 'LIHEAP referral routing', 'Community planning support'],
     ARRAY['london', 'CVADD', 'regional-planning', '10-counties', 'workforce', 'housing', 'reentry-coordination'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -3704,6 +3845,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['LIHEAP utility assistance', 'Emergency financial aid', 'Food and housing programs', 'Weatherization', 'Case management for low-income households'],
     ARRAY['somerset', 'community-action', 'LIHEAP', 'emergency-aid', '6-counties', 'Pulaski', 'reentry'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -3730,6 +3872,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Probation and parole supervision', 'Scheduled reporting', 'Officer case management', 'Compliance monitoring', 'Eastern KY supervision'],
     ARRAY['hazard', 'probation', 'parole', 'District-14', 'Perry', 'eastern-kentucky', 'DOC'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -3756,6 +3899,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Multi-county probation supervision', 'Parole reporting', 'Officer assignment', 'Compliance monitoring', 'SE KY regional supervision'],
     ARRAY['london', 'probation', 'parole', 'District-10', 'Laurel', 'southeastern-kentucky', 'DOC'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -3782,6 +3926,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health and SUD treatment', 'Psychiatric evaluation', '24/7 crisis services', 'In-jail mental health screening', 'Reentry behavioral health linkage'],
     ARRAY['elizabethtown', 'CMHC', 'Lincoln-Trail', 'mental-health', 'substance-use', 'crisis', '5-counties', 'jail'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3808,6 +3953,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free job search assistance', 'Resume and interview workshops', 'WIOA training funding', 'Career counseling', 'Second-chance employer connections'],
     ARRAY['elizabethtown', 'American-Job-Center', 'workforce', 'Hardin', 'second-chance', 'WIOA', 'employment'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -3834,6 +3980,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Probation and parole supervision', 'Reporting and check-ins', 'Officer case management', 'Compliance monitoring', 'Lincoln Trail region supervision'],
     ARRAY['elizabethtown', 'probation', 'parole', 'District-5', 'Hardin', 'Lincoln-Trail', 'DOC'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -3860,6 +4007,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health therapy', 'Substance use counseling', 'Psychiatric services', '24/7 crisis line', 'Jail reentry behavioral health linkage'],
     ARRAY['elizabethtown', 'LifeSkills', 'CMHC', 'mental-health', 'substance-use', 'Hardin', 'crisis', 'reentry'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3886,6 +4034,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Job search and placement assistance', 'Resume and interview help', 'WIOA training referrals', 'Career counseling', 'Veterans employment services'],
     ARRAY['frankfort', 'American-Job-Center', 'workforce', 'Franklin', 'probation', 'employment', 'WIOA'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -3912,6 +4061,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Probation and parole supervision', 'Multi-county reporting', 'Officer case management', 'Compliance monitoring', 'Capital region supervision'],
     ARRAY['frankfort', 'probation', 'parole', 'District-12', 'Franklin', '7-counties', 'DOC'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -3938,6 +4088,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health and SUD treatment', 'Psychiatric evaluation', '24/7 crisis intervention', 'In-jail mental health services', 'Reentry behavioral health linkage'],
     ARRAY['hopkinsville', 'CMHC', 'Pennyroyal', 'mental-health', 'substance-use', '6-counties', 'jail', 'western-kentucky'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -3964,6 +4115,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['LIHEAP utility assistance', 'Emergency financial aid', 'Food and housing support', 'Head Start', 'Case management'],
     ARRAY['owensboro', 'community-action', 'Audubon', 'LIHEAP', 'emergency-aid', '3-counties', 'reentry'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -3990,6 +4142,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Probation and parole supervision', 'Pennyrile region reporting', 'Officer case management', 'Compliance monitoring', 'Multi-county supervision'],
     ARRAY['hopkinsville', 'probation', 'parole', 'District-2', 'Christian', 'Pennyrile', 'DOC'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -4016,6 +4169,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health and SUD treatment', 'Psychiatric services', '24/7 crisis line', 'County jail programming', 'Regional CMHC hub'],
     ARRAY['bowling-green', 'LifeSkills', 'CMHC', '14-counties', 'mental-health', 'substance-use', 'crisis', 'jail'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4042,6 +4196,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free job search and placement', 'Resume and skills workshops', 'WIOA training funding', 'Career counseling', 'Criminal record employment support'],
     ARRAY['paducah', 'American-Job-Center', 'Purchase-Area', 'workforce', 'second-chance', 'WIOA', 'western-kentucky'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4068,6 +4223,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Comprehensive job seeker services', 'WIOA training funding', 'Resume and interview assistance', 'Employer job matching', 'Rural county access points'],
     ARRAY['owensboro', 'American-Job-Center', 'Green-River', '7-counties', 'workforce', 'WIOA', 'second-chance'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4094,6 +4250,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['American Job Center services', 'Recovery-informed career advising', 'WIOA training funding', 'SITE reentry employment support', 'Resume and placement assistance'],
     ARRAY['pikeville', 'EKCEP', 'American-Job-Center', 'SITE', 'recovery', 'eastern-kentucky', 'workforce'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4120,6 +4277,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Comprehensive job seeker services', 'Employment workshops', 'Veterans employment services', 'WIOA training funding', 'Business and employer services'],
     ARRAY['somerset', 'American-Job-Center', 'Cumberlands', 'Lake-Cumberland', '13-counties', 'workforce', 'WIOA'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4146,6 +4304,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Job readiness workshops', 'WIOA training funding', 'Resume and placement assistance', 'Second-chance employer connections', 'Career counseling'],
     ARRAY['hopkinsville', 'American-Job-Center', 'Pennyrile', '10-counties', 'workforce', 'second-chance', 'WIOA'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4172,6 +4331,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Job search assistance', 'Resume workshops', 'WIOA training referrals', 'Career coaching', 'Criminal record employment support'],
     ARRAY['corbin', 'American-Job-Center', 'Cumberlands', 'Laurel', 'Cumberland-Valley', 'workforce', 'partner-location'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4198,6 +4358,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health and SUD treatment', 'Psychiatric services', '24/7 crisis line', 'In-jail screening and overdose intervention', 'IDD services'],
     ARRAY['paducah', 'CMHC', 'Four-Rivers', 'mental-health', 'substance-use', 'Purchase-Area', '9-counties', 'jail'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4224,6 +4385,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health therapy', 'Psychiatric medication management', 'Substance use treatment', '24/7 crisis services', 'In-jail mental health linkage'],
     ARRAY['owensboro', 'CMHC', 'River-Valley', 'mental-health', 'substance-use', 'Green-River', '7-counties', 'jail'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4250,6 +4412,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient behavioral health', 'Psychiatric care', 'Substance use treatment', 'Crisis intervention', 'Jail reentry mental health linkage'],
     ARRAY['somerset', 'CMHC', 'Adanta', '8-counties', 'mental-health', 'substance-use', 'Lake-Cumberland', 'jail'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4276,6 +4439,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Probation and parole supervision', 'Green River region reporting', 'Officer case management', 'Compliance monitoring', 'Multi-county western KY supervision'],
     ARRAY['owensboro', 'probation', 'parole', 'District-13', 'Daviess', 'Green-River', '9-counties', 'DOC'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -4302,6 +4466,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['NE Kentucky probation supervision', 'Parole reporting', 'Multi-county supervision', 'Satellite office network', 'Compliance monitoring'],
     ARRAY['catlettsburg', 'ashland', 'probation', 'parole', 'District-15', 'Boyd', 'northeast-kentucky', 'DOC'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -4328,6 +4493,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['LIHEAP utility assistance', 'Emergency financial aid', 'Food and housing programs', 'Weatherization', 'Head Start and case management'],
     ARRAY['hopkinsville', 'community-action', 'PACS', 'LIHEAP', '9-counties', 'emergency-aid', 'reentry'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4354,6 +4520,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['LIHEAP energy assistance', 'Housing program referrals', 'Senior and aging services', 'Transportation coordination', 'Community resource navigation'],
     ARRAY['mayfield', 'PADD', 'Purchase-Area', 'LIHEAP', '8-counties', 'regional-planning', 'reentry'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -4380,6 +4547,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['LIHEAP utility assistance', 'Senior and disability services', 'Transportation coordination', 'Housing program info', 'Workforce development partnership'],
     ARRAY['owensboro', 'GRADD', 'Green-River', '7-counties', 'LIHEAP', 'regional-planning', 'reentry'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -4406,6 +4574,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['LIHEAP energy assistance', 'Housing and emergency aid', 'Senior services', 'Transportation coordination', 'Community resource navigation'],
     ARRAY['maysville', 'BTADD', '6-counties', 'LIHEAP', 'northeast-kentucky', 'regional-planning', 'reentry'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -4432,6 +4601,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['LIHEAP energy assistance', 'Senior and disability services', 'Transportation coordination', 'Housing programs', 'Workforce development partnership'],
     ARRAY['bowling-green', 'BRADD', '8-counties', 'LIHEAP', 'south-central-kentucky', 'regional-planning'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -4458,6 +4628,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Emergency food and clothing', 'Utility and rent assistance', 'Housing support', 'Case management', 'Immigration and family services'],
     ARRAY['owensboro', 'Catholic-Charities', '33-counties', 'emergency-aid', 'food', 'housing', 'faith-based', 'open-to-all'],
+    ARRAY['walk_in_ok'],
     false,
     'active'
   ),
@@ -4484,6 +4655,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free GED preparation', 'Adult literacy', 'Corrections education in jails', 'GED Ready testing', 'ESL and workforce certifications'],
     ARRAY['ashland', 'GED', 'adult-education', 'ACTC', 'KCTCS', 'Boyd', 'northeast-kentucky', 'jail-classes'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4510,6 +4682,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free GED preparation', 'Jail-based GED instruction', 'GED Ready testing', 'Adult literacy', 'Workforce certification pathways'],
     ARRAY['prestonsburg', 'GED', 'BSCTC', 'KCTCS', '6-counties', 'eastern-kentucky', 'jail-education', 'Big-Sandy-Jail'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4536,6 +4709,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free GED preparation', 'County jail adult education', 'GED Ready testing', 'Adult literacy', 'Workforce skills training'],
     ARRAY['somerset', 'GED', 'SCC', 'KCTCS', 'Pulaski', 'Lake-Cumberland', 'jail-education'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4562,6 +4736,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free GED preparation', 'Jail-based adult education', 'GED Ready testing', 'ESL programs', 'Workplace certification training'],
     ARRAY['owensboro', 'GED', 'OCTC', 'KCTCS', 'Daviess', 'Green-River', 'jail-education'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4588,6 +4763,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free GED preparation', 'Adult literacy and ESL', 'Corrections education in county jails', 'GED Ready testing', 'Workforce and college transition'],
     ARRAY['madisonville', 'GED', 'adult-education', 'MCC', 'KCTCS', 'Hopkins', 'Muhlenberg', 'jail-education', 'western-kentucky'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4614,6 +4790,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free GED preparation', 'Virtual and in-person instruction', 'County jail GED classes', 'Adult literacy', 'Workforce education'],
     ARRAY['hazard', 'GED', 'HCTC', 'KCTCS', 'Perry', 'coalfields', 'eastern-kentucky', 'jail-education', '8-counties'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4640,6 +4817,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free GED preparation', 'ESL and citizenship classes', 'Corrections education', 'College and career readiness', 'Virtual and in-person instruction'],
     ARRAY['elizabethtown', 'GED', 'ECTC', 'Heartland', 'KCTCS', 'Hardin', '5-counties', 'jail-education', 'Lincoln-Trail'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4666,6 +4844,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free GED preparation', 'ESL and family literacy', 'County jail adult education', 'College placement prep', 'Flexible online scheduling'],
     ARRAY['maysville', 'GED', 'MCTC', 'KCTCS', 'Mason', 'northeast-kentucky', 'jail-education', '8-counties'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4692,6 +4871,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Free GED preparation', 'Jail-based adult education', 'GED Plus certificate pathways', 'ESL and college remediation', 'Satellite classes in Oak Grove and Elkton'],
     ARRAY['hopkinsville', 'GED', 'HCC', 'KCTCS', 'Christian', 'Todd', 'Pennyrile', 'jail-education', 'GED-Plus'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -4718,6 +4898,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Structured sober living for men', 'Case management and job readiness', 'PCS mental health and addiction counseling', 'Spiritual mentorship', 'Weekly house accountability meetings'],
     ARRAY['buckner', 'transitional-housing', 'faith-based', 'reentry', 'Oldham', 'men', 'felony-friendly', 'sober-living'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -4744,6 +4925,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health therapy', 'Substance use counseling', 'Psychiatric evaluation and medication', 'Crisis intervention 24/7', 'Justice-involved reentry support'],
     ARRAY['shepherdsville', 'CMHC', 'Seven-Counties', 'mental-health', 'substance-use', 'Bullitt', 'justice-involved', 'crisis'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -4770,6 +4952,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Individual and group therapy', 'Substance use counseling', 'Psychiatric services', 'Peer support', 'Crisis intervention referrals'],
     ARRAY['la-grange', 'CMHC', 'Seven-Counties', 'Henry', 'Oldham', 'Trimble', 'mental-health', 'justice-involved'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -4796,6 +4979,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health therapy', 'Substance use counseling', 'Psychiatric evaluation', 'Medication management', 'Peer support referrals'],
     ARRAY['taylorsville', 'CMHC', 'Seven-Counties', 'Spencer', 'mental-health', 'substance-use', 'justice-involved'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -4822,6 +5006,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['LIHEAP utility assistance', 'Weatherization', 'Emergency financial aid', 'Food security programs', 'kynect Medicaid and SNAP enrollment'],
     ARRAY['warsaw', 'NKCAC', 'LIHEAP', 'community-action', 'Gallatin', 'Carroll', 'Grant', 'Owen', 'reentry', 'utility-assistance'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4848,6 +5033,7 @@ INSERT INTO resources (
     'single',
     ARRAY['In-custody SAP therapeutic community (state inmates)', 'MRT and anger management', 'GED and Jail to Job reentry', 'PORTAL New Direction', 'Post-release IOP linkage via Shepherd''s House'],
     ARRAY['danville', 'SAP', 'jail-treatment', 'BCDC', 'Shepherds-House', 'state-inmates', 'reentry', 'MRT', 'DOC-contract'],
+    ARRAY['accepts_criminal_record', 'referral_required'],
     false,
     'active'
   ),
@@ -4874,6 +5060,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Felony probation and parole supervision', 'Conditional discharge reporting', 'Case management', 'Community reentry referrals', 'Walk-in reporting (call to confirm)'],
     ARRAY['danville', 'probation-parole', 'District-6', 'DOC', 'Boyle', '8-counties', 'supervision', 'reentry'],
+    ARRAY['referral_required'],
     false,
     'active'
   ),
@@ -4900,6 +5087,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['LIHEAP utility assistance', 'Weatherization', 'Emergency financial aid', 'kynect Medicaid and SNAP enrollment', 'Family self-sufficiency programs'],
     ARRAY['danville', 'BGCAP', 'LIHEAP', 'community-action', 'Boyle', 'Garrard', 'kynect', 'reentry', 'utility-assistance'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4926,6 +5114,7 @@ INSERT INTO resources (
     'single',
     ARRAY['LIHEAP utility assistance', 'Weatherization', 'Emergency financial aid', 'Food referrals', 'kynect benefits enrollment'],
     ARRAY['stanford', 'BGCAP', 'LIHEAP', 'Lincoln', 'community-action', 'kynect', 'reentry', 'utility-assistance'],
+    ARRAY[]::TEXT[],
     false,
     'active'
   ),
@@ -4952,6 +5141,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Residential substance use treatment', 'Intensive outpatient program', 'Outpatient aftercare up to one year', 'Life skills and recreational therapy', 'Court and jail referral intake'],
     ARRAY['lancaster', 'Cliffview', 'MCCC', 'residential', 'IOP', 'substance-use', 'Garrard', 'court-referral', 'reentry'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -4978,6 +5168,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Outpatient substance use counseling', 'DUI assessments and education', 'Anger management', 'Relapse prevention', 'Vocational assistance and housing linkage'],
     ARRAY['irvine', 'WestCare', 'CIC', 'substance-use', 'outpatient', 'Estill', 'DUI', 'justice-involved', 'eastern-kentucky'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   ),
@@ -5004,6 +5195,7 @@ INSERT INTO resources (
     'multi',
     ARRAY['Outpatient mental health therapy', 'Substance use and IOP programs', 'Psychiatric care and medication management', 'Primary care integration', '24/7 crisis helpline and mobile crisis'],
     ARRAY['irvine', 'New-Vista', 'CMHC', 'mental-health', 'substance-use', 'Estill', 'Open-Access', 'crisis', 'Region-15'],
+    ARRAY['accepts_criminal_record', 'walk_in_ok'],
     false,
     'active'
   ),
@@ -5030,6 +5222,7 @@ INSERT INTO resources (
     'single',
     ARRAY['Outpatient mental health and SUD therapy', 'Psychiatric services', 'Open Access intake', '24/7 crisis line', 'Peer support and housing/vocational specialists'],
     ARRAY['carrollton', 'NorthKey', 'CMHC', 'mental-health', 'substance-use', 'Carroll', 'crisis', 'Open-Access', 'justice-involved'],
+    ARRAY['accepts_criminal_record'],
     false,
     'active'
   )
@@ -5054,6 +5247,7 @@ ON CONFLICT (id) DO UPDATE SET
   coverage = EXCLUDED.coverage,
   services = EXCLUDED.services,
   tags = EXCLUDED.tags,
+  intake_signals = EXCLUDED.intake_signals,
   is_featured = EXCLUDED.is_featured,
   status = EXCLUDED.status,
   updated_at = NOW();

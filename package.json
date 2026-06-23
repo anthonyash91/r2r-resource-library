@@ -10,10 +10,18 @@
     "prepare": "bash scripts/install-git-hooks.sh",
     "seed:resources": "npx tsx scripts/generate-resources-seed.ts data/resources.csv",
     "seed:resources:ohio": "python3 scripts/build-ohio-resources.py && python3 scripts/enrich-resources.py data/ohio-resources.csv --write-json data/enrichments/ohio-enriched.json && RESOURCES_DEFAULT_STATE=Ohio RESOURCES_UUID_PREFIX=d2000001 RESOURCES_SEED_OUTPUT=supabase/seed-ohio-resources.sql RESOURCES_INCLUDE_CATEGORIES=false npx tsx scripts/generate-resources-seed.ts data/ohio-resources.csv",
+    "seed:resources:indiana": "python3 scripts/build-indiana-resources.py && python3 scripts/enrich-resources.py data/indiana-resources.csv --write-json data/enrichments/indiana-enriched.json && RESOURCES_DEFAULT_STATE=Indiana RESOURCES_UUID_PREFIX=d3000001 RESOURCES_SEED_OUTPUT=supabase/seed-indiana-resources.sql RESOURCES_INCLUDE_CATEGORIES=false npx tsx scripts/generate-resources-seed.ts data/indiana-resources.csv",
     "enrich:ohio": "python3 scripts/enrich-resources.py data/ohio-resources.csv --write-json data/enrichments/ohio-enriched.json",
-    "seed:resources:all": "npm run seed:resources && npm run seed:resources:ohio",
+    "enrich:indiana": "python3 scripts/enrich-resources.py data/indiana-resources.csv --write-json data/enrichments/indiana-enriched.json",
+    "enrich:resources": "python3 scripts/enrich-resources.py data/resources.csv --write-json data/enrichments/resources-enriched.json",
+    "seed:resources:all": "npm run seed:resources && npm run seed:resources:ohio && npm run seed:resources:indiana",
     "db:push:ohio": "npx tsx scripts/push-ohio-resources.ts",
+    "db:push:indiana": "npx tsx scripts/push-indiana-resources.ts",
+    "db:push:intake": "npx tsx scripts/push-intake-signals.ts",
     "seed:enrich": "npx tsx scripts/apply-enrichments.ts",
+    "tag:intake": "npx tsx scripts/tag-intake-signals.ts data/resources.csv && npx tsx scripts/tag-intake-signals.ts data/ohio-resources.csv",
+    "tag:intake:dry": "npx tsx scripts/tag-intake-signals.ts data/resources.csv --dry-run && npx tsx scripts/tag-intake-signals.ts data/ohio-resources.csv --dry-run",
+    "tag:intake:llm": "npx tsx scripts/tag-intake-signals.ts data/resources.csv --llm --write-json data/enrichments/intake-signals-ky-llm.json && npx tsx scripts/tag-intake-signals.ts data/ohio-resources.csv --llm --write-json data/enrichments/intake-signals-ohio-llm.json",
     "migrate:eligibility": "npx tsx scripts/migrate-eligibility-fields.ts",
     "migrate:served-counties": "npx tsx scripts/migrate-served-counties.ts"
   },
@@ -42,5 +50,8 @@
     "tailwindcss": "^4",
     "tsx": "^4.22.4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
   }
 }

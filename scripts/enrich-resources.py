@@ -16,7 +16,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts" / "lib"))
-from resource_enricher import enrich_row  # noqa: E402
+from resource_enricher import enrich_row, configure_enricher_state, infer_state_from_csv_path  # noqa: E402
+from intake_signals import classify_intake_signals_heuristic, serialize_intake_signals  # noqa: E402
 
 ENRICHMENT_FIELDS = (
     "description",
@@ -28,6 +29,7 @@ ENRICHMENT_FIELDS = (
     "hours",
     "tags",
     "services",
+    "intake_signals",
 )
 
 GENERIC_PATTERNS = (
@@ -57,12 +59,16 @@ def main() -> None:
     check_only = "--check-only" in args
     if check_only:
         args.remove("--check-only")
+    intake_only = "--intake-only" in args
+    if intake_only:
+        args.remove("--intake-only")
 
     if not args or args[0].startswith("-"):
-        print("Usage: python3 scripts/enrich-resources.py [--check-only] <csv-path> [--write-json path]")
+        print("Usage: python3 scripts/enrich-resources.py [--check-only] [--intake-only] <csv-path> [--write-json path]")
         sys.exit(1)
 
     csv_path = Path(args[0]).resolve()
+    configure_enricher_state(infer_state_from_csv_path(str(csv_path)))
     json_path = None
     if "--write-json" in args:
         idx = args.index("--write-json")
@@ -75,17 +81,29 @@ def main() -> None:
     if check_only:
         sys.exit(check_quality(rows))
 
+    if "intake_signals" not in fieldnames:
+        fieldnames.append("intake_signals")
+
     enrichments: dict[str, dict[str, str]] = {}
     enriched_rows = []
+    intake_tagged = 0
     for row in rows:
-        enriched = enrich_row(row)
+        if intake_only:
+            enriched = dict(row)
+            enriched["intake_signals"] = serialize_intake_signals(
+                classify_intake_signals_heuristic(enriched)
+            )
+        else:
+            enriched = enrich_row(row)
         enriched_rows.append(enriched)
+        if enriched.get("intake_signals"):
+            intake_tagged += 1
         patch = {k: enriched[k] for k in ENRICHMENT_FIELDS if enriched.get(k) != row.get(k)}
         if patch:
             enrichments[row["id"]] = patch
 
     with csv_path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_MINIMAL)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_MINIMAL, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(enriched_rows)
 
@@ -97,6 +115,7 @@ def main() -> None:
     print(f"Enriched {len(enriched_rows)} rows in {csv_path}")
     print(f"  description median: {statistics.median(desc_lens):.0f} chars (mean {statistics.mean(desc_lens):.0f})")
     print(f"  rows patched: {len(enrichments)}")
+    print(f"  intake_signals tagged: {intake_tagged}")
     if json_path:
         print(f"  audit JSON: {json_path}")
     sys.exit(check_quality(enriched_rows))

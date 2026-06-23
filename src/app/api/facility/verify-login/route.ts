@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/server";
+import { getAdminSession } from "@/lib/admin-auth";
 import { verifyFacilityProfileBinding } from "@/lib/facility/data";
 import { readFacilitySession } from "@/lib/facility/session";
 import { LOCALE_COOKIE, type Locale } from "@/i18n/types";
@@ -36,6 +37,11 @@ export async function GET() {
 
   if (!user) {
     return NextResponse.json({ facilityMode: true, valid: true, authenticated: false });
+  }
+
+  const adminSession = await getAdminSession(supabase);
+  if (adminSession) {
+    return NextResponse.json({ facilityMode: true, valid: true, authenticated: true });
   }
 
   const valid = await verifyFacilityProfileBinding(

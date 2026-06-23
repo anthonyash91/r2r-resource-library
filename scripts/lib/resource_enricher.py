@@ -4,22 +4,82 @@ from __future__ import annotations
 import re
 from typing import Any
 
-GENERIC_ELIGIBILITY = (
-    "Ohio residents in service area; contact program for current eligibility requirements.",
-    "Contact program for current eligibility requirements.",
-    "Justice-involved residents of served counties; contact coalition for current partner eligibility.",
-)
-GENERIC_NOTES_EN = (
-    "Verify current hours and intake process on website or by phone.",
-    "Contact for current hours",
-    "Contact for meeting dates and hours",
-)
-BOILERPLATE_DESC = (
-    " Contact program for current intake.",
-    "Contact program for current intake.",
-)
+from intake_signals import classify_intake_signals_heuristic, serialize_intake_signals
 
-CATEGORY_REENTRY = {
+STATE_PRESETS: dict[str, dict[str, str]] = {
+    "Kentucky": {
+        "name": "Kentucky",
+        "demonym": "Kentuckians",
+        "demonym_es": "kentuckianos",
+        "throughout": "throughout Kentucky",
+        "throughout_es": "en todo Kentucky",
+        "counties_n": "Kentucky counties",
+        "counties_n_es": "condados de Kentucky",
+        "adults": "Kentucky adults",
+        "adults_es": "adultos en Kentucky",
+        "residents": "Kentucky residents",
+        "residents_es": "residentes de Kentucky",
+        "tag": "kentucky",
+    },
+    "Ohio": {
+        "name": "Ohio",
+        "demonym": "Ohioans",
+        "demonym_es": "ohianos",
+        "throughout": "throughout Ohio",
+        "throughout_es": "en todo Ohio",
+        "counties_n": "Ohio counties",
+        "counties_n_es": "condados de Ohio",
+        "adults": "Ohio adults",
+        "adults_es": "adultos en Ohio",
+        "residents": "Ohio residents",
+        "residents_es": "residentes de Ohio",
+        "tag": "ohio",
+    },
+    "Indiana": {
+        "name": "Indiana",
+        "demonym": "Hoosiers",
+        "demonym_es": "hoosiers",
+        "throughout": "throughout Indiana",
+        "throughout_es": "en todo Indiana",
+        "counties_n": "Indiana counties",
+        "counties_n_es": "condados de Indiana",
+        "adults": "Indiana adults",
+        "adults_es": "adultos en Indiana",
+        "residents": "Indiana residents",
+        "residents_es": "residentes de Indiana",
+        "tag": "indiana",
+    },
+}
+
+_STATE = STATE_PRESETS["Ohio"]
+
+
+def configure_enricher_state(state: str) -> None:
+    global _STATE
+    _STATE = STATE_PRESETS.get(state, STATE_PRESETS["Kentucky"])
+
+
+def infer_state_from_csv_path(path: str) -> str:
+    stem = path.lower()
+    if "indiana" in stem:
+        return "Indiana"
+    if "ohio" in stem:
+        return "Ohio"
+    return "Kentucky"
+
+
+def _category_reentry_hints() -> dict[str, tuple[str, str]]:
+    s = _STATE
+    base = dict(CATEGORY_REENTRY_TEMPLATE)
+    en, es = base["education"]
+    base["education"] = (
+        en.replace("STATE adults", s["adults"]),
+        es.replace("adultos en STATE", s["adults_es"]),
+    )
+    return base
+
+
+CATEGORY_REENTRY_TEMPLATE = {
     "housing": (
         "Programs may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting.",
         "Los programas pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar.",
@@ -41,8 +101,8 @@ CATEGORY_REENTRY = {
         "El tratamiento puede requerir evaluación, seguro o Medicaid y referencia de tribunales o correcciones para algunas plazas—llame a admisión para confirmar disponibilidad.",
     ),
     "education": (
-        "Classes are typically free or low-cost for Ohio adults; orientation may be required before enrollment in GED or vocational tracks.",
-        "Las clases suelen ser gratuitas o de bajo costo para adultos en Ohio; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional.",
+        "Classes are typically free or low-cost for STATE adults; orientation may be required before enrollment in GED or vocational tracks.",
+        "Las clases suelen ser gratuitas o de bajo costo para adultos en STATE; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional.",
     ),
     "veterans": (
         "VA eligibility and discharge status affect which benefits apply; ask specifically for justice-involved veteran or VJO/HCRV services when calling.",
@@ -90,6 +150,21 @@ CATEGORY_REENTRY = {
     ),
 }
 
+GENERIC_ELIGIBILITY = (
+    "STATE residents in service area; contact program for current eligibility requirements.",
+    "Contact program for current eligibility requirements.",
+    "Justice-involved residents of served counties; contact coalition for current partner eligibility.",
+)
+GENERIC_NOTES_EN = (
+    "Verify current hours and intake process on website or by phone.",
+    "Contact for current hours",
+    "Contact for meeting dates and hours",
+)
+BOILERPLATE_DESC = (
+    " Contact program for current intake.",
+    "Contact program for current intake.",
+)
+
 
 def _clean(text: str) -> str:
     t = (text or "").strip()
@@ -101,7 +176,10 @@ def _clean(text: str) -> str:
 
 def _is_generic_eligibility(text: str) -> bool:
     t = (text or "").strip()
-    return not t or t in GENERIC_ELIGIBILITY or "contact program for current eligibility" in t.lower()
+    generic = tuple(
+        g.replace("STATE", _STATE["name"]) for g in GENERIC_ELIGIBILITY
+    )
+    return not t or t in generic or "contact program for current eligibility" in t.lower()
 
 
 def _is_generic_notes(text: str) -> bool:
@@ -117,7 +195,7 @@ def _area_phrase(row: dict[str, str]) -> tuple[str, str]:
     region = (row.get("region") or "").strip()
 
     if coverage == "statewide":
-        return "throughout Ohio", "en todo Ohio"
+        return _STATE["throughout"], _STATE["throughout_es"]
     if served:
         counties = [c.strip() for c in served.split("|") if c.strip()]
         if len(counties) == 1:
@@ -126,7 +204,7 @@ def _area_phrase(row: dict[str, str]) -> tuple[str, str]:
             en = ", ".join(counties[:-1]) + f", and {counties[-1]} counties"
             es = ", ".join(counties[:-1]) + f" y {counties[-1]}"
             return en, f"los condados {es}"
-        return f"{len(counties)} Ohio counties", f"{len(counties)} condados de Ohio"
+        return f"{len(counties)} {_STATE['counties_n']}", f"{len(counties)} {_STATE['counties_n_es']}"
     if county:
         loc = f"{county} County" + (f" ({city})" if city else "")
         es_loc = f"condado de {county}" + (f" ({city})" if city else "")
@@ -192,15 +270,15 @@ def expand_description(row: dict[str, str]) -> tuple[str, str]:
     base = _clean(row.get("description", ""))
     base_es = _clean(row.get("description_es", ""))
     area_en, area_es = _area_phrase(row)
-    cat_hint_en, cat_hint_es = CATEGORY_REENTRY.get(category, CATEGORY_REENTRY["reentry-organizations"])
+    cat_hint_en, cat_hint_es = _category_reentry_hints().get(category, _category_reentry_hints()["reentry-organizations"])
 
     substantial_en = len(base) >= 340 and "Contact program for current intake" not in base
     needs_es_rebuild = _is_broken_spanish(base_es) or not base_es
 
     if substantial_en and not needs_es_rebuild:
         if "reentry" not in base.lower() and "justice" not in base.lower():
-            extra_en = f" The program supports Ohioans navigating reentry in {area_en}."
-            extra_es = f" El programa apoya a ohianos en reinserción en {area_es}."
+            extra_en = f" The program supports {_STATE['demonym']} navigating reentry in {area_en}."
+            extra_es = f" El programa apoya a {_STATE['demonym_es']} en reinserción en {area_es}."
             return base + extra_en, base_es + extra_es
         return base, base_es
 
@@ -237,13 +315,13 @@ def expand_description(row: dict[str, str]) -> tuple[str, str]:
 
     if _is_referral_hub(row):
         en = (
-            f"{name} is a statewide or regional referral resource for Ohioans affected by the criminal justice system. "
+            f"{name} is a statewide or regional referral resource for {_STATE['demonym']} affected by the criminal justice system. "
             f"{base} Users can search by location, service type, or need to find active providers in {area_en}. "
             f"Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits programs operated by other organizations. "
             f"This entry describes a navigation hub—staff here do not replace direct services at partner agencies."
         )
         es = (
-            f"{name} es un recurso de referencia estatal o regional para ohianos afectados por el sistema de justicia penal. "
+            f"{name} es un recurso de referencia estatal o regional para {_STATE['demonym_es']} afectados por el sistema de justicia penal. "
             f"Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en {area_es}. "
             f"Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. "
             f"Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas."
@@ -286,8 +364,8 @@ def expand_eligibility(row: dict[str, str]) -> tuple[str, str]:
         en = f"Justice-involved residents of {area_en} and family members seeking local reentry partner referrals; coalition does not determine partner agency eligibility."
         es = f"Residentes con antecedentes penales de {area_es} y familiares que buscan referencias de aliados locales de reinserción; la coalición no determina la elegibilidad de agencias aliadas."
     elif category == "legal-aid":
-        en = f"Low-income Ohio residents in {area_en}; income and household limits apply. Record sealing and expungement eligibility depends on offense type, waiting periods, and case outcome."
-        es = f"Residentes de Ohio de bajos ingresos en {area_es}; aplican límites de ingresos y hogar. La elegibilidad para sellado o eliminación de antecedentes depende del tipo de delito, períodos de espera y resultado del caso."
+        en = f"Low-income {_STATE['residents']} in {area_en}; income and household limits apply. Record sealing and expungement eligibility depends on offense type, waiting periods, and case outcome."
+        es = f"{_STATE['residents_es'].capitalize()} de bajos ingresos en {area_es}; aplican límites de ingresos y hogar. La elegibilidad para sellado o eliminación de antecedentes depende del tipo de delito, períodos de espera y resultado del caso."
     elif category == "housing":
         en = f"Adults in {area_en} who are homeless, leaving incarceration, or in recovery; programs may require sobriety, income limits, or DOC/court referral."
         es = f"Adultos en {area_es} sin hogar, que salen de la encarcelación o en recuperación; los programas pueden requerir sobriedad, límites de ingresos o referencia del DOC/tribunal."
@@ -298,8 +376,8 @@ def expand_eligibility(row: dict[str, str]) -> tuple[str, str]:
         en = "U.S. military veterans in contact with courts, jails, or prisons; VA medical and benefits eligibility depends on discharge status and service history."
         es = "Veteranos de las fuerzas armadas de EE.UU. en contacto con tribunales, cárceles o prisiones; la elegibilidad médica y de beneficios del VA depende del tipo de baja e historial de servicio."
     elif category == "state-agency" or row.get("coverage") == "statewide":
-        en = f"Ohio residents meeting program rules for {name}; criminal record is generally not a barrier to information and referral services."
-        es = f"Residentes de Ohio que cumplan las reglas del programa para {name}; los antecedentes penales generalmente no son barrera para información y referencias."
+        en = f"{_STATE['residents'].capitalize()} meeting program rules for {name}; criminal record is generally not a barrier to information and referral services."
+        es = f"{_STATE['residents_es'].capitalize()} que cumplan las reglas del programa para {name}; los antecedentes penales generalmente no son barrera para información y referencias."
     else:
         en = f"Residents of {area_en} who are justice-involved or recently released; program-specific income, referral, or offense-type rules may apply—confirm at intake."
         es = f"Residentes de {area_es} con antecedentes penales o recién liberados; pueden aplicar reglas de ingresos, referencia o tipo de delito—confirme en la admisión."
@@ -383,7 +461,7 @@ def expand_tags(row: dict[str, str]) -> str:
     existing = [t.strip() for t in (row.get("tags") or "").split("|") if t.strip()]
     if len(existing) >= 5:
         return row.get("tags", "")
-    extras = ["reentry", "ohio"]
+    extras = ["reentry", _STATE["tag"]]
     county = (row.get("county") or "").strip().lower()
     if county:
         extras.append(county.replace(" ", "-"))
@@ -394,7 +472,32 @@ def expand_tags(row: dict[str, str]) -> str:
     return "|".join(merged[:8])
 
 
+def is_publication_ready(row: dict[str, str]) -> bool:
+    """Skip narrative expansion when the CSV row already meets publication standards."""
+    desc = (row.get("description") or "").strip()
+    desc_es = (row.get("description_es") or "").strip()
+    if len(desc) < 340 or len(desc_es) < 280:
+        return False
+    if any(b.lower() in desc.lower() for b in BOILERPLATE_DESC):
+        return False
+    if "contact program for current intake" in desc.lower():
+        return False
+    if _is_generic_eligibility(row.get("eligibility", "")):
+        return False
+    if _is_generic_notes(row.get("notes", "")):
+        return False
+    services = [s.strip() for s in (row.get("services") or "").split("|") if s.strip()]
+    if not services or {"Resource referrals", "Community support"}.issuperset(set(services)):
+        return False
+    return True
+
+
 def enrich_row(row: dict[str, str]) -> dict[str, str]:
+    if is_publication_ready(row):
+        out = dict(row)
+        out["intake_signals"] = serialize_intake_signals(classify_intake_signals_heuristic(out))
+        return out
+
     desc_en, desc_es = expand_description(row)
     elig_en, elig_es = expand_eligibility(row)
     notes_en, notes_es = expand_notes(row)
@@ -409,4 +512,5 @@ def enrich_row(row: dict[str, str]) -> dict[str, str]:
     out["tags"] = expand_tags(row)
     if not out.get("hours") or out["hours"] == "Contact for current hours":
         out["hours"] = "Contact for current hours; confirm before visiting"
+    out["intake_signals"] = serialize_intake_signals(classify_intake_signals_heuristic(out))
     return out

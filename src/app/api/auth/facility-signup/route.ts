@@ -5,6 +5,7 @@ import { createClient, isSupabaseConfigured } from "@/lib/supabase/server";
 import { facilityAccountExistsByPinHash } from "@/lib/facility/data";
 import { buildFacilityAuthEmail } from "@/lib/facility/auth-email";
 import { hashRecoveryAnswer } from "@/lib/facility/crypto";
+import { isFacilityPasswordValid } from "@/lib/facility/password-policy";
 import { readFacilitySession } from "@/lib/facility/session";
 import { LOCALE_COOKIE, type Locale } from "@/i18n/types";
 import { createTranslator } from "@/i18n/translator";
@@ -69,7 +70,7 @@ export async function POST(request: Request) {
   const recoveryAnswer2 = body.recoveryAnswer2?.trim() ?? "";
 
   if (
-    password.length < 8 ||
+    !isFacilityPasswordValid(password) ||
     !fullName ||
     !recoveryQuestion1 ||
     !recoveryAnswer1 ||
@@ -83,7 +84,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: t("facility.signupInvalid") }, { status: 400 });
   }
 
-  const authEmail = buildFacilityAuthEmail(session.facilityId, session.pin);
+  const authEmail = buildFacilityAuthEmail(session.facilityId, session.pinHash);
 
   const { data: created, error: createError } = await admin.auth.admin.createUser({
     email: authEmail,

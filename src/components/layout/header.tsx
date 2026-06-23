@@ -23,7 +23,7 @@ import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useTranslations } from "@/i18n/locale-context";
 import { useFacilityTabletStatus } from "@/hooks/use-facility-tablet-status";
-import { useSignInHref } from "@/hooks/use-sign-in-href";
+import { useStaffSignInHref } from "@/hooks/use-sign-in-href";
 import type { Locale } from "@/i18n/types";
 
 type NavLayout = "en" | "es-guest" | "es-user" | "es-admin";
@@ -78,7 +78,7 @@ export function Header({ branding }: HeaderProps) {
   const { t, locale } = useTranslations();
   const shouldFetchFacility = !loading && !user && !signingOut;
   const { facilityMode } = useFacilityTabletStatus(shouldFetchFacility);
-  const signInHref = useSignInHref();
+  const signInHref = useStaffSignInHref();
   const showCreateAccount = !facilityMode;
 
   const handleSignOut = async () => {

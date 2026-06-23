@@ -15,6 +15,7 @@ interface NewPasswordFieldsProps {
   confirmId?: string;
   minLength?: number;
   showHint?: boolean;
+  passwordHint?: string;
   passwordAutoComplete?: string;
   confirmAutoComplete?: string;
 }
@@ -30,6 +31,7 @@ export function NewPasswordFields({
   confirmId = "confirm-password",
   minLength = 8,
   showHint = true,
+  passwordHint,
   passwordAutoComplete = "new-password",
   confirmAutoComplete = "new-password",
 }: NewPasswordFieldsProps) {
@@ -46,7 +48,7 @@ export function NewPasswordFields({
           onChange={(e) => onPasswordChange(e.target.value)}
           required
           minLength={minLength}
-          hint={showHint ? t("auth.passwordHint") : undefined}
+          hint={showHint ? (passwordHint ?? t("auth.passwordHint")) : undefined}
           autoComplete={passwordAutoComplete}
         />
         <PasswordStrengthMeter password={password} />
