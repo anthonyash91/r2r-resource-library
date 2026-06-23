@@ -1,15 +1,15 @@
 "use client";
 
-import { useRouter, useSearchParams } from "next/navigation";
-import { useCallback, useTransition } from "react";
-import { X } from "lucide-react";
+import { useMemo, useTransition } from "react";
+import { Search, X } from "lucide-react";
 import { Dropdown } from "@/components/ui/dropdown";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { Category } from "@/types";
 import { useTranslations } from "@/i18n/locale-context";
 import { useCategoryLabel } from "@/i18n/use-category-label";
-import { buildResourcesPageHref } from "@/lib/resources-page";
+import { getCountiesForState } from "@/lib/states/registry";
+import { useResourceFilterDraft } from "./resource-filter-draft-context";
 import { IntakeSignalFilters } from "./intake-signal-filters";
 
 interface ResourceFiltersProps {
@@ -31,42 +31,38 @@ export function ResourceFiltersBar({
   embedded = false,
   compact = false,
 }: ResourceFiltersProps) {
-  const router = useRouter();
-  const searchParams = useSearchParams();
   const [isPending, startTransition] = useTransition();
   const { t } = useTranslations();
   const categoryLabel = useCategoryLabel();
+  const { draft, applied, setField, apply, clear, hasDraftFilters, hasAppliedFilters } =
+    useResourceFilterDraft();
 
-  const updateParams = useCallback(
-    (key: string, value: string) => {
-      const params = new URLSearchParams(searchParams.toString());
-      if (value) {
-        params.set(key, value);
-      } else {
-        params.delete(key);
-      }
-      if (key === "state") {
-        params.delete("county");
-        params.delete("city");
-      }
-      if (key === "county") {
-        params.delete("city");
-      }
-      startTransition(() => {
-        router.push(buildResourcesPageHref(params, "results"), { scroll: false });
-      });
-    },
-    [router, searchParams]
-  );
+  const countyOptions = useMemo(() => {
+    if (draft.state) {
+      const canonical = getCountiesForState(draft.state);
+      if (canonical.length > 0) return canonical;
+    }
+    return counties;
+  }, [counties, draft.state]);
 
-  const clearFilters = () => {
+  const cityOptions = useMemo(() => {
+    if (draft.state === applied.state && draft.county === applied.county) {
+      return cities;
+    }
+    return [];
+  }, [applied.county, applied.state, cities, draft.county, draft.state]);
+
+  const handleApply = () => {
     startTransition(() => {
-      router.push("/resources", { scroll: false });
+      apply();
     });
   };
 
-  const hasFilters = searchParams.toString().length > 0;
-  const selectedState = searchParams.get("state") ?? "";
+  const handleClear = () => {
+    startTransition(() => {
+      clear();
+    });
+  };
 
   const withPlaceholder = (items: string[], placeholder: string) => [
     { value: "", label: placeholder },
@@ -91,8 +87,8 @@ export function ResourceFiltersBar({
         <Dropdown
           label={t("resources.category")}
           placeholder={t("resources.allCategories")}
-          value={searchParams.get("category") ?? ""}
-          onChange={(value) => updateParams("category", value)}
+          value={draft.category}
+          onChange={(value) => setField("category", value)}
           options={[
             { value: "", label: t("resources.allCategories") },
             ...categories.map((c) => ({ value: c.slug, label: categoryLabel(c) })),
@@ -102,18 +98,19 @@ export function ResourceFiltersBar({
         <Dropdown
           label={t("resources.state")}
           placeholder={t("resources.allStates")}
-          value={selectedState}
-          onChange={(value) => updateParams("state", value)}
+          value={draft.state}
+          onChange={(value) => setField("state", value)}
           options={withPlaceholder(states, t("resources.allStates"))}
           searchPlaceholder={t("resources.searchStates")}
         />
         <Dropdown
           label={t("resources.county")}
           placeholder={t("resources.allCounties")}
-          value={searchParams.get("county") ?? ""}
-          onChange={(value) => updateParams("county", value)}
-          options={withPlaceholder(counties, t("resources.allCounties"))}
+          value={draft.county}
+          onChange={(value) => setField("county", value)}
+          options={withPlaceholder(countyOptions, t("resources.allCounties"))}
           searchPlaceholder={t("resources.searchCounties")}
+          disabled={!draft.state}
         />
         <p
           className={cn(
@@ -126,24 +123,25 @@ export function ResourceFiltersBar({
         <Dropdown
           label={t("resources.city")}
           placeholder={t("resources.allCities")}
-          value={searchParams.get("city") ?? ""}
-          onChange={(value) => updateParams("city", value)}
-          options={withPlaceholder(cities, t("resources.allCities"))}
+          value={draft.city}
+          onChange={(value) => setField("city", value)}
+          options={withPlaceholder(cityOptions, t("resources.allCities"))}
           searchPlaceholder={t("resources.searchCities")}
+          disabled={!draft.county || cityOptions.length === 0}
         />
         <Dropdown
           label={t("resources.serviceType")}
           placeholder={t("resources.allServices")}
-          value={searchParams.get("service") ?? ""}
-          onChange={(value) => updateParams("service", value)}
+          value={draft.service}
+          onChange={(value) => setField("service", value)}
           options={withPlaceholder(services, t("resources.allServices"))}
           searchPlaceholder={t("resources.searchServices")}
         />
         <Dropdown
           label={t("resources.sortFilter")}
           placeholder={t("common.default")}
-          value={searchParams.get("filter") ?? ""}
-          onChange={(value) => updateParams("filter", value)}
+          value={draft.filter}
+          onChange={(value) => setField("filter", value)}
           searchable={false}
           options={[
             { value: "", label: t("common.default") },
@@ -154,19 +152,31 @@ export function ResourceFiltersBar({
 
       <IntakeSignalFilters compact={compact} />
 
-      {hasFilters && (
-        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+      <p className="text-sm text-muted-foreground">{t("resources.filtersApplyHint")}</p>
+
+      <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+        <Button
+          type="button"
+          className="w-full sm:w-auto"
+          onClick={handleApply}
+          loading={isPending}
+        >
+          <Search className="h-5 w-5" aria-hidden="true" />
+          {t("resources.searchButton")}
+        </Button>
+        {hasDraftFilters || hasAppliedFilters ? (
           <Button
+            type="button"
             variant="outline"
             className="w-full sm:w-auto"
-            onClick={clearFilters}
+            onClick={handleClear}
             disabled={isPending}
           >
             <X className="h-5 w-5" aria-hidden="true" />
             {t("resources.clearFilters")}
           </Button>
-        </div>
-      )}
+        ) : null}
+      </div>
     </div>
   );
 }

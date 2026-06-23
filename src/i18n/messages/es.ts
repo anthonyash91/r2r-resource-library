@@ -246,7 +246,8 @@ export const es = {
     removeSaveAria: "Quitar {name} de guardados",
     intakeFiltersLabel: "Elegibilidad e ingreso",
     intakeFiltersHint:
-      "Muestre programas que cumplan todas las señales seleccionadas. Déjelo en blanco para incluir todos.",
+      "Muestre programas que cumplan todas las señales seleccionadas. Pulse Buscar para actualizar los resultados.",
+    filtersApplyHint: "Pulse Buscar para actualizar los resultados con los filtros seleccionados.",
     intakeSignalFilterAria: "Filtrar por {label}",
     intakeMetaAria: "Ingreso: {labels}",
     intakeSignals: {

@@ -243,7 +243,8 @@ export const en = {
     removeSaveAria: "Remove {name} from saved",
     intakeFiltersLabel: "Eligibility & intake",
     intakeFiltersHint:
-      "Show programs that match all selected signals. Leave blank to include every program.",
+      "Show programs that match all selected signals. Press Search to update results.",
+    filtersApplyHint: "Press Search to update results with your selected filters.",
     intakeSignalFilterAria: "Filter by {label}",
     intakeMetaAria: "Intake: {labels}",
     intakeSignals: {

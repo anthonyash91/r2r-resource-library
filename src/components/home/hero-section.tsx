@@ -10,6 +10,7 @@ import { useSiteHeaderOffset } from "@/hooks/use-site-header-offset";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import { useTranslations } from "@/i18n/locale-context";
 import { ResourceFiltersPanel } from "@/components/resources/resource-filters-panel";
+import { ResourceFilterDraftProvider, useResourceFilterDraftOptional } from "@/components/resources/resource-filter-draft-context";
 import type { Category } from "@/types";
 
 interface HeroSearchBarProps {
@@ -29,6 +30,7 @@ export function HeroSearchBar({
 }: HeroSearchBarProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const filterDraft = useResourceFilterDraftOptional();
   const { t } = useTranslations();
   const searchPlaceholder = placeholder ?? t("home.heroSearchPlaceholder");
   const queryValue = preserveParams ? (searchParams.get("q") ?? "") : defaultValue;
@@ -36,7 +38,12 @@ export function HeroSearchBar({
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    const query = formData.get("q") as string;
+    const query = (formData.get("q") as string) ?? "";
+
+    if (filterDraft) {
+      filterDraft.apply({ q: query });
+      return;
+    }
 
     if (preserveParams) {
       const params = new URLSearchParams(searchParams.toString());
@@ -234,11 +241,10 @@ export function ResourcesHeroSection({
   services: string[];
 }) {
   const { t } = useTranslations();
+  const filterProps = { categories, states, counties, cities, services };
   const searchBarRef = useRef<HTMLDivElement | null>(null);
   const [showStickySearch, setShowStickySearch] = useState(false);
   const headerOffset = useSiteHeaderOffset();
-
-  const filterProps = { categories, states, counties, cities, services };
 
   useEffect(() => {
     const node = searchBarRef.current;
@@ -259,51 +265,53 @@ export function ResourcesHeroSection({
   }, [headerOffset]);
 
   return (
-    <>
-      <div
-        className={cn(
-          "app-hero-surface fixed inset-x-0 z-50 overflow-hidden border-b border-primary-foreground/20 px-4 py-1.5 transition-[transform,opacity] duration-200 ease-out sm:px-6 sm:py-2 lg:px-8",
-          showStickySearch
-            ? "pointer-events-auto translate-y-0 opacity-100"
-            : "pointer-events-none -translate-y-full opacity-0"
-        )}
-        style={{ top: headerOffset }}
-      >
-        <HeroSurfaceOrbs variant="sticky" />
-        <div className="relative mx-auto w-full max-w-2xl">
-          <HeroSearchBar sticky preserveParams placeholder={t("resources.searchPlaceholder")} />
-        </div>
-      </div>
-
-      <section
-        className={cn(
-          "app-hero-surface relative overflow-hidden px-4 sm:px-6 lg:px-8",
-          resourcesHeroPadding
-        )}
-      >
-        <HeroSurfaceOrbs />
-
-        <div className="relative mx-auto w-full max-w-7xl">
-          <div className="mx-auto flex w-full max-w-4xl flex-col items-center gap-4 text-center sm:gap-5">
-            <div className="space-y-2">
-              <h1 className="text-3xl font-bold leading-none text-primary-foreground sm:text-4xl">
-                {t("resources.findResources")}
-              </h1>
-              <p className="mx-auto max-w-2xl text-base leading-relaxed text-primary-foreground/90 sm:text-lg">
-                {t("resources.heroSubheadline")}
-              </p>
-            </div>
-            <div ref={searchBarRef} className="mx-auto w-full max-w-3xl space-y-4">
-              <HeroSearchBar
-                compact
-                preserveParams
-                placeholder={t("resources.searchPlaceholder")}
-              />
-              <ResourceFiltersPanel {...filterProps} />
-            </div>
+    <ResourceFilterDraftProvider>
+      <>
+        <div
+          className={cn(
+            "app-hero-surface fixed inset-x-0 z-50 overflow-hidden border-b border-primary-foreground/20 px-4 py-1.5 transition-[transform,opacity] duration-200 ease-out sm:px-6 sm:py-2 lg:px-8",
+            showStickySearch
+              ? "pointer-events-auto translate-y-0 opacity-100"
+              : "pointer-events-none -translate-y-full opacity-0"
+          )}
+          style={{ top: headerOffset }}
+        >
+          <HeroSurfaceOrbs variant="sticky" />
+          <div className="relative mx-auto w-full max-w-2xl">
+            <HeroSearchBar sticky preserveParams placeholder={t("resources.searchPlaceholder")} />
           </div>
         </div>
-      </section>
-    </>
+
+        <section
+          className={cn(
+            "app-hero-surface relative overflow-hidden px-4 sm:px-6 lg:px-8",
+            resourcesHeroPadding
+          )}
+        >
+          <HeroSurfaceOrbs />
+
+          <div className="relative mx-auto w-full max-w-7xl">
+            <div className="mx-auto flex w-full max-w-4xl flex-col items-center gap-4 text-center sm:gap-5">
+              <div className="space-y-2">
+                <h1 className="text-3xl font-bold leading-none text-primary-foreground sm:text-4xl">
+                  {t("resources.findResources")}
+                </h1>
+                <p className="mx-auto max-w-2xl text-base leading-relaxed text-primary-foreground/90 sm:text-lg">
+                  {t("resources.heroSubheadline")}
+                </p>
+              </div>
+              <div ref={searchBarRef} className="mx-auto w-full max-w-3xl space-y-4">
+                <HeroSearchBar
+                  compact
+                  preserveParams
+                  placeholder={t("resources.searchPlaceholder")}
+                />
+                <ResourceFiltersPanel {...filterProps} />
+              </div>
+            </div>
+          </div>
+        </section>
+      </>
+    </ResourceFilterDraftProvider>
   );
 }

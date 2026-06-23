@@ -19,7 +19,7 @@ import { RegionalBadge } from "@/components/resources/regional-badge";
 import { IntakeSignalBadges } from "@/components/resources/intake-signal-badges";
 import { Card, CardDescription, CardHeader } from "@/components/ui/card";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
-import { formatPhone, formatDate, formatWebsiteDisplay, shareResource, cn, pageSectionPadding, pageSectionSubheadingClass } from "@/lib/utils";
+import { formatPhone, formatDate, formatWebsiteDisplay, shareResource, cn, pageSectionPadding } from "@/lib/utils";
 import { useSaved } from "@/lib/saved-context";
 import { useAuth } from "@/lib/auth-context";
 import { useSignInHref } from "@/hooks/use-sign-in-href";
@@ -37,7 +37,7 @@ interface ResourceDetailProps {
   related: Resource[];
 }
 
-const sectionTitleClass = pageSectionSubheadingClass;
+const resourceDetailHeadingClass = "text-xl font-bold";
 
 export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
   const { isSaved, toggleSave, recordView } = useSaved();
@@ -125,7 +125,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
         <div className="grid gap-6 lg:grid-cols-3">
           <div className="space-y-6 lg:col-span-2">
             <Card>
-              <h1 className="mb-4 text-xl font-bold">{resource.name}</h1>
+              <h1 className={cn("mb-4", resourceDetailHeadingClass)}>{resource.name}</h1>
               {showCoverageLabel && (
                 <p className="mb-3 text-sm font-medium text-primary">{coverageLabel}</p>
               )}
@@ -135,7 +135,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
             {resource.services.length > 0 && (
               <Card>
                 <CardHeader>
-                  <h2 className={sectionTitleClass}>{t("resources.servicesOffered")}</h2>
+                  <h2 className={resourceDetailHeadingClass}>{t("resources.servicesOffered")}</h2>
                 </CardHeader>
                 <ul className="space-y-2">
                   {resource.services.map((service) => (
@@ -153,7 +153,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
             {resource.eligibility && (
               <Card className="app-eligibility-card">
                 <CardHeader>
-                  <h2 className={sectionTitleClass}>{t("resources.eligibilityRequirements")}</h2>
+                  <h2 className={resourceDetailHeadingClass}>{t("resources.eligibilityRequirements")}</h2>
                 </CardHeader>
                 <CardDescription>{resource.eligibility}</CardDescription>
               </Card>
@@ -162,7 +162,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
             {resource.notes && (
               <Card>
                 <CardHeader>
-                  <h2 className={sectionTitleClass}>{t("resources.additionalInfo")}</h2>
+                  <h2 className={resourceDetailHeadingClass}>{t("resources.additionalInfo")}</h2>
                 </CardHeader>
                 <CardDescription>{resource.notes}</CardDescription>
               </Card>
@@ -172,7 +172,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
           <aside className="min-w-0 space-y-6">
             <Card>
               <CardHeader>
-                <h2 className={sectionTitleClass}>{t("resources.contactInfo")}</h2>
+                <h2 className={resourceDetailHeadingClass}>{t("resources.contactInfo")}</h2>
               </CardHeader>
               <div className="space-y-3">
                 {fullAddress && (
@@ -229,7 +229,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
             {shouldShowCountiesServed(resource) ? (
               <Card>
                 <CardHeader>
-                  <h2 className={sectionTitleClass}>{t("resources.countiesServed")}</h2>
+                  <h2 className={resourceDetailHeadingClass}>{t("resources.countiesServed")}</h2>
                 </CardHeader>
                 <ServedCountiesLinks resource={resource} />
               </Card>
@@ -238,7 +238,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
             {resource.tags.length > 0 && (
               <Card>
                 <CardHeader>
-                  <h2 className={sectionTitleClass}>{t("resources.tags")}</h2>
+                  <h2 className={resourceDetailHeadingClass}>{t("resources.tags")}</h2>
                 </CardHeader>
                 <p className="text-base leading-relaxed text-muted-foreground">
                   {resource.tags.map((tag, index) => (
@@ -266,7 +266,7 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
 
         {related.length > 0 && (
           <section className="mt-12" aria-labelledby="related-heading">
-            <h2 id="related-heading" className="mb-6 text-2xl font-bold">
+            <h2 id="related-heading" className={cn("mb-6", resourceDetailHeadingClass)}>
               {t("resources.relatedResources")}
             </h2>
             <ResourceMasonry resources={related} columns={2} variant="compact" showSave={false} />

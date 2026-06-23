@@ -167,10 +167,10 @@ Site IDs are hashed at rest; reversible encryption allows admins to reveal/copy 
 | Feature | Description |
 |---------|-------------|
 | **Homepage** | Hero search, popular tags, browse-by-category pills, personalized “Picked for you” (when onboarded), How It Works, featured resources, built-for CTA, announcements banner |
-| **Resource directory** (`/resources`) | Hero search with separate collapsible location filters (collapsed by default), sticky search bar, “Resources based on your chosen needs” section with dashboard link to edit preferences, county/statewide split with count badges in section headers, paginated masonry grid; `?scroll=results` or `?scroll=recommended` for deep links from homepage and dashboard |
+| **Resource directory** (`/resources`) | Hero search with separate collapsible location filters (collapsed by default); filters and intake signals apply when the user presses **Search** (no auto-scroll on every change), sticky search bar, “Resources based on your chosen needs” section with dashboard link to edit preferences, county/statewide split with count badges in section headers, paginated masonry grid; `?scroll=results` or `?scroll=recommended` for deep links from homepage and dashboard |
 | **Resource detail** (`/resources/[id]`) | Category/coverage badges, intake signal badges (criminal record, referral, walk-in), eligibility & operational notes (EN/ES), served counties, contact info, directions, save & share, related resources |
 | **Onboarding** (`/get-started`) | 3-step wizard: state (KY/OH) → county → up to 3 priority categories; skip option; edit mode via `?edit=1` |
-| **Search & filters** | Keyword, category, state, county, city, service type, coverage, recently added, intake signals (`?intake=accepts_criminal_record\|walk_in_ok` — AND logic) |
+| **Search & filters** | Keyword, category, state, county, city, service type, coverage, recently added, intake signals (`?intake=accepts_criminal_record\|walk_in_ok` — AND logic); draft filter state until **Search** is pressed |
 | **Saved resources** (`/saved`) | Full saved list (sign-in required) |
 | **Dashboard** (`/dashboard`) | Welcome, location & priority summary, saved / recommended / recently viewed sections |
 | **Email PDF** | Signed-in users email a PDF of saved resources (Resend) |
