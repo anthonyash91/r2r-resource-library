@@ -16,7 +16,7 @@ import { AnnouncementsBanner } from "@/components/home/announcements-banner";
 import { FacilityEnterErrorBanner } from "@/components/facility/facility-enter-error-banner";
 import { RecommendedResourcesSection } from "@/components/resources/recommended-resources-section";
 import { HeroSurfaceOrbs } from "@/components/layout/hero-surface-orbs";
-import { cn, pageSectionPadding, checkIconClass, pageSectionHeadingClass, pageSectionSubtitleClass, pageSectionSubtitleOnHeroClass, pageSectionSubheadingClass } from "@/lib/utils";
+import { cn, pageSectionPadding, checkIconClass, pageSectionHeadingClass, pageSectionSubtitleClass, pageSectionSubtitleOnHeroClass, pageSectionSubheadingClass, pageSectionBandClassForIndex, pageSectionBandForIndex } from "@/lib/utils";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import { getRecommendedResources } from "@/lib/user-preferences/recommendations";
 import { getServerUserPreferences } from "@/lib/user-preferences/server";
@@ -105,6 +105,9 @@ export default async function HomePage({
   ];
 
   const showRecommended = recommended.length > 0;
+  const coverageBandIndex = showRecommended ? 2 : 1;
+  const howItWorksBandIndex = showRecommended ? 3 : 2;
+  const featuredBandIndex = showRecommended ? 4 : 3;
 
   return (
     <>
@@ -121,7 +124,7 @@ export default async function HomePage({
       />
 
       <section
-        className={cn(showRecommended ? "bg-card" : "app-band-muted", pageSectionPadding)}
+        className={cn(pageSectionBandClassForIndex(0), pageSectionPadding)}
         aria-labelledby="categories-heading"
       >
         <div className="mx-auto max-w-7xl">
@@ -151,14 +154,18 @@ export default async function HomePage({
           state={preferences.state}
           priorityCategories={preferences.priorityCategories}
           variant="home"
+          band={pageSectionBandForIndex(1)}
         />
       ) : null}
 
-      <ResourcesCoverageMapSection resources={resources} />
+      <ResourcesCoverageMapSection
+        resources={resources}
+        band={pageSectionBandForIndex(coverageBandIndex)}
+      />
 
       <section
         id="how-it-works-heading"
-        className={cn("bg-card", pageSectionPadding)}
+        className={cn(pageSectionBandClassForIndex(howItWorksBandIndex), pageSectionPadding)}
         aria-labelledby="how-it-works-title"
       >
         <div className="mx-auto max-w-6xl">
@@ -200,7 +207,10 @@ export default async function HomePage({
         </div>
       </section>
 
-      <FeaturedResourcesSection resources={featuredResources} />
+      <FeaturedResourcesSection
+        resources={featuredResources}
+        band={pageSectionBandForIndex(featuredBandIndex)}
+      />
 
       <section
         className={cn("app-hero-surface relative overflow-hidden", pageSectionPadding)}

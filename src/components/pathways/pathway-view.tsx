@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { getServerTranslator } from "@/i18n/server";
 import { getPathwayIntroKey } from "@/lib/states/registry";
-import { cn, pageSectionPadding } from "@/lib/utils";
+import { cn, pageSectionPadding, pageSectionBandClassForIndex } from "@/lib/utils";
 import { ListOrdered } from "lucide-react";
 
 interface PathwayViewProps {
@@ -31,7 +31,7 @@ export async function PathwayView({ slug, matchedSteps, preferences }: PathwayVi
         description={t(introKey)}
       />
 
-      <div className={cn("app-band-alt", pageSectionPadding)}>
+      <div className={cn(pageSectionBandClassForIndex(0), pageSectionPadding)}>
         <div className="mx-auto max-w-4xl space-y-8">
           <p className="text-base leading-relaxed text-muted-foreground">
             {t("pathways.disclaimer")}

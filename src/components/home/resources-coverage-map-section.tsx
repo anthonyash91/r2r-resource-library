@@ -5,15 +5,17 @@ import {
   buildResourceMapStateSummaries,
   getActiveResourceMapStates,
 } from "@/lib/resource-map-pins";
-import { cn, pageSectionHeadingClass, pageSectionPadding, pageSectionSubtitleClass } from "@/lib/utils";
+import { cn, pageSectionHeadingClass, pageSectionPadding, pageSectionSubtitleClass, pageSectionBandClass, type PageSectionBand } from "@/lib/utils";
 import { getServerTranslator } from "@/i18n/server";
 
 interface ResourcesCoverageMapSectionProps {
   resources: Resource[];
+  band?: PageSectionBand;
 }
 
 export async function ResourcesCoverageMapSection({
   resources,
+  band = "muted",
 }: ResourcesCoverageMapSectionProps) {
   const { t } = await getServerTranslator();
   const pins = buildResourceMapPins(resources);
@@ -24,7 +26,7 @@ export async function ResourcesCoverageMapSection({
 
   return (
     <section
-      className={cn("app-band-muted", pageSectionPadding)}
+      className={cn(pageSectionBandClass(band), pageSectionPadding)}
       aria-labelledby="coverage-map-heading"
     >
       <div className="mx-auto max-w-7xl">

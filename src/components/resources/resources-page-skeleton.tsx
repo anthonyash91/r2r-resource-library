@@ -1,4 +1,4 @@
-import { cn, pageSectionPadding, resourcesHeroPadding, sectionStackGap } from "@/lib/utils";
+import { cn, pageSectionPadding, resourcesHeroPadding, sectionStackGap, pageSectionBandClassForIndex } from "@/lib/utils";
 
 interface ResourcesPageSkeletonProps {
   loadingLabel: string;
@@ -75,7 +75,7 @@ export function ResourcesPageSkeleton({ loadingLabel }: ResourcesPageSkeletonPro
         </div>
       </section>
 
-      <div className={cn("app-band-alt", pageSectionPadding)}>
+      <div className={cn(pageSectionBandClassForIndex(0), pageSectionPadding)}>
         <div
           className={cn("mx-auto max-w-7xl", sectionStackGap)}
           role="status"

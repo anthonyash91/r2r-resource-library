@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Dropdown } from "@/components/ui/dropdown";
 import { Card } from "@/components/ui/card";
-import { cn, pageSectionPadding, pageSectionSubheadingClass } from "@/lib/utils";
+import { cn, pageSectionPadding, pageSectionSubheadingClass, pageSectionBandClassForIndex } from "@/lib/utils";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import type { ContactPageContent } from "@/lib/contact-content-fields";
 import { useTranslations } from "@/i18n/locale-context";
@@ -88,7 +88,7 @@ export function ContactPageView({ content, initialSubject }: ContactPageViewProp
         description={content.heroDescription}
       />
 
-      <div className={cn("app-band-alt", pageSectionPadding)}>
+      <div className={cn(pageSectionBandClassForIndex(0), pageSectionPadding)}>
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] lg:items-start">
             <Card className="p-6 sm:p-8">

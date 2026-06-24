@@ -15,7 +15,7 @@ import {
 import { PageHeroBand } from "@/components/layout/page-hero-band";
 import { HeroSurfaceOrbs } from "@/components/layout/hero-surface-orbs";
 import { Card } from "@/components/ui/card";
-import { cn, pageSectionPadding, checkIconClass, pageSectionSubtitleClass, pageSectionSubtitleOnHeroClass, pageSectionSubheadingClass } from "@/lib/utils";
+import { cn, pageSectionPadding, checkIconClass, pageSectionSubtitleClass, pageSectionSubtitleOnHeroClass, pageSectionSubheadingClass, pageSectionBandClassForIndex } from "@/lib/utils";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import type { AboutPageContent } from "@/lib/about-content-fields";
 import { getServerTranslator } from "@/i18n/server";
@@ -68,7 +68,7 @@ export async function AboutPageView({ content, stats }: AboutPageViewProps) {
       />
 
       <section
-        className={cn("bg-card", pageSectionPadding)}
+        className={cn(pageSectionBandClassForIndex(0), pageSectionPadding)}
         aria-labelledby="about-mission-heading"
       >
         <div className="mx-auto max-w-4xl text-center">
@@ -105,7 +105,7 @@ export async function AboutPageView({ content, stats }: AboutPageViewProps) {
       </section>
 
       <section
-        className={cn("app-band-muted", pageSectionPadding)}
+        className={cn(pageSectionBandClassForIndex(1), pageSectionPadding)}
         aria-labelledby="about-serve-heading"
       >
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:items-center lg:gap-14">
@@ -149,7 +149,7 @@ export async function AboutPageView({ content, stats }: AboutPageViewProps) {
       </section>
 
       <section
-        className={cn("bg-card", pageSectionPadding)}
+        className={cn(pageSectionBandClassForIndex(2), pageSectionPadding)}
         aria-labelledby="about-values-heading"
       >
         <div className="mx-auto max-w-6xl">

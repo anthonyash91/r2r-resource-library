@@ -12,7 +12,7 @@ import {
   type ResourceFilterOptions,
 } from "@/components/resources/use-resource-filter-options";
 import { ScrollToResourceResults } from "@/components/resources/scroll-to-resource-results";
-import { cn, pageSectionPadding, sectionDividerTop, sectionStackGap } from "@/lib/utils";
+import { cn, pageSectionPadding, sectionDividerTop, sectionStackGap, pageSectionBandClassForIndex } from "@/lib/utils";
 import { RESOURCE_RESULTS_ID } from "@/lib/resources-page";
 import type { ResourcesPageSearchParams } from "@/lib/resources-page-filters";
 
@@ -44,7 +44,7 @@ export function ResourcesPageInstantShell({ loadingLabel }: ResourcesPageViewPro
         appliedOptions={EMPTY_RESOURCE_FILTER_OPTIONS}
       />
 
-      <div className={cn("app-band-alt", pageSectionPadding)}>
+      <div className={cn(pageSectionBandClassForIndex(0), pageSectionPadding)}>
         <div className={cn("mx-auto max-w-7xl", sectionStackGap)}>
           <div
             id={RESOURCE_RESULTS_ID}
@@ -106,7 +106,7 @@ export function ResourcesPageView({ loadingLabel }: ResourcesPageViewProps) {
         appliedOptions={bootstrap?.appliedOptions ?? EMPTY_RESOURCE_FILTER_OPTIONS}
       />
 
-      <div className={cn("app-band-alt", pageSectionPadding)}>
+      <div className={cn(pageSectionBandClassForIndex(0), pageSectionPadding)}>
         <div className={cn("mx-auto max-w-7xl", sectionStackGap)}>
           <ScrollToResourceResults />
 

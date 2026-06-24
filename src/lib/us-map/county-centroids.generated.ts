@@ -7,7 +7,7 @@ export interface CountyCentroid {
   lat: number;
 }
 
-export const COUNTY_CENTROIDS: CountyCentroid[] = [
+export const COUNTY_CENTROIDS = [
   {
     "state": "Indiana",
     "county": "Gibson",

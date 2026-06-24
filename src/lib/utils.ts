@@ -34,6 +34,25 @@ export const pageSectionSubheadingClass = "text-xl font-bold sm:text-2xl text-fo
 /** Teal checkmark color used across list/feature icons */
 export const checkIconClass = "app-check-icon";
 
+/** White vs gray full-width page section backgrounds (alternate between hero bands). */
+export type PageSectionBand = "surface" | "muted";
+
+export const pageSectionSurfaceClass = "w-full bg-white";
+export const pageSectionMutedClass = "w-full bg-[#f9fafb]";
+
+export function pageSectionBandClass(band: PageSectionBand): string {
+  return band === "surface" ? pageSectionSurfaceClass : pageSectionMutedClass;
+}
+
+/** First section after a hero uses white (`surface`); then alternates gray/white. */
+export function pageSectionBandForIndex(index: number): PageSectionBand {
+  return index % 2 === 0 ? "surface" : "muted";
+}
+
+export function pageSectionBandClassForIndex(index: number): string {
+  return pageSectionBandClass(pageSectionBandForIndex(index));
+}
+
 function stableHash(input: string): number {
   let hash = 2166136261;
   for (let i = 0; i < input.length; i++) {

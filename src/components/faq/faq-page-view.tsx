@@ -16,7 +16,7 @@ import { Card } from "@/components/ui/card";
 import { SearchField } from "@/components/ui/search-field";
 import { FaqAccordion } from "@/components/faq/faq-accordion";
 import { FAQ_CATEGORIES } from "@/lib/faq-categories";
-import { cn, pageSectionPadding, pageSectionSubtitleOnHeroClass, pageSectionSubheadingClass } from "@/lib/utils";
+import { cn, pageSectionPadding, pageSectionSubtitleOnHeroClass, pageSectionSubheadingClass, pageSectionBandClassForIndex } from "@/lib/utils";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import { useTranslations } from "@/i18n/locale-context";
 import type { Faq } from "@/types";
@@ -144,7 +144,7 @@ export function FaqPageView({ faqs }: FaqPageViewProps) {
         description={t("faq.intro")}
       />
 
-      <div className={cn("app-band-alt", pageSectionPadding)}>
+      <div className={cn(pageSectionBandClassForIndex(0), pageSectionPadding)}>
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 space-y-5">
             <SearchField

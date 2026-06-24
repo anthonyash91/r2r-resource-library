@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
 import { PageHeroBand } from "@/components/layout/page-hero-band";
-import { cn, pageSectionPadding } from "@/lib/utils";
+import { cn, pageSectionPadding, pageSectionBandClassForIndex } from "@/lib/utils";
 
 export interface LegalSection {
   title: string;
@@ -35,7 +35,7 @@ export function LegalDocumentView({
     <div>
       <PageHeroBand icon={icon} title={title} description={description} />
 
-      <section className={cn("bg-muted", pageSectionPadding)}>
+      <section className={cn(pageSectionBandClassForIndex(0), pageSectionPadding)}>
         <div className="mx-auto max-w-3xl">
           <article className="rounded-2xl border border-border bg-card p-6 sm:p-8 lg:p-10">
             <div className="mb-8 rounded-xl border border-border bg-secondary/60 p-5 sm:p-6">

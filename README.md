@@ -462,6 +462,7 @@ Built mobile-first with reentry users in mind:
 - Semantic HTML, ARIA labels, keyboard-navigable menus and accordions
 - `prefers-reduced-motion` respected
 - Dedicated [**Accessibility**](/accessibility) statement page (CMS-editable)
+- Marketing and content pages alternate **white** and **light gray** (`#f9fafb`) full-width section bands between the header hero and footer hero (crisis bar unchanged)
 
 Resource cards use a consistent **type badge** system (category, statewide, regional) shared with priority chips in personalized sections.
 

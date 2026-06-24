@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { PageHeroBand } from "@/components/layout/page-hero-band";
 import { Card } from "@/components/ui/card";
-import { cn, pageSectionPadding, checkIconClass, pageSectionSubheadingClass } from "@/lib/utils";
+import { cn, pageSectionPadding, checkIconClass, pageSectionSubheadingClass, pageSectionBandClassForIndex } from "@/lib/utils";
 import type { AccessibilityPageContent } from "@/lib/legal-content";
 import { getServerTranslator } from "@/i18n/server";
 
@@ -36,7 +36,7 @@ export async function AccessibilityPageView({ content }: AccessibilityPageViewPr
         description={content.description}
       />
 
-      <section className={cn("bg-muted", pageSectionPadding)}>
+      <section className={cn(pageSectionBandClassForIndex(0), pageSectionPadding)}>
         <div className="mx-auto max-w-3xl space-y-10">
           <article className="rounded-2xl border border-border bg-card p-6 sm:p-8 lg:p-10">
             <section aria-labelledby="accessibility-commitment-heading">

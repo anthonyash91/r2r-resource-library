@@ -4,21 +4,25 @@ import type { Resource } from "@/types";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { Button } from "@/components/ui/button";
 import { getServerTranslator } from "@/i18n/server";
-import { cn, pageSectionPadding, pageSectionHeadingClass, pageSectionSubtitleClass } from "@/lib/utils";
+import { cn, pageSectionPadding, pageSectionHeadingClass, pageSectionSubtitleClass, pageSectionBandClass, type PageSectionBand } from "@/lib/utils";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 
 interface FeaturedResourcesSectionProps {
   resources: Resource[];
+  band?: PageSectionBand;
 }
 
-export async function FeaturedResourcesSection({ resources }: FeaturedResourcesSectionProps) {
+export async function FeaturedResourcesSection({
+  resources,
+  band = "muted",
+}: FeaturedResourcesSectionProps) {
   const { t } = await getServerTranslator();
 
   if (resources.length === 0) return null;
 
   return (
     <section
-      className={cn("border-b border-border app-band-muted", pageSectionPadding)}
+      className={cn(pageSectionBandClass(band), pageSectionPadding)}
       aria-labelledby="featured-resources-heading"
     >
       <div className="mx-auto max-w-7xl">

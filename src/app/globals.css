@@ -208,11 +208,15 @@ header {
 }
 
 .app-band-alt {
-  background-color: #f9fafb;
+  background-color: var(--surface-alt);
 }
 
 .app-band-muted {
-  background-color: #f9fafb;
+  background-color: var(--surface-alt);
+}
+
+.app-band-surface {
+  background-color: #ffffff;
 }
 
 .app-crisis-bar {

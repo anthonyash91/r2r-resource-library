@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Heart } from "lucide-react";
 import { PageHeroBand } from "@/components/layout/page-hero-band";
-import { cn, pageSectionPadding, pageSectionSubheadingClass } from "@/lib/utils";
+import { cn, pageSectionPadding, pageSectionSubheadingClass, pageSectionBandClassForIndex } from "@/lib/utils";
 import { parseCmsContent } from "@/lib/parse-cms-content";
 
 interface RelatedLink {
@@ -33,7 +33,7 @@ export function CmsPageView({
     <div>
       <PageHeroBand icon={Heart} title={title} description={description} />
 
-      <section className={cn("app-band-alt", pageSectionPadding)}>
+      <section className={cn(pageSectionBandClassForIndex(0), pageSectionPadding)}>
         <div className="mx-auto max-w-3xl">
           <article className="overflow-hidden rounded-2xl border border-border bg-card">
             <div className="p-6 sm:p-8 lg:p-10">

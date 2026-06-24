@@ -5,7 +5,7 @@ import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { getServerTranslator } from "@/i18n/server";
-import { cn, pageSectionPadding, pageSectionHeadingClass, pageSectionSubtitleClass } from "@/lib/utils";
+import { cn, pageSectionPadding, pageSectionHeadingClass, pageSectionSubtitleClass, pageSectionBandClass, type PageSectionBand } from "@/lib/utils";
 import { buildResourcesPageHref, RECOMMENDED_RESOURCES_ID } from "@/lib/resources-page";
 import { RecommendedPreferencesSummary } from "@/components/resources/recommended-preferences-summary";
 
@@ -15,6 +15,7 @@ interface RecommendedResourcesSectionProps {
   state?: string | null;
   priorityCategories?: string[];
   variant?: "home" | "resources";
+  band?: PageSectionBand;
 }
 
 export async function RecommendedResourcesSection({
@@ -23,6 +24,7 @@ export async function RecommendedResourcesSection({
   state,
   priorityCategories = [],
   variant = "home",
+  band = "muted",
 }: RecommendedResourcesSectionProps) {
   const { t } = await getServerTranslator();
 
@@ -84,7 +86,7 @@ export async function RecommendedResourcesSection({
       className={cn(
         "scroll-mt-[var(--site-header-height)]",
         variant === "home"
-          ? "app-band-muted"
+          ? pageSectionBandClass(band)
           : "rounded-xl border border-border bg-card p-6",
         variant === "home" && pageSectionPadding
       )}
