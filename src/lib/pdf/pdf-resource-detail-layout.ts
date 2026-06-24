@@ -11,7 +11,6 @@ import { formatOperatingHours } from "@/i18n/localize-content";
 import { getCategoryLabel } from "@/i18n/category-label";
 import { PDF_RESOURCE_PAGE, PDF_THEME } from "@/lib/pdf/pdf-theme";
 import {
-  measureFixedPdfCard,
   splitTextToHeight,
   type PdfLabeledValue,
   writeFixedPdfCard,
@@ -434,11 +433,13 @@ export function writeResourceSinglePage(
   const contentBottom = getContentBottom();
 
   const contactEntries = buildContactEntries(resource, labels, locale);
+  let rightColumnY = columnStartY;
+
   if (contactEntries.length > 0) {
-    writeFixedPdfCard(
+    rightColumnY = writeFixedPdfCard(
       doc,
       rightX,
-      columnStartY,
+      rightColumnY,
       rightWidth,
       { title: labels.contactInfo, labeledValues: contactEntries },
       compact
@@ -447,19 +448,10 @@ export function writeResourceSinglePage(
 
   const counties = buildCountiesText(resource, labels);
   if (counties) {
-    const contactHeight =
-      contactEntries.length > 0
-        ? measureFixedPdfCard(
-            doc,
-            rightWidth,
-            { title: labels.contactInfo, labeledValues: contactEntries },
-            compact
-          )
-        : 0;
-    writeFixedPdfCard(
+    rightColumnY = writeFixedPdfCard(
       doc,
       rightX,
-      columnStartY + contactHeight,
+      rightColumnY,
       rightWidth,
       { title: labels.countiesServed, body: counties },
       compact
@@ -469,29 +461,12 @@ export function writeResourceSinglePage(
   const lastUpdatedText = t("resources.lastUpdated", {
     date: formatDate(resource.updated_at, locale),
   });
-  let rightColumnHeight = 0;
-  if (contactEntries.length > 0) {
-    rightColumnHeight += measureFixedPdfCard(
-      doc,
-      rightWidth,
-      { title: labels.contactInfo, labeledValues: contactEntries },
-      compact
-    );
-  }
-  if (counties) {
-    rightColumnHeight += measureFixedPdfCard(
-      doc,
-      rightWidth,
-      { title: labels.countiesServed, body: counties },
-      compact
-    );
-  }
-  if (columnStartY + rightColumnHeight + 14 <= contentBottom) {
+  if (rightColumnY + 14 <= contentBottom) {
     doc
       .font("Helvetica")
       .fontSize(compact.fontSize.meta)
       .fillColor(PDF_THEME.colors.muted)
-      .text(lastUpdatedText, rightX, columnStartY + rightColumnHeight, {
+      .text(lastUpdatedText, rightX, rightColumnY, {
         width: rightWidth,
         align: "center",
       });

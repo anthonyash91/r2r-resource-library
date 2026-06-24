@@ -169,14 +169,15 @@ Site IDs are hashed at rest; reversible encryption allows admins to reveal/copy 
 | **Homepage** | Hero search, popular tags, browse-by-category pills, personalized “Picked for you” (when onboarded), How It Works, featured resources, built-for CTA, announcements banner |
 | **Resource directory** (`/resources`) | Hero search with separate collapsible location filters (collapsed by default); filters and intake signals apply when the user presses **Search** (no auto-scroll on every change), sticky search bar, “Resources based on your chosen needs” section with dashboard link to edit preferences, county/statewide split with count badges in section headers, paginated stable-column masonry grid with scroll-triggered card reveals; `?scroll=results` or `?scroll=recommended` for deep links from homepage and dashboard |
 | **Homepage** (`/`) | Scroll-triggered section reveals; featured and recommended resource cards animate individually |
-| **Resource detail** (`/resources/[id]`) | Category/coverage badges, intake signal badges (criminal record, referral, walk-in), eligibility & operational notes (EN/ES), served counties, contact info, directions, save & share, related resources |
+| **Resource detail** (`/resources/[id]`) | Category/coverage badges, intake signal badges (criminal record, referral, walk-in), eligibility & operational notes (EN/ES), served counties, contact info, directions, save & share, related resources, library disclaimer bar at page bottom |
 | **Onboarding** (`/get-started`) | 3-step wizard: state (from registry) → county → up to 3 priority categories; skip option; edit mode via `?edit=1` |
 | **Search & filters** | Keyword, category, state, county, city, service type, coverage, recently added, intake signals (`?intake=accepts_criminal_record\|walk_in_ok` — AND logic); draft filter state until **Search** is pressed |
 | **Saved resources** (`/saved`) | Full saved list (sign-in required) |
 | **Dashboard** (`/dashboard`) | Welcome, location & priority summary, saved / recommended / recently viewed sections |
-| **Email PDF** | Signed-in users email a PDF of saved resources (Resend) |
+| **Email PDF** | Signed-in users email a PDF of saved resources (Resend); sidebar sections (contact, counties served) spaced correctly in the layout |
 | **CMS pages** | About, Contact (form), FAQ (accordion + search), Privacy, Terms, Accessibility |
 | **Crisis bar** | Persistent 988 / Crisis Text Line links in the site chrome |
+| **Library disclaimer** | Footer and full-width info bar on `/resources` and resource detail pages clarifying Road to Reentry is a directory, not a service provider (EN/ES) |
 | **Internationalization** | Full EN/ES UI; resource descriptions, eligibility, notes, and CMS content localized; language switcher in header |
 | **Breadcrumbs** | Contextual navigation on inner pages |
 

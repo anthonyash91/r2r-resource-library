@@ -11,6 +11,7 @@ import {
   EMPTY_RESOURCE_FILTER_OPTIONS,
   type ResourceFilterOptions,
 } from "@/components/resources/use-resource-filter-options";
+import { LibraryDisclaimer } from "@/components/resources/library-disclaimer";
 import { ScrollToResourceResults } from "@/components/resources/scroll-to-resource-results";
 import { cn, pageSectionPadding, sectionDividerTop, sectionStackGap, pageSectionBandClassForIndex } from "@/lib/utils";
 import { RESOURCE_RESULTS_ID } from "@/lib/resources-page";
@@ -139,6 +140,10 @@ export function ResourcesPageView({ loadingLabel }: ResourcesPageViewProps) {
             )}
           </div>
         </div>
+
+        {bootstrap ? (
+          <LibraryDisclaimer variant="detail" className="mt-6 sm:mt-8" />
+        ) : null}
       </div>
     </>
   );

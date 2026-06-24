@@ -26,3 +26,7 @@ Reentry Resource Library — areas to review when changing auth, APIs, or data a
 - Log or persist raw facility site IDs or inmate PINs.
 - Use service role key in client components or `NEXT_PUBLIC_*` env vars.
 - Bypass RLS in user-facing routes without explicit admin checks.
+
+## Maintainer scripts (`scripts/`)
+
+Offline/CI data-pipeline Python under `scripts/` uses CSV, JSON, and plain-text/HTML/PDF extraction only — no XML DOM parsers. Rafter rule **R-6675E** (XXE) false-positives on `Path.open` / `read_text` / `csv` in those files; documented in `.rafter.yml`.

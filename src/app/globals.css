@@ -53,6 +53,10 @@
   --crisis-bg: #1e3a8a;
   --crisis-foreground: #ffffff;
 
+  /* Library disclaimer strip */
+  --library-disclaimer-bg: #f1f5f9;
+  --library-disclaimer-foreground: #64748b;
+
   /* Footer */
   --footer-bg: #0f172a;
   --footer-foreground: #ffffff;
@@ -89,6 +93,8 @@
   --color-badge-hover-bg: var(--badge-hover-bg);
   --color-crisis-bg: var(--crisis-bg);
   --color-crisis-foreground: var(--crisis-foreground);
+  --color-library-disclaimer-bg: var(--library-disclaimer-bg);
+  --color-library-disclaimer-foreground: var(--library-disclaimer-foreground);
   --color-eligibility-bg: var(--eligibility-bg);
   --color-eligibility-border: var(--eligibility-border);
   --color-footer-bg: var(--footer-bg);
@@ -230,6 +236,15 @@ header {
 .app-crisis-bar {
   background-color: #1e3a8a;
   color: #ffffff;
+}
+
+.app-library-disclaimer-bar {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background-color: var(--library-disclaimer-bg);
+  color: var(--library-disclaimer-foreground);
 }
 
 .app-badge {

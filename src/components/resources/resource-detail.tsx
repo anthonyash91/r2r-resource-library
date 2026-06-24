@@ -29,6 +29,7 @@ import { formatOperatingHours } from "@/i18n/localize-content";
 import { SaveResourceButton } from "@/components/resources/save-resource-button";
 import { resourceBadgeClass } from "@/components/layout/site-branding-styles";
 import { buildResourcesPageHref } from "@/lib/resources-page";
+import { LibraryDisclaimer } from "@/components/resources/library-disclaimer";
 import { ServedCountiesLinks } from "@/components/resources/served-counties-links";
 import { countyCoverageLabel, isRegionalResource, shouldShowCountiesServed } from "@/lib/resource-coverage";
 
@@ -263,16 +264,23 @@ export function ResourceDetailView({ resource, related }: ResourceDetailProps) {
             </p>
           </aside>
         </div>
+      </div>
 
-        {related.length > 0 && (
+      {related.length > 0 && (
+        <div className="mx-auto max-w-4xl">
           <section className="mt-12" aria-labelledby="related-heading">
             <h2 id="related-heading" className={cn("mb-6", resourceDetailHeadingClass)}>
               {t("resources.relatedResources")}
             </h2>
             <ResourceMasonry resources={related} columns={2} variant="compact" showSave={false} />
           </section>
-        )}
-      </div>
+        </div>
+      )}
+
+      <LibraryDisclaimer
+        variant="detail"
+        className="mt-10 -mb-12 sm:-mb-14 lg:-mb-16"
+      />
     </div>
   );
 }

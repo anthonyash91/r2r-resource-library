@@ -15,8 +15,19 @@ scan:
   exclude_paths:
     - "public/"
     - "package-lock.json"
-  # R-6675E: scripts/build-ohio-resources.py and enrich-resources.py use csv.DictWriter
-  # open() — no XML parsing; verified false positive (2026-06-22).
+
+# Static analysis — verified false positives (2026-06-22)
+#
+# R-6675E (XXE / XML resolve_entities): 67 warnings, all under scripts/
+# Sink trace: NONE. Repo-wide grep finds no xml.etree, lxml, minidom, defusedxml,
+# or ElementTree usage. Flagged lines are maintainer-script file I/O only:
+#   - csv.DictReader / csv.DictWriter + Path.open (CSV read/write)
+#   - Path.read_text / write_text (TS county lists, JSON caches)
+#   - json.loads(read_text()) (local enrichment JSON)
+#   - urllib.response.read() + regex / pypdf text extract (HTML/PDF, not XML DOM)
+# Inputs are repo-local data files or trusted gov directory URLs run offline/CI —
+# not attacker-controlled XML. No code fix applies; rule misclassifies Python I/O.
+# Affected files (all instances): scripts/**/*.py at lines listed in Rafter report.
 
 docs:
   - id: security-surfaces

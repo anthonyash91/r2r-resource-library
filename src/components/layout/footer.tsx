@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getServerTranslator } from "@/i18n/server";
 import { getSiteBranding } from "@/lib/data";
 import { FooterBrandingLockup } from "@/components/layout/footer-branding-lockup";
+import { LibraryDisclaimer } from "@/components/resources/library-disclaimer";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 
 const RESOURCE_CATEGORY_SLUGS = [
@@ -117,7 +118,11 @@ export async function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-t border-[var(--footer-border)] pt-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 space-y-4 border-t border-[var(--footer-border)] pt-6">
+          <LibraryDisclaimer variant="footer" className="max-w-3xl" />
+        </div>
+
+        <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-[var(--footer-muted)]">
             {t("footer.copyright", { year })}
           </p>

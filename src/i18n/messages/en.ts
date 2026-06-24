@@ -101,6 +101,13 @@ export const en = {
     createAccount: "Create Account",
   },
 
+  libraryDisclaimer: {
+    footer:
+      "Road to Reentry is a free resource library, not a service provider. We do not own, operate, or manage the resources listed on this site.",
+    detail:
+      "Listings are provided for discovery only. We do not own, operate, or manage any organization listed here. Contact each provider directly to confirm eligibility, hours, and services.",
+  },
+
   crisisBar: {
     message: "In crisis? Help is available 24/7.",
     call988: "Call or text 988",
