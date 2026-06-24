@@ -375,6 +375,8 @@ export const en = {
       indiana: "Indiana",
       tennessee: "Tennessee",
       michigan: "Michigan",
+      illinois: "Illinois",
+      westVirginia: "West Virginia",
     },
     priorities: {
       housing: "Housing",
@@ -436,6 +438,10 @@ export const en = {
           "Seven practical steps for your first days home in Tennessee. Each step links to real resources from our directory.",
         michigan:
           "Seven practical steps for your first days home in Michigan. Each step links to real resources from our directory.",
+        illinois:
+          "Seven practical steps for your first days home in Illinois. Each step links to real resources from our directory.",
+        westVirginia:
+          "Seven practical steps for your first days home in West Virginia. Each step links to real resources from our directory.",
       },
       steps: {
         "crisis-support": {
@@ -1096,6 +1102,9 @@ Please include your city or county when asking about local resources so we can r
     noFeatured: "No featured resources selected.",
     addResourceSearch: "Search resources to feature...",
     noMatchingResources: "No matching resources found.",
+    filteredResourcesCount: "Showing {count} of {total} resources",
+    filteredResourcesCountByState: "Showing {count} of {total} {state} resources",
+    filteredResourcesCountByCategory: "Showing {count} of {total} {category} resources",
     removeFeatured: "Remove from featured",
     publish: "Publish",
     draft: "Draft",

@@ -10,6 +10,13 @@ export interface DropdownOption {
   label: string;
 }
 
+function sortDropdownOptions(options: DropdownOption[]): DropdownOption[] {
+  const placeholders = options.filter((option) => option.value === "");
+  const items = options.filter((option) => option.value !== "");
+  items.sort((a, b) => a.label.localeCompare(b.label, undefined, { sensitivity: "base" }));
+  return [...placeholders, ...items];
+}
+
 interface DropdownProps {
   label?: string;
   placeholder?: string;
@@ -51,20 +58,22 @@ export function Dropdown({
   const labelId = useId();
   const searchId = useId();
 
-  const isSearchable = searchable ?? options.length > 4;
+  const sortedOptions = useMemo(() => sortDropdownOptions(options), [options]);
 
-  const selected = options.find((opt) => opt.value === value);
+  const isSearchable = searchable ?? sortedOptions.length > 4;
+
+  const selected = sortedOptions.find((opt) => opt.value === value);
   const displayLabel = selected?.label ?? resolvedPlaceholder;
 
   const filteredOptions = useMemo(() => {
-    if (!isSearchable || !searchQuery.trim()) return options;
+    if (!isSearchable || !searchQuery.trim()) return sortedOptions;
 
     const query = searchQuery.trim().toLowerCase();
-    return options.filter((option) => {
+    return sortedOptions.filter((option) => {
       if (option.value === "") return true;
       return option.label.toLowerCase().includes(query);
     });
-  }, [options, searchQuery, isSearchable]);
+  }, [sortedOptions, searchQuery, isSearchable]);
 
   const closeDropdown = () => {
     setOpen(false);

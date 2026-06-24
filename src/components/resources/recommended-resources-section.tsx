@@ -8,6 +8,7 @@ import { getServerTranslator } from "@/i18n/server";
 import { cn, pageSectionPadding, pageSectionHeadingClass, pageSectionSubtitleClass, pageSectionBandClass, type PageSectionBand } from "@/lib/utils";
 import { buildResourcesPageHref, RECOMMENDED_RESOURCES_ID } from "@/lib/resources-page";
 import { RecommendedPreferencesSummary } from "@/components/resources/recommended-preferences-summary";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 interface RecommendedResourcesSectionProps {
   resources: Resource[];
@@ -46,7 +47,7 @@ export async function RecommendedResourcesSection({
     return (
       <section
         id={RECOMMENDED_RESOURCES_ID}
-        className="scroll-mt-[var(--site-header-height)] w-full min-w-0"
+        className="scroll-mt-[var(--site-header-offset)] w-full min-w-0"
         aria-labelledby="recommended-resources-heading"
       >
         <header className="mb-4 space-y-2">
@@ -84,7 +85,7 @@ export async function RecommendedResourcesSection({
     <section
       id={RECOMMENDED_RESOURCES_ID}
       className={cn(
-        "scroll-mt-[var(--site-header-height)]",
+        "scroll-mt-[var(--site-header-offset)]",
         variant === "home"
           ? pageSectionBandClass(band)
           : "rounded-xl border border-border bg-card p-6",
@@ -93,49 +94,61 @@ export async function RecommendedResourcesSection({
       aria-labelledby="recommended-resources-heading"
     >
       <div className={variant === "home" ? "mx-auto max-w-7xl" : undefined}>
-        <header
-          className={cn(
-            variant === "home" ? "mb-8" : "mb-4",
-            variant === "home" && "text-center"
-          )}
-        >
-          <div
-            className={cn(
-              "mb-2 flex items-center gap-2",
-              variant === "home" && "justify-center"
-            )}
-          >
-            <Star className="h-6 w-6 text-warning" aria-hidden="true" />
-            <h2
-              id="recommended-resources-heading"
-              className={variant === "home" ? pageSectionHeadingClass : "text-2xl font-bold"}
-            >
-              {title}
-            </h2>
-          </div>
-          <p
-            className={cn(
-              pageSectionSubtitleClass,
-              variant === "home" && "mx-auto max-w-2xl"
-            )}
-          >
-            {t("home.recommendedSubtitle")}
-          </p>
-        </header>
-
-        <div className="space-y-6">
-          <RecommendedPreferencesSummary
-            state={state ?? null}
-            county={county ?? null}
-            priorityCategories={priorityCategories}
-            variant={variant}
-          />
-
-          <ResourceMasonry resources={resources} columns={3} layout="masonry" contained />
-        </div>
+        {variant === "home" ? (
+          <ScrollReveal variant="fade-up">
+            <header className="mb-8 text-center">
+              <div className="mb-2 flex items-center justify-center gap-2">
+                <Star className="h-6 w-6 text-warning" aria-hidden="true" />
+                <h2 id="recommended-resources-heading" className={pageSectionHeadingClass}>
+                  {title}
+                </h2>
+              </div>
+              <p className={cn(pageSectionSubtitleClass, "mx-auto max-w-2xl")}>
+                {t("home.recommendedSubtitle")}
+              </p>
+            </header>
+          </ScrollReveal>
+        ) : (
+          <header className="mb-4">
+            <div className="mb-2 flex items-center gap-2">
+              <Star className="h-6 w-6 text-warning" aria-hidden="true" />
+              <h2 id="recommended-resources-heading" className="text-2xl font-bold">
+                {title}
+              </h2>
+            </div>
+            <p className={pageSectionSubtitleClass}>{t("home.recommendedSubtitle")}</p>
+          </header>
+        )}
 
         {variant === "home" ? (
-          <div className="mt-10 flex justify-center">
+          <div className="space-y-6">
+            <ScrollReveal variant="fade-up" delay={120}>
+              <RecommendedPreferencesSummary
+                state={state ?? null}
+                county={county ?? null}
+                priorityCategories={priorityCategories}
+                variant={variant}
+              />
+            </ScrollReveal>
+
+            <ResourceMasonry resources={resources} columns={3} layout="masonry" contained />
+          </div>
+        ) : (
+          <div className="space-y-6">
+            <RecommendedPreferencesSummary
+              state={state ?? null}
+              county={county ?? null}
+              priorityCategories={priorityCategories}
+              variant={variant}
+            />
+
+            <ResourceMasonry resources={resources} columns={3} layout="masonry" contained />
+          </div>
+        )}
+
+        {variant === "home" ? (
+          <ScrollReveal variant="fade-up" delay={240}>
+            <div className="mt-10 flex justify-center">
               <Link href={browseHref} scroll={false}>
                 <Button size="lg" variant="outline" className="gap-2">
                   {t("dashboard.browseMyCounty")}
@@ -143,6 +156,7 @@ export async function RecommendedResourcesSection({
                 </Button>
               </Link>
             </div>
+          </ScrollReveal>
         ) : null}
       </div>
     </section>

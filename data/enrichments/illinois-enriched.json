@@ -1,0 +1,1594 @@
+{
+  "1": {
+    "notes": "For current intake, call 217-558-2200; visit https://idoc.illinois.gov/programs/reentry.html. Contact for current hours.",
+    "notes_es": "Para admisión actual, llame al 217-558-2200; visite https://idoc.illinois.gov/programs/reentry.html. Contact for current hours.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|state-agency|sangamon",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "2": {
+    "notes": "For current intake, call 1-800-843-6154; visit https://abe.illinois.gov. Contact for current hours.",
+    "notes_es": "Para admisión actual, llame al 1-800-843-6154; visite https://abe.illinois.gov. Contact for current hours.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "3": {
+    "description": "211 Illinois is a free statewide information and referral service connecting Illinois residents to health and human services including housing, food, utilities, employment, and crisis support. United Way-supported navigators help callers find local programs by need and ZIP code. 211 Illinois is a referral line—not a direct-service provider. This resource supports Illinoisans navigating reentry in throughout Illinois.",
+    "description_es": "211 Illinois coordina servicios de reinserción y recursos estatales para residentes de Illinois, incluidas personas con antecedentes penales que reconstruyen estabilidad después de la encarcelación. Contacte el programa para confirmar pasos de admisión y documentos requeridos. Este recurso apoya a illinoenses en reinserción en en todo Illinois.",
+    "notes": "For current intake, call 211; visit https://search.211illinois.org. Contact for current hours.",
+    "notes_es": "Para admisión actual, llame al 211; visite https://search.211illinois.org. Contact for current hours.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "4": {
+    "description": "IDHS — Benefits & Family Services Overview is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Illinois Department of Human Services administers SNAP, Medicaid, TANF, and child care assistance through Family Community Resource Centers in every county and the ABE online portal. IDHS Pre-Release Program accepts SNAP and medical applications from approved IDOC facilities within ten days of release. Users can search by location, service type, or need to find active providers in throughout Illinois. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "IDHS — Benefits & Family Services Overview es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "notes": "For current intake, call 1-800-843-6154; visit https://www.dhs.state.il.us/page.aspx?item=29725. Contact for current hours.",
+    "notes_es": "Para admisión actual, llame al 1-800-843-6154; visite https://www.dhs.state.il.us/page.aspx?item=29725. Contact for current hours.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|financial-assistance|sangamon",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "5": {
+    "description": "Illinois Legal Aid Online is a statewide legal information portal providing plain-language guides, court forms, and self-help tools for housing, benefits, family law, and record relief. Helps residents understand civil legal options and connect to free attorneys through Legal Aid Chicago, Land of Lincoln, and Prairie State Legal Services. This resource supports Illinoisans navigating reentry in throughout Illinois.",
+    "description_es": "Illinois Legal Aid Online coordina servicios de reinserción y recursos estatales para residentes de Illinois, incluidas personas con antecedentes penales que reconstruyen estabilidad después de la encarcelación. Contacte el programa para confirmar pasos de admisión y documentos requeridos. Este recurso apoya a illinoenses en reinserción en en todo Illinois.",
+    "notes": "For current intake, visit https://www.illinoislegalaid.org. Contact for current hours. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, visite https://www.illinoislegalaid.org. Contact for current hours. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|legal-aid|cook",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "6": {
+    "description": "CARPLS — Statewide Legal Aid Hotline is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. CARPLS provides coordinated telephone legal advice and referrals for low-income Illinois residents with civil legal problems including eviction, benefits denials, and record-related matters. Serves as intake hub for Cook County with referrals to regional legal aid providers statewide—not criminal defense. Users can search by location, service type, or need to find active providers in throughout Illinois. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "CARPLS — Statewide Legal Aid Hotline es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "notes": "For current intake, call 312-738-9200; visit https://www.carpls.org. Contact for current hours. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 312-738-9200; visite https://www.carpls.org. Contact for current hours. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|legal-aid|cook",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "7": {
+    "notes": "For current intake, call 800-320-9513; visit https://www.ides.illinois.gov/idesreentry.html. Contact for current hours. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 800-320-9513; visite https://www.ides.illinois.gov/idesreentry.html. Contact for current hours. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|employment|cook",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "8": {
+    "description": "Illinois workNet — Statewide Portal is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Illinois workNet is the statewide workforce portal connecting job seekers—including justice-involved Illinoisans—to American Job Center locations, career coaching, training referrals, and job postings in every Local Workforce Innovation Area. Core AJC services are free for job seekers statewide. Users can search by location, service type, or need to find active providers in throughout Illinois. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Illinois workNet — Statewide Portal es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "notes": "For current intake, call 877-342-7533; visit https://www.illinoisworknet.com. Contact for current hours. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 877-342-7533; visite https://www.illinoisworknet.com. Contact for current hours. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|employment|sangamon",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "9": {
+    "notes": "For current intake, call 988; visit https://988lifeline.org. Contact for current hours. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 988; visite https://988lifeline.org. Contact for current hours. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "10": {
+    "description": "New Leaf Illinois — Record Relief Network serves justice-involved adults and families rebuilding stability after incarceration in throughout Illinois. New Leaf Illinois is a statewide network of legal aid organizations helping eligible Illinois residents seal or clear criminal records under state law. Navigators connect callers to free legal representation through partner organizations for expungement and sealing—not active criminal defense cases. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "New Leaf Illinois — Record Relief Network ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en en todo Illinois. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "notes": "For current intake, call 855-963-9532; visit https://www.newleafillinois.org. Contact for current hours. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 855-963-9532; visite https://www.newleafillinois.org. Contact for current hours. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|legal-aid|cook",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "11": {
+    "description": "IL-AFLAN — Illinois Armed Forces Legal Aid Network serves justice-involved adults and families rebuilding stability after incarceration in throughout Illinois. IL-AFLAN provides free civil legal assistance to Illinois veterans, service members, and families including justice-involved veterans navigating discharge upgrades, VA benefits, housing, and record-related civil matters. Hotline connects callers to pro bono attorneys—not VA medical emergency services. VA eligibility and discharge status affect which benefits apply; ask specifically for justice-involved veteran or VJO/HCRV services when calling. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "IL-AFLAN — Illinois Armed Forces Legal Aid Network sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Illinois. La elegibilidad del VA y el tipo de baja afectan qué beneficios aplican; pida específicamente servicios VJO/HCRV o para veteranos en el sistema de justicia al llamar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "notes": "For current intake, call 855-452-3526; visit https://www.ilaflan.org. Contact for current hours.",
+    "notes_es": "Para admisión actual, llame al 855-452-3526; visite https://www.ilaflan.org. Contact for current hours.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|veterans|cook",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "12": {
+    "description": "SAMHSA National Helpline is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Free confidential 24/7 treatment referral and information service for individuals and families facing mental health or substance use disorders. Provides referrals to local treatment facilities and community organizations in Illinois and nationwide. Spanish-language support available through trained specialists. Users can search by location, service type, or need to find active providers in throughout Illinois. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "SAMHSA National Helpline es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "notes": "For current intake, call 800-662-4357; visit https://www.samhsa.gov/find-help/national-helpline. Contact for current hours. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 800-662-4357; visite https://www.samhsa.gov/find-help/national-helpline. Contact for current hours. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "13": {
+    "description": "FindTreatment.gov — Illinois Provider Search serves justice-involved adults and families rebuilding stability after incarceration in throughout Illinois. SAMHSA's online treatment locator helping Illinois residents find substance use and mental health treatment providers by location, service type, and payment options including Medicaid. Justice-involved individuals can search outpatient, residential, and MAT providers before or after release. Treatment may require assessment, insurance or Medicaid enrollment, and referral from courts or corrections for some beds—call intake to confirm openings. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "FindTreatment.gov — Illinois Provider Search sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Illinois. El tratamiento puede requerir evaluación, seguro o Medicaid y referencia de tribunales o correcciones para algunas plazas—llame a admisión para confirmar disponibilidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "notes": "For current intake, visit https://findtreatment.gov. Contact for current hours. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, visite https://findtreatment.gov. Contact for current hours. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "14": {
+    "description": "IDHS — Pre-Release Benefits Program serves justice-involved adults and families rebuilding stability after incarceration in throughout Illinois. IDHS Pre-Release Program allows approved IDOC facilities to submit SNAP and medical assistance applications within ten days of a person's release from incarceration, helping returning citizens establish food and health benefits before community reentry. Coordinated through facility reentry staff and county FCRC offices. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "IDHS — Pre-Release Benefits Program sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Illinois. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "notes": "For current intake, call 1-800-843-6154; visit https://www.dhs.state.il.us/page.aspx?item=29725. Contact for current hours.",
+    "notes_es": "Para admisión actual, llame al 1-800-843-6154; visite https://www.dhs.state.il.us/page.aspx?item=29725. Contact for current hours.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|financial-assistance|sangamon",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "15": {
+    "description": "Illinois Department of Healthcare and Family Services — Medicaid serves justice-involved adults and families rebuilding stability after incarceration in throughout Illinois. Illinois HFS administers Medicaid, All Kids, and managed care programs statewide helping returning citizens verify enrollment and connect to health plans after ABE application. Criminal record is generally not a barrier to Medicaid eligibility for income-qualified Illinois residents. Services are available on a sliding fee or Medicaid basis for eligible patients; bring ID and release paperwork when establishing care after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Illinois Department of Healthcare and Family Services — Medicaid sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Illinois. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "notes": "For current intake, call 800-226-0768; visit https://www.hfs.illinois.gov. Contact for current hours. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 800-226-0768; visite https://www.hfs.illinois.gov. Contact for current hours. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|healthcare|cook",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "16": {
+    "description": "Illinois Secretary of State — Driver & State ID Services serves justice-involved adults and families rebuilding stability after incarceration in throughout Illinois. Illinois Secretary of State provides REAL ID-compliant driver's licenses, state identification cards, and credential reinstatement at branch offices statewide. Reentry partners help returning citizens gather proof of identity and residency documents required for employment and ABE benefits after incarceration. Fees, proof of identity, and residency documents apply; reentry resources and legal aid partners often help gather required paperwork. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Illinois Secretary of State — Driver & State ID Services sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Illinois. Aplican tarifas, prueba de identidad y documentos de residencia; recursos de reinserción y aliados legales suelen ayudar a reunir el papeleo requerido. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "notes": "For current intake, call 888-SOS-ILLINO; visit https://www.ilsos.gov. Contact for current hours.",
+    "notes_es": "Para admisión actual, llame al 888-SOS-ILLINO; visite https://www.ilsos.gov. Contact for current hours.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|id-documentation|sangamon",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "17": {
+    "description": "Illinois Department of Veterans Affairs serves justice-involved adults and families rebuilding stability after incarceration in throughout Illinois. Illinois Department of Veterans Affairs connects veterans and families to federal VA benefits, state veteran programs, and county Veterans Service Officers statewide including justice-involved veterans navigating healthcare enrollment and benefits restoration after incarceration. VA eligibility and discharge status affect which benefits apply; ask specifically for justice-involved veteran or VJO/HCRV services when calling. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Illinois Department of Veterans Affairs sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Illinois. La elegibilidad del VA y el tipo de baja afectan qué beneficios aplican; pida específicamente servicios VJO/HCRV o para veteranos en el sistema de justicia al llamar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "notes": "For current intake, call 800-437-9824; visit https://www.illinois.gov/veterans. Contact for current hours.",
+    "notes_es": "Para admisión actual, llame al 800-437-9824; visite https://www.illinois.gov/veterans. Contact for current hours.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|veterans|sangamon",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "18": {
+    "description": "Illinois Housing Development Authority serves justice-involved adults and families rebuilding stability after incarceration in throughout Illinois. Illinois Housing Development Authority provides affordable housing resources, rental assistance programs, and the Illinois Housing Search locator for low-income residents including returning citizens seeking income-restricted rental units and emergency rental assistance when programs are open. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Illinois Housing Development Authority sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Illinois. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "notes": "For current intake, call 312-386-8000; visit https://www.ihda.org. Contact for current hours. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 312-386-8000; visite https://www.ihda.org. Contact for current hours. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|housing|cook",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "19": {
+    "description": "Illinois Criminal Justice Information Authority serves justice-involved adults and families rebuilding stability after incarceration in throughout Illinois. ICJIA coordinates research, grant-funded reentry initiatives, and policy resources connecting Illinois communities to evidence-based reentry services through provider networks statewide—a navigation and policy hub, not an emergency shelter or cash assistance provider. Coalition and navigator resources connect returning citizens to local partners—they rarely provide emergency shelter, cash aid, or 24/7 crisis response on their own. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Illinois Criminal Justice Information Authority sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Illinois. Las coaliciones y recursos de navegación conectan a ciudadanos que regresan con aliados locales—rara vez ofrecen refugio de emergencia, efectivo o respuesta de crisis 24/7 por sí solos. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "notes": "For current intake, call 312-793-8550; visit https://www.icjia.state.il.us. Contact for current hours.",
+    "notes_es": "Para admisión actual, llame al 312-793-8550; visite https://www.icjia.state.il.us. Contact for current hours.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|reentry-organizations|cook",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "20": {
+    "description": "Community Action Association of Illinois serves justice-involved adults and families rebuilding stability after incarceration in throughout Illinois. Illinois Community Action Association connects low-income residents to local Community Action Agencies in every county offering utility assistance, weatherization, emergency aid, and case management. Returning citizens can locate county CAA offices for basic needs support after release. Availability varies by season and donations; call ahead when possible to confirm clothing, hygiene kits, or furniture pickup hours. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Community Action Association of Illinois sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Illinois. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "notes": "For current intake, call 217-528-8400; visit https://www.icaaonline.org. Contact for current hours. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 217-528-8400; visite https://www.icaaonline.org. Contact for current hours. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "statewide|illinois|reentry|basic-needs|sangamon",
+    "services": "Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "21": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|sangamon|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": ""
+  },
+  "22": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|sangamon|family-children",
+    "services": "Family reunification support|Parenting services|Reentry navigation",
+    "intake_signals": ""
+  },
+  "23": {
+    "description": "Illinois Adult Education — State Program Locator is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Illinois State Board of Education adult education directory connects returning citizens to local GED, high school equivalency, and English language programs at community colleges and community sites in every county. Returning citizens should call ahead to confirm walk-in hours, referral requirements, and documents needed before visiting. Users can search by location, service type, or need to find active providers in throughout Illinois. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Illinois Adult Education — State Program Locator es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|sangamon|education",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": ""
+  },
+  "24": {
+    "description_es": "Illinois Department of Transportation — Public Transit Resources sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en en todo Illinois. Los recursos de tarifa reducida suelen requerir solicitud y prueba de ingresos o discapacidad; se necesita identificación para recibir un pase o tarjeta. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|sangamon|transportation",
+    "services": "Bus pass assistance|Transportation assistance",
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "25": {
+    "description": "Illinois Peer Recovery Support Services is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Illinois Certification Board maintains certified peer recovery specialists who provide mentoring and recovery coaching for justice-involved individuals in treatment and reentry programs statewide. Returning citizens should call ahead to confirm walk-in hours, referral requirements, and documents needed before visiting. Users can search by location, service type, or need to find active providers in throughout Illinois. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Illinois Peer Recovery Support Services es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|sangamon|peer-support",
+    "services": "Support groups|Substance use treatment",
+    "intake_signals": ""
+  },
+  "26": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|employment",
+    "services": "Job readiness training|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "27": {
+    "description_es": "Heartland Alliance — Reentry Services sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "28": {
+    "description_es": "Thresholds — Justice Program sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "29": {
+    "description_es": "Legal Aid Chicago ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Cook. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para evaluar elegibilidad por ingresos, tipo de delito y documentación requerida.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|legal-aid",
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "30": {
+    "description_es": "CARPLS — Coordinated Advice & Referral Program ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Cook. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para evaluar elegibilidad por ingresos, tipo de delito y documentación requerida.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|legal-aid",
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "31": {
+    "description_es": "InnerVoice — Supportive Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "32": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|substance-use-treatment",
+    "services": "Substance use treatment|Addiction treatment referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "33": {
+    "description_es": "Howard Brown Health — Reentry Health Services sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "34": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "35": {
+    "description": "Chicago Coalition for the Homeless advocates and connects unhoused Chicagoans including returning citizens to shelter, housing resources, and legal protections through outreach, hotline, and partner referrals—not direct shelter beds. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. This resource supports Illinoisans navigating reentry in Cook County.",
+    "description_es": "Chicago Coalition for the Homeless sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en Illinois. Chicago Coalition for the Homeless advocates and connects unhoused Chicagoans including returning citizens to shelter, housing resources, and legal protections through outreach, hotline, and partner referrals—not direct shelter beds. Contacte el programa para confirmar admisión, documentos requeridos y horarios actuales. Este recurso apoya a illinoenses en reinserción en condado de Cook.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": ""
+  },
+  "36": {
+    "description_es": "Salvation Army Harbor Light — Chicago sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "37": {
+    "description": "St. Leonard's Ministries provides transitional housing, workforce development, and supportive services for men and women returning from incarceration in Chicago including case management and employment training at multiple West Side campuses. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. This resource supports Illinoisans navigating reentry in Cook County.",
+    "description_es": "St. Leonard's Ministries — Reentry Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en Illinois. St. Contacte el programa para confirmar admisión, documentos requeridos y horarios actuales. Este recurso apoya a illinoenses en reinserción en condado de Cook.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "38": {
+    "description_es": "A Safe Haven Foundation — Reentry Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "39": {
+    "description_es": "Prairie State Legal Services — Northern Illinois ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en 36 condados de Illinois. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para evaluar elegibilidad por ingresos, tipo de delito y documentación requerida.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|winnebago|legal-aid",
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "40": {
+    "description_es": "Land of Lincoln Legal Assistance ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en 61 condados de Illinois. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para evaluar elegibilidad por ingresos, tipo de delito y documentación requerida.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|sangamon|legal-aid",
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "41": {
+    "description_es": "Prairie Center Health Systems — SUD Treatment sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en 5 condados de Illinois. El tratamiento puede requerir evaluación, seguro o Medicaid y referencia de tribunales o correcciones para algunas plazas—llame a admisión para confirmar disponibilidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|champaign|substance-use-treatment",
+    "services": "Substance use treatment|Addiction treatment referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "42": {
+    "description_es": "Rosecrance — SUD Treatment sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en los condados Boone, Ogle, Stephenson y Winnebago. El tratamiento puede requerir evaluación, seguro o Medicaid y referencia de tribunales o correcciones para algunas plazas—llame a admisión para confirmar disponibilidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|winnebago|substance-use-treatment",
+    "services": "Substance use treatment|Addiction treatment referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "43": {
+    "description_es": "Center for Youth and Family Solutions — Reentry sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en 6 condados de Illinois. Los recursos familiares pueden requerir participación en tratamiento o clases de crianza; el estado de custodia afecta algunos servicios de reunificación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|sangamon|family-children",
+    "services": "Family reunification support|Parenting services|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "44": {
+    "description_es": "Goodwill of Central Illinois — Reentry Employment sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en 7 condados de Illinois. El personal ayuda a quienes buscan empleo con antecedentes penales a construir historial laboral, reducir barreras por antecedentes y conectarse con empleadores de segunda oportunidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|peoria|employment",
+    "services": "Job readiness training|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "45": {
+    "description_es": "Peoria Friendship House — Reentry Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Peoria. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|peoria|basic-needs",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "46": {
+    "description_es": "Western Illinois Regional Council — Community Action sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en los condados Fulton, Hancock, McDonough y Schuyler. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|mcdonough|basic-needs",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "47": {
+    "description_es": "East Central Illinois Community Action sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en 6 condados de Illinois. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|coles|basic-needs",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "48": {
+    "description_es": "Southern Illinois Community Action sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en 9 condados de Illinois. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|williamson|basic-needs",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "49": {
+    "description_es": "Illinois Valley Community College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en 6 condados de Illinois. Las clases suelen ser gratuitas o de bajo costo para adultos en Illinois; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|lasalle|education",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "50": {
+    "description": "Parkland College Adult Education offers GED preparation, high school equivalency, and career training pathways for adult learners including returning citizens in the Champaign-Urbana region with orientation required before enrollment. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. This resource supports Illinoisans navigating reentry in 5 Illinois counties.",
+    "description_es": "Parkland College — Adult Education & GED sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en Illinois. Parkland College Adult Education offers GED preparation, high school equivalency, and career training pathways for adult learners including returning citizens in the Champaign-Urbana region with orientation required before enrollment. Contacte el programa para confirmar admisión, documentos requeridos y horarios actuales. Este recurso apoya a illinoenses en reinserción en 5 condados de Illinois.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|champaign|education",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "51": {
+    "description_es": "Illinois Department of Transportation — Secretary of State ID Services sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en en todo Illinois. Aplican tarifas, prueba de identidad y documentos de residencia; recursos de reinserción y aliados legales suelen ayudar a reunir el papeleo requerido. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|sangamon|id-documentation",
+    "services": "Document assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "52": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|sangamon|veterans",
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "53": {
+    "description_es": "Chicago Transit Authority — Reduced Fare Program sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los recursos de tarifa reducida suelen requerir solicitud y prueba de ingresos o discapacidad; se necesita identificación para recibir un pase o tarjeta. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|transportation",
+    "services": "Bus pass assistance|Transportation assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "54": {
+    "description_es": "Metra — Reduced Fare Program sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en 6 condados de Illinois. Los recursos de tarifa reducida suelen requerir solicitud y prueba de ingresos o discapacidad; se necesita identificación para recibir un pase o tarjeta. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|transportation",
+    "services": "Bus pass assistance|Transportation assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "55": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|sangamon|peer-support",
+    "services": "Support groups|Substance use treatment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "56": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": ""
+  },
+  "57": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "58": {
+    "description_es": "Esperanza Health Centers sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "59": {
+    "description_es": "Cook County Health — Reentry Health Linkage sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "60": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|sangamon|substance-use-treatment",
+    "services": "Substance use treatment|Addiction treatment referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "61": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "62": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "63": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "64": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "65": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "66": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "67": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "68": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "69": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "70": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "71": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "72": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "73": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "74": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "75": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "76": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "77": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "78": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "79": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "80": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "81": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "82": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "83": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "84": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "85": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "86": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "87": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "88": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "89": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "90": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "91": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "92": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "93": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "94": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "95": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "96": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "97": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "98": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "99": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "100": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "101": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "102": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "103": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "104": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "105": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "106": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "107": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "108": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "109": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "110": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "111": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "112": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "113": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "114": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "115": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "116": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "117": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "118": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "119": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "120": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "121": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "122": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "123": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "124": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "125": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "126": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "127": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "128": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "129": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "130": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "131": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "132": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "133": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "134": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "135": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "136": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "137": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "138": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "139": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "140": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "141": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "142": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "143": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "144": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "145": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "146": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "147": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "148": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "149": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "150": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "151": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "152": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "153": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "154": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "155": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "156": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "157": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "158": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "159": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "160": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "161": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "162": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "163": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "164": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "165": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "166": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "167": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "168": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "169": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "170": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "171": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "172": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "173": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "174": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "175": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "176": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "177": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "178": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "179": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "180": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "181": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "182": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "183": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "184": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "185": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "186": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "187": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "188": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "189": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "190": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "191": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "192": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|probation-parole",
+    "services": "Probation and parole supervision|Court compliance support|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "193": {
+    "description": "IDOC — Parole Division Central Region is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. IDOC Parole Division Central Region office supervises parolees in central Illinois connecting supervisees to Land of Lincoln reentry partners, IDHS benefits, and Illinois workNet employment services. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in 8 Illinois counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "IDOC — Parole Division Central Region es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en 8 condados de Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|sangamon|probation-parole",
+    "services": "Probation and parole supervision|Court compliance support|Partner referrals",
+    "intake_signals": ""
+  },
+  "194": {
+    "description": "IDOC — Parole Division Southern Region is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. IDOC Parole Division Southern Region supervises parolees in southern Illinois connecting supervisees to community treatment, housing, and workforce partners in rural counties. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in 10 Illinois counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "IDOC — Parole Division Southern Region es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en 10 condados de Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|williamson|probation-parole",
+    "services": "Probation and parole supervision|Court compliance support|Partner referrals",
+    "intake_signals": ""
+  },
+  "195": {
+    "description": "IDOC — Parole Division Northern Region is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. IDOC Parole Division Northern Region supervises parolees in northern Illinois outside Cook County connecting supervisees to Prairie State Legal Services and Rock Valley workforce partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in 8 Illinois counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "IDOC — Parole Division Northern Region es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en 8 condados de Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|winnebago|probation-parole",
+    "services": "Probation and parole supervision|Court compliance support|Partner referrals",
+    "intake_signals": ""
+  },
+  "196": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|will|state-agency",
+    "services": "Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "197": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|randolph|state-agency",
+    "services": "Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "198": {
+    "description": "Logan Correctional Center is a women's IDOC facility providing education, vocational programming, and pre-release planning for female prisoners releasing to central Illinois communities through Land of Lincoln workforce and housing partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. This resource supports Illinoisans navigating reentry in Logan County.",
+    "description_es": "IDOC — Logan Correctional Center sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en Illinois. Logan Correctional Center is a women's IDOC facility providing education, vocational programming, and pre-release planning for female prisoners releasing to central Illinois communities through Land of Lincoln workforce and housing partners. Contacte el programa para confirmar admisión, documentos requeridos y horarios actuales. Este recurso apoya a illinoenses en reinserción en condado de Logan.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|logan|state-agency",
+    "services": "Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "199": {
+    "description_es": "IDOC — Illinois River Correctional Center sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Fulton. Las oficinas estatales ofrecen información y referencias en todo el estado; socios del condado y sin fines de lucro prestan la mayoría de servicios directos. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|fulton|state-agency",
+    "services": "Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "200": {
+    "description": "IDOC — Danville Correctional Center is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Danville Correctional Center provides education and reentry preparation for prisoners releasing to east-central Illinois including Champaign-Urbana and Vermilion County parole coordination. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Vermilion County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "IDOC — Danville Correctional Center es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Vermilion. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|vermilion|state-agency",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "201": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|sangamon|reentry-organizations",
+    "services": "Reentry navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "202": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|reentry-organizations",
+    "services": "Reentry navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "203": {
+    "description": "Eastern Illinois Foodbank — Partner Network is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Eastern Illinois Foodbank distributes food to partner pantries across east-central Illinois helping returning citizens locate emergency food by ZIP code in rural counties outside the Chicago metro. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in 16 Illinois counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Eastern Illinois Foodbank — Partner Network es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en 16 condados de Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|champaign|food-nutrition",
+    "services": "Food pantry access|SNAP enrollment",
+    "intake_signals": ""
+  },
+  "204": {
+    "description": "River Bend Foodbank — Partner Network is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. River Bend Foodbank serves partner pantries in the Quad Cities region helping returning citizens in Henry, Mercer, and Rock Island counties locate emergency food assistance by ZIP code. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Henry, Mercer, and Rock Island counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "River Bend Foodbank — Partner Network es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Henry, Mercer y Rock Island. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|rock island|rock-island|food-nutrition",
+    "services": "Food pantry access|SNAP enrollment",
+    "intake_signals": ""
+  },
+  "205": {
+    "description": "Midwest Food Bank Illinois Division distributes food to partner agencies across central Illinois helping returning citizens access emergency food through church and community pantry partners in the Peoria region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. This resource supports Illinoisans navigating reentry in 8 Illinois counties.",
+    "description_es": "Midwest Food Bank — Illinois Division sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en Illinois. Midwest Food Bank Illinois Division distributes food to partner agencies across central Illinois helping returning citizens access emergency food through church and community pantry partners in the Peoria region. Contacte el programa para confirmar admisión, documentos requeridos y horarios actuales. Este recurso apoya a illinoenses en reinserción en 8 condados de Illinois.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|peoria|food-nutrition",
+    "services": "Food pantry access|SNAP enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "206": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "207": {
+    "description": "Illinois Department of Healthcare and Family Services administers Medicaid and manages care programs statewide helping returning citizens verify enrollment and connect to managed care plans after ABE application. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. This resource supports Illinoisans navigating reentry in throughout Illinois.",
+    "description_es": "Illinois Healthcare and Family Services — Medicaid Enrollment sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en Illinois. Illinois Department of Healthcare and Family Services administers Medicaid and manages care programs statewide helping returning citizens verify enrollment and connect to managed care plans after ABE application. Contacte el programa para confirmar admisión, documentos requeridos y horarios actuales. Este recurso apoya a illinoenses en reinserción en en todo Illinois.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "208": {
+    "description": "Open Door Health is a federally qualified health center providing primary care, behavioral health, and sliding-fee services for uninsured residents in the Illinois Valley including returning citizens in rural north-central counties. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. This resource supports Illinoisans navigating reentry in 6 Illinois counties.",
+    "description_es": "Illinois Valley FQHC — Open Door Health sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en Illinois. Open Door Health is a federally qualified health center providing primary care, behavioral health, and sliding-fee services for uninsured residents in the Illinois Valley including returning citizens in rural north-central counties. Contacte el programa para confirmar admisión, documentos requeridos y horarios actuales. Este recurso apoya a illinoenses en reinserción en 6 condados de Illinois.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|lasalle|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "209": {
+    "description_es": "Blessing Health System — Community Care sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en 5 condados de Illinois. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|adams|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "210": {
+    "description_es": "Southern Illinois University — Adult Education Centers sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en 9 condados de Illinois. Las clases suelen ser gratuitas o de bajo costo para adultos en Illinois; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|jackson|education",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "211": {
+    "description": "Illinois Community Action Association connects low-income residents to local Community Action Agencies in every county offering utility assistance, weatherization, emergency aid, and case management for returning citizens statewide. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. This resource supports Illinoisans navigating reentry in throughout Illinois.",
+    "description_es": "Illinois Community Action — State Association sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en Illinois. Illinois Community Action Association connects low-income residents to local Community Action Agencies in every county offering utility assistance, weatherization, emergency aid, and case management for returning citizens statewide. Contacte el programa para confirmar admisión, documentos requeridos y horarios actuales. Este recurso apoya a illinoenses en reinserción en en todo Illinois.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|sangamon|basic-needs",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "212": {
+    "description_es": "Illinois Housing Development Authority — Rental Assistance sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en en todo Illinois. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "213": {
+    "description_es": "Volunteers of America — Illinois Reentry sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "214": {
+    "description_es": "Catholic Charities — Diocese of Joliet Reentry sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en 7 condados de Illinois. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|will|basic-needs",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "215": {
+    "description": "United Way of Metro Chicago supports community resource navigation and partners with 211 Illinois to connect returning citizens in the Chicago metropolitan area to housing, employment, and benefits resources through local nonprofit partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. This resource supports Illinoisans navigating reentry in 6 Illinois counties.",
+    "description_es": "United Way of Metro Chicago — 211 Navigation sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en Illinois. United Way of Metro Chicago supports community resource navigation and partners with 211 Illinois to connect returning citizens in the Chicago metropolitan area to housing, employment, and benefits resources through local nonprofit partners. Contacte el programa para confirmar admisión, documentos requeridos y horarios actuales. Este recurso apoya a illinoenses en reinserción en 6 condados de Illinois.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|reentry-organizations",
+    "services": "Reentry navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "216": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "reentry|illinois|cook|reentry-organizations",
+    "services": "Reentry navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "217": {
+    "description_es": "Haymarket Center — SUD Treatment sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. El tratamiento puede requerir evaluación, seguro o Medicaid y referencia de tribunales o correcciones para algunas plazas—llame a admisión para confirmar disponibilidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|substance-use-treatment",
+    "services": "Substance use treatment|Addiction treatment referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "218": {
+    "description_es": "Gateway Foundation — SUD Treatment sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en 6 condados de Illinois. El tratamiento puede requerir evaluación, seguro o Medicaid y referencia de tribunales o correcciones para algunas plazas—llame a admisión para confirmar disponibilidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|substance-use-treatment",
+    "services": "Substance use treatment|Addiction treatment referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "219": {
+    "description": "The Night Ministry — Youth & Adult Shelter is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. The Night Ministry provides emergency shelter, street outreach, and housing navigation for unhoused youth and adults including returning citizens without stable housing in Chicago. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Cook County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "The Night Ministry — Youth & Adult Shelter es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Cook. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": ""
+  },
+  "220": {
+    "description_es": "Connections for the Homeless — Reentry Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "221": {
+    "description_es": "Housing Forward — Reentry Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "222": {
+    "description": "DuPagePads — Supportive Housing is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. DuPagePads provides interim housing, supportive services, and employment navigation for adults experiencing homelessness in DuPage County including justice-involved residents. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in DuPage County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "DuPagePads — Supportive Housing es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de DuPage. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|dupage|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": ""
+  },
+  "223": {
+    "description": "Hope Haven — DeKalb County Shelter is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Hope Haven provides emergency shelter, transitional housing, and case management for homeless adults in DeKalb County including returning citizens released from DeKalb County Jail. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in DeKalb County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Hope Haven — DeKalb County Shelter es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de DeKalb. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|dekalb|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": ""
+  },
+  "224": {
+    "description_es": "Rockford Rescue Mission — Shelter & Recovery sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Winnebago. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|winnebago|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "225": {
+    "description": "Boys and Girls Home — Transitional Living is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Boys and Girls Home provides transitional living, counseling, and independent living skills for youth and adults including justice-involved individuals in western Illinois rural communities. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Adams, Brown, Hancock, and Pike counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Boys and Girls Home — Transitional Living es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Adams, Brown, Hancock y Pike. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|adams|housing",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": ""
+  },
+  "226": {
+    "description": "Centerstone — Behavioral Health is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Centerstone provides outpatient mental health, substance use treatment, and crisis services for Medicaid and uninsured clients including justice-involved adults in central Illinois. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in 5 Illinois counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Centerstone — Behavioral Health es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en 5 condados de Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|mclean|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": ""
+  },
+  "227": {
+    "description_es": "Sinnissippi Centers — Community Mental Health sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en los condados Boone, Ogle, Stephenson y Winnebago. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|winnebago|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "228": {
+    "description_es": "Memorial Behavioral Health — Reentry Services sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en 6 condados de Illinois. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|sangamon|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "229": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|st. clair|st.-clair|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "230": {
+    "description_es": "Crossing Healthcare — FQHC sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en los condados DeWitt, Macon, Moultrie y Piatt. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|macon|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "231": {
+    "description_es": "VNA Health Care — FQHC sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en los condados Kane, Kendall y Will. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|kane|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "232": {
+    "description_es": "HealthLinc — FQHC sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en los condados Jasper, Pulaski, Massac y Union. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|starke|jasper|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "233": {
+    "description": "Hamdard Healthcare — FQHC is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Hamdard Healthcare provides culturally responsive primary care, behavioral health, and Medicaid enrollment for low-income Chicago residents including justice-involved adults on the North Side. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Cook County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Hamdard Healthcare — FQHC es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Cook. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": ""
+  },
+  "234": {
+    "description": "Near North Health is a federally qualified health center providing primary care, dental, and behavioral health on a sliding fee scale for uninsured Chicago residents including returning citizens in Near North neighborhoods. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. This resource supports Illinoisans navigating reentry in Cook County.",
+    "description_es": "Near North Health Service Corporation sirve a adultos con antecedentes penales y familias en Illinois. Near North Health is a federally qualified health center providing primary care, dental, and behavioral health on a sliding fee scale for uninsured Chicago residents including returning citizens in Near North neighborhoods. Contacte el programa para confirmar admisión y documentos requeridos. Este recurso apoya a illinoenses en reinserción en condado de Cook.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "235": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "236": {
+    "description_es": "Lawndale Christian Health Center sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|healthcare",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "237": {
+    "description_es": "Cook County Sheriff — Reentry Resources sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Esta oficina maneja cumplimiento de supervisión e informes—no navegación de crisis de reinserción; pida a su oficial referencias a aliados locales de reinserción. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|probation-parole",
+    "services": "Probation and parole supervision|Court compliance support|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "238": {
+    "description": "Will County Adult Probation is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Will County Adult Probation supervises probationers and coordinates referrals to local reentry partners, Illinois workNet employment services, and IDHS benefits in Joliet and Will County communities. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Will County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Will County Adult Probation es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Will. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|will|probation-parole",
+    "services": "Probation and parole supervision|Court compliance support|Partner referrals",
+    "intake_signals": ""
+  },
+  "239": {
+    "description": "DuPage County Probation Department is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. DuPage County Probation Department supervises adult probationers connecting supervisees to DuPage workforce board, legal aid, and behavioral health partners—not emergency crisis navigation. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in DuPage County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "DuPage County Probation Department es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de DuPage. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|dupage|probation-parole",
+    "services": "Probation and parole supervision|Court compliance support|Partner referrals",
+    "intake_signals": ""
+  },
+  "240": {
+    "description": "Kane County Court Services is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Kane County Court Services supervises probationers in Aurora and Kane County connecting supervisees to workNet Kane employment services and Prairie State Legal referrals. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Kane County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Kane County Court Services es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Kane. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|kane|probation-parole",
+    "services": "Probation and parole supervision|Court compliance support|Partner referrals",
+    "intake_signals": ""
+  },
+  "241": {
+    "description": "Lake County Adult Probation is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Lake County Adult Probation supervises probationers in Waukegan and Lake County connecting supervisees to workforce board and healthcare partners—not a general reentry hotline. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Lake County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Lake County Adult Probation es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Lake. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|lake|probation-parole",
+    "services": "Probation and parole supervision|Court compliance support|Partner referrals",
+    "intake_signals": ""
+  },
+  "242": {
+    "description": "Winnebago County Probation is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Winnebago County Probation Department supervises adult probationers in Rockford connecting supervisees to Rock Valley workforce board and Rosecrance treatment partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Winnebago County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Winnebago County Probation es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Winnebago. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|winnebago|probation-parole",
+    "services": "Probation and parole supervision|Court compliance support|Partner referrals",
+    "intake_signals": ""
+  },
+  "243": {
+    "description": "Peoria County Probation is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Peoria County Probation supervises adult probationers connecting supervisees to Greater Peoria workforce board and Prairie Center treatment referrals in central Illinois. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Peoria County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Peoria County Probation es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Peoria. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|peoria|probation-parole",
+    "services": "Probation and parole supervision|Court compliance support|Partner referrals",
+    "intake_signals": ""
+  },
+  "244": {
+    "description": "Champaign County Probation is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Champaign County Probation Department supervises probationers in the Champaign-Urbana area connecting supervisees to Parkland adult education and Prairie Center behavioral health partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Champaign County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Champaign County Probation es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Champaign. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|champaign|probation-parole",
+    "services": "Probation and parole supervision|Court compliance support|Partner referrals",
+    "intake_signals": ""
+  },
+  "245": {
+    "description": "McLean County Probation is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. McLean County Probation supervises adult probationers in Bloomington connecting supervisees to McLean workforce board and Centerstone behavioral health services. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in McLean County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "McLean County Probation es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de McLean. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|mclean|probation-parole",
+    "services": "Probation and parole supervision|Court compliance support|Partner referrals",
+    "intake_signals": ""
+  },
+  "246": {
+    "description": "Lincoln Land Community College — Adult Education is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Lincoln Land Community College Adult Education provides GED, high school equivalency, and career training for adult learners including justice-involved residents in the Springfield region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in 6 Illinois counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Lincoln Land Community College — Adult Education es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en 6 condados de Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|sangamon|education",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": ""
+  },
+  "247": {
+    "description": "Richland Community College — Adult Education is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Richland Community College Adult Education offers GED preparation and career certifications for adult learners including returning citizens in the Decatur and Macon County region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in DeWitt, Macon, Moultrie, and Piatt counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Richland Community College — Adult Education es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados DeWitt, Macon, Moultrie y Piatt. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|macon|education",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": ""
+  },
+  "248": {
+    "description": "Rock Valley College — Adult Education is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Rock Valley College Adult Education provides GED, high school equivalency, and workforce training for adult learners including justice-involved residents in the Rockford region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Boone, Ogle, Stephenson, and Winnebago counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Rock Valley College — Adult Education es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Boone, Ogle, Stephenson y Winnebago. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|winnebago|education",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": ""
+  },
+  "249": {
+    "description": "Joliet Junior College — Adult Education is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Joliet Junior College Adult Education offers GED preparation, high school equivalency, and career training for adult learners including returning citizens in Will County and surrounding areas. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Grundy, Kankakee, Kendall, and Will counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Joliet Junior College — Adult Education es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Grundy, Kankakee, Kendall y Will. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|will|education",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": ""
+  },
+  "250": {
+    "description": "College of DuPage — Adult Education is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. College of DuPage Adult Education provides GED, high school equivalency, and English language classes for adult learners including justice-involved residents in DuPage County. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in DuPage County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "College of DuPage — Adult Education es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de DuPage. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|dupage|education",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": ""
+  },
+  "251": {
+    "description": "Kishwaukee College — Adult Education is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Kishwaukee College Adult Education offers GED and high school equivalency classes for adult learners including returning citizens in DeKalb County and northern Illinois. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in DeKalb, Kane, Lee, and Ogle counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Kishwaukee College — Adult Education es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados DeKalb, Kane, Lee y Ogle. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|dekalb|education",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": ""
+  },
+  "252": {
+    "description": "South Suburban College — Adult Education is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. South Suburban College Adult Education provides GED preparation and career training for adult learners including justice-involved residents in south suburban Cook County. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Cook County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "South Suburban College — Adult Education es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Cook. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|education",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": ""
+  },
+  "253": {
+    "description": "Veterans Assistance Commission — Cook County is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Cook County Veterans Assistance Commission helps veterans and families access VA benefits, emergency assistance, and referrals including justice-involved veterans in Cook County. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Cook County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Veterans Assistance Commission — Cook County es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Cook. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|veterans",
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": ""
+  },
+  "254": {
+    "description": "DuPage County Veterans Assistance Commission is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. DuPage County Veterans Assistance Commission connects veterans to VA benefits, transportation to VA medical centers, and emergency aid including justice-involved veterans in DuPage County. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in DuPage County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "DuPage County Veterans Assistance Commission es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de DuPage. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|dupage|veterans",
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": ""
+  },
+  "255": {
+    "description": "Will County Veterans Assistance Commission is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Will County Veterans Assistance Commission helps veterans access VA benefits, emergency assistance, and referrals including justice-involved veterans rebuilding after incarceration in Will County. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Will County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Will County Veterans Assistance Commission es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Will. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|will|veterans",
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": ""
+  },
+  "256": {
+    "description": "Lake County Veterans Assistance Commission is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Lake County Veterans Assistance Commission connects veterans to VA benefits and county veteran services including justice-involved veterans in Lake County communities. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Lake County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Lake County Veterans Assistance Commission es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Lake. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|lake|veterans",
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": ""
+  },
+  "257": {
+    "description": "Winnebago County Veterans Assistance Commission is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Winnebago County Veterans Assistance Commission helps veterans access VA benefits and emergency assistance including justice-involved veterans in the Rockford region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Winnebago County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Winnebago County Veterans Assistance Commission es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Winnebago. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|winnebago|veterans",
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": ""
+  },
+  "258": {
+    "description": "Peoria County Veterans Assistance Commission is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Peoria County Veterans Assistance Commission connects veterans to VA benefits and county veteran services including justice-involved veterans in central Illinois. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Peoria County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Peoria County Veterans Assistance Commission es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Peoria. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|peoria|veterans",
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": ""
+  },
+  "259": {
+    "description": "St. Clair County Veterans Assistance Commission is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. St. Clair County Veterans Assistance Commission helps veterans access VA benefits and emergency aid including justice-involved veterans in the Metro East region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in St. Clair County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "St. Clair County Veterans Assistance Commission es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de St. Clair. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|st. clair|st.-clair|veterans",
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": ""
+  },
+  "260": {
+    "description": "Madison County Veterans Assistance Commission is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Madison County Veterans Assistance Commission connects veterans to VA benefits and referrals including justice-involved veterans in Madison County and the Metro East. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Madison County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Madison County Veterans Assistance Commission es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Madison. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|madison|veterans",
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": ""
+  },
+  "261": {
+    "description_es": "The Salvation Army — Free Legal Aid Clinic ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Cook. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para evaluar elegibilidad por ingresos, tipo de delito y documentación requerida.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|legal-aid",
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "262": {
+    "description": "Chicago Volunteer Legal Services connects low-income Cook County residents to volunteer attorneys for civil legal matters including eviction defense, benefits appeals, and record sealing consultations. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. This resource supports Illinoisans navigating reentry in Cook County.",
+    "description_es": "Chicago Volunteer Legal Services sirve a adultos con antecedentes penales y familias en Illinois. Chicago Volunteer Legal Services connects low-income Cook County residents to volunteer attorneys for civil legal matters including eviction defense, benefits appeals, and record sealing consultations. Contacte el programa para confirmar admisión y documentos requeridos. Este recurso apoya a illinoenses en reinserción en condado de Cook.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|legal-aid",
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "263": {
+    "description": "Prairie State Legal — Waukegan Office is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Prairie State Legal Services Waukegan office provides free civil legal aid to low-income Lake County residents including housing, benefits, and record relief for justice-involved clients. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Lake County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Prairie State Legal — Waukegan Office es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Lake. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|lake|legal-aid",
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "264": {
+    "description": "Prairie State Legal — Rockford Office is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Prairie State Legal Services Rockford office provides free civil legal aid to low-income Winnebago County residents including expungement and housing defense for justice-involved clients. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Winnebago County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Prairie State Legal — Rockford Office es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Winnebago. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|winnebago|legal-aid",
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "265": {
+    "description_es": "Land of Lincoln — Champaign Office ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Champaign. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para evaluar elegibilidad por ingresos, tipo de delito y documentación requerida.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|champaign|legal-aid",
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "266": {
+    "description": "Land of Lincoln — Peoria Office is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Land of Lincoln Legal Assistance Peoria office provides free civil legal aid to low-income Peoria County residents including housing and record sealing for justice-involved clients. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Peoria County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Land of Lincoln — Peoria Office es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Peoria. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|peoria|legal-aid",
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "267": {
+    "description": "Dress for Success — Chicago is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Dress for Success Chicago provides professional clothing, career coaching, and employment readiness for women including justice-involved women seeking fair-chance employment in Cook County. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Cook County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Dress for Success — Chicago es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Cook. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|basic-needs",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": ""
+  },
+  "268": {
+    "description": "Cornerstone Community Outreach — Basic Needs is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Cornerstone Community Outreach provides clothing, hygiene items, meals, and shelter referrals for low-income Chicago residents including returning citizens rebuilding basic needs after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Cook County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Cornerstone Community Outreach — Basic Needs es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Cook. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|basic-needs",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": ""
+  },
+  "269": {
+    "description": "Pacific Garden Mission — Shelter & Services is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Pacific Garden Mission provides emergency shelter, meals, clothing, and recovery programming for men and women experiencing homelessness including justice-involved adults in Chicago. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Cook County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Pacific Garden Mission — Shelter & Services es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Cook. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|basic-needs",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": ""
+  },
+  "270": {
+    "description": "Illinois Department of Motor Vehicles — REAL ID Guide is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Illinois Secretary of State publishes identity verification requirements for REAL ID driver's licenses and state ID cards helping returning citizens understand documents needed after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in throughout Illinois. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Illinois Department of Motor Vehicles — REAL ID Guide es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|sangamon|id-documentation",
+    "services": "Document assistance",
+    "intake_signals": ""
+  },
+  "271": {
+    "description_es": "Chicago Appleseed — Criminal Records Hub sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en en todo Illinois. Aplican tarifas, prueba de identidad y documentos de residencia; recursos de reinserción y aliados legales suelen ayudar a reunir el papeleo requerido. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|id-documentation",
+    "services": "Document assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "272": {
+    "description": "Illinois Recovery Peer Support — ICPR is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Illinois Certification Board peer recovery credential program certifies recovery support specialists who mentor justice-involved individuals in treatment and reentry programs statewide. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in throughout Illinois. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Illinois Recovery Peer Support — ICPR es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Illinois. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|sangamon|peer-support",
+    "services": "Support groups|Substance use treatment",
+    "intake_signals": ""
+  },
+  "273": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|peer-support",
+    "services": "Support groups|Substance use treatment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "274": {
+    "description_es": "Pace Bus — Reduced Fare Program sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en 6 condados de Illinois. Los recursos de tarifa reducida suelen requerir solicitud y prueba de ingresos o discapacidad; se necesita identificación para recibir un pase o tarjeta. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|transportation",
+    "services": "Bus pass assistance|Transportation assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "275": {
+    "description": "Champaign-Urbana Mass Transit — Reduced Fare is a statewide or regional referral resource for Illinoisans affected by the criminal justice system. Champaign-Urbana Mass Transit District offers reduced fare programs for seniors, people with disabilities, and eligible riders including returning citizens in the Champaign-Urbana area. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted before visiting. Users can search by location, service type, or need to find active providers in Champaign County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Champaign-Urbana Mass Transit — Reduced Fare es un recurso de referencia estatal o regional para illinoenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Champaign. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|champaign|transportation",
+    "services": "Bus pass assistance|Transportation assistance",
+    "intake_signals": ""
+  },
+  "276": {
+    "description_es": "Children's Home & Aid — Family Reunification sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los recursos familiares pueden requerir participación en tratamiento o clases de crianza; el estado de custodia afecta algunos servicios de reunificación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|family-children",
+    "services": "Family reunification support|Parenting services|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "277": {
+    "description_es": "Amethyst Place — Women & Children Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en condado de Cook. Los recursos familiares pueden requerir participación en tratamiento o clases de crianza; el estado de custodia afecta algunos servicios de reunificación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "illinois|reentry|cook|family-children",
+    "services": "Family reunification support|Parenting services|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "278": {
+    "description": "Phoenix Recovery Support Services — Transitional Housing serves justice-involved adults and families rebuilding stability after incarceration in Cook County. Phoenix Recovery Support Services provides transitional housing and recovery supports for men in substance use recovery including justice-involved adults completing treatment in Chicago with sobriety and program participation requirements. Contact this resource to confirm current intake steps before visiting. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Phoenix Recovery Support Services — Transitional Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Cook. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "cook|housing|recovery|reentry|illinois",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "279": {
+    "description": "Matthew House — Transitional Housing serves justice-involved adults and families rebuilding stability after incarceration in Kane County. Matthew House provides transitional housing and case management for men experiencing homelessness including justice-involved adults rebuilding stability in Aurora and Kane County with program participation and employment requirements. Contact this resource to confirm intake before visiting. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Matthew House — Transitional Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Kane. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "kane|housing|reentry|illinois",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "280": {
+    "description": "Bethany Place — Supportive Housing serves justice-involved adults and families rebuilding stability after incarceration in Winnebago County. Bethany Place provides supportive housing and case management for adults with HIV/AIDS and chronic conditions including justice-involved individuals needing stable housing in Rockford and Winnebago County with medical case management coordination. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Bethany Place — Supportive Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Winnebago. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "tags": "winnebago|housing|reentry|illinois",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "281": {
+    "description": "Center for Prevention of Abuse — Safe Housing serves justice-involved adults and families rebuilding stability after incarceration in Peoria County. Center for Prevention of Abuse provides emergency shelter and transitional housing for survivors of domestic violence and human trafficking in Peoria including family members affected by partner violence during reentry with confidential intake and safety planning. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Center for Prevention of Abuse — Safe Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Peoria. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "peoria|housing|reentry|DV|illinois",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": ""
+  },
+  "282": {
+    "description": "Black Hawk College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Henry, and Rock Island counties. Black Hawk College Adult Education provides GED and high school equivalency classes for adult learners including justice-involved residents in Henry County and the Kewanee region with free orientation and enrollment assistance. Classes are typically free or low-cost for Illinois adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Black Hawk College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Henry y Rock Island. Las clases suelen ser gratuitas o de bajo costo para adultos en Illinois; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "henry|education|reentry|illinois",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "283": {
+    "tags": "southern-illinois|food-bank|reentry|illinois|randolph|food-nutrition",
+    "services": "Partner referrals|Food pantry access|SNAP enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "284": {
+    "tags": "western-illinois|food-bank|reentry|illinois|henderson|food-nutrition",
+    "services": "Partner referrals|Food pantry access|SNAP enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "285": {
+    "intake_signals": ""
+  },
+  "286": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "287": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "288": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "services": "Primary medical care|WIC|Partner referrals",
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "289": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "services": "Primary medical care|WIC|Partner referrals",
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "290": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "services": "Primary medical care|WIC|Partner referrals",
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "291": {
+    "description": "Montgomery County Health Department provides WIC, immunizations, maternal-child health, environmental health inspections, and disease prevention services in Hillsboro and Litchfield for rural residents including returning citizens on probation or parole. Connects clients to Montgomery County Workforce Board, Land of Lincoln Legal Aid western region, and regional hospitals for specialty care in south-central Illinois. This resource supports Illinoisans navigating reentry in Montgomery County.",
+    "description_es": "El Departamento de Salud del condado Montgomery ofrece WIC, inmunizaciones, salud materno-infantil, inspecciones de salud ambiental y prevención de enfermedades en Hillsboro y Litchfield para residentes rurales, incluidos ciudadanos que regresan bajo supervisión. Este recurso apoya a illinoenses en reinserción en condado de Montgomery.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "services": "Primary medical care|WIC|Partner referrals",
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "292": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "services": "Primary medical care|WIC|Partner referrals",
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "293": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "294": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "295": {
+    "intake_signals": "accepts_criminal_record"
+  }
+}

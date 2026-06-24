@@ -630,12 +630,16 @@ export async function getAllResourcesAdmin(): Promise<Resource[]> {
   const supabase = await createClient();
   if (!supabase) return [];
 
-  const { data } = await supabase
-    .from("resources")
-    .select("*, category:categories(*)")
-    .order("updated_at", { ascending: false });
+  const { data, error } = await fetchAllRows<Resource>(async (range) =>
+    supabase
+      .from("resources")
+      .select("*, category:categories(*)")
+      .order("updated_at", { ascending: false })
+      .range(range.from, range.to)
+  );
 
-  return localizeResources((data as Resource[]) ?? [], locale);
+  if (error) return [];
+  return localizeResources(data, locale);
 }
 
 export async function getAllCategoriesAdmin(): Promise<Category[]> {

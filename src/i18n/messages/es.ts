@@ -380,6 +380,8 @@ export const es = {
       indiana: "Indiana",
       tennessee: "Tennessee",
       michigan: "Michigan",
+      illinois: "Illinois",
+      westVirginia: "Virginia Occidental",
     },
     priorities: {
       housing: "Vivienda",
@@ -441,6 +443,10 @@ export const es = {
           "Siete pasos prácticos para sus primeros días en casa en Tennessee. Cada paso enlaza a recursos reales de nuestro directorio.",
         michigan:
           "Siete pasos prácticos para sus primeros días en casa en Michigan. Cada paso enlaza a recursos reales de nuestro directorio.",
+        illinois:
+          "Siete pasos prácticos para sus primeros días en casa en Illinois. Cada paso enlaza a recursos reales de nuestro directorio.",
+        westVirginia:
+          "Siete pasos prácticos para sus primeros días en casa en Virginia Occidental. Cada paso enlaza a recursos reales de nuestro directorio.",
       },
       steps: {
         "crisis-support": {
@@ -1111,6 +1117,9 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
     noFeatured: "No hay recursos destacados seleccionados.",
     addResourceSearch: "Buscar recursos para destacar...",
     noMatchingResources: "No se encontraron recursos coincidentes.",
+    filteredResourcesCount: "Mostrando {count} de {total} recursos",
+    filteredResourcesCountByState: "Mostrando {count} de {total} recursos de {state}",
+    filteredResourcesCountByCategory: "Mostrando {count} de {total} recursos de {category}",
     removeFeatured: "Quitar de destacados",
     publish: "Publicar",
     draft: "Borrador",

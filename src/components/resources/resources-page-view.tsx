@@ -48,7 +48,7 @@ export function ResourcesPageInstantShell({ loadingLabel }: ResourcesPageViewPro
         <div className={cn("mx-auto max-w-7xl", sectionStackGap)}>
           <div
             id={RESOURCE_RESULTS_ID}
-            className={cn("scroll-mt-[var(--site-header-height)]", sectionStackGap)}
+            className={cn("scroll-mt-[var(--site-header-offset)]", sectionStackGap)}
           >
             <div role="status" aria-live="polite" aria-busy="true" aria-label={loadingLabel}>
               <ResourceResultsGridSkeleton />
@@ -120,7 +120,7 @@ export function ResourcesPageView({ loadingLabel }: ResourcesPageViewProps) {
           <div
             id={RESOURCE_RESULTS_ID}
             className={cn(
-              "scroll-mt-[var(--site-header-height)]",
+              "scroll-mt-[var(--site-header-offset)]",
               sectionStackGap,
               (bootstrap?.recommended.length ?? 0) > 0 && sectionDividerTop
             )}

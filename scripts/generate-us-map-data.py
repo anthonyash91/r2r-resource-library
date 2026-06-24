@@ -11,17 +11,15 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "src" / "lib" / "us-map"
 COUNTY_CACHE = ROOT / "scripts" / "data" / "county-centroids.json"
 
+import sys
+
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from lib.us_state_fips import load_deployed_state_fips
+
 W, H = 960, 600
 LON_MIN, LON_MAX = -125.0, -66.5
 LAT_MIN, LAT_MAX = 24.0, 49.5
-
-STATE_FIPS = {
-    "21": "Kentucky",
-    "39": "Ohio",
-    "18": "Indiana",
-    "47": "Tennessee",
-    "26": "Michigan",
-}
 
 
 def project(lon: float, lat: float) -> tuple[float, float]:
@@ -58,7 +56,7 @@ def fetch_json(url: str) -> dict | list:
         return json.load(response)
 
 
-def generate_county_centroids() -> list[dict]:
+def generate_county_centroids(state_fips: dict[str, str]) -> list[dict]:
     geo = fetch_json(
         "https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json"
     )
@@ -66,7 +64,7 @@ def generate_county_centroids() -> list[dict]:
     for feature in geo["features"]:
         fips = feature["id"]
         state_code = fips[:2]
-        if state_code not in STATE_FIPS:
+        if state_code not in state_fips:
             continue
         name = feature["properties"]["NAME"]
         geometry = feature["geometry"]
@@ -79,7 +77,7 @@ def generate_county_centroids() -> list[dict]:
         lon, lat = ring_centroid(ring)
         counties.append(
             {
-                "state": STATE_FIPS[state_code],
+                "state": state_fips[state_code],
                 "county": name,
                 "lon": round(lon, 5),
                 "lat": round(lat, 5),
@@ -124,8 +122,12 @@ def write_ts(path: Path, header: str, export_name: str, payload: list[dict], typ
 
 
 def main() -> None:
+    state_fips = load_deployed_state_fips(ROOT)
+    deployed = ", ".join(sorted(state_fips.values()))
+    print(f"Generating map data for deployed states: {deployed}")
+
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    counties = generate_county_centroids()
+    counties = generate_county_centroids(state_fips)
     states = generate_state_paths()
 
     write_ts(

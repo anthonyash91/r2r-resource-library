@@ -12,8 +12,10 @@ Indiana (DFR): Official FSSA DFR county office PDF (92 counties).
 
 Michigan (MDHHS): Official County Composite Directory HTML (83 counties).
 
+Illinois (IDHS FCRC): Official DHS Office Locator by county (102 counties).
+
 Usage:
-  python3 scripts/sync-county-benefits-offices.py [--state ohio|tennessee|kentucky|indiana|michigan|all]
+  python3 scripts/sync-county-benefits-offices.py [--state ohio|tennessee|kentucky|indiana|michigan|illinois|west-virginia|all]
 """
 
 from __future__ import annotations
@@ -49,6 +51,8 @@ KY_VERIFIED = DATA_DIR / "kentucky-dcbs-verified.json"
 KY_OUTPUT = DATA_DIR / "kentucky-dcbs-offices.json"
 IN_DFR_OUTPUT = DATA_DIR / "indiana-dfr-offices.json"
 MI_OUTPUT = DATA_DIR / "michigan-mdhhs-offices.json"
+IL_OUTPUT = DATA_DIR / "illinois-idhs-offices.json"
+WV_OUTPUT = DATA_DIR / "west-virginia-dohs-offices.json"
 MI_DIRECTORY = (
     "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
 )
@@ -456,11 +460,67 @@ def sync_michigan() -> list[dict]:
     return result
 
 
+def sync_illinois() -> list[dict]:
+    from illinois_idhs_directory import fetch_all_county_fcrcs
+
+    official = load_counties_from_ts("src/lib/illinois/counties.ts")
+    by_county = fetch_all_county_fcrcs(official)
+    missing = [county for county in official if county not in by_county]
+    for county in missing:
+        by_county[county] = {
+            "county": county,
+            "city": "",
+            "address": "",
+            "phone": "1-800-843-6154",
+            "website": "https://abe.illinois.gov",
+            "source": "https://www.dhs.state.il.us/page.aspx?OfficeType=5&module=12",
+        }
+    result = [by_county[county] for county in official]
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    IL_OUTPUT.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    with_address = sum(1 for office in result if office.get("address"))
+    print(
+        f"Wrote {IL_OUTPUT.name}: {len(result)} counties "
+        f"({with_address} with address from IDHS FCRC locator)"
+    )
+    if missing:
+        print(f"  Missing from locator parse: {missing}")
+    return result
+
+
+def sync_west_virginia() -> list[dict]:
+    from west_virginia_dohs_directory import fetch_all_county_dohs
+
+    official = load_counties_from_ts("src/lib/west-virginia/counties.ts")
+    by_county = fetch_all_county_dohs(official)
+    missing = [county for county in official if county not in by_county]
+    for county in missing:
+        by_county[county] = {
+            "county": county,
+            "city": "",
+            "address": "",
+            "phone": "1-877-716-1212",
+            "website": "https://wvpath.wv.gov",
+            "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx",
+        }
+    result = [by_county[county] for county in official]
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    WV_OUTPUT.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    with_address = sum(1 for office in result if office.get("address"))
+    print(
+        f"Wrote {WV_OUTPUT.name}: {len(result)} counties "
+        f"({with_address} with address from DoHS field office locator)"
+    )
+    if missing:
+        print(f"  Missing from locator parse: {missing}")
+    return result
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Sync county benefits office JSON data")
     parser.add_argument(
         "--state",
-        choices=("ohio", "tennessee", "kentucky", "indiana", "michigan", "all"),
+        choices=("ohio", "tennessee", "kentucky", "indiana", "michigan", "illinois", "west-virginia", "all"),
         default="all",
         help="Which state to sync (default: all)",
     )
@@ -475,6 +535,10 @@ def main() -> None:
         sync_indiana()
     if args.state in ("michigan", "all"):
         sync_michigan()
+    if args.state in ("illinois", "all"):
+        sync_illinois()
+    if args.state in ("west-virginia", "all"):
+        sync_west_virginia()
 
 
 if __name__ == "__main__":

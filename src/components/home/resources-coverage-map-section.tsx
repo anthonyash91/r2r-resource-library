@@ -7,6 +7,7 @@ import {
 } from "@/lib/resource-map-pins";
 import { cn, pageSectionHeadingClass, pageSectionPadding, pageSectionSubtitleClass, pageSectionBandClass, type PageSectionBand } from "@/lib/utils";
 import { getServerTranslator } from "@/i18n/server";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 interface ResourcesCoverageMapSectionProps {
   resources: Resource[];
@@ -30,23 +31,27 @@ export async function ResourcesCoverageMapSection({
       aria-labelledby="coverage-map-heading"
     >
       <div className="mx-auto max-w-7xl">
-        <header className="mb-10 text-center">
-          <h2 id="coverage-map-heading" className={pageSectionHeadingClass}>
-            {t("home.coverageMapTitle")}
-          </h2>
-          <p className={cn("mx-auto mt-2 max-w-3xl", pageSectionSubtitleClass)}>
-            {t("home.coverageMapSubtitle", {
-              states: String(stateSummaries.length),
-              areas: String(pins.length),
-            })}
-          </p>
-        </header>
+        <ScrollReveal variant="fade-up">
+          <header className="mb-10 text-center">
+            <h2 id="coverage-map-heading" className={pageSectionHeadingClass}>
+              {t("home.coverageMapTitle")}
+            </h2>
+            <p className={cn("mx-auto mt-2 max-w-3xl", pageSectionSubtitleClass)}>
+              {t("home.coverageMapSubtitle", {
+                states: String(stateSummaries.length),
+                areas: String(pins.length),
+              })}
+            </p>
+          </header>
+        </ScrollReveal>
 
-        <ResourcesCoverageMap
-          pins={pins}
-          stateSummaries={stateSummaries}
-          activeStates={activeStates}
-        />
+        <ScrollReveal variant="zoom-in" delay={150}>
+          <ResourcesCoverageMap
+            pins={pins}
+            stateSummaries={stateSummaries}
+            activeStates={activeStates}
+          />
+        </ScrollReveal>
       </div>
     </section>
   );

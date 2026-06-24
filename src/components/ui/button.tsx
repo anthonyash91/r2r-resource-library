@@ -14,7 +14,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     | "soft-accent"
     | "soft-success"
     | "soft-warning"
-    | "soft-destructive";
+    | "soft-destructive"
+    | "warning";
   size?: "sm" | "md" | "lg" | "badge";
   loading?: boolean;
 }
@@ -41,6 +42,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         "border border-warning/15 bg-warning/10 font-medium text-warning hover:bg-warning/15",
       "soft-destructive":
         "border border-destructive/15 bg-destructive/10 font-medium text-destructive hover:bg-destructive/15",
+      warning: "bg-warning text-white hover:opacity-90",
     };
 
     const sizes = {
@@ -58,7 +60,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         disabled={disabled || loading}
         aria-busy={loading || undefined}
         className={cn(
-          "inline-flex items-center justify-center gap-2 rounded-xl transition-colors cursor-pointer",
+          "inline-flex items-center justify-center gap-2 rounded-xl transition-colors duration-200 ease-out cursor-pointer motion-reduce:transition-none",
           isSoft ? "font-medium" : "font-semibold",
           "focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2",
           "disabled:opacity-50 disabled:cursor-not-allowed",

@@ -167,7 +167,8 @@ Site IDs are hashed at rest; reversible encryption allows admins to reveal/copy 
 | Feature | Description |
 |---------|-------------|
 | **Homepage** | Hero search, popular tags, browse-by-category pills, personalized “Picked for you” (when onboarded), How It Works, featured resources, built-for CTA, announcements banner |
-| **Resource directory** (`/resources`) | Hero search with separate collapsible location filters (collapsed by default); filters and intake signals apply when the user presses **Search** (no auto-scroll on every change), sticky search bar, “Resources based on your chosen needs” section with dashboard link to edit preferences, county/statewide split with count badges in section headers, paginated masonry grid; `?scroll=results` or `?scroll=recommended` for deep links from homepage and dashboard |
+| **Resource directory** (`/resources`) | Hero search with separate collapsible location filters (collapsed by default); filters and intake signals apply when the user presses **Search** (no auto-scroll on every change), sticky search bar, “Resources based on your chosen needs” section with dashboard link to edit preferences, county/statewide split with count badges in section headers, paginated stable-column masonry grid with scroll-triggered card reveals; `?scroll=results` or `?scroll=recommended` for deep links from homepage and dashboard |
+| **Homepage** (`/`) | Scroll-triggered section reveals; featured and recommended resource cards animate individually |
 | **Resource detail** (`/resources/[id]`) | Category/coverage badges, intake signal badges (criminal record, referral, walk-in), eligibility & operational notes (EN/ES), served counties, contact info, directions, save & share, related resources |
 | **Onboarding** (`/get-started`) | 3-step wizard: state (from registry) → county → up to 3 priority categories; skip option; edit mode via `?edit=1` |
 | **Search & filters** | Keyword, category, state, county, city, service type, coverage, recently added, intake signals (`?intake=accepts_criminal_record\|walk_in_ok` — AND logic); draft filter state until **Search** is pressed |
@@ -191,7 +192,7 @@ Site IDs are hashed at rest; reversible encryption allows admins to reveal/copy 
 | Section | Capabilities |
 |---------|--------------|
 | **Analytics** | Most viewed / most saved resources |
-| **Resources** | CRUD, featured flag, eligibility/notes (EN/ES), served counties, coverage, intake signal tags |
+| **Resources** | CRUD, featured flag, eligibility/notes (EN/ES), served counties, coverage, intake signal tags; filter by state and category; paginated fetch (no 1,000-row cap) |
 | **Categories** | CRUD with icons and sort order |
 | **Facilities** | Register facilities, site ID reveal/copy, signup counts, active toggle |
 | **Users** | View users, reset passwords, delete accounts, read saved-resource counts |
@@ -297,9 +298,20 @@ npm run seed:resources:indiana
 # Tennessee → supabase/seed-tennessee-resources.sql
 npm run seed:resources:tennessee
 
-# All states
+# Michigan → supabase/seed-michigan-resources.sql
+npm run seed:resources:michigan
+
+# Illinois → supabase/seed-illinois-resources.sql
+npm run seed:resources:illinois
+
+# West Virginia → supabase/seed-west-virginia-resources.sql
+npm run seed:resources:west-virginia
+
+# All states (also regenerates US map data from deployed state registry)
 npm run seed:resources:all
 ```
+
+`npm run build` runs `generate:us-map` automatically so the homepage coverage map reflects states in `src/lib/states/registry.ts`.
 
 Run the generated SQL files in Supabase, or use:
 
@@ -308,6 +320,9 @@ npm run db:push:kentucky   # requires SUPABASE_SERVICE_ROLE_KEY
 npm run db:push:ohio
 npm run db:push:indiana
 npm run db:push:tennessee
+npm run db:push:michigan
+npm run db:push:illinois
+npm run db:push:west-virginia
 ```
 
 Apply CSV enrichments (also auto-tags `intake_signals` from eligibility/notes):
@@ -476,6 +491,10 @@ Resource cards use a consistent **type badge** system (category, statewide, regi
 | Ohio resources | `data/ohio-resources.csv` | `npm run seed:resources:ohio` |
 | Indiana resources | `data/indiana-resources.csv` | `npm run seed:resources:indiana` |
 | Tennessee resources | `data/tennessee-resources.csv` | `npm run seed:resources:tennessee` |
+| Michigan resources | `data/michigan-resources.csv` | `npm run seed:resources:michigan` |
+| Illinois resources | `data/illinois-resources.csv` | `npm run seed:resources:illinois` |
+| West Virginia resources | `data/west-virginia-resources.csv` | `npm run seed:resources:west-virginia` |
+| US coverage map | `src/lib/us-map/county-centroids.generated.ts` | `npm run generate:us-map` (also runs on `npm run build`) |
 | Research logs | `data/{state}-research-log.csv` | Generated with each state's build script |
 | Enrichments | `data/enrichments/batch-*.json` | `npm run seed:enrich` |
 | Field semantics | `.cursor/rules/i18n.mdc` | `eligibility` vs `notes` vs `served_counties` |

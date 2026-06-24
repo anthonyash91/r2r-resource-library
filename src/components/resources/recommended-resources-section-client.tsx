@@ -28,7 +28,7 @@ export function RecommendedResourcesSectionClient({
   return (
     <section
       id={RECOMMENDED_RESOURCES_ID}
-      className="scroll-mt-[var(--site-header-height)] w-full min-w-0"
+      className="scroll-mt-[var(--site-header-offset)] w-full min-w-0"
       aria-labelledby="recommended-resources-heading"
     >
       <header className="mb-4 space-y-2">

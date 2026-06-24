@@ -15,14 +15,21 @@ interface PaginatedResourceListProps {
 export function PaginatedResourceList({ resources }: PaginatedResourceListProps) {
   const { t } = useTranslations();
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const [staggerFromIndex, setStaggerFromIndex] = useState(0);
   const listSignature = resources.map((resource) => resource.id).join("\0");
 
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
+    setStaggerFromIndex(0);
   }, [listSignature]);
 
   const visible = resources.slice(0, visibleCount);
   const hasMore = visibleCount < resources.length;
+
+  const loadMore = () => {
+    setStaggerFromIndex(visibleCount);
+    setVisibleCount((count) => count + PAGE_SIZE);
+  };
 
   if (resources.length === 0) {
     return null;
@@ -30,7 +37,12 @@ export function PaginatedResourceList({ resources }: PaginatedResourceListProps)
 
   return (
     <>
-      <ResourceMasonry resources={visible} contained />
+      <ResourceMasonry
+        resources={visible}
+        contained
+        layout="columns"
+        staggerFromIndex={staggerFromIndex}
+      />
 
       {resources.length > PAGE_SIZE ? (
         <div className="mt-10 flex flex-col items-center gap-3">
@@ -38,11 +50,7 @@ export function PaginatedResourceList({ resources }: PaginatedResourceListProps)
             {t("resources.showingCount", { visible: visible.length, total: resources.length })}
           </p>
           {hasMore ? (
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
-            >
+            <Button size="lg" variant="outline" onClick={loadMore}>
               {t("resources.loadMore")}
             </Button>
           ) : null}

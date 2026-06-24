@@ -18,6 +18,10 @@ KY_KYNECT = "https://kynect.ky.gov/benefits/s/"
 MI_DIRECTORY = (
     "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
 )
+IL_FCRC_LOCATOR = "https://www.dhs.state.il.us/page.aspx?OfficeType=5&module=12"
+IL_ABE = "https://abe.illinois.gov"
+WV_DOHS_LOCATOR = "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+WV_PATH = "https://wvpath.wv.gov"
 
 
 def normalize_category(value: str) -> str:
@@ -221,6 +225,66 @@ def register_county_benefits_michigan(add: Callable[..., None], existing_fa: set
             )
             | {
                 "_source": office.get("source", MI_DIRECTORY),
+                "_confidence": "high" if office.get("address") else "medium",
+            }
+        )
+        existing_fa.add(county)
+        added += 1
+    return added
+
+
+def register_county_benefits_illinois(add: Callable[..., None], existing_fa: set[str]) -> int:
+    from phase3b_gapfill import _fcrc_desc_en, _fcrc_desc_es, _fcrc_il
+
+    added = 0
+    for office in _load_offices("illinois-idhs-offices.json"):
+        county = office["county"]
+        if county in existing_fa:
+            continue
+        city = office.get("city") or county
+        region = f"{city} / {county} County"
+        add(
+            **_fcrc_il(
+                county,
+                city,
+                office.get("address", ""),
+                office.get("phone", "1-800-843-6154"),
+                region,
+                _fcrc_desc_en(county, city),
+                _fcrc_desc_es(county, city),
+            )
+            | {
+                "_source": office.get("source", IL_FCRC_LOCATOR),
+                "_confidence": "high" if office.get("address") else "medium",
+            }
+        )
+        existing_fa.add(county)
+        added += 1
+    return added
+
+
+def register_county_benefits_west_virginia(add: Callable[..., None], existing_fa: set[str]) -> int:
+    from phase3b_gapfill import _dohs_desc_en, _dohs_desc_es, _dohs_wv
+
+    added = 0
+    for office in _load_offices("west-virginia-dohs-offices.json"):
+        county = office["county"]
+        if county in existing_fa:
+            continue
+        city = office.get("city") or county
+        region = f"{city} / {county} County"
+        add(
+            **_dohs_wv(
+                county,
+                city,
+                office.get("address", ""),
+                office.get("phone", "1-877-716-1212"),
+                region,
+                _dohs_desc_en(county, city),
+                _dohs_desc_es(county, city),
+            )
+            | {
+                "_source": office.get("source", WV_DOHS_LOCATOR),
                 "_confidence": "high" if office.get("address") else "medium",
             }
         )

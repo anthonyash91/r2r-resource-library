@@ -1,0 +1,442 @@
+[
+  {
+    "county": "Barbour",
+    "city": "Philippi",
+    "address": "49 Mattaliano Drive",
+    "phone": "304-457-9030",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Berkeley",
+    "city": "Martinsburg",
+    "address": "433 Mid-Atlantic Park",
+    "phone": "304-267-0100",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Boone",
+    "city": "Foster",
+    "address": "156 Resource Lane",
+    "phone": "304-369-7802",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Braxton",
+    "city": "Sutton",
+    "address": "3708 Sutton Lane",
+    "phone": "304-765-7344",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Brooke",
+    "city": "Weirton",
+    "address": "100 Municipal Plaza, Suite 600",
+    "phone": "304-794-3060",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Cabell",
+    "city": "Huntington",
+    "address": "2699 Park Avenue, Suite 100",
+    "phone": "304-528-5800",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Calhoun",
+    "city": "Grantsville",
+    "address": "85 Industrial Park Road",
+    "phone": "304-354-6118",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Clay",
+    "city": "Clay",
+    "address": "94 Main Street",
+    "phone": "304-587-4268",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Doddridge",
+    "city": "Smithburg",
+    "address": "22 Herbert Avenue",
+    "phone": "304-873-2031",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Fayette",
+    "city": "Oak Hill",
+    "address": "1400 Virginia Street",
+    "phone": "304-465-9613",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Gilmer",
+    "city": "Glenville",
+    "address": "1493 WV Hwy East",
+    "phone": "304-462-0412",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Grant",
+    "city": "Petersburg",
+    "address": "53 Kiess Drive",
+    "phone": "304-257-4211",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Greenbrier",
+    "city": "Lewisburg",
+    "address": "316 Maplewood Avenue, Suite 3",
+    "phone": "304-647-7476",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Hampshire",
+    "city": "Romney",
+    "address": "24954 Northwestern Pike",
+    "phone": "304-822-6900",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Hancock",
+    "city": "Weirton",
+    "address": "100 Municipal Plaza, Suite 600",
+    "phone": "304-794-3060",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Hardy",
+    "city": "Moorefield",
+    "address": "149 Robert C. Byrd Industrial Park",
+    "phone": "304-538-2391",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Harrison",
+    "city": "Clarksburg",
+    "address": "153 West Main Street, Suite D",
+    "phone": "304-627-2295",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Jackson",
+    "city": "Ripley",
+    "address": "4285 Cedar Lakes Road",
+    "phone": "304-373-2560",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Jefferson",
+    "city": "Charles Town",
+    "address": "239 Willow Spring Drive",
+    "phone": "304-724-2600",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Kanawha",
+    "city": "Charleston",
+    "address": "4190 Washington Street",
+    "phone": "304-746-2360",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Lewis",
+    "city": "Weston",
+    "address": "91 Arnold Avenue",
+    "phone": "304-269-6820",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Lincoln",
+    "city": "Hamlin",
+    "address": "8209 Court Avenue",
+    "phone": "304-824-5811",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Logan",
+    "city": "Logan",
+    "address": "130 Stratton Street",
+    "phone": "304-792-7095",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Marion",
+    "city": "Fairmont",
+    "address": "416 Adams Street",
+    "phone": "304-368-4420",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Marshall",
+    "city": "Moundsville",
+    "address": "400 Teletech Drive, Suite 2",
+    "phone": "304-843-4120",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Mason",
+    "city": "Point Pleasant",
+    "address": "1406 Kanawha Street",
+    "phone": "304-675-0880",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "McDowell",
+    "city": "Welch",
+    "address": "840 Virginia Avenue",
+    "phone": "304-436-8302",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Mercer",
+    "city": "Princeton",
+    "address": "350 Davis Street",
+    "phone": "304-425-8738",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Mineral",
+    "city": "Keyser",
+    "address": "18 N. Tornado Way",
+    "phone": "304-788-4150",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Mingo",
+    "city": "Williamson",
+    "address": "203 East Third Avenue",
+    "phone": "304-235-4680",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Monongalia",
+    "city": "Morgantown",
+    "address": "114 S. High Street",
+    "phone": "304-285-3175",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Monroe",
+    "city": "Union",
+    "address": "535 North Street",
+    "phone": "304-772-3013",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Morgan",
+    "city": "Berkeley Springs",
+    "address": "62 Regal Court",
+    "phone": "304-258-1350",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Nicholas",
+    "city": "Summersville",
+    "address": "707 Professional Park Drive",
+    "phone": "304-872-0803",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Ohio",
+    "city": "Wheeling",
+    "address": "69 16th Street",
+    "phone": "304-232-4411",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Pendleton",
+    "city": "Franklin",
+    "address": "100 Thorn Creek Road, Suite 200",
+    "phone": "304-358-2305",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Pleasants",
+    "city": "St. Marys",
+    "address": "1655 South Pleasants Highway",
+    "phone": "304-684-9244",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Pocahontas",
+    "city": "Marlinton",
+    "address": "211 Valhalla Lane",
+    "phone": "304-799-2540",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Preston",
+    "city": "Kingwood",
+    "address": "18351 Veteran’s Memorial Highway",
+    "phone": "304-329-4340",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Putnam",
+    "city": "Winfield",
+    "address": "12531 Winfield Road",
+    "phone": "304-586-1520",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Raleigh",
+    "city": "Beckley",
+    "address": "407 Neville Street",
+    "phone": "304-256-6930",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Randolph",
+    "city": "Elkins",
+    "address": "1027 N. Randolph Avenue",
+    "phone": "304-637-5560",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Ritchie",
+    "city": "Harrisville",
+    "address": "220 West Main Street",
+    "phone": "304-643-2934",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Roane",
+    "city": "Spencer",
+    "address": "677 Ripley Road, Suite 3",
+    "phone": "304-927-0956",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Summers",
+    "city": "Hinton",
+    "address": "320 Summers Street, Suite A",
+    "phone": "304-466-2807",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Taylor",
+    "city": "Grafton",
+    "address": "235 Barrett Street",
+    "phone": "304-265-6103",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Tucker",
+    "city": "Parsons",
+    "address": "9346 Seneca Trail",
+    "phone": "304-478-3212",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Tyler",
+    "city": "Middlebourne",
+    "address": "210 Main Street",
+    "phone": "304-758-2127",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Upshur",
+    "city": "Buckhannon",
+    "address": "34 Auction Lane",
+    "phone": "304-473-4230",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Wayne",
+    "city": "Wayne",
+    "address": "26452 East Lynn Road",
+    "phone": "304-272-6311",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Webster",
+    "city": "Webster Springs",
+    "address": "110 North Main Street, Suite 201",
+    "phone": "304-847-2861",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Wetzel",
+    "city": "New Martinsville",
+    "address": "1236 North State Route 2",
+    "phone": "304-455-0920",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Wirt",
+    "city": "Elizabeth",
+    "address": "Court Street",
+    "phone": "304-275-6551",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Wood",
+    "city": "Parkersburg",
+    "address": "400 5th Street",
+    "phone": "304-420-2560",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  },
+  {
+    "county": "Wyoming",
+    "city": "Pineville",
+    "address": "1767 Bearhole Road",
+    "phone": "304-732-6900",
+    "website": "https://wvpath.wv.gov",
+    "source": "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
+  }
+]

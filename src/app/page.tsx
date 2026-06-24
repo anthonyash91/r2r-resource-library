@@ -16,6 +16,7 @@ import { AnnouncementsBanner } from "@/components/home/announcements-banner";
 import { FacilityEnterErrorBanner } from "@/components/facility/facility-enter-error-banner";
 import { RecommendedResourcesSection } from "@/components/resources/recommended-resources-section";
 import { HeroSurfaceOrbs } from "@/components/layout/hero-surface-orbs";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { cn, pageSectionPadding, checkIconClass, pageSectionHeadingClass, pageSectionSubtitleClass, pageSectionSubtitleOnHeroClass, pageSectionSubheadingClass, pageSectionBandClassForIndex, pageSectionBandForIndex } from "@/lib/utils";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import { getRecommendedResources } from "@/lib/user-preferences/recommendations";
@@ -128,22 +129,26 @@ export default async function HomePage({
         aria-labelledby="categories-heading"
       >
         <div className="mx-auto max-w-7xl">
-          <header className="mb-10 text-center">
-            <h2 id="categories-heading" className={pageSectionHeadingClass}>
-              {t("home.browseByCategoryTitle")}
-            </h2>
-            <p className={cn("mt-1", pageSectionSubtitleClass)}>
-              {t("home.browseByCategorySubtitle")}
-            </p>
-          </header>
+          <ScrollReveal variant="fade-up">
+            <header className="mb-10 text-center">
+              <h2 id="categories-heading" className={pageSectionHeadingClass}>
+                {t("home.browseByCategoryTitle")}
+              </h2>
+              <p className={cn("mt-1", pageSectionSubtitleClass)}>
+                {t("home.browseByCategorySubtitle")}
+              </p>
+            </header>
+          </ScrollReveal>
 
-          <CategoryPills
-            categories={categories}
-            compact
-            wrap
-            size="lg"
-            highlightAllWhenUnset={false}
-          />
+          <ScrollReveal variant="zoom-in" delay={120}>
+            <CategoryPills
+              categories={categories}
+              compact
+              wrap
+              size="lg"
+              highlightAllWhenUnset={false}
+            />
+          </ScrollReveal>
         </div>
       </section>
 
@@ -169,41 +174,47 @@ export default async function HomePage({
         aria-labelledby="how-it-works-title"
       >
         <div className="mx-auto max-w-6xl">
-          <header className="mb-14 text-center">
-            <h2 id="how-it-works-title" className={cn("mb-3 text-foreground", pageSectionHeadingClass)}>
-              {t("home.howItWorksTitle")}
-            </h2>
-            <p className={pageSectionSubtitleClass}>{t("home.howItWorksSubtitle")}</p>
-          </header>
+          <ScrollReveal variant="blur-up">
+            <header className="mb-14 text-center">
+              <h2 id="how-it-works-title" className={cn("mb-3 text-foreground", pageSectionHeadingClass)}>
+                {t("home.howItWorksTitle")}
+              </h2>
+              <p className={pageSectionSubtitleClass}>{t("home.howItWorksSubtitle")}</p>
+            </header>
+          </ScrollReveal>
 
           <div className="grid gap-12 md:grid-cols-3 md:gap-8 lg:gap-12">
-            {howItWorksSteps.map(({ step, title, description, icon: Icon }) => (
-              <div key={step} className="text-center">
-                <div className="relative mx-auto mb-6 inline-flex">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary shadow-sm sm:h-[4.5rem] sm:w-[4.5rem]">
-                    <Icon className="h-7 w-7 text-primary-foreground sm:h-8 sm:w-8" aria-hidden="true" />
+            {howItWorksSteps.map(({ step, title, description, icon: Icon }, index) => (
+              <ScrollReveal key={step} variant="fade-up" delay={index * 120}>
+                <div className="text-center">
+                  <div className="relative mx-auto mb-6 inline-flex">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary shadow-sm sm:h-[4.5rem] sm:w-[4.5rem]">
+                      <Icon className="h-7 w-7 text-primary-foreground sm:h-8 sm:w-8" aria-hidden="true" />
+                    </div>
+                    <span className="how-it-works-step-number absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full text-sm font-bold shadow-sm ring-2 ring-muted">
+                      {step}
+                    </span>
                   </div>
-                  <span className="how-it-works-step-number absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full text-sm font-bold shadow-sm ring-2 ring-muted">
-                    {step}
-                  </span>
+                  <h3 className={cn("mb-3", pageSectionSubheadingClass)}>{title}</h3>
+                  <p className="mx-auto max-w-xs text-base leading-relaxed text-muted-foreground">
+                    {description}
+                  </p>
                 </div>
-                <h3 className={cn("mb-3", pageSectionSubheadingClass)}>{title}</h3>
-                <p className="mx-auto max-w-xs text-base leading-relaxed text-muted-foreground">
-                  {description}
-                </p>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
 
-          <div className="mt-14 text-center">
-            <Link
-              href={buildResourcesPageHref()}
-              className="inline-flex min-h-[52px] cursor-pointer items-center gap-2 rounded-xl bg-primary px-8 py-3 text-lg font-semibold text-primary-foreground transition-colors hover:bg-primary-hover focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2"
-            >
-              {t("home.startSearching")}
-              <ArrowRight className="h-5 w-5" aria-hidden="true" />
-            </Link>
-          </div>
+          <ScrollReveal variant="fade-up" delay={400}>
+            <div className="mt-14 text-center">
+              <Link
+                href={buildResourcesPageHref()}
+                className="inline-flex min-h-[52px] cursor-pointer items-center gap-2 rounded-xl bg-primary px-8 py-3 text-lg font-semibold text-primary-foreground transition-colors hover:bg-primary-hover focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2"
+              >
+                {t("home.startSearching")}
+                <ArrowRight className="h-5 w-5" aria-hidden="true" />
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -218,55 +229,60 @@ export default async function HomePage({
       >
         <HeroSurfaceOrbs />
         <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <h2
-              id="built-for-heading"
-              className={cn("mb-4 text-primary-foreground", pageSectionHeadingClass)}
-            >
-              {t("home.builtForTitle")}
-            </h2>
-            <p className={cn("mb-8", pageSectionSubtitleOnHeroClass)}>
-              {t("home.builtForDesc")}
-            </p>
-            <ul className="mb-10 space-y-4">
-              {builtForFeatures.map((item) => (
-                <li key={item} className="flex items-center gap-2">
-                  <CircleCheck
-                    className={cn("h-5 w-5 shrink-0", checkIconClass)}
-                    aria-hidden="true"
-                  />
-                  <span className="text-base text-primary-foreground/90">{item}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/signup"
-                className="inline-flex min-h-[52px] cursor-pointer items-center gap-2 rounded-full bg-card px-8 py-3 text-lg font-semibold text-primary transition-colors hover:bg-card/90 focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2"
+          <ScrollReveal variant="slide-right">
+            <div>
+              <h2
+                id="built-for-heading"
+                className={cn("mb-4 text-primary-foreground", pageSectionHeadingClass)}
               >
-                {t("home.createFreeAccount")}
-                <ArrowRight className="h-5 w-5" aria-hidden="true" />
-              </Link>
-              <Link
-                href={buildResourcesPageHref()}
-                className="inline-flex min-h-[52px] cursor-pointer items-center gap-2 rounded-full border-2 border-primary-foreground/40 bg-transparent px-8 py-3 text-lg font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/10 focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2"
-              >
-                {t("home.browseResources")}
-              </Link>
+                {t("home.builtForTitle")}
+              </h2>
+              <p className={cn("mb-8", pageSectionSubtitleOnHeroClass)}>
+                {t("home.builtForDesc")}
+              </p>
+              <ul className="mb-10 space-y-4">
+                {builtForFeatures.map((item, index) => (
+                  <li key={item}>
+                    <ScrollReveal variant="fade-in" delay={index * 70} className="flex items-center gap-2">
+                      <CircleCheck
+                        className={cn("h-5 w-5 shrink-0", checkIconClass)}
+                        aria-hidden="true"
+                      />
+                      <span className="text-base text-primary-foreground/90">{item}</span>
+                    </ScrollReveal>
+                  </li>
+                ))}
+              </ul>
+              <ScrollReveal variant="fade-up" delay={280}>
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    href="/signup"
+                    className="inline-flex min-h-[52px] cursor-pointer items-center gap-2 rounded-full bg-card px-8 py-3 text-lg font-semibold text-primary transition-colors hover:bg-card/90 focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2"
+                  >
+                    {t("home.createFreeAccount")}
+                    <ArrowRight className="h-5 w-5" aria-hidden="true" />
+                  </Link>
+                  <Link
+                    href={buildResourcesPageHref()}
+                    className="inline-flex min-h-[52px] cursor-pointer items-center gap-2 rounded-full border-2 border-primary-foreground/40 bg-transparent px-8 py-3 text-lg font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/10 focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2"
+                  >
+                    {t("home.browseResources")}
+                  </Link>
+                </div>
+              </ScrollReveal>
             </div>
-          </div>
+          </ScrollReveal>
 
           <div className="grid grid-cols-2 gap-4 sm:gap-5">
-            {statCards.map(({ value, label }) => (
-              <div
-                key={label}
-                className="rounded-2xl border border-primary-foreground/15 bg-primary-foreground/10 px-4 py-8 text-center backdrop-blur-sm sm:px-6 sm:py-10"
-              >
-                <p className="text-3xl font-bold text-primary-foreground sm:text-4xl">{value}</p>
-                <p className="mt-2 text-sm font-medium text-primary-foreground/75 sm:text-base">
-                  {label}
-                </p>
-              </div>
+            {statCards.map(({ value, label }, index) => (
+              <ScrollReveal key={label} variant="zoom-in" delay={index * 90}>
+                <div className="rounded-2xl border border-primary-foreground/15 bg-primary-foreground/10 px-4 py-8 text-center backdrop-blur-sm sm:px-6 sm:py-10">
+                  <p className="text-3xl font-bold text-primary-foreground sm:text-4xl">{value}</p>
+                  <p className="mt-2 text-sm font-medium text-primary-foreground/75 sm:text-base">
+                    {label}
+                  </p>
+                </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>

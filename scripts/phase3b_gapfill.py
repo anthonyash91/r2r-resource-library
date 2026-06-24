@@ -1609,3 +1609,158 @@ def register_phase3b_michigan(add, entries=None):
         _source_type="nonprofit",
         _confidence="high",
     )
+
+
+def _fcrc_desc_en(county: str, city: str) -> str:
+    return (
+        f"{county} County IDHS Family Community Resource Center in {city} is the local benefits intake "
+        f"office for SNAP, Medicaid, TANF cash assistance, and child care subsidies for Illinois residents "
+        f"including justice-involved individuals reestablishing food and health coverage after release from "
+        f"{county} County Jail or IDOC custody. Staff assist with ABE (Application for Benefits Eligibility) "
+        f"online applications, document verification, and emergency medical or food coverage when release "
+        f"paperwork is incomplete. IDHS accepts SNAP and medical applications from approved IDOC facilities "
+        f"within ten days of release through the Pre-Release Program."
+    )
+
+
+def _fcrc_desc_es(county: str, city: str) -> str:
+    return (
+        f"El Centro de Recursos Comunitarios Familiares IDHS del condado {county} en {city} es la oficina "
+        f"local de admisión de beneficios para SNAP, Medicaid, asistencia en efectivo TANF y subsidios de "
+        f"cuidado infantil para residentes de Illinois, incluidas personas con antecedentes penales que "
+        f"restablecen cobertura alimentaria y de salud después de la liberación. El personal ayuda con "
+        f"solicitudes en línea ABE, verificación de documentos y cobertura médica o alimentaria de emergencia. "
+        f"IDHS acepta solicitudes SNAP y médicas desde instalaciones IDOC aprobadas dentro de diez días de la liberación."
+    )
+
+
+def _fcrc_il(county, city, address, phone, region, desc_en, desc_es):
+    return dict(
+        name=f"{county} County IDHS — Family Community Resource Center",
+        category="financial-assistance",
+        region=region,
+        description=desc_en,
+        description_es=desc_es,
+        address=address,
+        city=city,
+        phone=phone,
+        email="",
+        website="https://abe.illinois.gov",
+        eligibility=(
+            f"{county} County residents meeting income and household-size requirements for Medicaid, SNAP, "
+            f"TANF, and child care assistance; criminal record generally not a barrier."
+        ),
+        eligibility_es=(
+            f"Residentes del condado {county} que cumplan requisitos de ingresos para Medicaid, SNAP, TANF "
+            f"y cuidado infantil; los antecedentes penales generalmente no son barrera."
+        ),
+        notes=(
+            "Apply online at ABE.Illinois.gov or visit the county FCRC office; call 1-800-843-6154 for "
+            "IDHS Help is Here assistance; bring ID and release documents when establishing benefits."
+        ),
+        notes_es=(
+            "Solicite en ABE.Illinois.gov o visite la oficina FCRC del condado; llame al 1-800-843-6154; "
+            "traiga identificación y documentos de liberación."
+        ),
+        hours="Monday–Friday, 8:00 a.m.–5:00 p.m.",
+        tags=f"{county.lower()}|illinois|benefits|SNAP|Medicaid|ABE|reentry|FCRC",
+        services=(
+            "SNAP enrollment|Medicaid application|TANF cash assistance|Child care assistance|"
+            "ABE account support|Pre-Release Program coordination"
+        ),
+        county=county,
+        served_counties=county,
+        coverage="single",
+        _source="https://www.dhs.state.il.us/page.aspx?OfficeType=5&module=12",
+        _source_type="government",
+        _confidence="high",
+    )
+
+
+def register_phase3b_illinois(add, entries=None):
+    """Phase 3b: IDHS FCRC county benefits (registry) + Illinois workNet Tier A anchors."""
+
+    from county_benefits_registry import collect_financial_assistance_counties, register_county_benefits_illinois
+
+    existing_fa = collect_financial_assistance_counties(entries or [])
+    register_county_benefits_illinois(add, existing_fa)
+
+    from tier_a_anchors import register_illinois_tier_a_anchors
+
+    register_illinois_tier_a_anchors(add)
+
+
+def _dohs_desc_en(county: str, city: str) -> str:
+    return (
+        f"{county} County DoHS field office in {city} is the local benefits intake office for SNAP, "
+        f"Medicaid, WV WORKS cash assistance, LIEAP energy help, and child care subsidies for West Virginia "
+        f"residents including justice-involved individuals reestablishing food and health coverage after release "
+        f"from {county} County Jail or WVDCR custody. Staff assist with WV PATH online applications, document "
+        f"verification, and emergency medical or food coverage when release paperwork is incomplete."
+    )
+
+
+def _dohs_desc_es(county: str, city: str) -> str:
+    return (
+        f"La oficina de campo DoHS del condado {county} en {city} es la oficina local de admisión de beneficios "
+        f"para SNAP, Medicaid, asistencia en efectivo WV WORKS, ayuda energética LIEAP y subsidios de cuidado "
+        f"infantil para residentes de Virginia Occidental, incluidas personas con antecedentes penales que "
+        f"restablecen cobertura alimentaria y de salud después de la liberación. El personal ayuda con "
+        f"solicitudes en línea WV PATH, verificación de documentos y cobertura médica o alimentaria de emergencia."
+    )
+
+
+def _dohs_wv(county, city, address, phone, region, desc_en, desc_es):
+    return dict(
+        name=f"{county} County DoHS — Field Office",
+        category="financial-assistance",
+        region=region,
+        description=desc_en,
+        description_es=desc_es,
+        address=address,
+        city=city,
+        phone=phone,
+        email="",
+        website="https://wvpath.wv.gov",
+        eligibility=(
+            f"{county} County residents meeting income and household-size requirements for Medicaid, SNAP, "
+            f"WV WORKS, and child care assistance; criminal record generally not a barrier."
+        ),
+        eligibility_es=(
+            f"Residentes del condado {county} que cumplan requisitos de ingresos para Medicaid, SNAP, "
+            f"WV WORKS y cuidado infantil; los antecedentes penales generalmente no son barrera."
+        ),
+        notes=(
+            "Apply online at wvpath.wv.gov or visit the county DoHS field office; call 1-877-716-1212 for "
+            "DoHS Customer Service; bring ID and release documents when establishing benefits."
+        ),
+        notes_es=(
+            "Solicite en wvpath.wv.gov o visite la oficina DoHS del condado; llame al 1-877-716-1212; "
+            "traiga identificación y documentos de liberación."
+        ),
+        hours="Monday–Friday, 8:30 a.m.–5:00 p.m.",
+        tags=f"{county.lower()}|west-virginia|benefits|SNAP|Medicaid|WV-PATH|reentry|DoHS",
+        services=(
+            "SNAP enrollment|Medicaid application|WV WORKS cash assistance|LIEAP energy assistance|"
+            "Child care assistance|WV PATH account support"
+        ),
+        county=county,
+        served_counties=county,
+        coverage="single",
+        _source="https://dhhr.wv.gov/Pages/Field-Offices.aspx",
+        _source_type="government",
+        _confidence="high",
+    )
+
+
+def register_phase3b_west_virginia(add, entries=None):
+    """Phase 3b: DoHS county benefits (registry) + WorkForce WV Tier A anchors."""
+
+    from county_benefits_registry import collect_financial_assistance_counties, register_county_benefits_west_virginia
+
+    existing_fa = collect_financial_assistance_counties(entries or [])
+    register_county_benefits_west_virginia(add, existing_fa)
+
+    from tier_a_anchors import register_west_virginia_tier_a_anchors
+
+    register_west_virginia_tier_a_anchors(add)

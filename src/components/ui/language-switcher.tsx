@@ -2,6 +2,10 @@
 
 import { Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
+import {
+  HEADER_INTERACTIVE_TRANSITION,
+  headerControlSizeClass,
+} from "@/components/layout/header-control-styles";
 import { useTranslations } from "@/i18n/locale-context";
 import type { Locale } from "@/i18n/types";
 
@@ -23,9 +27,10 @@ export function LanguageSwitcher({
       type="button"
       onClick={() => setLocale(nextLocale)}
       className={cn(
-        "inline-flex cursor-pointer items-center gap-2 rounded-xl border border-border bg-card font-semibold text-foreground transition-[height,min-height,padding,font-size] duration-200 ease-out",
+        "inline-flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-border bg-card font-semibold text-foreground",
+        HEADER_INTERACTIVE_TRANSITION,
+        headerControlSizeClass(compact),
         "hover:bg-muted focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2",
-        compact ? "h-9 min-h-9 px-3 text-sm" : "h-11 min-h-11 px-3 text-base",
         className
       )}
       aria-label={`${t("common.language")}: ${localeCode}. ${t("common.switchTo")} ${nextLocaleLabel}`}

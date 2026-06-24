@@ -78,6 +78,34 @@ STATE_PRESETS: dict[str, dict[str, str]] = {
         "residents_es": "residentes de Michigan",
         "tag": "michigan",
     },
+    "Illinois": {
+        "name": "Illinois",
+        "demonym": "Illinoisans",
+        "demonym_es": "illinoenses",
+        "throughout": "throughout Illinois",
+        "throughout_es": "en todo Illinois",
+        "counties_n": "Illinois counties",
+        "counties_n_es": "condados de Illinois",
+        "adults": "Illinois adults",
+        "adults_es": "adultos en Illinois",
+        "residents": "Illinois residents",
+        "residents_es": "residentes de Illinois",
+        "tag": "illinois",
+    },
+    "West Virginia": {
+        "name": "West Virginia",
+        "demonym": "West Virginia residents",
+        "demonym_es": "residentes de Virginia Occidental",
+        "throughout": "throughout West Virginia",
+        "throughout_es": "en toda Virginia Occidental",
+        "counties_n": "West Virginia counties",
+        "counties_n_es": "condados de Virginia Occidental",
+        "adults": "West Virginia adults",
+        "adults_es": "adultos en Virginia Occidental",
+        "residents": "West Virginia residents",
+        "residents_es": "residentes de Virginia Occidental",
+        "tag": "west-virginia",
+    },
 }
 
 _STATE = STATE_PRESETS["Ohio"]
@@ -92,6 +120,10 @@ def infer_state_from_csv_path(path: str) -> str:
     stem = path.lower()
     if "michigan" in stem:
         return "Michigan"
+    if "illinois" in stem:
+        return "Illinois"
+    if "west-virginia" in stem or "west_virginia" in stem:
+        return "West Virginia"
     if "tennessee" in stem:
         return "Tennessee"
     if "indiana" in stem:

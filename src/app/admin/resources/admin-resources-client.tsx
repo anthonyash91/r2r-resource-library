@@ -17,9 +17,10 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Dropdown } from "@/components/ui/dropdown";
 import { CategoryBadge } from "@/components/resources/category-badge";
 import { Card } from "@/components/ui/card";
-import type { Resource } from "@/types";
+import type { Category, Resource } from "@/types";
 import { formatDate, cn } from "@/lib/utils";
 import { MAX_FEATURED_RESOURCES } from "@/lib/featured-resources-storage";
 import {
@@ -29,36 +30,132 @@ import {
 } from "@/lib/admin-resources";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslations } from "@/i18n/locale-context";
+import { useCategoryLabel } from "@/i18n/use-category-label";
 import { useConfirmDialog } from "@/components/ui/confirm-dialog";
+import { X } from "lucide-react";
 
 interface AdminResourcesClientProps {
   initialResources: Resource[];
+  categories: Category[];
 }
 
-export function AdminResourcesClient({ initialResources }: AdminResourcesClientProps) {
+export function AdminResourcesClient({
+  initialResources,
+  categories,
+}: AdminResourcesClientProps) {
   const router = useRouter();
   const { t, locale } = useTranslations();
+  const categoryLabel = useCategoryLabel();
   const { confirm, alert } = useConfirmDialog();
   const [resources, setResources] = useState(initialResources);
   const [busyId, setBusyId] = useState<string | null>(null);
   const [showArchived, setShowArchived] = useState(false);
+  const [selectedState, setSelectedState] = useState("");
+  const [selectedCategoryId, setSelectedCategoryId] = useState("");
 
   useEffect(() => {
     setResources(initialResources);
   }, [initialResources]);
+
+  useEffect(() => {
+    setSelectedState("");
+    setSelectedCategoryId("");
+  }, [showArchived]);
 
   const archivedCount = useMemo(
     () => resources.filter((resource) => resource.status === "archived").length,
     [resources]
   );
 
-  const visibleResources = useMemo(
+  const statusFilteredResources = useMemo(
     () =>
       resources.filter((resource) =>
         showArchived ? resource.status === "archived" : resource.status !== "archived"
       ),
     [resources, showArchived]
   );
+
+  const stateOptions = useMemo(() => {
+    const states = new Set(
+      statusFilteredResources.map((resource) => resource.state).filter(Boolean) as string[]
+    );
+    return [...states].sort((a, b) => a.localeCompare(b));
+  }, [statusFilteredResources]);
+
+  const categoryFilterOptions = useMemo(() => {
+    const categoryIdsInUse = new Set(
+      statusFilteredResources.map((resource) => resource.category_id).filter(Boolean)
+    );
+    return categories
+      .filter((category) => categoryIdsInUse.has(category.id))
+      .sort((a, b) => a.sort_order - b.sort_order || a.name.localeCompare(b.name));
+  }, [categories, statusFilteredResources]);
+
+  const visibleResources = useMemo(
+    () =>
+      statusFilteredResources.filter((resource) => {
+        if (selectedState && resource.state !== selectedState) return false;
+        if (selectedCategoryId && resource.category_id !== selectedCategoryId) return false;
+        return true;
+      }),
+    [statusFilteredResources, selectedState, selectedCategoryId]
+  );
+
+  const hasFilters = Boolean(selectedState || selectedCategoryId);
+
+  const filterDenominator = useMemo(() => {
+    if (selectedState) {
+      return statusFilteredResources.filter((resource) => resource.state === selectedState).length;
+    }
+    if (selectedCategoryId) {
+      return statusFilteredResources.filter(
+        (resource) => resource.category_id === selectedCategoryId
+      ).length;
+    }
+    return statusFilteredResources.length;
+  }, [statusFilteredResources, selectedState, selectedCategoryId]);
+
+  const filteredCountLabel = useMemo(() => {
+    if (!hasFilters) return "";
+
+    const count = visibleResources.length;
+
+    if (selectedState) {
+      return t("admin.filteredResourcesCountByState", {
+        count,
+        total: filterDenominator,
+        state: selectedState,
+      });
+    }
+
+    const category = categories.find((item) => item.id === selectedCategoryId);
+    if (selectedCategoryId && category) {
+      return t("admin.filteredResourcesCountByCategory", {
+        count,
+        total: filterDenominator,
+        category: categoryLabel(category),
+      });
+    }
+
+    return t("admin.filteredResourcesCount", {
+      count,
+      total: filterDenominator,
+    });
+  }, [
+    hasFilters,
+    visibleResources.length,
+    selectedState,
+    selectedCategoryId,
+    filterDenominator,
+    categories,
+    categoryLabel,
+    t,
+  ]);
+
+  const clearFilters = () => {
+    setSelectedState("");
+    setSelectedCategoryId("");
+  };
 
   const handleExport = () => {
     const blob = new Blob([JSON.stringify(resources, null, 2)], { type: "application/json" });
@@ -243,9 +340,63 @@ export function AdminResourcesClient({ initialResources }: AdminResourcesClientP
         </Button>
       </div>
 
+      <div
+        className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:max-w-3xl"
+        role="group"
+        aria-label={t("resources.filterAria")}
+      >
+        <Dropdown
+          label={t("admin.stateLabel")}
+          placeholder={t("resources.allStates")}
+          value={selectedState}
+          onChange={setSelectedState}
+          options={[
+            { value: "", label: t("resources.allStates") },
+            ...stateOptions.map((state) => ({ value: state, label: state })),
+          ]}
+          searchPlaceholder={t("resources.searchStates")}
+          disabled={stateOptions.length === 0}
+        />
+        <Dropdown
+          label={t("admin.categoryLabel")}
+          placeholder={t("resources.allCategories")}
+          value={selectedCategoryId}
+          onChange={setSelectedCategoryId}
+          options={[
+            { value: "", label: t("resources.allCategories") },
+            ...categoryFilterOptions.map((category) => ({
+              value: category.id,
+              label: categoryLabel(category),
+            })),
+          ]}
+          searchPlaceholder={t("resources.searchCategories")}
+          disabled={categoryFilterOptions.length === 0}
+        />
+      </div>
+
+      {hasFilters ? (
+        <div className="mb-6 flex flex-wrap items-center gap-3">
+          <p className="text-sm text-muted-foreground" aria-live="polite">
+            {filteredCountLabel}
+          </p>
+          <Button variant="ghost" size="badge" onClick={clearFilters}>
+            <X className="h-3.5 w-3.5" aria-hidden="true" />
+            {t("resources.clearFilters")}
+          </Button>
+        </div>
+      ) : null}
+
       {visibleResources.length === 0 ? (
         <p className="text-base text-muted-foreground">
-          {showArchived ? t("admin.noArchivedResources") : t("admin.noActiveResources")}
+          {statusFilteredResources.length === 0
+            ? showArchived
+              ? t("admin.noArchivedResources")
+              : t("admin.noActiveResources")
+            : hasFilters
+              ? t("admin.noMatchingResources")
+              : showArchived
+                ? t("admin.noArchivedResources")
+                : t("admin.noActiveResources")}
         </p>
       ) : (
         <div className="space-y-4">
@@ -273,7 +424,7 @@ export function AdminResourcesClient({ initialResources }: AdminResourcesClientP
               <div className="flex flex-wrap items-center gap-2">
                 {!showArchived && resource.status === "active" ? (
                   <Button
-                    variant={resource.is_featured ? "soft-warning" : "soft-primary"}
+                    variant={resource.is_featured ? "warning" : "soft-warning"}
                     size="badge"
                     onClick={() => toggleFeatured(resource)}
                     loading={busyId === resource.id}

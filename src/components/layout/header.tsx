@@ -16,6 +16,15 @@ import {
   Settings,
 } from "lucide-react";
 import { HeaderBrandingLockup } from "@/components/layout/header-branding-lockup";
+import {
+  HEADER_SHELL_TRANSITION,
+  headerButtonSizeClass,
+  headerHomeLinkClass,
+  headerIconActionClass,
+  headerIconButtonClass,
+  headerMobileLinkClass,
+  headerNavLinkClass,
+} from "@/components/layout/header-control-styles";
 import { parseNavTaglinePhrases } from "@/lib/nav-tagline-phrases";
 import { cn } from "@/lib/utils";
 import { useAuth } from "@/lib/auth-context";
@@ -56,12 +65,6 @@ const COMPACT_ENTER_Y = 72;
 const COMPACT_EXIT_Y = 8;
 const FULL_HEADER_HEIGHT = "5rem";
 const COMPACT_HEADER_HEIGHT = "3.5rem";
-
-function headerActionClass(isCompact: boolean) {
-  return isCompact
-    ? "!h-9 !min-h-9 !px-3 !py-1.5 text-sm"
-    : "!h-11 !min-h-11 !px-4 !py-2 text-base";
-}
 
 interface HeaderProps {
   branding: SiteBranding;
@@ -104,7 +107,7 @@ export function Header({ branding }: HeaderProps) {
       isCompactRef.current = compact;
       setIsCompact(compact);
       document.documentElement.style.setProperty(
-        "--site-header-height",
+        "--site-header-offset",
         compact ? COMPACT_HEADER_HEIGHT : FULL_HEADER_HEIGHT
       );
     };
@@ -132,7 +135,7 @@ export function Header({ branding }: HeaderProps) {
       if (scrollRafRef.current !== null) {
         window.cancelAnimationFrame(scrollRafRef.current);
       }
-      document.documentElement.style.removeProperty("--site-header-height");
+      document.documentElement.style.removeProperty("--site-header-offset");
     };
   }, []);
 
@@ -163,16 +166,14 @@ export function Header({ branding }: HeaderProps) {
   const isActive = (href: string) =>
     pathname === href || (href !== "/" && pathname.startsWith(href));
 
-  const mobileLinkBase =
-    "flex min-h-[48px] cursor-pointer items-center gap-3 rounded-xl px-4 py-3 text-base font-medium transition-colors focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring";
-
   const mobileLinkIcon = "h-5 w-5 shrink-0 text-primary";
 
   return (
     <header
       data-compact={isCompact || undefined}
       className={cn(
-        "sticky top-0 z-[60] shrink-0 border-b border-border bg-card/95 backdrop-blur transition-[min-height,box-shadow] duration-200 ease-out supports-[backdrop-filter]:bg-card/90",
+        "sticky top-0 z-[60] shrink-0 border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/90",
+        HEADER_SHELL_TRANSITION,
         isCompact
           ? "min-h-[var(--site-header-height-compact)] shadow-sm"
           : "min-h-[var(--site-header-height)]"
@@ -184,7 +185,8 @@ export function Header({ branding }: HeaderProps) {
 
       <div
         className={cn(
-          "mx-auto flex w-full items-center justify-between gap-3 px-4 transition-[min-height] duration-200 ease-out sm:gap-4 sm:px-6 lg:px-8",
+          "mx-auto flex w-full items-center justify-between gap-3 px-4 sm:gap-4 sm:px-6 lg:px-8",
+          HEADER_SHELL_TRANSITION,
           isCompact
             ? "min-h-[var(--site-header-height-compact)]"
             : "min-h-[var(--site-header-height)]",
@@ -193,7 +195,7 @@ export function Header({ branding }: HeaderProps) {
       >
         <Link
           href="/"
-          className="flex min-w-0 shrink-0 items-center gap-3 rounded-lg focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring"
+          className={headerHomeLinkClass()}
           aria-label={t("nav.homeAriaLabel", { brand: branding.brandName })}
         >
           <HeaderBrandingLockup
@@ -212,14 +214,7 @@ export function Header({ branding }: HeaderProps) {
             <Link
               key={href}
               href={href}
-              className={cn(
-                "shrink-0 whitespace-nowrap rounded-xl font-medium transition-[padding,font-size] duration-200 ease-out cursor-pointer",
-                isCompact ? "px-3 py-1.5 text-sm" : "px-4 py-2.5 text-base",
-                "focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring",
-                isActive(href)
-                  ? "bg-secondary text-primary"
-                  : "text-foreground hover:bg-muted"
-              )}
+              className={headerNavLinkClass(isCompact, isActive(href))}
               aria-current={isActive(href) ? "page" : undefined}
             >
               {label}
@@ -238,14 +233,7 @@ export function Header({ branding }: HeaderProps) {
                     {isAdmin && (
                       <Link
                         href="/admin"
-                        className={cn(
-                          "inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-xl font-medium transition-[padding,height,min-height,font-size] duration-200 ease-out cursor-pointer",
-                          headerActionClass(isCompact),
-                          "focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring",
-                          isActive("/admin")
-                            ? "bg-secondary text-primary"
-                            : "text-foreground hover:bg-muted"
-                        )}
+                        className={headerIconActionClass(isCompact, isActive("/admin"))}
                         aria-current={isActive("/admin") ? "page" : undefined}
                       >
                         <Settings className="h-5 w-5 shrink-0" aria-hidden="true" />
@@ -255,10 +243,7 @@ export function Header({ branding }: HeaderProps) {
                     <Button
                       variant="outline"
                       size="sm"
-                      className={cn(
-                        "shrink-0 whitespace-nowrap transition-[height,min-height,padding,font-size] duration-200 ease-out",
-                        headerActionClass(isCompact)
-                      )}
+                      className={cn("shrink-0 whitespace-nowrap", headerButtonSizeClass(isCompact))}
                       onClick={handleSignOut}
                       loading={signingOut}
                     >
@@ -272,7 +257,7 @@ export function Header({ branding }: HeaderProps) {
                       <Button
                         variant="ghost"
                         size="sm"
-                        className={cn("whitespace-nowrap", headerActionClass(isCompact))}
+                        className={cn("whitespace-nowrap", headerButtonSizeClass(isCompact))}
                       >
                         <LogIn className="h-5 w-5" aria-hidden="true" />
                         {t("nav.signIn")}
@@ -280,7 +265,7 @@ export function Header({ branding }: HeaderProps) {
                     </Link>
                     {showCreateAccount ? (
                     <Link href="/signup" className="shrink-0">
-                      <Button size="sm" className={cn("whitespace-nowrap", headerActionClass(isCompact))}>
+                      <Button size="sm" className={cn("whitespace-nowrap", headerButtonSizeClass(isCompact))}>
                         {t("nav.createAccount")}
                       </Button>
                     </Link>
@@ -293,11 +278,7 @@ export function Header({ branding }: HeaderProps) {
 
           <button
             type="button"
-            className={cn(
-              "flex cursor-pointer items-center justify-center rounded-xl border border-border transition-[width,height] duration-200 ease-out",
-              isCompact ? "h-9 w-9" : "h-11 w-11",
-              mobileNavClasses
-            )}
+            className={cn(headerIconButtonClass(isCompact), mobileNavClasses)}
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-expanded={mobileOpen}
             aria-controls="mobile-menu"
@@ -319,12 +300,7 @@ export function Header({ branding }: HeaderProps) {
               <li key={href}>
                 <Link
                   href={href}
-                  className={cn(
-                    mobileLinkBase,
-                    isActive(href)
-                      ? "bg-secondary text-primary"
-                      : "text-foreground hover:bg-muted"
-                  )}
+                  className={headerMobileLinkClass(isActive(href))}
                   onClick={() => setMobileOpen(false)}
                   aria-current={isActive(href) ? "page" : undefined}
                 >
@@ -341,7 +317,7 @@ export function Header({ branding }: HeaderProps) {
                       <li>
                         <Link
                           href="/admin"
-                          className={cn(mobileLinkBase, "text-foreground hover:bg-muted")}
+                          className={headerMobileLinkClass(false)}
                           onClick={() => setMobileOpen(false)}
                         >
                           <Settings className={mobileLinkIcon} aria-hidden="true" />
@@ -353,8 +329,8 @@ export function Header({ branding }: HeaderProps) {
                       <button
                         type="button"
                         className={cn(
-                          mobileLinkBase,
-                          "w-full text-foreground hover:bg-muted",
+                          headerMobileLinkClass(false),
+                          "w-full",
                           signingOut && "cursor-not-allowed opacity-50"
                         )}
                         onClick={() => {
@@ -379,7 +355,7 @@ export function Header({ branding }: HeaderProps) {
                     <li>
                       <Link
                         href={signInHref}
-                        className={cn(mobileLinkBase, "text-foreground hover:bg-muted")}
+                        className={headerMobileLinkClass(false)}
                         onClick={() => setMobileOpen(false)}
                       >
                         <LogIn className={mobileLinkIcon} aria-hidden="true" />
@@ -391,7 +367,7 @@ export function Header({ branding }: HeaderProps) {
                       <Link
                         href="/signup"
                         className={cn(
-                          mobileLinkBase,
+                          headerMobileLinkClass(false),
                           "bg-primary font-semibold text-primary-foreground hover:bg-primary-hover"
                         )}
                         onClick={() => setMobileOpen(false)}

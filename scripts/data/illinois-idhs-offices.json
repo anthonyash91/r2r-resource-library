@@ -1,0 +1,920 @@
+[
+  {
+    "county": "Adams",
+    "city": "Quincy",
+    "address": "300 Maine St,  2nd floor",
+    "phone": "(217) 223-0550",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Adams&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Adams County"
+  },
+  {
+    "county": "Alexander",
+    "city": "Mounds",
+    "address": "422 S Blanche St",
+    "phone": "(618) 745-9411",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Alexander&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Pulaski County"
+  },
+  {
+    "county": "Bond",
+    "city": "East Alton",
+    "address": "608 W St Louis Ave",
+    "phone": "(618) 258-1660",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Bond&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Madison County/East Alton"
+  },
+  {
+    "county": "Boone",
+    "city": "Rockford",
+    "address": "171 Executive Pkwy,  Suite 101",
+    "phone": "(815) 987-7620",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Boone&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Winnebago County"
+  },
+  {
+    "county": "Brown",
+    "city": "Beardstown",
+    "address": "25 Plaza Drive",
+    "phone": "(217) 323-4185",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Brown&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Cass County"
+  },
+  {
+    "county": "Bureau",
+    "city": "Princeton",
+    "address": "225 Backbone Rd E #2",
+    "phone": "(815) 875-1134",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Bureau&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Bureau County"
+  },
+  {
+    "county": "Calhoun",
+    "city": "Jerseyville",
+    "address": "110 North Jefferson Street",
+    "phone": "(618) 498-2105",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Calhoun&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Jersey County"
+  },
+  {
+    "county": "Carroll",
+    "city": "Sterling",
+    "address": "2605 Woodlawn Road",
+    "phone": "(815) 632-4045",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Carroll&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Whiteside County"
+  },
+  {
+    "county": "Cass",
+    "city": "Beardstown",
+    "address": "25 Plaza Drive",
+    "phone": "(217) 323-4185",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Cass&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Cass County"
+  },
+  {
+    "county": "Champaign",
+    "city": "Champaign",
+    "address": "206 W Anthony Drive",
+    "phone": "(217) 278-5605",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Champaign&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Champaign County"
+  },
+  {
+    "county": "Christian",
+    "city": "Taylorville",
+    "address": "1100 N Cheney St",
+    "phone": "(217) 824-3389",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Christian&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Christian County"
+  },
+  {
+    "county": "Clark",
+    "city": "Charleston",
+    "address": "1550 Douglas St",
+    "phone": "(217) 345-2188",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Clark&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Mid-Illinois"
+  },
+  {
+    "county": "Clay",
+    "city": "Olney",
+    "address": "1406 Martin St",
+    "phone": "(618) 392-3151",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Clay&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Richland County"
+  },
+  {
+    "county": "Clinton",
+    "city": "Centralia",
+    "address": "800 S Locust St",
+    "phone": "(618) 532-1966",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Clinton&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Marion County"
+  },
+  {
+    "county": "Coles",
+    "city": "Charleston",
+    "address": "1550 Douglas St",
+    "phone": "(217) 345-2188",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Coles&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Mid-Illinois"
+  },
+  {
+    "county": "Cook",
+    "city": "Chicago",
+    "address": "831 W 119th St",
+    "phone": "(773) 660-4700",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Cook&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Cook County - Calumet Park"
+  },
+  {
+    "county": "Crawford",
+    "city": "Robinson",
+    "address": "1110 North Allen Street",
+    "phone": "(618) 544-3151",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Crawford&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Crawford County"
+  },
+  {
+    "county": "Cumberland",
+    "city": "Charleston",
+    "address": "1550 Douglas St",
+    "phone": "(217) 345-2188",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Cumberland&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Mid-Illinois"
+  },
+  {
+    "county": "DeKalb",
+    "city": "Sycamore",
+    "address": "1629 Afton Road",
+    "phone": "(815) 895-8667",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=DeKalb&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in DeKalb County"
+  },
+  {
+    "county": "DeWitt",
+    "city": "Lincoln",
+    "address": "1550 4th Street",
+    "phone": "(217) 735-2306",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=DeWitt&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Logan County"
+  },
+  {
+    "county": "Douglas",
+    "city": "Charleston",
+    "address": "1550 Douglas St",
+    "phone": "(217) 345-2188",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Douglas&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Mid-Illinois"
+  },
+  {
+    "county": "DuPage",
+    "city": "Naperville",
+    "address": "1717 Park St,  Suite 105",
+    "phone": "(630) 328-1000",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=DuPage&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in DuPage County"
+  },
+  {
+    "county": "Edgar",
+    "city": "Charleston",
+    "address": "1550 Douglas St",
+    "phone": "(217) 345-2188",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Edgar&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Mid-Illinois"
+  },
+  {
+    "county": "Edwards",
+    "city": "Mount Carmel",
+    "address": "2517 West 9th Street,  Suite A",
+    "phone": "(618) 262-5179",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Edwards&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Wabash County"
+  },
+  {
+    "county": "Effingham",
+    "city": "Charleston",
+    "address": "1550 Douglas St",
+    "phone": "(217) 345-2188",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Effingham&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Mid-Illinois"
+  },
+  {
+    "county": "Fayette",
+    "city": "Centralia",
+    "address": "800 S Locust St",
+    "phone": "(618) 532-1966",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Fayette&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Marion County"
+  },
+  {
+    "county": "Ford",
+    "city": "Champaign",
+    "address": "206 W Anthony Drive",
+    "phone": "(217) 278-5605",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Ford&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Champaign County"
+  },
+  {
+    "county": "Franklin",
+    "city": "Benton",
+    "address": "1602 North Main Street",
+    "phone": "(618) 439-4351",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Franklin&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Franklin County"
+  },
+  {
+    "county": "Fulton",
+    "city": "Havana",
+    "address": "323 West Main Street",
+    "phone": "(309) 547-3755",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Fulton&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Fulton County"
+  },
+  {
+    "county": "Gallatin",
+    "city": "Harrisburg",
+    "address": "320 Raymond Street",
+    "phone": "(618) 253-7161",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Gallatin&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Saline County"
+  },
+  {
+    "county": "Greene",
+    "city": "Jerseyville",
+    "address": "110 North Jefferson Street",
+    "phone": "(618) 498-2105",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Greene&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Jersey County"
+  },
+  {
+    "county": "Grundy",
+    "city": "Ottawa",
+    "address": "1560 First Avenue",
+    "phone": "(815) 433-1572",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Grundy&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in LaSalle County"
+  },
+  {
+    "county": "Hamilton",
+    "city": "Benton",
+    "address": "1602 North Main Street",
+    "phone": "(618) 439-4351",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Hamilton&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Franklin County"
+  },
+  {
+    "county": "Hancock",
+    "city": "Quincy",
+    "address": "300 Maine St,  2nd floor",
+    "phone": "(217) 223-0550",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Hancock&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Adams County"
+  },
+  {
+    "county": "Hardin",
+    "city": "Metropolis",
+    "address": "2301 Metropolis Street",
+    "phone": "(618) 524-2631",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Hardin&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Massac County"
+  },
+  {
+    "county": "Henderson",
+    "city": "Monmouth",
+    "address": "1245 South Main Street",
+    "phone": "(309) 734-2159",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Henderson&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Warren County- Temporarily Remote"
+  },
+  {
+    "county": "Henry",
+    "city": "Kewanee",
+    "address": "150 West South Street",
+    "phone": "(309) 852-5627",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Henry&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Henry County"
+  },
+  {
+    "county": "Iroquois",
+    "city": "Kankakee",
+    "address": "285 N Schuyler Ave",
+    "phone": "(815) 939-4545",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Iroquois&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Kankakee County"
+  },
+  {
+    "county": "Jackson",
+    "city": "Murphysboro",
+    "address": "342 North St",
+    "phone": "(618) 687-1705",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Jackson&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Jackson County"
+  },
+  {
+    "county": "Jasper",
+    "city": "Robinson",
+    "address": "1110 North Allen Street",
+    "phone": "(618) 544-3151",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Jasper&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Crawford County"
+  },
+  {
+    "county": "Jefferson",
+    "city": "Mount Vernon",
+    "address": "333 Potomac Boulevard,  Suite F",
+    "phone": "(618) 242-1040",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Jefferson&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Jefferson County"
+  },
+  {
+    "county": "Jersey",
+    "city": "Jerseyville",
+    "address": "110 North Jefferson Street",
+    "phone": "(618) 498-2105",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Jersey&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Jersey County"
+  },
+  {
+    "county": "Jo Daviess",
+    "city": "Freeport",
+    "address": "1840 S West Ave",
+    "phone": "(815) 232-6121",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Jo%20Daviess&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Stephenson County"
+  },
+  {
+    "county": "Johnson",
+    "city": "Anna",
+    "address": "1000 N Main St Willow Hall Ste B",
+    "phone": "(618) 833-2118",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Johnson&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Union County"
+  },
+  {
+    "county": "Kane",
+    "city": "Aurora",
+    "address": "361 W Old Indian Trail",
+    "phone": "(630) 844-7400",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Kane&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Kane County/Aurora"
+  },
+  {
+    "county": "Kankakee",
+    "city": "Kankakee",
+    "address": "285 N Schuyler Ave",
+    "phone": "(815) 939-4545",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Kankakee&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Kankakee County"
+  },
+  {
+    "county": "Kendall",
+    "city": "Aurora",
+    "address": "361 W Old Indian Trail",
+    "phone": "(630) 844-7400",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Kendall&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Kane County/Aurora"
+  },
+  {
+    "county": "Knox",
+    "city": "Galesburg",
+    "address": "821 W Main St",
+    "phone": "(309) 342-8144",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Knox&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Knox County"
+  },
+  {
+    "county": "LaSalle",
+    "city": "Ottawa",
+    "address": "1560 First Avenue",
+    "phone": "(815) 433-1572",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=LaSalle&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in LaSalle County"
+  },
+  {
+    "county": "Lake",
+    "city": "Waukegan",
+    "address": "2000 N Lewis Ave",
+    "phone": "(847) 263-7778",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Lake&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Lake County"
+  },
+  {
+    "county": "Lawrence",
+    "city": "Olney",
+    "address": "1406 Martin St",
+    "phone": "(618) 392-3151",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Lawrence&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Richland County"
+  },
+  {
+    "county": "Lee",
+    "city": "Oregon",
+    "address": "1001 Pines Rd",
+    "phone": "(815) 732-2166",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Lee&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Ogle County"
+  },
+  {
+    "county": "Livingston",
+    "city": "Bloomington",
+    "address": "501 West Washington Street",
+    "phone": "(309) 451-6000",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Livingston&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in McLean County"
+  },
+  {
+    "county": "Logan",
+    "city": "Lincoln",
+    "address": "1550 4th Street",
+    "phone": "(217) 735-2306",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Logan&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Logan County"
+  },
+  {
+    "county": "Macon",
+    "city": "Decatur",
+    "address": "1027 N. Water Street",
+    "phone": "(217) 362-6500",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Macon&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Macon County"
+  },
+  {
+    "county": "Macoupin",
+    "city": "Carlinville",
+    "address": "340 E. Wilson",
+    "phone": "(217) 854-3145",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Macoupin&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Macoupin County"
+  },
+  {
+    "county": "Madison",
+    "city": "East Alton",
+    "address": "608 W St Louis Ave",
+    "phone": "(618) 258-1660",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Madison&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Madison County/East Alton"
+  },
+  {
+    "county": "Marion",
+    "city": "Centralia",
+    "address": "800 S Locust St",
+    "phone": "(618) 532-1966",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Marion&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Marion County"
+  },
+  {
+    "county": "Marshall",
+    "city": "Princeton",
+    "address": "225 Backbone Rd E #2",
+    "phone": "(815) 875-1134",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Marshall&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Bureau County"
+  },
+  {
+    "county": "Mason",
+    "city": "Havana",
+    "address": "323 West Main Street",
+    "phone": "(309) 543-3329",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Mason&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Mason County"
+  },
+  {
+    "county": "Massac",
+    "city": "Metropolis",
+    "address": "2301 Metropolis Street",
+    "phone": "(618) 524-2631",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Massac&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Massac County"
+  },
+  {
+    "county": "McDonough",
+    "city": "Macomb",
+    "address": "322 W University Drive",
+    "phone": "(309) 833-4127",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=McDonough&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in McDonough County"
+  },
+  {
+    "county": "McHenry",
+    "city": "Woodstock",
+    "address": "512 Clay Street",
+    "phone": "(815) 338-0234",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=McHenry&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in McHenry County"
+  },
+  {
+    "county": "McLean",
+    "city": "Bloomington",
+    "address": "501 West Washington Street",
+    "phone": "(309) 451-6000",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=McLean&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in McLean County"
+  },
+  {
+    "county": "Menard",
+    "city": "Lincoln",
+    "address": "1550 4th Street",
+    "phone": "(217) 735-2306",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Menard&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Logan County"
+  },
+  {
+    "county": "Mercer",
+    "city": "Monmouth",
+    "address": "1245 South Main Street",
+    "phone": "(309) 734-2159",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Mercer&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Warren County- Temporarily Remote"
+  },
+  {
+    "county": "Monroe",
+    "city": "Chester",
+    "address": "870 Lehmen Drive",
+    "phone": "(618) 826-4559",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Monroe&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Randolph County"
+  },
+  {
+    "county": "Montgomery",
+    "city": "Hillsboro",
+    "address": "400 Rountree Street",
+    "phone": "(217) 532-3957",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Montgomery&module=12&OfficeType=5",
+    "office_title": "Family Community Resource Center in Montgomery County"
+  },
+  {
+    "county": "Morgan",
+    "city": "Jacksonville",
+    "address": "73 E. Central Park Plaza,  Suite 202",
+    "phone": "(217) 245-5164",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Morgan&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Morgan County"
+  },
+  {
+    "county": "Moultrie",
+    "city": "Charleston",
+    "address": "1550 Douglas St",
+    "phone": "(217) 345-2188",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Moultrie&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Mid-Illinois"
+  },
+  {
+    "county": "Ogle",
+    "city": "Oregon",
+    "address": "1001 Pines Rd",
+    "phone": "(815) 732-2166",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Ogle&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Ogle County"
+  },
+  {
+    "county": "Peoria",
+    "city": "Peoria",
+    "address": "103 N E Jefferson Avenue",
+    "phone": "(309) 671-8100",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Peoria&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Peoria County"
+  },
+  {
+    "county": "Perry",
+    "city": "Murphysboro",
+    "address": "342 North St",
+    "phone": "(618) 687-1705",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Perry&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Jackson County"
+  },
+  {
+    "county": "Piatt",
+    "city": "Charleston",
+    "address": "1550 Douglas St",
+    "phone": "(217) 345-2188",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Piatt&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Mid-Illinois"
+  },
+  {
+    "county": "Pike",
+    "city": "Quincy",
+    "address": "300 Maine St,  2nd floor",
+    "phone": "(217) 223-0550",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Pike&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Adams County"
+  },
+  {
+    "county": "Pope",
+    "city": "Harrisburg",
+    "address": "320 Raymond Street",
+    "phone": "(618) 253-7161",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Pope&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Saline County"
+  },
+  {
+    "county": "Pulaski",
+    "city": "Mounds",
+    "address": "422 S Blanche St",
+    "phone": "(618) 745-9411",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Pulaski&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Pulaski County"
+  },
+  {
+    "county": "Putnam",
+    "city": "Princeton",
+    "address": "225 Backbone Rd E #2",
+    "phone": "(815) 875-1134",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Putnam&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Bureau County"
+  },
+  {
+    "county": "Randolph",
+    "city": "Chester",
+    "address": "870 Lehmen Drive",
+    "phone": "(618) 826-4559",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Randolph&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Randolph County"
+  },
+  {
+    "county": "Richland",
+    "city": "Olney",
+    "address": "1406 Martin St",
+    "phone": "(618) 392-3151",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Richland&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Richland County"
+  },
+  {
+    "county": "Rock Island",
+    "city": "Moline",
+    "address": "3561 60th Street",
+    "phone": "(309) 623-1001",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Rock%20Island&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Rock Island County"
+  },
+  {
+    "county": "St. Clair",
+    "city": "East St Louis",
+    "address": "225 N 9th St",
+    "phone": "(618) 583-2300",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=St%20Clair&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in St Clair/East St Louis"
+  },
+  {
+    "county": "Saline",
+    "city": "Harrisburg",
+    "address": "320 Raymond Street",
+    "phone": "(618) 253-7161",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Saline&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Saline County"
+  },
+  {
+    "county": "Sangamon",
+    "city": "Springfield",
+    "address": "600 E Ash St,  Building 500, 1st Floor",
+    "phone": "(217) 782-0400",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Sangamon&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Sangamon County"
+  },
+  {
+    "county": "Schuyler",
+    "city": "Beardstown",
+    "address": "25 Plaza Drive",
+    "phone": "(217) 323-4185",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Schuyler&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Cass County"
+  },
+  {
+    "county": "Scott",
+    "city": "Jacksonville",
+    "address": "73 E. Central Park Plaza,  Suite 202",
+    "phone": "(217) 245-5164",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Scott&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Morgan County"
+  },
+  {
+    "county": "Shelby",
+    "city": "Charleston",
+    "address": "1550 Douglas St",
+    "phone": "(217) 345-2188",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Shelby&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Mid-Illinois"
+  },
+  {
+    "county": "Stark",
+    "city": "Kewanee",
+    "address": "150 West South Street",
+    "phone": "(309) 852-5627",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Stark&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Henry County"
+  },
+  {
+    "county": "Stephenson",
+    "city": "Freeport",
+    "address": "1840 S West Ave",
+    "phone": "(815) 232-6121",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Stephenson&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Stephenson County"
+  },
+  {
+    "county": "Tazewell",
+    "city": "Pekin",
+    "address": "111 N 6th St",
+    "phone": "(309) 347-4184",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Tazewell&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Tazewell County"
+  },
+  {
+    "county": "Union",
+    "city": "Anna",
+    "address": "1000 N Main St Willow Hall Ste B",
+    "phone": "(618) 833-2118",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Union&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Union County"
+  },
+  {
+    "county": "Vermilion",
+    "city": "Danville",
+    "address": "220 South Bowman Avenue",
+    "phone": "(217) 442-4003",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Vermilion&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Vermilion County"
+  },
+  {
+    "county": "Wabash",
+    "city": "Mount Carmel",
+    "address": "2517 West 9th Street,  Suite A",
+    "phone": "(618) 262-5179",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Wabash&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Wabash County"
+  },
+  {
+    "county": "Warren",
+    "city": "Monmouth",
+    "address": "1245 South Main Street",
+    "phone": "(309) 734-2159",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Warren&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Warren County- Temporarily Remote"
+  },
+  {
+    "county": "Washington",
+    "city": "Mount Vernon",
+    "address": "333 Potomac Boulevard,  Suite F",
+    "phone": "(618) 242-1040",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Washington&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Jefferson County"
+  },
+  {
+    "county": "Wayne",
+    "city": "Mount Vernon",
+    "address": "333 Potomac Boulevard,  Suite F",
+    "phone": "(618) 242-1040",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Wayne&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Jefferson County"
+  },
+  {
+    "county": "White",
+    "city": "Mount Carmel",
+    "address": "2517 West 9th Street,  Suite A",
+    "phone": "(618) 262-5179",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=White&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Wabash County"
+  },
+  {
+    "county": "Whiteside",
+    "city": "Sterling",
+    "address": "2605 Woodlawn Road",
+    "phone": "(815) 632-4045",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Whiteside&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Whiteside County"
+  },
+  {
+    "county": "Will",
+    "city": "Joliet",
+    "address": "45 E Webster St",
+    "phone": "(815) 740-5350",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Will&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Will County"
+  },
+  {
+    "county": "Williamson",
+    "city": "Marion",
+    "address": "1107 West Deyoung Street,  Suite 20",
+    "phone": "(618) 997-6591",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Williamson&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Williamson County"
+  },
+  {
+    "county": "Winnebago",
+    "city": "Rockford",
+    "address": "171 Executive Pkwy,  Suite 101",
+    "phone": "(815) 987-7620",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Winnebago&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Winnebago County"
+  },
+  {
+    "county": "Woodford",
+    "city": "Peoria",
+    "address": "103 N E Jefferson Avenue",
+    "phone": "(309) 671-8100",
+    "website": "https://abe.illinois.gov",
+    "source": "https://www.dhs.state.il.us/page.aspx?county=Woodford&module=12&OfficeType=5",
+    "office_title": "IDHS Family Community Resource Center in Peoria County"
+  }
+]

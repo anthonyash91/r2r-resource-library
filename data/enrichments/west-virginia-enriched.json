@@ -1,0 +1,990 @@
+{
+  "1": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "2": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "3": {
+    "intake_signals": ""
+  },
+  "4": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "5": {
+    "intake_signals": ""
+  },
+  "6": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "7": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "8": {
+    "intake_signals": ""
+  },
+  "9": {
+    "intake_signals": ""
+  },
+  "10": {
+    "intake_signals": ""
+  },
+  "11": {
+    "intake_signals": ""
+  },
+  "12": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "13": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "14": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "15": {
+    "intake_signals": ""
+  },
+  "16": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "17": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "18": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "19": {
+    "intake_signals": ""
+  },
+  "20": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "21": {
+    "description": "Catholic Charities provides emergency assistance, food pantry, immigration legal services, and disaster relief for low-income families in the Kanawha Valley including returning citizens seeking basic needs and case management referrals. Emergency assistance may include food, utility help, clothing, and case management with referrals to WV PATH, 211 West Virginia, and housing partners serving Kanawha County. Low-income returning citizens should bring photo ID and proof of address when available. This resource supports West Virginia residents navigating reentry in Kanawha, Putnam, Boone, and Clay counties.",
+    "description_es": "Caritas Católica ofrece asistencia de emergencia, despensa, servicios legales de inmigración y alivio por desastres para familias de bajos ingresos en el valle Kanawha incluidos ciudadanos que regresan. La asistencia de emergencia puede incluir alimentos, ayuda con servicios, ropa y manejo de casos con referencias a WV PATH, 211 West Virginia y aliados de vivienda en Kanawha County. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Kanawha, Putnam, Boone y Clay.",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "22": {
+    "description": "United Methodist ministry providing emergency shelter, transitional housing, food pantry, and case management for homeless and low-income individuals in the Northern Panhandle including men and women returning from incarceration. Staff conduct intake assessment and connect residents to structured shelter or transitional programming with referrals to WV PATH benefits, Legal Aid of West Virginia, and regional workforce partners in Ohio County. Returning citizens should call ahead to confirm bed availability, sobriety requirements, and referral policies. This resource supports West Virginia residents navigating reentry in Ohio, Marshall, Brooke, and Hancock counties.",
+    "description_es": "Ministerio metodista unido con refugio de emergencia, vivienda transicional, despensa y manejo de casos para personas sin hogar y de bajos ingresos en el Panhandle Norte incluidos quienes regresan de la encarcelación. El personal realiza evaluaciones de admisión y conecta a residentes con refugio o vivienda transicional estructurada y referencias a WV PATH, Legal Aid of West Virginia y socios laborales en Ohio County. Llame con anticipación para confirmar disponibilidad y requisitos. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Ohio, Marshall, Brooke y Hancock.",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "23": {
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "24": {
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "25": {
+    "description": "Union Mission operates Crossroads men's recovery residence and emergency services connecting homeless and addicted men including parolees to sobriety programming, meals, and workforce referrals in Charleston. Staff conduct intake assessment and connect residents to structured shelter or transitional programming with referrals to WV PATH benefits, Legal Aid of West Virginia, and regional workforce partners in Kanawha County. Returning citizens should call ahead to confirm bed availability, sobriety requirements, and referral policies. This resource supports West Virginia residents navigating reentry in Kanawha, and Putnam counties.",
+    "description_es": "Union Mission opera residencia de recuperación Crossroads y servicios de emergencia conectando hombres sin hogar y con adicción incluidos personas en libertad condicional con programación de sobriedad y referencias laborales. El personal realiza evaluaciones de admisión y conecta a residentes con refugio o vivienda transicional estructurada y referencias a WV PATH, Legal Aid of West Virginia y socios laborales en Kanawha County. Llame con anticipación para confirmar disponibilidad y requisitos. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Kanawha y Putnam.",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "26": {
+    "description": "Transitional housing and supportive services for women and children experiencing homelessness or leaving incarceration in Kanawha County including case management and parenting support. Staff conduct intake assessment and connect residents to structured shelter or transitional programming with referrals to WV PATH benefits, Legal Aid of West Virginia, and regional workforce partners in Kanawha County. Returning citizens should call ahead to confirm bed availability, sobriety requirements, and referral policies. This resource supports West Virginia residents navigating reentry in Kanawha County.",
+    "description_es": "Vivienda transicional y servicios de apoyo para mujeres y niños sin hogar o que salen de la encarcelación en el condado Kanawha incluido manejo de casos y apoyo parental. El personal realiza evaluaciones de admisión y conecta a residentes con refugio o vivienda transicional estructurada y referencias a WV PATH, Legal Aid of West Virginia y socios laborales en Kanawha County. Llame con anticipación para confirmar disponibilidad y requisitos. Este recurso apoya a residentes de Virginia Occidental en reinserción en condado de Kanawha.",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "27": {
+    "description": "Faith-based women's recovery residence providing structured sober living and life skills for women in early recovery including those referred from drug courts and community corrections in Kanawha County. Staff conduct intake assessment and connect residents to structured shelter or transitional programming with referrals to WV PATH benefits, Legal Aid of West Virginia, and regional workforce partners in Kanawha County. Returning citizens should call ahead to confirm bed availability, sobriety requirements, and referral policies. This resource supports West Virginia residents navigating reentry in Kanawha County.",
+    "description_es": "Residencia de recuperación para mujeres basada en la fe con vida sobria estructurada y habilidades para la vida para mujeres en recuperación temprana referidas por tribunales de drogas en Kanawha. El personal realiza evaluaciones de admisión y conecta a residentes con refugio o vivienda transicional estructurada y referencias a WV PATH, Legal Aid of West Virginia y socios laborales en Kanawha County. Llame con anticipación para confirmar disponibilidad y requisitos. Este recurso apoya a residentes de Virginia Occidental en reinserción en condado de Kanawha.",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "28": {
+    "description": "Emergency shelter, meals, and recovery programming for men and women experiencing homelessness in Cabell and Wayne counties including returning citizens without stable housing after release from regional jails. Staff conduct intake assessment and connect residents to structured shelter or transitional programming with referrals to WV PATH benefits, Legal Aid of West Virginia, and regional workforce partners in Cabell County. Returning citizens should call ahead to confirm bed availability, sobriety requirements, and referral policies. This resource supports West Virginia residents navigating reentry in Cabell, and Wayne counties.",
+    "description_es": "Refugio de emergencia, comidas y programación de recuperación para hombres y mujeres sin hogar en los condados Cabell y Wayne incluidos ciudadanos que regresan sin vivienda estable. El personal realiza evaluaciones de admisión y conecta a residentes con refugio o vivienda transicional estructurada y referencias a WV PATH, Legal Aid of West Virginia y socios laborales en Cabell County. Llame con anticipación para confirmar disponibilidad y requisitos. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Cabell y Wayne.",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "29": {
+    "description": "Mid-Ohio Valley transitional housing program providing structured recovery residence and case management for men and women rebuilding stability after homelessness or incarceration in Wood County and surrounding counties. Staff conduct intake assessment and connect residents to structured shelter or transitional programming with referrals to WV PATH benefits, Legal Aid of West Virginia, and regional workforce partners in Wood County. Returning citizens should call ahead to confirm bed availability, sobriety requirements, and referral policies. This resource supports West Virginia residents navigating reentry in Wood, Wirt, Pleasants, and Ritchie counties.",
+    "description_es": "Programa de vivienda transicional del valle Mid-Ohio con residencia de recuperación estructurada y manejo de casos para hombres y mujeres que reconstruyen estabilidad después de la encarcelación en Wood. El personal realiza evaluaciones de admisión y conecta a residentes con refugio o vivienda transicional estructurada y referencias a WV PATH, Legal Aid of West Virginia y socios laborales en Wood County. Llame con anticipación para confirmar disponibilidad y requisitos. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Wood, Wirt, Pleasants y Ritchie.",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "30": {
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "31": {
+    "description": "Emergency shelter and transitional housing services for homeless individuals and families in Monongalia and Preston counties including returning citizens seeking stable housing near West Virginia University and regional employers. Staff conduct intake assessment and connect residents to structured shelter or transitional programming with referrals to WV PATH benefits, Legal Aid of West Virginia, and regional workforce partners in Monongalia County. Returning citizens should call ahead to confirm bed availability, sobriety requirements, and referral policies. This resource supports West Virginia residents navigating reentry in Monongalia, Preston, and Taylor counties.",
+    "description_es": "Refugio de emergencia y vivienda transicional para personas y familias sin hogar en los condados Monongalia y Preston incluidos ciudadanos que regresan buscando vivienda estable. El personal realiza evaluaciones de admisión y conecta a residentes con refugio o vivienda transicional estructurada y referencias a WV PATH, Legal Aid of West Virginia y socios laborales en Monongalia County. Llame con anticipación para confirmar disponibilidad y requisitos. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Monongalia, Preston y Taylor.",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "32": {
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "33": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "34": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "35": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "36": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "37": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "38": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "39": {
+    "services": "Substance use treatment|Addiction treatment referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "40": {
+    "services": "Substance use treatment|Addiction treatment referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "41": {
+    "services": "Substance use treatment|Addiction treatment referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "42": {
+    "services": "Job readiness training|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "43": {
+    "services": "Job readiness training|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "44": {
+    "services": "Job readiness training|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "45": {
+    "services": "Job readiness training|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "46": {
+    "services": "Job readiness training|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "47": {
+    "services": "Job readiness training|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "48": {
+    "services": "Job readiness training|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "49": {
+    "services": "Job readiness training|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "50": {
+    "description": "Kanawha County adult education program offering free GED and high school equivalency preparation, career certifications, and English language classes for adults including returning citizens seeking credentials for employment. Programs include high school equivalency (GED), adult basic education, and workforce readiness aligned with WorkForce West Virginia and Jobs & Hope referrals in Kanawha County. Returning citizens can rebuild credentials for fair-chance employment; call to confirm class schedules, testing fees, and enrollment documents before your first visit. This resource supports West Virginia residents navigating reentry in Kanawha County.",
+    "description_es": "Programa de educación para adultos del condado Kanawha con preparación gratuita GED, certificaciones profesionales y clases de inglés para adultos incluidos ciudadanos que regresan buscando credenciales. Los programas incluyen equivalencia de secundaria (GED), educación básica para adultos y preparación laboral alineada con WorkForce West Virginia y Jobs & Hope en Kanawha County. Ciudadanos que regresan pueden reconstruir credenciales; llame para confirmar horarios y documentos. Este recurso apoya a residentes de Virginia Occidental en reinserción en condado de Kanawha.",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "51": {
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "52": {
+    "description": "Monongalia County adult education program providing GED preparation, career training, and English language instruction for adults including returning citizens in north-central West Virginia. Programs include high school equivalency (GED), adult basic education, and workforce readiness aligned with WorkForce West Virginia and Jobs & Hope referrals in Monongalia County. Returning citizens can rebuild credentials for fair-chance employment; call to confirm class schedules, testing fees, and enrollment documents before your first visit. This resource supports West Virginia residents navigating reentry in Monongalia County.",
+    "description_es": "Programa de educación para adultos de Monongalia con preparación GED, capacitación profesional e instrucción de inglés para adultos incluidos ciudadanos que regresan en el centro-norte de WV. Los programas incluyen equivalencia de secundaria (GED), educación básica para adultos y preparación laboral alineada con WorkForce West Virginia y Jobs & Hope en Monongalia County. Ciudadanos que regresan pueden reconstruir credenciales; llame para confirmar horarios y documentos. Este recurso apoya a residentes de Virginia Occidental en reinserción en condado de Monongalia.",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "53": {
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "54": {
+    "description": "Community college providing GED, workforce training, and certificate programs for adults in southern West Virginia including returning citizens in coalfield counties. Programs include high school equivalency (GED), adult basic education, and workforce readiness aligned with WorkForce West Virginia and Jobs & Hope referrals in Raleigh County. Returning citizens can rebuild credentials for fair-chance employment; call to confirm class schedules, testing fees, and enrollment documents before your first visit. This resource supports West Virginia residents navigating reentry in 5 West Virginia counties.",
+    "description_es": "Colegio comunitario con GED, capacitación laboral y programas de certificación para adultos en el sur de WV incluidos ciudadanos que regresan en condados carboníferos. Los programas incluyen equivalencia de secundaria (GED), educación básica para adultos y preparación laboral alineada con WorkForce West Virginia y Jobs & Hope en Raleigh County. Ciudadanos que regresan pueden reconstruir credenciales; llame para confirmar horarios y documentos. Este recurso apoya a residentes de Virginia Occidental en reinserción en 5 condados de Virginia Occidental.",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "55": {
+    "description": "Eastern Panhandle community college offering adult education, GED preparation, and workforce credentials for rural returning citizens in Grant, Hardy, and surrounding eastern counties. Programs include high school equivalency (GED), adult basic education, and workforce readiness aligned with WorkForce West Virginia and Jobs & Hope referrals in Hardy County. Returning citizens can rebuild credentials for fair-chance employment; call to confirm class schedules, testing fees, and enrollment documents before your first visit. This resource supports West Virginia residents navigating reentry in 5 West Virginia counties.",
+    "description_es": "Colegio comunitario del Panhandle Oriental con educación para adultos, preparación GED y credenciales laborales para ciudadanos que regresan en Grant, Hardy y condados orientales. Los programas incluyen equivalencia de secundaria (GED), educación básica para adultos y preparación laboral alineada con WorkForce West Virginia y Jobs & Hope en Hardy County. Ciudadanos que regresan pueden reconstruir credenciales; llame para confirmar horarios y documentos. Este recurso apoya a residentes de Virginia Occidental en reinserción en 5 condados de Virginia Occidental.",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "56": {
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "57": {
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "58": {
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "59": {
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "60": {
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "61": {
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "62": {
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "63": {
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "64": {
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "65": {
+    "services": "Benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "66": {
+    "services": "Support groups|Substance use treatment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "67": {
+    "services": "Support groups|Substance use treatment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "68": {
+    "services": "Support groups|Substance use treatment",
+    "intake_signals": ""
+  },
+  "69": {
+    "description": "Regional economic development organization connecting Kanawha Valley residents to public transit information, reduced-fare programs, and employer transportation resources for job seekers including returning citizens. Programs help returning citizens in Kanawha County access bus passes, ride vouchers, or travel assistance to reach medical appointments, employment, probation reporting, and benefits interviews after release. This resource supports West Virginia residents navigating reentry in Kanawha County.",
+    "description_es": "Organización de desarrollo económico regional conectando residentes del valle Kanawha con información de tránsito público, tarifas reducidas y recursos de transporte laboral para buscadores de empleo incluidos ciudadanos que regresan. Los programas ayudan a ciudadanos que regresan en Kanawha County a acceder a pases de autobús o asistencia de transporte para citas médicas, empleo y reportes de supervisión. Este recurso apoya a residentes de Virginia Occidental en reinserción en condado de Kanawha.",
+    "services": "Bus pass assistance|Transportation assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "70": {
+    "description": "Public transit authority operating fixed-route bus service in Kanawha and Putnam counties with reduced-fare options for seniors, people with disabilities, and low-income riders reaching employment and appointments. Programs help returning citizens in Kanawha County access bus passes, ride vouchers, or travel assistance to reach medical appointments, employment, probation reporting, and benefits interviews after release. This resource supports West Virginia residents navigating reentry in Kanawha, and Putnam counties.",
+    "description_es": "Autoridad de tránsito público con servicio de autobús en los condados Kanawha y Putnam con tarifas reducidas para adultos mayores, personas con discapacidad y pasajeros de bajos ingresos. Los programas ayudan a ciudadanos que regresan en Kanawha County a acceder a pases de autobús o asistencia de transporte para citas médicas, empleo y reportes de supervisión. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Kanawha y Putnam.",
+    "services": "Bus pass assistance|Transportation assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "71": {
+    "description": "Public transit serving Huntington, Cabell, and Wayne counties helping returning citizens access employment, treatment, and probation appointments via fixed-route bus service. Programs help returning citizens in Cabell County access bus passes, ride vouchers, or travel assistance to reach medical appointments, employment, probation reporting, and benefits interviews after release. This resource supports West Virginia residents navigating reentry in Cabell, and Wayne counties.",
+    "description_es": "Tránsito público sirviendo Huntington, Cabell y Wayne ayudando a ciudadanos que regresan a acceder a empleo, tratamiento y citas de probatoria mediante autobús. Los programas ayudan a ciudadanos que regresan en Cabell County a acceder a pases de autobús o asistencia de transporte para citas médicas, empleo y reportes de supervisión. Este programa sirve a virginianos occidentales con antecedentes penales en Cabell County con referencias a aliados regionales de reinserción incluidos DoHS, Legal Aid y WorkForce West Virginia. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Cabell y Wayne.",
+    "services": "Bus pass assistance|Transportation assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "72": {
+    "services": "Family reunification support|Parenting services|Reentry navigation",
+    "intake_signals": ""
+  },
+  "73": {
+    "services": "Family reunification support|Parenting services|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "74": {
+    "services": "Family reunification support|Parenting services|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "75": {
+    "description": "Kanawha County Circuit Clerk office issuing certified birth certificates and marriage records needed for DMV ID, WV PATH benefits enrollment, and employment documentation after release. Staff help returning citizens in Kanawha County obtain state ID, birth certificates, Social Security cards, and DMV documentation needed for employment, WV PATH benefits, and supervision reporting after release from incarceration. This resource supports West Virginia residents navigating reentry in Kanawha County.",
+    "description_es": "Oficina del Secretario del Circuito del condado Kanawha emite certificados de nacimiento y registros matrimoniales necesarios para identificación del DMV, WV PATH y documentación laboral. El personal ayuda a ciudadanos que regresan en Kanawha County a obtener identificación estatal, certificados de nacimiento y documentos del DMV necesarios para empleo y beneficios. Este recurso apoya a residentes de Virginia Occidental en reinserción en condado de Kanawha.",
+    "services": "Document assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "76": {
+    "description": "Cabell County Circuit Clerk providing certified vital records for residents establishing identity documents after incarceration in the Metro Valley. Staff help returning citizens in Cabell County obtain state ID, birth certificates, Social Security cards, and DMV documentation needed for employment, WV PATH benefits, and supervision reporting after release from incarceration. This resource supports West Virginia residents navigating reentry in Cabell County.",
+    "description_es": "Secretario del Circuito del condado Cabell proporciona registros vitales certificados para residentes que establecen documentos de identidad después de la encarcelación en el valle metropolitano. El personal ayuda a ciudadanos que regresan en Cabell County a obtener identificación estatal, certificados de nacimiento y documentos del DMV necesarios para empleo y beneficios. Este recurso apoya a residentes de Virginia Occidental en reinserción en condado de Cabell.",
+    "services": "Document assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "77": {
+    "description": "Wood County Circuit Clerk issuing birth certificates and vital records for Mid-Ohio Valley residents obtaining IDs and benefits documentation after release. Staff help returning citizens in Wood County obtain state ID, birth certificates, Social Security cards, and DMV documentation needed for employment, WV PATH benefits, and supervision reporting after release from incarceration. This resource supports West Virginia residents navigating reentry in Wood County.",
+    "description_es": "Secretario del Circuito del condado Wood emite certificados de nacimiento y registros vitales para residentes del valle Mid-Ohio obteniendo identificación y documentación de beneficios. El personal ayuda a ciudadanos que regresan en Wood County a obtener identificación estatal, certificados de nacimiento y documentos del DMV necesarios para empleo y beneficios. Este recurso apoya a residentes de Virginia Occidental en reinserción en condado de Wood.",
+    "services": "Document assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "78": {
+    "description": "Berkeley County Circuit Clerk providing certified vital records for Eastern Panhandle residents establishing identity for DMV, employment, and WV PATH enrollment. Staff help returning citizens in Berkeley County obtain state ID, birth certificates, Social Security cards, and DMV documentation needed for employment, WV PATH benefits, and supervision reporting after release from incarceration. This resource supports West Virginia residents navigating reentry in Berkeley County.",
+    "description_es": "Secretario del Circuito del condado Berkeley proporciona registros vitales certificados para residentes del Panhandle Oriental estableciendo identidad para DMV, empleo y WV PATH. El personal ayuda a ciudadanos que regresan en Berkeley County a obtener identificación estatal, certificados de nacimiento y documentos del DMV necesarios para empleo y beneficios. Este recurso apoya a residentes de Virginia Occidental en reinserción en condado de Berkeley.",
+    "services": "Document assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "79": {
+    "description": "Catholic Charities Huntington clothing closet and emergency assistance for low-income Metro Valley residents including returning citizens needing interview clothing and household basics. Emergency assistance may include food, utility help, clothing, and case management with referrals to WV PATH, 211 West Virginia, and housing partners serving Cabell County. Low-income returning citizens should bring photo ID and proof of address when available. This resource supports West Virginia residents navigating reentry in Cabell, Wayne, and Lincoln counties.",
+    "description_es": "Despensa de ropa y asistencia de emergencia de Caritas Católica Huntington para residentes de bajos ingresos del valle metropolitano incluidos ciudadanos que regresan necesitando ropa para entrevistas. La asistencia de emergencia puede incluir alimentos, ayuda con servicios, ropa y manejo de casos con referencias a WV PATH, 211 West Virginia y aliados de vivienda en Cabell County. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Cabell, Wayne y Lincoln.",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "80": {
+    "description": "Faith-based ministry providing clothing, furniture, household goods, and emergency assistance for low-income Kanawha County families including returning citizens furnishing a first home after release. Emergency assistance may include food, utility help, clothing, and case management with referrals to WV PATH, 211 West Virginia, and housing partners serving Kanawha County. Low-income returning citizens should bring photo ID and proof of address when available. This resource supports West Virginia residents navigating reentry in Kanawha County.",
+    "description_es": "Ministerio basado en la fe con ropa, muebles, artículos del hogar y asistencia de emergencia para familias de bajos ingresos del condado Kanawha incluidos ciudadanos amueblando su primer hogar. La asistencia de emergencia puede incluir alimentos, ayuda con servicios, ropa y manejo de casos con referencias a WV PATH, 211 West Virginia y aliados de vivienda en Kanawha County. Este recurso apoya a residentes de Virginia Occidental en reinserción en condado de Kanawha.",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "81": {
+    "description": "Morgantown emergency assistance agency providing food pantry, clothing, utility help, and case management for low-income families in Monongalia and Preston counties including returning citizens. Emergency assistance may include food, utility help, clothing, and case management with referrals to WV PATH, 211 West Virginia, and housing partners serving Monongalia County. Low-income returning citizens should bring photo ID and proof of address when available. This resource supports West Virginia residents navigating reentry in Monongalia, Preston, and Marion counties.",
+    "description_es": "Agencia de asistencia de emergencia de Morgantown con despensa, ropa, ayuda con servicios y manejo de casos para familias de bajos ingresos en Monongalia y Preston incluidos ciudadanos que regresan. La asistencia de emergencia puede incluir alimentos, ayuda con servicios, ropa y manejo de casos con referencias a WV PATH, 211 West Virginia y aliados de vivienda en Monongalia County. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Monongalia, Preston y Marion.",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "82": {
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "83": {
+    "services": "Reentry navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "84": {
+    "services": "Reentry navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "85": {
+    "services": "Reentry navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "86": {
+    "services": "Reentry navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "87": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "88": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "89": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "90": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "91": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "92": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "93": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "94": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "95": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "96": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "97": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "98": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "99": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "100": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "101": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "102": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "103": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "104": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "105": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "106": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "107": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "108": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "109": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "110": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "111": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "112": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "113": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "114": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "115": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "116": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "117": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "118": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "119": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "120": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "121": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "122": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "123": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "124": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "125": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "126": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "127": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "128": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "129": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "130": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "131": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "132": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "133": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "134": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "135": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "136": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "137": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "138": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "139": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "140": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "141": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "142": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "143": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "144": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "145": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "146": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "147": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "148": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "149": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "150": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "151": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "152": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "153": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "154": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "155": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "156": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "157": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "158": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "159": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "160": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "161": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "162": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "163": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "164": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "165": {
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "166": {
+    "services": "Substance use treatment|Addiction treatment referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "167": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "168": {
+    "description": "Nonprofit civil legal aid serving low-income West Virginians with housing, public benefits, family law, consumer issues, and record expungement assistance under state Clean Slate and expungement statutes—not criminal defense. Attorneys assist with housing and eviction defense, public benefits appeals, family law, and West Virginia Clean Slate expungement for low-income clients in Kanawha County—not criminal defense. Apply through the statewide intake hotline or local office; LSC income limits apply. This resource supports West Virginia residents navigating reentry in 9 West Virginia counties.",
+    "description_es": "Asistencia legal civil sin fines de lucro para virginianos occidentales de bajos ingresos con vivienda, beneficios públicos, derecho familiar y eliminación de antecedentes bajo estatutos estatales—no defensa penal. Abogados ayudan con defensa de vivienda y desalojo, apelaciones de beneficios públicos, derecho familiar y eliminación Clean Slate en Kanawha County—no defensa penal. Este recurso apoya a residentes de Virginia Occidental en reinserción en 9 condados de Virginia Occidental.",
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "169": {
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "170": {
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "171": {
+    "description": "North-central West Virginia civil legal aid office helping low-income residents with housing, benefits, family law, and record relief in Harrison, Marion, Monongalia, and surrounding counties. Attorneys assist with housing and eviction defense, public benefits appeals, family law, and West Virginia Clean Slate expungement for low-income clients in Harrison County—not criminal defense. Apply through the statewide intake hotline or local office; LSC income limits apply. This resource supports West Virginia residents navigating reentry in 11 West Virginia counties.",
+    "description_es": "Oficina de asistencia legal civil del centro-norte de WV para residentes de bajos ingresos con vivienda, beneficios, derecho familiar y alivio de antecedentes en Harrison, Marion y condados circundantes. Abogados ayudan con defensa de vivienda y desalojo, apelaciones de beneficios públicos, derecho familiar y eliminación Clean Slate en Harrison County—no defensa penal. Este recurso apoya a residentes de Virginia Occidental en reinserción en 11 condados de Virginia Occidental.",
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "172": {
+    "description": "Northern Panhandle civil legal aid serving low-income residents in Brooke, Hancock, Marshall, Ohio, Tyler, and Wetzel counties with housing, benefits, and expungement legal help. Attorneys assist with housing and eviction defense, public benefits appeals, family law, and West Virginia Clean Slate expungement for low-income clients in Ohio County—not criminal defense. Apply through the statewide intake hotline or local office; LSC income limits apply. This resource supports West Virginia residents navigating reentry in 6 West Virginia counties.",
+    "description_es": "Asistencia legal civil del Panhandle Norte para residentes de bajos ingresos en Brooke, Hancock, Marshall, Ohio, Tyler y Wetzel con vivienda, beneficios y eliminación de antecedentes. Abogados ayudan con defensa de vivienda y desalojo, apelaciones de beneficios públicos, derecho familiar y eliminación Clean Slate en Ohio County—no defensa penal. Este programa sirve a virginianos occidentales con antecedentes penales en Ohio County con referencias a aliados regionales de reinserción incluidos DoHS, Legal Aid y WorkForce West Virginia. Este recurso apoya a residentes de Virginia Occidental en reinserción en 6 condados de Virginia Occidental.",
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "173": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "174": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "175": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "176": {
+    "services": "Substance use treatment|Addiction treatment referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "177": {
+    "description": "Community Action Agency providing emergency utility assistance, weatherization, food support referrals, and case management for low-income families in north-central West Virginia including returning citizens rebuilding household stability. Emergency assistance may include food, utility help, clothing, and case management with referrals to WV PATH, 211 West Virginia, and housing partners serving Upshur County. Low-income returning citizens should bring photo ID and proof of address when available. This resource supports West Virginia residents navigating reentry in 7 West Virginia counties.",
+    "description_es": "Agencia de Acción Comunitaria con asistencia de emergencia para servicios públicos, climatización, referencias de alimentos y manejo de casos para familias de bajos ingresos en el centro-norte de WV. La asistencia de emergencia puede incluir alimentos, ayuda con servicios, ropa y manejo de casos con referencias a WV PATH, 211 West Virginia y aliados de vivienda en Upshur County. Este recurso apoya a residentes de Virginia Occidental en reinserción en 7 condados de Virginia Occidental.",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "178": {
+    "description": "Regional food bank distributing to partner pantries across north-central and eastern West Virginia helping returning citizens locate emergency food by ZIP code through the online food finder. Partner pantries and SNAP outreach help food-insecure households in Braxton County locate emergency meals and enroll in WV PATH food benefits after release from incarceration. This resource supports West Virginia residents navigating reentry in 22 West Virginia counties.",
+    "description_es": "Banco de alimentos regional que distribuye a despensas aliadas en el centro-norte y este de WV ayudando a ciudadanos que regresan a localizar alimentos de emergencia por código postal. Despensas aliadas y alcance SNAP ayudan a hogares con inseguridad alimentaria en Braxton County a localizar comidas de emergencia e inscribirse en WV PATH. Este programa sirve a virginianos occidentales con antecedentes penales en Braxton County con referencias a aliados regionales de reinserción incluidos DoHS, Legal Aid y WorkForce West Virginia. Este recurso apoya a residentes de Virginia Occidental en reinserción en 22 condados de Virginia Occidental.",
+    "services": "Food pantry access|SNAP enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "179": {
+    "services": "Food pantry access|SNAP enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "180": {
+    "services": "Reentry navigation|Partner referrals",
+    "intake_signals": ""
+  },
+  "181": {
+    "description": "Continuum of Care coordinated entry system connecting people experiencing homelessness in the Kanawha Valley to shelter, rapid rehousing, and permanent supportive housing including returning citizens without stable housing. Staff conduct intake assessment and connect residents to structured shelter or transitional programming with referrals to WV PATH benefits, Legal Aid of West Virginia, and regional workforce partners in Kanawha County. Returning citizens should call ahead to confirm bed availability, sobriety requirements, and referral policies. This resource supports West Virginia residents navigating reentry in 6 West Virginia counties.",
+    "description_es": "Sistema de admisión coordinada del Continuum of Care conecta a personas sin hogar en el valle Kanawha con refugio, realojamiento rápido y vivienda de apoyo permanente incluidos ciudadanos que regresan. El personal realiza evaluaciones de admisión y conecta a residentes con refugio o vivienda transicional estructurada y referencias a WV PATH, Legal Aid of West Virginia y socios laborales en Kanawha County. Llame con anticipación para confirmar disponibilidad y requisitos. Este recurso apoya a residentes de Virginia Occidental en reinserción en 6 condados de Virginia Occidental.",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "182": {
+    "description": "Faith-based social services providing emergency food pantry, utility assistance, clothing, and seasonal programs for low-income Kanawha County residents including returning citizens seeking basic needs support. Emergency assistance may include food, utility help, clothing, and case management with referrals to WV PATH, 211 West Virginia, and housing partners serving Kanawha County. Low-income returning citizens should bring photo ID and proof of address when available. This resource supports West Virginia residents navigating reentry in Kanawha County.",
+    "description_es": "Servicios sociales basados en la fe con despensa de emergencia, asistencia de servicios, ropa y programas estacionales para residentes de bajos ingresos del condado Kanawha incluidos ciudadanos que regresan. La asistencia de emergencia puede incluir alimentos, ayuda con servicios, ropa y manejo de casos con referencias a WV PATH, 211 West Virginia y aliados de vivienda en Kanawha County. Este recurso apoya a residentes de Virginia Occidental en reinserción en condado de Kanawha.",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "183": {
+    "services": "Job readiness training|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "184": {
+    "services": "Document assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "185": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "186": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "187": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "188": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "189": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "190": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "191": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "192": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "193": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "194": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "195": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "196": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "197": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "198": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "199": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "200": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "201": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "202": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "203": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "204": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "205": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "206": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "207": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "208": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "209": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "210": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "211": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "212": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "213": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "214": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "215": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "216": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "217": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "218": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "219": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "220": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "221": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "222": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "223": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "224": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "225": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "226": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "227": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "228": {
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "229": {
+    "description": "Fayette County adult education providing GED preparation and workforce credentials for returning citizens in the New River Gorge region. Programs include high school equivalency (GED), adult basic education, and workforce readiness aligned with WorkForce West Virginia and Jobs & Hope referrals in Fayette County. Returning citizens can rebuild credentials for fair-chance employment; call to confirm class schedules, testing fees, and enrollment documents before your first visit. This resource supports West Virginia residents navigating reentry in Fayette, Raleigh, Summers, and Nicholas counties.",
+    "description_es": "Educación para adultos de Fayette con preparación GED y credenciales laborales para ciudadanos que regresan en la región New River Gorge. Los programas incluyen equivalencia de secundaria (GED), educación básica para adultos y preparación laboral alineada con WorkForce West Virginia y Jobs & Hope en Fayette County. Ciudadanos que regresan pueden reconstruir credenciales; llame para confirmar horarios y documentos. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Fayette, Raleigh, Summers y Nicholas.",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "230": {
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "231": {
+    "description": "Wood County adult education at WVU Parkersburg providing GED and workforce training for Mid-Ohio Valley returning citizens. Programs include high school equivalency (GED), adult basic education, and workforce readiness aligned with WorkForce West Virginia and Jobs & Hope referrals in Wood County. Returning citizens can rebuild credentials for fair-chance employment; call to confirm class schedules, testing fees, and enrollment documents before your first visit. This resource supports West Virginia residents navigating reentry in 5 West Virginia counties.",
+    "description_es": "Educación para adultos de Wood en WVU Parkersburg con GED y capacitación laboral para ciudadanos que regresan del valle Mid-Ohio. Los programas incluyen equivalencia de secundaria (GED), educación básica para adultos y preparación laboral alineada con WorkForce West Virginia y Jobs & Hope en Wood County. Ciudadanos que regresan pueden reconstruir credenciales; llame para confirmar horarios y documentos. Este recurso apoya a residentes de Virginia Occidental en reinserción en 5 condados de Virginia Occidental.",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "232": {
+    "description": "Harrison County adult education providing GED and career training for north-central West Virginia returning citizens. Programs include high school equivalency (GED), adult basic education, and workforce readiness aligned with WorkForce West Virginia and Jobs & Hope referrals in Harrison County. Returning citizens can rebuild credentials for fair-chance employment; call to confirm class schedules, testing fees, and enrollment documents before your first visit. This resource supports West Virginia residents navigating reentry in 5 West Virginia counties.",
+    "description_es": "Educación para adultos de Harrison con GED y capacitación profesional para ciudadanos que regresan del centro-norte de WV. Los programas incluyen equivalencia de secundaria (GED), educación básica para adultos y preparación laboral alineada con WorkForce West Virginia y Jobs & Hope en Harrison County. Ciudadanos que regresan pueden reconstruir credenciales; llame para confirmar horarios y documentos. Este recurso apoya a residentes de Virginia Occidental en reinserción en 5 condados de Virginia Occidental.",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "233": {
+    "description": "Berkeley County adult education providing GED preparation and workforce credentials for Eastern Panhandle returning citizens. Programs include high school equivalency (GED), adult basic education, and workforce readiness aligned with WorkForce West Virginia and Jobs & Hope referrals in Berkeley County. Returning citizens can rebuild credentials for fair-chance employment; call to confirm class schedules, testing fees, and enrollment documents before your first visit. This resource supports West Virginia residents navigating reentry in Berkeley, Jefferson, Morgan, and Hampshire counties.",
+    "description_es": "Educación para adultos de Berkeley con preparación GED y credenciales laborales para ciudadanos que regresan del Panhandle Oriental. Los programas incluyen equivalencia de secundaria (GED), educación básica para adultos y preparación laboral alineada con WorkForce West Virginia y Jobs & Hope en Berkeley County. Ciudadanos que regresan pueden reconstruir credenciales; llame para confirmar horarios y documentos. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Berkeley, Jefferson, Morgan y Hampshire.",
+    "services": "GED and high school equivalency|Job readiness training|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "234": {
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "235": {
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "236": {
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "237": {
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "238": {
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "239": {
+    "services": "Expungement assistance|Housing legal aid|Benefits navigation|Civil legal representation",
+    "intake_signals": ""
+  },
+  "240": {
+    "description": "Salvation Army Huntington provides emergency shelter referrals, utility assistance, food pantry, and seasonal programs for low-income Metro Valley residents including returning citizens without stable housing after release from Western Regional Jail. Staff conduct intake assessment and connect residents to structured shelter or transitional programming with referrals to WV PATH benefits, Legal Aid of West Virginia, and regional workforce partners in Cabell County. Returning citizens should call ahead to confirm bed availability, sobriety requirements, and referral policies. This resource supports West Virginia residents navigating reentry in Cabell, and Wayne counties.",
+    "description_es": "Salvation Army Huntington ofrece referencias de refugio, asistencia de servicios, despensa y programas estacionales para residentes de bajos ingresos del valle metropolitano incluidos ciudadanos que regresan sin vivienda estable. El personal realiza evaluaciones de admisión y conecta a residentes con refugio o vivienda transicional estructurada y referencias a WV PATH, Legal Aid of West Virginia y socios laborales en Cabell County. Llame con anticipación para confirmar disponibilidad y requisitos. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Cabell y Wayne.",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "241": {
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "242": {
+    "description": "Emergency shelter, meals, and case management for homeless individuals in Monongalia and Preston counties including returning citizens seeking housing near regional employers and West Virginia University. Staff conduct intake assessment and connect residents to structured shelter or transitional programming with referrals to WV PATH benefits, Legal Aid of West Virginia, and regional workforce partners in Monongalia County. Returning citizens should call ahead to confirm bed availability, sobriety requirements, and referral policies. This resource supports West Virginia residents navigating reentry in Monongalia, and Preston counties.",
+    "description_es": "Refugio de emergencia, comidas y manejo de casos para personas sin hogar en Monongalia y Preston incluidos ciudadanos que regresan buscando vivienda. El personal realiza evaluaciones de admisión y conecta a residentes con refugio o vivienda transicional estructurada y referencias a WV PATH, Legal Aid of West Virginia y socios laborales en Monongalia County. Llame con anticipación para confirmar disponibilidad y requisitos. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Monongalia y Preston.",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "243": {
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "244": {
+    "description": "Transitional housing and recovery support for men and women in southern West Virginia including returning citizens from Raleigh County seeking structured sober living in coalfield communities. Staff conduct intake assessment and connect residents to structured shelter or transitional programming with referrals to WV PATH benefits, Legal Aid of West Virginia, and regional workforce partners in Raleigh County. Returning citizens should call ahead to confirm bed availability, sobriety requirements, and referral policies. This resource supports West Virginia residents navigating reentry in Raleigh, Fayette, and Summers counties.",
+    "description_es": "Vivienda transicional y apoyo en recuperación para hombres y mujeres en el sur de WV incluidos ciudadanos que regresan de Raleigh buscando vida sobria estructurada. El personal realiza evaluaciones de admisión y conecta a residentes con refugio o vivienda transicional estructurada y referencias a WV PATH, Legal Aid of West Virginia y socios laborales en Raleigh County. Llame con anticipación para confirmar disponibilidad y requisitos. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Raleigh, Fayette y Summers.",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "245": {
+    "description": "Community Action Agency helping low-income southern coalfield residents including returning citizens access emergency rental assistance, utility help, and housing navigation in Mercer and surrounding counties. Staff conduct intake assessment and connect residents to structured shelter or transitional programming with referrals to WV PATH benefits, Legal Aid of West Virginia, and regional workforce partners in Mercer County. Returning citizens should call ahead to confirm bed availability, sobriety requirements, and referral policies. This resource supports West Virginia residents navigating reentry in 5 West Virginia counties.",
+    "description_es": "Agencia de Acción Comunitaria ayudando a residentes de bajos ingresos de campos carboníferos del sur incluidos ciudadanos que regresan a acceder a asistencia de alquiler y navegación de vivienda. El personal realiza evaluaciones de admisión y conecta a residentes con refugio o vivienda transicional estructurada y referencias a WV PATH, Legal Aid of West Virginia y socios laborales en Mercer County. Llame con anticipación para confirmar disponibilidad y requisitos. Este recurso apoya a residentes de Virginia Occidental en reinserción en 5 condados de Virginia Occidental.",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "246": {
+    "description": "Public housing authority administering Section 8 housing choice vouchers and affordable housing for low-income families in Marion and Monongalia counties including eligible returning citizens meeting program requirements. Staff conduct intake assessment and connect residents to structured shelter or transitional programming with referrals to WV PATH benefits, Legal Aid of West Virginia, and regional workforce partners in Marion County. Returning citizens should call ahead to confirm bed availability, sobriety requirements, and referral policies. This resource supports West Virginia residents navigating reentry in Marion, Monongalia, Taylor, and Preston counties.",
+    "description_es": "Autoridad de vivienda pública que administra vales Sección 8 y vivienda asequible para familias de bajos ingresos en Marion y Monongalia incluidos ciudadanos que regresan elegibles. El personal realiza evaluaciones de admisión y conecta a residentes con refugio o vivienda transicional estructurada y referencias a WV PATH, Legal Aid of West Virginia y socios laborales en Marion County. Llame con anticipación para confirmar disponibilidad y requisitos. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Marion, Monongalia, Taylor y Preston.",
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "247": {
+    "description": "Salvation Army Wheeling provides food pantry, utility assistance, clothing, and emergency aid for low-income Northern Panhandle residents including returning citizens seeking basic needs after release. Emergency assistance may include food, utility help, clothing, and case management with referrals to WV PATH, 211 West Virginia, and housing partners serving Ohio County. Low-income returning citizens should bring photo ID and proof of address when available. This resource supports West Virginia residents navigating reentry in Ohio, Marshall, Brooke, and Hancock counties.",
+    "description_es": "Salvation Army Wheeling ofrece despensa, asistencia de servicios, ropa y ayuda de emergencia para residentes de bajos ingresos del Panhandle Norte incluidos ciudadanos que regresan. La asistencia de emergencia puede incluir alimentos, ayuda con servicios, ropa y manejo de casos con referencias a WV PATH, 211 West Virginia y aliados de vivienda en Ohio County. Este recurso apoya a residentes de Virginia Occidental en reinserción en los condados Ohio, Marshall, Brooke y Hancock.",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "248": {
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "249": {
+    "description": "Community Action Agency serving southern coalfield counties with emergency utility assistance, weatherization, food support, and case management for low-income families including returning citizens. Emergency assistance may include food, utility help, clothing, and case management with referrals to WV PATH, 211 West Virginia, and housing partners serving Raleigh County. Low-income returning citizens should bring photo ID and proof of address when available. This resource supports West Virginia residents navigating reentry in 11 West Virginia counties.",
+    "description_es": "Agencia de Acción Comunitaria sirviendo condados carboníferos del sur con asistencia de emergencia para servicios, climatización, apoyo alimentario y manejo de casos incluidos ciudadanos que regresan. La asistencia de emergencia puede incluir alimentos, ayuda con servicios, ropa y manejo de casos con referencias a WV PATH, 211 West Virginia y aliados de vivienda en Raleigh County. Este recurso apoya a residentes de Virginia Occidental en reinserción en 11 condados de Virginia Occidental.",
+    "services": "Clothing assistance|Basic needs assistance|Rent and utility assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "250": {
+    "services": "Support groups|Substance use treatment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "251": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "252": {
+    "intake_signals": ""
+  }
+}

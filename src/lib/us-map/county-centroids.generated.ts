@@ -9,6 +9,54 @@ export interface CountyCentroid {
 
 export const COUNTY_CENTROIDS = [
   {
+    "state": "Illinois",
+    "county": "Bond",
+    "lon": -89.47732,
+    "lat": 38.89536
+  },
+  {
+    "state": "Illinois",
+    "county": "Brown",
+    "lon": -90.66626,
+    "lat": 39.94049
+  },
+  {
+    "state": "Illinois",
+    "county": "Champaign",
+    "lon": -88.28551,
+    "lat": 40.20632
+  },
+  {
+    "state": "Illinois",
+    "county": "Coles",
+    "lon": -88.21134,
+    "lat": 39.53381
+  },
+  {
+    "state": "Illinois",
+    "county": "Cumberland",
+    "lon": -88.28455,
+    "lat": 39.26058
+  },
+  {
+    "state": "Illinois",
+    "county": "Effingham",
+    "lon": -88.57554,
+    "lat": 39.08135
+  },
+  {
+    "state": "Illinois",
+    "county": "Franklin",
+    "lon": -88.90896,
+    "lat": 37.9371
+  },
+  {
+    "state": "Illinois",
+    "county": "Hamilton",
+    "lon": -88.5063,
+    "lat": 37.99889
+  },
+  {
     "state": "Indiana",
     "county": "Gibson",
     "lon": -87.61695,
@@ -97,6 +145,102 @@ export const COUNTY_CENTROIDS = [
     "county": "Whitley",
     "lon": -85.55208,
     "lat": 41.15335
+  },
+  {
+    "state": "Illinois",
+    "county": "Henry",
+    "lon": -90.08951,
+    "lat": 41.34765
+  },
+  {
+    "state": "Illinois",
+    "county": "Jackson",
+    "lon": -89.4427,
+    "lat": 37.71406
+  },
+  {
+    "state": "Illinois",
+    "county": "Jasper",
+    "lon": -88.15683,
+    "lat": 39.01928
+  },
+  {
+    "state": "Illinois",
+    "county": "Kane",
+    "lon": -88.35177,
+    "lat": 41.88187
+  },
+  {
+    "state": "Illinois",
+    "county": "Lee",
+    "lon": -89.37233,
+    "lat": 41.705
+  },
+  {
+    "state": "Illinois",
+    "county": "Logan",
+    "lon": -89.33739,
+    "lat": 40.13175
+  },
+  {
+    "state": "Illinois",
+    "county": "Marion",
+    "lon": -88.99401,
+    "lat": 38.59931
+  },
+  {
+    "state": "Illinois",
+    "county": "Menard",
+    "lon": -89.79219,
+    "lat": 40.05331
+  },
+  {
+    "state": "Illinois",
+    "county": "Moultrie",
+    "lon": -88.64393,
+    "lat": 39.62645
+  },
+  {
+    "state": "Illinois",
+    "county": "Perry",
+    "lon": -89.34072,
+    "lat": 38.11525
+  },
+  {
+    "state": "Illinois",
+    "county": "Putnam",
+    "lon": -89.34497,
+    "lat": 41.19233
+  },
+  {
+    "state": "Illinois",
+    "county": "Schuyler",
+    "lon": -90.61266,
+    "lat": 40.14476
+  },
+  {
+    "state": "Illinois",
+    "county": "Stark",
+    "lon": -89.78723,
+    "lat": 41.12218
+  },
+  {
+    "state": "Illinois",
+    "county": "Tazewell",
+    "lon": -89.5421,
+    "lat": 40.51808
+  },
+  {
+    "state": "Illinois",
+    "county": "Washington",
+    "lon": -89.43108,
+    "lat": 38.39925
+  },
+  {
+    "state": "Illinois",
+    "county": "Woodford",
+    "lon": -89.19105,
+    "lat": 40.74802
   },
   {
     "state": "Indiana",
@@ -657,6 +801,120 @@ export const COUNTY_CENTROIDS = [
     "lat": 36.18052
   },
   {
+    "state": "West Virginia",
+    "county": "Barbour",
+    "lon": -80.04196,
+    "lat": 39.13814
+  },
+  {
+    "state": "West Virginia",
+    "county": "Braxton",
+    "lon": -80.72135,
+    "lat": 38.67539
+  },
+  {
+    "state": "West Virginia",
+    "county": "Calhoun",
+    "lon": -81.08636,
+    "lat": 38.79039
+  },
+  {
+    "state": "West Virginia",
+    "county": "Gilmer",
+    "lon": -80.81808,
+    "lat": 38.94249
+  },
+  {
+    "state": "West Virginia",
+    "county": "Kanawha",
+    "lon": -81.54113,
+    "lat": 38.32679
+  },
+  {
+    "state": "West Virginia",
+    "county": "Marion",
+    "lon": -80.28359,
+    "lat": 39.49075
+  },
+  {
+    "state": "West Virginia",
+    "county": "Monongalia",
+    "lon": -80.06381,
+    "lat": 39.63754
+  },
+  {
+    "state": "West Virginia",
+    "county": "Putnam",
+    "lon": -81.88343,
+    "lat": 38.50523
+  },
+  {
+    "state": "West Virginia",
+    "county": "Summers",
+    "lon": -80.86562,
+    "lat": 37.65688
+  },
+  {
+    "state": "West Virginia",
+    "county": "Webster",
+    "lon": -80.42927,
+    "lat": 38.52479
+  },
+  {
+    "state": "Illinois",
+    "county": "Alexander",
+    "lon": -89.29749,
+    "lat": 37.08786
+  },
+  {
+    "state": "Illinois",
+    "county": "Boone",
+    "lon": -88.78348,
+    "lat": 42.39653
+  },
+  {
+    "state": "Illinois",
+    "county": "Bureau",
+    "lon": -89.60468,
+    "lat": 41.3254
+  },
+  {
+    "state": "Illinois",
+    "county": "Carroll",
+    "lon": -90.11089,
+    "lat": 42.07051
+  },
+  {
+    "state": "Illinois",
+    "county": "Clark",
+    "lon": -87.65527,
+    "lat": 39.33705
+  },
+  {
+    "state": "Illinois",
+    "county": "Crawford",
+    "lon": -87.63848,
+    "lat": 38.98058
+  },
+  {
+    "state": "Illinois",
+    "county": "DeKalb",
+    "lon": -88.72092,
+    "lat": 41.89239
+  },
+  {
+    "state": "Illinois",
+    "county": "Douglas",
+    "lon": -88.22189,
+    "lat": 39.77655
+  },
+  {
+    "state": "Illinois",
+    "county": "DuPage",
+    "lon": -88.10192,
+    "lat": 41.87583
+  },
+  {
     "state": "Indiana",
     "county": "Orange",
     "lon": -86.44871,
@@ -739,6 +997,36 @@ export const COUNTY_CENTROIDS = [
     "county": "White",
     "lon": -86.8344,
     "lat": 40.76203
+  },
+  {
+    "state": "Illinois",
+    "county": "Edwards",
+    "lon": -88.0113,
+    "lat": 38.34427
+  },
+  {
+    "state": "Illinois",
+    "county": "Fayette",
+    "lon": -89.02126,
+    "lat": 39.07476
+  },
+  {
+    "state": "Illinois",
+    "county": "Ford",
+    "lon": -88.15407,
+    "lat": 40.68259
+  },
+  {
+    "state": "Illinois",
+    "county": "Fulton",
+    "lon": -90.26265,
+    "lat": 40.56056
+  },
+  {
+    "state": "Illinois",
+    "county": "Grundy",
+    "lon": -88.35029,
+    "lat": 41.23828
   },
   {
     "state": "Indiana",
@@ -1443,6 +1731,12 @@ export const COUNTY_CENTROIDS = [
     "lat": 44.32283
   },
   {
+    "state": "Illinois",
+    "county": "Mercer",
+    "lon": -90.83812,
+    "lat": 41.16141
+  },
+  {
     "state": "Michigan",
     "county": "Jackson",
     "lon": -84.36594,
@@ -1599,6 +1893,72 @@ export const COUNTY_CENTROIDS = [
     "lat": 40.5901
   },
   {
+    "state": "Illinois",
+    "county": "Jefferson",
+    "lon": -88.92201,
+    "lat": 38.28352
+  },
+  {
+    "state": "Illinois",
+    "county": "Kankakee",
+    "lon": -87.84415,
+    "lat": 41.11563
+  },
+  {
+    "state": "Illinois",
+    "county": "Kendall",
+    "lon": -88.3953,
+    "lat": 41.62206
+  },
+  {
+    "state": "Illinois",
+    "county": "LaSalle",
+    "lon": -88.95183,
+    "lat": 41.33815
+  },
+  {
+    "state": "Illinois",
+    "county": "Lawrence",
+    "lon": -87.62564,
+    "lat": 38.7048
+  },
+  {
+    "state": "Illinois",
+    "county": "Livingston",
+    "lon": -88.52446,
+    "lat": 40.88165
+  },
+  {
+    "state": "Illinois",
+    "county": "McDonough",
+    "lon": -90.74048,
+    "lat": 40.53399
+  },
+  {
+    "state": "Illinois",
+    "county": "McHenry",
+    "lon": -88.36646,
+    "lat": 42.38052
+  },
+  {
+    "state": "Illinois",
+    "county": "Macoupin",
+    "lon": -89.8551,
+    "lat": 39.25188
+  },
+  {
+    "state": "Illinois",
+    "county": "Mason",
+    "lon": -89.95646,
+    "lat": 40.21114
+  },
+  {
+    "state": "Illinois",
+    "county": "Massac",
+    "lon": -88.66177,
+    "lat": 37.15185
+  },
+  {
     "state": "Kentucky",
     "county": "Pendleton",
     "lon": -84.32122,
@@ -1693,6 +2053,90 @@ export const COUNTY_CENTROIDS = [
     "county": "Bullitt",
     "lon": -85.6924,
     "lat": 38.00244
+  },
+  {
+    "state": "Illinois",
+    "county": "Monroe",
+    "lon": -90.23432,
+    "lat": 38.28155
+  },
+  {
+    "state": "Illinois",
+    "county": "Morgan",
+    "lon": -90.34866,
+    "lat": 39.73116
+  },
+  {
+    "state": "Illinois",
+    "county": "Ogle",
+    "lon": -89.3535,
+    "lat": 42.04496
+  },
+  {
+    "state": "Illinois",
+    "county": "Peoria",
+    "lon": -89.82006,
+    "lat": 40.79517
+  },
+  {
+    "state": "Illinois",
+    "county": "Piatt",
+    "lon": -88.56129,
+    "lat": 39.9892
+  },
+  {
+    "state": "Illinois",
+    "county": "Pulaski",
+    "lon": -89.03995,
+    "lat": 37.22079
+  },
+  {
+    "state": "Illinois",
+    "county": "Richland",
+    "lon": -88.03162,
+    "lat": 38.65133
+  },
+  {
+    "state": "Illinois",
+    "county": "Saline",
+    "lon": -88.5106,
+    "lat": 37.83688
+  },
+  {
+    "state": "Illinois",
+    "county": "Sangamon",
+    "lon": -89.55287,
+    "lat": 39.74666
+  },
+  {
+    "state": "Illinois",
+    "county": "Stephenson",
+    "lon": -89.62824,
+    "lat": 42.47495
+  },
+  {
+    "state": "Illinois",
+    "county": "Vermilion",
+    "lon": -87.58826,
+    "lat": 40.18478
+  },
+  {
+    "state": "Illinois",
+    "county": "Wayne",
+    "lon": -88.44374,
+    "lat": 38.44797
+  },
+  {
+    "state": "Illinois",
+    "county": "Whiteside",
+    "lon": -90.02999,
+    "lat": 41.73977
+  },
+  {
+    "state": "Illinois",
+    "county": "Will",
+    "lon": -87.84582,
+    "lat": 41.48968
   },
   {
     "state": "Indiana",
@@ -1791,6 +2235,180 @@ export const COUNTY_CENTROIDS = [
     "lat": 37.31326
   },
   {
+    "state": "West Virginia",
+    "county": "Grant",
+    "lon": -79.25881,
+    "lat": 39.12124
+  },
+  {
+    "state": "West Virginia",
+    "county": "Greenbrier",
+    "lon": -80.3279,
+    "lat": 37.9122
+  },
+  {
+    "state": "West Virginia",
+    "county": "Hampshire",
+    "lon": -78.50365,
+    "lat": 39.27586
+  },
+  {
+    "state": "West Virginia",
+    "county": "Harrison",
+    "lon": -80.40341,
+    "lat": 39.29913
+  },
+  {
+    "state": "West Virginia",
+    "county": "Jefferson",
+    "lon": -77.80073,
+    "lat": 39.30402
+  },
+  {
+    "state": "West Virginia",
+    "county": "Logan",
+    "lon": -81.88625,
+    "lat": 37.79864
+  },
+  {
+    "state": "West Virginia",
+    "county": "Marshall",
+    "lon": -80.66739,
+    "lat": 39.91363
+  },
+  {
+    "state": "West Virginia",
+    "county": "Mason",
+    "lon": -82.06019,
+    "lat": 38.80909
+  },
+  {
+    "state": "West Virginia",
+    "county": "Mingo",
+    "lon": -82.06346,
+    "lat": 37.63524
+  },
+  {
+    "state": "West Virginia",
+    "county": "Morgan",
+    "lon": -78.28333,
+    "lat": 39.60222
+  },
+  {
+    "state": "West Virginia",
+    "county": "Ohio",
+    "lon": -80.65613,
+    "lat": 40.09614
+  },
+  {
+    "state": "West Virginia",
+    "county": "Pocahontas",
+    "lon": -79.90434,
+    "lat": 38.31402
+  },
+  {
+    "state": "West Virginia",
+    "county": "Randolph",
+    "lon": -79.81379,
+    "lat": 38.79394
+  },
+  {
+    "state": "West Virginia",
+    "county": "Roane",
+    "lon": -81.33605,
+    "lat": 38.70829
+  },
+  {
+    "state": "West Virginia",
+    "county": "Taylor",
+    "lon": -80.01773,
+    "lat": 39.36374
+  },
+  {
+    "state": "West Virginia",
+    "county": "Tucker",
+    "lon": -79.56491,
+    "lat": 39.12452
+  },
+  {
+    "state": "West Virginia",
+    "county": "Upshur",
+    "lon": -80.2376,
+    "lat": 38.95015
+  },
+  {
+    "state": "West Virginia",
+    "county": "Wayne",
+    "lon": -82.50054,
+    "lat": 38.16009
+  },
+  {
+    "state": "West Virginia",
+    "county": "Wetzel",
+    "lon": -80.64671,
+    "lat": 39.57292
+  },
+  {
+    "state": "West Virginia",
+    "county": "Wirt",
+    "lon": -81.37469,
+    "lat": 39.01397
+  },
+  {
+    "state": "West Virginia",
+    "county": "Wood",
+    "lon": -81.5215,
+    "lat": 39.27139
+  },
+  {
+    "state": "West Virginia",
+    "county": "Raleigh",
+    "lon": -81.26374,
+    "lat": 37.8078
+  },
+  {
+    "state": "West Virginia",
+    "county": "Doddridge",
+    "lon": -80.67151,
+    "lat": 39.26737
+  },
+  {
+    "state": "West Virginia",
+    "county": "Hancock",
+    "lon": -80.5754,
+    "lat": 40.54832
+  },
+  {
+    "state": "West Virginia",
+    "county": "Lincoln",
+    "lon": -82.05704,
+    "lat": 38.19612
+  },
+  {
+    "state": "West Virginia",
+    "county": "Mercer",
+    "lon": -81.06974,
+    "lat": 37.35366
+  },
+  {
+    "state": "West Virginia",
+    "county": "Pleasants",
+    "lon": -81.22877,
+    "lat": 39.36744
+  },
+  {
+    "state": "West Virginia",
+    "county": "Ritchie",
+    "lon": -81.09718,
+    "lat": 39.19033
+  },
+  {
+    "state": "West Virginia",
+    "county": "Tyler",
+    "lon": -80.93322,
+    "lat": 39.46291
+  },
+  {
     "state": "Kentucky",
     "county": "Adair",
     "lon": -85.26317,
@@ -1879,6 +2497,12 @@ export const COUNTY_CENTROIDS = [
     "county": "Champaign",
     "lon": -83.71135,
     "lat": 40.16293
+  },
+  {
+    "state": "West Virginia",
+    "county": "Wyoming",
+    "lon": -81.56259,
+    "lat": 37.62625
   },
   {
     "state": "Kentucky",
@@ -2055,6 +2679,48 @@ export const COUNTY_CENTROIDS = [
     "lat": 36.52495
   },
   {
+    "state": "Illinois",
+    "county": "Adams",
+    "lon": -91.29571,
+    "lat": 39.94043
+  },
+  {
+    "state": "Illinois",
+    "county": "Cass",
+    "lon": -90.29497,
+    "lat": 40.00462
+  },
+  {
+    "state": "Illinois",
+    "county": "Clay",
+    "lon": -88.47616,
+    "lat": 38.76789
+  },
+  {
+    "state": "Illinois",
+    "county": "De Witt",
+    "lon": -88.83202,
+    "lat": 40.20531
+  },
+  {
+    "state": "Illinois",
+    "county": "Edgar",
+    "lon": -87.59577,
+    "lat": 39.65743
+  },
+  {
+    "state": "Illinois",
+    "county": "Greene",
+    "lon": -90.41889,
+    "lat": 39.33971
+  },
+  {
+    "state": "Illinois",
+    "county": "Hardin",
+    "lon": -88.21624,
+    "lat": 37.50521
+  },
+  {
     "state": "Indiana",
     "county": "Fulton",
     "lon": -86.12095,
@@ -2137,6 +2803,72 @@ export const COUNTY_CENTROIDS = [
     "county": "Vermillion",
     "lon": -87.502,
     "lat": 39.88714
+  },
+  {
+    "state": "Illinois",
+    "county": "Henderson",
+    "lon": -91.00785,
+    "lat": 40.81228
+  },
+  {
+    "state": "Illinois",
+    "county": "Iroquois",
+    "lon": -87.6207,
+    "lat": 40.74573
+  },
+  {
+    "state": "Illinois",
+    "county": "Johnson",
+    "lon": -88.90393,
+    "lat": 37.46186
+  },
+  {
+    "state": "Illinois",
+    "county": "Knox",
+    "lon": -90.20541,
+    "lat": 40.94621
+  },
+  {
+    "state": "Illinois",
+    "county": "McLean",
+    "lon": -88.84521,
+    "lat": 40.5231
+  },
+  {
+    "state": "Illinois",
+    "county": "Marshall",
+    "lon": -89.38616,
+    "lat": 41.06365
+  },
+  {
+    "state": "Illinois",
+    "county": "Montgomery",
+    "lon": -89.48984,
+    "lat": 39.15887
+  },
+  {
+    "state": "Illinois",
+    "county": "Pope",
+    "lon": -88.48652,
+    "lat": 37.27962
+  },
+  {
+    "state": "Illinois",
+    "county": "St. Clair",
+    "lon": -90.09549,
+    "lat": 38.53487
+  },
+  {
+    "state": "Illinois",
+    "county": "Warren",
+    "lon": -90.49346,
+    "lat": 40.72339
+  },
+  {
+    "state": "Illinois",
+    "county": "Williamson",
+    "lon": -88.90308,
+    "lat": 37.67402
   },
   {
     "state": "Indiana",
@@ -2265,6 +2997,42 @@ export const COUNTY_CENTROIDS = [
     "lat": 36.70904
   },
   {
+    "state": "West Virginia",
+    "county": "Berkeley",
+    "lon": -77.97831,
+    "lat": 39.50646
+  },
+  {
+    "state": "West Virginia",
+    "county": "Boone",
+    "lon": -81.68822,
+    "lat": 37.99539
+  },
+  {
+    "state": "West Virginia",
+    "county": "Brooke",
+    "lon": -80.58645,
+    "lat": 40.29914
+  },
+  {
+    "state": "West Virginia",
+    "county": "Cabell",
+    "lon": -82.26504,
+    "lat": 38.46857
+  },
+  {
+    "state": "West Virginia",
+    "county": "Clay",
+    "lon": -81.0797,
+    "lat": 38.47732
+  },
+  {
+    "state": "West Virginia",
+    "county": "Fayette",
+    "lon": -81.09922,
+    "lat": 38.03086
+  },
+  {
     "state": "Indiana",
     "county": "Warren",
     "lon": -87.3801,
@@ -2275,6 +3043,18 @@ export const COUNTY_CENTROIDS = [
     "county": "Wayne",
     "lon": -84.86888,
     "lat": 39.84473
+  },
+  {
+    "state": "Illinois",
+    "county": "Gallatin",
+    "lon": -88.19632,
+    "lat": 37.77773
+  },
+  {
+    "state": "Illinois",
+    "county": "Hancock",
+    "lon": -91.31142,
+    "lat": 40.46084
   },
   {
     "state": "Indiana",
@@ -2377,6 +3157,36 @@ export const COUNTY_CENTROIDS = [
     "county": "Chester",
     "lon": -88.52738,
     "lat": 35.42425
+  },
+  {
+    "state": "Illinois",
+    "county": "Jersey",
+    "lon": -90.38958,
+    "lat": 39.05758
+  },
+  {
+    "state": "Illinois",
+    "county": "Jo Daviess",
+    "lon": -90.35165,
+    "lat": 42.44362
+  },
+  {
+    "state": "Illinois",
+    "county": "Lake",
+    "lon": -87.85452,
+    "lat": 42.32425
+  },
+  {
+    "state": "Illinois",
+    "county": "Macon",
+    "lon": -89.03497,
+    "lat": 39.81264
+  },
+  {
+    "state": "Illinois",
+    "county": "Madison",
+    "lon": -89.96869,
+    "lat": 38.85151
   },
   {
     "state": "Tennessee",
@@ -2679,10 +3489,34 @@ export const COUNTY_CENTROIDS = [
     "lat": 44.84701
   },
   {
+    "state": "Illinois",
+    "county": "Calhoun",
+    "lon": -90.63253,
+    "lat": 39.05514
+  },
+  {
+    "state": "Illinois",
+    "county": "Christian",
+    "lon": -89.2436,
+    "lat": 39.65457
+  },
+  {
+    "state": "Illinois",
+    "county": "Clinton",
+    "lon": -89.44444,
+    "lat": 38.61592
+  },
+  {
     "state": "Indiana",
     "county": "Clinton",
     "lon": -86.42573,
     "lat": 40.26893
+  },
+  {
+    "state": "Illinois",
+    "county": "Cook",
+    "lon": -87.74712,
+    "lat": 41.93659
   },
   {
     "state": "Indiana",
@@ -2739,10 +3573,94 @@ export const COUNTY_CENTROIDS = [
     "lat": 41.66588
   },
   {
+    "state": "Illinois",
+    "county": "Pike",
+    "lon": -91.00038,
+    "lat": 39.65294
+  },
+  {
+    "state": "Illinois",
+    "county": "Randolph",
+    "lon": -89.89128,
+    "lat": 37.97249
+  },
+  {
+    "state": "Illinois",
+    "county": "Rock Island",
+    "lon": -90.4851,
+    "lat": 41.5607
+  },
+  {
+    "state": "Illinois",
+    "county": "Scott",
+    "lon": -90.46924,
+    "lat": 39.6391
+  },
+  {
+    "state": "Illinois",
+    "county": "Shelby",
+    "lon": -88.83813,
+    "lat": 39.35017
+  },
+  {
+    "state": "Illinois",
+    "county": "Union",
+    "lon": -89.39351,
+    "lat": 37.44799
+  },
+  {
+    "state": "Illinois",
+    "county": "Wabash",
+    "lon": -87.85287,
+    "lat": 38.43565
+  },
+  {
+    "state": "Illinois",
+    "county": "White",
+    "lon": -88.03268,
+    "lat": 38.11289
+  },
+  {
+    "state": "Illinois",
+    "county": "Winnebago",
+    "lon": -89.13614,
+    "lat": 42.45144
+  },
+  {
     "state": "Kentucky",
     "county": "Hickman",
     "lon": -89.02082,
     "lat": 36.64573
+  },
+  {
+    "state": "West Virginia",
+    "county": "McDowell",
+    "lon": -81.76099,
+    "lat": 37.3436
+  },
+  {
+    "state": "West Virginia",
+    "county": "Mineral",
+    "lon": -78.92768,
+    "lat": 39.4671
+  },
+  {
+    "state": "West Virginia",
+    "county": "Monroe",
+    "lon": -80.43847,
+    "lat": 37.5606
+  },
+  {
+    "state": "West Virginia",
+    "county": "Pendleton",
+    "lon": -79.28548,
+    "lat": 38.572
+  },
+  {
+    "state": "West Virginia",
+    "county": "Preston",
+    "lon": -79.63477,
+    "lat": 39.42966
   },
   {
     "state": "Kentucky",
@@ -2761,6 +3679,12 @@ export const COUNTY_CENTROIDS = [
     "county": "Trousdale",
     "lon": -86.16152,
     "lat": 36.36473
+  },
+  {
+    "state": "West Virginia",
+    "county": "Nicholas",
+    "lon": -80.8742,
+    "lat": 38.33467
   },
   {
     "state": "Kentucky",
@@ -2875,5 +3799,23 @@ export const COUNTY_CENTROIDS = [
     "county": "Harlan",
     "lon": -83.04361,
     "lat": 36.89464
+  },
+  {
+    "state": "West Virginia",
+    "county": "Hardy",
+    "lon": -78.79107,
+    "lat": 38.94227
+  },
+  {
+    "state": "West Virginia",
+    "county": "Jackson",
+    "lon": -81.72231,
+    "lat": 38.88828
+  },
+  {
+    "state": "West Virginia",
+    "county": "Lewis",
+    "lon": -80.47726,
+    "lat": 38.87695
   }
 ] as const;

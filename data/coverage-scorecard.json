@@ -1,11 +1,11 @@
 {
-  "total_counties": 478,
-  "tier_a_slots": 3824,
-  "tier_a_filled": 2190,
-  "tier_a_fill_rate": 0.5727,
-  "tier_a_fill_pct": 57.3,
-  "full_tier_a_counties": 13,
-  "weak_counties": 107,
+  "total_counties": 635,
+  "tier_a_slots": 5080,
+  "tier_a_filled": 3069,
+  "tier_a_fill_rate": 0.6041,
+  "tier_a_fill_pct": 60.4,
+  "full_tier_a_counties": 25,
+  "weak_counties": 124,
   "targets": {
     "floor_pct": 50.0,
     "target_90d_pct": 70.0,
@@ -40,9 +40,21 @@
     },
     "Michigan": {
       "counties": 83,
-      "tier_a_fill_rate": 0.5889,
-      "full_tier_a_counties": 0,
+      "tier_a_fill_rate": 0.631,
+      "full_tier_a_counties": 1,
       "weak_counties": 4
+    },
+    "Illinois": {
+      "counties": 102,
+      "tier_a_fill_rate": 0.6005,
+      "full_tier_a_counties": 2,
+      "weak_counties": 17
+    },
+    "West Virginia": {
+      "counties": 55,
+      "tier_a_fill_rate": 0.8205,
+      "full_tier_a_counties": 9,
+      "weak_counties": 0
     }
   },
   "status": "IN_PROGRESS",

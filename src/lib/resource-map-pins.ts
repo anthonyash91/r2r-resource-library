@@ -135,9 +135,9 @@ export function getActiveResourceMapStates(resources: Resource[]): Set<string> {
 }
 
 export function resourceMapPinRadius(resourceCount: number): number {
-  if (resourceCount <= 1) return 1.5;
-  if (resourceCount <= 3) return 1.75;
-  if (resourceCount <= 8) return 2;
-  if (resourceCount <= 20) return 2.25;
-  return 2.5;
+  if (resourceCount <= 1) return 1.25;
+  if (resourceCount <= 3) return 1.5;
+  if (resourceCount <= 8) return 1.75;
+  if (resourceCount <= 20) return 2;
+  return 2.25;
 }

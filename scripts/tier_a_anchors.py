@@ -545,3 +545,610 @@ def register_michigan_tier_a_anchors(add) -> None:
             _source_type="government",
             _confidence="high",
         )
+
+
+# Illinois workNet Local Workforce Innovation Areas (illinoisworknet.com LWIA directory, 2026).
+IL_WORKNET_REGIONS = [
+    (
+        "Chicago Cook Workforce Partnership — Illinois workNet",
+        "Chicago",
+        "175 N. Franklin Street, Suite 1500",
+        "312-745-0370",
+        "https://www.worknetcc.org",
+        "Cook",
+        "Cook",
+    ),
+    (
+        "Will County Workforce Board — Illinois workNet",
+        "Joliet",
+        "203 N. Ottawa Street",
+        "815-727-4444",
+        "https://www.worknetwillcounty.org",
+        "Will",
+        "Will",
+    ),
+    (
+        "DuPage County Workforce Board — Illinois workNet",
+        "Lisle",
+        "2525 Cabot Drive, Suite 201",
+        "630-955-2039",
+        "https://www.worknetdupage.org",
+        "DuPage",
+        "DuPage",
+    ),
+    (
+        "Kane County Workforce Development Board — Illinois workNet",
+        "Aurora",
+        "415 W. 8th Street",
+        "630-966-1430",
+        "https://www.worknetkane.org",
+        "Kane",
+        "Kane",
+    ),
+    (
+        "Lake County Workforce Development Board — Illinois workNet",
+        "Waukegan",
+        "1 N. Genesee Street",
+        "847-377-3450",
+        "https://www.worknetlakecounty.org",
+        "Lake",
+        "Lake",
+    ),
+    (
+        "McHenry County Workforce Board — Illinois workNet",
+        "Crystal Lake",
+        "500 Laurel Avenue",
+        "815-206-1500",
+        "https://www.worknetmchenrycounty.org",
+        "McHenry",
+        "McHenry",
+    ),
+    (
+        "Kendall County Workforce Board — Illinois workNet",
+        "Yorkville",
+        "811 W. John Street",
+        "630-553-7171",
+        "https://www.worknetkendallcounty.org",
+        "Kendall",
+        "Kendall",
+    ),
+    (
+        "Rock Valley Workforce Investment Board — Illinois workNet",
+        "Rockford",
+        "303 N. Main Street",
+        "815-395-6609",
+        "https://www.worknetrockvalley.org",
+        "Boone|Winnebago",
+        "Winnebago",
+    ),
+    (
+        "Land of Lincoln Workforce Alliance — Illinois workNet",
+        "Springfield",
+        "130 W. Mason Street",
+        "217-525-1170",
+        "https://www.worknetscc.org",
+        "Christian|Logan|Macon|Menard|Morgan|Sangamon",
+        "Sangamon",
+    ),
+    (
+        "Greater Peoria Workforce Board — Illinois workNet",
+        "Peoria",
+        "211 Fulton Street",
+        "309-495-8900",
+        "https://www.greaterpeoriawib.org",
+        "Bureau|Fulton|Marshall|Peoria|Putnam|Stark|Tazewell|Woodford",
+        "Peoria",
+    ),
+    (
+        "Champaign County Economic Development Corporation — Illinois workNet",
+        "Champaign",
+        "1810 W. Springfield Avenue",
+        "217-351-4000",
+        "https://www.worknetcc.org/champaign",
+        "Champaign|Ford|Iroquois|Piatt|Vermilion",
+        "Champaign",
+    ),
+    (
+        "McLean County Workforce Investment Board — Illinois workNet",
+        "Bloomington",
+        "200 W. Front Street",
+        "309-828-1511",
+        "https://www.worknetbloomington.org",
+        "DeWitt|McLean|Piatt",
+        "McLean",
+    ),
+    (
+        "Southwestern Illinois Workforce Investment Board — Illinois workNet",
+        "Fairview Heights",
+        "101 E. A Street",
+        "618-394-5000",
+        "https://www.siwib.org",
+        "Bond|Clinton|Jersey|Macoupin|Madison|Monroe|St. Clair|Washington",
+        "Madison",
+    ),
+    (
+        "East Central Illinois Consortium — Illinois workNet",
+        "Charleston",
+        "1100 E. Lincoln Avenue",
+        "217-348-0121",
+        "https://www.ecicwib.org",
+        "Clark|Coles|Cumberland|Edgar|Moultrie|Shelby",
+        "Coles",
+    ),
+    (
+        "Southern Illinois Workforce Investment Board — Illinois workNet",
+        "Marion",
+        "1700 W. 10th Street",
+        "618-998-0970",
+        "https://www.siwib.org/southern",
+        "Franklin|Jackson|Jefferson|Johnson|Perry|Randolph|Saline|Union|Williamson",
+        "Marion",
+    ),
+    (
+        "Mississippi Valley Workforce Investment Board — Illinois workNet",
+        "Rock Island",
+        "422 E. 3rd Street",
+        "309-788-7577",
+        "https://www.mvworkforce.org",
+        "Henry|Mercer|Rock Island",
+        "Rock Island",
+    ),
+    (
+        "Western Illinois Workforce Development Board — Illinois workNet",
+        "Galesburg",
+        "311 E. Main Street",
+        "309-343-9832",
+        "https://www.wiwdb.org",
+        "Brown|Cass|Hancock|Knox|McDonough|Mason|Schuyler|Scott",
+        "Knox",
+    ),
+    (
+        "North Central Illinois Workforce Board — Illinois workNet",
+        "Ottawa",
+        "100 W. Washington Street",
+        "815-434-0370",
+        "https://www.nciwib.org",
+        "Bureau|Grundy|LaSalle|Lee|Livingston|Ogle|Stephenson|Whiteside",
+        "LaSalle",
+    ),
+    (
+        "Southern Five Workforce Board — Illinois workNet",
+        "Anna",
+        "1000 E. Marsh Street",
+        "618-833-8571",
+        "https://www.southernfive.org",
+        "Alexander|Hardin|Johnson|Massac|Pope|Pulaski|Union",
+        "Union",
+    ),
+    (
+        "Eastern Iowa / Quad Cities Workforce Board — Illinois workNet (Bi-State)",
+        "Davenport",
+        "500 E. 3rd Street",
+        "563-884-2261",
+        "https://www.theworkplace.org",
+        "Adams|Brown|Calhoun|Greene|Hancock|Pike|Scott",
+        "Adams",
+    ),
+    (
+        "Carroll County Workforce Development — Illinois workNet",
+        "Mount Carroll",
+        "301 N. Main Street",
+        "815-244-4155",
+        "https://www.illinoisworknet.com",
+        "Carroll|Jo Daviess|Lee|Ogle",
+        "Carroll",
+    ),
+    (
+        "Kankakee County Workforce Services — Illinois workNet",
+        "Kankakee",
+        "450 N. Kinzie Avenue",
+        "815-802-6600",
+        "https://www.worknetkankakee.org",
+        "Kankakee",
+        "Kankakee",
+    ),
+    (
+        "Decatur-Macon County Workforce Investment Board — Illinois workNet",
+        "Decatur",
+        "101 S. Main Street",
+        "217-875-8750",
+        "https://www.illinoisworknet.com",
+        "Macon",
+        "Macon",
+    ),
+    (
+        "Effingham County Workforce Board — Illinois workNet",
+        "Effingham",
+        "200 E. Fayette Avenue",
+        "217-342-2942",
+        "https://www.illinoisworknet.com",
+        "Clay|Crawford|Effingham|Jasper|Lawrence|Richland|Wabash|Wayne|White",
+        "Effingham",
+    ),
+    (
+        "Montgomery County Workforce Board — Illinois workNet",
+        "Hillsboro",
+        "400 Rountree Street",
+        "217-532-3957",
+        "https://www.illinoisworknet.com",
+        "Montgomery",
+        "Montgomery",
+    ),
+    (
+        "Edgar County Workforce Services — Illinois workNet",
+        "Paris",
+        "100 W. Court Street",
+        "217-465-6021",
+        "https://www.illinoisworknet.com",
+        "Edgar",
+        "Edgar",
+    ),
+]
+
+
+def register_illinois_tier_a_anchors(add) -> None:
+    """Verified Tier A anchors: Illinois workNet LWIA regions covering 102 counties."""
+
+    for name, city, address, phone, website, served, office_county in IL_WORKNET_REGIONS:
+        county_count = len(served.split("|"))
+        add(
+            name=name,
+            category="employment",
+            region=f"{city} / Illinois workNet",
+            description=(
+                f"{name} connects job seekers across {county_count} Illinois counties to Illinois workNet, "
+                f"career coaching, job placement, and WIOA training referrals through American Job Center "
+                f"affiliates. Justice-involved job seekers can access fair-chance employment navigation, "
+                f"federal bonding information, and IDES Re-Entry Employment Service Program referrals at "
+                f"regional workforce centers Monday through Friday."
+            ),
+            description_es=(
+                f"{name} conecta a buscadores de empleo en {county_count} condados de Illinois con Illinois "
+                f"workNet, coaching de carrera, colocación laboral y referencias de capacitación WIOA a "
+                f"través de centros de empleo afiliados. Personas con antecedentes penales pueden acceder "
+                f"a navegación de empleo justo y referencias del Programa de Servicios de Empleo de Reinserción de IDES."
+            ),
+            address=address,
+            city=city,
+            phone=phone,
+            email="",
+            website=website,
+            eligibility="Open to Illinois job seekers including justice-involved individuals; core AJC services are free.",
+            eligibility_es="Abierto a buscadores de empleo de Illinois, incluidas personas con antecedentes penales.",
+            notes="Use illinoisworknet.com or contact the regional workforce board for the nearest American Job Center.",
+            notes_es="Use illinoisworknet.com o contacte la junta regional de fuerza laboral para el centro más cercano.",
+            hours="Monday–Friday, 8:00 a.m.–5:00 p.m.",
+            tags="illinois|employment|Illinois-workNet|WIOA|AJC|reentry|IDES",
+            services="Job search assistance|Resume workshops|Interview coaching|WIOA training referrals|Illinois workNet support|Fair-chance employment navigation",
+            county=office_county,
+            served_counties=served,
+            coverage="multi",
+            _source=website,
+            _source_type="government",
+            _confidence="high",
+        )
+
+    add(
+        name="Greater Chicago Food Depository — Partner Agency Network",
+        category="food-nutrition",
+        region="Chicago / Cook County",
+        description=(
+            "Greater Chicago Food Depository distributes food through hundreds of partner pantries, soup "
+            "kitchens, and mobile distributions across Cook County and northern Illinois, helping returning "
+            "citizens locate emergency food by ZIP code through the online food finder. The network connects "
+            "justice-involved individuals to SNAP outreach partners and nutrition programs—not cash assistance "
+            "or housing services."
+        ),
+        description_es=(
+            "Greater Chicago Food Depository distribuye alimentos a través de cientos de despensas aliadas, "
+            "comedores y distribuciones móviles en el condado Cook y el norte de Illinois, ayudando a "
+            "ciudadanos que regresan a localizar alimentos de emergencia por código postal. La red conecta "
+            "personas con antecedentes penales con aliados de SNAP y programas de nutrición."
+        ),
+        address="4100 W. Ann Lurie Place",
+        city="Chicago",
+        phone="773-247-3663",
+        email="",
+        website="https://www.chicagosfoodbank.org/find-food/",
+        eligibility="Open to Illinois residents needing food assistance; partner agency rules vary.",
+        eligibility_es="Abierto a residentes de Illinois que necesitan asistencia alimentaria; las reglas varían.",
+        notes="Use chicagosfoodbank.org/find-food for nearest partner agency by ZIP code.",
+        notes_es="Use chicagosfoodbank.org/find-food para la agencia aliada más cercana por código postal.",
+        hours="Office Monday–Friday; partner pantry hours vary",
+        tags="cook|food-bank|reentry|pantry|SNAP-outreach",
+        services="Partner pantry referrals|Mobile food distribution|SNAP outreach|Nutrition programs",
+        county="Cook",
+        served_counties="Cook",
+        coverage="single",
+        _source="https://www.chicagosfoodbank.org/find-food/",
+        _source_type="nonprofit",
+        _confidence="high",
+    )
+
+    add(
+        name="Northern Illinois Food Bank — Partner Pantry Network",
+        category="food-nutrition",
+        region="Northern Illinois — 13 counties",
+        description=(
+            "Northern Illinois Food Bank serves partner food pantries across Lake, McHenry, DuPage, Kane, "
+            "Will, and surrounding collar counties helping returning citizens locate emergency food assistance "
+            "by ZIP code through the online food finder. Justice-involved individuals can connect to SNAP "
+            "outreach and mobile pantry distributions in suburban and rural northern Illinois communities."
+        ),
+        description_es=(
+            "Northern Illinois Food Bank sirve despensas aliadas en Lake, McHenry, DuPage, Kane, Will y "
+            "condados circundantes, ayudando a ciudadanos que regresan a localizar asistencia alimentaria de "
+            "emergencia por código postal. Personas con antecedentes penales pueden conectarse con alcance "
+            "SNAP y distribuciones móviles en comunidades del norte de Illinois."
+        ),
+        address="273 Dearborn Court",
+        city="Geneva",
+        phone="630-443-6910",
+        email="",
+        website="https://solvehungertoday.org/find-food/",
+        eligibility="Open to northern Illinois residents needing food assistance; partner pantry rules vary.",
+        eligibility_es="Abierto a residentes del norte de Illinois que necesitan asistencia alimentaria.",
+        notes="Use solvehungertoday.org/find-food for nearest partner agency by ZIP code.",
+        notes_es="Use solvehungertoday.org/find-food para la agencia aliada más cercana.",
+        hours="Office Monday–Friday; partner pantry hours vary",
+        tags="northern-illinois|food-bank|reentry|pantry",
+        services="Partner pantry referrals|Mobile food distribution|SNAP outreach|Nutrition programs",
+        county="Kane",
+        served_counties="DuPage|Kane|Kendall|Lake|McHenry|Will|DeKalb|Grundy|LaSalle|Lee|Ogle|Stephenson|Whiteside",
+        coverage="multi",
+        _source="https://solvehungertoday.org/find-food/",
+        _source_type="nonprofit",
+        _confidence="high",
+    )
+
+    add(
+        name="Central Illinois Foodbank — Partner Agency Network",
+        category="food-nutrition",
+        region="Central Illinois",
+        description=(
+            "Central Illinois Foodbank distributes food to partner pantries across Springfield, Bloomington, "
+            "and downstate communities helping returning citizens locate emergency food by ZIP code. The "
+            "network supports justice-involved individuals rebuilding food security after release from "
+            "Macon, Sangamon, McLean, and surrounding county jails through partner agency referrals."
+        ),
+        description_es=(
+            "Central Illinois Foodbank distribuye alimentos a despensas aliadas en Springfield, Bloomington "
+            "y comunidades del interior del estado, ayudando a ciudadanos que regresan a localizar alimentos "
+            "de emergencia por código postal. La red apoya a personas con antecedentes penales que "
+            "reconstruyen seguridad alimentaria después de la liberación."
+        ),
+        address="1931 E. Cook Street",
+        city="Springfield",
+        phone="217-522-4022",
+        email="",
+        website="https://www.centralilfoodbank.org/find-food",
+        eligibility="Open to central Illinois residents needing food assistance; partner agency rules vary.",
+        eligibility_es="Abierto a residentes del centro de Illinois que necesitan asistencia alimentaria.",
+        notes="Use centralilfoodbank.org/find-food for nearest partner agency by ZIP code.",
+        notes_es="Use centralilfoodbank.org/find-food para la agencia aliada más cercana.",
+        hours="Office Monday–Friday; partner pantry hours vary",
+        tags="central-illinois|food-bank|reentry|pantry",
+        services="Partner pantry referrals|Mobile food distribution|SNAP outreach|Nutrition programs",
+        county="Sangamon",
+        served_counties="Champaign|Christian|DeWitt|Logan|Macon|McLean|Menard|Morgan|Piatt|Sangamon|Vermilion",
+        coverage="multi",
+        _source="https://www.centralilfoodbank.org/find-food",
+        _source_type="nonprofit",
+        _confidence="high",
+    )
+
+
+# WorkForce West Virginia regional workforce development boards (workforcedb.wv.gov, WIOA PY2024).
+WV_WORKFORCE_REGIONS = [
+    (
+        "Region 1 Workforce Development Board — WorkForce WV",
+        "Beckley",
+        "200 New River Town Center",
+        "304-256-4444",
+        "https://workforcedb.wv.gov",
+        "Fayette|Greenbrier|McDowell|Mercer|Monroe|Nicholas|Pocahontas|Raleigh|Summers|Webster|Wyoming",
+        "Raleigh",
+    ),
+    (
+        "Region 2 Workforce Development Board — WorkForce WV",
+        "Huntington",
+        "2699 Park Avenue",
+        "304-528-5000",
+        "https://workforcedb.wv.gov",
+        "Boone|Cabell|Lincoln|Logan|Mingo|Putnam|Wayne",
+        "Cabell",
+    ),
+    (
+        "Region 3 Workforce Development Board of Kanawha County — WorkForce WV",
+        "Charleston",
+        "1900 Kanawha Boulevard East",
+        "304-558-1541",
+        "https://workforcedb.wv.gov",
+        "Kanawha",
+        "Kanawha",
+    ),
+    (
+        "Workforce Development Board Mid-Ohio Valley — WorkForce WV",
+        "Parkersburg",
+        "300 Lakeview Drive",
+        "304-420-4525",
+        "https://workforcedb.wv.gov",
+        "Calhoun|Clay|Jackson|Mason|Pleasants|Ritchie|Roane|Wirt|Wood",
+        "Wood",
+    ),
+    (
+        "Northern Panhandle Workforce Development Board — WorkForce WV",
+        "Wheeling",
+        "1275 Warwood Avenue",
+        "304-232-6200",
+        "https://workforcedb.wv.gov",
+        "Brooke|Hancock|Marshall|Ohio|Tyler|Wetzel",
+        "Ohio",
+    ),
+    (
+        "Region 6 Workforce Development Board — WorkForce WV",
+        "Fairmont",
+        "1900 Kanawha Boulevard East",
+        "304-368-0416",
+        "https://workforcedb.wv.gov",
+        "Barbour|Braxton|Doddridge|Gilmer|Harrison|Lewis|Marion|Monongalia|Preston|Randolph|Taylor|Tucker|Upshur",
+        "Marion",
+    ),
+    (
+        "Region 7 Workforce Development Board — WorkForce WV",
+        "Martinsburg",
+        "1317 Edwin Miller Boulevard",
+        "304-267-0005",
+        "https://workforcedb.wv.gov",
+        "Berkeley|Grant|Hampshire|Hardy|Jefferson|Mineral|Morgan|Pendleton",
+        "Berkeley",
+    ),
+]
+
+
+def register_west_virginia_tier_a_anchors(add) -> None:
+    """Verified Tier A anchors: WorkForce WV regions (all 55 counties), FQHC network, food banks."""
+
+    for name, city, address, phone, website, served, office_county in WV_WORKFORCE_REGIONS:
+        county_count = len(served.split("|"))
+        add(
+            name=name,
+            category="employment",
+            region=f"{city} / WorkForce WV",
+            description=(
+                f"{name} connects job seekers across {county_count} West Virginia counties to WorkForce "
+                f"West Virginia American Job Centers, career coaching, job placement, and WIOA training "
+                f"referrals. Justice-involved job seekers can access fair-chance employment navigation and "
+                f"Jobs & Hope recovery workforce partnerships at affiliate service centers Monday through Friday."
+            ),
+            description_es=(
+                f"{name} conecta a buscadores de empleo en {county_count} condados de Virginia Occidental "
+                f"con Centros de Empleo Americanos de WorkForce WV, coaching de carrera, colocación laboral "
+                f"y referencias de capacitación WIOA. Personas con antecedentes penales pueden acceder a "
+                f"navegación de empleo justo y alianzas Jobs & Hope en centros afiliados de lunes a viernes."
+            ),
+            address=address,
+            city=city,
+            phone=phone,
+            email="",
+            website=website,
+            eligibility="Open to West Virginia job seekers including justice-involved individuals; core AJC services are free.",
+            eligibility_es="Abierto a buscadores de empleo de Virginia Occidental incluidas personas con antecedentes penales.",
+            notes="Use workforcewv.org or contact the regional workforce board for the nearest American Job Center.",
+            notes_es="Use workforcewv.org o contacte la junta regional de fuerza laboral para el centro más cercano.",
+            hours="Monday–Friday, 8:00 a.m.–5:00 p.m.",
+            tags="west-virginia|employment|WorkForce-WV|WIOA|AJC|Jobs-and-Hope|reentry",
+            services="Job search assistance|Resume workshops|Interview coaching|WIOA training referrals|Jobs & Hope referrals|Fair-chance employment navigation",
+            county=office_county,
+            served_counties=served,
+            coverage="multi",
+            _source=website,
+            _source_type="government",
+            _confidence="high",
+        )
+
+    add(
+        name="Community Care of West Virginia — FQHC Network",
+        category="healthcare",
+        region="North-Central West Virginia",
+        description=(
+            "Community Care of West Virginia is a federally qualified health center network operating "
+            "community health centers, school-based health sites, and pharmacies across Braxton, Clay, "
+            "Harrison, Lewis, Pocahontas, Randolph, and Upshur counties with sliding-fee primary care, "
+            "dental, behavioral health, and pharmacy services for uninsured and Medicaid patients including "
+            "justice-involved individuals reestablishing medical care after release."
+        ),
+        description_es=(
+            "Community Care of West Virginia es una red de centros de salud calificados federalmente con "
+            "centros comunitarios, sitios escolares y farmacias en los condados Braxton, Clay, Harrison, "
+            "Lewis, Pocahontas, Randolph y Upshur con atención primaria, dental, salud conductual y farmacia "
+            "con tarifa escalonada para pacientes sin seguro y Medicaid incluidos personas con antecedentes penales."
+        ),
+        address="37 West Main Street",
+        city="Buckhannon",
+        phone="304-472-1600",
+        email="",
+        website="https://www.communitycarewv.org",
+        eligibility="Open to residents of served north-central WV counties; sliding fee based on income; Medicaid accepted.",
+        eligibility_es="Abierto a residentes de condados servidos del centro-norte de WV; tarifa escalonada según ingresos; acepta Medicaid.",
+        notes="Call 304-472-1600 or use communitycarewv.org location finder for nearest clinic.",
+        notes_es="Llame al 304-472-1600 o use el buscador de ubicaciones en communitycarewv.org.",
+        hours="Clinic hours vary by location; call for schedule",
+        tags="FQHC|healthcare|north-central-wv|Medicaid|reentry",
+        services="Primary care|Behavioral health|Dental services|Pharmacy|Sliding fee scale|Medicaid enrollment assistance",
+        county="Upshur",
+        served_counties="Braxton|Clay|Harrison|Lewis|Pocahontas|Randolph|Upshur",
+        coverage="multi",
+        _source="https://www.communitycarewv.org",
+        _source_type="nonprofit",
+        _confidence="high",
+    )
+
+    add(
+        name="Valley Health Systems — FQHC Network",
+        category="healthcare",
+        region="Metro Valley / Southern WV",
+        description=(
+            "Valley Health Systems is a federally qualified health center network providing primary care, "
+            "behavioral health, dental, and pharmacy on sliding fee scale across Cabell, Lincoln, Mason, "
+            "Putnam, and Wayne counties in the Metro Valley helping justice-involved residents access "
+            "Medicaid-covered medical and behavioral health services after release."
+        ),
+        description_es=(
+            "Valley Health Systems es una red FQHC con atención primaria, salud conductual, dental y farmacia "
+            "con tarifa escalonada en los condados Cabell, Lincoln, Mason, Putnam y Wayne del valle metropolitano "
+            "ayudando a residentes con antecedentes penales a acceder a servicios médicos y conductuales Medicaid."
+        ),
+        address="5183 U.S. Route 60",
+        city="Huntington",
+        phone="304-522-0800",
+        email="",
+        website="https://www.valleyhealth.org",
+        eligibility="Residents of served Metro Valley counties; sliding fee available; Medicaid and uninsured patients welcome.",
+        eligibility_es="Residentes de condados del valle metropolitano servidos; tarifa escalonada disponible; acepta Medicaid y sin seguro.",
+        notes="Use valleyhealth.org for clinic locations in Huntington, Milton, and surrounding communities.",
+        notes_es="Use valleyhealth.org para ubicaciones de clínicas en Huntington, Milton y comunidades circundantes.",
+        hours="Clinic hours vary by location",
+        tags="FQHC|healthcare|metro-valley|Medicaid|reentry",
+        services="Primary care|Behavioral health|Dental services|Pharmacy|Sliding fee scale|Medicaid enrollment assistance",
+        county="Cabell",
+        served_counties="Cabell|Lincoln|Mason|Putnam|Wayne",
+        coverage="multi",
+        _source="https://www.valleyhealth.org",
+        _source_type="nonprofit",
+        _confidence="high",
+    )
+
+    add(
+        name="Facing Hunger Foodbank — Partner Pantry Network",
+        category="food-nutrition",
+        region="Metro Valley / Southern Coalfields",
+        description=(
+            "Facing Hunger Foodbank distributes food through partner pantries, mobile distributions, and "
+            "SNAP outreach across Cabell, Lincoln, Logan, Mingo, Putnam, and Wayne counties helping returning "
+            "citizens locate emergency food by ZIP code through the online food finder at facinghunger.org."
+        ),
+        description_es=(
+            "Facing Hunger Foodbank distribuye alimentos a través de despensas aliadas, distribuciones móviles "
+            "y alcance SNAP en los condados Cabell, Lincoln, Logan, Mingo, Putnam y Wayne ayudando a "
+            "ciudadanos que regresan a localizar alimentos de emergencia por código postal."
+        ),
+        address="1327 7th Avenue",
+        city="Huntington",
+        phone="304-523-6029",
+        email="",
+        website="https://www.facinghunger.org",
+        eligibility="Open to West Virginia residents needing food assistance in service area; partner pantry rules vary.",
+        eligibility_es="Abierto a residentes de Virginia Occidental que necesitan asistencia alimentaria; las reglas varían.",
+        notes="Use facinghunger.org/find-help for nearest partner pantry by ZIP code.",
+        notes_es="Use facinghunger.org/find-help para la despensa aliada más cercana por código postal.",
+        hours="Office Monday–Friday; partner pantry hours vary",
+        tags="metro-valley|food-bank|reentry|pantry|SNAP-outreach",
+        services="Partner pantry referrals|Mobile food distribution|SNAP outreach|Nutrition programs",
+        county="Cabell",
+        served_counties="Cabell|Lincoln|Logan|Mingo|Putnam|Wayne",
+        coverage="multi",
+        _source="https://www.facinghunger.org",
+        _source_type="nonprofit",
+        _confidence="high",
+    )
