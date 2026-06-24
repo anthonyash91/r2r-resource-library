@@ -1,0 +1,69 @@
+---
+description: Pre-redesign UI baseline (commit 96637e1) — reference when reverting or comparing design changes
+alwaysApply: false
+---
+
+# Design baseline — before full redesign (2026-06-24)
+
+**Git snapshot:** tag `design-baseline/pre-redesign-2026-06` → commit `96637e1`
+
+## Revert commands
+
+```bash
+# Full UI rollback to baseline (destructive — stash or branch first)
+git checkout design-baseline/pre-redesign-2026-06 -- src/app/globals.css src/app/layout.tsx src/components/ src/lib/utils.ts
+
+# Or browse baseline
+git show design-baseline/pre-redesign-2026-06:src/app/globals.css
+```
+
+## Visual identity
+
+- **Palette:** Blue/indigo primary (`#2b4dd0`), teal accent (`#0d9488`), slate foreground (`#0f172a`), gray background (`#f9fafb`)
+- **Hero gradient:** `#1e3a8a` → `#2b4dd0` → `#14b8a6` (class `.app-hero-surface`)
+- **Headline highlight:** `.hero-headline-highlight` — white→blue→green text gradient clip
+- **Typography:** Source Sans 3 (400/600/700), base `html { font-size: 18px }`, line-height 1.6
+- **Radius:** `--radius: 0.75rem`; buttons/cards use `rounded-xl`
+- **Footer:** Dark slate `#0f172a`, muted `#94a3b8`, accent `#60a5fa`
+
+## Layout chrome (order in `layout.tsx`)
+
+`Header` → `TopSessionBanner` → `BreadcrumbBar` → `<main>` → `CrisisBar` (blue `#1e3a8a`) → `Footer`
+
+- **Sticky header:** Compacts on scroll; `--site-header-height` 5rem / compact 3.5rem; smooth `--site-header-offset` transition
+- **Crisis bar:** Full-width blue strip, 988 + text line links
+- **Library disclaimer:** Light slate bar `#f1f5f9` (full-bleed via `.app-library-disclaimer-bar`) on `/resources` + detail; footer text variant
+
+## Spacing system (`src/lib/utils.ts`)
+
+- `pageSectionPadding`: `px-4 py-12 sm:px-6 sm:py-14 lg:px-8 lg:py-16`
+- `resourcesHeroPadding` / `pageHeroPadding` for hero bands
+- `sectionStackGap`: `space-y-6`
+- **Section bands:** Alternate white (`bg-white`) and muted (`#f9fafb`) via `pageSectionBandClassForIndex`
+- **Max widths:** Content `max-w-7xl`, resource detail `max-w-4xl`
+
+## Key components & patterns
+
+| Area | Files |
+|------|-------|
+| Tokens + utilities | `src/app/globals.css` |
+| Header/nav | `src/components/layout/header.tsx`, `header-control-styles.ts`, `header-branding-lockup.tsx` |
+| Footer | `src/components/layout/footer.tsx` |
+| Hero + search | `src/components/home/hero-section.tsx`, `hero-surface-orbs.tsx` |
+| Resource cards | `resource-masonry.tsx`, `resource-card` patterns, `category-badge.tsx` |
+| Scroll animations | `src/components/ui/scroll-reveal.tsx` + keyframes in `globals.css` |
+| Buttons | `src/components/ui/button.tsx` — variants primary/soft/outline, min-h 44–52px |
+| Badges | `.resource-badge`, `.app-badge`, intake signal badge classes in `site-branding-styles.ts` |
+| Disclaimer | `src/components/resources/library-disclaimer.tsx` |
+
+## UX conventions (preserve unless redesign explicitly changes)
+
+- Bilingual EN/ES via `useTranslations` / message files — no hardcoded UI strings
+- Large touch targets (44px+ buttons), focus rings `outline-3 ring`
+- Resources: collapsible location filters, Search applies filters, masonry with stable columns on load-more
+- Eligibility cards: yellow tint `--eligibility-bg`
+- PDF export layout: `src/lib/pdf/` mirrors web resource detail (compact sidebar cards)
+
+## Do not confuse with redesign work
+
+When implementing a new design, treat this rule as **read-only reference**. Do not merge old tokens into new components unless explicitly reverting.
