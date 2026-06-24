@@ -1,0 +1,706 @@
+[
+  {
+    "county": "Adams",
+    "city": "West Union",
+    "address": "482 Rice Dr., West Union, OH 45693-0386",
+    "phone": "(937) 544-2371",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-adams",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Allen",
+    "city": "Lima",
+    "address": "951 Commerce Pkwy, Lima, OH 45804",
+    "phone": "(419) 228-2621",
+    "website": "https://acjfs.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Ashland",
+    "city": "Ashland",
+    "address": "15 W Fourth St",
+    "phone": "(419) 282-5000",
+    "website": "http://ashlandjfs.org",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Ashtabula",
+    "city": "Ashtabula",
+    "address": "2924 Donahoe Dr., Ashtabula, OH 44004-4540",
+    "phone": "(440) 998-1110",
+    "website": "https://www.acdjfs.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Athens",
+    "city": "Millfield",
+    "address": "13183 St. Rte. 13, Millfield, OH 45761-9901",
+    "phone": "(740) 797-2523",
+    "website": "https://www.jfs.athensoh.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Auglaize",
+    "city": "Wapakoneta",
+    "address": "12 N Wood St",
+    "phone": "(567) 242-2700",
+    "website": "http://www2.auglaizecounty.org/resources/job-family-services",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Belmont",
+    "city": "St Clairsville",
+    "address": "68145 Hammond Rd",
+    "phone": "(740) 695-1075",
+    "website": "http://belmontcountyohio.org",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Brown",
+    "city": "Georgetown",
+    "address": "775 Mt. Orab Pike",
+    "phone": "(937) 378-6104",
+    "website": "http://browncountyohio.gov/index.php/job-a-family-services",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Butler",
+    "city": "Hamilton",
+    "address": "300 N Fair Ave",
+    "phone": "(513) 887-4000",
+    "website": "http://butlercountyohio.org/workplace",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Carroll",
+    "city": "Carrollton",
+    "address": "207 Moody Ave, Suite 101",
+    "phone": "(330) 627-2571",
+    "website": "http://carrollcounty.jfs.com",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Champaign",
+    "city": "Urbana",
+    "address": "1512 South US Hwy 68, Suite N100",
+    "phone": "(937) 484-1500",
+    "website": "http://champaigndjfs.org",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Clark",
+    "city": "Springfield",
+    "address": "1345 Lagonda Ave",
+    "phone": "(937) 327-1700",
+    "website": "http://clarkdjfs.org",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Clermont",
+    "city": "Batavia",
+    "address": "2400 Clermont Center Dr",
+    "phone": "(513) 732-7173",
+    "website": "http://djfs.clermontcountyohio.gov",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Clinton",
+    "city": "Wilmington",
+    "address": "1025 S South St",
+    "phone": "(937) 382-2449",
+    "website": "http://co.clinton.oh.us/departments/jobandfamilyservices",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Columbiana",
+    "city": "Lisbon",
+    "address": "7989 Dickey Dr, Suite 2",
+    "phone": "(330) 424-1471",
+    "website": "http://columbianacountyjfs.org",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Coshocton",
+    "city": "Coshocton",
+    "address": "725 Pine St",
+    "phone": "(740) 622-1020",
+    "website": "http://coshoctonjfs.org",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Crawford",
+    "city": "Bucyrus",
+    "address": "224 Norton Way",
+    "phone": "(419) 562-0015",
+    "website": "http://crawfordcountyjfs.org",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Cuyahoga",
+    "city": "Cleveland",
+    "address": "1641 Payne Ave., Ste. 520, Cleveland, OH 44114",
+    "phone": "(216) 987-6640",
+    "website": "https://hhs.cuyahogacounty.us/divisions/detail/job-and-family-services",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Darke",
+    "city": "Greenville",
+    "address": "631 Wagner Ave",
+    "phone": "(937) 548-4132",
+    "website": "https://pcsao.org/membership/agency-directory/name/defiance/",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Defiance",
+    "city": "Defiance",
+    "address": "6879 Evansport Rd, Suite A",
+    "phone": "(419) 782-3881",
+    "website": "https://defiancepauldingjfs.com/about-jfs/",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Delaware",
+    "city": "Delaware",
+    "address": "145 N Union St",
+    "phone": "(740) 833-2300",
+    "website": "http://jfs.co.delaware.oh.us/protectiveservices",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Erie",
+    "city": "Sandusky",
+    "address": "221 W. Parish St., Sandusky, OH 44870-4886",
+    "phone": "(419) 627-4400",
+    "website": "https://www.eriecounty.oh.gov",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Fairfield",
+    "city": "Lancaster",
+    "address": "239 W. Main St., Lancaster, OH 43130",
+    "phone": "(740) 652-7889",
+    "website": "https://www.fcjfs.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Fayette",
+    "city": "Washington Court House",
+    "address": "133 S. Main St., Washington Court House, OH 43160",
+    "phone": "(740) 335-0350",
+    "website": "https://www.fayette-co-oh.com/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Franklin",
+    "city": "Columbus",
+    "address": "1721 Northland Park Ave., Columbus, OH 43229",
+    "phone": "(614) 233-2000",
+    "website": "https://jfs.franklincountyohio.gov/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Fulton",
+    "city": "Wauseon",
+    "address": "604 S. Shoop Ave., Ste. 200, Wauseon, OH 43567",
+    "phone": "(419) 337-0010",
+    "website": "https://www.fultoncountyoh.com/1224/Job-Family-Services",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Gallia",
+    "city": "Gallipolis",
+    "address": "848 Third Ave., Gallipolis, OH 45631-1661",
+    "phone": "(740) 446-3222",
+    "website": "https://www.gallianet.net",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Geauga",
+    "city": "Chardon",
+    "address": "12611 Ravenwood Dr., Suite 150 , P.O. Box 309, Chardon, OH 44024-9009",
+    "phone": "(440) 285-9141",
+    "website": "https://www.geaugajfs.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Greene",
+    "city": "Xenia",
+    "address": "541 Ledbetter Rd., Xenia, OH 45385-3699",
+    "phone": "(937) 562-6000",
+    "website": "https://www.co.greene.oh.us/279/Job-Family-Services",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Guernsey",
+    "city": "Cambridge",
+    "address": "324 Highland Ave., Cambridge, OH 43725",
+    "phone": "(740) 432-2381",
+    "website": "http://www.guernseycountyjfs.org/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Hamilton",
+    "city": "Cincinnati",
+    "address": "222 E. Central Pkwy., Cincinnati, OH 45202",
+    "phone": "(513) 946-1000",
+    "website": "https://www.hcjfs.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Hancock",
+    "city": "Findlay",
+    "address": "7814 Cty. Rd. 140, P.O. Box 1465, Findlay, OH 45839-1465",
+    "phone": "(419) 422-0182",
+    "website": "https://www.hancockjfs.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Hardin",
+    "city": "Kenton",
+    "address": "175 W. Franklin St., Ste. 150, Kenton, OH 43326-9902",
+    "phone": "(419) 675-1130",
+    "website": "http://co.hardin.oh.us/index.php",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Harrison",
+    "city": "Cadiz",
+    "address": "520 North Main Street, Cadiz, OH 43907-1276",
+    "phone": "(740) 942-2171",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-harrison",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Henry",
+    "city": "Napoleon",
+    "address": "104 E. Washington St., Hahn Center Suite 102, Napoleon, OH 43545-0527",
+    "phone": "(419) 592-0946",
+    "website": "https://www.henrycountyohio.com",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Highland",
+    "city": "Hillsboro",
+    "address": "1575 N. High St., Ste. 100, Hillsboro, OH 45133-9442",
+    "phone": "(937) 402-5003",
+    "website": "http://highlandjfs.org/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Hocking",
+    "city": "Logan",
+    "address": "389 W. Front St., Logan, OH 43138",
+    "phone": "(740) 380-4026",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-hocking",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Holmes",
+    "city": "Millersburg",
+    "address": "85 N. Grant St., P.O. Box 72, Millersburg, OH 44654-0072",
+    "phone": "(330) 674-1111",
+    "website": "http://www.holmescountydjfs.com/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Huron",
+    "city": "Norwalk",
+    "address": "185 Shady Lane Dr., Norwalk, OH 44857-2373",
+    "phone": "(419) 668-8126",
+    "website": "https://www.huroncountydjfs.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Jackson",
+    "city": "Jackson",
+    "address": "25 E. South St. PO Box 1006, Jackson, OH 45640-1638",
+    "phone": "(740) 286-4181",
+    "website": "https://jacksoncountyjfs.org/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Jefferson",
+    "city": "Steubenville",
+    "address": "125 S. Fifth St., Steubenville, OH 43952-2885",
+    "phone": "(740) 282-0961",
+    "website": "https://www.jcdjfs.com",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Knox",
+    "city": "Mount Vernon",
+    "address": "117 E. High St., 4th Fl., Mount Vernon, OH 43050-3400",
+    "phone": "(740) 397-7177",
+    "website": "https://www.co.knox.oh.us/jfs/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Lake",
+    "city": "Painesville",
+    "address": "177 Main St., Painesville, OH 44077-9967",
+    "phone": "(440) 350-4000",
+    "website": "https://www.lakecountyohio.gov/jobs-family-services/#dept-51",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Lawrence",
+    "city": "Ironton",
+    "address": "1100 S. Seventh St., P.O. Box 539, Ironton, OH 45638-0539",
+    "phone": "(740) 532-3324",
+    "website": "https://www.lawrencecountydjfs.com/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Licking",
+    "city": "Newark",
+    "address": "74 S. Second St., P.O. Box 5030, Newark, OH 43058-5030",
+    "phone": "(740) 670-8999",
+    "website": "http://lickingcountyjfs.com/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Logan",
+    "city": "Bellefontaine",
+    "address": "1 Hunter Place, Suite B, Bellefontaine, OH 43311",
+    "phone": "(937) 599-5165",
+    "website": "https://www.loganjfs.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Lorain",
+    "city": "Elyria",
+    "address": "42485 North Ridge Road, Elyria, OH 44035-1057",
+    "phone": "(440) 323-5726",
+    "website": "https://www.lcdjfs.com/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Lucas",
+    "city": "Toledo",
+    "address": "3737 W. Sylvania Avenue",
+    "phone": "(419) 213-8800",
+    "website": "https://lucascountyoh.gov/858/Job-and-Family-Services",
+    "source": "https://lucascountyoh.gov/858/Job-and-Family-Services"
+  },
+  {
+    "county": "Madison",
+    "city": "London",
+    "address": "200 Midway St., London, OH 43140-1356",
+    "phone": "(740) 852-4770",
+    "website": "https://www.co.madison.oh.us/services/job_&_family_services/index.php",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Mahoning",
+    "city": "Youngstown",
+    "address": "345 Oak Hill Ave., mail to P.O. Box 600, Youngstown, OH 44501-0600",
+    "phone": "(330) 740-2600",
+    "website": "https://www.mahoningcountyoh.gov/473/Department-of-Job-Family-Services",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Marion",
+    "city": "Marion",
+    "address": "363 W. Fairground St., Marion, OH 43302-1759",
+    "phone": "(740) 387-8560",
+    "website": "https://www.mcjfs.com",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Medina",
+    "city": "Medina",
+    "address": "232 Northland Dr., Medina, OH 44256",
+    "phone": "(330) 722-9300",
+    "website": "https://www.mcjfs.us",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Meigs",
+    "city": "Middleport",
+    "address": "175 Race St., P.O. Box 191, Middleport, OH 45760-0191",
+    "phone": "(740) 992-2117",
+    "website": "https://www.meigsdjfs.net",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Mercer",
+    "city": "Celina",
+    "address": "220 W. Livingston St., Ste. 10, Celina, OH 45822-1671",
+    "phone": "(419) 586-5106",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-mercer",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Miami",
+    "city": "Troy",
+    "address": "2040 N. County Rd. 25-A, Troy, OH 45373-1310",
+    "phone": "(937) 440-3471",
+    "website": "https://www.miamicountyohio.gov",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Monroe",
+    "city": "Woodsfield",
+    "address": "100 Home Ave., Woodsfield, OH 43793-1234",
+    "phone": "(740) 472-1602",
+    "website": "https://www.monroecountyohio.com/departments/job_and_family_services/index.php",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Montgomery",
+    "city": "Dayton",
+    "address": "1111 S. Edwin C. Moses Blvd., Dayton, OH 45422-3600",
+    "phone": "(937) 225-4148",
+    "website": "https://www.mcohio.org/departments/job_and_family_services/index.php",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Morgan",
+    "city": "McConnelsville",
+    "address": "155 E. Main St., Rm. 009, McConnelsville, OH 43756",
+    "phone": "(740) 962-4616",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-morgan",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Morrow",
+    "city": "Mt. Gilead",
+    "address": "619 W. Marion Rd., Mt. Gilead, OH 43338-1280",
+    "phone": "(419) 947-9111",
+    "website": "https://www.morrowjfs.com",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Muskingum",
+    "city": "Zanesville",
+    "address": "445 Woodlawn Ave., P.O. Box 100, Zanesville, OH 43702-0100",
+    "phone": "(740) 454-0161",
+    "website": "https://www.muskingumcountyjfs.com",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Noble",
+    "city": "Caldwell",
+    "address": "46049 Marietta Rd. PO Box 250, Caldwell, OH 43724-0250",
+    "phone": "(740) 732-2392",
+    "website": "https://www.ncdjfs.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Ottawa",
+    "city": "Oak Harbor",
+    "address": "8043 W. St. Rte. 163, Ste. 200, Oak Harbor, OH 43449",
+    "phone": "(419) 898-3688",
+    "website": "http://ottawacountyjfs.org/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Paulding",
+    "city": "Defiance",
+    "address": "6879 Evansport Rd, Suite A",
+    "phone": "(419) 782-3881",
+    "website": "https://defiancepauldingjfs.com/about-jfs/",
+    "source": "https://pcsao.org/membership/agency-directory/"
+  },
+  {
+    "county": "Perry",
+    "city": "New Lexington",
+    "address": "5454 SR-37, New Lexington, OH 43764",
+    "phone": "(740) 342-3551",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-perry",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Pickaway",
+    "city": "Circleville",
+    "address": "1005 S. Pickaway Street PO Box 610, Circleville, OH 43113",
+    "phone": "(740) 474-7588",
+    "website": "https://www.pickawayjfs.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Pike",
+    "city": "Waverly",
+    "address": "230 Waverly Plaza, Ste. 700, Waverly, OH 45690",
+    "phone": "(740) 947-2171",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-pike",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Portage",
+    "city": "Ravenna",
+    "address": "449 S. Meridian St., Ravenna, OH 44266-1208",
+    "phone": "(330) 297-3750",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-portage",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Preble",
+    "city": "Eaton",
+    "address": "1500 Park Ave., Eaton, OH 45320",
+    "phone": "(937) 456-6205",
+    "website": "https://www.prebco.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Putnam",
+    "city": "Ottawa",
+    "address": "575 Ottawa-Glandorf Rd., Ste. 1, Ottawa, OH 45875",
+    "phone": "(567) 376-3777",
+    "website": "https://www.putnamcountyohio.gov/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Richland",
+    "city": "Mansfield",
+    "address": "171 Park Ave. E., Mansfield, OH 44902",
+    "phone": "(419) 774-5400",
+    "website": "https://www.rcjfs.net/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Ross",
+    "city": "Chillicothe",
+    "address": "475 Western Ave., Ste. B, P.O. Box 469, Chillicothe, OH 45601",
+    "phone": "(740) 773-2651",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-ross",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Sandusky",
+    "city": "Fremont",
+    "address": "2511 Countryside Dr., Fremont, OH 43420-9987",
+    "phone": "(419) 334-3891",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-sandusky",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Scioto",
+    "city": "Portsmouth",
+    "address": "710 Court St., P.O. Box 1347, Portsmouth, OH 45662-1347",
+    "phone": "(740) 354-6661",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-scioto",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Seneca",
+    "city": "Tiffin",
+    "address": "900 E. Cty. Rd. 20, Tiffin, OH 44883",
+    "phone": "(419) 447-5011",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-seneca",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Shelby",
+    "city": "Sidney",
+    "address": "227 S. Ohio Ave., Sidney, OH 45365",
+    "phone": "(937) 498-4981",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-shelby",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Stark",
+    "city": "Canton",
+    "address": "221 Third St., S.E., Canton, OH 44702-1302",
+    "phone": "(330) 452-4661",
+    "website": "https://www.starkjfs.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Summit",
+    "city": "Akron",
+    "address": "1180 S. Main St., Ste. 102, Akron, OH 44301-1256",
+    "phone": "(330) 643-8200",
+    "website": "https://co.summitoh.net/prosecutor/index.php/divisions/child-support-enforcement",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Trumbull",
+    "city": "Warren",
+    "address": "280 N. Park Ave., Warren, OH 44481-1109",
+    "phone": "(330) 675-2000",
+    "website": "http://hs.co.trumbull.oh.us",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Tuscarawas",
+    "city": "New Philadelphia",
+    "address": "389 16th St. S.W., New Philadelphia, OH 44663-6401",
+    "phone": "(330) 339-7791",
+    "website": "https://www.tcjfs.org",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Union",
+    "city": "Marysville",
+    "address": "940 London Ave., Ste. 1800, P.O. Box 389, Marysville, OH 43040-0389",
+    "phone": "(937) 644-1010",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-union",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Van Wert",
+    "city": "Van Wert",
+    "address": "114 E. Main St., P.O. Box 595, Van Wert, OH 45891-0595",
+    "phone": "(419) 238-5430",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-van-wert",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Vinton",
+    "city": "McArthur",
+    "address": "30975 Industrial Park Dr., McArthur, OH 45651",
+    "phone": "(740) 773-2651",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-vinton",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Warren",
+    "city": "Lebanon",
+    "address": "416 S. East St., Lebanon, OH 45036",
+    "phone": "(513) 695-1420",
+    "website": "http://www.co.warren.oh.us/humanservices/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Washington",
+    "city": "Marietta",
+    "address": "1115 Gilman Ave., Marietta, OH 45750",
+    "phone": "(740) 373-5513",
+    "website": "https://www.washingtongov.org/",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Wayne",
+    "city": "Wooster",
+    "address": "356 W. North St., P.O. Box 76, Wooster, OH 44691-0076",
+    "phone": "(330) 287-5800",
+    "website": "https://www.wayneohio.org/agencies-departments/job-and-family-services/department-",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Williams",
+    "city": "Bryan",
+    "address": "117 W. Butler St., Bryan, OH 43506-1650",
+    "phone": "(419) 636-6725",
+    "website": "https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-williams",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Wood",
+    "city": "Bowling Green",
+    "address": "1928 E. Gypsy Lane Rd., P.O. Box 679, Bowling Green, OH 43402-9396",
+    "phone": "(419) 352-7566",
+    "website": "https://www.woodcountyjfs.com",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  },
+  {
+    "county": "Wyandot",
+    "city": "Upper Sandusky",
+    "address": "120 E. Johnson St., Upper Sandusky, OH 43351",
+    "phone": "(419) 617-4230",
+    "website": "https://www.co.wyandot.oh.us/jfs/index.htm",
+    "source": "https://dam.assets.ohio.gov/image/upload/jfs.ohio.gov/County/County_Directory.pdf"
+  }
+]

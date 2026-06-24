@@ -4,7 +4,7 @@ export const es = {
   meta: {
     siteName: "Biblioteca de Recursos para la Reinserción",
     description:
-      "Encuentre programas locales, estatales y nacionales de reinserción para vivienda, empleo, atención médica, recuperación, educación, asistencia legal y más.",
+      "Encuentre recursos locales, estatales y nacionales de reinserción para vivienda, empleo, atención médica, recuperación, educación, asistencia legal y más.",
     titleTemplate: "%s | Biblioteca de Recursos para la Reinserción",
   },
 
@@ -114,7 +114,7 @@ export const es = {
   home: {
     heroHeadline: "Encuentre los recursos que necesita para una reinserción exitosa",
     heroSubheadline:
-      "Busque programas locales, estatales y nacionales que pueden ayudarle con vivienda, empleo, atención médica, recuperación, transporte, educación y más.",
+      "Busque recursos locales, estatales y nacionales que pueden ayudarle con vivienda, empleo, atención médica, recuperación, transporte, educación y más.",
     heroHighlight: "Reinserción exitosa",
     heroSearchPlaceholder: "Busque vivienda, empleo, atención médica...",
     popular: "Popular:",
@@ -125,10 +125,10 @@ export const es = {
     freeAlways: "Gratis y siempre lo será",
     resourcesTitle: "Recursos",
     resourcesSubtitle:
-      "{count} programas disponibles — explore o filtre por categoría a continuación.",
+      "{count} recursos disponibles — explore o filtre por categoría a continuación.",
     browseByCategoryTitle: "Explorar por categoría",
     browseByCategorySubtitle:
-      "Seleccione una categoría para explorar programas y servicios que se adapten a sus necesidades.",
+      "Seleccione una categoría para explorar recursos y servicios que se adapten a sus necesidades.",
     howItWorksTitle: "Cómo funciona",
     howItWorksSubtitle: "Tres pasos sencillos para encontrar el apoyo que necesita.",
     stepSearchTitle: "Buscar",
@@ -143,17 +143,17 @@ export const es = {
     startSearching: "Comenzar a buscar ahora",
     featuredTitle: "Recursos destacados",
     featuredSubtitle:
-      "Programas seleccionados por nuestro equipo — un excelente punto de partida para su búsqueda.",
+      "Recursos seleccionados por nuestro equipo — un excelente punto de partida para su búsqueda.",
     viewAllResources: "Ver todos los recursos",
     recommendedPersonalized: "Recomendados para el condado de {county}",
     recommendedSubtitle:
-      "Programas seleccionados para su condado y las necesidades que eligió.",
+      "Recursos seleccionados para su condado y las necesidades que eligió.",
     builtForTitle: "Creado para personas que regresan a casa",
     builtForDesc:
       "Esta plataforma fue diseñada con un solo objetivo: facilitar al máximo que las personas que salieron del sistema de justicia encuentren el apoyo que necesitan para reconstruir sus vidas con dignidad y propósito.",
     builtForFeature1: "Gratis — no se requiere cuenta para buscar",
     builtForFeature2: "Actualizado regularmente por nuestro equipo de recursos",
-    builtForFeature3: "Cubre los 50 estados más programas nacionales",
+    builtForFeature3: "Cubre los 50 estados más recursos nacionales",
     builtForFeature4: "Diseñado para la simplicidad y la accesibilidad",
     createFreeAccount: "Crear una cuenta gratuita",
     browseResources: "Explorar recursos",
@@ -161,28 +161,39 @@ export const es = {
     statStates: "Estados cubiertos",
     statCategories: "Categorías de servicios",
     statFree: "Gratis",
+    coverageMapTitle: "Recursos en todo el país",
+    coverageMapSubtitle:
+      "Listamos recursos de reinserción en {states} estados y {areas} condados y áreas de servicio. Explore el mapa para ver dónde hay ayuda cerca de usted.",
+    coverageMapDesc:
+      "Mapa interactivo de Estados Unidos que muestra condados y regiones donde hay recursos de reinserción en nuestro directorio.",
+    coverageMapAria: "Mapa de Estados Unidos con {count} marcadores de cobertura de recursos",
+    coverageMapLegend:
+      "Cada marcador señala un condado o región con recursos locales o regionales. Los estados resaltados incluyen recursos en nuestro directorio—seleccione un estado abajo para explorar.",
+    coverageMapPinCounty: "Condado de {county}, {state} — {count} recursos",
+    coverageMapPinState: "{state} — {count} recursos estatales",
+    coverageMapStateSummaryCounties: "{resources} recursos · {counties} áreas",
+    coverageMapStateSummaryStatewide: "{resources} recursos estatales",
+    coverageMapBrowseAll: "Explorar todos los recursos",
   },
 
   resources: {
     findResources: "Buscar recursos",
     heroSubheadline:
-      "Busque entre cientos de programas de vivienda, empleo, atención médica y más.",
+      "Busque entre cientos de recursos de vivienda, empleo, atención médica y más.",
     metadataDescription:
       "Busque y filtre recursos de reinserción por categoría, ubicación y tipo de servicio.",
-    programCount: "{count} programas disponibles",
-    resultsSummary: "Programas que coinciden con su búsqueda",
-    resultsSummaryWithQuery: 'Programas que coinciden con su búsqueda "{query}"',
-    resultsHint: "Programas que coinciden con sus filtros actuales.",
-    resultsHintWithQuery:
-      'Programas relacionados con "{query}" y sus filtros actuales.',
+    resourceCountLabel: "{count} recursos disponibles",
+    resultsSummary: "Recursos que coinciden con su búsqueda",
+    resultsHint: "Estos son sus resultados según los filtros: {filters}",
+    resultsHintEmpty: "Estos son sus resultados.",
     resultsInCountyHeading: "En el condado de {county}",
     resultsInCountyHint:
-      "Programas ubicados en o que atienden específicamente al condado de {county}.",
+      "Recursos ubicados en o que atienden específicamente al condado de {county}.",
     resultsStatewideHeading: "También disponibles en todo el estado",
     resultsStatewideHint:
-      "Estos programas atienden a todos los condados de {state}, incluido {county}.",
+      "Estos recursos atienden a todos los condados de {state}, incluido {county}.",
     resultsNoLocalInCounty:
-      "No hay programas locales o regionales en el condado de {county}. Los recursos estatales a continuación pueden ayudar.",
+      "No hay recursos locales o regionales en el condado de {county}. Los recursos estatales a continuación pueden ayudar.",
     noResults: "No se encontraron recursos",
     noResultsHint:
       "Pruebe con otra categoría o abra los filtros para cambiar su búsqueda.",
@@ -195,6 +206,7 @@ export const es = {
     searchButton: "Buscar",
     searchAria: "Buscar recursos",
     filterAria: "Filtrar recursos",
+    filtersUpdating: "Actualizando opciones de filtro…",
     searchKeyword: "Buscar por palabra clave",
     searchKeywordPlaceholder: "Pruebe vivienda, empleo, comida, ayuda legal...",
     category: "Categoría",
@@ -229,6 +241,12 @@ export const es = {
     coverageStatewide: "En todo el estado",
     countyFilterHint:
       "Elija el condado donde vive ahora o donde planea vivir después de su liberación para ver recursos que atienden esa área.",
+    countyScopedFiltersHint:
+      "Las opciones de servicio y categoría muestran recursos locales y regionales en el condado de {county}. Los recursos estatales pueden seguir apareciendo en los resultados abajo.",
+    countyScopedServicesEmpty:
+      "Ningún recurso local o regional en {county} ofrece este tipo de servicio. Revise los resultados estatales abajo o pruebe otra categoría.",
+    categoryNoLocalInCounty:
+      "No hay recursos locales o regionales de {category} en el condado de {county}. Los recursos estatales pueden aparecer en los resultados a continuación.",
     filterByCountyAria: "Ver recursos que atienden el condado de {county}",
     stateBadgeAria: "Ver recursos en {state}",
     contactInfo: "Información de contacto",
@@ -246,8 +264,9 @@ export const es = {
     removeSaveAria: "Quitar {name} de guardados",
     intakeFiltersLabel: "Elegibilidad e ingreso",
     intakeFiltersHint:
-      "Muestre programas que cumplan todas las señales seleccionadas. Pulse Buscar para actualizar los resultados.",
-    filtersApplyHint: "Pulse Buscar para actualizar los resultados con los filtros seleccionados.",
+      "Muestre recursos que cumplan todas las señales seleccionadas. Pulse Buscar para actualizar los resultados.",
+    intakeSignalUnavailableAria:
+      "{label} — ningún recurso coincide con este filtro para su ubicación actual",
     intakeSignalFilterAria: "Filtrar por {label}",
     intakeMetaAria: "Ingreso: {labels}",
     intakeSignals: {
@@ -322,19 +341,19 @@ export const es = {
     browseByCategory: "Explorar por categoría",
     signInRequired: "Mi panel",
     signInRequiredDesc:
-      "Inicie sesión para ver sus recursos guardados, los programas vistos recientemente y recomendaciones personalizadas.",
+      "Inicie sesión para ver sus recursos guardados, los recursos vistos recientemente y recomendaciones personalizadas.",
   },
 
   onboarding: {
     title: "Comenzar",
     editTitle: "Actualizar sus preferencias",
     subtitle:
-      "Indique dónde está y qué necesita más. Le mostraremos programas que atienden su área.",
+      "Indique dónde está y qué necesita más. Le mostraremos recursos que atienden su área.",
     stepIndicator: "Paso {current} de {total}",
     stepStateTitle: "¿En qué estado?",
     stepStateDesc: "Elija el estado donde vive ahora o planea vivir después de la liberación.",
     stepCountyTitle: "¿En qué condado?",
-    stepCountyDesc: "Usamos su condado para mostrar programas locales y regionales que sirven su área.",
+    stepCountyDesc: "Usamos su condado para mostrar recursos locales y regionales que sirven su área.",
     stepPrioritiesTitle: "¿Qué necesita más?",
     stepPrioritiesDesc: "Elija hasta {max} áreas. Puede cambiarlas en cualquier momento.",
     stateLabel: "Estado",
@@ -359,6 +378,8 @@ export const es = {
       kentucky: "Kentucky",
       ohio: "Ohio",
       indiana: "Indiana",
+      tennessee: "Tennessee",
+      michigan: "Michigan",
     },
     priorities: {
       housing: "Vivienda",
@@ -380,42 +401,46 @@ export const es = {
   pathways: {
     notFoundTitle: "Guía no encontrada",
     disclaimer:
-      "Esta guía le ayuda a encontrar programas en nuestro directorio. No es atención de emergencia, asesoría legal ni garantía de servicios. Llame o envíe un mensaje de texto al 988 si necesita ayuda inmediata.",
+      "Esta guía le ayuda a encontrar recursos en nuestro directorio. No es atención de emergencia, asesoría legal ni garantía de servicios. Llame o envíe un mensaje de texto al 988 si necesita ayuda inmediata.",
     crisisTitle: "¿Necesita ayuda ahora mismo?",
     crisisBody:
       "Si está en crisis, llame o envíe un mensaje de texto al 988 para la Línea de Prevención del Suicidio y Crisis, o envíe HOME al 741741 para la Línea de Texto de Crisis. Estos servicios son gratuitos y están disponibles 24/7.",
     setCountyBannerTitle: "Configure su condado para coincidencias locales",
     setCountyBannerDesc:
-      "Los programas aquí funcionan a nivel estatal, pero configurar su condado muestra refugios, clínicas y oficinas cerca de donde planea vivir.",
+      "Los recursos aquí funcionan a nivel estatal, pero configurar su condado muestra refugios, clínicas y oficinas cerca de donde planea vivir.",
     setCountyCta: "Configurar condado",
     matchesYourNeeds: "Coincide con sus necesidades",
-    localPrograms: "Programas que sirven al condado de {county}",
-    statewidePrograms: "Programas estatales en {state}",
+    localResources: "Recursos que sirven al condado de {county}",
+    statewideResources: "Recursos estatales en {state}",
     yourState: "su estado",
     noLocalMatches:
-      "No encontramos programas locales para este paso en el condado de {county}. Pruebe el enlace de exploración abajo o llame al 211 para ayuda.",
+      "No encontramos recursos locales para este paso en el condado de {county}. Pruebe el enlace de exploración abajo o llame al 211 para ayuda.",
     noMatches:
-      "No encontramos programas para este paso con sus filtros actuales. Intente explorar todos los recursos en esta categoría.",
-    browseCategory: "Explorar todos los programas de {category}",
+      "No encontramos recursos para este paso con sus filtros actuales. Intente explorar todos los recursos en esta categoría.",
+    browseCategory: "Explorar todos los recursos de {category}",
     browseCategoryInCounty: "Explorar todos los de {category} en el condado de {county}",
     browseCategoryInState: "Explorar todos los de {category} en {state}",
     dashboardCardTitle: "Primera semana después de la liberación",
     dashboardCardDesc:
-      "Un checklist paso a paso — identificación, beneficios, vivienda, tratamiento, empleo y ayuda legal — con programas adaptados a su condado.",
+      "Un checklist paso a paso — identificación, beneficios, vivienda, tratamiento, empleo y ayuda legal — con recursos adaptados a su condado.",
     dashboardCardCta: "Abrir guía de la primera semana",
     firstWeek: {
       title: "Primera semana después de la liberación",
       metaDescription:
         "Una guía práctica paso a paso para apoyo en crisis, identificación, beneficios, vivienda, tratamiento, empleo y ayuda legal después de la liberación.",
       introDefault:
-        "Siete pasos prácticos para sus primeros días en casa. Cada paso enlaza a programas reales de nuestro directorio.",
+        "Siete pasos prácticos para sus primeros días en casa. Cada paso enlaza a recursos reales de nuestro directorio.",
       introByState: {
         kentucky:
-          "Siete pasos prácticos para sus primeros días en casa en Kentucky. Cada paso enlaza a programas reales de nuestro directorio.",
+          "Siete pasos prácticos para sus primeros días en casa en Kentucky. Cada paso enlaza a recursos reales de nuestro directorio.",
         ohio:
-          "Siete pasos prácticos para sus primeros días en casa en Ohio. Cada paso enlaza a programas reales de nuestro directorio.",
+          "Siete pasos prácticos para sus primeros días en casa en Ohio. Cada paso enlaza a recursos reales de nuestro directorio.",
         indiana:
-          "Siete pasos prácticos para sus primeros días en casa en Indiana. Cada paso enlaza a programas reales de nuestro directorio.",
+          "Siete pasos prácticos para sus primeros días en casa en Indiana. Cada paso enlaza a recursos reales de nuestro directorio.",
+        tennessee:
+          "Siete pasos prácticos para sus primeros días en casa en Tennessee. Cada paso enlaza a recursos reales de nuestro directorio.",
+        michigan:
+          "Siete pasos prácticos para sus primeros días en casa en Michigan. Cada paso enlaza a recursos reales de nuestro directorio.",
       },
       steps: {
         "crisis-support": {
@@ -431,17 +456,17 @@ export const es = {
         benefits: {
           title: "Solicite beneficios (Medicaid, SNAP y más)",
           description:
-            "La cobertura de salud y la asistencia alimentaria pueden estabilizar sus primeras semanas. Muchos programas ayudan con el proceso de solicitud.",
+            "La cobertura de salud y la asistencia alimentaria pueden estabilizar sus primeras semanas. Muchos recursos ayudan con el proceso de solicitud.",
         },
         housing: {
           title: "Encuentre un lugar donde quedarse",
           description:
-            "Refugio de emergencia, vivienda transitoria y ayuda con el alquiler varían por condado. Los programas locales se listan primero cuando conocemos su condado.",
+            "Refugio de emergencia, vivienda transitoria y ayuda con el alquiler varían por condado. Los recursos locales se listan primero cuando conocemos su condado.",
         },
         treatment: {
           title: "Conéctese con tratamiento o apoyo de recuperación",
           description:
-            "Tratamiento de sustancias, apoyo entre pares y programas de salud pueden ayudarle a mantenerse en el camino después de la liberación.",
+            "Tratamiento de sustancias, apoyo entre pares y recursos de salud pueden ayudarle a mantenerse en el camino después de la liberación.",
         },
         employment: {
           title: "Busque trabajo o capacitación",
@@ -551,10 +576,10 @@ export const es = {
 
   saved: {
     title: "Recursos guardados",
-    subtitle: "Su lista personal de programas y servicios.",
+    subtitle: "Su lista personal de recursos y servicios.",
     emptyTitle: "Aún no hay recursos guardados",
     emptyDesc:
-      'Cuando encuentre un programa útil, haga clic en "Guardar" para agregarlo aquí.',
+      'Cuando encuentre un recurso útil, haga clic en "Guardar" para agregarlo aquí.',
     signInTitle: "Recursos guardados",
     signInDesc: "Inicie sesión para guardar recursos y crear su lista personal.",
     browseResources: "Explorar recursos",
@@ -562,7 +587,7 @@ export const es = {
       documentTitle: "Recursos guardados",
       preparedFor: "Preparado para {name}",
       generatedOn: "Generado el {date}",
-      resourceCount: "{count} programas incluidos",
+      resourceCount: "{count} recursos incluidos",
       description: "Descripción",
       location: "Ubicación",
       address: "Dirección",
@@ -570,7 +595,7 @@ export const es = {
       brandDescription:
         "Road to Reentry ayuda a las personas que se preparan para salir de la cárcel o que ya regresaron a la comunidad con recursos confiables, herramientas prácticas y apoyo para construir estabilidad, superar barreras y crear un futuro exitoso.",
       footer:
-        "La información se proporciona como referencia. Contacte cada programa para confirmar elegibilidad y disponibilidad.",
+        "La información se proporciona como referencia. Contacte cada recurso para confirmar elegibilidad y disponibilidad.",
     },
     email: {
       button: "Enviar PDF por correo",
@@ -594,22 +619,22 @@ export const es = {
         "Guarde todos los recursos que necesite antes de enviar. Esta función está pensada para usarla justo antes de salir de la cárcel, para tener su lista lista cuando regrese a la comunidad.",
       limitReminder: "Puede enviar este PDF {limit} veces. Le quedan {remaining}.",
       limitReached: "Ya usó los {limit} correos con PDF permitidos para esta cuenta.",
-      subject: "Sus recursos guardados ({count} programas)",
+      subject: "Sus recursos guardados ({count} recursos)",
       filename: "recursos-guardados.pdf",
       greeting: "Hola,",
       greetingNamed: "Hola {name},",
-      body: "Adjunto encontrará un PDF con {count} programas guardados de la Biblioteca de Recursos para la Reinserción.",
+      body: "Adjunto encontrará un PDF con {count} recursos guardados de la Biblioteca de Recursos para la Reinserción.",
     },
   },
 
   about: {
     title: "Acerca de nosotros",
     description:
-      "Una plataforma gratuita que conecta a las personas con programas de vivienda, empleo, atención médica y otros apoyos para la reinserción en todo el país.",
+      "Una plataforma gratuita que conecta a las personas con recursos de vivienda, empleo, atención médica y otros apoyos para la reinserción en todo el país.",
     defaultTitle: "Acerca de la Biblioteca de Recursos para la Reinserción",
     defaultContent: `La Biblioteca de Recursos para la Reinserción es una plataforma gratuita diseñada para ayudar a las personas que se preparan para salir del sistema de justicia o que salieron recientemente a encontrar el apoyo que necesitan para reconstruir sus vidas.
 
-Conectamos a las personas con programas locales, estatales y nacionales de vivienda, empleo, atención médica, recuperación, educación, asistencia legal y más.
+Conectamos a las personas con recursos locales, estatales y nacionales de vivienda, empleo, atención médica, recuperación, educación, asistencia legal y más.
 
 Nuestra misión es simple: reducir las barreras a la reinserción haciendo que la información vital sea fácil de encontrar, entender y utilizar.
 
@@ -623,7 +648,7 @@ A quién servimos
     missionP1:
       "La Biblioteca de Recursos para la Reinserción es una plataforma gratuita diseñada para ayudar a las personas que se preparan para salir del sistema de justicia o que salieron recientemente a encontrar el apoyo que necesitan para reconstruir sus vidas.",
     missionP2:
-      "Conectamos a las personas con programas locales, estatales y nacionales de vivienda, empleo, atención médica, recuperación, educación, asistencia legal y más — haciendo que la información vital sea fácil de encontrar, entender y utilizar.",
+      "Conectamos a las personas con recursos locales, estatales y nacionales de vivienda, empleo, atención médica, recuperación, educación, asistencia legal y más — haciendo que la información vital sea fácil de encontrar, entender y utilizar.",
     missionP3: "",
     serveTitle: "A quién servimos",
     serveIntro:
@@ -639,11 +664,11 @@ A quién servimos
     serveCards: {
       housing: {
         title: "Vivienda y refugio",
-        desc: "Vivienda transitoria, refugio de emergencia y programas de asistencia para el alquiler",
+        desc: "Vivienda transitoria, refugio de emergencia y recursos de asistencia para el alquiler",
       },
       employment: {
         title: "Empleo y capacitación",
-        desc: "Capacitación laboral, programas de fuerza laboral y alianzas con empleadores",
+        desc: "Capacitación laboral, recursos de fuerza laboral y alianzas con empleadores",
       },
       healthcare: {
         title: "Salud y recuperación",
@@ -667,7 +692,7 @@ A quién servimos
       },
       community: {
         title: "Comunidad",
-        body: "La reinserción ocurre en comunidad. Conectamos a las personas con programas locales y las organizaciones que conocen mejor su entorno.",
+        body: "La reinserción ocurre en comunidad. Conectamos a las personas con recursos locales y las organizaciones que conocen mejor su entorno.",
       },
       trust: {
         title: "Confianza",
@@ -676,7 +701,7 @@ A quién servimos
     },
     ctaTitle: "¿Listo para buscar recursos?",
     ctaSubtitle:
-      "Busque cientos de programas en los 50 estados — gratis, sin necesidad de cuenta.",
+      "Busque cientos de recursos en los 50 estados — gratis, sin necesidad de cuenta.",
     ctaBrowse: "Explorar recursos",
     ctaContact: "Contáctenos",
   },
@@ -712,14 +737,14 @@ A quién servimos
       faqsTitle: "Ver preguntas frecuentes",
       faqsDesc: "Encuentre respuestas a preguntas comunes",
       resourcesTitle: "Buscar recursos",
-      resourcesDesc: "Busque programas cerca de usted",
+      resourcesDesc: "Busque recursos cerca de usted",
       suggestTitle: "Sugerir un recurso",
-      suggestDesc: "Cuéntenos sobre un programa que deberíamos incluir",
+      suggestDesc: "Cuéntenos sobre un recurso que deberíamos incluir",
     },
     defaultContent: `Estamos aquí para ayudarle a encontrar recursos y mejorar esta biblioteca.
 
 Sugerir un recurso
-¿Conoce un programa que debería aparecer aquí? Envíenos el nombre de la organización, la ubicación y los servicios que ofrece.
+¿Conoce un recurso que debería aparecer aquí? Envíenos el nombre de la organización, la ubicación y los servicios que ofrece.
 
 Reportar información desactualizada
 Si un listado tiene horarios, teléfono o requisitos de elegibilidad incorrectos, avísenos para que podamos revisarlo.
@@ -728,7 +753,7 @@ Preguntas generales
 Para ayuda con el sitio, crear una cuenta o acceder a recursos guardados, visite nuestra página de preguntas frecuentes o envíenos un mensaje.
 
 Correo electrónico
-[Su correo del programa]
+[Su correo del recurso]
 
 Incluya su ciudad o condado cuando pregunte sobre recursos locales para que podamos responder con más utilidad.`,
   },
@@ -758,18 +783,18 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       pathwayTitle: "Guía de la primera semana",
       pathwayDesc: "Checklist paso a paso después de la liberación",
       resourcesTitle: "Buscar recursos",
-      resourcesDesc: "Busque programas cerca de usted",
+      resourcesDesc: "Busque recursos cerca de usted",
       contactTitle: "Contáctenos",
       contactDesc: "Envíenos un mensaje directamente",
       suggestTitle: "Sugerir un recurso",
-      suggestDesc: "Cuéntenos sobre un programa que deberíamos incluir",
+      suggestDesc: "Cuéntenos sobre un recurso que deberíamos incluir",
     },
     crisisTitle: "¿Necesita ayuda inmediata?",
     crisisBody:
       "Si está en crisis, llame o envíe un mensaje de texto al 988 (Línea de crisis) o envíe HOME al 741741 (Línea de texto de crisis).",
     ctaTitle: "¿Listo para buscar recursos?",
     ctaSubtitle:
-      "Busque cientos de programas en los 50 estados — gratis, sin necesidad de cuenta.",
+      "Busque cientos de recursos en los 50 estados — gratis, sin necesidad de cuenta.",
     ctaBrowse: "Explorar recursos",
     ctaContact: "Contáctenos",
     general: "General",
@@ -855,7 +880,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       sections: {
         s1: {
           title: "1. Qué es este sitio",
-          body: "La Biblioteca de Recursos para la Reinserción es un directorio en línea gratuito que ayuda a las personas a encontrar programas y servicios relacionados con la reinserción, incluyendo vivienda, empleo, atención médica, ayuda legal y otros recursos comunitarios. Proporcionamos información para ayudarle a conectarse con organizaciones; nosotros no somos un proveedor de servicios.",
+          body: "La Biblioteca de Recursos para la Reinserción es un directorio en línea gratuito que ayuda a las personas a encontrar recursos y servicios relacionados con la reinserción, incluyendo vivienda, empleo, atención médica, ayuda legal y otros recursos comunitarios. Proporcionamos información para ayudarle a conectarse con organizaciones; nosotros no somos un proveedor de servicios.",
         },
         s2: {
           title: "2. Quién puede usar el sitio",
@@ -863,7 +888,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
         },
         s3: {
           title: "3. Sin asesoramiento profesional",
-          body: "La información en este Sitio se proporciona solo con fines informativos generales. No constituye asesoramiento legal, médico, financiero u otro profesional. Verifique siempre los detalles directamente con la organización que ofrece un programa antes de confiar en cualquier listado.",
+          body: "La información en este Sitio se proporciona solo con fines informativos generales. No constituye asesoramiento legal, médico, financiero u otro profesional. Verifique siempre los detalles directamente con la organización que ofrece un recurso antes de confiar en cualquier listado.",
         },
         s4: {
           title: "4. Uso aceptable",
@@ -883,7 +908,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
         },
         s6: {
           title: "6. Listados de recursos",
-          body: "Nos esforzamos por mantener los listados de recursos precisos y actualizados, pero no garantizamos la integridad, exactitud o disponibilidad de ningún programa. Los listados pueden cambiar sin previo aviso. Si encuentra información desactualizada, repórtela a través de nuestra página de contacto.",
+          body: "Nos esforzamos por mantener los listados de recursos precisos y actualizados, pero no garantizamos la integridad, exactitud o disponibilidad de ningún recurso. Los listados pueden cambiar sin previo aviso. Si encuentra información desactualizada, repórtela a través de nuestra página de contacto.",
         },
         s7: {
           title: "7. Propiedad intelectual",
@@ -1311,7 +1336,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
     },
     "food-assistance": {
       name: "Asistencia alimentaria",
-      description: "Bancos de alimentos, inscripción en SNAP y programas de comidas",
+      description: "Bancos de alimentos, inscripción en SNAP y recursos de comidas",
       shortName: "Alimentos",
     },
     healthcare: {
@@ -1361,7 +1386,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
     },
     "veterans-services": {
       name: "Servicios para veteranos",
-      description: "Beneficios del VA y programas específicos para veteranos",
+      description: "Beneficios del VA y recursos específicos para veteranos",
       shortName: "Veteranos",
     },
     "disability-services": {
@@ -1370,7 +1395,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       shortName: "Discapacidad",
     },
     "community-support-programs": {
-      name: "Programas de apoyo comunitario",
+      name: "Recursos de apoyo comunitario",
       description: "Apoyo entre pares, mentoría y centros comunitarios",
       shortName: "Comunidad",
     },
@@ -1381,7 +1406,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
     },
     "state-agency": {
       name: "Agencia estatal",
-      description: "Programas y servicios de reintegración del gobierno de Kentucky",
+      description: "Recursos y servicios de reintegración del gobierno de Kentucky",
       shortName: "Agencia estatal",
     },
     "substance-use-treatment": {
@@ -1391,7 +1416,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
     },
     "food-nutrition": {
       name: "Alimentación y nutrición",
-      description: "Programas de asistencia alimentaria y nutrición",
+      description: "Recursos de asistencia alimentaria y nutrición",
       shortName: "Alimentos",
     },
     "id-documentation": {
@@ -1426,7 +1451,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
     },
     "reentry-organizations": {
       name: "Organizaciones de reintegración",
-      description: "Coaliciones de reintegración sin fines de lucro y programas comunitarios de reintegración",
+      description: "Coaliciones de reintegración sin fines de lucro y recursos comunitarios de reintegración",
       shortName: "Reintegración",
     },
   },
@@ -1441,7 +1466,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
     faq2: {
       question: "¿Este servicio es gratuito?",
       answer:
-        "Sí. Buscar recursos y crear una cuenta son completamente gratuitos. Los programas individuales pueden tener sus propios requisitos de elegibilidad.",
+        "Sí. Buscar recursos y crear una cuenta son completamente gratuitos. Los recursos individuales pueden tener sus propios requisitos de elegibilidad.",
       category: "general",
     },
     faq3: {
@@ -1465,7 +1490,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
     faq6: {
       question: "¿Por dónde empiezo después de la liberación?",
       answer:
-        "Abra la guía Primera semana después de la liberación desde su panel o visite la guía de la primera semana para un checklist paso a paso — apoyo en crisis, identificación, beneficios, vivienda y más — con programas adaptados a su condado.",
+        "Abra la guía Primera semana después de la liberación desde su panel o visite la guía de la primera semana para un checklist paso a paso — apoyo en crisis, identificación, beneficios, vivienda y más — con recursos adaptados a su condado.",
       category: "usingTheSite",
     },
   },
@@ -1473,10 +1498,10 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
   mock: {
     announcementTitle: "Más de 100 recursos disponibles ahora",
     announcementContent:
-      "Ampliamos nuestra biblioteca a más de 100 programas en los 50 estados. Explore vivienda, empleo, atención médica y más cerca de usted.",
+      "Ampliamos nuestra biblioteca a más de 100 recursos en los 50 estados. Explore vivienda, empleo, atención médica y más cerca de usted.",
     aboutMeta: "Conozca la Biblioteca de Recursos para la Reinserción y nuestra misión.",
     aboutContent:
-      "La Biblioteca de Recursos para la Reinserción conecta a las personas que regresan del sistema de justicia con programas confiables de vivienda, empleo, atención médica y más.",
+      "La Biblioteca de Recursos para la Reinserción conecta a las personas que regresan del sistema de justicia con recursos confiables de vivienda, empleo, atención médica y más.",
     hoursEmergency: "24 horas al día, 7 días a la semana",
     hoursStandard: "Lunes a viernes, 8:00 a. m. – 5:00 p. m.",
     servingCommunities: "Atendiendo a {city}, {state} y comunidades cercanas.",
@@ -1504,7 +1529,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
         "Centro de Vida Transitoria",
         "Refugio Puerto Seguro",
         "Vivienda Nuevo Comienzo",
-        "Programa Hogar Puente",
+        "Recurso Hogar Puente",
         "Casa de la Esperanza",
       ],
       services: [
@@ -1525,7 +1550,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
         "Reinserción Laboral",
         "Centro Listo para Trabajar",
         "Empleo Segunda Oportunidad",
-        "Programa Puente de Carrera",
+        "Recurso Puente de Carrera",
         "Empleos Nuevo Comienzo",
         "Fuerza Laboral Reinserción",
       ],
@@ -1548,7 +1573,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
         "Banco de Alimentos del Vecindario",
         "Comidas y Más",
         "Cocina Cosecha de Esperanza",
-        "Programa de Alimentos Puerta Abierta",
+        "Recurso de Alimentos Puerta Abierta",
         "Centro Pan de Cada Día",
       ],
       services: [
@@ -1568,7 +1593,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
         "Clínica de Salud Comunitaria",
         "Centro de Atención Gratuita",
         "Clínica Médica del Vecindario",
-        "Programa de Acceso al Bienestar",
+        "Recurso de Acceso al Bienestar",
         "Salud Puerta Abierta",
         "Clínica Atención para Todos",
       ],
@@ -1609,7 +1634,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       hoursStandard: "Lunes a viernes, 8:00 a. m. – 5:00 p. m.",
       namePrefixes: [
         "Recuperación Nuevos Comienzos",
-        "Programa Hoja en Blanco",
+        "Recurso Hoja en Blanco",
         "Centro Camino de Recuperación",
         "Casa Serenidad",
         "Recuperación Punto de Giro",
@@ -1626,15 +1651,15 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       description:
         "Pases de autobús gratuitos o con descuento y ayuda para planificar rutas hacia empleos, citas y servicios.",
       eligibility:
-        "Recién liberado o inscrito en un programa de reinserción.",
+        "Recién liberado o inscrito en un recurso de reinserción.",
       hoursEmergency: "24 horas al día, 7 días a la semana",
       hoursStandard: "Lunes a viernes, 8:00 a. m. – 5:00 p. m.",
       namePrefixes: [
-        "Programa de Acceso al Transporte",
+        "Recurso de Acceso al Transporte",
         "Iniciativa Viaje al Trabajo",
         "Centro de Asistencia de Movilidad",
         "Ayuda de Tránsito Comunitario",
-        "Programa de Pases de Autobús",
+        "Recurso de Pases de Autobús",
         "Centro Llegando Allí",
       ],
       services: [
@@ -1652,7 +1677,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       hoursStandard: "Lunes a viernes, 8:00 a. m. – 5:00 p. m.",
       namePrefixes: [
         "Centro de Aprendizaje para Adultos",
-        "Programa Éxito en el GED",
+        "Recurso Éxito en el GED",
         "Academia Habilidades para la Vida",
         "Educación Segunda Oportunidad",
         "Instituto de Capacitación Profesional",
@@ -1673,7 +1698,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       hoursStandard: "Lunes a viernes, 8:00 a. m. – 5:00 p. m.",
       namePrefixes: [
         "Centro de Empoderamiento Financiero",
-        "Programa El Dinero Importa",
+        "Recurso El Dinero Importa",
         "Taller Presupuesto y Construcción",
         "Centro de Oportunidad Económica",
         "Finanzas Nuevo Comienzo",
@@ -1715,7 +1740,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       hoursEmergency: "24 horas al día, 7 días a la semana",
       hoursStandard: "Lunes a viernes, 8:00 a. m. – 5:00 p. m.",
       namePrefixes: [
-        "Programa de Recuperación de Identificación",
+        "Recurso de Recuperación de Identificación",
         "Centro de Asistencia con Documentos",
         "Ayuda de Restauración de Identidad",
         "Documentos Plus",
@@ -1738,10 +1763,10 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       hoursStandard: "Lunes a viernes, 8:00 a. m. – 5:00 p. m.",
       namePrefixes: [
         "Servicios de Reunificación Familiar",
-        "Programa Camino de Crianza",
+        "Recurso Camino de Crianza",
         "Centro Familias Unidas",
         "Apoyo Familiar al Regreso",
-        "Programa Reconectar",
+        "Recurso Reconectar",
         "Iniciativa Familias Fuertes",
       ],
       services: [
@@ -1753,13 +1778,13 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
     },
     "veterans-services": {
       description:
-        "Inscripción en beneficios del VA, vales de vivienda, programas de empleo y mentoría entre pares para veteranos.",
+        "Inscripción en beneficios del VA, vales de vivienda, recursos de empleo y mentoría entre pares para veteranos.",
       eligibility: "Veteranos con participación en el sistema de justicia penal.",
       hoursEmergency: "24 horas al día, 7 días a la semana",
       hoursStandard: "Lunes a viernes, 8:00 a. m. – 5:00 p. m.",
       namePrefixes: [
         "Centro de Reinserción para Veteranos",
-        "Programa Regreso de Héroes",
+        "Recurso Regreso de Héroes",
         "Servicios de Apoyo para Veteranos",
         "Operación Segunda Oportunidad",
         "Centro de Recursos para Veteranos",
@@ -1768,7 +1793,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       services: [
         "Ayuda con beneficios del VA",
         "Vales de vivienda",
-        "Programas de empleo",
+        "Recursos de empleo",
         "Mentoría entre pares",
       ],
     },
@@ -1780,7 +1805,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       hoursStandard: "Lunes a viernes, 8:00 a. m. – 5:00 p. m.",
       namePrefixes: [
         "Centro de Derechos de Personas con Discapacidad",
-        "Programa Acceso para Todos",
+        "Recurso Acceso para Todos",
         "Centro de Recursos de Capacidad",
         "Centro de Vida Independiente",
         "Ayuda con Beneficios por Discapacidad",
@@ -1800,7 +1825,7 @@ Incluya su ciudad o condado cuando pregunte sobre recursos locales para que poda
       hoursEmergency: "24 horas al día, 7 días a la semana",
       hoursStandard: "Lunes a viernes, 8:00 a. m. – 5:00 p. m.",
       namePrefixes: [
-        "Programa Puente Comunitario",
+        "Recurso Puente Comunitario",
         "Red de Apoyo entre Pares",
         "Círculo de Reinserción",
         "De Vecino a Vecino",

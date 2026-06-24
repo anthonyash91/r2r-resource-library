@@ -1,6 +1,8 @@
 import { INDIANA_COUNTIES } from "@/lib/indiana/counties";
 import { KENTUCKY_COUNTIES } from "@/lib/kentucky/counties";
 import { OHIO_COUNTIES } from "@/lib/ohio/counties";
+import { MICHIGAN_COUNTIES } from "@/lib/michigan/counties";
+import { TENNESSEE_COUNTIES } from "@/lib/tennessee/counties";
 
 export interface OnboardingStateConfig {
   /** Full name stored in the database and user preferences. */
@@ -20,6 +22,8 @@ export const ONBOARDING_STATE_REGISTRY = [
   { name: "Kentucky", slug: "kentucky", counties: KENTUCKY_COUNTIES },
   { name: "Ohio", slug: "ohio", counties: OHIO_COUNTIES },
   { name: "Indiana", slug: "indiana", counties: INDIANA_COUNTIES },
+  { name: "Tennessee", slug: "tennessee", counties: TENNESSEE_COUNTIES },
+  { name: "Michigan", slug: "michigan", counties: MICHIGAN_COUNTIES },
 ] as const satisfies readonly OnboardingStateConfig[];
 
 export type OnboardingState = (typeof ONBOARDING_STATE_REGISTRY)[number]["name"];

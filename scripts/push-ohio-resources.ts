@@ -16,7 +16,7 @@ function loadEnvLocal() {
   for (const line of readFileSync(path, "utf8").split("\n")) {
     const match = line.match(/^([^#=]+)=(.*)$/);
     if (match && !process.env[match[1].trim()]) {
-      process.env[match[1].trim()] = match[2].trim();
+      process.env[match[1].trim()] = match[2].trim().replace(/^"|"$/g, "");
     }
   }
 }

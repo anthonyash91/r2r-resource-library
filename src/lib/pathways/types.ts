@@ -6,7 +6,7 @@ export interface PathwayStepDef {
   tagSlugs?: string[];
   /** Include statewide resources when local matches are exhausted. */
   includeStatewide: boolean;
-  /** Crisis and hotline steps surface statewide programs first. */
+  /** Crisis and hotline steps surface statewide resources first. */
   preferStatewide?: boolean;
   maxResources: number;
   /** Primary category for "browse all" links. */

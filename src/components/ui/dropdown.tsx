@@ -81,18 +81,9 @@ export function Dropdown({
       }
     };
 
-    const handleScroll = (e: Event) => {
-      if (containerRef.current?.contains(e.target as Node)) {
-        return;
-      }
-      closeDropdown();
-    };
-
     document.addEventListener("mousedown", handleClickOutside);
-    window.addEventListener("scroll", handleScroll, true);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
-      window.removeEventListener("scroll", handleScroll, true);
     };
   }, [open]);
 
@@ -213,7 +204,10 @@ export function Dropdown({
       </button>
 
       {open && (
-        <div className="absolute z-40 mt-2 w-full overflow-hidden rounded-xl border border-border bg-card shadow-lg">
+        <div
+          className="absolute z-40 mt-2 w-full overflow-hidden rounded-xl border border-border bg-card shadow-lg"
+          onWheel={(e) => e.stopPropagation()}
+        >
           {isSearchable && (
             <div className="sticky top-0 border-b border-border bg-card p-2">
               <div className="relative">
@@ -241,7 +235,7 @@ export function Dropdown({
             id={listboxId}
             role="listbox"
             aria-label={label ?? resolvedPlaceholder}
-            className="max-h-[min(15rem,calc(100dvh-12rem))] overflow-auto py-1"
+            className="max-h-[min(15rem,calc(100dvh-12rem))] overflow-auto overscroll-contain py-1"
           >
             {filteredOptions.length === 0 ? (
               <li className="px-4 py-3 text-base text-muted-foreground">{resolvedNoResults}</li>

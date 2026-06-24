@@ -4,15 +4,13 @@ import { useState } from "react";
 import { ChevronDown, SlidersHorizontal } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ResourceFiltersBar } from "./resource-filters";
-import type { Category } from "@/types";
+import type { ResourceFilterOptions } from "./use-resource-filter-options";
 import { useTranslations } from "@/i18n/locale-context";
 
 interface ResourceFiltersPanelProps {
-  categories: Category[];
   states: string[];
-  counties: string[];
-  cities: string[];
-  services: string[];
+  globalOptions: ResourceFilterOptions;
+  appliedOptions: ResourceFilterOptions;
 }
 
 export function ResourceFiltersPanel({ ...props }: ResourceFiltersPanelProps) {

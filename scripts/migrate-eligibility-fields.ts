@@ -8,7 +8,7 @@
 import { readFileSync, writeFileSync } from "fs";
 import { resolve } from "path";
 
-const CSV_PATH = resolve(process.cwd(), "data/resources.csv");
+const CSV_PATH = resolve(process.cwd(), "data/kentucky-resources.csv");
 
 const COLUMNS = [
   "id",
@@ -460,4 +460,4 @@ console.log(`Migrated ${migrated.length} resources in ${CSV_PATH}`);
 console.log(`  eligibility filled: ${stats.withEligibility}/${migrated.length}`);
 console.log(`  notes (operational) filled: ${stats.withNotes}/${migrated.length}`);
 console.log(`  eligibility_es filled: ${stats.withEligibilityEs}/${migrated.length}`);
-console.log("\nNext: npm run seed:resources → run migrations + supabase/seed-resources.sql");
+console.log("\nNext: npm run seed:resources:kentucky → run migrations + supabase/seed-kentucky-resources.sql");

@@ -1,0 +1,1362 @@
+state,county,category,category_label,tier,phase,strategy,sources
+Indiana,Adams,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Bartholomew,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Benton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Blackford,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Boone,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Brown,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Carroll,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Cass,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Clark,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Clay,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Clinton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Crawford,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Daviess,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,DeKalb,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Dearborn,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Decatur,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Delaware,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Dubois,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Elkhart,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Fayette,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Floyd,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Fountain,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Franklin,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Fulton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Gibson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Grant,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Greene,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Hamilton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Hancock,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Harrison,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Hendricks,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Henry,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Howard,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Huntington,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Jackson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Jasper,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Jay,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Jefferson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Jennings,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Johnson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Knox,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Kosciusko,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,LaGrange,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,LaPorte,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Lawrence,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Marshall,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Martin,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Miami,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Montgomery,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Morgan,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Newton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Noble,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Ohio,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Orange,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Owen,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Parke,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Perry,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Pike,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Porter,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Posey,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Pulaski,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Putnam,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Randolph,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Ripley,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Rush,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Scott,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Shelby,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Spencer,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Starke,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Steuben,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Sullivan,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Switzerland,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Tipton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Union,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Vermillion,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Vigo,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Wabash,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Warren,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Warrick,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Washington,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Wayne,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Wells,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,White,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Whitley,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Indiana,Adams,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Allen,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Bartholomew,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Benton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Blackford,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Boone,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Brown,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Carroll,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Cass,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Clark,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Clay,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Clinton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Crawford,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Daviess,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,DeKalb,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Dearborn,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Decatur,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Delaware,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Dubois,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Elkhart,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Fayette,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Floyd,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Fountain,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Franklin,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Fulton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Gibson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Grant,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Greene,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Hamilton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Hancock,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Harrison,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Hendricks,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Henry,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Howard,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Huntington,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Jackson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Jasper,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Jay,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Jefferson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Jennings,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Johnson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Knox,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Kosciusko,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,LaGrange,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,LaPorte,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Lake,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Lawrence,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Madison,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Marshall,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Martin,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Miami,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Montgomery,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Morgan,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Newton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Noble,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Ohio,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Orange,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Owen,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Parke,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Perry,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Pike,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Porter,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Posey,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Pulaski,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Putnam,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Randolph,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Ripley,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Rush,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Scott,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Shelby,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Spencer,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,St. Joseph,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Starke,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Steuben,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Sullivan,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Switzerland,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Tipton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Union,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Vanderburgh,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Vermillion,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Wabash,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Warren,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Warrick,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Washington,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Wayne,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Wells,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,White,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Whitley,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Indiana,Adams,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Bartholomew,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Benton,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Blackford,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Boone,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Brown,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Carroll,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Clay,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Clinton,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Crawford,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Daviess,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,DeKalb,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Dearborn,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Decatur,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Delaware,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Dubois,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Elkhart,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Fayette,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Floyd,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Fountain,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Franklin,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Gibson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Grant,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Greene,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Hamilton,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Hancock,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Harrison,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Hendricks,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Henry,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Howard,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Huntington,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Jackson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Jasper,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Jay,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Jefferson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Jennings,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Knox,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Kosciusko,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,LaGrange,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Lake,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Lawrence,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Madison,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Marshall,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Martin,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Montgomery,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Morgan,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Newton,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Noble,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Ohio,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Orange,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Owen,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Parke,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Pike,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Posey,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Putnam,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Randolph,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Ripley,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Rush,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Scott,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Shelby,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Spencer,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Starke,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Steuben,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Sullivan,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Switzerland,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Tippecanoe,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Tipton,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Union,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Vanderburgh,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Vermillion,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Warren,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Warrick,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Washington,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Wayne,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Wells,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,White,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Whitley,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Indiana,Adams,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Bartholomew,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Benton,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Blackford,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Brown,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Carroll,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Cass,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Clark,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Clay,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Clinton,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Crawford,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Daviess,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,DeKalb,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Dearborn,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Delaware,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Dubois,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Elkhart,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Fayette,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Floyd,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Fountain,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Franklin,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Fulton,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Gibson,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Greene,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Harrison,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Henry,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Howard,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Huntington,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Jackson,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Jasper,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Jay,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Jefferson,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Jennings,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Knox,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Kosciusko,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,LaGrange,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,LaPorte,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Lake,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Lawrence,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Madison,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Marshall,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Martin,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Miami,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Monroe,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Montgomery,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Newton,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Noble,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Ohio,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Orange,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Owen,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Parke,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Perry,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Pike,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Porter,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Posey,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Pulaski,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Putnam,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Randolph,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Ripley,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Rush,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Scott,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Spencer,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Starke,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Steuben,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Sullivan,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Switzerland,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Union,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Vermillion,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Vigo,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Wabash,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Warren,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Warrick,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Washington,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Wayne,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Wells,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Whitley,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Indiana,Blackford,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Indiana,Cass,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Indiana,Decatur,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Indiana,Grant,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Indiana,Jay,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Indiana,Miami,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Indiana,Perry,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Indiana,Tipton,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Indiana,Wabash,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Indiana,White,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Indiana,Benton,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Carroll,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Cass,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Clark,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Clay,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Crawford,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Dearborn,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Dubois,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Elkhart,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Floyd,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Fountain,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Fulton,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Grant,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Greene,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Harrison,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Howard,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Jackson,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Jasper,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Jefferson,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Jennings,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Knox,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Kosciusko,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,LaGrange,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,LaPorte,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Lake,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Lawrence,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Marshall,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Martin,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Miami,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Monroe,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Montgomery,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Newton,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Ohio,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Orange,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Owen,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Parke,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Perry,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Porter,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Pulaski,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Ripley,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Scott,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Spencer,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,St. Joseph,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Starke,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Sullivan,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Switzerland,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Tippecanoe,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Tipton,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Vermillion,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Vigo,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Wabash,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Warren,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,Washington,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Indiana,White,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Adair,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Allen,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Anderson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Ballard,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Barren,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Bath,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Bell,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Bourbon,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Boyd,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Boyle,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Breathitt,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Breckinridge,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Caldwell,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Calloway,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Carlisle,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Carter,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Casey,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Christian,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Clark,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Clay,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Clinton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Crittenden,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Cumberland,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Elliott,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Estill,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Fleming,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Floyd,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Franklin,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Fulton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Garrard,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Graves,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Grayson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Green,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Greenup,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Hancock,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Hardin,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Harlan,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Harrison,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Hart,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Henderson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Hickman,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Hopkins,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Jackson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Johnson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Knott,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Knox,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Larue,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Laurel,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Lawrence,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Lee,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Leslie,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Letcher,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Lewis,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Lincoln,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Livingston,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Logan,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Lyon,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Magoffin,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Marion,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Marshall,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Martin,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Mason,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,McCreary,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,McLean,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Meade,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Menifee,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Mercer,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Metcalfe,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Monroe,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Montgomery,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Morgan,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Muhlenberg,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Nelson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Nicholas,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Ohio,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Owsley,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Perry,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Powell,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Pulaski,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Robertson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Rockcastle,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Rowan,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Russell,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Taylor,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Todd,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Trigg,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Union,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Washington,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Wayne,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Webster,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Whitley,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Wolfe,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Kentucky,Adair,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Allen,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Anderson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Ballard,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Barren,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Bath,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Bell,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Boone,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Bourbon,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Boyd,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Bracken,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Breckinridge,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Bullitt,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Butler,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Caldwell,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Calloway,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Campbell,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Carlisle,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Carroll,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Carter,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Casey,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Christian,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Clark,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Clay,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Clinton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Crittenden,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Cumberland,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Daviess,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Edmonson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Elliott,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Fayette,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Fleming,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Franklin,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Fulton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Gallatin,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Grant,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Graves,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Grayson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Green,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Greenup,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Hancock,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Hardin,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Harrison,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Hart,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Henderson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Henry,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Hickman,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Hopkins,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Jackson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Jessamine,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Kenton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Knox,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Larue,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Lawrence,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Lee,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Lewis,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Lincoln,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Livingston,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Logan,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Lyon,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Madison,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Marion,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Marshall,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Mason,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,McCracken,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,McCreary,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,McLean,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Meade,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Menifee,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Mercer,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Metcalfe,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Monroe,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Montgomery,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Morgan,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Muhlenberg,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Nelson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Nicholas,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Ohio,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Oldham,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Owen,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Owsley,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Pendleton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Powell,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Pulaski,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Robertson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Rockcastle,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Rowan,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Russell,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Scott,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Shelby,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Simpson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Spencer,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Taylor,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Todd,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Trigg,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Trimble,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Union,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Warren,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Washington,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Wayne,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Webster,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Whitley,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Woodford,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Kentucky,Lee,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Kentucky,Owsley,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Kentucky,Robertson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Kentucky,Bath,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Kentucky,Fleming,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Kentucky,Lewis,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Kentucky,Mason,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Kentucky,Montgomery,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Kentucky,Robertson,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Kentucky,Rowan,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Kentucky,Allen,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Bath,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Bullitt,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Butler,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Caldwell,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Clinton,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Edmonson,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Hart,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Marshall,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Menifee,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Monroe,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Montgomery,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Oldham,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Pulaski,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Rowan,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Russell,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Spencer,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Kentucky,Boone,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Boyd,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Bracken,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Campbell,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Carroll,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Crittenden,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Daviess,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Gallatin,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Grant,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Greenup,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Henderson,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Hopkins,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Kenton,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Lawrence,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Livingston,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Marshall,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Mason,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,McLean,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Owen,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Pendleton,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Union,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Webster,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Kentucky,Bath,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Boone,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Boyd,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Bracken,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Campbell,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Carroll,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Carter,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Elliott,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Fleming,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Gallatin,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Grant,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Greenup,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Kenton,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Lewis,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Marshall,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Mason,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Menifee,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Montgomery,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Morgan,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Owen,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Pendleton,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Robertson,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Rowan,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Kentucky,Taylor,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Ohio,Adams,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Allen,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Ashland,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Ashtabula,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Athens,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Auglaize,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Belmont,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Brown,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Butler,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Carroll,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Champaign,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Clark,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Clermont,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Clinton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Columbiana,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Coshocton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Crawford,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Darke,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Defiance,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Delaware,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Erie,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Fairfield,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Fayette,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Fulton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Gallia,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Geauga,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Greene,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Guernsey,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Hancock,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Hardin,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Harrison,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Henry,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Highland,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Hocking,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Holmes,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Huron,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Jackson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Jefferson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Knox,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Lake,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Lawrence,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Licking,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Logan,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Lorain,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Madison,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Mahoning,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Marion,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Medina,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Meigs,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Mercer,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Miami,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Monroe,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Morgan,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Morrow,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Muskingum,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Noble,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Ottawa,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Paulding,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Perry,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Pickaway,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Pike,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Portage,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Preble,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Putnam,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Richland,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Ross,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Sandusky,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Scioto,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Seneca,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Shelby,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Stark,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Trumbull,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Tuscarawas,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Union,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Van Wert,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Vinton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Warren,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Washington,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Wayne,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Williams,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Wood,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Wyandot,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Ohio,Adams,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Allen,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Ashland,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Ashtabula,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Athens,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Auglaize,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Belmont,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Brown,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Butler,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Carroll,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Champaign,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Clark,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Clermont,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Clinton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Coshocton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Crawford,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Darke,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Defiance,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Delaware,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Erie,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Fairfield,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Fayette,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Fulton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Gallia,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Geauga,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Greene,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Guernsey,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Hancock,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Hardin,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Harrison,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Henry,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Highland,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Hocking,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Holmes,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Huron,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Jackson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Jefferson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Knox,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Lake,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Lawrence,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Licking,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Logan,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Madison,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Marion,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Medina,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Meigs,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Mercer,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Miami,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Monroe,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Morgan,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Morrow,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Muskingum,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Noble,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Ottawa,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Paulding,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Perry,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Pickaway,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Pike,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Portage,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Preble,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Putnam,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Richland,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Ross,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Sandusky,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Scioto,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Seneca,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Shelby,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Trumbull,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Tuscarawas,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Union,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Van Wert,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Vinton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Warren,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Washington,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Wayne,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Williams,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Wood,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Wyandot,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Ohio,Adams,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Allen,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Ashland,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Ashtabula,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Auglaize,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Belmont,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Brown,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Butler,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Carroll,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Champaign,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Clark,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Clermont,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Clinton,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Columbiana,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Crawford,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Darke,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Defiance,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Delaware,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Erie,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Fairfield,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Fayette,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Fulton,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Geauga,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Greene,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Hancock,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Hardin,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Harrison,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Henry,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Highland,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Holmes,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Huron,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Jefferson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Knox,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Lake,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Lawrence,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Licking,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Logan,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Lorain,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Madison,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Marion,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Medina,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Mercer,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Miami,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Monroe,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Morrow,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Noble,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Ottawa,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Paulding,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Pickaway,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Pike,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Preble,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Putnam,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Richland,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Sandusky,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Scioto,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Seneca,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Shelby,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Tuscarawas,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Union,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Van Wert,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Warren,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Williams,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Wood,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Wyandot,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Ohio,Ashland,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Ashtabula,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Athens,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Belmont,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Brown,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Butler,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Carroll,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Clermont,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Clinton,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Columbiana,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Crawford,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Defiance,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Erie,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Fairfield,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Gallia,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Geauga,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Guernsey,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Hancock,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Hardin,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Harrison,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Henry,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Holmes,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Huron,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Jefferson,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Knox,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Lake,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Lawrence,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Licking,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Lorain,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Madison,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Marion,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Medina,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Meigs,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Mercer,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Monroe,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Morgan,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Muskingum,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Ottawa,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Paulding,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Pickaway,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Portage,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Putnam,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Richland,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Sandusky,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Seneca,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Trumbull,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Tuscarawas,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Union,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Van Wert,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Warren,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Washington,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Wayne,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Williams,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Wood,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Wyandot,employment,Employment,A,1,regional,CareerOneStop LWDB; state workforce board
+Ohio,Adams,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Allen,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Auglaize,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Belmont,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Butler,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Champaign,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Clark,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Clinton,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Coshocton,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Crawford,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Darke,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Fayette,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Gallia,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Greene,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Guernsey,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Hancock,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Hardin,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Harrison,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Highland,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Jackson,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Jefferson,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Knox,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Lawrence,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Logan,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Lorain,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Marion,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Mercer,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Miami,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Monroe,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Montgomery,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Muskingum,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Noble,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Pike,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Preble,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Putnam,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Ross,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Scioto,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Shelby,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Trumbull,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Van Wert,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Washington,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Wood,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Wyandot,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Ohio,Columbiana,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Ohio,Delaware,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Ohio,Mahoning,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Ohio,Morrow,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Ohio,Trumbull,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Ohio,Union,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Anderson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Bedford,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Benton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Bledsoe,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Blount,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Bradley,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Campbell,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Cannon,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Carroll,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Carter,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Cheatham,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Chester,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Claiborne,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Clay,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Cocke,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Coffee,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Crockett,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Cumberland,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,DeKalb,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Decatur,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Dickson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Dyer,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Fayette,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Fentress,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Franklin,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Gibson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Giles,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Grainger,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Greene,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Grundy,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Hamblen,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Hancock,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Hardeman,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Hardin,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Hawkins,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Haywood,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Henderson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Henry,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Hickman,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Houston,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Humphreys,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Jackson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Jefferson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Johnson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Lake,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Lauderdale,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Lawrence,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Lewis,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Lincoln,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Loudon,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Macon,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Madison,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Marion,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Marshall,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Maury,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,McMinn,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,McNairy,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Meigs,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Monroe,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Moore,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Morgan,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Obion,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Overton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Perry,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Pickett,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Polk,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Putnam,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Rhea,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Roane,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Robertson,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Scott,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Sequatchie,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Sevier,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Smith,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Stewart,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Sullivan,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Tipton,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Trousdale,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Unicoi,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Union,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Van Buren,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Warren,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Wayne,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Weakley,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,White,housing,Housing,A,1,regional,CoC/HUD; DOC reentry housing; state housing finance
+Tennessee,Anderson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Bedford,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Benton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Bledsoe,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Blount,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Bradley,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Campbell,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Cannon,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Carroll,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Carter,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Cheatham,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Chester,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Claiborne,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Clay,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Cocke,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Coffee,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Crockett,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Cumberland,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,DeKalb,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Decatur,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Dyer,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Fayette,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Fentress,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Franklin,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Gibson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Giles,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Grainger,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Greene,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Grundy,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Hamblen,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Hancock,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Hardeman,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Hardin,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Hawkins,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Haywood,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Henderson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Henry,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Hickman,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Houston,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Humphreys,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Jackson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Jefferson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Johnson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Lake,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Lauderdale,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Lawrence,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Lewis,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Lincoln,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Loudon,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Macon,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Marion,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Marshall,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Maury,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,McMinn,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,McNairy,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Meigs,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Monroe,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Montgomery,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Moore,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Morgan,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Obion,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Overton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Perry,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Pickett,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Polk,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Putnam,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Rhea,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Roane,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Robertson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Scott,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Sequatchie,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Sevier,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Smith,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Stewart,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Sullivan,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Sumner,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Tipton,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Trousdale,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Unicoi,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Union,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Van Buren,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Warren,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Wayne,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Weakley,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,White,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Williamson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Wilson,substance-use-treatment,Substance Use Treatment,A,1,regional,SAMHSA; FindHelpNow/state SUD directory
+Tennessee,Anderson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Bedford,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Benton,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Bledsoe,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Blount,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Bradley,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Campbell,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Cannon,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Carroll,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Carter,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Cheatham,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Chester,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Claiborne,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Clay,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Cocke,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Coffee,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Crockett,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Cumberland,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,DeKalb,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Decatur,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Dickson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Dyer,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Fayette,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Fentress,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Franklin,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Gibson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Giles,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Grainger,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Greene,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Grundy,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Hamblen,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Hancock,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Hardeman,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Hardin,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Hawkins,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Haywood,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Henderson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Henry,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Hickman,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Houston,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Jackson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Jefferson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Johnson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Lake,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Lauderdale,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Lawrence,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Lewis,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Lincoln,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Loudon,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Macon,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Marion,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Marshall,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Maury,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,McMinn,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,McNairy,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Meigs,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Monroe,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Moore,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Morgan,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Obion,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Overton,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Perry,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Pickett,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Polk,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Putnam,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Rhea,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Roane,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Robertson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Scott,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Sequatchie,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Sevier,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Smith,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Stewart,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Sumner,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Tipton,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Trousdale,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Unicoi,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Union,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Van Buren,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Warren,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Wayne,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Weakley,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,White,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Williamson,healthcare,Healthcare,A,1,regional,HRSA FQHC locator; state MH/SUD directory
+Tennessee,Anderson,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Bedford,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Benton,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Bledsoe,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Blount,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Bradley,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Campbell,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Cannon,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Carter,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Cheatham,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Chester,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Clay,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Coffee,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Crockett,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,DeKalb,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Decatur,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Dickson,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Fayette,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Franklin,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Greene,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Grundy,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Hamblen,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Hardeman,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Hardin,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Hawkins,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Haywood,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Henderson,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Henry,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Houston,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Humphreys,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Johnson,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Lewis,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Loudon,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Macon,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Marion,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,McMinn,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,McNairy,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Meigs,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Monroe,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Morgan,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Obion,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Polk,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Rhea,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Roane,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Robertson,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Scott,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Sequatchie,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Smith,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Stewart,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Sullivan,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Tipton,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Trousdale,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Unicoi,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Warren,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Wilson,probation-parole,Probation & Parole,A,1,regional,DOC/DRC regional supervision map
+Tennessee,Cannon,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Carter,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Clay,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Cumberland,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,DeKalb,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Fentress,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Giles,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Grainger,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Greene,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Hancock,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Hawkins,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Hickman,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Humphreys,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Jackson,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Jefferson,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Johnson,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Lawrence,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Lewis,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Lincoln,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Macon,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Marshall,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Maury,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Montgomery,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Moore,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Overton,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Perry,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Pickett,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Putnam,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Smith,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Sullivan,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Trousdale,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Unicoi,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Union,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Van Buren,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Warren,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Washington,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Wayne,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,White,food-nutrition,Food & Nutrition,A,1,regional,Feeding America; SNAP outreach partners
+Tennessee,Anderson,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Benton,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Blount,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Bradley,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Campbell,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Carroll,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Claiborne,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Crockett,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Dyer,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Gibson,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Henry,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Houston,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Humphreys,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Lake,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,McMinn,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Meigs,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Monroe,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Montgomery,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Morgan,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Obion,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Polk,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Roane,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Scott,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Stewart,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Union,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Weakley,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network
+Tennessee,Wilson,legal-aid,Legal Aid,A,1,regional,LSC map; state legal aid network

@@ -1,0 +1,246 @@
+{
+  "generated": "2026-06-23",
+  "thin_threshold_pct": 75.0,
+  "suggestions": [
+    {
+      "state": "Kentucky",
+      "category": "family-children",
+      "category_label": "Family & Children",
+      "resource_id": "261",
+      "resource_name": "Louisville Metro Child Support Division",
+      "coverage": "single",
+      "county": "Jefferson",
+      "rationale": "Category empty in 99.2% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Kentucky",
+      "category": "id-documentation",
+      "category_label": "ID & Documentation",
+      "resource_id": "204",
+      "resource_name": "Social Security Administration \u2014 Lexington",
+      "coverage": "single",
+      "county": "Fayette",
+      "rationale": "Category empty in 98.3% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Kentucky",
+      "category": "veterans",
+      "category_label": "Veterans",
+      "resource_id": "402",
+      "resource_name": "Lexington VA Medical Center",
+      "coverage": "single",
+      "county": "Fayette",
+      "rationale": "Category empty in 95.0% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Kentucky",
+      "category": "transportation",
+      "category_label": "Transportation",
+      "resource_id": "241",
+      "resource_name": "Lextran \u2014 Lexington Public Transit",
+      "coverage": "single",
+      "county": "Fayette",
+      "rationale": "Category empty in 90.8% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Kentucky",
+      "category": "reentry-organizations",
+      "category_label": "Reentry Organizations",
+      "resource_id": "474",
+      "resource_name": "AMPED Louisville",
+      "coverage": "single",
+      "county": "Jefferson",
+      "rationale": "Category empty in 83.3% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Kentucky",
+      "category": "peer-support",
+      "category_label": "Peer Support",
+      "resource_id": "282",
+      "resource_name": "Baptist Fellowship Center \u2014 Reentry Mentor Program",
+      "coverage": "single",
+      "county": "Jefferson",
+      "rationale": "Category empty in 78.3% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Ohio",
+      "category": "id-documentation",
+      "category_label": "ID & Documentation",
+      "resource_id": "181",
+      "resource_name": "Cuyahoga County Bureau of Vital Statistics",
+      "coverage": "single",
+      "county": "Cuyahoga",
+      "rationale": "Category empty in 97.7% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Ohio",
+      "category": "peer-support",
+      "category_label": "Peer Support",
+      "resource_id": "179",
+      "resource_name": "PROSPER \u2014 Peer Recovery Support (Franklin County)",
+      "coverage": "single",
+      "county": "Franklin",
+      "rationale": "Category empty in 97.7% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Ohio",
+      "category": "transportation",
+      "category_label": "Transportation",
+      "resource_id": "90",
+      "resource_name": "COTA \u2014 Reduced Fare Program",
+      "coverage": "single",
+      "county": "Franklin",
+      "rationale": "Category empty in 96.6% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Ohio",
+      "category": "family-children",
+      "category_label": "Family & Children",
+      "resource_id": "92",
+      "resource_name": "Amethyst Inc. \u2014 Family Reunification",
+      "coverage": "single",
+      "county": "Franklin",
+      "rationale": "Category empty in 96.6% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Ohio",
+      "category": "basic-needs",
+      "category_label": "Basic Needs",
+      "resource_id": "158",
+      "resource_name": "Catholic Charities Diocese of Cleveland \u2014 Emergency Assistance",
+      "coverage": "single",
+      "county": "Cuyahoga",
+      "rationale": "Category empty in 95.5% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Ohio",
+      "category": "veterans",
+      "category_label": "Veterans",
+      "resource_id": "153",
+      "resource_name": "Chillicothe VA Medical Center \u2014 Veterans Justice Outreach",
+      "coverage": "multi",
+      "county": "Ross",
+      "rationale": "Category empty in 88.6% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Indiana",
+      "category": "id-documentation",
+      "category_label": "ID & Documentation",
+      "resource_id": "195",
+      "resource_name": "NCLC \u2014 ID Clinic",
+      "coverage": "single",
+      "county": "Marion",
+      "rationale": "Category empty in 98.9% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Indiana",
+      "category": "peer-support",
+      "category_label": "Peer Support",
+      "resource_id": "196",
+      "resource_name": "Indiana Recovery Network \u2014 Marion County",
+      "coverage": "single",
+      "county": "Marion",
+      "rationale": "Category empty in 98.9% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Indiana",
+      "category": "family-children",
+      "category_label": "Family & Children",
+      "resource_id": "203",
+      "resource_name": "Children's Bureau \u2014 Family Support",
+      "coverage": "single",
+      "county": "Marion",
+      "rationale": "Category empty in 98.9% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Indiana",
+      "category": "veterans",
+      "category_label": "Veterans",
+      "resource_id": "165",
+      "resource_name": "INTECARE \u2014 SSVF South Bend",
+      "coverage": "single",
+      "county": "St. Joseph",
+      "rationale": "Category empty in 96.7% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Indiana",
+      "category": "transportation",
+      "category_label": "Transportation",
+      "resource_id": "83",
+      "resource_name": "Citilink \u2014 Fort Wayne Public Transit",
+      "coverage": "single",
+      "county": "Allen",
+      "rationale": "Category empty in 96.7% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Indiana",
+      "category": "basic-needs",
+      "category_label": "Basic Needs",
+      "resource_id": "175",
+      "resource_name": "Back on My Feet \u2014 Indianapolis",
+      "coverage": "single",
+      "county": "Marion",
+      "rationale": "Category empty in 94.6% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Tennessee",
+      "category": "id-documentation",
+      "category_label": "ID & Documentation",
+      "resource_id": "168",
+      "resource_name": "Memphis Shelby County Clerk \u2014 Vital Records",
+      "coverage": "single",
+      "county": "Shelby",
+      "rationale": "Category empty in 97.9% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Tennessee",
+      "category": "transportation",
+      "category_label": "Transportation",
+      "resource_id": "73",
+      "resource_name": "Knoxville Area Transit \u2014 KAT",
+      "coverage": "single",
+      "county": "Knox",
+      "rationale": "Category empty in 96.8% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Tennessee",
+      "category": "peer-support",
+      "category_label": "Peer Support",
+      "resource_id": "173",
+      "resource_name": "Knoxville Recovery Peer Support \u2014 McNabb Center",
+      "coverage": "single",
+      "county": "Knox",
+      "rationale": "Category empty in 96.8% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Tennessee",
+      "category": "family-children",
+      "category_label": "Family & Children",
+      "resource_id": "179",
+      "resource_name": "Knoxville Helen Ross McNabb \u2014 Family Services",
+      "coverage": "single",
+      "county": "Knox",
+      "rationale": "Category empty in 96.8% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Tennessee",
+      "category": "basic-needs",
+      "category_label": "Basic Needs",
+      "resource_id": "144",
+      "resource_name": "Chattanooga Community Kitchen",
+      "coverage": "single",
+      "county": "Hamilton",
+      "rationale": "Category empty in 93.7% of counties; feature for homepage/pathway visibility"
+    },
+    {
+      "state": "Tennessee",
+      "category": "education",
+      "category_label": "Education",
+      "resource_id": "125",
+      "resource_name": "Chattanooga State \u2014 Adult Education Center",
+      "coverage": "single",
+      "county": "Hamilton",
+      "rationale": "Category empty in 91.6% of counties; feature for homepage/pathway visibility"
+    }
+  ]
+}

@@ -94,5 +94,9 @@ export async function enforceApiRouteAccess(
     return null;
   }
 
+  if (pathname.startsWith("/api/resources")) {
+    return null;
+  }
+
   return NextResponse.json({ error: "Not found" }, { status: 404 });
 }

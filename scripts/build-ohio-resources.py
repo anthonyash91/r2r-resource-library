@@ -515,10 +515,10 @@ for la in LEGAL_AIDS:
     cov = "statewide" if not la["served"] else ("single" if "|" not in la["served"] else "multi")
     if la["name"] == "Legal Aid of Southeast and Central Ohio (LASCO)":
         cov = "multi"
-        la["served"] = "Adams|Athens|Belmont|Brown|Butler|Carroll|Champaign|Clark|Clermont|Clinton|Coshocton|Fairfield|Fayette|Franklin|Gallia|Greene|Guernsey|Hamilton|Harrison|Highland|Hocking|Jackson|Knox|Lawrence|Licking|Madison|Meigs|Miami|Monroe|Morgan|Muskingum|Perry|Pickaway|Pike|Ross|Scioto|Vinton|Warren|Washington"
+        la["served"] = "Adams|Athens|Belmont|Brown|Butler|Carroll|Champaign|Clark|Clermont|Clinton|Coshocton|Fairfield|Fayette|Franklin|Gallia|Greene|Guernsey|Hamilton|Harrison|Highland|Hocking|Jackson|Jefferson|Knox|Lawrence|Licking|Madison|Meigs|Miami|Monroe|Morgan|Muskingum|Noble|Perry|Pickaway|Pike|Ross|Scioto|Vinton|Warren|Washington"
     if la["name"] == "Legal Aid of Western Ohio (LAWO)":
         cov = "multi"
-        la["served"] = "Allen|Auglaize|Champaign|Clark|Darke|Defiance|Erie|Fulton|Hardin|Henry|Hancock|Huron|Logan|Lucas|Marion|Mercer|Miami|Ottawa|Paulding|Putnam|Richland|Sandusky|Seneca|Shelby|Van Wert|Williams|Wood|Wyandot"
+        la["served"] = "Allen|Ashland|Auglaize|Champaign|Clark|Crawford|Darke|Defiance|Erie|Fulton|Greene|Hancock|Hardin|Henry|Huron|Logan|Lucas|Marion|Mercer|Miami|Montgomery|Ottawa|Paulding|Preble|Putnam|Richland|Sandusky|Seneca|Shelby|Van Wert|Williams|Wood|Wyandot"
     add(
         name=la["name"], category="legal-aid", region=la["region"],
         description=la["desc"] + " Income and household-size limits apply.",
@@ -897,6 +897,9 @@ for e in EXTRAS:
 # --- Phase 4: Program-level expansion ---
 from ohio_phase4_expansion import register_phase4
 register_phase4(add)
+
+from phase3b_gapfill import register_phase3b_ohio
+register_phase3b_ohio(add, ENTRIES)
 
 # Fix single-county served_counties for coalitions with coverage single
 for entry in ENTRIES:

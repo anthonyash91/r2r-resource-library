@@ -51,3 +51,19 @@ export function filterResourcesByIntakeSignals<T extends Pick<Resource, "intake_
   if (required.length === 0) return resources;
   return resources.filter((resource) => resourceMatchesIntakeFilters(resource, required));
 }
+
+export function countResourcesByIntakeSignal(
+  resources: Pick<Resource, "intake_signals">[]
+): Record<IntakeSignal, number> {
+  const counts = Object.fromEntries(
+    INTAKE_SIGNALS.map((signal) => [signal, 0])
+  ) as Record<IntakeSignal, number>;
+
+  for (const resource of resources) {
+    for (const signal of getResourceIntakeSignals(resource)) {
+      counts[signal] += 1;
+    }
+  }
+
+  return counts;
+}

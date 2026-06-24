@@ -85,6 +85,19 @@ export function formatWebsiteDisplay(website: string | null | undefined): string
   }
 }
 
+/** Public-facing resource totals: exact below 100, otherwise nearest 100 with "+" suffix. */
+export function formatRoundedResourceStat(
+  count: number,
+  locale: "en" | "es" = "en"
+): string {
+  const numberLocale = locale === "es" ? "es-US" : "en-US";
+  if (count < 100) {
+    return count.toLocaleString(numberLocale);
+  }
+  const rounded = Math.round(count / 100) * 100;
+  return `${rounded.toLocaleString(numberLocale)}+`;
+}
+
 export function formatDate(
   date: string | null | undefined,
   locale: "en" | "es" = "en"

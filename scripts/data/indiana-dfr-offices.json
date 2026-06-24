@@ -1,0 +1,738 @@
+[
+  {
+    "county": "Adams",
+    "city": "Decatur",
+    "address": "1145 Bollman St., Decatur, IN 46733-2115",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Allen",
+    "city": "Fort Wayne",
+    "address": "201 E. Rudisill Blvd., Suite 302, Fort Wayne, IN 46806-1756",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Bartholomew",
+    "city": "Columbus",
+    "address": "2330 Poshard Drive, Columbus, IN 47203-1845",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Benton",
+    "city": "Fowler",
+    "address": "305 E. Sixth St., Fowler, IN 47944-1417",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Blackford",
+    "city": "Hartford City",
+    "address": "2005 N. Walnut St., Hartford City, IN 47348",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Boone",
+    "city": "Lebanon",
+    "address": "362 N. Mt. Zion Road, Lebanon, IN 46052-8330",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Brown",
+    "city": "Nashville",
+    "address": "121 Locust Lane, Nashville, IN 47448-0010",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Carroll",
+    "city": "Delphi",
+    "address": "901 Prince William Road, Suite F, Delphi, IN 46923-1758",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Cass",
+    "city": "Logansport",
+    "address": "1 Cass City Center, Suite 301, Logansport, IN 46947-3141",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Clark",
+    "city": "Jeffersonville",
+    "address": "285 Quartermaster Court, Jeffersonville, IN 47130",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Clay",
+    "city": "Brazil",
+    "address": "1017 E. National Ave., Brazil, IN 47834-2713",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Clinton",
+    "city": "Frankfort",
+    "address": "520 S. County Road 200 W., Frankfort, IN 46041-7639",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Crawford",
+    "city": "English",
+    "address": "304 Indiana Ave. Suite B, English, IN 47118-5851",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Daviess",
+    "city": "Washington",
+    "address": "308 W. National Hwy., Suite 1, Washington, IN 47501",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "DeKalb",
+    "city": "Auburn",
+    "address": "1390 S. Grandstaff Drive, Auburn, IN 46706",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Dearborn",
+    "city": "Greendale",
+    "address": "230 Mary Ave., Suite 100, Greendale, IN 47025-2123",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Decatur",
+    "city": "Greensburg",
+    "address": "1023 E. Freeland Road, Greensburg, IN 47240",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Delaware",
+    "city": "Muncie",
+    "address": "3300 W. Kilgore Ave., Muncie, IN 47304-4841",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Dubois",
+    "city": "Jasper",
+    "address": "125 E. 37th St., Suite A, Jasper, IN 47546-9602",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Elkhart",
+    "city": "Elkhart",
+    "address": "225 E. Jackson Blvd., Elkhart, IN 46516-3543",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Fayette",
+    "city": "Connersville",
+    "address": "3896 Western Ave., Connersville, IN 47331",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Floyd",
+    "city": "New Albany",
+    "address": "2633 Grant Line Road, Suite 109, New Albany, IN 47150-2426",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Fountain",
+    "city": "Covington",
+    "address": "1319 Pearl St., Covington, IN 47932-9761",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Franklin",
+    "city": "Brookville",
+    "address": "11179 U.S. 52, Suite C, Brookville, IN 47012-9513",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Fulton",
+    "city": "Rochester",
+    "address": "105 Rochester Plaza, Rochester, IN 46975-2658",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Gibson",
+    "city": "Princeton",
+    "address": "210 S. Fifth Ave., Princeton, IN 47670-3533",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Grant",
+    "city": "Marion",
+    "address": "830 N. Miller Ave., Marion, IN 46952-2338",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Greene",
+    "city": "Bloomfield",
+    "address": "104 County Road 70 E, Suite D, Bloomfield, IN 47424-8738",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Hamilton",
+    "city": "Noblesville",
+    "address": "1101 S. 10th St., Noblesville, IN 46060-3560",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Hancock",
+    "city": "Greenfield",
+    "address": "1290 N. State St., Suite A, Greenfield, IN 46140-1055",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Harrison",
+    "city": "Corydon",
+    "address": "2201 Concord Ave. NW, Suite 120, Corydon, IN 47112-2060",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Hendricks",
+    "city": "Plainfield",
+    "address": "2461 E. Main St., Plainfield, IN 46168-2715",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Henry",
+    "city": "New Castle",
+    "address": "3013 S. 14th St., New Castle, IN 47362-1845",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Howard",
+    "city": "Kokomo",
+    "address": "217 E. Southway Blvd., Suite 200, Kokomo, IN  46902",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Huntington",
+    "city": "Huntington",
+    "address": "1175 Etna Ave., Huntington, IN 46750-1346",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Jackson",
+    "city": "Seymour",
+    "address": "320 Dupont Drive, Seymour, IN 47274",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Jasper",
+    "city": "",
+    "address": "",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Jay",
+    "city": "Portland",
+    "address": "1314 N. Meridian St., Suite 200, Portland, IN 47371-1069",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Jefferson",
+    "city": "Madison",
+    "address": "493 W. Hutchinson Lane, Suite A, Madison, IN 47250-7830",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Jennings",
+    "city": "",
+    "address": "",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Johnson",
+    "city": "Franklin",
+    "address": "1771 Thornburg Lane, Franklin, IN 46131",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Knox",
+    "city": "Vincennes",
+    "address": "2335 N. Sixth St., Vincennes, IN 47591-3157",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Kosciusko",
+    "city": "Warsaw",
+    "address": "334 Enterprise Dr., Warsaw, IN 46580",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "LaGrange",
+    "city": "LaGrange",
+    "address": "826 N. Detroit St., LaGrange, IN 46761-1112",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "LaPorte",
+    "city": "Michigan City",
+    "address": "1551 S. Woodland Ave., Michigan City, IN 46360-7124",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Lake",
+    "city": "Gary",
+    "address": "661 Broadway, Gary, IN 46402-2407",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Lawrence",
+    "city": "Bedford",
+    "address": "1212 I St., Suite 3, Bedford, IN 47421-2955",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Madison",
+    "city": "Anderson",
+    "address": "222 E. 10th St., Suite E, Anderson, IN 46016-1734",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Marion",
+    "city": "Indianapolis",
+    "address": "2620 Kessler Blvd. E. Dr., Suite 100, Indianapolis, IN 46220-2891",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Marshall",
+    "city": "Plymouth",
+    "address": "510 W. Adams St., Suite 210, Plymouth, IN 46563-1785",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Martin",
+    "city": "Loogootee",
+    "address": "125 Cooper St., Loogootee, IN 47553",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Miami",
+    "city": "Peru",
+    "address": "300 S. Broadway, Suite 2, Peru, IN 46970-2890",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Monroe",
+    "city": "Bloomington",
+    "address": "1531 S. Curry Pike, Suite 300, Bloomington, IN 47403",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Montgomery",
+    "city": "Crawfordsville",
+    "address": "1621 Eastway Drive, Crawfordsville, IN 47933",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Morgan",
+    "city": "Martinsville",
+    "address": "1328 Morton Ave., Martinsville, IN 46151",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Newton",
+    "city": "Kentland",
+    "address": "207 N. Seventh St., Suite 2, Kentland, IN 47951",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Noble",
+    "city": "Albion",
+    "address": "774 Trail Ridge Road, Suite C, Albion, IN 46701-1536",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Ohio",
+    "city": "Rising Sun",
+    "address": "308 N. High St., Suite B, Rising Sun, IN 47040-1075",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Orange",
+    "city": "Paoli",
+    "address": "326 N. Gospel St., Suite B, Paoli, IN 47454-1655",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Owen",
+    "city": "Spencer",
+    "address": "450 E. Franklin St., Suite B, Spencer, IN 47460-1824",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Parke",
+    "city": "Rockville",
+    "address": "823 N. Lincoln Road, Rockville, IN 47872",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Perry",
+    "city": "Tell City",
+    "address": "8735 State Road 37, Suite A, Tell City, IN 47586-8349",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Pike",
+    "city": "Petersburg",
+    "address": "820 E. Poplar St., Petersburg, IN 47567-1258",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Porter",
+    "city": "Valparaiso",
+    "address": "2602 Chicago St., Valparaiso, IN 46383-5956",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Posey",
+    "city": "Mount Vernon",
+    "address": "1809 N. Main St., Suite B, Mount Vernon, IN 47620-1209",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Pulaski",
+    "city": "Winamac",
+    "address": "128 N. Sally Dr., Winamac, IN 46996-9100",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Putnam",
+    "city": "Greencastle",
+    "address": "1020 Ave. F, Suite A, Greencastle, IN 46135-1895",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Randolph",
+    "city": "Winchester",
+    "address": "400 S Oak St., Winchester, IN 47394-2225",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Ripley",
+    "city": "Versailles",
+    "address": "888 S. Adams St., Versailles, IN 47042-9420",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Rush",
+    "city": "Rushville",
+    "address": "1340 N. Cherry St. Suite B, Rushville, IN 46173-1105",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Scott",
+    "city": "Scottsburg",
+    "address": "565 S. Lake Road S., Scottsburg, IN 47170-6834",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Shelby",
+    "city": "Shelbyville",
+    "address": "2565 Parkway Drive, Suite 2, Shelbyville, IN 46176-8202",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Spencer",
+    "city": "Rockport",
+    "address": "201 Elm St., Rockport, IN 47635-1409",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "St. Joseph",
+    "city": "South Bend",
+    "address": "3575 Moreau Court, Suite 300, South Bend, IN 46628",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Starke",
+    "city": "Knox",
+    "address": "1921 S. Heaton St., Knox, IN 46534-2325",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Steuben",
+    "city": "Angola",
+    "address": "1651 N. Wayne St. Suite 106, Angola, IN 46703-2366",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Sullivan",
+    "city": "Sullivan",
+    "address": "124 S. State St., Sullivan, IN 47882-1841",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Switzerland",
+    "city": "Vevay",
+    "address": "1035 W. Main St., Suite 3, Vevay, IN 47043-9125",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Tippecanoe",
+    "city": "Lafayette",
+    "address": "2200 Elmwood Ave., Suite C -2, Lafayette, IN 47904",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Tipton",
+    "city": "Tipton",
+    "address": "701 E. Jefferson St., Suite 2, Tipton, IN 46072-1460",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Union",
+    "city": "Liberty",
+    "address": "303A N. Main St., Liberty, IN 47353-1013",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Vanderburgh",
+    "city": "Evansville",
+    "address": "401 SE Sixth St., Suite 114, Evansville, IN 47713",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Vermillion",
+    "city": "Clinton",
+    "address": "121 N. Main St., Clinton, IN 47842-2426",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Vigo",
+    "city": "Terre Haute",
+    "address": "2901 Wabash Ave., Suite 200, Terre Haute, IN 47803",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Wabash",
+    "city": "Wabash",
+    "address": "403 S. Cass St. Suite B, Wabash, IN 46992-3200",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Warren",
+    "city": "Williamsport",
+    "address": "20 B W. Second St., Williamsport, IN 47993-1118",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Warrick",
+    "city": "Boonville",
+    "address": "3355 Liberty Blvd., Boonville, IN 47601-9672",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Washington",
+    "city": "Salem",
+    "address": "709 Anson St., Salem, IN 47167-2237",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Wayne",
+    "city": "Richmond",
+    "address": "50 S. Second St., Richmond, IN 47374-4212",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Wells",
+    "city": "Bluffton",
+    "address": "915 N. Main St., Suite 102, Bluffton, IN 46714-1328",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "White",
+    "city": "Monticello",
+    "address": "384 S. Sixth St., Suite C, Monticello, IN 47960-8216",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  },
+  {
+    "county": "Whitley",
+    "city": "Columbia City",
+    "address": "545 N. Line St., Columbia City, IN 46725-1229",
+    "phone": "800-403-0864",
+    "website": "https://www.in.gov/fssa/dfr/ebt-hoosier-works-card/find-my-local-dfr-office/",
+    "source": "https://www.in.gov/fssa/dfr/files/DFR_Map_and_County_List.pdf"
+  }
+]

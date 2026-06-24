@@ -726,6 +726,9 @@ for e in EXTRAS:
 from indiana_phase4_expansion import register_phase4
 register_phase4(add)
 
+from phase3b_gapfill import register_phase3b_indiana
+register_phase3b_indiana(add, ENTRIES)
+
 # Fix single-county served_counties
 for entry in ENTRIES:
     if entry.get("coverage") == "single" and not entry.get("served_counties") and entry.get("county"):

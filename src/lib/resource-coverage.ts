@@ -1,5 +1,6 @@
 import type { Resource, ResourceCoverage } from "@/types";
 import { buildResourcesPageHref } from "@/lib/resources-page";
+import { normalizeService } from "@/lib/service-types";
 
 export function isStatewideResource(
   resource: Pick<Resource, "coverage" | "tags">
@@ -73,6 +74,63 @@ export function resourceMatchesCountyDirectly(
   if (resource.served_counties?.some((c) => c === normalized)) return true;
   if (!resource.served_counties?.length && resource.county === normalized) return true;
   return false;
+}
+
+/**
+ * County-scoped resources for filter dropdowns and attribute search.
+ * Includes local and regional providers serving the county; excludes statewide rows.
+ */
+export function resourcesForCountyAttributeScope(
+  resources: Resource[],
+  county?: string
+): Resource[] {
+  if (!county?.trim()) return resources;
+  const normalized = county.trim();
+  return resources.filter(
+    (resource) => resourceServesCounty(resource, normalized) && !isStatewideResource(resource)
+  );
+}
+
+/**
+ * County-scoped resources for filter dropdowns (local + regional; not statewide).
+ */
+export function resourcesForLocationFacets(
+  resources: Resource[],
+  county?: string
+): Resource[] {
+  return resourcesForCountyAttributeScope(resources, county);
+}
+
+export function collectResourceServices(resources: Resource[]): string[] {
+  const services = new Set<string>();
+  for (const resource of resources) {
+    for (const service of resource.services ?? []) {
+      const normalized = normalizeService(service);
+      if (normalized.trim()) services.add(normalized.trim());
+    }
+  }
+  return [...services].sort((a, b) => a.localeCompare(b));
+}
+
+export function countResourcesByCategoryId(resources: Resource[]): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const resource of resources) {
+    if (!resource.category_id) continue;
+    counts.set(resource.category_id, (counts.get(resource.category_id) ?? 0) + 1);
+  }
+  return counts;
+}
+
+export function countResourcesByService(resources: Resource[]): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const resource of resources) {
+    for (const service of resource.services ?? []) {
+      const name = normalizeService(service);
+      if (!name) continue;
+      counts.set(name, (counts.get(name) ?? 0) + 1);
+    }
+  }
+  return counts;
 }
 
 export function partitionResourcesByCountyFilter(

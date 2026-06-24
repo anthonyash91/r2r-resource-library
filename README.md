@@ -169,7 +169,7 @@ Site IDs are hashed at rest; reversible encryption allows admins to reveal/copy 
 | **Homepage** | Hero search, popular tags, browse-by-category pills, personalized “Picked for you” (when onboarded), How It Works, featured resources, built-for CTA, announcements banner |
 | **Resource directory** (`/resources`) | Hero search with separate collapsible location filters (collapsed by default); filters and intake signals apply when the user presses **Search** (no auto-scroll on every change), sticky search bar, “Resources based on your chosen needs” section with dashboard link to edit preferences, county/statewide split with count badges in section headers, paginated masonry grid; `?scroll=results` or `?scroll=recommended` for deep links from homepage and dashboard |
 | **Resource detail** (`/resources/[id]`) | Category/coverage badges, intake signal badges (criminal record, referral, walk-in), eligibility & operational notes (EN/ES), served counties, contact info, directions, save & share, related resources |
-| **Onboarding** (`/get-started`) | 3-step wizard: state (KY/OH) → county → up to 3 priority categories; skip option; edit mode via `?edit=1` |
+| **Onboarding** (`/get-started`) | 3-step wizard: state (from registry) → county → up to 3 priority categories; skip option; edit mode via `?edit=1` |
 | **Search & filters** | Keyword, category, state, county, city, service type, coverage, recently added, intake signals (`?intake=accepts_criminal_record\|walk_in_ok` — AND logic); draft filter state until **Search** is pressed |
 | **Saved resources** (`/saved`) | Full saved list (sign-in required) |
 | **Dashboard** (`/dashboard`) | Welcome, location & priority summary, saved / recommended / recently viewed sections |
@@ -285,8 +285,8 @@ supabase/migrations/014_add_intake_signals.sql
 ### Seed resources
 
 ```bash
-# Kentucky → supabase/seed-resources.sql
-npm run seed:resources
+# Kentucky → supabase/seed-kentucky-resources.sql
+npm run seed:resources:kentucky
 
 # Ohio → supabase/seed-ohio-resources.sql
 npm run seed:resources:ohio
@@ -294,24 +294,30 @@ npm run seed:resources:ohio
 # Indiana → supabase/seed-indiana-resources.sql
 npm run seed:resources:indiana
 
+# Tennessee → supabase/seed-tennessee-resources.sql
+npm run seed:resources:tennessee
+
 # All states
 npm run seed:resources:all
 ```
 
-Run the generated SQL files in Supabase (Kentucky, then Ohio, then Indiana), or use:
+Run the generated SQL files in Supabase, or use:
 
 ```bash
-npm run db:push:ohio      # requires SUPABASE_SERVICE_ROLE_KEY
+npm run db:push:kentucky   # requires SUPABASE_SERVICE_ROLE_KEY
+npm run db:push:ohio
 npm run db:push:indiana
+npm run db:push:tennessee
 ```
 
 Apply CSV enrichments (also auto-tags `intake_signals` from eligibility/notes):
 
 ```bash
 npm run seed:enrich          # merge batch JSON → CSV + refresh intake signals
-npm run enrich:resources     # Kentucky full enrich pass
+npm run enrich:kentucky      # Kentucky full enrich pass
 npm run enrich:ohio          # Ohio full enrich pass
 npm run enrich:indiana       # Indiana full enrich pass
+npm run enrich:tennessee     # Tennessee full enrich pass
 ```
 
 `python3 scripts/enrich-resources.py` expands descriptions and **sets `intake_signals`** on every row (heuristic). Optional LLM refinement afterward:
@@ -331,7 +337,7 @@ Optional LLM-only pass (API key required — not included with Claude.ai web sub
 
 ```bash
 export ANTHROPIC_API_KEY=sk-ant-...   # from console.anthropic.com
-npx tsx scripts/tag-intake-signals.ts data/resources.csv --llm
+npx tsx scripts/tag-intake-signals.ts data/kentucky-resources.csv --llm
 # or: --llm-provider=openai with OPENAI_API_KEY
 ```
 
@@ -384,7 +390,14 @@ src/
 │   └── supabase/             # Browser, server, admin clients
 ├── types/                    # Shared TypeScript types
 data/
-├── resources.csv             # Source data for Kentucky seed
+├── kentucky-resources.csv    # Kentucky source data + research log
+├── kentucky-research-log.csv
+├── ohio-resources.csv
+├── ohio-research-log.csv
+├── indiana-resources.csv
+├── indiana-research-log.csv
+├── tennessee-resources.csv
+├── tennessee-research-log.csv
 ├── enrichments/              # Batch enrichment JSON
 scripts/                      # Seed generators, migrations, enrich apply
 supabase/
@@ -458,9 +471,11 @@ Resource cards use a consistent **type badge** system (category, statewide, regi
 
 | Asset | Location | Tooling |
 |-------|----------|---------|
-| Kentucky resources | `data/resources.csv` | `npm run seed:resources` |
+| Kentucky resources | `data/kentucky-resources.csv` | `npm run seed:resources:kentucky` |
 | Ohio resources | `data/ohio-resources.csv` | `npm run seed:resources:ohio` |
 | Indiana resources | `data/indiana-resources.csv` | `npm run seed:resources:indiana` |
+| Tennessee resources | `data/tennessee-resources.csv` | `npm run seed:resources:tennessee` |
+| Research logs | `data/{state}-research-log.csv` | Generated with each state's build script |
 | Enrichments | `data/enrichments/batch-*.json` | `npm run seed:enrich` |
 | Field semantics | `.cursor/rules/i18n.mdc` | `eligibility` vs `notes` vs `served_counties` |
 

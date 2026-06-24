@@ -42,10 +42,26 @@ export function parseResourcesPageScrollTarget(
   return "none";
 }
 
+/** When set, skip onboarding preference auto-redirect (explicit browse-all / cleared filters). */
+export const RESOURCES_BROWSE_PARAM = "browse";
+
+export function isResourcesBrowseAllView(
+  params: Partial<Record<string, string | undefined>>
+): boolean {
+  return params[RESOURCES_BROWSE_PARAM] === "1";
+}
+
+export function buildResourcesPageClearedHref(): string {
+  const searchParams = new URLSearchParams();
+  searchParams.set(RESOURCES_BROWSE_PARAM, "1");
+  return `/resources?${searchParams.toString()}`;
+}
+
 export function resourcesPageQueryWithPreferenceDefaults(
-  params: Partial<Record<ResourceFilterParamKey, string | undefined>>,
+  params: Partial<Record<ResourceFilterParamKey | typeof RESOURCES_BROWSE_PARAM, string | undefined>>,
   preferences: UserPreferences
 ): string | null {
+  if (isResourcesBrowseAllView(params)) return null;
   if (params.state?.trim()) return null;
   if (!hasCompletedOnboarding(preferences) || !preferences.state) return null;
 

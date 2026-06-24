@@ -1,5 +1,5 @@
 /**
- * Populate served_counties and coverage on data/resources.csv for all resources.
+ * Populate served_counties and coverage on data/kentucky-resources.csv for all resources.
  *
  * Usage:
  *   npx tsx scripts/migrate-served-counties.ts
@@ -20,7 +20,7 @@ import {
   type ServiceArea,
 } from "./lib/kentucky-service-areas";
 
-const CSV_PATH = resolve(process.cwd(), "data/resources.csv");
+const CSV_PATH = resolve(process.cwd(), "data/kentucky-resources.csv");
 
 const COLUMNS = [
   "id",
@@ -274,4 +274,4 @@ console.log(
 console.log(
   `  non-statewide missing counties: ${records.filter((r) => r.coverage !== "statewide" && !r.served_counties?.trim()).length}`
 );
-console.log("\nNext: npm run seed:resources → run migration 005 + seed-resources.sql");
+console.log("\nNext: npm run seed:resources:kentucky → run migration 005 + seed-kentucky-resources.sql");

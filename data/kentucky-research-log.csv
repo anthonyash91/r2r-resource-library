@@ -1,0 +1,289 @@
+source_url,source_type,date_accessed,confidence,notes,id_reference
+https://corrections.ky.gov/Reentry,government,2026-06-22,high,Resource id 1: Kentucky Department of Corrections — Division of Reentry Services,1
+https://secondchance.ky.gov,government,2026-06-22,high,Resource id 2: Kentucky DOC — Second Chance Portal,2
+https://findhelpnow.org/ky,nonprofit,2026-06-22,high,Resource id 3: KY HELP Statewide Substance Use Hotline,3
+https://southernkyreentry.org,nonprofit,2026-06-22,high,Resource id 4: Southern Kentucky Reentry Council,4
+https://www.kentuckyreentry.org,nonprofit,2026-06-22,high,Resource id 5: FIVCO Reentry Council,5
+https://c-t-susa.com,other,2026-06-22,high,Resource id 10: CTS-Russell (Community Transitional Services),10
+https://www.thehealingplace.org,nonprofit,2026-06-22,high,Resource id 11: The Burns M. Brady Center,11
+https://dismas.com,other,2026-06-22,high,Resource id 12: Dismas Charities — Diersen (Louisville),12
+https://dismas.com,other,2026-06-22,high,Resource id 13: Dismas Charities — Portland (Louisville),13
+https://voamid.org,nonprofit,2026-06-22,high,Resource id 14: Volunteers of America — Halfway Back Program,14
+https://www.voamid.org/locations/freedom-house/,nonprofit,2026-06-22,high,Resource id 15: Volunteers of America — Freedom House,15
+https://recenterministries.org,nonprofit,2026-06-22,high,Resource id 16: Re:Center Ministries,16
+legacy-curation,legacy,2026-06-22,medium,Historical row 17: Exodus Scholar Homes; see data/enrichments/batch-*.json,17
+https://louhomeless.org/news/gethelp/,nonprofit,2026-06-22,high,Resource id 18: Coalition for the Homeless — Single Point of Entry,18
+https://chrysalishouse.org,nonprofit,2026-06-22,high,Resource id 20: Chrysalis House,20
+https://hopectr.org/what-we-do/recovery-treatment/mens-recovery-program/,nonprofit,2026-06-22,high,Resource id 21: Hope Center — George Privett (Men),21
+https://hopectr.org/what-we-do/recovery-treatment/womens-recovery-program/,nonprofit,2026-06-22,high,Resource id 22: Hope Center — Ball-Quantrell Jones (Women),22
+https://dismas.com,other,2026-06-22,high,Resource id 23: Dismas Charities — Lexington,23
+https://shepherdshouseinc.com,other,2026-06-22,high,Resource id 24: Shepherds House,24
+https://lexingtonrescue.org/services/ex-offender-re-entry/,nonprofit,2026-06-22,high,Resource id 25: Lexington Rescue Mission — Re-Entry Program,25
+https://welcomehouseky.org,nonprofit,2026-06-22,high,Resource id 30: Welcome House of Northern Kentucky,30
+https://transitionsky.org,nonprofit,2026-06-22,high,"Resource id 31: Transitions, Inc. — Covington",31
+https://transitionsky.org/facilities/grateful-life-center,nonprofit,2026-06-22,high,"Resource id 32: Transitions, Inc. — Grateful Life Center",32
+https://marcrecovery.com,other,2026-06-22,high,Resource id 40: Men's Addiction Recovery Center (MARC),40
+https://haven4change.org,nonprofit,2026-06-22,high,Resource id 41: Haven4Change,41
+http://www.thebrrc.com,other,2026-06-22,high,Resource id 50: Bluegrass Career Development Center,50
+https://foothillscap.org/programs/liberty-place,nonprofit,2026-06-22,high,Resource id 51: Liberty Place Recovery Center for Women,51
+https://dismas.com,other,2026-06-22,high,Resource id 60: Dismas Charities — Owensboro,60
+https://westcare.com/places/kentucky/,other,2026-06-22,high,Resource id 70: WestCare — Lookout (Elkhorn City),70
+http://www.keetoncorrections.com,other,2026-06-22,high,Resource id 71: Keeton Corrections — Paducah,71
+https://www.oxfordhouseky.org/reentry,nonprofit,2026-06-22,high,Resource id 80: Oxford House Kentucky — Recovery Housing,80
+https://goodwillky.org,nonprofit,2026-06-22,high,Resource id 100: Goodwill Industries of Kentucky — RISE Program,100
+https://goodwillky.org/expungements/,nonprofit,2026-06-22,high,Resource id 101: Goodwill Kentucky — Free Expungement Services,101
+https://kentuckianaworks.org/kcclou,nonprofit,2026-06-22,high,Resource id 102: Kentucky Career Center — Louisville,102
+https://www.ckycareers.com/locations,other,2026-06-22,high,Resource id 103: Kentucky Career Center — Lexington (Bluegrass),103
+https://nkcareercenter.org,nonprofit,2026-06-22,high,Resource id 104: Kentucky Career Center — Northern Kentucky,104
+https://www.jobsight.org,nonprofit,2026-06-22,high,Resource id 105: Kentucky Career Center — Bowling Green,105
+https://tencocareercenter.com,other,2026-06-22,high,Resource id 106: Kentucky Career Center — TENCO (Ashland),106
+https://ekcep.org/find-a-career/,nonprofit,2026-06-22,high,Resource id 107: Eastern Kentucky CEP (EKCEP) — SITE Program,107
+https://dpl.ky.gov/Pages/default.aspx,government,2026-06-22,high,Resource id 108: Kentucky Dept of Professional Licensing — Occupational Licensing,108
+https://ij.org/report-abuse/,nonprofit,2026-06-22,high,Resource id 109: Institute for Justice — Kentucky Licensing,109
+https://kynect.ky.gov/benefits/s/,government,2026-06-22,high,Resource id 120: kynect — Medicaid & Benefits Enrollment,120
+https://sevencounties.org/crisis/,nonprofit,2026-06-22,high,Resource id 121: Seven Counties Services — Louisville,121
+https://centerstone.org/locations/kentucky/,nonprofit,2026-06-22,high,Resource id 122: Centerstone — Louisville,122
+https://newvista.org/get-help/crisis/,nonprofit,2026-06-22,high,Resource id 123: New Vista Behavioral Health — Lexington,123
+https://www.northkey.org/get-help-now/,nonprofit,2026-06-22,high,Resource id 124: North Key Community Care — Covington,124
+https://988lifeline.org/es/,nonprofit,2026-06-22,high,Resource id 125: 988 Suicide & Crisis Lifeline,125
+https://louisville.edu/ryanwhite550/,nonprofit,2026-06-22,high,Resource id 126: University of Louisville 550 HIV Clinic / Ryan White Program,126
+https://www.voamid.org/services/housing-opportunities-for-persons-with-aids-hopwa/,nonprofit,2026-06-22,high,Resource id 127: Volunteers of America — HIV Services (Louisville),127
+https://avolky.org/get-tested/,nonprofit,2026-06-22,high,Resource id 128: AVOL Kentucky — Lexington,128
+https://louisvilleky.gov/government/health-wellness/clinics,government,2026-06-22,high,Resource id 129: Louisville Metro Public Health — Free HIV Testing,129
+https://www.thehealingplace.org/how-it-works/,nonprofit,2026-06-22,high,Resource id 140: The Healing Place — Men's Campus,140
+https://www.thehealingplace.org/womens-campus-the-healing-place/,nonprofit,2026-06-22,high,Resource id 141: The Healing Place — Women's Campus,141
+https://www.stepworks.com/locations/,other,2026-06-22,high,Resource id 142: Stepworks Recovery Centers,142
+https://findtreatment.gov/locator,government,2026-06-22,high,Resource id 143: SAMHSA Treatment Locator,143
+https://yourlegalaid.org/apply/,nonprofit,2026-06-22,high,Resource id 160: Legal Aid Society — Louisville,160
+https://lablaw.org/apply-online,nonprofit,2026-06-22,high,Resource id 161: Legal Aid of the Bluegrass — Lexington,161
+https://klaid.org/apply-for-services/,nonprofit,2026-06-22,high,Resource id 162: Kentucky Legal Aid — Bowling Green,162
+https://klaid.org/apply-for-services/,nonprofit,2026-06-22,high,Resource id 163: Kentucky Legal Aid — Owensboro,163
+https://klaid.org/apply-for-services/,nonprofit,2026-06-22,high,Resource id 164: Kentucky Legal Aid — Paducah,164
+https://www.ardfky.org/page/17/how-get-help,nonprofit,2026-06-22,high,Resource id 165: AppalReD Legal Aid — Eastern Kentucky,165
+https://aclu-ky.org/en/rovr,nonprofit,2026-06-22,high,Resource id 166: ACLU of Kentucky — Voting Rights Restoration (ROVR),166
+https://civilrightsrestoration.ky.gov/Pages/qualify.aspx,government,2026-06-22,high,Resource id 167: Kentucky Civil Rights Restoration Program,167
+https://www.kyequaljustice.org/contact-us,nonprofit,2026-06-22,high,Resource id 168: Kentucky Equal Justice Center,168
+https://kycourts.gov/Court-Programs/Specialty-Courts/Pages/Drug-Court.aspx,government,2026-06-22,high,Resource id 169: Jefferson County Drug Court — Louisville,169
+https://louisvilleprosecutor.com/veterans-treatment-court/,other,2026-06-22,high,Resource id 170: Louisville Veterans Treatment Court,170
+https://fayettecountyattorney.com/services/specialty-courts/,other,2026-06-22,high,Resource id 171: Fayette County Drug Courts — Lexington,171
+https://kycourts.gov/Court-Programs/Specialty-Courts/Pages/Specialty-Courts-Contact.aspx,government,2026-06-22,high,Resource id 172: Kentucky Court of Justice — Specialty Courts Directory,172
+https://kynect.ky.gov/benefits/s/,government,2026-06-22,high,Resource id 180: Kentucky SNAP Enrollment — kynect,180
+https://daretocare.org/get-help/,nonprofit,2026-06-22,high,Resource id 181: Dare to Care Food Bank — Louisville,181
+https://godspantry.org/help,nonprofit,2026-06-22,high,Resource id 182: God's Pantry Food Bank — Lexington,182
+https://feedingamericaky.org/find-help/,nonprofit,2026-06-22,high,Resource id 183: Feeding America Kentucky's Heartland — Elizabethtown,183
+https://www.feedingamerica.org/find-your-local-foodbank,nonprofit,2026-06-22,high,Resource id 184: Feeding America — Find a Food Bank,184
+https://www.chfs.ky.gov/agencies/dph/dehp/vsb/Pages/birth-certificates.aspx,government,2026-06-22,high,Resource id 200: Kentucky Office of Vital Statistics — Birth Certificates,200
+https://drive.ky.gov/Pages/IDocument-Guide.aspx,government,2026-06-22,high,Resource id 201: Kentucky Driver Licensing (DRIVE) — State ID,201
+https://drive.ky.gov/Drivers/Pages/License%20Reinstatement.aspx,government,2026-06-22,high,Resource id 202: Kentucky Driver Licensing — License Reinstatement,202
+https://www.ssa.gov/locator/,government,2026-06-22,high,Resource id 203: Social Security Administration — Louisville,203
+https://www.ssa.gov/locator/,government,2026-06-22,high,Resource id 204: Social Security Administration — Lexington,204
+https://www.ssa.gov/locator/,government,2026-06-22,high,Resource id 205: Social Security Administration — Locate an Office,205
+https://www.capky.org/resources/,nonprofit,2026-06-22,high,Resource id 220: LIHEAP — Utility Assistance (Community Action Kentucky),220
+https://nkcac.org/services/family-services/financial-assistance/,nonprofit,2026-06-22,high,Resource id 221: Northern Kentucky Community Action Commission (NKCAC),221
+https://kynect.ky.gov/benefits/s/apply-for-benefits,government,2026-06-22,high,Resource id 222: kynect — KTAP & Financial Assistance,222
+https://kentucky211.org/,nonprofit,2026-06-22,high,Resource id 223: 211 Kentucky — Crisis Resource Navigation,223
+https://bankonlouisville.org/,nonprofit,2026-06-22,high,Resource id 224: Bank On Louisville — Second-Chance Banking,224
+https://www.ccuky.org/my-life/save-and-spend/checking,nonprofit,2026-06-22,high,Resource id 225: Commonwealth Credit Union — 20/20 Checking,225
+https://www.ridetarc.org/,nonprofit,2026-06-22,high,Resource id 240: Transit Authority of River City (TARC) — Louisville,240
+https://lextran.com/rider-guide/our-mobility-services/bus/,other,2026-06-22,high,Resource id 241: Lextran — Lexington Public Transit,241
+https://www.tankbus.org/,nonprofit,2026-06-22,high,Resource id 242: TANK — Transit Authority of Northern Kentucky,242
+https://kentuckychildsupport.ky.gov/,government,2026-06-22,high,Resource id 260: Kentucky Child Support Services — Attorney General,260
+https://kentuckychildsupport.ky.gov/,government,2026-06-22,high,Resource id 261: Louisville Metro Child Support Division,261
+https://kentucky.kvc.org/,nonprofit,2026-06-22,high,Resource id 262: KVC Kentucky — Family Reunification Services,262
+https://www.thecenteronline.org/get-help/,nonprofit,2026-06-22,high,Resource id 263: Center for Women and Families — Louisville,263
+https://reflecthope.org/home,nonprofit,2026-06-22,high,Resource id 280: Reflections of Hope,280
+https://ekcep.org/programs-services/recovery-reentry/,nonprofit,2026-06-22,high,Resource id 281: EKCEP — Peer Recovery Coaches (Eastern KY),281
+https://www.bfcenterky.org/,nonprofit,2026-06-22,high,Resource id 282: Baptist Fellowship Center — Reentry Mentor Program,282
+https://naky.org/find-a-meeting/,nonprofit,2026-06-22,high,Resource id 283: NA / Narcotics Anonymous — Kentucky,283
+https://aa-ky.org/,nonprofit,2026-06-22,high,Resource id 284: AA / Alcoholics Anonymous — Kentucky,284
+https://kyae.ky.gov/Students/Pages/earn-ged-diploma.aspx,government,2026-06-22,high,Resource id 300: KCTCS — Adult Education & GED (Statewide),300
+https://bluegrass.kctcs.edu/education-training/adult-education/index.aspx,nonprofit,2026-06-22,high,Resource id 301: Bluegrass Community & Technical College — Adult Education,301
+https://gateway.kctcs.edu/admissions/information-for/hse-ged.aspx,nonprofit,2026-06-22,high,Resource id 302: Gateway Community & Technical College — Adult Education,302
+https://southcentral.kctcs.edu/workforce-solutions/adult-education/index.aspx,nonprofit,2026-06-22,high,Resource id 303: South Central KY CTC (SKYCTC) — Adult Education,303
+https://kyae.ky.gov/Students/Pages/find-a-kyae-center.aspx,government,2026-06-22,high,Resource id 304: Kentucky Adult Education — Find a Program,304
+https://www.va.gov/louisville-health-care/,government,2026-06-22,high,Resource id 400: Robley Rex VA Medical Center — Louisville,400
+https://www.va.gov/louisville-health-care/health-services/homeless-veteran-care/,government,2026-06-22,high,Resource id 401: Louisville VA — Veterans Justice Outreach (VJO),401
+https://www.va.gov/lexington-health-care/,government,2026-06-22,high,Resource id 402: Lexington VA Medical Center,402
+https://www.va.gov/lexington-health-care/health-services/homeless-veteran-care/,government,2026-06-22,high,Resource id 403: Lexington VA — Veterans Justice Outreach (VJO),403
+https://www.va.gov/homeless/for-homeless-veterans/,government,2026-06-22,high,Resource id 404: National Call Center for Homeless Veterans,404
+https://www.veteranscrisisline.net/,other,2026-06-22,high,Resource id 405: Veterans Crisis Line,405
+https://www.va.gov/louisville-vet-center/,government,2026-06-22,high,Resource id 406: Louisville Vet Center,406
+https://www.va.gov/lexington-vet-center/,government,2026-06-22,high,Resource id 407: Lexington Vet Center,407
+https://www.benefits.va.gov/louisville/,government,2026-06-22,high,Resource id 408: Louisville VA Regional Benefit Office,408
+https://www.va.gov/homeless/hud-vash/,government,2026-06-22,high,Resource id 409: HUD-VASH — Housing Vouchers for Homeless Veterans,409
+https://veterans.ky.gov/Pages/default.aspx,government,2026-06-22,high,Resource id 410: Kentucky Department of Veterans Affairs (KDVA),410
+https://vfwky.org/,nonprofit,2026-06-22,high,Resource id 411: VFW Department of Kentucky,411
+https://kylegion.org/,nonprofit,2026-06-22,high,Resource id 412: Kentucky American Legion,412
+https://waysidechristianmission.org/,nonprofit,2026-06-22,high,Resource id 430: Wayside Christian Mission — Louisville,430
+https://svdplou.org/,nonprofit,2026-06-22,high,Resource id 431: St. Vincent de Paul — Louisville,431
+https://louisville.dressforsuccess.org/,nonprofit,2026-06-22,high,Resource id 432: Dress for Success Louisville — Women's Clothing & Career Support,432
+https://corrections.ky.gov/Probation-and-Parole/Pages/default.aspx,government,2026-06-22,high,Resource id 450: Kentucky Division of Probation and Parole — Central Office,450
+https://corrections.ky.gov/Probation-and-Parole/northern/Pages/District-16.aspx,government,2026-06-22,high,Resource id 451: Probation & Parole — Louisville (Jefferson County),451
+https://corrections.ky.gov/Probation-and-Parole/Pages/default.aspx,government,2026-06-22,high,Resource id 452: Probation & Parole — Lexington (Fayette County),452
+https://corrections.ky.gov/Probation-and-Parole/Pages/default.aspx,government,2026-06-22,high,Resource id 453: Probation & Parole — Covington (Northern KY),453
+https://corrections.ky.gov/Probation-and-Parole/Pages/default.aspx,government,2026-06-22,high,Resource id 454: Probation & Parole — Bowling Green (Warren County),454
+https://corrections.ky.gov/Probation-and-Parole/Pages/default.aspx,government,2026-06-22,high,Resource id 455: Probation & Parole — Paducah (Western KY),455
+https://corrections.ky.gov/Probation-and-Parole/Pages/default.aspx,government,2026-06-22,high,Resource id 456: Probation & Parole — Pikeville (Eastern KY),456
+https://www.ceoworks.org/locations/louisville,nonprofit,2026-06-22,high,Resource id 470: Center for Employment Opportunities (CEO) — Louisville,470
+https://louisvillereentry.org/,nonprofit,2026-06-22,high,Resource id 471: Louisville Metro Reentry Task Force,471
+https://reentrytool.ky.gov/,government,2026-06-22,high,Resource id 472: Louisville Metro Criminal Justice Commission — Reentry Toolkit,472
+https://lul.org/workforce-development/,nonprofit,2026-06-22,high,Resource id 473: Louisville Urban League — Workforce Development Center,473
+https://ampedlouisville.org/,nonprofit,2026-06-22,high,Resource id 474: AMPED Louisville,474
+https://www.brightoncenter.com/,other,2026-06-22,high,Resource id 475: Brighton Center — Newport (Campbell County),475
+https://llcnky.com/,other,2026-06-22,high,Resource id 476: Life Learning Center — Covington (Kenton County),476
+https://connectministriesnky.org/,nonprofit,2026-06-22,high,Resource id 477: Connect Ministries — Newport (Campbell County),477
+https://www.pathways-ky.org/,nonprofit,2026-06-22,high,Resource id 478: Pathways Inc. — Regional Mental Health & Recovery,478
+https://www.arccenters.com/,other,2026-06-22,high,Resource id 479: Addiction Recovery Care (ARC) — Eastern Kentucky,479
+https://www.mcccare.com/,other,2026-06-22,high,Resource id 480: Mountain Comprehensive Care Center (MCCC),480
+https://www.bsaacap.org/,nonprofit,2026-06-22,high,Resource id 481: Big Sandy Area Community Action Program (BSAACAP),481
+https://aclc.net/,other,2026-06-22,high,Resource id 482: Appalachian Citizens' Law Center — Whitesburg (Letcher County),482
+https://www.crbh.net/,other,2026-06-22,high,Resource id 483: Cumberland River Behavioral Health — Southeastern Kentucky,483
+https://www.cvadd.org/,nonprofit,2026-06-22,high,Resource id 484: Cumberland Valley Area Development District (CVADD),484
+https://www.lakeaction.org/,nonprofit,2026-06-22,high,Resource id 485: Lake Cumberland Community Action Agency — Somerset (Pulaski County),485
+https://corrections.ky.gov/Probation-and-Parole/eastern/Pages/District-14.aspx,government,2026-06-22,high,Resource id 486: Probation & Parole — Hazard (Perry County),486
+https://corrections.ky.gov/Probation-and-Parole/eastern/Pages/District-10.aspx,government,2026-06-22,high,Resource id 487: Probation & Parole — London (Laurel County),487
+https://www.centerstone.org/locations/kentucky/,nonprofit,2026-06-22,high,Resource id 488: Lincoln Trail Behavioral Health System,488
+https://www.ltadd.org/workforce-development,nonprofit,2026-06-22,high,Resource id 489: Kentucky Career Center — Elizabethtown,489
+https://corrections.ky.gov/Probation-and-Parole/central/Pages/District-5.aspx,government,2026-06-22,high,Resource id 490: Probation & Parole — Elizabethtown (Hardin County),490
+https://www.lifeskills-inc.org/,nonprofit,2026-06-22,high,Resource id 491: LifeSkills Inc. — Elizabethtown,491
+https://frankfortcareercenter.org/,nonprofit,2026-06-22,high,Resource id 492: Kentucky Career Center — Frankfort,492
+https://corrections.ky.gov/Probation-and-Parole/central/Pages/District-12.aspx,government,2026-06-22,high,Resource id 493: Probation & Parole — Frankfort (Franklin County),493
+https://www.pennyroyalcenter.org/,nonprofit,2026-06-22,high,Resource id 494: Pennyroyal Center — Hopkinsville (Christian County),494
+https://www.audubonareaservices.org/,nonprofit,2026-06-22,high,Resource id 495: Audubon Area Community Services — Henderson County,495
+https://corrections.ky.gov/Probation-and-Parole/western/Pages/District-2.aspx,government,2026-06-22,high,Resource id 496: Probation & Parole — Hopkinsville (Christian County),496
+https://www.lifeskills-inc.org/,nonprofit,2026-06-22,high,Resource id 497: LifeSkills Inc. — Bowling Green (South Central Kentucky),497
+https://www.wkwdb.com/,other,2026-06-22,high,Resource id 500: Kentucky Career Center — Paducah / West Kentucky,500
+https://www.kccgreenriver.com/,other,2026-06-22,high,Resource id 501: Kentucky Career Center — Owensboro / Green River,501
+https://ekcep.org/,nonprofit,2026-06-22,high,Resource id 502: Kentucky Career Center — Pikeville (EKCEP),502
+https://cumberlandsworkforce.com/,other,2026-06-22,high,Resource id 503: Kentucky Career Center — Somerset / Lake Cumberland,503
+https://kcc.ky.gov/,government,2026-06-22,high,Resource id 504: Kentucky Career Center — Hopkinsville / Pennyrile,504
+https://cumberlandsworkforce.com/career-center-locations/,other,2026-06-22,high,Resource id 505: Kentucky Career Center — Corbin / Cumberland Valley,505
+https://4rbh.org/,nonprofit,2026-06-22,high,Resource id 506: Four Rivers Behavioral Health — Paducah,506
+https://www.rvbh.com/,other,2026-06-22,high,Resource id 507: River Valley Behavioral Health — Owensboro,507
+https://www.adanta.com/,other,2026-06-22,high,Resource id 508: Adanta Group — Somerset (South-Central Kentucky),508
+https://corrections.ky.gov/Probation-and-Parole/western/Pages/District-13.aspx,government,2026-06-22,high,Resource id 509: Probation & Parole — Owensboro (District 6),509
+https://corrections.ky.gov/Probation-and-Parole/eastern/Pages/District-15.aspx,government,2026-06-22,high,Resource id 510: Probation & Parole — Ashland (District 8),510
+https://www.pennyrileallied.org/,nonprofit,2026-06-22,high,Resource id 511: Pennyrile Allied Community Services (PACS),511
+https://www.purchaseadd.org/,nonprofit,2026-06-22,high,Resource id 512: Purchase Area Development District (PADD),512
+https://gradd.com/,other,2026-06-22,high,Resource id 513: Green River Area Development District (GRADD),513
+https://www.btadd.com/,other,2026-06-22,high,Resource id 514: Buffalo Trace Area Development District (BTADD),514
+https://www.bradd.org/,nonprofit,2026-06-22,high,Resource id 515: Barren River Area Development District (BRADD),515
+https://rcdowensboro.org/catholic-charities,nonprofit,2026-06-22,high,Resource id 516: Catholic Charities Diocese of Owensboro,516
+https://ashland.kctcs.edu/education-training/adult-education/index.aspx,nonprofit,2026-06-22,high,Resource id 517: Ashland Community & Technical College — Adult Education,517
+https://bigsandy.kctcs.edu/education-training/adult-education/index.aspx,nonprofit,2026-06-22,high,Resource id 518: Big Sandy Community & Technical College — Adult Education,518
+https://somerset.kctcs.edu/workforce-solutions/adult-education/index.aspx,nonprofit,2026-06-22,high,Resource id 519: Somerset Community College — Adult Education,519
+https://owensboro.kctcs.edu/education-training/adult-education/index.aspx,nonprofit,2026-06-22,high,Resource id 520: Owensboro Community & Technical College — Adult Education,520
+https://madisonville.kctcs.edu/education-training/adult-education/index.aspx,nonprofit,2026-06-22,high,Resource id 521: Madisonville Community College — Adult Education,521
+https://hazard.kctcs.edu/workforce-solutions/adult-education/index.aspx,nonprofit,2026-06-22,high,Resource id 522: Hazard Community & Technical College — Adult Education,522
+https://heartlandged.com/,other,2026-06-22,high,Resource id 523: Elizabethtown Community & Technical College — Adult Education,523
+https://maysville.kctcs.edu/education-training/adult-education/index.aspx,nonprofit,2026-06-22,high,Resource id 524: Maysville Community & Technical College — Adult Education,524
+https://hopkinsville.kctcs.edu/education-training/academic-foundations/index.aspx,nonprofit,2026-06-22,high,Resource id 525: Hopkinsville Community College — Adult Education,525
+https://prodigalky.org/,nonprofit,2026-06-22,high,Resource id 526: Prodigal Ministries — Buckner,526
+https://sevencounties.org/,nonprofit,2026-06-22,high,Resource id 527: Seven Counties Services — Bullitt County,527
+https://sevencounties.org/,nonprofit,2026-06-22,high,Resource id 528: Seven Counties Services — Henry / Oldham / Trimble Counties (La Grange),528
+https://sevencounties.org/,nonprofit,2026-06-22,high,Resource id 529: Seven Counties Services — Spencer County,529
+https://nkcac.org/,nonprofit,2026-06-22,high,Resource id 530: NKCAC — Warsaw Office (Gallatin & Surrounding Counties),530
+http://boylecountydetention.com/,other,2026-06-22,high,Resource id 531: WestCare — Boyle County Detention Men's Jail Recovery Program,531
+https://corrections.ky.gov/Probation-and-Parole/central/Pages/District-6.aspx,government,2026-06-22,high,Resource id 532: Probation & Parole — Danville (Boyle County),532
+https://www.bgcap.org/,nonprofit,2026-06-22,high,Resource id 533: Bluegrass Community Action Partnership — Boyle County,533
+https://www.bgcap.org/,nonprofit,2026-06-22,high,Resource id 534: Bluegrass Community Action Partnership — Lincoln County,534
+https://www.mtcomp.org/cliffview,nonprofit,2026-06-22,high,Resource id 535: Cliffview Recovery Center — Lancaster (Garrard County),535
+https://westcare.com/place/westcare-kentucky/,other,2026-06-22,high,Resource id 536: WestCare — Estill County Community Involvement Center,536
+https://newvista.org/location/estill-county,nonprofit,2026-06-22,high,Resource id 537: New Vista — Estill County Outpatient Clinic,537
+https://www.northkey.org/locations/carroll-county/,nonprofit,2026-06-22,high,Resource id 538: NorthKey Community Care — Carroll County,538
+https://kynect.ky.gov/benefits/s/,government,2026-06-23,high,Phase 3b gap-fill id 539: DCBS — Bath County Family Support,539
+https://kynect.ky.gov/benefits/s/,government,2026-06-23,high,Phase 3b gap-fill id 540: DCBS — Montgomery County Family Support,540
+https://kynect.ky.gov/benefits/s/,government,2026-06-23,high,Phase 3b gap-fill id 541: DCBS — Rowan County Family Support,541
+https://kynect.ky.gov/benefits/s/,government,2026-06-23,high,Phase 3b gap-fill id 542: DCBS — Robertson County Family Support,542
+https://kynect.ky.gov/benefits/s/,government,2026-06-23,high,Phase 3b gap-fill id 543: DCBS — Mason County Family Support,543
+https://corrections.ky.gov/Probation-and-Parole/northern/Pages/District-14.aspx,government,2026-06-23,high,Phase 3b gap-fill id 544: Probation & Parole — Maysville (Mason County),544
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=3,government,2026-06-23,high,Phase 3b gap-fill id 545: DCBS — Adair County Family Support,545
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=4,government,2026-06-23,high,Phase 3b gap-fill id 546: DCBS — Allen County Family Support,546
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=6,government,2026-06-23,high,Phase 3b gap-fill id 547: DCBS — Ballard County Family Support,547
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=7,government,2026-06-23,high,Phase 3b gap-fill id 548: DCBS — Barren County Family Support,548
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=9,government,2026-06-23,medium,Phase 3b gap-fill id 549: DCBS — Bell County Family Support,549
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=12,government,2026-06-23,high,Phase 3b gap-fill id 550: DCBS — Boyd County Family Support,550
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=15,government,2026-06-23,high,Phase 3b gap-fill id 551: DCBS — Breathitt County Family Support,551
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=16,government,2026-06-23,high,Phase 3b gap-fill id 552: DCBS — Breckinridge County Family Support,552
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=18,government,2026-06-23,high,Phase 3b gap-fill id 553: DCBS — Butler County Family Support,553
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=19,government,2026-06-23,high,Phase 3b gap-fill id 554: DCBS — Caldwell County Family Support,554
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=20,government,2026-06-23,high,Phase 3b gap-fill id 555: DCBS — Calloway County Family Support,555
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=22,government,2026-06-23,high,Phase 3b gap-fill id 556: DCBS — Carlisle County Family Support,556
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=24,government,2026-06-23,high,Phase 3b gap-fill id 557: DCBS — Carter County Family Support,557
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=25,government,2026-06-23,high,Phase 3b gap-fill id 558: DCBS — Casey County Family Support,558
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=26,government,2026-06-23,high,Phase 3b gap-fill id 559: DCBS — Christian County Family Support,559
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=27,government,2026-06-23,high,Phase 3b gap-fill id 560: DCBS — Clark County Family Support,560
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=28,government,2026-06-23,medium,Phase 3b gap-fill id 561: DCBS — Clay County Family Support,561
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=29,government,2026-06-23,high,Phase 3b gap-fill id 562: DCBS — Clinton County Family Support,562
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=30,government,2026-06-23,high,Phase 3b gap-fill id 563: DCBS — Crittenden County Family Support,563
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=31,government,2026-06-23,high,Phase 3b gap-fill id 564: DCBS — Cumberland County Family Support,564
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=32,government,2026-06-23,high,Phase 3b gap-fill id 565: DCBS — Daviess County Family Support,565
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=33,government,2026-06-23,high,Phase 3b gap-fill id 566: DCBS — Edmonson County Family Support,566
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=34,government,2026-06-23,high,Phase 3b gap-fill id 567: DCBS — Elliott County Family Support,567
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=35,government,2026-06-23,high,Phase 3b gap-fill id 568: DCBS — Estill County Family Support,568
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=37,government,2026-06-23,high,Phase 3b gap-fill id 569: DCBS — Fleming County Family Support,569
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=38,government,2026-06-23,high,Phase 3b gap-fill id 570: DCBS — Floyd County Family Support,570
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=40,government,2026-06-23,high,Phase 3b gap-fill id 571: DCBS — Fulton County Family Support,571
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=44,government,2026-06-23,high,Phase 3b gap-fill id 572: DCBS — Graves County Family Support,572
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=45,government,2026-06-23,high,Phase 3b gap-fill id 573: DCBS — Grayson County Family Support,573
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=46,government,2026-06-23,high,Phase 3b gap-fill id 574: DCBS — Green County Family Support,574
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=47,government,2026-06-23,high,Phase 3b gap-fill id 575: DCBS — Greenup County Family Support,575
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=48,government,2026-06-23,high,Phase 3b gap-fill id 576: DCBS — Hancock County Family Support,576
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=49,government,2026-06-23,high,Phase 3b gap-fill id 577: DCBS — Hardin County Family Support,577
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=50,government,2026-06-23,high,Phase 3b gap-fill id 578: DCBS — Harlan County Family Support,578
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=51,government,2026-06-23,high,Phase 3b gap-fill id 579: DCBS — Harrison County Family Support,579
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=52,government,2026-06-23,high,Phase 3b gap-fill id 580: DCBS — Hart County Family Support,580
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=53,government,2026-06-23,high,Phase 3b gap-fill id 581: DCBS — Henderson County Family Support,581
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=55,government,2026-06-23,high,Phase 3b gap-fill id 582: DCBS — Hickman County Family Support,582
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=56,government,2026-06-23,high,Phase 3b gap-fill id 583: DCBS — Hopkins County Family Support,583
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=57,government,2026-06-23,high,Phase 3b gap-fill id 584: DCBS — Jackson County Family Support,584
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=60,government,2026-06-23,high,Phase 3b gap-fill id 585: DCBS — Johnson County Family Support,585
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=62,government,2026-06-23,high,Phase 3b gap-fill id 586: DCBS — Knott County Family Support,586
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=63,government,2026-06-23,high,Phase 3b gap-fill id 587: DCBS — Knox County Family Support,587
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=64,government,2026-06-23,high,Phase 3b gap-fill id 588: DCBS — Larue County Family Support,588
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=65,government,2026-06-23,high,Phase 3b gap-fill id 589: DCBS — Laurel County Family Support,589
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=66,government,2026-06-23,high,Phase 3b gap-fill id 590: DCBS — Lawrence County Family Support,590
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=67,government,2026-06-23,high,Phase 3b gap-fill id 591: DCBS — Lee County Family Support,591
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=68,government,2026-06-23,high,Phase 3b gap-fill id 592: DCBS — Leslie County Family Support,592
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=69,government,2026-06-23,high,Phase 3b gap-fill id 593: DCBS — Letcher County Family Support,593
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=70,government,2026-06-23,high,Phase 3b gap-fill id 594: DCBS — Lewis County Family Support,594
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=72,government,2026-06-23,high,Phase 3b gap-fill id 595: DCBS — Livingston County Family Support,595
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=73,government,2026-06-23,high,Phase 3b gap-fill id 596: DCBS — Logan County Family Support,596
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=74,government,2026-06-23,high,Phase 3b gap-fill id 597: DCBS — Lyon County Family Support,597
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=75,government,2026-06-23,high,Phase 3b gap-fill id 598: DCBS — Madison County Family Support,598
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=76,government,2026-06-23,high,Phase 3b gap-fill id 599: DCBS — Magoffin County Family Support,599
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=77,government,2026-06-23,high,Phase 3b gap-fill id 600: DCBS — Marion County Family Support,600
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=79,government,2026-06-23,high,Phase 3b gap-fill id 601: DCBS — Martin County Family Support,601
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=78,government,2026-06-23,high,Phase 3b gap-fill id 602: DCBS — Marshall County Family Support,602
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=81,government,2026-06-23,high,Phase 3b gap-fill id 603: DCBS — McCracken County Family Support,603
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=82,government,2026-06-23,high,Phase 3b gap-fill id 604: DCBS — McCreary County Family Support,604
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=83,government,2026-06-23,high,Phase 3b gap-fill id 605: DCBS — McLean County Family Support,605
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=84,government,2026-06-23,high,Phase 3b gap-fill id 606: DCBS — Meade County Family Support,606
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=85,government,2026-06-23,high,Phase 3b gap-fill id 607: DCBS — Menifee County Family Support,607
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=86,government,2026-06-23,high,Phase 3b gap-fill id 608: DCBS — Mercer County Family Support,608
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=87,government,2026-06-23,high,Phase 3b gap-fill id 609: DCBS — Metcalfe County Family Support,609
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=88,government,2026-06-23,high,Phase 3b gap-fill id 610: DCBS — Monroe County Family Support,610
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=90,government,2026-06-23,high,Phase 3b gap-fill id 611: DCBS — Morgan County Family Support,611
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=91,government,2026-06-23,high,Phase 3b gap-fill id 612: DCBS — Muhlenberg County Family Support,612
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=92,government,2026-06-23,high,Phase 3b gap-fill id 613: DCBS — Nelson County Family Support,613
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=93,government,2026-06-23,high,Phase 3b gap-fill id 614: DCBS — Nicholas County Family Support,614
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=94,government,2026-06-23,high,Phase 3b gap-fill id 615: DCBS — Ohio County Family Support,615
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=97,government,2026-06-23,high,Phase 3b gap-fill id 616: DCBS — Owsley County Family Support,616
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=99,government,2026-06-23,high,Phase 3b gap-fill id 617: DCBS — Perry County Family Support,617
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=100,government,2026-06-23,high,Phase 3b gap-fill id 618: DCBS — Pike County Family Support,618
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=101,government,2026-06-23,high,Phase 3b gap-fill id 619: DCBS — Powell County Family Support,619
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=102,government,2026-06-23,high,Phase 3b gap-fill id 620: DCBS — Pulaski County Family Support,620
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=104,government,2026-06-23,high,Phase 3b gap-fill id 621: DCBS — Rockcastle County Family Support,621
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=106,government,2026-06-23,high,Phase 3b gap-fill id 622: DCBS — Russell County Family Support,622
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=109,government,2026-06-23,high,Phase 3b gap-fill id 623: DCBS — Simpson County Family Support,623
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=111,government,2026-06-23,high,Phase 3b gap-fill id 624: DCBS — Taylor County Family Support,624
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=112,government,2026-06-23,high,Phase 3b gap-fill id 625: DCBS — Todd County Family Support,625
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=113,government,2026-06-23,high,Phase 3b gap-fill id 626: DCBS — Trigg County Family Support,626
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=115,government,2026-06-23,high,Phase 3b gap-fill id 627: DCBS — Union County Family Support,627
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=116,government,2026-06-23,high,Phase 3b gap-fill id 628: DCBS — Warren County Family Support,628
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=117,government,2026-06-23,high,Phase 3b gap-fill id 629: DCBS — Washington County Family Support,629
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=118,government,2026-06-23,high,Phase 3b gap-fill id 630: DCBS — Wayne County Family Support,630
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=119,government,2026-06-23,high,Phase 3b gap-fill id 631: DCBS — Webster County Family Support,631
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=120,government,2026-06-23,high,Phase 3b gap-fill id 632: DCBS — Whitley County Family Support,632
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=121,government,2026-06-23,high,Phase 3b gap-fill id 633: DCBS — Wolfe County Family Support,633
+https://corrections.ky.gov/Probation-and-Parole/northern/Pages/District-14.aspx,government,2026-06-23,high,Phase 3b gap-fill id 634: Probation & Parole — Maysville (Mason County),634

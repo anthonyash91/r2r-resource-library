@@ -76,6 +76,7 @@ export const KENTUCKY_COUNTIES = [
   "Magoffin",
   "Marion",
   "Martin",
+  "Marshall",
   "Mason",
   "McCracken",
   "McCreary",

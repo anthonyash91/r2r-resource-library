@@ -5,6 +5,7 @@ import re
 from typing import Any
 
 from intake_signals import classify_intake_signals_heuristic, serialize_intake_signals
+from lib.service_types import normalize_services_field
 
 STATE_PRESETS: dict[str, dict[str, str]] = {
     "Kentucky": {
@@ -49,6 +50,34 @@ STATE_PRESETS: dict[str, dict[str, str]] = {
         "residents_es": "residentes de Indiana",
         "tag": "indiana",
     },
+    "Tennessee": {
+        "name": "Tennessee",
+        "demonym": "Tennesseans",
+        "demonym_es": "tennesseanos",
+        "throughout": "throughout Tennessee",
+        "throughout_es": "en todo Tennessee",
+        "counties_n": "Tennessee counties",
+        "counties_n_es": "condados de Tennessee",
+        "adults": "Tennessee adults",
+        "adults_es": "adultos en Tennessee",
+        "residents": "Tennessee residents",
+        "residents_es": "residentes de Tennessee",
+        "tag": "tennessee",
+    },
+    "Michigan": {
+        "name": "Michigan",
+        "demonym": "Michigan residents",
+        "demonym_es": "residentes de Michigan",
+        "throughout": "throughout Michigan",
+        "throughout_es": "en todo Michigan",
+        "counties_n": "Michigan counties",
+        "counties_n_es": "condados de Michigan",
+        "adults": "Michigan adults",
+        "adults_es": "adultos en Michigan",
+        "residents": "Michigan residents",
+        "residents_es": "residentes de Michigan",
+        "tag": "michigan",
+    },
 }
 
 _STATE = STATE_PRESETS["Ohio"]
@@ -61,6 +90,10 @@ def configure_enricher_state(state: str) -> None:
 
 def infer_state_from_csv_path(path: str) -> str:
     stem = path.lower()
+    if "michigan" in stem:
+        return "Michigan"
+    if "tennessee" in stem:
+        return "Tennessee"
     if "indiana" in stem:
         return "Indiana"
     if "ohio" in stem:
@@ -81,8 +114,8 @@ def _category_reentry_hints() -> dict[str, tuple[str, str]]:
 
 CATEGORY_REENTRY_TEMPLATE = {
     "housing": (
-        "Programs may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting.",
-        "Los programas pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar.",
+        "Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting.",
+        "Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar.",
     ),
     "employment": (
         "Staff help justice-involved job seekers build work history, remove record-related barriers, and connect to fair-chance employers in the region.",
@@ -125,34 +158,34 @@ CATEGORY_REENTRY_TEMPLATE = {
         "Esta oficina maneja cumplimiento de supervisión e informes—no navegación de crisis de reinserción; pida a su oficial referencias a aliados locales de reinserción.",
     ),
     "id-documentation": (
-        "Fees, proof of identity, and residency documents apply; reentry programs and legal aid partners often help gather required paperwork.",
-        "Aplican tarifas, prueba de identidad y documentos de residencia; programas de reinserción y aliados legales suelen ayudar a reunir el papeleo requerido.",
+        "Fees, proof of identity, and residency documents apply; reentry resources and legal aid partners often help gather required paperwork.",
+        "Aplican tarifas, prueba de identidad y documentos de residencia; recursos de reinserción y aliados legales suelen ayudar a reunir el papeleo requerido.",
     ),
     "transportation": (
-        "Reduced-fare programs typically require application and proof of income or disability; IDs are needed to receive a pass or card.",
-        "Los programas de tarifa reducida suelen requerir solicitud y prueba de ingresos o discapacidad; se necesita identificación para recibir un pase o tarjeta.",
+        "Reduced-fare resources typically require application and proof of income or disability; IDs are needed to receive a pass or card.",
+        "Los recursos de tarifa reducida suelen requerir solicitud y prueba de ingresos o discapacidad; se necesita identificación para recibir un pase o tarjeta.",
     ),
     "family-children": (
-        "Family programs may require participation in treatment or parenting classes; custody status affects some reunification services.",
-        "Los programas familiares pueden requerir participación en tratamiento o clases de crianza; el estado de custodia afecta algunos servicios de reunificación.",
+        "Family resources may require participation in treatment or parenting classes; custody status affects some reunification services.",
+        "Los recursos familiares pueden requerir participación en tratamiento o clases de crianza; el estado de custodia afecta algunos servicios de reunificación.",
     ),
     "peer-support": (
-        "Peer specialists with lived experience offer mentoring and recovery support; certification requirements vary by program.",
-        "Especialistas pares con experiencia vivida ofrecen mentoría y apoyo en recuperación; los requisitos de certificación varían según el programa.",
+        "Peer specialists with lived experience offer mentoring and recovery support; certification requirements vary by resource.",
+        "Especialistas pares con experiencia vivida ofrecen mentoría y apoyo en recuperación; los requisitos de certificación varían según el recurso.",
     ),
     "state-agency": (
         "State offices provide information and referrals statewide; county and nonprofit partners deliver most direct services.",
         "Las oficinas estatales ofrecen información y referencias en todo el estado; socios del condado y sin fines de lucro prestan la mayoría de servicios directos.",
     ),
     "reentry-organizations": (
-        "Coalition and navigator programs connect returning citizens to local partners—they rarely provide emergency shelter, cash aid, or 24/7 crisis response on their own.",
-        "Las coaliciones y programas de navegación conectan a ciudadanos que regresan con aliados locales—rara vez ofrecen refugio de emergencia, efectivo o respuesta de crisis 24/7 por sí solos.",
+        "Coalition and navigator resources connect returning citizens to local partners—they rarely provide emergency shelter, cash aid, or 24/7 crisis response on their own.",
+        "Las coaliciones y recursos de navegación conectan a ciudadanos que regresan con aliados locales—rara vez ofrecen refugio de emergencia, efectivo o respuesta de crisis 24/7 por sí solos.",
     ),
 }
 
 GENERIC_ELIGIBILITY = (
-    "STATE residents in service area; contact program for current eligibility requirements.",
-    "Contact program for current eligibility requirements.",
+    "STATE residents in service area; contact this resource for current eligibility requirements.",
+    "Contact this resource for current eligibility requirements.",
     "Justice-involved residents of served counties; contact coalition for current partner eligibility.",
 )
 GENERIC_NOTES_EN = (
@@ -161,8 +194,8 @@ GENERIC_NOTES_EN = (
     "Contact for meeting dates and hours",
 )
 BOILERPLATE_DESC = (
-    " Contact program for current intake.",
-    "Contact program for current intake.",
+    " Contact this resource for current intake.",
+    "Contact this resource for current intake.",
 )
 
 
@@ -179,7 +212,7 @@ def _is_generic_eligibility(text: str) -> bool:
     generic = tuple(
         g.replace("STATE", _STATE["name"]) for g in GENERIC_ELIGIBILITY
     )
-    return not t or t in generic or "contact program for current eligibility" in t.lower()
+    return not t or t in generic or "contact this resource for current eligibility" in t.lower()
 
 
 def _is_generic_notes(text: str) -> bool:
@@ -255,7 +288,7 @@ def _is_broken_spanish(text: str) -> bool:
         " free ",
         " noncriminal",
         "Provides ",
-        "Contact program",
+        "Contact this resource",
         "Proporciona free",
         "Gratuita noncriminal",
         " networking coalition",
@@ -272,13 +305,13 @@ def expand_description(row: dict[str, str]) -> tuple[str, str]:
     area_en, area_es = _area_phrase(row)
     cat_hint_en, cat_hint_es = _category_reentry_hints().get(category, _category_reentry_hints()["reentry-organizations"])
 
-    substantial_en = len(base) >= 340 and "Contact program for current intake" not in base
+    substantial_en = len(base) >= 340 and "Contact this resource for current intake" not in base
     needs_es_rebuild = _is_broken_spanish(base_es) or not base_es
 
     if substantial_en and not needs_es_rebuild:
         if "reentry" not in base.lower() and "justice" not in base.lower():
-            extra_en = f" The program supports {_STATE['demonym']} navigating reentry in {area_en}."
-            extra_es = f" El programa apoya a {_STATE['demonym_es']} en reinserción en {area_es}."
+            extra_en = f" This resource supports {_STATE['demonym']} navigating reentry in {area_en}."
+            extra_es = f" Este recurso apoya a {_STATE['demonym_es']} en reinserción en {area_es}."
             return base + extra_en, base_es + extra_es
         return base, base_es
 
@@ -287,7 +320,7 @@ def expand_description(row: dict[str, str]) -> tuple[str, str]:
         es = (
             f"{name} sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad en {area_es}. "
             f"{cat_hint_es} "
-            f"Contacte el programa para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias."
+            f"Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias."
         )
         if category == "legal-aid":
             es = (
@@ -303,13 +336,13 @@ def expand_description(row: dict[str, str]) -> tuple[str, str]:
             f"{name} is a regional reentry coalition serving {area_en}. "
             f"Partner agencies, faith communities, and workforce organizations meet regularly to share resources and warm referrals for people leaving jail or prison, on probation or parole, and their families. "
             f"Coordinators help returning citizens connect to housing, employment, treatment, legal aid, and benefits through local partners. "
-            f"This is primarily a networking and navigation council—not an emergency shelter, cash assistance program, or crisis line."
+            f"This is primarily a networking and navigation council—not an emergency shelter, cash assistance, or crisis line."
         )
         es = (
             f"{name} es una coalición regional de reinserción que sirve {area_es}. "
             f"Agencias aliadas, comunidades de fe y organizaciones laborales se reúnen para compartir recursos y referencias directas para personas que salen de la cárcel o prisión, en libertad condicional o vigilada, y sus familias. "
             f"Los coordinadores ayudan a conectar a ciudadanos que regresan con vivienda, empleo, tratamiento, asistencia legal y beneficios a través de aliados locales. "
-            f"Es principalmente un consejo de red y navegación—no un refugio de emergencia, programa de efectivo ni línea de crisis."
+            f"Es principalmente un consejo de red y navegación—no un refugio de emergencia, asistencia en efectivo ni línea de crisis."
         )
         return en, es
 
@@ -317,7 +350,7 @@ def expand_description(row: dict[str, str]) -> tuple[str, str]:
         en = (
             f"{name} is a statewide or regional referral resource for {_STATE['demonym']} affected by the criminal justice system. "
             f"{base} Users can search by location, service type, or need to find active providers in {area_en}. "
-            f"Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits programs operated by other organizations. "
+            f"Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. "
             f"This entry describes a navigation hub—staff here do not replace direct services at partner agencies."
         )
         es = (
@@ -332,7 +365,7 @@ def expand_description(row: dict[str, str]) -> tuple[str, str]:
         f"{name} serves justice-involved adults and families rebuilding stability after incarceration in {area_en}. "
         f"{base} "
         f"{cat_hint_en} "
-        f"Contact the program to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted."
+        f"Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted."
     )
     if category == "legal-aid":
         es = (
@@ -345,7 +378,7 @@ def expand_description(row: dict[str, str]) -> tuple[str, str]:
         es = (
             f"{name} sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en {area_es}. "
             f"{cat_hint_es} "
-            f"Contacte el programa para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias."
+            f"Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias."
         )
     return en, es
 
@@ -367,8 +400,8 @@ def expand_eligibility(row: dict[str, str]) -> tuple[str, str]:
         en = f"Low-income {_STATE['residents']} in {area_en}; income and household limits apply. Record sealing and expungement eligibility depends on offense type, waiting periods, and case outcome."
         es = f"{_STATE['residents_es'].capitalize()} de bajos ingresos en {area_es}; aplican límites de ingresos y hogar. La elegibilidad para sellado o eliminación de antecedentes depende del tipo de delito, períodos de espera y resultado del caso."
     elif category == "housing":
-        en = f"Adults in {area_en} who are homeless, leaving incarceration, or in recovery; programs may require sobriety, income limits, or DOC/court referral."
-        es = f"Adultos en {area_es} sin hogar, que salen de la encarcelación o en recuperación; los programas pueden requerir sobriedad, límites de ingresos o referencia del DOC/tribunal."
+        en = f"Adults in {area_en} who are homeless, leaving incarceration, or in recovery; resources may require sobriety, income limits, or DOC/court referral."
+        es = f"Adultos en {area_es} sin hogar, que salen de la encarcelación o en recuperación; los recursos pueden requerir sobriedad, límites de ingresos o referencia del DOC/tribunal."
     elif category == "employment":
         en = f"Job seekers in {area_en} with criminal records, including people recently released or on supervision; some training slots require referral partners."
         es = f"Personas que buscan empleo en {area_es} con antecedentes penales, incluidas personas recién liberadas o bajo supervisión; algunas plazas de capacitación requieren referencia de aliados."
@@ -376,10 +409,10 @@ def expand_eligibility(row: dict[str, str]) -> tuple[str, str]:
         en = "U.S. military veterans in contact with courts, jails, or prisons; VA medical and benefits eligibility depends on discharge status and service history."
         es = "Veteranos de las fuerzas armadas de EE.UU. en contacto con tribunales, cárceles o prisiones; la elegibilidad médica y de beneficios del VA depende del tipo de baja e historial de servicio."
     elif category == "state-agency" or row.get("coverage") == "statewide":
-        en = f"{_STATE['residents'].capitalize()} meeting program rules for {name}; criminal record is generally not a barrier to information and referral services."
-        es = f"{_STATE['residents_es'].capitalize()} que cumplan las reglas del programa para {name}; los antecedentes penales generalmente no son barrera para información y referencias."
+        en = f"{_STATE['residents'].capitalize()} meeting resource requirements for {name}; criminal record is generally not a barrier to information and referral services."
+        es = f"{_STATE['residents_es'].capitalize()} que cumplan los requisitos del recurso para {name}; los antecedentes penales generalmente no son barrera para información y referencias."
     else:
-        en = f"Residents of {area_en} who are justice-involved or recently released; program-specific income, referral, or offense-type rules may apply—confirm at intake."
+        en = f"Residents of {area_en} who are justice-involved or recently released; resource-specific income, referral, or offense-type rules may apply—confirm at intake."
         es = f"Residentes de {area_es} con antecedentes penales o recién liberados; pueden aplicar reglas de ingresos, referencia o tipo de delito—confirme en la admisión."
 
     return en, es
@@ -410,7 +443,7 @@ def expand_notes(row: dict[str, str]) -> tuple[str, str]:
         contact_parts.append(f"visit {website}")
     if email:
         contact_parts.append(f"email {email}")
-    contact = "; ".join(contact_parts) if contact_parts else "contact the program directly"
+    contact = "; ".join(contact_parts) if contact_parts else "contact this resource directly"
 
     en = f"For current intake, {contact}. {hours + '.' if hours and not hours.endswith('.') else hours or 'Hours vary—confirm before visiting.'}"
     if _is_coalition(row):
@@ -430,31 +463,31 @@ def expand_notes(row: dict[str, str]) -> tuple[str, str]:
 
 def expand_services(row: dict[str, str]) -> str:
     existing = [s.strip() for s in (row.get("services") or "").split("|") if s.strip()]
-    generic = {"Resource referrals", "Community support", "Program-specific services"}
+    generic = {"Partner referrals", "Community support", "Resource-specific services"}
     if existing and not generic.issuperset(set(existing)):
-        return row.get("services", "")
+        return normalize_services_field(row.get("services", ""))
 
     category = row.get("category", "")
     mapping = {
         "housing": "Emergency shelter|Transitional housing|Case management|Housing navigation|Landlord outreach",
-        "employment": "Job search assistance|Resume help|Skills training|Fair-chance job placement|Workforce referrals",
-        "healthcare": "Primary medical care|Behavioral health services|Medicaid enrollment help|Sliding-fee care",
-        "legal-aid": "Record sealing help|Expungement assistance|Housing legal aid|Benefits advocacy|Civil legal representation",
-        "education": "GED preparation|Adult diploma programs|Workforce credentials|Career counseling",
-        "veterans": "VA benefits navigation|VJO outreach|Treatment referrals|Housing referrals",
-        "food-nutrition": "Food pantry referrals|SNAP application help|Emergency food distribution",
-        "financial-assistance": "Benefits enrollment|Medicaid application|SNAP assistance|Case management",
-        "substance-use-treatment": "Outpatient treatment|Residential treatment|MAT referrals|Recovery support",
-        "basic-needs": "Clothing assistance|Hygiene supplies|Emergency basic needs|Furniture referrals",
-        "probation-parole": "Supervision reporting|Compliance support|Community referrals",
-        "id-documentation": "ID application guidance|Birth certificate help|Document navigation",
-        "transportation": "Reduced-fare transit|Bus pass assistance",
-        "peer-support": "Peer mentoring|Recovery coaching|Support groups",
+        "employment": "Job readiness training|Resume help|Skills training|Job placement|Partner referrals",
+        "healthcare": "Primary medical care|Behavioral health services|Medicaid enrollment|Sliding-fee care",
+        "legal-aid": "Expungement assistance|Housing legal aid|Benefits advocacy|Civil legal representation",
+        "education": "GED and high school equivalency|Adult education|Career training and certifications|Career counseling",
+        "veterans": "VA benefits navigation|Veterans services|Addiction treatment referrals|Partner referrals",
+        "food-nutrition": "Food pantry access|SNAP enrollment|Emergency food assistance",
+        "financial-assistance": "Benefits enrollment|Medicaid enrollment|SNAP enrollment|Case management",
+        "substance-use-treatment": "Outpatient treatment|Residential treatment|MAT referrals|Addiction recovery support",
+        "basic-needs": "Clothing assistance|Basic needs assistance|Emergency financial assistance|Partner referrals",
+        "probation-parole": "Probation and parole supervision|Court compliance support|Partner referrals",
+        "id-documentation": "ID assistance|Birth certificate assistance|Document assistance",
+        "transportation": "Bus pass assistance|Transportation assistance",
+        "peer-support": "Peer support|Addiction recovery support|Support groups",
         "family-children": "Family reunification support|Parenting services|Case management",
-        "reentry-organizations": "Reentry navigation|Partner referrals|Coalition coordination|Resource networking",
-        "state-agency": "Information and referral|Program navigation|Statewide resource connections",
+        "reentry-organizations": "Reentry navigation|Partner referrals|Coalition coordination|Partner referrals",
+        "state-agency": "Information and referral|Partner referrals|Partner referrals",
     }
-    return mapping.get(category, "Reentry navigation|Community referrals|Resource coordination")
+    return normalize_services_field(mapping.get(category, "Reentry navigation|Partner referrals|Partner referrals"))
 
 
 def expand_tags(row: dict[str, str]) -> str:
@@ -480,14 +513,14 @@ def is_publication_ready(row: dict[str, str]) -> bool:
         return False
     if any(b.lower() in desc.lower() for b in BOILERPLATE_DESC):
         return False
-    if "contact program for current intake" in desc.lower():
+    if "contact this resource for current intake" in desc.lower():
         return False
     if _is_generic_eligibility(row.get("eligibility", "")):
         return False
     if _is_generic_notes(row.get("notes", "")):
         return False
     services = [s.strip() for s in (row.get("services") or "").split("|") if s.strip()]
-    if not services or {"Resource referrals", "Community support"}.issuperset(set(services)):
+    if not services or {"Partner referrals", "Community support"}.issuperset(set(services)):
         return False
     return True
 

@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
+import { useResourceFilterDraftOptional } from "@/components/resources/resource-filter-draft-context";
 import {
   parseResourcesPageScrollTarget,
   RECOMMENDED_RESOURCES_ID,
@@ -53,23 +54,23 @@ function scrollToElement(elementId: string) {
     );
   };
 
-  const watchRecommendedLayout = () => {
+  const watchLayoutStability = (layoutElementId: string) => {
     if (!scrollOnce()) return;
 
-    const recommended = document.getElementById(RECOMMENDED_RESOURCES_ID);
-    if (!recommended) {
+    const layoutAnchor = document.getElementById(layoutElementId);
+    if (!layoutAnchor) {
       clearScrollIntent();
       cleanup();
       return;
     }
 
-    let lastHeight = recommended.getBoundingClientRect().height;
+    let lastHeight = layoutAnchor.getBoundingClientRect().height;
     let stableFrames = 0;
 
     resizeObserver = new ResizeObserver(() => {
       if (disposed) return;
 
-      const height = recommended.getBoundingClientRect().height;
+      const height = layoutAnchor.getBoundingClientRect().height;
       if (height !== lastHeight) {
         lastHeight = height;
         stableFrames = 0;
@@ -84,28 +85,28 @@ function scrollToElement(elementId: string) {
       }
     });
 
-    resizeObserver.observe(recommended);
+    resizeObserver.observe(layoutAnchor);
     fallbackTimer = setTimeout(() => {
       clearScrollIntent();
       cleanup();
     }, 500);
   };
 
-  const tryScroll = (attempts = 0) => {
+  const tryScroll = (layoutWatchId: string, attempts = 0) => {
     const target = document.getElementById(elementId);
     if (!target) {
       if (attempts < 24) {
-        window.requestAnimationFrame(() => tryScroll(attempts + 1));
+        window.requestAnimationFrame(() => tryScroll(layoutWatchId, attempts + 1));
       }
       return;
     }
 
     requestAnimationFrame(() => {
-      requestAnimationFrame(watchRecommendedLayout);
+      requestAnimationFrame(() => watchLayoutStability(layoutWatchId));
     });
   };
 
-  tryScroll();
+  tryScroll(elementId);
 
   return cleanup;
 }
@@ -113,13 +114,16 @@ function scrollToElement(elementId: string) {
 export function ScrollToResourceResults() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const filterDraft = useResourceFilterDraftOptional();
   const filterKey = searchParams.toString();
+  /** Bumped when filters apply via pushState (Next searchParams stay stale). */
+  const filterUrlRevision = filterDraft?.filterUrlRevision ?? 0;
 
   useEffect(() => {
     if (pathname !== "/resources") return;
 
     const scrollTarget = parseResourcesPageScrollTarget(
-      searchParams,
+      new URLSearchParams(window.location.search),
       window.location.hash
     );
 
@@ -134,7 +138,7 @@ export function ScrollToResourceResults() {
       cleanupScroll = scrollToElement(RESOURCE_RESULTS_ID);
       return () => cleanupScroll?.();
     }
-  }, [pathname, filterKey]);
+  }, [pathname, filterKey, filterUrlRevision]);
 
   return null;
 }

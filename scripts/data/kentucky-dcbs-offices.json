@@ -1,0 +1,842 @@
+[
+  {
+    "county": "Adair",
+    "city": "Columbia",
+    "address": "703 Jamestown St.",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=3"
+  },
+  {
+    "county": "Allen",
+    "city": "Scottsville",
+    "address": "29 Hillview Drive, P.O. Box 250",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=4"
+  },
+  {
+    "county": "Anderson",
+    "city": "Lawrenceburg",
+    "address": "117 1/2 Hilltop Drive",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=5"
+  },
+  {
+    "county": "Ballard",
+    "city": "Wickliffe",
+    "address": "115 North 4th Street, PO Box 68",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=6"
+  },
+  {
+    "county": "Barren",
+    "city": "Glasgow",
+    "address": "746D East Main Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=7"
+  },
+  {
+    "county": "Bath",
+    "city": "Owingsville",
+    "address": "124 Adams Lane",
+    "phone": "(606) 674-6315",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=8"
+  },
+  {
+    "county": "Bell",
+    "city": "Middlesboro",
+    "address": "725 N. 19th Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=9"
+  },
+  {
+    "county": "Boone",
+    "city": "Florence",
+    "address": "Victory Center, 8311 US Hwy 42",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=10"
+  },
+  {
+    "county": "Bourbon",
+    "city": "Paris",
+    "address": "525 High Street, 2nd Floor, Paris Municipal Building",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=11"
+  },
+  {
+    "county": "Boyd",
+    "city": "Ashland",
+    "address": "1539 Greenup Ave. Suite 201",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=12"
+  },
+  {
+    "county": "Boyle",
+    "city": "Danville",
+    "address": "1000 East Lexington Avenue, Suite 6",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=13"
+  },
+  {
+    "county": "Bracken",
+    "city": "Brooksville",
+    "address": "P O Box 235, 429 Frankfort Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=14"
+  },
+  {
+    "county": "Breathitt",
+    "city": "Jackson",
+    "address": "355 Broadway",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=15"
+  },
+  {
+    "county": "Breckinridge",
+    "city": "Hardinsburg",
+    "address": "110 Old US HWY 60",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=16"
+  },
+  {
+    "county": "Bullitt",
+    "city": "Louisville",
+    "address": "5111 Commerce Crossing, Suite 106",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=17"
+  },
+  {
+    "county": "Butler",
+    "city": "Morgantown",
+    "address": "333 Gardner Lane",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=18"
+  },
+  {
+    "county": "Caldwell",
+    "city": "Princeton",
+    "address": "PO Box 646, 300 MicBeth Drive",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=19"
+  },
+  {
+    "county": "Calloway",
+    "city": "Murray",
+    "address": "3415 US Hwy 641 N",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=20"
+  },
+  {
+    "county": "Campbell",
+    "city": "Newport",
+    "address": "Watertower Square, 4th Floor, 601 Washington Avenue",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=21"
+  },
+  {
+    "county": "Carlisle",
+    "city": "Bardwell",
+    "address": "178 US Hwy 51 N, Suite A",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=22"
+  },
+  {
+    "county": "Carroll",
+    "city": "Carrollton",
+    "address": "1714 Highland Ave.",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=23"
+  },
+  {
+    "county": "Carter",
+    "city": "Grayson",
+    "address": "PO Box 910, 873 East Midland Trail",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=24"
+  },
+  {
+    "county": "Casey",
+    "city": "Liberty",
+    "address": "1000 Hustonville Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=25"
+  },
+  {
+    "county": "Christian",
+    "city": "Hopkinsville",
+    "address": "644 North Drive",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=26"
+  },
+  {
+    "county": "Clark",
+    "city": "Winchester",
+    "address": "1113 Pioneer Drive",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=27"
+  },
+  {
+    "county": "Clay",
+    "city": "Manchester",
+    "address": "P.O. Box 409, 25 Marcum Hill Rd.",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=28"
+  },
+  {
+    "county": "Clinton",
+    "city": "Albany",
+    "address": "801 Tennessee Road, Suite D",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=29"
+  },
+  {
+    "county": "Crittenden",
+    "city": "Marion",
+    "address": "PO Box 435, 815 South Main",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=30"
+  },
+  {
+    "county": "Cumberland",
+    "city": "Burkesville",
+    "address": "PO Box 397, 232 Keen Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=31"
+  },
+  {
+    "county": "Daviess",
+    "city": "Owensboro",
+    "address": "3649 Wathens Crossing",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=32"
+  },
+  {
+    "county": "Edmonson",
+    "city": "Brownsville",
+    "address": "PO Box 539, 1122 South Main Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=33"
+  },
+  {
+    "county": "Elliott",
+    "city": "Sandy Hook",
+    "address": "P O Box 705, 532 South Ky 7",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=34"
+  },
+  {
+    "county": "Estill",
+    "city": "Irvine",
+    "address": "102 Mack Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=35"
+  },
+  {
+    "county": "Fayette",
+    "city": "Lexington",
+    "address": "455 Park Place, Suite 120",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=36"
+  },
+  {
+    "county": "Fleming",
+    "city": "Flemingsburg",
+    "address": "165 Frazier St., P O Box 271",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=37"
+  },
+  {
+    "county": "Floyd",
+    "city": "Prestonsburg",
+    "address": "311 North Arnold Avenue, Suite 501",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=38"
+  },
+  {
+    "county": "Franklin",
+    "city": "Frankfort",
+    "address": "677 Comanche Trail",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=39"
+  },
+  {
+    "county": "Fulton",
+    "city": "Fulton",
+    "address": "601 Stephen Beale Drive, Suite 1",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=40"
+  },
+  {
+    "county": "Gallatin",
+    "city": "Warsaw",
+    "address": "PO Box 875, 100 West Market Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=41"
+  },
+  {
+    "county": "Garrard",
+    "city": "Lancaster",
+    "address": "136 Commerce Drive",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=42"
+  },
+  {
+    "county": "Grant",
+    "city": "Crittenden",
+    "address": "520 Violet Rd.",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=43"
+  },
+  {
+    "county": "Graves",
+    "city": "Mayfield",
+    "address": "351 Charles Dr",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=44"
+  },
+  {
+    "county": "Grayson",
+    "city": "Leitchfield",
+    "address": "100 McCubbin Blvd",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=45"
+  },
+  {
+    "county": "Green",
+    "city": "Greensburg",
+    "address": "605 Columbia Highway",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=46"
+  },
+  {
+    "county": "Greenup",
+    "city": "Greenup",
+    "address": "20 Lil Way, PO Box 707",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=47"
+  },
+  {
+    "county": "Hancock",
+    "city": "Hawesville",
+    "address": "240 Hartford Rd., PO Box 7",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=48"
+  },
+  {
+    "county": "Hardin",
+    "city": "Elizabethtown",
+    "address": "916 North Mulberry Street, Suite 120",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=49"
+  },
+  {
+    "county": "Harlan",
+    "city": "Harlan",
+    "address": "103 S. 2nd St",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=50"
+  },
+  {
+    "county": "Harrison",
+    "city": "Cynthiana",
+    "address": "59 East Ridge Road, Suite 1",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=51"
+  },
+  {
+    "county": "Hart",
+    "city": "Munfordville",
+    "address": "PO Box 489, 50 Quality Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=52"
+  },
+  {
+    "county": "Henderson",
+    "city": "Henderson",
+    "address": "510 Klutey Park Plaza Drive",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=53"
+  },
+  {
+    "county": "Henry",
+    "city": "New Castle",
+    "address": "137 College St.",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=54"
+  },
+  {
+    "county": "Hickman",
+    "city": "Clinton",
+    "address": "343 Moss Avenue",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=55"
+  },
+  {
+    "county": "Hopkins",
+    "city": "Madisonvile",
+    "address": "1086 Thornberry Drive",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=56"
+  },
+  {
+    "county": "Jackson",
+    "city": "McKee",
+    "address": "1038 McCammon Ridge Rd.",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=57"
+  },
+  {
+    "county": "Jefferson",
+    "city": "Louisville",
+    "address": "908 West Broadway, L & N Building",
+    "phone": "(502) 595-5751",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=58"
+  },
+  {
+    "county": "Jessamine",
+    "city": "Nicholasville",
+    "address": "111 Edgewood Plaza",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=59"
+  },
+  {
+    "county": "Johnson",
+    "city": "Paintsville",
+    "address": "205 Main Street, Suite 1",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=60"
+  },
+  {
+    "county": "Kenton",
+    "city": "Covington",
+    "address": "130 W. 43rd Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=61"
+  },
+  {
+    "county": "Knott",
+    "city": "Hindman",
+    "address": "PO Box 668, 125 Cowtown Road, Hwy 550 West",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=62"
+  },
+  {
+    "county": "Knox",
+    "city": "Barbourville",
+    "address": "710 Pitzer St.",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=63"
+  },
+  {
+    "county": "Larue",
+    "city": "Hodgenville",
+    "address": "105 Howard Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=64"
+  },
+  {
+    "county": "Laurel",
+    "city": "London",
+    "address": "31 S. Laurel Rd.",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=65"
+  },
+  {
+    "county": "Lawrence",
+    "city": "Louisa",
+    "address": "180 Bull Dog Lane, Suite 1",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=66"
+  },
+  {
+    "county": "Lee",
+    "city": "Beattyville",
+    "address": "PO Box I, 256 Main Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=67"
+  },
+  {
+    "county": "Leslie",
+    "city": "Hyden",
+    "address": "39 Owl’s Nest Road",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=68"
+  },
+  {
+    "county": "Letcher",
+    "city": "Whitesburg",
+    "address": "415 Hwy 2034, Suite B",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=69"
+  },
+  {
+    "county": "Lewis",
+    "city": "Vanceburg",
+    "address": "243 Commercial Drive, P O Box 39",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=70"
+  },
+  {
+    "county": "Lincoln",
+    "city": "Stanford",
+    "address": "144 Frontier Blvd.",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=71"
+  },
+  {
+    "county": "Livingston",
+    "city": "Smithland",
+    "address": "104 West Adair Street, PO Box 227",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=72"
+  },
+  {
+    "county": "Logan",
+    "city": "Russellville",
+    "address": "88 Robins Way",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=73"
+  },
+  {
+    "county": "Lyon",
+    "city": "Eddyville",
+    "address": "620 West Dale Ave, PO Box 557",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=74"
+  },
+  {
+    "county": "Madison",
+    "city": "Richmond",
+    "address": "304 Anna Hume Blvd",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=75"
+  },
+  {
+    "county": "Magoffin",
+    "city": "Salyersville",
+    "address": "PO Box 89, 30 South Church Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=76"
+  },
+  {
+    "county": "Marion",
+    "city": "Lebanon",
+    "address": "634 W. Main Street",
+    "phone": "(270) 692-6036",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=77"
+  },
+  {
+    "county": "Martin",
+    "city": "Inez",
+    "address": "PO Box 408, 104 E. Main Street, Suite 200",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=79"
+  },
+  {
+    "county": "Marshall",
+    "city": "Benton",
+    "address": "89 North Main Street, Suite A",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=78"
+  },
+  {
+    "county": "Mason",
+    "city": "Maysville",
+    "address": "627 E. Main Street",
+    "phone": "(606) 564-6894",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=83"
+  },
+  {
+    "county": "McCracken",
+    "city": "Paducah",
+    "address": "2855 Jackson Street, Suite 1",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=81"
+  },
+  {
+    "county": "McCreary",
+    "city": "Whitley City",
+    "address": "P.O. Box 457, 19 Medical Loop, Suite 1",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=82"
+  },
+  {
+    "county": "McLean",
+    "city": "Calhoun",
+    "address": "290 State Highway 81N",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=83"
+  },
+  {
+    "county": "Meade",
+    "city": "Brandenburg",
+    "address": "516 By-Pass Road",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=84"
+  },
+  {
+    "county": "Menifee",
+    "city": "Frenchburg",
+    "address": "P O Box 50, 784A Hwy 36",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=85"
+  },
+  {
+    "county": "Mercer",
+    "city": "Harrodsburg",
+    "address": "661 Beaumont Plaza Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=86"
+  },
+  {
+    "county": "Metcalfe",
+    "city": "Edmonton",
+    "address": "PO Box 357, 100 Thompson Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=87"
+  },
+  {
+    "county": "Monroe",
+    "city": "Tompkinsville",
+    "address": "PO Box 578, 201 West Paige Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=88"
+  },
+  {
+    "county": "Montgomery",
+    "city": "Mount Sterling",
+    "address": "460 Whittaker Drive",
+    "phone": "(859) 498-8750",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=86"
+  },
+  {
+    "county": "Morgan",
+    "city": "West Liberty",
+    "address": "PO Box 519, 405 Prestonsburg Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=90"
+  },
+  {
+    "county": "Muhlenberg",
+    "city": "Greenville",
+    "address": "103 Industrial Drive",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=91"
+  },
+  {
+    "county": "Nelson",
+    "city": "Bardstown",
+    "address": "901 Atkinson Hill Avenue, Suite A",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=92"
+  },
+  {
+    "county": "Nicholas",
+    "city": "Carlisle",
+    "address": "311 Moorefield Road",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=93"
+  },
+  {
+    "county": "Ohio",
+    "city": "Beaver Dam",
+    "address": "947 West 7th Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=94"
+  },
+  {
+    "county": "Oldham",
+    "city": "LaGrange",
+    "address": "2206 Commerce Parkway, Suite C",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=95"
+  },
+  {
+    "county": "Owen",
+    "city": "Owenton",
+    "address": "75 Duke Avenue",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=96"
+  },
+  {
+    "county": "Owsley",
+    "city": "Booneville",
+    "address": "PO Box 308, 33 KY 11 South",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=97"
+  },
+  {
+    "county": "Pendleton",
+    "city": "Falmouth",
+    "address": "500 Market Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=98"
+  },
+  {
+    "county": "Perry",
+    "city": "Hazard",
+    "address": "1332 South Ky Highway 15",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=99"
+  },
+  {
+    "county": "Pike",
+    "city": "Pikeville",
+    "address": "295 Hambley Blvd.",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=100"
+  },
+  {
+    "county": "Powell",
+    "city": "Stanton",
+    "address": "124 North Main Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=101"
+  },
+  {
+    "county": "Pulaski",
+    "city": "Somerset",
+    "address": "650 North Main Street, Suite 250",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=102"
+  },
+  {
+    "county": "Robertson",
+    "city": "Mount Olivet",
+    "address": "26 Court Street",
+    "phone": "(606) 724-5121",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=98"
+  },
+  {
+    "county": "Rockcastle",
+    "city": "Mt. Vernon",
+    "address": "P.O. Box 1019, 45 Hwy 150",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=104"
+  },
+  {
+    "county": "Rowan",
+    "city": "Morehead",
+    "address": "609 Flemingsburg Road",
+    "phone": "(606) 783-8501",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=99"
+  },
+  {
+    "county": "Russell",
+    "city": "Jamestown",
+    "address": "PO Box 770, 650 N. Main St.",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=106"
+  },
+  {
+    "county": "Scott",
+    "city": "Georgetown",
+    "address": "100 Technology Court, Suite A",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=107"
+  },
+  {
+    "county": "Shelby",
+    "city": "Shelbyville",
+    "address": "31 Mt. Rushmore Ct",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=108"
+  },
+  {
+    "county": "Simpson",
+    "city": "Franklin",
+    "address": "210 West Cedar Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=109"
+  },
+  {
+    "county": "Spencer",
+    "city": "Taylorsville",
+    "address": "PO Box 338, 73 East Main Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=110"
+  },
+  {
+    "county": "Taylor",
+    "city": "Campbellsville",
+    "address": "1327 E. Broadway, Suite A Elmhurst Plaza",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=111"
+  },
+  {
+    "county": "Todd",
+    "city": "Elkton",
+    "address": "PO Box 279, 102 North Williams Lane",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=112"
+  },
+  {
+    "county": "Trigg",
+    "city": "Cadiz",
+    "address": "277 Commerce Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=113"
+  },
+  {
+    "county": "Trimble",
+    "city": "Bedford",
+    "address": "37 Alexander Avenue, Bedford Professional Building",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=114"
+  },
+  {
+    "county": "Union",
+    "city": "Morganfield",
+    "address": "PO Box 510, 717 US 60 East",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=115"
+  },
+  {
+    "county": "Warren",
+    "city": "Bowling Green",
+    "address": "356 Suwannee Trail Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=116"
+  },
+  {
+    "county": "Washington",
+    "city": "Springfield",
+    "address": "803 Bel Vista Drive",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=117"
+  },
+  {
+    "county": "Wayne",
+    "city": "Monticello",
+    "address": "1520 North Main Street, Suite 5",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=118"
+  },
+  {
+    "county": "Webster",
+    "city": "Dixon",
+    "address": "PO Box 80, 26 US Hwy 41A South",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=119"
+  },
+  {
+    "county": "Whitley",
+    "city": "Corbin",
+    "address": "408 Roy Kidd Avenue",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=120"
+  },
+  {
+    "county": "Wolfe",
+    "city": "Campton",
+    "address": "PO Box 9, 330 Main Street",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=121"
+  },
+  {
+    "county": "Woodford",
+    "city": "Versailles",
+    "address": "52 Thomas Lane",
+    "phone": "(855) 306-8959",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=122"
+  }
+]

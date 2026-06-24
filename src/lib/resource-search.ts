@@ -1,4 +1,5 @@
 import type { Resource } from "@/types";
+import { normalizeService } from "@/lib/service-types";
 
 export interface LocationCatalog {
   cities: string[];
@@ -197,7 +198,7 @@ export function resourceMatchesTextQuery(resource: Resource, textQuery: string):
     categoryMatchesQuery(resource.category, textQuery) ||
     resource.name.toLowerCase().includes(q) ||
     resource.description.toLowerCase().includes(q) ||
-    resource.services.some((service) => service.toLowerCase().includes(q)) ||
+    resource.services.some((service) => normalizeService(service).toLowerCase().includes(q)) ||
     resource.tags.some((tag) => tag.toLowerCase().includes(q)) ||
     (resource.eligibility?.toLowerCase().includes(q) ?? false) ||
     (resource.notes?.toLowerCase().includes(q) ?? false) ||

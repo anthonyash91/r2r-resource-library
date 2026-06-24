@@ -3,6 +3,7 @@ import { Search, Bookmark, Handshake, ArrowRight, CircleCheck } from "lucide-rea
 import { HeroSection } from "@/components/home/hero-section";
 import { CategoryPills } from "@/components/resources/category-pills";
 import { FeaturedResourcesSection } from "@/components/resources/featured-resources-section";
+import { ResourcesCoverageMapSection } from "@/components/home/resources-coverage-map-section";
 import { getServerTranslator } from "@/i18n/server";
 import {
   getCategories,
@@ -152,6 +153,8 @@ export default async function HomePage({
           variant="home"
         />
       ) : null}
+
+      <ResourcesCoverageMapSection resources={resources} />
 
       <section
         id="how-it-works-heading"

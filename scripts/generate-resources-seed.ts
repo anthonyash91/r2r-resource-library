@@ -1,5 +1,5 @@
 /**
- * Generates supabase/seed-resources.sql from a CSV file.
+ * Generates supabase/seed-{state}-resources.sql from a CSV file.
  *
  * Expected columns (header row):
  *   id,name,category,region,description,description_es,address,city,phone,email,website,eligibility,eligibility_es,notes,notes_es,hours,tags,services,intake_signals,county,served_counties,coverage
@@ -34,10 +34,10 @@
  *   status        → active
  *
  * Usage:
- *   npx tsx scripts/generate-resources-seed.ts data/resources.csv
- *   npx tsx scripts/generate-resources-seed.ts path/to/your-export.csv
+ *   npx tsx scripts/generate-resources-seed.ts data/kentucky-resources.csv
+ *   npx tsx scripts/generate-resources-seed.ts data/ohio-resources.csv
  *
- * Then run supabase/seed-resources.sql in the Supabase SQL Editor after migrations.
+ * Then run the generated seed SQL in the Supabase SQL Editor after migrations.
  */
 import { readFileSync, writeFileSync } from "fs";
 import { resolve } from "path";
@@ -45,8 +45,8 @@ import { KENTUCKY_CATEGORIES } from "../src/lib/kentucky/categories";
 import { isValidCoverage } from "../src/lib/resource-coverage";
 
 const DEFAULT_STATE = process.env.RESOURCES_DEFAULT_STATE ?? "Kentucky";
-const INPUT = process.argv[2] ?? "data/resources.csv";
-const OUTPUT = process.env.RESOURCES_SEED_OUTPUT ?? "supabase/seed-resources.sql";
+const INPUT = process.argv[2] ?? "data/kentucky-resources.csv";
+const OUTPUT = process.env.RESOURCES_SEED_OUTPUT ?? "supabase/seed-kentucky-resources.sql";
 const UUID_PREFIX = process.env.RESOURCES_UUID_PREFIX ?? "d1000001";
 const INCLUDE_CATEGORIES = process.env.RESOURCES_INCLUDE_CATEGORIES !== "false";
 
@@ -399,4 +399,4 @@ if (warnings.length) {
   console.log("\nWarnings:");
   warnings.forEach((w) => console.log(`  • ${w}`));
 }
-console.log("\nNext: run supabase/seed-resources.sql in the Supabase SQL Editor.");
+console.log("\nNext: run the generated seed SQL (e.g. supabase/seed-kentucky-resources.sql) in the Supabase SQL Editor.");

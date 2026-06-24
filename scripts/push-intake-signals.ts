@@ -35,9 +35,11 @@ loadEnvLocal();
 const BATCH_SIZE = 50;
 
 const SOURCES = [
-  { csv: "data/resources.csv", uuidPrefix: "d1000001" },
+  { csv: "data/kentucky-resources.csv", uuidPrefix: "d1000001" },
   { csv: "data/ohio-resources.csv", uuidPrefix: "d2000001" },
   { csv: "data/indiana-resources.csv", uuidPrefix: "d3000001" },
+  { csv: "data/tennessee-resources.csv", uuidPrefix: "d4000001" },
+  { csv: "data/michigan-resources.csv", uuidPrefix: "d5000001" },
 ] as const;
 
 function parseCsv(content: string): string[][] {

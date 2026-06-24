@@ -1,0 +1,50 @@
+{
+  "total_counties": 478,
+  "tier_a_slots": 3824,
+  "tier_a_filled": 2190,
+  "tier_a_fill_rate": 0.5727,
+  "tier_a_fill_pct": 57.3,
+  "full_tier_a_counties": 13,
+  "weak_counties": 107,
+  "targets": {
+    "floor_pct": 50.0,
+    "target_90d_pct": 70.0,
+    "stretch_pct": 85.0,
+    "full_tier_a_counties_90d": 40,
+    "weak_counties_90d": 60
+  },
+  "by_state": {
+    "Kentucky": {
+      "counties": 120,
+      "tier_a_fill_rate": 0.7208,
+      "full_tier_a_counties": 2,
+      "weak_counties": 6
+    },
+    "Ohio": {
+      "counties": 88,
+      "tier_a_fill_rate": 0.5341,
+      "full_tier_a_counties": 5,
+      "weak_counties": 19
+    },
+    "Indiana": {
+      "counties": 92,
+      "tier_a_fill_rate": 0.4715,
+      "full_tier_a_counties": 1,
+      "weak_counties": 46
+    },
+    "Tennessee": {
+      "counties": 95,
+      "tier_a_fill_rate": 0.5053,
+      "full_tier_a_counties": 5,
+      "weak_counties": 32
+    },
+    "Michigan": {
+      "counties": 83,
+      "tier_a_fill_rate": 0.5889,
+      "full_tier_a_counties": 0,
+      "weak_counties": 4
+    }
+  },
+  "status": "IN_PROGRESS",
+  "generated": "2026-06-24"
+}

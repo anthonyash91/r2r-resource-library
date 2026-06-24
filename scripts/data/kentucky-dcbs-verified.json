@@ -1,0 +1,37 @@
+[
+  {
+    "counties": ["Bath"],
+    "city": "Owingsville",
+    "address": "124 Adams Lane",
+    "phone": "(606) 674-6315",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=8"
+  },
+  {
+    "counties": ["Montgomery"],
+    "city": "Mount Sterling",
+    "address": "460 Whittaker Drive",
+    "phone": "(859) 498-8750",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=86"
+  },
+  {
+    "counties": ["Rowan"],
+    "city": "Morehead",
+    "address": "609 Flemingsburg Road",
+    "phone": "(606) 783-8501",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=99"
+  },
+  {
+    "counties": ["Robertson"],
+    "city": "Mount Olivet",
+    "address": "26 Court Street",
+    "phone": "(606) 724-5121",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=98"
+  },
+  {
+    "counties": ["Mason"],
+    "city": "Maysville",
+    "address": "627 E. Main Street",
+    "phone": "(606) 564-6894",
+    "source": "https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=83"
+  }
+]

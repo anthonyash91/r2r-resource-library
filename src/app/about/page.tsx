@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { AboutPageView } from "@/components/about/about-page-view";
-import { getAboutPageContent, getCategories, getResources } from "@/lib/data";
+import { getAboutPageContent, getCategories, getActiveResourceCount, getStates } from "@/lib/data";
 import { getServerTranslator } from "@/i18n/server";
+import { formatRoundedResourceStat } from "@/lib/utils";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { t } = await getServerTranslator();
@@ -14,15 +15,16 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function AboutPage() {
-  const [content, resources, categories] = await Promise.all([
+  const { locale } = await getServerTranslator();
+  const [content, activeResourceCount, categories, states] = await Promise.all([
     getAboutPageContent(),
-    getResources(),
+    getActiveResourceCount(),
     getCategories(),
+    getStates(),
   ]);
 
-  const stateCount = new Set(resources.map((r) => r.state).filter(Boolean)).size;
-  const resourceCount =
-    resources.length >= 100 ? `${resources.length}+` : String(resources.length);
+  const resourceCount = formatRoundedResourceStat(activeResourceCount, locale);
+  const stateCount = states.length;
 
   return (
     <AboutPageView

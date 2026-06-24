@@ -11,6 +11,7 @@ import type {
 } from "@/types";
 import { isSupabaseConfigured } from "@/lib/supabase/server";
 import { createClient } from "@/lib/supabase/server";
+import { fetchAllRows } from "@/lib/supabase/fetch-all-rows";
 import {
   emptyAnalyticsSummary,
 } from "@/lib/analytics-empty";
@@ -50,9 +51,20 @@ import {
   resourceServesCounty,
   sortResourcesByCountyRelevance,
   isStatewideResource,
+  resourcesForLocationFacets,
+  resourcesForCountyAttributeScope,
+  collectResourceServices,
 } from "@/lib/resource-coverage";
+import { normalizeService, normalizeServices } from "@/lib/service-types";
 import { getStateCounties } from "@/lib/states/counties";
-import { filterResourcesByIntakeSignals } from "@/lib/intake-signals";
+import {
+  filterResourcesByIntakeSignals,
+} from "@/lib/intake-signals";
+import {
+  buildResourceFilterOptions,
+  type ResourceFilterFacetParams,
+} from "@/lib/resource-filter-facets";
+import { pickRelatedResources } from "@/lib/related-resources";
 
 export async function getCategories(): Promise<Category[]> {
   const locale = await getServerLocale();
@@ -80,14 +92,10 @@ async function getLocationCatalog(): Promise<LocationCatalog> {
   return { states, cities, counties };
 }
 
-export async function getResources(filters: ResourceFilters = {}): Promise<Resource[]> {
-  const locale = await getServerLocale();
-  if (!isSupabaseConfigured()) return [];
+type ResourcesQueryClient = NonNullable<Awaited<ReturnType<typeof createClient>>>;
 
-  const supabase = await createClient();
-  if (!supabase) return [];
-
-  let query = supabase
+function buildResourcesSelectQuery(client: ResourcesQueryClient, filters: ResourceFilters) {
+  let query = client
     .from("resources")
     .select("*, category:categories(*)")
     .eq("status", filters.status ?? "active");
@@ -101,12 +109,25 @@ export async function getResources(filters: ResourceFilters = {}): Promise<Resou
     query = query.gte("created_at", cutoff);
   }
 
-  query = query.order("name");
+  return query.order("name");
+}
 
-  const { data, error } = await query;
-  if (error || !data) return [];
+export async function getResources(filters: ResourceFilters = {}): Promise<Resource[]> {
+  const locale = await getServerLocale();
+  if (!isSupabaseConfigured()) return [];
 
-  let results = localizeResources(data as Resource[], locale);
+  const supabase = await createClient();
+  if (!supabase) return [];
+
+  const { data, error } = await fetchAllRows<Resource>(async (range) =>
+    buildResourcesSelectQuery(supabase, filters).range(range.from, range.to)
+  );
+  if (error || !data.length) return [];
+
+  let results = localizeResources(data, locale).map((resource) => ({
+    ...resource,
+    services: normalizeServices(resource.services),
+  }));
   if (filters.county) {
     results = results.filter((r) => resourceServesCounty(r, filters.county!));
     results = sortResourcesByCountyRelevance(results, filters.county);
@@ -115,15 +136,23 @@ export async function getResources(filters: ResourceFilters = {}): Promise<Resou
     const catalog = await getLocationCatalog();
     results = applySearchQueryFilter(results, filters.query, catalog);
   }
-  if (filters.service) {
-    const s = filters.service.toLowerCase();
-    results = results.filter((r) =>
-      r.services.some((svc) => svc.toLowerCase().includes(s))
-    );
-  }
-  if (filters.tag) {
-    const tag = filters.tag.toLowerCase();
-    results = results.filter((r) => r.tags.some((t) => t.toLowerCase() === tag));
+  if (filters.service || filters.tag) {
+    const attributePool = filters.county
+      ? resourcesForCountyAttributeScope(results, filters.county)
+      : results;
+    results = attributePool;
+    if (filters.service) {
+      const s = normalizeService(filters.service).toLowerCase();
+      results = results.filter((resource) =>
+        resource.services.some((svc) => normalizeService(svc).toLowerCase() === s)
+      );
+    }
+    if (filters.tag) {
+      const tag = filters.tag.toLowerCase();
+      results = results.filter((resource) =>
+        resource.tags.some((t) => t.toLowerCase() === tag)
+      );
+    }
   }
   if (filters.coverage === "statewide") {
     results = results.filter((r) => isStatewideResource(r));
@@ -139,6 +168,21 @@ export async function getResources(filters: ResourceFilters = {}): Promise<Resou
     results = filterResourcesByIntakeSignals(results, filters.intake);
   }
   return results;
+}
+
+export async function getActiveResourceCount(): Promise<number> {
+  if (!isSupabaseConfigured()) return 0;
+
+  const supabase = await createClient();
+  if (!supabase) return 0;
+
+  const { count, error } = await supabase
+    .from("resources")
+    .select("id", { count: "exact", head: true })
+    .eq("status", "active");
+
+  if (error || count == null) return 0;
+  return count;
 }
 
 export type { SiteBranding };
@@ -272,10 +316,13 @@ export async function getRelatedResources(
   resource: Resource,
   limit = 4
 ): Promise<Resource[]> {
-  const all = await getResources({
-    category: resource.category_id,
-  });
-  return all.filter((r) => r.id !== resource.id).slice(0, limit);
+  const filters: ResourceFilters = { category: resource.category_id };
+  if (resource.state?.trim()) {
+    filters.state = resource.state;
+  }
+
+  const candidates = await getResources(filters);
+  return pickRelatedResources(resource, candidates, limit);
 }
 
 export async function getStates(): Promise<string[]> {
@@ -284,13 +331,17 @@ export async function getStates(): Promise<string[]> {
   const supabase = await createClient();
   if (!supabase) return [];
 
-  const { data } = await supabase
-    .from("resources")
-    .select("state")
-    .eq("status", "active")
-    .not("state", "is", null);
+  const { data, error } = await fetchAllRows<{ state: string | null }>(async (range) =>
+    supabase
+      .from("resources")
+      .select("state")
+      .eq("status", "active")
+      .not("state", "is", null)
+      .order("state")
+      .range(range.from, range.to)
+  );
 
-  if (!data) return [];
+  if (error) return [];
   return [...new Set(data.map((r) => r.state).filter(Boolean) as string[])].sort();
 }
 
@@ -303,15 +354,17 @@ export async function getCounties(state?: string): Promise<string[]> {
   const supabase = await createClient();
   if (!supabase) return [];
 
-  let query = supabase
-    .from("resources")
-    .select("county")
-    .eq("status", "active")
-    .not("county", "is", null);
-  if (state) query = query.eq("state", state);
-
-  const { data } = await query;
-  if (!data) return [];
+  const { data, error } = await fetchAllRows<{ county: string | null }>(async (range) => {
+    let pageQuery = supabase
+      .from("resources")
+      .select("county")
+      .eq("status", "active")
+      .not("county", "is", null)
+      .order("county");
+    if (state) pageQuery = pageQuery.eq("state", state);
+    return pageQuery.range(range.from, range.to);
+  });
+  if (error) return [];
   const fromResources = new Set<string>();
   for (const row of data) {
     if (row.county) fromResources.add(row.county as string);
@@ -320,43 +373,56 @@ export async function getCounties(state?: string): Promise<string[]> {
 }
 
 export async function getCities(state?: string, county?: string): Promise<string[]> {
-  if (!isSupabaseConfigured()) return [];
-
-  const supabase = await createClient();
-  if (!supabase) return [];
-
-  let query = supabase
-    .from("resources")
-    .select("city, county, served_counties, coverage")
-    .eq("status", "active")
-    .not("city", "is", null);
-  if (state) query = query.eq("state", state);
-
-  const { data } = await query;
-  if (!data) return [];
-
-  let rows = data as Pick<Resource, "city" | "county" | "served_counties" | "coverage">[];
-  if (county) {
-    rows = rows.filter((r) => resourceServesCounty(r as Resource, county));
-  }
-  return [...new Set(rows.map((r) => r.city).filter(Boolean) as string[])].sort();
+  const resources = await getResources({ state, status: "active" });
+  const scoped = resourcesForLocationFacets(resources, county);
+  return [
+    ...new Set(scoped.map((resource) => resource.city).filter(Boolean) as string[]),
+  ].sort((a, b) => a.localeCompare(b));
 }
 
-export async function getServices(): Promise<string[]> {
-  if (!isSupabaseConfigured()) return [];
+export async function getCategoriesForLocation(
+  state?: string,
+  county?: string
+): Promise<Category[]> {
+  const resources = await getResources({
+    state,
+    status: "active",
+  });
+  const scoped = resourcesForLocationFacets(resources, county);
+  if (scoped.length === 0) return [];
 
-  const supabase = await createClient();
-  if (!supabase) return [];
+  const categoryIds = new Set(scoped.map((resource) => resource.category_id));
+  const categories = await getCategories();
+  return categories.filter((category) => categoryIds.has(category.id));
+}
 
-  const { data } = await supabase
-    .from("resources")
-    .select("services")
-    .eq("status", "active");
+export async function getResourceFilterOptions(params: ResourceFilterFacetParams = {}) {
+  const { state, county, city, categorySlug, service, intake } = params;
+  const resources = await getResources({ state, status: "active" });
 
-  if (!data) return [];
-  const services = new Set<string>();
-  data.forEach((r) => (r.services as string[]).forEach((s) => services.add(s)));
-  return [...services].sort();
+  const allCategories = await getCategories();
+  let categoryId = params.categoryId;
+  if (!categoryId && categorySlug) {
+    categoryId = allCategories.find((category) => category.slug === categorySlug)?.id;
+  }
+
+  const resolvedParams: ResourceFilterFacetParams = {
+    state,
+    county,
+    city,
+    categorySlug,
+    categoryId,
+    service,
+    intake,
+  };
+
+  const stateCounties = state ? [...getStateCounties(state)] : [];
+  return buildResourceFilterOptions(resources, allCategories, resolvedParams, stateCounties);
+}
+
+export async function getServices(state?: string, county?: string): Promise<string[]> {
+  const resources = await getResources({ state, status: "active" });
+  return collectResourceServices(resourcesForLocationFacets(resources, county));
 }
 
 export async function getFaqs(): Promise<Faq[]> {
@@ -431,13 +497,13 @@ export async function getAnalytics(): Promise<AnalyticsSummary> {
     activeResourcesRes,
     featuredResourcesRes,
     categoriesRes,
-    viewCountsRes,
     savesRes,
-    activeResourcesDetailRes,
     mostViewedRes,
     mostSavedRes,
     recentViewsRes,
     recentSavesRes,
+    activeResourcesPaged,
+    viewCountsPaged,
   ] = await Promise.all([
     supabase.from("resources").select("id", { count: "exact", head: true }),
     supabase.from("resources").select("id", { count: "exact", head: true }).eq("status", "active"),
@@ -447,9 +513,7 @@ export async function getAnalytics(): Promise<AnalyticsSummary> {
       .eq("status", "active")
       .eq("is_featured", true),
     supabase.from("categories").select("id", { count: "exact", head: true }).eq("is_active", true),
-    supabase.from("resources").select("view_count"),
     supabase.from("saved_resources").select("id", { count: "exact", head: true }),
-    supabase.from("resources").select("*, category:categories(name)").eq("status", "active"),
     supabase
       .from("resources")
       .select("*")
@@ -470,19 +534,34 @@ export async function getAnalytics(): Promise<AnalyticsSummary> {
       .from("saved_resources")
       .select("created_at")
       .gte("created_at", recentActivitySinceIso()),
+    fetchAllRows<Resource & { category?: { name: string } }>(async (range) =>
+      supabase
+        .from("resources")
+        .select("*, category:categories(name)")
+        .eq("status", "active")
+        .order("name")
+        .range(range.from, range.to)
+    ),
+    fetchAllRows<{ view_count: number | null }>(async (range) =>
+      supabase
+        .from("resources")
+        .select("view_count")
+        .order("id")
+        .range(range.from, range.to)
+    ),
   ]);
 
-  const resources = (activeResourcesDetailRes.data ?? []) as Resource[];
+  const resources = activeResourcesPaged.data;
   const stateMap = new Map<string, number>();
   const catMap = new Map<string, number>();
 
   for (const r of resources) {
     if (r.state) stateMap.set(r.state, (stateMap.get(r.state) ?? 0) + 1);
-    const catName = (r as Resource & { category?: { name: string } }).category?.name;
+    const catName = r.category?.name;
     if (catName) catMap.set(catName, (catMap.get(catName) ?? 0) + 1);
   }
 
-  const totalViews = (viewCountsRes.data ?? []).reduce(
+  const totalViews = viewCountsPaged.data.reduce(
     (sum, row) => sum + (row.view_count ?? 0),
     0
   );

@@ -4,7 +4,7 @@ interface ResourcesPageSkeletonProps {
   loadingLabel: string;
 }
 
-function ResourceCardSkeleton() {
+export function ResourceCardSkeleton() {
   return (
     <div className="rounded-xl border border-border bg-card p-6">
       <div className="mb-3 flex flex-wrap gap-2">
@@ -24,6 +24,34 @@ function ResourceCardSkeleton() {
   );
 }
 
+export function ResourceResultsGridSkeleton({ count = 6 }: { count?: number }) {
+  return (
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {Array.from({ length: count }).map((_, index) => (
+        <ResourceCardSkeleton key={index} />
+      ))}
+    </div>
+  );
+}
+
+function ResourceResultsHeaderSkeleton() {
+  return (
+    <header className="mb-4 space-y-2">
+      <div className="flex flex-wrap items-center gap-3">
+        <div className="h-7 w-56 animate-pulse rounded bg-muted" />
+        <div className="h-6 w-10 animate-pulse rounded-full bg-muted" />
+      </div>
+      <div className="h-4 w-full max-w-xl animate-pulse rounded bg-muted" />
+    </header>
+  );
+}
+
+function ResourceFiltersPanelSkeleton() {
+  return (
+    <div className="h-12 w-full animate-pulse rounded-xl bg-primary-foreground/15" />
+  );
+}
+
 export function ResourcesPageSkeleton({ loadingLabel }: ResourcesPageSkeletonProps) {
   return (
     <>
@@ -40,8 +68,10 @@ export function ResourcesPageSkeleton({ loadingLabel }: ResourcesPageSkeletonPro
             <div className="mx-auto h-5 w-full max-w-2xl animate-pulse rounded bg-primary-foreground/15" />
             <div className="mx-auto h-5 w-5/6 max-w-xl animate-pulse rounded bg-primary-foreground/15" />
           </div>
-          <div className="h-12 w-full animate-pulse rounded-full bg-primary-foreground/25 sm:h-14" />
-          <div className="h-12 w-full animate-pulse rounded-xl bg-primary-foreground/15" />
+          <div className="mx-auto w-full max-w-3xl space-y-4">
+            <div className="h-12 w-full animate-pulse rounded-full bg-primary-foreground/25 sm:h-14" />
+            <ResourceFiltersPanelSkeleton />
+          </div>
         </div>
       </section>
 
@@ -53,12 +83,8 @@ export function ResourcesPageSkeleton({ loadingLabel }: ResourcesPageSkeletonPro
           aria-busy="true"
           aria-label={loadingLabel}
         >
-          <div className="h-5 w-56 animate-pulse rounded bg-muted" />
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {Array.from({ length: 6 }).map((_, index) => (
-              <ResourceCardSkeleton key={index} />
-            ))}
-          </div>
+          <ResourceResultsHeaderSkeleton />
+          <ResourceResultsGridSkeleton />
         </div>
       </div>
     </>

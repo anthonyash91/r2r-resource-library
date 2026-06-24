@@ -2,7 +2,7 @@ export const en = {
   meta: {
     siteName: "Reentry Resource Library",
     description:
-      "Find local, state, and national reentry programs for housing, employment, healthcare, recovery, education, legal aid, and more.",
+      "Find local, state, and national reentry resources for housing, employment, healthcare, recovery, education, legal aid, and more.",
     titleTemplate: "%s | Reentry Resource Library",
   },
 
@@ -112,7 +112,7 @@ export const en = {
   home: {
     heroHeadline: "Find the Resources You Need for a Successful Reentry",
     heroSubheadline:
-      "Search local, state, and national programs that can help with housing, employment, healthcare, recovery, transportation, education, and more.",
+      "Search local, state, and national resources that can help with housing, employment, healthcare, recovery, transportation, education, and more.",
     heroHighlight: "Successful Reentry",
     heroSearchPlaceholder: "Search for housing, jobs, healthcare...",
     popular: "Popular:",
@@ -123,10 +123,10 @@ export const en = {
     freeAlways: "Free & always will be",
     resourcesTitle: "Resources",
     resourcesSubtitle:
-      "{count} programs available — browse or filter by category below.",
+      "{count} resources available — browse or filter by category below.",
     browseByCategoryTitle: "Browse by Category",
     browseByCategorySubtitle:
-      "Select a category to explore programs and services that fit your needs.",
+      "Select a category to explore resources and services that fit your needs.",
     howItWorksTitle: "How It Works",
     howItWorksSubtitle: "Three simple steps to find the support you need.",
     stepSearchTitle: "Search",
@@ -141,16 +141,16 @@ export const en = {
     startSearching: "Start Searching Now",
     featuredTitle: "Featured Resources",
     featuredSubtitle:
-      "Hand-picked programs our team recommends — a great place to start your search.",
+      "Hand-picked resources our team recommends — a great place to start your search.",
     viewAllResources: "View all resources",
     recommendedPersonalized: "Recommended for {county} County",
-    recommendedSubtitle: "Programs picked for your county and the needs you selected.",
+    recommendedSubtitle: "Resources picked for your county and the needs you selected.",
     builtForTitle: "Built for People Coming Home",
     builtForDesc:
       "This platform was designed with one goal in mind: to make it as easy as possible for formerly incarcerated individuals to find the support they need to rebuild their lives with dignity and purpose.",
     builtForFeature1: "Free to use — no account required to search",
     builtForFeature2: "Updated regularly by our resource team",
-    builtForFeature3: "Covers all 50 states plus national programs",
+    builtForFeature3: "Covers all 50 states plus national resources",
     builtForFeature4: "Designed for simplicity and accessibility",
     createFreeAccount: "Create a Free Account",
     browseResources: "Browse Resources",
@@ -158,28 +158,39 @@ export const en = {
     statStates: "States Covered",
     statCategories: "Service Categories",
     statFree: "Free to Use",
+    coverageMapTitle: "Resources Across the Country",
+    coverageMapSubtitle:
+      "We list reentry resources in {states} states across {areas} counties and service areas. Explore the map to see where help is available near you.",
+    coverageMapDesc:
+      "Interactive map of the United States showing counties and regions where reentry resources are listed in our directory.",
+    coverageMapAria: "Map of the United States with {count} resource coverage pins",
+    coverageMapLegend:
+      "Each pin marks a county or region where local or regional resources are listed. Highlighted states include resources in our directory—select a state below to browse.",
+    coverageMapPinCounty: "{county} County, {state} — {count} resources",
+    coverageMapPinState: "{state} — {count} statewide resources",
+    coverageMapStateSummaryCounties: "{resources} resources · {counties} areas",
+    coverageMapStateSummaryStatewide: "{resources} statewide resources",
+    coverageMapBrowseAll: "Browse all resources",
   },
 
   resources: {
     findResources: "Find Resources",
     heroSubheadline:
-      "Search from hundreds of programs across housing, employment, healthcare, and more.",
+      "Search from hundreds of resources across housing, employment, healthcare, and more.",
     metadataDescription:
       "Search and filter reentry resources by category, location, and service type.",
-    programCount: "{count} programs available",
-    resultsSummary: "Programs matching your search",
-    resultsSummaryWithQuery: 'Programs matching your search "{query}"',
-    resultsHint: "Programs that match your current filters.",
-    resultsHintWithQuery:
-      'Programs related to "{query}" and your current filters.',
+    resourceCountLabel: "{count} resources available",
+    resultsSummary: "Resources matching your search",
+    resultsHint: "Here are your results based on the filters: {filters}",
+    resultsHintEmpty: "Here are your results.",
     resultsInCountyHeading: "In {county} County",
     resultsInCountyHint:
-      "Programs based in or specifically serving {county} County.",
+      "Resources based in or specifically serving {county} County.",
     resultsStatewideHeading: "Also available statewide",
     resultsStatewideHint:
-      "These programs serve all {state} counties, including {county}.",
+      "These resources serve all {state} counties, including {county}.",
     resultsNoLocalInCounty:
-      "No local or regional programs matched in {county} County. Statewide resources below may still help.",
+      "No local or regional resources matched in {county} County. Statewide resources below may still help.",
     noResults: "No resources found",
     noResultsHint:
       "Try a different category or open the filters to change your search.",
@@ -192,6 +203,7 @@ export const en = {
     searchButton: "Search",
     searchAria: "Search resources",
     filterAria: "Filter resources",
+    filtersUpdating: "Updating filter options…",
     searchKeyword: "Search by keyword",
     searchKeywordPlaceholder: "Try housing, jobs, food, legal help...",
     category: "Category",
@@ -226,6 +238,12 @@ export const en = {
     coverageStatewide: "Statewide",
     countyFilterHint:
       "Choose the county where you live now or plan to live after release to see resources that serve that area.",
+    countyScopedFiltersHint:
+      "Service and category options show local and regional resources in {county} County. Statewide resources may still appear in results below.",
+    countyScopedServicesEmpty:
+      "No local or regional resources in {county} list this service type. Check statewide results below or try another category.",
+    categoryNoLocalInCounty:
+      "No local or regional {category} resources in {county} County. Statewide resources may still appear in results below.",
     filterByCountyAria: "View resources serving {county} County",
     stateBadgeAria: "View resources in {state}",
     contactInfo: "Contact Information",
@@ -243,8 +261,9 @@ export const en = {
     removeSaveAria: "Remove {name} from saved",
     intakeFiltersLabel: "Eligibility & intake",
     intakeFiltersHint:
-      "Show programs that match all selected signals. Press Search to update results.",
-    filtersApplyHint: "Press Search to update results with your selected filters.",
+      "Show resources that match all selected signals. Press Search to update results.",
+    intakeSignalUnavailableAria:
+      "{label} — no resources match this filter for your current location",
     intakeSignalFilterAria: "Filter by {label}",
     intakeMetaAria: "Intake: {labels}",
     intakeSignals: {
@@ -317,19 +336,19 @@ export const en = {
     browseByCategory: "Browse by category",
     signInRequired: "My Dashboard",
     signInRequiredDesc:
-      "Sign in to view your saved resources, recently viewed programs, and personalized recommendations.",
+      "Sign in to view your saved resources, recently viewed resources, and personalized recommendations.",
   },
 
   onboarding: {
     title: "Get started",
     editTitle: "Update your preferences",
     subtitle:
-      "Tell us where you are and what you need most. We will show programs that serve your area.",
+      "Tell us where you are and what you need most. We will show resources that serve your area.",
     stepIndicator: "Step {current} of {total}",
     stepStateTitle: "Which state?",
     stepStateDesc: "Choose the state where you live now or plan to live after release.",
     stepCountyTitle: "Which county?",
-    stepCountyDesc: "We use your county to show local and regional programs that serve your area.",
+    stepCountyDesc: "We use your county to show local and regional resources that serve your area.",
     stepPrioritiesTitle: "What do you need most?",
     stepPrioritiesDesc: "Choose up to {max} areas. You can change these anytime.",
     stateLabel: "State",
@@ -354,6 +373,8 @@ export const en = {
       kentucky: "Kentucky",
       ohio: "Ohio",
       indiana: "Indiana",
+      tennessee: "Tennessee",
+      michigan: "Michigan",
     },
     priorities: {
       housing: "Housing",
@@ -375,42 +396,46 @@ export const en = {
   pathways: {
     notFoundTitle: "Guide not found",
     disclaimer:
-      "This guide helps you find programs in our directory. It is not emergency care, legal advice, or a guarantee of services. Call or text 988 if you need immediate help.",
+      "This guide helps you find resources in our directory. It is not emergency care, legal advice, or a guarantee of services. Call or text 988 if you need immediate help.",
     crisisTitle: "Need help right now?",
     crisisBody:
       "If you are in crisis, call or text 988 for the Suicide & Crisis Lifeline, or text HOME to 741741 for the Crisis Text Line. These services are free and available 24/7.",
     setCountyBannerTitle: "Set your county for local matches",
     setCountyBannerDesc:
-      "Programs shown here work statewide, but setting your county shows shelters, clinics, and offices near where you plan to live.",
+      "Resources shown here work statewide, but setting your county shows shelters, clinics, and offices near where you plan to live.",
     setCountyCta: "Set county",
     matchesYourNeeds: "Matches your needs",
-    localPrograms: "Programs serving {county} County",
-    statewidePrograms: "Statewide programs in {state}",
+    localResources: "Resources serving {county} County",
+    statewideResources: "Statewide resources in {state}",
     yourState: "your state",
     noLocalMatches:
-      "We could not find local programs for this step in {county} County. Try the browse link below or call 211 for help finding services.",
+      "We could not find local resources for this step in {county} County. Try the browse link below or call 211 for help finding services.",
     noMatches:
-      "We could not find programs for this step with your current filters. Try browsing all resources in this category.",
-    browseCategory: "Browse all {category} programs",
+      "We could not find resources for this step with your current filters. Try browsing all resources in this category.",
+    browseCategory: "Browse all {category} resources",
     browseCategoryInCounty: "Browse all {category} in {county} County",
     browseCategoryInState: "Browse all {category} in {state}",
     dashboardCardTitle: "First week after release",
     dashboardCardDesc:
-      "A step-by-step checklist — ID, benefits, housing, treatment, jobs, and legal help — with programs matched to your county.",
+      "A step-by-step checklist — ID, benefits, housing, treatment, jobs, and legal help — with resources matched to your county.",
     dashboardCardCta: "Open first-week guide",
     firstWeek: {
       title: "First week after release",
       metaDescription:
         "A practical step-by-step guide to crisis support, ID, benefits, housing, treatment, employment, and legal help after release.",
       introDefault:
-        "Seven practical steps for your first days home. Each step links to real programs from our directory.",
+        "Seven practical steps for your first days home. Each step links to real resources from our directory.",
       introByState: {
         kentucky:
-          "Seven practical steps for your first days home in Kentucky. Each step links to real programs from our directory.",
+          "Seven practical steps for your first days home in Kentucky. Each step links to real resources from our directory.",
         ohio:
-          "Seven practical steps for your first days home in Ohio. Each step links to real programs from our directory.",
+          "Seven practical steps for your first days home in Ohio. Each step links to real resources from our directory.",
         indiana:
-          "Seven practical steps for your first days home in Indiana. Each step links to real programs from our directory.",
+          "Seven practical steps for your first days home in Indiana. Each step links to real resources from our directory.",
+        tennessee:
+          "Seven practical steps for your first days home in Tennessee. Each step links to real resources from our directory.",
+        michigan:
+          "Seven practical steps for your first days home in Michigan. Each step links to real resources from our directory.",
       },
       steps: {
         "crisis-support": {
@@ -426,17 +451,17 @@ export const en = {
         benefits: {
           title: "Apply for benefits (Medicaid, SNAP, and more)",
           description:
-            "Health coverage and food assistance can stabilize your first weeks. Many programs help with the application process.",
+            "Health coverage and food assistance can stabilize your first weeks. Many resources help with the application process.",
         },
         housing: {
           title: "Find a place to stay",
           description:
-            "Emergency shelter, transitional housing, and rental help vary by county. Local programs are listed first when we know your county.",
+            "Emergency shelter, transitional housing, and rental help vary by county. Local resources are listed first when we know your county.",
         },
         treatment: {
           title: "Connect to treatment or recovery support",
           description:
-            "Substance use treatment, peer support, and healthcare programs can help you stay on track after release.",
+            "Substance use treatment, peer support, and healthcare resources can help you stay on track after release.",
         },
         employment: {
           title: "Look for work or training",
@@ -540,9 +565,9 @@ export const en = {
 
   saved: {
     title: "Saved Resources",
-    subtitle: "Your personal list of programs and services.",
+    subtitle: "Your personal list of resources and services.",
     emptyTitle: "No saved resources yet",
-    emptyDesc: 'When you find a helpful program, click "Save" to add it here.',
+    emptyDesc: 'When you find a helpful resource, click "Save" to add it here.',
     signInTitle: "Saved Resources",
     signInDesc: "Sign in to save resources and build your personal list.",
     browseResources: "Browse Resources",
@@ -550,7 +575,7 @@ export const en = {
       documentTitle: "Saved Resources",
       preparedFor: "Prepared for {name}",
       generatedOn: "Generated on {date}",
-      resourceCount: "{count} programs included",
+      resourceCount: "{count} resources included",
       description: "Description",
       location: "Location",
       address: "Address",
@@ -558,7 +583,7 @@ export const en = {
       brandDescription:
         "Road to Reentry empowers individuals preparing for or returning from incarceration with trusted resources, practical tools, and support to build stability, overcome barriers, and create a successful future.",
       footer:
-        "Information is provided for reference. Contact each program to confirm eligibility and availability.",
+        "Information is provided for reference. Contact each resource to confirm eligibility and availability.",
     },
     email: {
       button: "Email PDF",
@@ -582,22 +607,22 @@ export const en = {
         "Save every resource you want before sending. This feature is meant for right before you leave jail, so your list is ready when you are back in the community.",
       limitReminder: "You can send this PDF {limit} times. You have {remaining} left.",
       limitReached: "You have used all {limit} PDF emails for this account.",
-      subject: "Your saved resources ({count} programs)",
+      subject: "Your saved resources ({count} resources)",
       filename: "saved-resources.pdf",
       greeting: "Hello,",
       greetingNamed: "Hello {name},",
-      body: "Attached is a PDF with {count} saved programs from the Reentry Resource Library.",
+      body: "Attached is a PDF with {count} saved resources from the Reentry Resource Library.",
     },
   },
 
   about: {
     title: "About Us",
     description:
-      "A free platform connecting people with housing, employment, healthcare, and other reentry support programs nationwide.",
+      "A free platform connecting people with housing, employment, healthcare, and other reentry support resources nationwide.",
     defaultTitle: "About the Reentry Resource Library",
     defaultContent: `The Reentry Resource Library is a free platform designed to help individuals preparing for release or recently released from incarceration find the support they need to rebuild their lives.
 
-We connect people with local, state, and national programs for housing, employment, healthcare, recovery, education, legal assistance, and more.
+We connect people with local, state, and national resources for housing, employment, healthcare, recovery, education, legal assistance, and more.
 
 Our mission is simple: reduce barriers to reentry by making vital information easy to find, understand, and act on.
 
@@ -611,7 +636,7 @@ Who We Serve
     missionP1:
       "The Reentry Resource Library is a free platform designed to help individuals preparing for release or recently released from incarceration find the support they need to rebuild their lives.",
     missionP2:
-      "We connect people with local, state, and national programs for housing, employment, healthcare, recovery, education, legal assistance, and more — making vital information easy to find, understand, and act on.",
+      "We connect people with local, state, and national resources for housing, employment, healthcare, recovery, education, legal assistance, and more — making vital information easy to find, understand, and act on.",
     missionP3: "",
     serveTitle: "Who We Serve",
     serveIntro:
@@ -627,11 +652,11 @@ Who We Serve
     serveCards: {
       housing: {
         title: "Housing & Shelter",
-        desc: "Transitional housing, emergency shelter, and rental assistance programs",
+        desc: "Transitional housing, emergency shelter, and rental assistance resources",
       },
       employment: {
         title: "Employment & Training",
-        desc: "Job training, workforce programs, and employer partnerships",
+        desc: "Job training, workforce resources, and employer partnerships",
       },
       healthcare: {
         title: "Healthcare & Recovery",
@@ -655,7 +680,7 @@ Who We Serve
       },
       community: {
         title: "Community",
-        body: "Reentry happens in community. We connect people to local programs and the organizations that know their neighborhoods best.",
+        body: "Reentry happens in community. We connect people to local resources and the organizations that know their neighborhoods best.",
       },
       trust: {
         title: "Trust",
@@ -663,7 +688,7 @@ Who We Serve
       },
     },
     ctaTitle: "Ready to Find Resources?",
-    ctaSubtitle: "Search hundreds of programs across all 50 states — free, no account required.",
+    ctaSubtitle: "Search hundreds of resources across all 50 states — free, no account required.",
     ctaBrowse: "Browse Resources",
     ctaContact: "Get in Touch",
   },
@@ -699,14 +724,14 @@ Who We Serve
       faqsTitle: "Browse our FAQs",
       faqsDesc: "Find answers to common questions",
       resourcesTitle: "Find Resources",
-      resourcesDesc: "Search for programs near you",
+      resourcesDesc: "Search for resources near you",
       suggestTitle: "Suggest a Resource",
-      suggestDesc: "Tell us about a program we should list",
+      suggestDesc: "Tell us about a resource we should list",
     },
     defaultContent: `We are here to help you find resources and improve this library.
 
 Suggest a resource
-Know a program that should be listed? Send us the organization name, location, and services offered.
+Know a resource that should be listed? Send us the organization name, location, and services offered.
 
 Report outdated information
 If a listing has wrong hours, a phone number, or eligibility details, let us know so we can review it.
@@ -715,7 +740,7 @@ General questions
 For help using the site, creating an account, or accessing saved resources, visit our FAQ page or send us a message.
 
 Email
-[Your program email address]
+[Your resource email address]
 
 Please include your city or county when asking about local resources so we can respond more helpfully.`,
   },
@@ -744,17 +769,17 @@ Please include your city or county when asking about local resources so we can r
       pathwayTitle: "First week guide",
       pathwayDesc: "Step-by-step checklist after release",
       resourcesTitle: "Find Resources",
-      resourcesDesc: "Search for programs near you",
+      resourcesDesc: "Search for resources near you",
       contactTitle: "Contact Us",
       contactDesc: "Send us a message directly",
       suggestTitle: "Suggest a Resource",
-      suggestDesc: "Tell us about a program we should list",
+      suggestDesc: "Tell us about a resource we should list",
     },
     crisisTitle: "Need Immediate Help?",
     crisisBody:
       "If you are in crisis, call or text 988 for the Suicide & Crisis Lifeline, or text HOME to 741741 for the Crisis Text Line.",
     ctaTitle: "Ready to Find Resources?",
-    ctaSubtitle: "Search hundreds of programs across all 50 states — free, no account required.",
+    ctaSubtitle: "Search hundreds of resources across all 50 states — free, no account required.",
     ctaBrowse: "Browse Resources",
     ctaContact: "Get in Touch",
     general: "General",
@@ -840,7 +865,7 @@ Please include your city or county when asking about local resources so we can r
       sections: {
         s1: {
           title: "1. What This Site Is",
-          body: "The Reentry Resource Library is a free online directory that helps people find programs and services related to reentry, including housing, employment, healthcare, legal aid, and other community resources. We provide information to help you connect with organizations; we are not a service provider ourselves.",
+          body: "The Reentry Resource Library is a free online directory that helps people find resources and services related to reentry, including housing, employment, healthcare, legal aid, and other community resources. We provide information to help you connect with organizations; we are not a service provider ourselves.",
         },
         s2: {
           title: "2. Who Can Use the Site",
@@ -848,7 +873,7 @@ Please include your city or county when asking about local resources so we can r
         },
         s3: {
           title: "3. No Professional Advice",
-          body: "Information on this Site is provided for general informational purposes only. It is not legal, medical, financial, or other professional advice. Always verify details directly with the organization offering a program before relying on any listing.",
+          body: "Information on this Site is provided for general informational purposes only. It is not legal, medical, financial, or other professional advice. Always verify details directly with the organization offering a resource before relying on any listing.",
         },
         s4: {
           title: "4. Acceptable Use",
@@ -868,7 +893,7 @@ Please include your city or county when asking about local resources so we can r
         },
         s6: {
           title: "6. Resource Listings",
-          body: "We strive to keep resource listings accurate and up to date, but we do not guarantee the completeness, accuracy, or availability of any program. Listings may change without notice. If you find outdated information, please report it through our contact page.",
+          body: "We strive to keep resource listings accurate and up to date, but we do not guarantee the completeness, accuracy, or availability of any resource. Listings may change without notice. If you find outdated information, please report it through our contact page.",
         },
         s7: {
           title: "7. Intellectual Property",
@@ -1288,7 +1313,7 @@ Please include your city or county when asking about local resources so we can r
     },
     "food-assistance": {
       name: "Food Assistance",
-      description: "Food banks, SNAP enrollment, and meal programs",
+      description: "Food banks, SNAP enrollment, and meal resources",
       shortName: "Food",
     },
     healthcare: {
@@ -1338,7 +1363,7 @@ Please include your city or county when asking about local resources so we can r
     },
     "veterans-services": {
       name: "Veterans Services",
-      description: "VA benefits and veteran-specific programs",
+      description: "VA benefits and veteran-specific resources",
       shortName: "Veterans",
     },
     "disability-services": {
@@ -1347,7 +1372,7 @@ Please include your city or county when asking about local resources so we can r
       shortName: "Disability",
     },
     "community-support-programs": {
-      name: "Community Support Programs",
+      name: "Community Support Resources",
       description: "Peer support, mentoring, and community centers",
       shortName: "Community",
     },
@@ -1358,7 +1383,7 @@ Please include your city or county when asking about local resources so we can r
     },
     "state-agency": {
       name: "State Agency",
-      description: "Kentucky state government reentry programs and services",
+      description: "Kentucky state government reentry resources and services",
       shortName: "State Agency",
     },
     "substance-use-treatment": {
@@ -1368,7 +1393,7 @@ Please include your city or county when asking about local resources so we can r
     },
     "food-nutrition": {
       name: "Food & Nutrition",
-      description: "Food assistance and nutrition programs",
+      description: "Food assistance and nutrition resources",
       shortName: "Food",
     },
     "id-documentation": {
@@ -1403,7 +1428,7 @@ Please include your city or county when asking about local resources so we can r
     },
     "reentry-organizations": {
       name: "Reentry Organizations",
-      description: "Nonprofit reentry coalitions and community-based reentry programs",
+      description: "Nonprofit reentry coalitions and community-based reentry resources",
       shortName: "Reentry",
     },
   },
@@ -1418,7 +1443,7 @@ Please include your city or county when asking about local resources so we can r
     faq2: {
       question: "Is this service free?",
       answer:
-        "Yes. Searching resources and creating an account are completely free. Individual programs may have their own eligibility requirements.",
+        "Yes. Searching resources and creating an account are completely free. Individual resources may have their own eligibility requirements.",
       category: "general",
     },
     faq3: {
@@ -1442,7 +1467,7 @@ Please include your city or county when asking about local resources so we can r
     faq6: {
       question: "Where do I start after release?",
       answer:
-        "Open the First week after release guide from your dashboard or visit the first-week guide for a step-by-step checklist — crisis support, ID, benefits, housing, and more — with programs matched to your county.",
+        "Open the First week after release guide from your dashboard or visit the first-week guide for a step-by-step checklist — crisis support, ID, benefits, housing, and more — with resources matched to your county.",
       category: "usingTheSite",
     },
   },
@@ -1450,10 +1475,10 @@ Please include your city or county when asking about local resources so we can r
   mock: {
     announcementTitle: "100+ Resources Now Available",
     announcementContent:
-      "We expanded our library to over 100 programs across all 50 states. Browse housing, employment, healthcare, and more near you.",
+      "We expanded our library to over 100 resources across all 50 states. Browse housing, employment, healthcare, and more near you.",
     aboutMeta: "Learn about the Reentry Resource Library and our mission.",
     aboutContent:
-      "The Reentry Resource Library connects people returning from incarceration with trusted programs for housing, jobs, healthcare, and more.",
+      "The Reentry Resource Library connects people returning from incarceration with trusted resources for housing, jobs, healthcare, and more.",
     hoursEmergency: "24 hours a day, 7 days a week",
     hoursStandard: "Monday–Friday, 8:00 AM – 5:00 PM",
     servingCommunities: "Serving {city}, {state} and surrounding communities.",
@@ -1481,7 +1506,7 @@ Please include your city or county when asking about local resources so we can r
         "Transitional Living Center",
         "Safe Harbor Shelter",
         "New Start Housing",
-        "Bridge Home Program",
+        "Bridge Home Resource",
         "Hope House",
       ],
       services: [
@@ -1501,7 +1526,7 @@ Please include your city or county when asking about local resources so we can r
         "Reentry Works",
         "Job Ready Center",
         "Second Chance Employment",
-        "Career Bridge Program",
+        "Career Bridge Resource",
         "Fresh Start Jobs",
         "WorkForce Reentry",
       ],
@@ -1524,7 +1549,7 @@ Please include your city or county when asking about local resources so we can r
         "Neighborhood Food Bank",
         "Meals & More",
         "Harvest Hope Kitchen",
-        "Open Door Food Program",
+        "Open Door Food Resource",
         "Daily Bread Center",
       ],
       services: [
@@ -1544,7 +1569,7 @@ Please include your city or county when asking about local resources so we can r
         "Community Health Clinic",
         "Free Care Center",
         "Neighborhood Medical Clinic",
-        "Wellness Access Program",
+        "Wellness Access Resource",
         "Open Door Health",
         "Care For All Clinic",
       ],
@@ -1584,7 +1609,7 @@ Please include your city or county when asking about local resources so we can r
       hoursStandard: "Monday–Friday, 8:00 AM – 5:00 PM",
       namePrefixes: [
         "New Beginnings Recovery",
-        "Clean Slate Program",
+        "Clean Slate Resource",
         "Recovery Path Center",
         "Serenity House",
         "Turning Point Recovery",
@@ -1600,15 +1625,15 @@ Please include your city or county when asking about local resources so we can r
     transportation: {
       description:
         "Free or reduced bus passes and help planning routes to jobs, appointments, and services.",
-      eligibility: "Recently released or enrolled in a reentry program.",
+      eligibility: "Recently released or enrolled in a reentry resource.",
       hoursEmergency: "24 hours a day, 7 days a week",
       hoursStandard: "Monday–Friday, 8:00 AM – 5:00 PM",
       namePrefixes: [
-        "Transit Access Program",
+        "Transit Access Resource",
         "Ride to Work Initiative",
         "Mobility Assistance Center",
         "Community Transit Help",
-        "Bus Pass Program",
+        "Bus Pass Resource",
         "Getting There Center",
       ],
       services: [
@@ -1626,7 +1651,7 @@ Please include your city or county when asking about local resources so we can r
       hoursStandard: "Monday–Friday, 8:00 AM – 5:00 PM",
       namePrefixes: [
         "Adult Learning Center",
-        "GED Success Program",
+        "GED Success Resource",
         "Skills for Life Academy",
         "Second Chance Education",
         "Career Training Institute",
@@ -1647,7 +1672,7 @@ Please include your city or county when asking about local resources so we can r
       hoursStandard: "Monday–Friday, 8:00 AM – 5:00 PM",
       namePrefixes: [
         "Financial Empowerment Center",
-        "Money Matters Program",
+        "Money Matters Resource",
         "Budget & Build Workshop",
         "Economic Opportunity Center",
         "Fresh Start Finance",
@@ -1688,7 +1713,7 @@ Please include your city or county when asking about local resources so we can r
       hoursEmergency: "24 hours a day, 7 days a week",
       hoursStandard: "Monday–Friday, 8:00 AM – 5:00 PM",
       namePrefixes: [
-        "ID Recovery Program",
+        "ID Recovery Resource",
         "Document Assistance Center",
         "Identity Restoration Help",
         "Paperwork Plus",
@@ -1710,10 +1735,10 @@ Please include your city or county when asking about local resources so we can r
       hoursStandard: "Monday–Friday, 8:00 AM – 5:00 PM",
       namePrefixes: [
         "Family Reunification Services",
-        "Parenting Path Program",
+        "Parenting Path Resource",
         "Families Together Center",
         "Homecoming Family Support",
-        "Reconnect Program",
+        "Reconnect Resource",
         "Strong Families Initiative",
       ],
       services: [
@@ -1725,13 +1750,13 @@ Please include your city or county when asking about local resources so we can r
     },
     "veterans-services": {
       description:
-        "VA benefits enrollment, housing vouchers, employment programs, and peer mentoring for veterans.",
+        "VA benefits enrollment, housing vouchers, employment resources, and peer mentoring for veterans.",
       eligibility: "Veterans with criminal justice involvement.",
       hoursEmergency: "24 hours a day, 7 days a week",
       hoursStandard: "Monday–Friday, 8:00 AM – 5:00 PM",
       namePrefixes: [
         "Veterans Reentry Center",
-        "Heroes Homecoming Program",
+        "Heroes Homecoming Resource",
         "Vet Support Services",
         "Operation Second Chance",
         "Veterans Resource Hub",
@@ -1740,7 +1765,7 @@ Please include your city or county when asking about local resources so we can r
       services: [
         "VA benefits help",
         "Housing vouchers",
-        "Employment programs",
+        "Employment resources",
         "Peer mentoring",
       ],
     },
@@ -1752,7 +1777,7 @@ Please include your city or county when asking about local resources so we can r
       hoursStandard: "Monday–Friday, 8:00 AM – 5:00 PM",
       namePrefixes: [
         "Disability Rights Center",
-        "Access For All Program",
+        "Access For All Resource",
         "Ability Resource Hub",
         "Independent Living Center",
         "Disability Benefits Help",
@@ -1772,7 +1797,7 @@ Please include your city or county when asking about local resources so we can r
       hoursEmergency: "24 hours a day, 7 days a week",
       hoursStandard: "Monday–Friday, 8:00 AM – 5:00 PM",
       namePrefixes: [
-        "Community Bridge Program",
+        "Community Bridge Resource",
         "Peer Support Network",
         "Reentry Circle",
         "Neighbor to Neighbor",

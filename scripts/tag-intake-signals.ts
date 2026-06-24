@@ -2,11 +2,11 @@
  * Auto-tag resources with intake_signals from eligibility/notes text.
  *
  * Usage:
- *   npx tsx scripts/tag-intake-signals.ts data/resources.csv
+ *   npx tsx scripts/tag-intake-signals.ts data/kentucky-resources.csv
  *   npx tsx scripts/tag-intake-signals.ts data/ohio-resources.csv
- *   npx tsx scripts/tag-intake-signals.ts data/resources.csv --dry-run
- *   npx tsx scripts/tag-intake-signals.ts data/resources.csv --llm
- *   npx tsx scripts/tag-intake-signals.ts data/resources.csv --llm --llm-provider=anthropic
+ *   npx tsx scripts/tag-intake-signals.ts data/kentucky-resources.csv --dry-run
+ *   npx tsx scripts/tag-intake-signals.ts data/kentucky-resources.csv --llm
+ *   npx tsx scripts/tag-intake-signals.ts data/kentucky-resources.csv --llm --llm-provider=anthropic
  *
  * Heuristic mode (default): free, instant, no API key.
  * --llm: uses ANTHROPIC_API_KEY (preferred) or OPENAI_API_KEY. Falls back to heuristics if neither is set.
@@ -52,7 +52,7 @@ const jsonOut =
   writeJsonIdx >= 0 ? resolve(process.cwd(), args[writeJsonIdx + 1]) : null;
 const csvPath = resolve(
   process.cwd(),
-  args.find((a) => !a.startsWith("--") && a.endsWith(".csv")) ?? "data/resources.csv"
+  args.find((a) => !a.startsWith("--") && a.endsWith(".csv")) ?? "data/kentucky-resources.csv"
 );
 
 const BATCH_SIZE = 15;
@@ -242,7 +242,7 @@ async function main() {
     console.log(`Wrote audit JSON: ${jsonOut}`);
   }
 
-  console.log("\nNext: npm run seed:resources (or seed:resources:ohio) to regenerate SQL.");
+  console.log("\nNext: npm run seed:resources:kentucky (or seed:resources:ohio) to regenerate SQL.");
 }
 
 main().catch((err) => {

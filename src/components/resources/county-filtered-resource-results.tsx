@@ -1,6 +1,6 @@
 import type { Resource } from "@/types";
 import { PaginatedResourceList } from "@/components/resources/paginated-resource-list";
-import { Badge } from "@/components/ui/badge";
+import { ResourceResultsHeader, appendFilterLabelsToHint } from "@/components/resources/resource-results-summary";
 import { cn, sectionDividerTop, sectionStackGap } from "@/lib/utils";
 
 interface CountyFilteredResourceResultsProps {
@@ -11,6 +11,7 @@ interface CountyFilteredResourceResultsProps {
   statewideHeading: string;
   statewideHint: string;
   noLocalHint?: string;
+  filterLabels?: string[];
 }
 
 export function CountyFilteredResourceResults({
@@ -21,6 +22,7 @@ export function CountyFilteredResourceResults({
   statewideHeading,
   statewideHint,
   noLocalHint,
+  filterLabels = [],
 }: CountyFilteredResourceResultsProps) {
   const showNoLocalHint = local.length === 0 && Boolean(noLocalHint);
 
@@ -34,17 +36,12 @@ export function CountyFilteredResourceResults({
 
       {local.length > 0 ? (
         <section aria-labelledby="county-local-heading">
-          <header className="mb-4 space-y-2">
-            <div className="flex flex-wrap items-center gap-3">
-              <h2 id="county-local-heading" className="text-xl font-bold text-foreground">
-                {inCountyHeading}
-              </h2>
-              <Badge variant="primary" className="shrink-0 tabular-nums">
-                {local.length}
-              </Badge>
-            </div>
-            <p className="text-base text-muted-foreground">{inCountyHint}</p>
-          </header>
+          <ResourceResultsHeader
+            heading={inCountyHeading}
+            hint={appendFilterLabelsToHint(inCountyHint, filterLabels)}
+            count={local.length}
+            headingId="county-local-heading"
+          />
           <PaginatedResourceList resources={local} />
         </section>
       ) : null}
@@ -54,17 +51,15 @@ export function CountyFilteredResourceResults({
           className={cn(local.length > 0 && sectionDividerTop)}
           aria-labelledby="county-statewide-heading"
         >
-          <header className="mb-4 space-y-2">
-            <div className="flex flex-wrap items-center gap-3">
-              <h2 id="county-statewide-heading" className="text-xl font-bold text-foreground">
-                {statewideHeading}
-              </h2>
-              <Badge variant="primary" className="shrink-0 tabular-nums">
-                {statewide.length}
-              </Badge>
-            </div>
-            <p className="text-base text-muted-foreground">{statewideHint}</p>
-          </header>
+          <ResourceResultsHeader
+            heading={statewideHeading}
+            hint={appendFilterLabelsToHint(
+              statewideHint,
+              local.length === 0 ? filterLabels : []
+            )}
+            count={statewide.length}
+            headingId="county-statewide-heading"
+          />
           <PaginatedResourceList resources={statewide} />
         </section>
       ) : null}

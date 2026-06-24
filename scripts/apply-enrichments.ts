@@ -13,7 +13,7 @@ import {
   serializeIntakeSignals,
 } from "./lib/classify-intake-signals";
 
-const CSV_PATH = resolve(process.cwd(), process.argv[3] ?? "data/resources.csv");
+const CSV_PATH = resolve(process.cwd(), process.argv[3] ?? "data/kentucky-resources.csv");
 const ENRICHMENT_PATH = resolve(process.cwd(), process.argv[2] ?? "data/enrichments/batch-01.json");
 
 const ALL_COLUMNS = [

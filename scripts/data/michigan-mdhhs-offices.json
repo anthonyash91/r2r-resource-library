@@ -1,0 +1,666 @@
+[
+  {
+    "county": "Alcona",
+    "city": "Harrisville",
+    "address": "410 E. Main Street Suite 7 & 7A",
+    "phone": "989-724-9000",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Alger",
+    "city": "Munsing",
+    "address": "Alger Parks & Recreation Bldg. 413 Maple St.",
+    "phone": "906-628-7002",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Allegan",
+    "city": "Allegan",
+    "address": "3255 122nd Avenue Suite 300",
+    "phone": "844-464-3447",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Alpena",
+    "city": "Alpena",
+    "address": "600 Walnut Street",
+    "phone": "989-354-7200",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Antrim",
+    "city": "Bellaire",
+    "address": "203 E. Cayuga St. PO Box 316",
+    "phone": "231-533-8664",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Arenac",
+    "city": "Standish",
+    "address": "3709 Deep River Road",
+    "phone": "989-846-5500",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Baraga",
+    "city": "Baraga",
+    "address": "108 Main Street P.O. Box 10",
+    "phone": "906-275-5050",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Barry",
+    "city": "Hastings",
+    "address": "430 Barfield Drive",
+    "phone": "269-948-3200",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Bay",
+    "city": "Essexville",
+    "address": "1399 W. Center Rd.",
+    "phone": "989-895-2100",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Benzie",
+    "city": "Beulah",
+    "address": "448 Court Place Govt. Ctr. Suite A",
+    "phone": "231-882-1330",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Berrien",
+    "city": "Harbor",
+    "address": "401 Eighth Street P.O. Box 1407 Benton",
+    "phone": "844-464-3447 269-934-2000",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Branch",
+    "city": "Coldwater",
+    "address": "388 Keith Wilhelm Dr.",
+    "phone": "517-279-4200",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Calhoun",
+    "city": "Creek",
+    "address": "190 E. Michigan Ave. PO Box 490 Battle",
+    "phone": "269-966-1284",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Cass",
+    "city": "Cassopolis",
+    "address": "325 M-62",
+    "phone": "269-445-0200",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Charlevoix",
+    "city": "Petoskey",
+    "address": "2229 Summit Park Dr.",
+    "phone": "231-348-1600",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Cheboygan",
+    "city": "Cheboygan",
+    "address": "827 S. Huron St.",
+    "phone": "231-627-8500",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Chippewa",
+    "city": "Marie",
+    "address": "463 East 3 Mile Rd. Sault Ste.",
+    "phone": "906-635-4100",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Clare",
+    "city": "Harrison",
+    "address": "725 Richard Dr.",
+    "phone": "989-539-4260",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Clinton",
+    "city": "Johns",
+    "address": "105 W. Tolles Road St.",
+    "phone": "989-224-5500",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Crawford",
+    "city": "Grayling",
+    "address": "2450 S I-75 Business Loop",
+    "phone": "989-348-7691",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Delta",
+    "city": "Escanaba",
+    "address": "305 Ludington Street",
+    "phone": "906-786-5394",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Dickinson",
+    "city": "Mountain",
+    "address": "1401 Carpenter Avenue Suite A Iron",
+    "phone": "906-779-4100",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Eaton",
+    "city": "Charlotte",
+    "address": "1050 Independence Blvd.",
+    "phone": "517-543-0860",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Emmet",
+    "city": "Petoskey",
+    "address": "2229 Summit Park Drive",
+    "phone": "231-348-1600",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Genesee",
+    "city": "Flint",
+    "address": "125 E. Union Street 7th Floor Phone 810-760-2202",
+    "phone": "810-760-2202",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Gladwin",
+    "city": "Ste 2 Gladwin",
+    "address": "675 E. Cedar Ave",
+    "phone": "989-426-3300",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Gogebic",
+    "city": "Bessemer",
+    "address": "301 E. Lead St.",
+    "phone": "906-663-6200",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Grand Traverse",
+    "city": "City",
+    "address": "701 S. Elmwood Ste. 19 Traverse",
+    "phone": "231-941-3900",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Gratiot",
+    "city": "Ithaca",
+    "address": "201 Commerce Drive",
+    "phone": "989-875-5181",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Hillsdale",
+    "city": "Hillsdale",
+    "address": "40 Care Drive",
+    "phone": "517-439-2200",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Houghton",
+    "city": "Ste 62 Houghton",
+    "address": "47420 State Hwy M26",
+    "phone": "906-482-0500",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Huron",
+    "city": "Axe",
+    "address": "1911 Sand Beach Rd. Bad",
+    "phone": "989-269-9201",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Ingham",
+    "city": "Lansing",
+    "address": "5303 S. Cedar Street",
+    "phone": "844-464-3447",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Ionia",
+    "city": "Ionia",
+    "address": "920 E. Lincoln",
+    "phone": "616-527-5200",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Iosco",
+    "city": "Tawas",
+    "address": "2145 E. US 23 HWY. East",
+    "phone": "989-362-0300",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Iron",
+    "city": "Caspian",
+    "address": "337 Brady Avenue",
+    "phone": "906-265-9958",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Isabella",
+    "city": "Pleasant",
+    "address": "1919 Parkland Drive Mt.",
+    "phone": "989-772-8400",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Jackson",
+    "city": "Jackson",
+    "address": "301 E. Louis Glick Hwy.",
+    "phone": "517-780-7400",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Kalamazoo",
+    "city": "Kalamazoo",
+    "address": "427 E. Alcott Street",
+    "phone": "269-337-4900",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Kalkaska",
+    "city": "Kalkaska",
+    "address": "503 North Birch Street",
+    "phone": "231-258-1200",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Kent",
+    "city": "S.E. Suite 200 Grand Rapids",
+    "address": "121 Martin Luther King Jr Street",
+    "phone": "616-248-1000 1-844-464-3447",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Keweenaw",
+    "city": "Mohawk",
+    "address": "3616 US Highway 41 PO Box 351",
+    "phone": "906-337-3302",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Lake",
+    "city": "Baldwin",
+    "address": "5653 S. M-37",
+    "phone": "231-745-8159",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Lapeer",
+    "city": "Lapeer",
+    "address": "1022 W. Genesee Street",
+    "phone": "810-667-0800",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Leelanau",
+    "city": "City",
+    "address": "701 S. Elmwood Ste. 19 Traverse",
+    "phone": "231-941-3900",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Lenawee",
+    "city": "Adrian",
+    "address": "1040 S. Winter St. Suite 3013",
+    "phone": "(517) 264-6300",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Livingston",
+    "city": "Ste. 1 Howell",
+    "address": "2300 E. Grand River",
+    "phone": "517-548-0200",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Luce",
+    "city": "Newberry",
+    "address": "500 W. McMillan Ave",
+    "phone": "906-293-5144",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Mackinac",
+    "city": "Ignace",
+    "address": "199 Ferry Lane Saint",
+    "phone": "906-643-9550",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Macomb",
+    "city": "Township",
+    "address": "44777 N. Gratiot Ave. Ste. A Clinton",
+    "phone": "586-412-6100",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Manistee",
+    "city": "Suite A Manistee",
+    "address": "MDHHS Manistee County 1475 US 31 South",
+    "phone": "231-723-8375",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Marquette",
+    "city": "Marquette",
+    "address": "Courthouse Annex 234 W. Baraga Ave.",
+    "phone": "906-228-9691",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Mason",
+    "city": "Ludington",
+    "address": "915 Diana St.",
+    "phone": "231-845-7391",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Mecosta",
+    "city": "Rapids",
+    "address": "800 Water Tower Rd. Big",
+    "phone": "(231) 796-4300",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Menominee",
+    "city": "Menominee",
+    "address": "2612 10th Street",
+    "phone": "906-863-9965",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Midland",
+    "city": "Ste. A Midland",
+    "address": "1509 Washington",
+    "phone": "989-835-7040",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Missaukee",
+    "city": "Cadillac",
+    "address": "10641 W. Watergate Rd.",
+    "phone": "231-779-4500",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Monroe",
+    "city": "Ste. A Monroe",
+    "address": "903 S. Telegraph",
+    "phone": "734-243-7200",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Montcalm",
+    "city": "Stanton",
+    "address": "P.O. Box 278 609 N. State",
+    "phone": "989-831-8400",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Montmorency",
+    "city": "Atlanta",
+    "address": "13210 M-33",
+    "phone": "989-785-4218",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Muskegon",
+    "city": "Heights",
+    "address": "2700 Baker St. P.O. Box 4290 Muskegon",
+    "phone": "231-733-3700",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Newaygo",
+    "city": "Cloud",
+    "address": "1018 Newell White",
+    "phone": "231-689-5500",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Oakland",
+    "city": "Pontiac",
+    "address": "51111 Woodward Avenue",
+    "phone": "248-975-4800",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Oceana",
+    "city": "Hart",
+    "address": "4081 W. Polk Road",
+    "phone": "231-873-7251",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Ogemaw",
+    "city": "Branch",
+    "address": "2049 Fox Run West",
+    "phone": "989-345-5135",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Ontonagon",
+    "city": "Ontonagon",
+    "address": "408 Copper St. Ste. B",
+    "phone": "906-813-7006",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Osceola",
+    "city": "Rapids",
+    "address": "800 Water Tower Rd Big",
+    "phone": "231-796-4300",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Oscoda",
+    "city": "Mio",
+    "address": "200 W. Fifth St.",
+    "phone": "989-826-4000",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Otsego",
+    "city": "Gaylord",
+    "address": "931 S. Otsego Ave",
+    "phone": "989-732-1702",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Ottawa",
+    "city": "Ste. 200 Holland",
+    "address": "12185 James St.",
+    "phone": "616-394-7200",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Presque Isle",
+    "city": "City",
+    "address": "164 N. Fourth St. Rogers",
+    "phone": "989-734-2108",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Roscommon",
+    "city": "Lake",
+    "address": "715 S. Loxley Rd. Houghton",
+    "phone": "989-366-2300",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Saginaw",
+    "city": "Saginaw",
+    "address": "411 E. Genesee PO Box 5070",
+    "phone": "989-758-1100",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Sanilac",
+    "city": "Sandusky",
+    "address": "515 S. Sandusky Rd.",
+    "phone": "810-648-4420",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Schoolcraft",
+    "city": "Manistque",
+    "address": "300 Walnut St",
+    "phone": "906-341-2114",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Shiawassee",
+    "city": "Owosso",
+    "address": "1720 E. Main Street Ste. 1",
+    "phone": "989-725-3200",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "St. Clair",
+    "city": "Huron",
+    "address": "1430 Military St Suite 4 Port",
+    "phone": "810-966-2000",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "St. Joseph",
+    "city": "Centreville",
+    "address": "692 E. Main St.",
+    "phone": "269-467-1200",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Tuscola",
+    "city": "Caro",
+    "address": "1365 Cleaver Rd.",
+    "phone": "989-673-9100",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Van Buren",
+    "city": "Hartford",
+    "address": "57150 C. R. 681",
+    "phone": "269-621-2800",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Washtenaw",
+    "city": "Ypsilanti",
+    "address": "22 Center St.",
+    "phone": "734-481-2000",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Wayne",
+    "city": "Detroit",
+    "address": "1801 E. Canfield 3040 W. Grand Blvd.",
+    "phone": "(313) 456-1000",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  },
+  {
+    "county": "Wexford",
+    "city": "Cadillac",
+    "address": "10641 W. Watergate Rd",
+    "phone": "231-779-4500",
+    "website": "https://newmibridges.michigan.gov/s/isd-landing-page?language=en_US",
+    "source": "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
+  }
+]
