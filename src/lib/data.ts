@@ -44,27 +44,28 @@ import {
 } from "@/lib/legal-content";
 import { createTranslator } from "@/i18n/translator";
 import {
-  applySearchQueryFilter,
   type LocationCatalog,
 } from "@/lib/resource-search";
+import { parseZipFromSearchQuery } from "@/lib/resources-search-params";
+import { lookupZip } from "@/lib/zip-lookup";
 import {
-  resourceServesCounty,
-  sortResourcesByCountyRelevance,
-  isStatewideResource,
-  resourcesForLocationFacets,
-  resourcesForCountyAttributeScope,
+  type ZipLocation,
+} from "@/lib/resource-zip-search";
+import {
   collectResourceServices,
+  resourcesForLocationFacets,
 } from "@/lib/resource-coverage";
-import { normalizeService, normalizeServices } from "@/lib/service-types";
+import { normalizeServices } from "@/lib/service-types";
 import { getStateCounties } from "@/lib/states/counties";
-import {
-  filterResourcesByIntakeSignals,
-} from "@/lib/intake-signals";
 import {
   buildResourceFilterOptions,
   type ResourceFilterFacetParams,
 } from "@/lib/resource-filter-facets";
 import { pickRelatedResources } from "@/lib/related-resources";
+import {
+  filterLoadedResources,
+  narrowResourcePool,
+} from "@/lib/filter-loaded-resources";
 
 export async function getCategories(): Promise<Category[]> {
   const locale = await getServerLocale();
@@ -112,15 +113,90 @@ function buildResourcesSelectQuery(client: ResourcesQueryClient, filters: Resour
   return query.order("name");
 }
 
-export async function getResources(filters: ResourceFilters = {}): Promise<Resource[]> {
+export type { ZipLocation };
+
+export function resolveZipLocationFromFilters(
+  filters: ResourceFilters
+): ZipLocation | null {
+  const zipCode = filters.zip?.trim();
+  if (zipCode) return lookupZip(zipCode);
+
+  if (filters.query?.trim()) {
+    const parsed = parseZipFromSearchQuery(filters.query);
+    if (parsed) return lookupZip(parsed.zip);
+  }
+
+  return null;
+}
+
+export async function loadActiveResourcePool(state?: string): Promise<Resource[]> {
   const locale = await getServerLocale();
   if (!isSupabaseConfigured()) return [];
 
   const supabase = await createClient();
   if (!supabase) return [];
 
+  const filters: ResourceFilters = { status: "active" };
+  if (state?.trim()) filters.state = state.trim();
+
   const { data, error } = await fetchAllRows<Resource>(async (range) =>
     buildResourcesSelectQuery(supabase, filters).range(range.from, range.to)
+  );
+  if (error || !data.length) return [];
+
+  return localizeResources(data, locale).map((resource) => ({
+    ...resource,
+    services: normalizeServices(resource.services),
+  }));
+}
+
+export async function queryResourcesFromPool(
+  pool: Resource[],
+  filters: ResourceFilters = {}
+): Promise<ResourcesQueryResult> {
+  const zipSearch = resolveZipLocationFromFilters(filters);
+  const narrowed = narrowResourcePool(pool, filters, zipSearch);
+  const needsCatalog = Boolean(filters.query?.trim() && !zipSearch);
+  const catalog = needsCatalog ? await getLocationCatalog() : null;
+  const resources = filterLoadedResources(narrowed, filters, zipSearch, catalog);
+  return { resources, zipSearch };
+}
+
+export interface ResourcesQueryResult {
+  resources: Resource[];
+  zipSearch: ZipLocation | null;
+}
+
+export async function queryResources(
+  filters: ResourceFilters = {}
+): Promise<ResourcesQueryResult> {
+  const zipSearch = resolveZipLocationFromFilters(filters);
+  const resources = await fetchResourcesFiltered(filters, zipSearch);
+  return { resources, zipSearch };
+}
+
+export async function getResources(filters: ResourceFilters = {}): Promise<Resource[]> {
+  const zipSearch = resolveZipLocationFromFilters(filters);
+  return fetchResourcesFiltered(filters, zipSearch);
+}
+
+async function fetchResourcesFiltered(
+  filters: ResourceFilters,
+  zipSearch: ZipLocation | null
+): Promise<Resource[]> {
+  const locale = await getServerLocale();
+  if (!isSupabaseConfigured()) return [];
+
+  const supabase = await createClient();
+  if (!supabase) return [];
+
+  const dbFilters: ResourceFilters = { ...filters };
+  if (zipSearch && !dbFilters.state) {
+    dbFilters.state = zipSearch.state;
+  }
+
+  const { data, error } = await fetchAllRows<Resource>(async (range) =>
+    buildResourcesSelectQuery(supabase, dbFilters).range(range.from, range.to)
   );
   if (error || !data.length) return [];
 
@@ -128,46 +204,9 @@ export async function getResources(filters: ResourceFilters = {}): Promise<Resou
     ...resource,
     services: normalizeServices(resource.services),
   }));
-  if (filters.county) {
-    results = results.filter((r) => resourceServesCounty(r, filters.county!));
-    results = sortResourcesByCountyRelevance(results, filters.county);
-  }
-  if (filters.query?.trim()) {
-    const catalog = await getLocationCatalog();
-    results = applySearchQueryFilter(results, filters.query, catalog);
-  }
-  if (filters.service || filters.tag) {
-    const attributePool = filters.county
-      ? resourcesForCountyAttributeScope(results, filters.county)
-      : results;
-    results = attributePool;
-    if (filters.service) {
-      const s = normalizeService(filters.service).toLowerCase();
-      results = results.filter((resource) =>
-        resource.services.some((svc) => normalizeService(svc).toLowerCase() === s)
-      );
-    }
-    if (filters.tag) {
-      const tag = filters.tag.toLowerCase();
-      results = results.filter((resource) =>
-        resource.tags.some((t) => t.toLowerCase() === tag)
-      );
-    }
-  }
-  if (filters.coverage === "statewide") {
-    results = results.filter((r) => isStatewideResource(r));
-  }
-  if (filters.coverage === "multi") {
-    results = results.filter((r) => r.coverage === "multi");
-  }
-  if (filters.eligibility) {
-    const e = filters.eligibility.toLowerCase();
-    results = results.filter((r) => r.eligibility?.toLowerCase().includes(e));
-  }
-  if (filters.intake?.length) {
-    results = filterResourcesByIntakeSignals(results, filters.intake);
-  }
-  return results;
+  const catalog =
+    filters.query?.trim() && !zipSearch ? await getLocationCatalog() : null;
+  return filterLoadedResources(results, filters, zipSearch, catalog);
 }
 
 export async function getActiveResourceCount(): Promise<number> {
@@ -396,11 +435,16 @@ export async function getCategoriesForLocation(
   return categories.filter((category) => categoryIds.has(category.id));
 }
 
-export async function getResourceFilterOptions(params: ResourceFilterFacetParams = {}) {
+export async function getResourceFilterOptions(
+  params: ResourceFilterFacetParams = {},
+  preloaded?: { resources?: Resource[]; categories?: Category[] }
+) {
   const { state, county, city, categorySlug, service, intake } = params;
-  const resources = await getResources({ state, status: "active" });
+  const resources =
+    preloaded?.resources ??
+    (await getResources({ state, status: "active" }));
 
-  const allCategories = await getCategories();
+  const allCategories = preloaded?.categories ?? (await getCategories());
   let categoryId = params.categoryId;
   if (!categoryId && categorySlug) {
     categoryId = allCategories.find((category) => category.slug === categorySlug)?.id;

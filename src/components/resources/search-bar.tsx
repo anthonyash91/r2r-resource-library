@@ -5,6 +5,7 @@ import { Search } from "lucide-react";
 import { SearchField } from "@/components/ui/search-field";
 import { Button } from "@/components/ui/button";
 import { buildResourcesPageHref } from "@/lib/resources-page";
+import { resourcesSearchParamsFromQuery } from "@/lib/resources-search-params";
 import { useTranslations } from "@/i18n/locale-context";
 
 interface SearchBarProps {
@@ -25,9 +26,11 @@ export function SearchBar({
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    const query = formData.get("q") as string;
-    if (query?.trim()) {
-      router.push(buildResourcesPageHref({ q: query.trim() }, "results"), { scroll: false });
+    const query = (formData.get("q") as string) ?? "";
+    const parsed = resourcesSearchParamsFromQuery(query);
+
+    if (Object.keys(parsed).length > 0) {
+      router.push(buildResourcesPageHref(parsed, "results"), { scroll: false });
     } else {
       router.push(buildResourcesPageHref());
     }

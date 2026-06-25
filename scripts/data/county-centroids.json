@@ -1,5 +1,95 @@
 [
   {
+    "state": "Georgia",
+    "county": "Appling",
+    "lon": -82.30317,
+    "lat": 31.77082
+  },
+  {
+    "state": "Georgia",
+    "county": "Barrow",
+    "lon": -83.71244,
+    "lat": 33.98165
+  },
+  {
+    "state": "Georgia",
+    "county": "Bryan",
+    "lon": -81.37706,
+    "lat": 31.94109
+  },
+  {
+    "state": "Georgia",
+    "county": "Candler",
+    "lon": -82.06068,
+    "lat": 32.35993
+  },
+  {
+    "state": "Georgia",
+    "county": "Chattooga",
+    "lon": -85.4343,
+    "lat": 34.47285
+  },
+  {
+    "state": "Georgia",
+    "county": "Clarke",
+    "lon": -83.33877,
+    "lat": 33.96643
+  },
+  {
+    "state": "Georgia",
+    "county": "Colquitt",
+    "lon": -83.75678,
+    "lat": 31.18027
+  },
+  {
+    "state": "Georgia",
+    "county": "Crawford",
+    "lon": -83.90217,
+    "lat": 32.71011
+  },
+  {
+    "state": "Georgia",
+    "county": "Dodge",
+    "lon": -83.12149,
+    "lat": 32.18788
+  },
+  {
+    "state": "Georgia",
+    "county": "Emanuel",
+    "lon": -82.32417,
+    "lat": 32.55174
+  },
+  {
+    "state": "Georgia",
+    "county": "Fayette",
+    "lon": -84.48666,
+    "lat": 33.38509
+  },
+  {
+    "state": "Georgia",
+    "county": "Gilmer",
+    "lon": -84.4875,
+    "lat": 34.68199
+  },
+  {
+    "state": "Georgia",
+    "county": "Wheeler",
+    "lon": -82.72787,
+    "lat": 32.12992
+  },
+  {
+    "state": "Georgia",
+    "county": "Whitfield",
+    "lon": -84.929,
+    "lat": 34.88264
+  },
+  {
+    "state": "Georgia",
+    "county": "Wilkinson",
+    "lon": -83.16336,
+    "lat": 32.82724
+  },
+  {
     "state": "Illinois",
     "county": "Bond",
     "lon": -89.47732,
@@ -256,6 +346,126 @@
     "county": "DeKalb",
     "lon": -84.85291,
     "lat": 41.41823
+  },
+  {
+    "state": "Georgia",
+    "county": "Glascock",
+    "lon": -82.61957,
+    "lat": 33.24896
+  },
+  {
+    "state": "Georgia",
+    "county": "Gordon",
+    "lon": -84.90104,
+    "lat": 34.55299
+  },
+  {
+    "state": "Georgia",
+    "county": "Grady",
+    "lon": -84.23314,
+    "lat": 30.83103
+  },
+  {
+    "state": "Georgia",
+    "county": "Hall",
+    "lon": -83.85232,
+    "lat": 34.29937
+  },
+  {
+    "state": "Georgia",
+    "county": "Jackson",
+    "lon": -83.54542,
+    "lat": 34.11417
+  },
+  {
+    "state": "Georgia",
+    "county": "Jones",
+    "lon": -83.5109,
+    "lat": 32.99255
+  },
+  {
+    "state": "Georgia",
+    "county": "Laurens",
+    "lon": -82.91839,
+    "lat": 32.48659
+  },
+  {
+    "state": "Georgia",
+    "county": "Lumpkin",
+    "lon": -84.00149,
+    "lat": 34.58351
+  },
+  {
+    "state": "Georgia",
+    "county": "Marion",
+    "lon": -84.54774,
+    "lat": 32.31396
+  },
+  {
+    "state": "Georgia",
+    "county": "Miller",
+    "lon": -84.74494,
+    "lat": 31.15204
+  },
+  {
+    "state": "Georgia",
+    "county": "Newton",
+    "lon": -83.81317,
+    "lat": 33.54917
+  },
+  {
+    "state": "Georgia",
+    "county": "Peach",
+    "lon": -83.86175,
+    "lat": 32.55316
+  },
+  {
+    "state": "Georgia",
+    "county": "Polk",
+    "lon": -85.15403,
+    "lat": 34.01829
+  },
+  {
+    "state": "Georgia",
+    "county": "Randolph",
+    "lon": -84.7669,
+    "lat": 31.76463
+  },
+  {
+    "state": "Georgia",
+    "county": "Seminole",
+    "lon": -84.93531,
+    "lat": 30.95133
+  },
+  {
+    "state": "Georgia",
+    "county": "Taliaferro",
+    "lon": -82.87643,
+    "lat": 33.6003
+  },
+  {
+    "state": "Georgia",
+    "county": "Tift",
+    "lon": -83.50426,
+    "lat": 31.44946
+  },
+  {
+    "state": "Georgia",
+    "county": "Troup",
+    "lon": -85.11087,
+    "lat": 33.07158
+  },
+  {
+    "state": "Georgia",
+    "county": "Upson",
+    "lon": -84.29511,
+    "lat": 32.86573
+  },
+  {
+    "state": "Georgia",
+    "county": "Washington",
+    "lon": -82.77245,
+    "lat": 32.99622
   },
   {
     "state": "Kentucky",
@@ -852,6 +1062,174 @@
     "lat": 38.52479
   },
   {
+    "state": "Georgia",
+    "county": "Heard",
+    "lon": -85.15574,
+    "lat": 33.32718
+  },
+  {
+    "state": "Georgia",
+    "county": "Cobb",
+    "lon": -84.64462,
+    "lat": 33.97381
+  },
+  {
+    "state": "Georgia",
+    "county": "Coffee",
+    "lon": -82.94238,
+    "lat": 31.52782
+  },
+  {
+    "state": "Georgia",
+    "county": "Columbia",
+    "lon": -82.18265,
+    "lat": 33.58816
+  },
+  {
+    "state": "Georgia",
+    "county": "Coweta",
+    "lon": -84.72539,
+    "lat": 33.3084
+  },
+  {
+    "state": "Georgia",
+    "county": "Crisp",
+    "lon": -83.88474,
+    "lat": 31.89079
+  },
+  {
+    "state": "Georgia",
+    "county": "Decatur",
+    "lon": -84.57945,
+    "lat": 30.87195
+  },
+  {
+    "state": "Georgia",
+    "county": "Dooly",
+    "lon": -83.80808,
+    "lat": 32.16257
+  },
+  {
+    "state": "Georgia",
+    "county": "Dougherty",
+    "lon": -84.18093,
+    "lat": 31.53864
+  },
+  {
+    "state": "Georgia",
+    "county": "Echols",
+    "lon": -82.89089,
+    "lat": 30.72558
+  },
+  {
+    "state": "Georgia",
+    "county": "Effingham",
+    "lon": -81.28979,
+    "lat": 32.40719
+  },
+  {
+    "state": "Georgia",
+    "county": "Evans",
+    "lon": -81.89121,
+    "lat": 32.18908
+  },
+  {
+    "state": "Georgia",
+    "county": "Floyd",
+    "lon": -85.26607,
+    "lat": 34.32815
+  },
+  {
+    "state": "Georgia",
+    "county": "Franklin",
+    "lon": -83.20595,
+    "lat": 34.38078
+  },
+  {
+    "state": "Georgia",
+    "county": "Atkinson",
+    "lon": -82.8595,
+    "lat": 31.28318
+  },
+  {
+    "state": "Georgia",
+    "county": "Bacon",
+    "lon": -82.47472,
+    "lat": 31.56475
+  },
+  {
+    "state": "Georgia",
+    "county": "Baldwin",
+    "lon": -83.22724,
+    "lat": 33.05852
+  },
+  {
+    "state": "Georgia",
+    "county": "Bartow",
+    "lon": -84.76783,
+    "lat": 34.1509
+  },
+  {
+    "state": "Georgia",
+    "county": "Bleckley",
+    "lon": -83.32169,
+    "lat": 32.43743
+  },
+  {
+    "state": "Georgia",
+    "county": "Brantley",
+    "lon": -82.02208,
+    "lat": 31.20047
+  },
+  {
+    "state": "Georgia",
+    "county": "Bulloch",
+    "lon": -81.79856,
+    "lat": 32.40551
+  },
+  {
+    "state": "Georgia",
+    "county": "Calhoun",
+    "lon": -84.60985,
+    "lat": 31.54594
+  },
+  {
+    "state": "Georgia",
+    "county": "Charlton",
+    "lon": -82.10899,
+    "lat": 30.64442
+  },
+  {
+    "state": "Georgia",
+    "county": "Chattahoochee",
+    "lon": -84.81565,
+    "lat": 32.3998
+  },
+  {
+    "state": "Georgia",
+    "county": "Cherokee",
+    "lon": -84.39269,
+    "lat": 34.26599
+  },
+  {
+    "state": "Georgia",
+    "county": "Clayton",
+    "lon": -84.39581,
+    "lat": 33.54596
+  },
+  {
+    "state": "Georgia",
+    "county": "Wilkes",
+    "lon": -82.71857,
+    "lat": 33.71989
+  },
+  {
+    "state": "Georgia",
+    "county": "Worth",
+    "lon": -83.89997,
+    "lat": 31.59107
+  },
+  {
     "state": "Illinois",
     "county": "Alexander",
     "lon": -89.29749,
@@ -1140,6 +1518,54 @@
     "lat": 40.08944
   },
   {
+    "state": "Georgia",
+    "county": "Habersham",
+    "lon": -83.51249,
+    "lat": 34.68188
+  },
+  {
+    "state": "Georgia",
+    "county": "Hancock",
+    "lon": -83.00003,
+    "lat": 33.2309
+  },
+  {
+    "state": "Georgia",
+    "county": "Hart",
+    "lon": -82.97579,
+    "lat": 34.41706
+  },
+  {
+    "state": "Georgia",
+    "county": "Irwin",
+    "lon": -83.28075,
+    "lat": 31.61878
+  },
+  {
+    "state": "Georgia",
+    "county": "Jasper",
+    "lon": -83.73727,
+    "lat": 33.28714
+  },
+  {
+    "state": "Georgia",
+    "county": "Jenkins",
+    "lon": -81.93467,
+    "lat": 32.78916
+  },
+  {
+    "state": "Georgia",
+    "county": "Lamar",
+    "lon": -84.15544,
+    "lat": 33.05577
+  },
+  {
+    "state": "Georgia",
+    "county": "Lanier",
+    "lon": -83.04632,
+    "lat": 30.97071
+  },
+  {
     "state": "Kentucky",
     "county": "Jefferson",
     "lon": -85.76444,
@@ -1222,6 +1648,30 @@
     "county": "Allen",
     "lon": -84.96265,
     "lat": 41.12721
+  },
+  {
+    "state": "Georgia",
+    "county": "Lincoln",
+    "lon": -82.42476,
+    "lat": 33.75276
+  },
+  {
+    "state": "Georgia",
+    "county": "Morgan",
+    "lon": -83.53526,
+    "lat": 33.56611
+  },
+  {
+    "state": "Georgia",
+    "county": "Muscogee",
+    "lon": -84.90007,
+    "lat": 32.47961
+  },
+  {
+    "state": "Georgia",
+    "county": "Quitman",
+    "lon": -85.05969,
+    "lat": 31.8816
   },
   {
     "state": "Tennessee",
@@ -1728,6 +2178,12 @@
     "lat": 41.16141
   },
   {
+    "state": "Georgia",
+    "county": "McIntosh",
+    "lon": -81.29797,
+    "lat": 31.48511
+  },
+  {
     "state": "Michigan",
     "county": "Jackson",
     "lon": -84.36594,
@@ -1822,6 +2278,12 @@
     "county": "Tuscola",
     "lon": -83.51394,
     "lat": 43.56733
+  },
+  {
+    "state": "Georgia",
+    "county": "Paulding",
+    "lon": -84.83958,
+    "lat": 33.84039
   },
   {
     "state": "Michigan",
@@ -1948,6 +2410,108 @@
     "county": "Massac",
     "lon": -88.66177,
     "lat": 37.15185
+  },
+  {
+    "state": "Georgia",
+    "county": "Lowndes",
+    "lon": -83.33942,
+    "lat": 30.87137
+  },
+  {
+    "state": "Georgia",
+    "county": "McDuffie",
+    "lon": -82.4334,
+    "lat": 33.51397
+  },
+  {
+    "state": "Georgia",
+    "county": "Madison",
+    "lon": -83.21474,
+    "lat": 34.15059
+  },
+  {
+    "state": "Georgia",
+    "county": "Meriwether",
+    "lon": -84.65782,
+    "lat": 33.05686
+  },
+  {
+    "state": "Georgia",
+    "county": "Mitchell",
+    "lon": -84.22718,
+    "lat": 31.20793
+  },
+  {
+    "state": "Georgia",
+    "county": "Montgomery",
+    "lon": -82.53021,
+    "lat": 32.15841
+  },
+  {
+    "state": "Georgia",
+    "county": "Murray",
+    "lon": -84.7664,
+    "lat": 34.83325
+  },
+  {
+    "state": "Georgia",
+    "county": "Oglethorpe",
+    "lon": -83.04521,
+    "lat": 33.87313
+  },
+  {
+    "state": "Georgia",
+    "county": "Pierce",
+    "lon": -82.21688,
+    "lat": 31.3643
+  },
+  {
+    "state": "Georgia",
+    "county": "Pike",
+    "lon": -84.39019,
+    "lat": 33.10373
+  },
+  {
+    "state": "Georgia",
+    "county": "Pulaski",
+    "lon": -83.45645,
+    "lat": 32.25251
+  },
+  {
+    "state": "Georgia",
+    "county": "Rabun",
+    "lon": -83.35971,
+    "lat": 34.87263
+  },
+  {
+    "state": "Georgia",
+    "county": "Rockdale",
+    "lon": -84.04341,
+    "lat": 33.67155
+  },
+  {
+    "state": "Georgia",
+    "county": "Spalding",
+    "lon": -84.38353,
+    "lat": 33.25054
+  },
+  {
+    "state": "Georgia",
+    "county": "Stephens",
+    "lon": -83.27031,
+    "lat": 34.57618
+  },
+  {
+    "state": "Georgia",
+    "county": "Tattnall",
+    "lon": -81.9997,
+    "lat": 31.97661
+  },
+  {
+    "state": "Georgia",
+    "county": "Taylor",
+    "lon": -84.21706,
+    "lat": 32.55323
   },
   {
     "state": "Kentucky",
@@ -2134,6 +2698,42 @@
     "county": "Adams",
     "lon": -84.83221,
     "lat": 40.73021
+  },
+  {
+    "state": "Georgia",
+    "county": "Thomas",
+    "lon": -83.97235,
+    "lat": 30.78952
+  },
+  {
+    "state": "Georgia",
+    "county": "Toombs",
+    "lon": -82.39067,
+    "lat": 32.1151
+  },
+  {
+    "state": "Georgia",
+    "county": "Towns",
+    "lon": -83.71744,
+    "lat": 34.84042
+  },
+  {
+    "state": "Georgia",
+    "county": "Twiggs",
+    "lon": -83.45845,
+    "lat": 32.74464
+  },
+  {
+    "state": "Georgia",
+    "county": "Walker",
+    "lon": -85.22752,
+    "lat": 34.77732
+  },
+  {
+    "state": "Georgia",
+    "county": "Warren",
+    "lon": -82.63291,
+    "lat": 33.47879
   },
   {
     "state": "Kentucky",
@@ -2526,6 +3126,84 @@
     "lat": 39.76865
   },
   {
+    "state": "Georgia",
+    "county": "Banks",
+    "lon": -83.46242,
+    "lat": 34.33098
+  },
+  {
+    "state": "Georgia",
+    "county": "Berrien",
+    "lon": -83.18196,
+    "lat": 31.29656
+  },
+  {
+    "state": "Georgia",
+    "county": "Brooks",
+    "lon": -83.49738,
+    "lat": 30.88148
+  },
+  {
+    "state": "Georgia",
+    "county": "Burke",
+    "lon": -81.96919,
+    "lat": 33.08222
+  },
+  {
+    "state": "Georgia",
+    "county": "Camden",
+    "lon": -81.56832,
+    "lat": 30.87968
+  },
+  {
+    "state": "Georgia",
+    "county": "Chatham",
+    "lon": -81.02597,
+    "lat": 31.92745
+  },
+  {
+    "state": "Georgia",
+    "county": "Clay",
+    "lon": -85.03777,
+    "lat": 31.65687
+  },
+  {
+    "state": "Georgia",
+    "county": "Baker",
+    "lon": -84.45871,
+    "lat": 31.28605
+  },
+  {
+    "state": "Georgia",
+    "county": "Bibb",
+    "lon": -83.67898,
+    "lat": 32.82069
+  },
+  {
+    "state": "Georgia",
+    "county": "Butts",
+    "lon": -83.97146,
+    "lat": 33.30067
+  },
+  {
+    "state": "Georgia",
+    "county": "Catoosa",
+    "lon": -85.1747,
+    "lat": 34.92924
+  },
+  {
+    "state": "Georgia",
+    "county": "Clinch",
+    "lon": -82.59623,
+    "lat": 30.74304
+  },
+  {
+    "state": "Georgia",
+    "county": "Cook",
+    "lon": -83.4293,
+    "lat": 31.17134
+  },
+  {
     "state": "Michigan",
     "county": "Calhoun",
     "lon": -85.10348,
@@ -2604,6 +3282,24 @@
     "lat": 35.28606
   },
   {
+    "state": "Georgia",
+    "county": "Dawson",
+    "lon": -84.20447,
+    "lat": 34.46563
+  },
+  {
+    "state": "Georgia",
+    "county": "Early",
+    "lon": -84.98997,
+    "lat": 31.26158
+  },
+  {
+    "state": "Georgia",
+    "county": "Forsyth",
+    "lon": -84.11565,
+    "lat": 34.16417
+  },
+  {
     "state": "Michigan",
     "county": "Hillsdale",
     "lon": -84.63355,
@@ -2670,6 +3366,24 @@
     "lat": 36.52495
   },
   {
+    "state": "Georgia",
+    "county": "Webster",
+    "lon": -84.55202,
+    "lat": 32.01863
+  },
+  {
+    "state": "Georgia",
+    "county": "White",
+    "lon": -83.72727,
+    "lat": 34.73758
+  },
+  {
+    "state": "Georgia",
+    "county": "Wilcox",
+    "lon": -83.41091,
+    "lat": 31.96506
+  },
+  {
     "state": "Illinois",
     "county": "Adams",
     "lon": -91.29571,
@@ -2680,6 +3394,42 @@
     "county": "Cass",
     "lon": -90.29497,
     "lat": 40.00462
+  },
+  {
+    "state": "Georgia",
+    "county": "Dade",
+    "lon": -85.53179,
+    "lat": 34.82787
+  },
+  {
+    "state": "Georgia",
+    "county": "DeKalb",
+    "lon": -84.2674,
+    "lat": 33.8269
+  },
+  {
+    "state": "Georgia",
+    "county": "Douglas",
+    "lon": -84.74051,
+    "lat": 33.72365
+  },
+  {
+    "state": "Georgia",
+    "county": "Elbert",
+    "lon": -82.73818,
+    "lat": 34.13273
+  },
+  {
+    "state": "Georgia",
+    "county": "Fannin",
+    "lon": -84.32135,
+    "lat": 34.86957
+  },
+  {
+    "state": "Georgia",
+    "county": "Fulton",
+    "lon": -84.46309,
+    "lat": 33.77333
   },
   {
     "state": "Illinois",
@@ -2890,6 +3640,102 @@
     "county": "Floyd",
     "lon": -85.8951,
     "lat": 38.32398
+  },
+  {
+    "state": "Georgia",
+    "county": "Glynn",
+    "lon": -81.41303,
+    "lat": 31.16159
+  },
+  {
+    "state": "Georgia",
+    "county": "Greene",
+    "lon": -83.15059,
+    "lat": 33.57153
+  },
+  {
+    "state": "Georgia",
+    "county": "Haralson",
+    "lon": -85.22328,
+    "lat": 33.81487
+  },
+  {
+    "state": "Georgia",
+    "county": "Houston",
+    "lon": -83.6603,
+    "lat": 32.48818
+  },
+  {
+    "state": "Georgia",
+    "county": "Jefferson",
+    "lon": -82.37824,
+    "lat": 33.11929
+  },
+  {
+    "state": "Georgia",
+    "county": "Long",
+    "lon": -81.70143,
+    "lat": 31.75994
+  },
+  {
+    "state": "Georgia",
+    "county": "Macon",
+    "lon": -84.06927,
+    "lat": 32.33339
+  },
+  {
+    "state": "Georgia",
+    "county": "Monroe",
+    "lon": -83.8873,
+    "lat": 33.06518
+  },
+  {
+    "state": "Georgia",
+    "county": "Oconee",
+    "lon": -83.45125,
+    "lat": 33.83081
+  },
+  {
+    "state": "Georgia",
+    "county": "Pickens",
+    "lon": -84.46553,
+    "lat": 34.47136
+  },
+  {
+    "state": "Georgia",
+    "county": "Putnam",
+    "lon": -83.37099,
+    "lat": 33.29546
+  },
+  {
+    "state": "Georgia",
+    "county": "Schley",
+    "lon": -84.27899,
+    "lat": 32.28697
+  },
+  {
+    "state": "Georgia",
+    "county": "Stewart",
+    "lon": -84.90795,
+    "lat": 32.11455
+  },
+  {
+    "state": "Georgia",
+    "county": "Telfair",
+    "lon": -82.9305,
+    "lat": 31.95868
+  },
+  {
+    "state": "Georgia",
+    "county": "Treutlen",
+    "lon": -82.51626,
+    "lat": 32.37807
+  },
+  {
+    "state": "Georgia",
+    "county": "Walton",
+    "lon": -83.80851,
+    "lat": 33.78337
   },
   {
     "state": "Ohio",
@@ -3564,6 +4410,48 @@
     "lat": 41.66588
   },
   {
+    "state": "Georgia",
+    "county": "Gwinnett",
+    "lon": -84.12405,
+    "lat": 33.97744
+  },
+  {
+    "state": "Georgia",
+    "county": "Harris",
+    "lon": -85.01572,
+    "lat": 32.72073
+  },
+  {
+    "state": "Georgia",
+    "county": "Henry",
+    "lon": -84.17658,
+    "lat": 33.50351
+  },
+  {
+    "state": "Georgia",
+    "county": "Jeff Davis",
+    "lon": -82.54081,
+    "lat": 31.85759
+  },
+  {
+    "state": "Georgia",
+    "county": "Johnson",
+    "lon": -82.71867,
+    "lat": 32.70604
+  },
+  {
+    "state": "Georgia",
+    "county": "Lee",
+    "lon": -84.00759,
+    "lat": 31.83957
+  },
+  {
+    "state": "Georgia",
+    "county": "Liberty",
+    "lon": -81.34256,
+    "lat": 31.74983
+  },
+  {
     "state": "Illinois",
     "county": "Pike",
     "lon": -91.00038,
@@ -3618,6 +4506,24 @@
     "lat": 42.45144
   },
   {
+    "state": "Georgia",
+    "county": "Turner",
+    "lon": -83.6027,
+    "lat": 31.72954
+  },
+  {
+    "state": "Georgia",
+    "county": "Union",
+    "lon": -83.99698,
+    "lat": 34.87845
+  },
+  {
+    "state": "Georgia",
+    "county": "Ware",
+    "lon": -82.41009,
+    "lat": 31.02183
+  },
+  {
     "state": "Kentucky",
     "county": "Hickman",
     "lon": -89.02082,
@@ -3660,6 +4566,12 @@
     "lat": 37.2311
   },
   {
+    "state": "Georgia",
+    "county": "Wayne",
+    "lon": -81.92579,
+    "lat": 31.6
+  },
+  {
     "state": "Ohio",
     "county": "Greene",
     "lon": -83.88658,
@@ -3690,6 +4602,12 @@
     "lat": 35.79437
   },
   {
+    "state": "Georgia",
+    "county": "Ben Hill",
+    "lon": -83.22873,
+    "lat": 31.75223
+  },
+  {
     "state": "Indiana",
     "county": "Franklin",
     "lon": -84.98758,
@@ -3702,10 +4620,46 @@
     "lat": 42.9446
   },
   {
+    "state": "Georgia",
+    "county": "Carroll",
+    "lon": -85.11367,
+    "lat": 33.60155
+  },
+  {
     "state": "Kentucky",
     "county": "Clay",
     "lon": -83.64131,
     "lat": 37.15106
+  },
+  {
+    "state": "Georgia",
+    "county": "Richmond",
+    "lon": -82.10625,
+    "lat": 33.36879
+  },
+  {
+    "state": "Georgia",
+    "county": "Screven",
+    "lon": -81.51683,
+    "lat": 32.75292
+  },
+  {
+    "state": "Georgia",
+    "county": "Sumter",
+    "lon": -84.24443,
+    "lat": 32.06576
+  },
+  {
+    "state": "Georgia",
+    "county": "Talbot",
+    "lon": -84.55591,
+    "lat": 32.63423
+  },
+  {
+    "state": "Georgia",
+    "county": "Terrell",
+    "lon": -84.44196,
+    "lat": 31.75281
   },
   {
     "state": "Kentucky",

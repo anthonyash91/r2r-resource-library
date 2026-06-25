@@ -1764,3 +1764,56 @@ def register_phase3b_west_virginia(add, entries=None):
     from tier_a_anchors import register_west_virginia_tier_a_anchors
 
     register_west_virginia_tier_a_anchors(add)
+
+
+def _dfcs_desc_en(county: str, city: str) -> str:
+    return (
+        f"{county} County DFCS Family Assistance office in {city} processes SNAP, Medicaid, PeachCare, "
+        f"and TANF applications for Georgia residents including returning citizens reestablishing food and "
+        f"health benefits after release from {county} County Jail or GDC custody."
+    )
+
+
+def _dfcs_desc_es(county: str, city: str) -> str:
+    return (
+        f"La oficina de Asistencia Familiar DFCS del condado {county} en {city} procesa solicitudes de SNAP, "
+        f"Medicaid, PeachCare y TANF para residentes de Georgia, incluidos ciudadanos que regresan que "
+        f"restablecen beneficios alimentarios y de salud después de la liberación."
+    )
+
+
+def _dfcs_ga(county, city, address, phone, region, desc_en, desc_es, source):
+    return dict(
+        name=f"{county} County DFCS — Family Assistance",
+        category="financial-assistance",
+        region=region,
+        description=desc_en,
+        description_es=desc_es,
+        address=address,
+        city=city,
+        phone=phone or "1-877-423-4746",
+        email="",
+        website="https://dfcs.georgia.gov/locations",
+        eligibility=f"{county} County residents meeting income and household-size requirements for SNAP, Medicaid, PeachCare, and TANF; criminal record generally not a barrier.",
+        eligibility_es=f"Residentes del condado {county} que cumplan requisitos de ingresos para SNAP, Medicaid, PeachCare y TANF; los antecedentes penales generalmente no son barrera.",
+        notes="Apply online at compass.ga.gov or visit the county DFCS office; call 1-877-423-4746 for DFCS Customer Contact Center.",
+        notes_es="Solicite en compass.ga.gov o visite la oficina DFCS del condado; llame al 1-877-423-4746.",
+        hours="Typically Tuesday–Thursday, 9:00 a.m.–4:00 p.m. ET; call ahead",
+        tags=f"{county.lower()}|georgia|benefits|SNAP|Medicaid|DFCS|reentry",
+        services="SNAP enrollment|Medicaid and PeachCare|TANF cash assistance|Document verification|COMPASS application help",
+        county=county,
+        served_counties=county,
+        coverage="single",
+        _source=source or "https://dfcs.georgia.gov/locations",
+        _source_type="government",
+        _confidence="high",
+    )
+
+
+def register_phase3b_georgia(add, entries=None):
+    """Phase 3b: DFCS county benefits (registry) + thin-county gap fill."""
+
+    from county_benefits_registry import collect_financial_assistance_counties, register_county_benefits_georgia
+
+    existing_fa = collect_financial_assistance_counties(entries or [])
+    register_county_benefits_georgia(add, existing_fa)

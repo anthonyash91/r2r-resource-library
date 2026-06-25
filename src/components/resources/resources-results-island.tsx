@@ -6,9 +6,12 @@ import { PaginatedResourceList } from "@/components/resources/paginated-resource
 import { ResourceResultsSection, formatMainResultsHint } from "@/components/resources/resource-results-summary";
 import { ResourceResultsGridSkeleton } from "@/components/resources/resources-page-skeleton";
 import { CountyFilteredResourceResults } from "@/components/resources/county-filtered-resource-results";
+import { ZipFilteredResourceResults } from "@/components/resources/zip-filtered-resource-results";
 import { useResourceFilterDraft } from "@/components/resources/resource-filter-draft-context";
 import { useTranslations } from "@/i18n/locale-context";
+import type { ZipLocation } from "@/lib/resource-zip-search";
 import { partitionResourcesByCountyFilter } from "@/lib/resource-coverage";
+import { partitionResourcesByZip } from "@/lib/resource-zip-search";
 import { buildResourceSearchFilterLabels } from "@/lib/resource-search-filter-labels";
 import {
   resourcesPageParamsKey,
@@ -17,14 +20,20 @@ import {
 
 interface ResourcesResultsIslandProps {
   initialResources: Resource[];
+  initialZipSearch: ZipLocation | null;
   initialParams: ResourcesPageSearchParams;
   categories: Category[];
   defaultStateLabel: string;
 }
 
+interface ResourcesFetchResult {
+  resources: Resource[];
+  zipSearch: ZipLocation | null;
+}
+
 async function fetchResourcesForParams(
   params: ResourcesPageSearchParams
-): Promise<Resource[]> {
+): Promise<ResourcesFetchResult> {
   const searchParams = new URLSearchParams();
   for (const [key, value] of Object.entries(params)) {
     if (value?.trim()) searchParams.set(key, value.trim());
@@ -35,12 +44,12 @@ async function fetchResourcesForParams(
     throw new Error("Failed to load resources");
   }
 
-  const data = (await response.json()) as { resources: Resource[] };
-  return data.resources;
+  return (await response.json()) as ResourcesFetchResult;
 }
 
 export function ResourcesResultsIsland({
   initialResources,
+  initialZipSearch,
   initialParams,
   categories,
   defaultStateLabel,
@@ -48,6 +57,7 @@ export function ResourcesResultsIsland({
   const { filterUrlRevision, clientAppliedParams } = useResourceFilterDraft();
   const { t } = useTranslations();
   const [resources, setResources] = useState(initialResources);
+  const [zipSearch, setZipSearch] = useState<ZipLocation | null>(initialZipSearch);
   const [isFetching, setIsFetching] = useState(false);
 
   const effectiveParamsKey = useMemo(
@@ -62,6 +72,7 @@ export function ResourcesResultsIsland({
   useEffect(() => {
     if (effectiveParamsKey === initialParamsKey) {
       setResources(initialResources);
+      setZipSearch(initialZipSearch);
       return;
     }
 
@@ -70,10 +81,16 @@ export function ResourcesResultsIsland({
 
     fetchResourcesForParams(clientAppliedParams)
       .then((next) => {
-        if (!cancelled) setResources(next);
+        if (!cancelled) {
+          setResources(next.resources);
+          setZipSearch(next.zipSearch);
+        }
       })
       .catch(() => {
-        if (!cancelled) setResources([]);
+        if (!cancelled) {
+          setResources([]);
+          setZipSearch(null);
+        }
       })
       .finally(() => {
         if (!cancelled) setIsFetching(false);
@@ -88,11 +105,16 @@ export function ResourcesResultsIsland({
     filterUrlRevision,
     initialParamsKey,
     initialResources,
+    initialZipSearch,
   ]);
 
   const selectedCounty = clientAppliedParams.county?.trim();
   const showCountySplit =
-    Boolean(selectedCounty) && clientAppliedParams.coverage !== "statewide";
+    Boolean(selectedCounty) &&
+    clientAppliedParams.coverage !== "statewide" &&
+    !zipSearch;
+
+  const showZipSplit = Boolean(zipSearch);
 
   const resultsHeading = t("resources.resultsSummary");
   const filterLabels = buildResourceSearchFilterLabels(clientAppliedParams, categories, t);
@@ -105,19 +127,33 @@ export function ResourcesResultsIsland({
       excludeCounty: true,
     }
   );
+  const zipSplitFilterLabels = buildResourceSearchFilterLabels(
+    clientAppliedParams,
+    categories,
+    t,
+    {
+      excludeZip: true,
+    }
+  );
   const { local: localResults, statewide: statewideResults } = showCountySplit
     ? partitionResourcesByCountyFilter(resources, selectedCounty)
     : { local: resources, statewide: [] as Resource[] };
 
-  if (isFetching && resources.length === 0) {
+  const zipPartition = showZipSplit && zipSearch
+    ? partitionResourcesByZip(resources, zipSearch)
+    : { inZip: [], nearZip: [], statewide: [] };
+
+  if (isFetching) {
     return (
-      <ResourceResultsSection
-        heading={resultsHeading}
-        hint={resultsHint}
-        count={0}
-      >
-        <ResourceResultsGridSkeleton />
-      </ResourceResultsSection>
+      <div role="status" aria-live="polite" aria-busy="true">
+        <ResourceResultsSection
+          heading={resultsHeading}
+          hint={resultsHint}
+          count={resources.length}
+        >
+          <ResourceResultsGridSkeleton />
+        </ResourceResultsSection>
+      </div>
     );
   }
 
@@ -132,6 +168,45 @@ export function ResourcesResultsIsland({
           <h3 className="mb-2 text-xl font-bold">{t("resources.noResults")}</h3>
           <p className="text-base text-muted-foreground">{t("resources.noResultsHint")}</p>
         </div>
+      </ResourceResultsSection>
+    );
+  }
+
+  if (showZipSplit && zipSearch) {
+    const zipLabel = zipSearch.city
+      ? t("resources.resultsZipLocationLabel", {
+          zip: zipSearch.zip,
+          city: zipSearch.city,
+          state: zipSearch.state,
+        })
+      : zipSearch.zip;
+
+    return (
+      <ResourceResultsSection
+        heading={resultsHeading}
+        hint={resultsHint}
+        count={resources.length}
+      >
+        <ZipFilteredResourceResults
+          inZip={zipPartition.inZip}
+          nearZip={zipPartition.nearZip}
+          statewide={zipPartition.statewide}
+          filterLabels={zipSplitFilterLabels}
+          inZipHeading={t("resources.resultsInZipHeading", { zip: zipSearch.zip })}
+          inZipHint={t("resources.resultsInZipHint", { location: zipLabel })}
+          nearZipHeading={t("resources.resultsNearZipHeading", { zip: zipSearch.zip })}
+          nearZipHint={t("resources.resultsNearZipHint", { location: zipLabel })}
+          statewideHeading={t("resources.resultsStatewideHeading")}
+          statewideHint={t("resources.resultsStatewideZipHint", {
+            state: zipSearch.state,
+            zip: zipSearch.zip,
+          })}
+          noInZipHint={
+            zipPartition.inZip.length === 0
+              ? t("resources.resultsNoLocalInZip", { zip: zipSearch.zip })
+              : undefined
+          }
+        />
       </ResourceResultsSection>
     );
   }

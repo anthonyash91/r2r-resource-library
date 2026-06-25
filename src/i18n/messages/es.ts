@@ -123,7 +123,7 @@ export const es = {
     heroSubheadline:
       "Busque recursos locales, estatales y nacionales que pueden ayudarle con vivienda, empleo, atención médica, recuperación, transporte, educación y más.",
     heroHighlight: "Reinserción exitosa",
-    heroSearchPlaceholder: "Busque vivienda, empleo, atención médica...",
+    heroSearchPlaceholder: "Busque vivienda, empleo, salud o código postal...",
     popular: "Popular:",
     vettedResources: "{count} recursos verificados",
     statesCovered: "estados cubiertos",
@@ -201,6 +201,15 @@ export const es = {
       "Estos recursos atienden a todos los condados de {state}, incluido {county}.",
     resultsNoLocalInCounty:
       "No hay recursos locales o regionales en el condado de {county}. Los recursos estatales a continuación pueden ayudar.",
+    resultsInZipHeading: "En el código postal {zip}",
+    resultsInZipHint: "Recursos en o cerca de {location}.",
+    resultsNearZipHeading: "Cerca del código postal {zip}",
+    resultsNearZipHint: "Recursos a unas 50 millas de {location}.",
+    resultsStatewideZipHint:
+      "Estos recursos atienden a todo {state}, incluido cerca del código postal {zip}.",
+    resultsNoLocalInZip:
+      "No hay recursos que coincidan directamente con el código postal {zip}. Los recursos cercanos y estatales a continuación pueden ayudar.",
+    resultsZipLocationLabel: "{city}, {state} ({zip})",
     noResults: "No se encontraron recursos",
     noResultsHint:
       "Pruebe con otra categoría o abra los filtros para cambiar su búsqueda.",
@@ -209,13 +218,13 @@ export const es = {
     recommendedPreferencesHintBefore: "Cambie su ubicación y necesidades prioritarias en su",
     recommendedPreferencesHintLink: "panel",
     recommendedPreferencesHintAfter: ".",
-    searchPlaceholder: "Pruebe vivienda, empleo, comida, ayuda legal...",
+    searchPlaceholder: "Pruebe vivienda, empleo, comida o código postal (p. ej. 40202)...",
     searchButton: "Buscar",
     searchAria: "Buscar recursos",
     filterAria: "Filtrar recursos",
     filtersUpdating: "Actualizando opciones de filtro…",
     searchKeyword: "Buscar por palabra clave",
-    searchKeywordPlaceholder: "Pruebe vivienda, empleo, comida, ayuda legal...",
+    searchKeywordPlaceholder: "Pruebe vivienda, empleo, comida o código postal (p. ej. 40202)...",
     category: "Categoría",
     allCategories: "Todas las categorías",
     state: "Estado",
@@ -389,6 +398,7 @@ export const es = {
       michigan: "Michigan",
       illinois: "Illinois",
       westVirginia: "Virginia Occidental",
+      georgia: "Georgia",
     },
     priorities: {
       housing: "Vivienda",
@@ -454,6 +464,8 @@ export const es = {
           "Siete pasos prácticos para sus primeros días en casa en Illinois. Cada paso enlaza a recursos reales de nuestro directorio.",
         westVirginia:
           "Siete pasos prácticos para sus primeros días en casa en Virginia Occidental. Cada paso enlaza a recursos reales de nuestro directorio.",
+        georgia:
+          "Siete pasos prácticos para sus primeros días en casa en Georgia. Cada paso enlaza a recursos reales de nuestro directorio.",
       },
       steps: {
         "crisis-support": {

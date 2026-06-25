@@ -8,6 +8,10 @@ import { cn, resourcesHeroPadding, checkIconClass } from "@/lib/utils";
 import { HeroSurfaceOrbs } from "@/components/layout/hero-surface-orbs";
 import { useSiteHeaderOffset } from "@/hooks/use-site-header-offset";
 import { buildResourcesPageHref } from "@/lib/resources-page";
+import {
+  formatZipSearchDisplayValue,
+  resourcesSearchParamsFromQuery,
+} from "@/lib/resources-search-params";
 import { useTranslations } from "@/i18n/locale-context";
 import { ResourceFiltersPanel } from "@/components/resources/resource-filters-panel";
 import type { ResourceFilterOptions } from "@/components/resources/use-resource-filter-options";
@@ -33,12 +37,18 @@ export function HeroSearchBar({
   const filterDraft = useResourceFilterDraftOptional();
   const { t } = useTranslations();
   const searchPlaceholder = placeholder ?? t("home.heroSearchPlaceholder");
-  const queryValue = preserveParams ? (searchParams.get("q") ?? "") : defaultValue;
+  const queryValue = preserveParams
+    ? formatZipSearchDisplayValue(
+        searchParams.get("zip") ?? undefined,
+        searchParams.get("q") ?? undefined
+      )
+    : defaultValue;
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const query = (formData.get("q") as string) ?? "";
+    const parsed = resourcesSearchParamsFromQuery(query);
 
     if (filterDraft) {
       filterDraft.apply({ q: query });
@@ -47,17 +57,16 @@ export function HeroSearchBar({
 
     if (preserveParams) {
       const params = new URLSearchParams(searchParams.toString());
-      if (query?.trim()) {
-        params.set("q", query.trim());
-      } else {
-        params.delete("q");
-      }
+      params.delete("q");
+      params.delete("zip");
+      if (parsed.zip) params.set("zip", parsed.zip);
+      if (parsed.q) params.set("q", parsed.q);
       router.push(buildResourcesPageHref(params, "results"), { scroll: false });
       return;
     }
 
-    if (query?.trim()) {
-      router.push(buildResourcesPageHref({ q: query.trim() }, "results"), { scroll: false });
+    if (Object.keys(parsed).length > 0) {
+      router.push(buildResourcesPageHref(parsed, "results"), { scroll: false });
     } else {
       router.push(buildResourcesPageHref());
     }

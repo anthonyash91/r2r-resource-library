@@ -15,7 +15,7 @@ Michigan (MDHHS): Official County Composite Directory HTML (83 counties).
 Illinois (IDHS FCRC): Official DHS Office Locator by county (102 counties).
 
 Usage:
-  python3 scripts/sync-county-benefits-offices.py [--state ohio|tennessee|kentucky|indiana|michigan|illinois|west-virginia|all]
+  python3 scripts/sync-county-benefits-offices.py [--state ohio|tennessee|kentucky|indiana|michigan|illinois|west-virginia|georgia|all]
 """
 
 from __future__ import annotations
@@ -53,6 +53,23 @@ IN_DFR_OUTPUT = DATA_DIR / "indiana-dfr-offices.json"
 MI_OUTPUT = DATA_DIR / "michigan-mdhhs-offices.json"
 IL_OUTPUT = DATA_DIR / "illinois-idhs-offices.json"
 WV_OUTPUT = DATA_DIR / "west-virginia-dohs-offices.json"
+GA_OUTPUT = DATA_DIR / "georgia-dfcs-offices.json"
+
+# Verified when DFCS locator pages omit street data or use alternate slugs.
+GA_DFCS_MANUAL_OVERRIDES: dict[str, dict[str, str]] = {
+    "Forsyth": {
+        "city": "Alpharetta",
+        "address": "6435 Shiloh Road, Suite C",
+        "phone": "770-781-6700",
+        "source": "https://dfcs.georgia.gov/locations/forsyth-county-0",
+    },
+    "Fulton": {
+        "city": "Atlanta",
+        "address": "1249 Donald Lee Hollowell Parkway NW",
+        "phone": "404-206-5300",
+        "source": "https://dfcs.georgia.gov/press-releases/2025-08-04/fulton-county-dfcs-and-dcss-offices-consolidating",
+    },
+}
 MI_DIRECTORY = (
     "https://mdhhs.michigan.gov/CompositeDirPub/CountyCompositeDirectory.aspx"
 )
@@ -516,11 +533,98 @@ def sync_west_virginia() -> list[dict]:
     return result
 
 
+def sync_georgia() -> list[dict]:
+    """Scrape DFCS county office pages for address data."""
+    import time
+    from html import unescape
+
+    official = load_counties_from_ts("src/lib/georgia/counties.ts")
+
+    def slug(county: str) -> str:
+        return county.lower().replace(" ", "-")
+
+    def parse_office(html: str, county: str, url: str) -> dict:
+        line1 = re.search(r'class="address-line1">([^<]+)', html)
+        locality = re.search(r'class="locality">([^<]+)', html)
+        phone_m = re.search(r'Primary[^0-9]*\((\d{3})\)\s*(\d{3})-(\d{4})', html)
+        street = unescape(line1.group(1).strip()) if line1 else ""
+        city = unescape(locality.group(1).strip()) if locality else ""
+        phone = (
+            f"({phone_m.group(1)}) {phone_m.group(2)}-{phone_m.group(3)}"
+            if phone_m
+            else ""
+        )
+        return {
+            "county": county,
+            "city": city,
+            "address": street,
+            "phone": phone,
+            "source": url,
+        }
+
+    by_county: dict[str, dict] = {}
+    existing: dict[str, dict] = {}
+    if GA_OUTPUT.is_file():
+        try:
+            for row in json.loads(GA_OUTPUT.read_text(encoding="utf-8")):
+                existing[row["county"]] = row
+        except (json.JSONDecodeError, KeyError):
+            pass
+
+    def location_urls(county: str) -> list[str]:
+        base = slug(county)
+        urls = [f"https://dfcs.georgia.gov/locations/{base}-county"]
+        if county == "Forsyth":
+            urls.insert(0, f"https://dfcs.georgia.gov/locations/{base}-county-0")
+        return urls
+
+    for i, county in enumerate(official):
+        parsed: dict | None = None
+        for url in location_urls(county):
+            try:
+                html = _fetch(url)
+                candidate = parse_office(html, county, url)
+                if candidate.get("address"):
+                    parsed = candidate
+                    break
+            except OSError:
+                continue
+        if parsed is None:
+            parsed = {
+                "county": county,
+                "city": "",
+                "address": "",
+                "phone": "",
+                "source": location_urls(county)[0],
+            }
+        prior = existing.get(county, {})
+        for field in ("city", "address", "phone", "source"):
+            if not parsed.get(field) and prior.get(field):
+                parsed[field] = prior[field]
+        override = GA_DFCS_MANUAL_OVERRIDES.get(county)
+        if override:
+            parsed.update(override)
+        by_county[county] = parsed
+        if (i + 1) % 40 == 0:
+            print(f"  Georgia DFCS: fetched {i + 1}/{len(official)}")
+        time.sleep(0.12)
+
+    result = [by_county[c] for c in official]
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    GA_OUTPUT.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    with_address = sum(1 for o in result if o.get("address"))
+    print(
+        f"Wrote {GA_OUTPUT.name}: {len(result)} counties "
+        f"({with_address} with address from DFCS locator)"
+    )
+    return result
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Sync county benefits office JSON data")
     parser.add_argument(
         "--state",
-        choices=("ohio", "tennessee", "kentucky", "indiana", "michigan", "illinois", "west-virginia", "all"),
+        choices=("ohio", "tennessee", "kentucky", "indiana", "michigan", "illinois", "west-virginia", "georgia", "all"),
         default="all",
         help="Which state to sync (default: all)",
     )
@@ -539,6 +643,8 @@ def main() -> None:
         sync_illinois()
     if args.state in ("west-virginia", "all"):
         sync_west_virginia()
+    if args.state in ("georgia", "all"):
+        sync_georgia()
 
 
 if __name__ == "__main__":

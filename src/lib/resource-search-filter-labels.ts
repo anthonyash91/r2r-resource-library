@@ -5,6 +5,7 @@ import type { Category } from "@/types";
 
 export interface ResourceSearchFilterParams {
   q?: string;
+  zip?: string;
   state?: string;
   county?: string;
   city?: string;
@@ -21,6 +22,8 @@ export interface BuildResourceSearchFilterLabelsOptions {
   excludeQuery?: boolean;
   /** Omit county when it already appears in a county-specific heading. */
   excludeCounty?: boolean;
+  /** Omit ZIP when it already appears in a ZIP-specific heading. */
+  excludeZip?: boolean;
 }
 
 type Translator = (key: string, params?: Record<string, string | number>) => string;
@@ -36,6 +39,11 @@ export function buildResourceSearchFilterLabels(
   const query = params.q?.trim();
   if (query && !options.excludeQuery) {
     labels.push(query);
+  }
+
+  const zip = params.zip?.trim();
+  if (zip && !options.excludeZip) {
+    labels.push(zip);
   }
 
   const categorySlug = params.category?.trim();

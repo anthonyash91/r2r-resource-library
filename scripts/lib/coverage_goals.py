@@ -19,6 +19,7 @@ STATES = [
     ("Michigan", "michigan", "src/lib/michigan/counties.ts", "michigan-resources.csv"),
     ("Illinois", "illinois", "src/lib/illinois/counties.ts", "illinois-resources.csv"),
     ("West Virginia", "west-virginia", "src/lib/west-virginia/counties.ts", "west-virginia-resources.csv"),
+    ("Georgia", "georgia", "src/lib/georgia/counties.ts", "georgia-resources.csv"),
 ]
 
 DISPLAY_TO_SLUG = {

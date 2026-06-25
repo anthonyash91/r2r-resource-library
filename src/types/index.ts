@@ -142,6 +142,7 @@ export interface HomepageContent {
 
 export interface ResourceFilters {
   query?: string;
+  zip?: string;
   state?: string;
   county?: string;
   city?: string;

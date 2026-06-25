@@ -66,7 +66,7 @@ The product is built for **clarity under stress**: large touch targets, plain la
 
 Reentry Resource Library is a **searchable program directory** backed by a curated database of reentry services. Users can:
 
-1. **Discover** resources by keyword, category, state, county, city, service type, and coverage (local, regional, statewide).
+1. **Discover** resources by keyword, ZIP code, category, state, county, city, service type, and coverage (local, regional, statewide).
 2. **Personalize** results by completing a short onboarding flow (state → county → up to three priority needs).
 3. **Save** programs to a private list and revisit them from a dashboard.
 4. **Share** resource links or email themselves a PDF of saved programs.
@@ -167,11 +167,11 @@ Site IDs are hashed at rest; reversible encryption allows admins to reveal/copy 
 | Feature | Description |
 |---------|-------------|
 | **Homepage** | Hero search, popular tags, browse-by-category pills, personalized “Picked for you” (when onboarded), How It Works, featured resources, built-for CTA, announcements banner |
-| **Resource directory** (`/resources`) | Hero search with separate collapsible location filters (collapsed by default); filters and intake signals apply when the user presses **Search** (no auto-scroll on every change), sticky search bar, “Resources based on your chosen needs” section with dashboard link to edit preferences, county/statewide split with count badges in section headers, paginated stable-column masonry grid with scroll-triggered card reveals; `?scroll=results` or `?scroll=recommended` for deep links from homepage and dashboard |
+| **Resource directory** (`/resources`) | Hero search with separate collapsible location filters (collapsed by default); filters and intake signals apply when the user presses **Search** (no auto-scroll on every change), sticky search bar, server-rendered initial results, “Resources based on your chosen needs” section with dashboard link to edit preferences, county/statewide or ZIP/nearby/statewide split with count badges in section headers, paginated stable-column masonry grid with scroll-triggered card reveals; `?scroll=results` or `?scroll=recommended` for deep links from homepage and dashboard |
 | **Homepage** (`/`) | Scroll-triggered section reveals; featured and recommended resource cards animate individually |
 | **Resource detail** (`/resources/[id]`) | Category/coverage badges, intake signal badges (criminal record, referral, walk-in), eligibility & operational notes (EN/ES), served counties, contact info, directions, save & share, related resources, library disclaimer bar at page bottom |
 | **Onboarding** (`/get-started`) | 3-step wizard: state (from registry) → county → up to 3 priority categories; skip option; edit mode via `?edit=1` |
-| **Search & filters** | Keyword, category, state, county, city, service type, coverage, recently added, intake signals (`?intake=accepts_criminal_record\|walk_in_ok` — AND logic); draft filter state until **Search** is pressed |
+| **Search & filters** | Keyword or 5-digit ZIP (optional keyword after ZIP, e.g. `40202 housing`), category, state, county, city, service type, coverage, recently added, intake signals (`?intake=accepts_criminal_record\|walk_in_ok` — AND logic); draft filter state until **Search** is pressed |
 | **Saved resources** (`/saved`) | Full saved list (sign-in required) |
 | **Dashboard** (`/dashboard`) | Welcome, location & priority summary, saved / recommended / recently viewed sections |
 | **Email PDF** | Signed-in users email a PDF of saved resources (Resend); sidebar sections (contact, counties served) spaced correctly in the layout |
@@ -308,6 +308,9 @@ npm run seed:resources:illinois
 # West Virginia → supabase/seed-west-virginia-resources.sql
 npm run seed:resources:west-virginia
 
+# Georgia → supabase/seed-georgia-resources.sql
+npm run seed:resources:georgia
+
 # All states (also regenerates US map data from deployed state registry)
 npm run seed:resources:all
 ```
@@ -324,6 +327,7 @@ npm run db:push:tennessee
 npm run db:push:michigan
 npm run db:push:illinois
 npm run db:push:west-virginia
+npm run db:push:georgia
 ```
 
 Apply CSV enrichments (also auto-tags `intake_signals` from eligibility/notes):
@@ -495,6 +499,7 @@ Resource cards use a consistent **type badge** system (category, statewide, regi
 | Michigan resources | `data/michigan-resources.csv` | `npm run seed:resources:michigan` |
 | Illinois resources | `data/illinois-resources.csv` | `npm run seed:resources:illinois` |
 | West Virginia resources | `data/west-virginia-resources.csv` | `npm run seed:resources:west-virginia` |
+| Georgia resources | `data/georgia-resources.csv` | `npm run seed:resources:georgia` |
 | US coverage map | `src/lib/us-map/county-centroids.generated.ts` | `npm run generate:us-map` (also runs on `npm run build`) |
 | Research logs | `data/{state}-research-log.csv` | Generated with each state's build script |
 | Enrichments | `data/enrichments/batch-*.json` | `npm run seed:enrich` |

@@ -5,6 +5,7 @@ import { MICHIGAN_COUNTIES } from "@/lib/michigan/counties";
 import { TENNESSEE_COUNTIES } from "@/lib/tennessee/counties";
 import { ILLINOIS_COUNTIES } from "@/lib/illinois/counties";
 import { WEST_VIRGINIA_COUNTIES } from "@/lib/west-virginia/counties";
+import { GEORGIA_COUNTIES } from "@/lib/georgia/counties";
 
 export interface OnboardingStateConfig {
   /** Full name stored in the database and user preferences. */
@@ -29,6 +30,7 @@ export const ONBOARDING_STATE_REGISTRY = [
   { name: "Michigan", slug: "michigan", counties: MICHIGAN_COUNTIES },
   { name: "Illinois", slug: "illinois", counties: ILLINOIS_COUNTIES },
   { name: "West Virginia", slug: "west-virginia", counties: WEST_VIRGINIA_COUNTIES },
+  { name: "Georgia", slug: "georgia", counties: GEORGIA_COUNTIES },
 ] as const satisfies readonly OnboardingStateConfig[];
 
 export type OnboardingState = (typeof ONBOARDING_STATE_REGISTRY)[number]["name"];

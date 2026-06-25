@@ -14,6 +14,7 @@ import {
 import { useSearchParams } from "next/navigation";
 import { parseIntakeFilterParam, serializeIntakeFilterParam, type IntakeSignal } from "@/lib/intake-signals";
 import { hasActiveResourceFilters } from "@/lib/resource-filter-params";
+import { searchDraftFieldsFromQuery } from "@/lib/resources-search-params";
 import {
   buildResourcesPageClearedHref,
   buildResourcesPageHref,
@@ -29,6 +30,7 @@ import {
 
 export interface ResourceFilterDraft {
   q: string;
+  zip: string;
   category: string;
   state: string;
   county: string;
@@ -40,6 +42,7 @@ export interface ResourceFilterDraft {
 
 const EMPTY_DRAFT: ResourceFilterDraft = {
   q: "",
+  zip: "",
   category: "",
   state: "",
   county: "",
@@ -49,9 +52,20 @@ const EMPTY_DRAFT: ResourceFilterDraft = {
   intake: [],
 };
 
+function draftFromPageParams(params: ResourcesPageSearchParams): ResourceFilterDraft {
+  const searchParams = new URLSearchParams();
+  for (const [key, value] of Object.entries(params)) {
+    if (typeof value === "string" && value.trim()) {
+      searchParams.set(key, value.trim());
+    }
+  }
+  return draftFromSearchParams(searchParams);
+}
+
 function draftFromSearchParams(searchParams: URLSearchParams): ResourceFilterDraft {
   return {
     q: searchParams.get("q") ?? "",
+    zip: searchParams.get("zip") ?? "",
     category: searchParams.get("category") ?? "",
     state: searchParams.get("state") ?? "",
     county: searchParams.get("county") ?? "",
@@ -64,6 +78,7 @@ function draftFromSearchParams(searchParams: URLSearchParams): ResourceFilterDra
 
 function draftToParams(draft: ResourceFilterDraft): URLSearchParams {
   const params = new URLSearchParams();
+  if (draft.zip.trim()) params.set("zip", draft.zip.trim());
   if (draft.q.trim()) params.set("q", draft.q.trim());
   if (draft.category) params.set("category", draft.category);
   if (draft.state) params.set("state", draft.state);
@@ -79,6 +94,7 @@ function draftToParams(draft: ResourceFilterDraft): URLSearchParams {
 
 function draftToPageParams(draft: ResourceFilterDraft): ResourcesPageSearchParams {
   const params: ResourcesPageSearchParams = {};
+  if (draft.zip.trim()) params.zip = draft.zip.trim();
   if (draft.q.trim()) params.q = draft.q.trim();
   if (draft.category) params.category = draft.category;
   if (draft.state) params.state = draft.state;
@@ -120,14 +136,26 @@ interface ResourceFilterDraftContextValue {
 
 const ResourceFilterDraftContext = createContext<ResourceFilterDraftContextValue | null>(null);
 
-export function ResourceFilterDraftProvider({ children }: { children: ReactNode }) {
+export function ResourceFilterDraftProvider({
+  children,
+  initialAppliedParams,
+}: {
+  children: ReactNode;
+  initialAppliedParams?: ResourcesPageSearchParams;
+}) {
   const searchParams = useSearchParams();
+  const serverApplied = useMemo(
+    () => (initialAppliedParams ? draftFromPageParams(initialAppliedParams) : null),
+    [initialAppliedParams]
+  );
   const routerApplied = useMemo(() => draftFromSearchParams(searchParams), [searchParams]);
-  const [draft, setDraft] = useState(routerApplied);
+  const [draft, setDraft] = useState(() => serverApplied ?? routerApplied);
   const [filterUrlRevision, setFilterUrlRevision] = useState(0);
   const [urlCleared, setUrlCleared] = useState(false);
-  const [urlAppliedDraft, setUrlAppliedDraft] = useState<ResourceFilterDraft | null>(null);
-  const [isFilterUrlReady, setIsFilterUrlReady] = useState(false);
+  const [urlAppliedDraft, setUrlAppliedDraft] = useState<ResourceFilterDraft | null>(
+    () => serverApplied
+  );
+  const [isFilterUrlReady, setIsFilterUrlReady] = useState(Boolean(serverApplied));
   const preferenceDefaultsAppliedRef = useRef(false);
   const skipNextRouterSyncRef = useRef(false);
 
@@ -145,6 +173,11 @@ export function ResourceFilterDraftProvider({ children }: { children: ReactNode 
   useLayoutEffect(() => {
     if (preferenceDefaultsAppliedRef.current) return;
     preferenceDefaultsAppliedRef.current = true;
+
+    if (serverApplied) {
+      setIsFilterUrlReady(true);
+      return;
+    }
 
     const params = Object.fromEntries(searchParams.entries()) as Partial<
       Record<string, string | undefined>
@@ -167,7 +200,7 @@ export function ResourceFilterDraftProvider({ children }: { children: ReactNode 
     }
 
     setIsFilterUrlReady(true);
-  }, [searchParams]);
+  }, [searchParams, serverApplied]);
 
   const routerAppliedKey = useMemo(() => draftParamsKey(routerApplied), [routerApplied]);
   const isInitialRouterSyncRef = useRef(true);
@@ -239,13 +272,19 @@ export function ResourceFilterDraftProvider({ children }: { children: ReactNode 
   const apply = useCallback(
     (options?: { q?: string }) => {
       setUrlCleared(false);
-    const next = options?.q !== undefined ? { ...draft, q: options.q } : draft;
-    skipNextRouterSyncRef.current = true;
-    setDraft(next);
-    setUrlAppliedDraft(next);
-    setFilterUrlRevision((revision) => revision + 1);
-    const href = buildResourcesPageHref(draftToParams(next), "results");
-    window.history.pushState(window.history.state, "", href);
+      const next =
+        options?.q !== undefined
+          ? {
+              ...draft,
+              ...searchDraftFieldsFromQuery(options.q),
+            }
+          : draft;
+      skipNextRouterSyncRef.current = true;
+      setDraft(next);
+      setUrlAppliedDraft(next);
+      setFilterUrlRevision((revision) => revision + 1);
+      const href = buildResourcesPageHref(draftToParams(next), "results");
+      window.history.pushState(window.history.state, "", href);
     },
     [draft]
   );
@@ -264,6 +303,7 @@ export function ResourceFilterDraftProvider({ children }: { children: ReactNode 
   const hasDraftFilters = useMemo(() => {
     return Boolean(
       draft.category ||
+        draft.zip ||
         draft.state ||
         draft.county ||
         draft.city ||
@@ -283,6 +323,7 @@ export function ResourceFilterDraftProvider({ children }: { children: ReactNode 
         applied.service ||
         applied.filter ||
         applied.intake.length > 0 ||
+        applied.zip.trim() ||
         applied.q.trim()
     );
   }, [applied, urlCleared]);

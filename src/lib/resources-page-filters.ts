@@ -4,6 +4,7 @@ import { RESOURCES_BROWSE_PARAM, RESOURCES_PAGE_SCROLL_PARAM } from "@/lib/resou
 
 export interface ResourcesPageSearchParams {
   q?: string;
+  zip?: string;
   state?: string;
   county?: string;
   city?: string;
@@ -31,6 +32,7 @@ export function resourcesPageParamsFromSearchParams(
 export function resourcesPageParamsKey(params: ResourcesPageSearchParams): string {
   return JSON.stringify({
     q: params.q?.trim() ?? "",
+    zip: params.zip?.trim() ?? "",
     state: params.state?.trim() ?? "",
     county: params.county?.trim() ?? "",
     city: params.city?.trim() ?? "",
@@ -49,6 +51,7 @@ export function buildResourceFiltersFromPageParams(
 ) {
   return {
     query: params.q,
+    zip: params.zip,
     state: params.state,
     county: params.county,
     city: params.city,

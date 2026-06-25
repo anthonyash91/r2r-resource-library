@@ -6,6 +6,13 @@ import {
   ResourcesPageView,
 } from "@/components/resources/resources-page-view";
 import { getServerTranslator } from "@/i18n/server";
+import {
+  getResourcesBootstrap,
+  resolveEffectiveResourcesPageParams,
+  searchParamsFromPageProps,
+} from "@/lib/resources-bootstrap";
+import { getServerUserPreferences } from "@/lib/user-preferences/server";
+import { resourcesPageParamsFromSearchParams } from "@/lib/resources-page-filters";
 
 export async function generateMetadata(): Promise<Metadata> {
   const { t } = await getServerTranslator();
@@ -15,14 +22,26 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function ResourcesPage() {
+interface ResourcesPageProps {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}
+
+export default async function ResourcesPage({ searchParams }: ResourcesPageProps) {
   const { t } = await getServerTranslator();
   const loadingLabel = t("resources.loadingAria");
+  const rawParams = await searchParams;
+  const urlParams = resourcesPageParamsFromSearchParams(searchParamsFromPageProps(rawParams));
+  const preferences = await getServerUserPreferences();
+  const effectiveParams = resolveEffectiveResourcesPageParams(urlParams, preferences);
+  const initialBootstrap = await getResourcesBootstrap(effectiveParams);
 
   return (
     <Suspense fallback={<ResourcesPageInstantShell loadingLabel={loadingLabel} />}>
-      <ResourcesFilterRoot>
-        <ResourcesPageView loadingLabel={loadingLabel} />
+      <ResourcesFilterRoot initialAppliedParams={effectiveParams}>
+        <ResourcesPageView
+          loadingLabel={loadingLabel}
+          initialBootstrap={initialBootstrap}
+        />
       </ResourcesFilterRoot>
     </Suspense>
   );

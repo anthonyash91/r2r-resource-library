@@ -11,7 +11,14 @@ import { KENTUCKY_RESOURCES } from "./kentucky/resources";
 import {
   applySearchQueryFilter,
   buildLocationCatalog,
+  resourceMatchesTextQuery,
 } from "./resource-search";
+import { parseZipFromSearchQuery } from "./resources-search-params";
+import { lookupZip } from "./zip-lookup";
+import {
+  flattenZipPartition,
+  partitionResourcesByZip,
+} from "./resource-zip-search";
 import {
   resourceServesCounty,
   sortResourcesByCountyRelevance,
@@ -50,6 +57,14 @@ export const MOCK_ADMIN_USER: Profile = {
 export function filterMockResources(filters: ResourceFilters): Resource[] {
   let results = MOCK_RESOURCES.filter((r) => r.status === (filters.status ?? "active"));
   const catalog = buildLocationCatalog(MOCK_RESOURCES);
+  const zipSearch =
+    (filters.zip?.trim() ? lookupZip(filters.zip) : null) ??
+    (filters.query?.trim()
+      ? (() => {
+          const parsed = parseZipFromSearchQuery(filters.query);
+          return parsed ? lookupZip(parsed.zip) : null;
+        })()
+      : null);
 
   if (filters.state) results = results.filter((r) => r.state === filters.state);
   if (filters.county) {
@@ -90,8 +105,21 @@ export function filterMockResources(filters: ResourceFilters): Resource[] {
   if (filters.featured) {
     results = results.filter((r) => r.is_featured);
   }
-  if (filters.query) {
+  if (filters.query && !zipSearch) {
     results = applySearchQueryFilter(results, filters.query, catalog);
+  }
+
+  if (zipSearch) {
+    const zipKeyword = filters.zip?.trim()
+      ? filters.query?.trim() || undefined
+      : parseZipFromSearchQuery(filters.query ?? "")?.textQuery?.trim();
+    let zipPool = results.filter(
+      (resource) => resource.state === zipSearch.state || isStatewideResource(resource)
+    );
+    if (zipKeyword) {
+      zipPool = zipPool.filter((resource) => resourceMatchesTextQuery(resource, zipKeyword));
+    }
+    return flattenZipPartition(partitionResourcesByZip(zipPool, zipSearch));
   }
 
   return results;

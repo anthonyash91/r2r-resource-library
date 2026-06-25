@@ -22,6 +22,8 @@ IL_FCRC_LOCATOR = "https://www.dhs.state.il.us/page.aspx?OfficeType=5&module=12"
 IL_ABE = "https://abe.illinois.gov"
 WV_DOHS_LOCATOR = "https://dhhr.wv.gov/Pages/Field-Offices.aspx"
 WV_PATH = "https://wvpath.wv.gov"
+GA_DFCS_LOCATOR = "https://dfcs.georgia.gov/locations"
+GA_COMPASS = "https://compass.ga.gov"
 
 
 def normalize_category(value: str) -> str:
@@ -285,6 +287,37 @@ def register_county_benefits_west_virginia(add: Callable[..., None], existing_fa
             )
             | {
                 "_source": office.get("source", WV_DOHS_LOCATOR),
+                "_confidence": "high" if office.get("address") else "medium",
+            }
+        )
+        existing_fa.add(county)
+        added += 1
+    return added
+
+
+def register_county_benefits_georgia(add: Callable[..., None], existing_fa: set[str]) -> int:
+    from phase3b_gapfill import _dfcs_desc_en, _dfcs_desc_es, _dfcs_ga
+
+    added = 0
+    for office in _load_offices("georgia-dfcs-offices.json"):
+        county = office["county"]
+        if county in existing_fa:
+            continue
+        city = office.get("city") or county
+        region = f"{city} / {county} County"
+        source = office.get("source", GA_DFCS_LOCATOR)
+        add(
+            **_dfcs_ga(
+                county,
+                city,
+                office.get("address", ""),
+                office.get("phone", "1-877-423-4746"),
+                region,
+                _dfcs_desc_en(county, city),
+                _dfcs_desc_es(county, city),
+                source,
+            )
+            | {
                 "_confidence": "high" if office.get("address") else "medium",
             }
         )

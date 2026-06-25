@@ -1,5 +1,6 @@
 export const RESOURCE_FILTER_PARAM_KEYS = [
   "q",
+  "zip",
   "category",
   "county",
   "state",

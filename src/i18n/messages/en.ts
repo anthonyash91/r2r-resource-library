@@ -121,7 +121,7 @@ export const en = {
     heroSubheadline:
       "Search local, state, and national resources that can help with housing, employment, healthcare, recovery, transportation, education, and more.",
     heroHighlight: "Successful Reentry",
-    heroSearchPlaceholder: "Search for housing, jobs, healthcare...",
+    heroSearchPlaceholder: "Search housing, jobs, healthcare, or ZIP code...",
     popular: "Popular:",
     vettedResources: "{count} vetted resources",
     statesCovered: "states covered",
@@ -198,6 +198,15 @@ export const en = {
       "These resources serve all {state} counties, including {county}.",
     resultsNoLocalInCounty:
       "No local or regional resources matched in {county} County. Statewide resources below may still help.",
+    resultsInZipHeading: "In ZIP {zip}",
+    resultsInZipHint: "Resources in or near {location}.",
+    resultsNearZipHeading: "Near ZIP {zip}",
+    resultsNearZipHint: "Resources within about 50 miles of {location}.",
+    resultsStatewideZipHint:
+      "These resources serve all of {state}, including near ZIP {zip}.",
+    resultsNoLocalInZip:
+      "No resources matched directly in ZIP {zip}. Nearby and statewide resources below may still help.",
+    resultsZipLocationLabel: "{city}, {state} ({zip})",
     noResults: "No resources found",
     noResultsHint:
       "Try a different category or open the filters to change your search.",
@@ -206,13 +215,13 @@ export const en = {
     recommendedPreferencesHintBefore: "Change your location and priority needs on your",
     recommendedPreferencesHintLink: "dashboard",
     recommendedPreferencesHintAfter: ".",
-    searchPlaceholder: "Try housing, jobs, food, legal help...",
+    searchPlaceholder: "Try housing, jobs, food, or ZIP code (e.g. 40202)...",
     searchButton: "Search",
     searchAria: "Search resources",
     filterAria: "Filter resources",
     filtersUpdating: "Updating filter options…",
     searchKeyword: "Search by keyword",
-    searchKeywordPlaceholder: "Try housing, jobs, food, legal help...",
+    searchKeywordPlaceholder: "Try housing, jobs, food, or ZIP code (e.g. 40202)...",
     category: "Category",
     allCategories: "All categories",
     state: "State",
@@ -384,6 +393,7 @@ export const en = {
       michigan: "Michigan",
       illinois: "Illinois",
       westVirginia: "West Virginia",
+      georgia: "Georgia",
     },
     priorities: {
       housing: "Housing",
@@ -449,6 +459,8 @@ export const en = {
           "Seven practical steps for your first days home in Illinois. Each step links to real resources from our directory.",
         westVirginia:
           "Seven practical steps for your first days home in West Virginia. Each step links to real resources from our directory.",
+        georgia:
+          "Seven practical steps for your first days home in Georgia. Each step links to real resources from our directory.",
       },
       steps: {
         "crisis-support": {

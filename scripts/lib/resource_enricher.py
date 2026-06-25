@@ -106,6 +106,20 @@ STATE_PRESETS: dict[str, dict[str, str]] = {
         "residents_es": "residentes de Virginia Occidental",
         "tag": "west-virginia",
     },
+    "Georgia": {
+        "name": "Georgia",
+        "demonym": "Georgians",
+        "demonym_es": "georgianos",
+        "throughout": "throughout Georgia",
+        "throughout_es": "en todo Georgia",
+        "counties_n": "Georgia counties",
+        "counties_n_es": "condados de Georgia",
+        "adults": "Georgia adults",
+        "adults_es": "adultos en Georgia",
+        "residents": "Georgia residents",
+        "residents_es": "residentes de Georgia",
+        "tag": "georgia",
+    },
 }
 
 _STATE = STATE_PRESETS["Ohio"]
@@ -124,6 +138,8 @@ def infer_state_from_csv_path(path: str) -> str:
         return "Illinois"
     if "west-virginia" in stem or "west_virginia" in stem:
         return "West Virginia"
+    if "georgia" in stem:
+        return "Georgia"
     if "tennessee" in stem:
         return "Tennessee"
     if "indiana" in stem:

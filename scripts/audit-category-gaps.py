@@ -24,12 +24,10 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 DOCS_PATH = ROOT / "docs" / "content-roadmap-category-gaps.md"
 
-STATES = [
-    ("Kentucky", "kentucky", "src/lib/kentucky/counties.ts", "kentucky-resources.csv"),
-    ("Ohio", "ohio", "src/lib/ohio/counties.ts", "ohio-resources.csv"),
-    ("Indiana", "indiana", "src/lib/indiana/counties.ts", "indiana-resources.csv"),
-    ("Tennessee", "tennessee", "src/lib/tennessee/counties.ts", "tennessee-resources.csv"),
-]
+import sys
+
+sys.path.insert(0, str(ROOT / "scripts"))
+from lib.coverage_goals import STATES  # noqa: E402
 
 DISPLAY_TO_SLUG = {
     "Housing": "housing",
