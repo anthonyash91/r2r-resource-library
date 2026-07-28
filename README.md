@@ -33,6 +33,7 @@ To commit without updating the README (emergency only): `git commit --no-verify`
 
 - [Who this is for](#who-this-is-for)
 - [What it does](#what-it-does)
+  - [Deployed states (17)](#deployed-states-17)
 - [How it works](#how-it-works)
 - [Feature guide](#feature-guide)
 - [Tech stack](#tech-stack)
@@ -73,6 +74,32 @@ Reentry Resource Library is a **searchable program directory** backed by a curat
 5. **Switch language** between English and Spanish at any time.
 
 Administrators maintain all public content — resources, homepage copy, legal pages, FAQs, and facility registry — without redeploying code.
+
+### Deployed states (17)
+
+Onboarding and resource coverage are driven by `src/lib/states/registry.ts`. Each state has a county list under `src/lib/{slug}/counties.ts`, curated CSVs under `data/`, and seed/push npm scripts.
+
+| State | Counties | Resource rows (CSV) | Seed | Push |
+|-------|----------|---------------------|------|------|
+| Alabama | 67 | 264 | `seed:resources:alabama` | `db:push:alabama` |
+| Arizona | 15 | 178 | `seed:resources:arizona` | `db:push:arizona` |
+| Florida | 67 | 326 | `seed:resources:florida` | `db:push:florida` |
+| Georgia | 159 | 361 | `seed:resources:georgia` | `db:push:georgia` |
+| Illinois | 102 | 295 | `seed:resources:illinois` | `db:push:illinois` |
+| Indiana | 92 | 314 | `seed:resources:indiana` | `db:push:indiana` |
+| Kentucky | 120 | 288 | `seed:resources:kentucky` | `db:push:kentucky` |
+| Michigan | 83 | 309 | `seed:resources:michigan` | `db:push:michigan` |
+| Mississippi | 82 | 342 | `seed:resources:mississippi` | `db:push:mississippi` |
+| North Carolina | 100 | 340 | `seed:resources:north-carolina` | `db:push:north-carolina` |
+| Ohio | 88 | 303 | `seed:resources:ohio` | `db:push:ohio` |
+| South Carolina | 46 | 230 | `seed:resources:south-carolina` | `db:push:south-carolina` |
+| Tennessee | 95 | 298 | `seed:resources:tennessee` | `db:push:tennessee` |
+| Texas | 254 | 886 | `seed:resources:texas` | `db:push:texas` |
+| Virginia | 133 | 299 | `seed:resources:virginia` | `db:push:virginia` |
+| West Virginia | 55 | 252 | `seed:resources:west-virginia` | `db:push:west-virginia` |
+| Wisconsin | 72 | 340 | `seed:resources:wisconsin` | `db:push:wisconsin` |
+
+Row counts come from `data/{slug}-resources.csv` and change when you rebuild a state’s pipeline. Research prompts live in `docs/prompts/{slug}-resource-research.md`.
 
 ---
 
@@ -286,41 +313,34 @@ supabase/migrations/014_add_intake_signals.sql
 
 ### Seed resources
 
+Each state script builds/enriches the CSV (when applicable), writes `supabase/seed-{slug}-resources.sql`, and uses a dedicated UUID prefix. Per-state commands:
+
 ```bash
-# Kentucky → supabase/seed-kentucky-resources.sql
 npm run seed:resources:kentucky
-
-# Ohio → supabase/seed-ohio-resources.sql
 npm run seed:resources:ohio
-
-# Indiana → supabase/seed-indiana-resources.sql
 npm run seed:resources:indiana
-
-# Tennessee → supabase/seed-tennessee-resources.sql
 npm run seed:resources:tennessee
-
-# Michigan → supabase/seed-michigan-resources.sql
 npm run seed:resources:michigan
-
-# Illinois → supabase/seed-illinois-resources.sql
 npm run seed:resources:illinois
-
-# West Virginia → supabase/seed-west-virginia-resources.sql
 npm run seed:resources:west-virginia
-
-# Georgia → supabase/seed-georgia-resources.sql
 npm run seed:resources:georgia
-
-# North Carolina → supabase/seed-north-carolina-resources.sql
 npm run seed:resources:north-carolina
+npm run seed:resources:virginia
+npm run seed:resources:south-carolina
+npm run seed:resources:alabama
+npm run seed:resources:arizona
+npm run seed:resources:florida
+npm run seed:resources:mississippi
+npm run seed:resources:wisconsin
+npm run seed:resources:texas
 
-# All states (also regenerates US map data from deployed state registry)
+# All 17 states (also regenerates US map data from the state registry)
 npm run seed:resources:all
 ```
 
 `npm run build` runs `generate:us-map` automatically so the homepage coverage map reflects states in `src/lib/states/registry.ts`.
 
-Run the generated SQL files in Supabase, or use:
+Run the generated SQL files in Supabase, or upsert from CSV with a service role key:
 
 ```bash
 npm run db:push:kentucky   # requires SUPABASE_SERVICE_ROLE_KEY
@@ -332,16 +352,37 @@ npm run db:push:illinois
 npm run db:push:west-virginia
 npm run db:push:georgia
 npm run db:push:north-carolina
+npm run db:push:virginia
+npm run db:push:south-carolina
+npm run db:push:alabama
+npm run db:push:arizona
+npm run db:push:florida
+npm run db:push:mississippi
+npm run db:push:wisconsin
+npm run db:push:texas
 ```
 
 Apply CSV enrichments (also auto-tags `intake_signals` from eligibility/notes):
 
 ```bash
-npm run seed:enrich          # merge batch JSON → CSV + refresh intake signals
-npm run enrich:kentucky      # Kentucky full enrich pass
-npm run enrich:ohio          # Ohio full enrich pass
-npm run enrich:indiana       # Indiana full enrich pass
-npm run enrich:tennessee     # Tennessee full enrich pass
+npm run seed:enrich            # merge batch JSON → CSV + refresh intake signals
+npm run enrich:kentucky
+npm run enrich:ohio
+npm run enrich:indiana
+npm run enrich:tennessee
+npm run enrich:michigan
+npm run enrich:illinois
+npm run enrich:west-virginia
+npm run enrich:georgia
+npm run enrich:north-carolina
+npm run enrich:virginia
+npm run enrich:south-carolina
+npm run enrich:alabama
+npm run enrich:arizona
+npm run enrich:florida
+npm run enrich:mississippi
+npm run enrich:wisconsin
+npm run enrich:texas
 ```
 
 `python3 scripts/enrich-resources.py` expands descriptions and **sets `intake_signals`** on every row (heuristic). Optional LLM refinement afterward:
@@ -365,7 +406,7 @@ npx tsx scripts/tag-intake-signals.ts data/kentucky-resources.csv --llm
 # or: --llm-provider=openai with OPENAI_API_KEY
 ```
 
-Default heuristic tagging (`npm run tag:intake`) is free and already applied to both state CSVs.
+Default heuristic tagging (`npm run tag:intake`) is free and runs across all deployed state CSVs.
 
 Push tags to Supabase after tagging or LLM pass:
 
@@ -407,6 +448,8 @@ src/
 ├── i18n/                     # EN/ES messages, locale context, server helpers
 ├── lib/
 │   ├── data.ts               # Data access layer
+│   ├── states/registry.ts    # Deployed onboarding states (17)
+│   ├── {state}/counties.ts   # Canonical county lists per state
 │   ├── user-preferences/     # Cookie, profile sync, recommendations
 │   ├── facility/             # Crypto, session, facility data
 │   ├── resource-coverage.ts  # County / statewide logic
@@ -414,21 +457,16 @@ src/
 │   └── supabase/             # Browser, server, admin clients
 ├── types/                    # Shared TypeScript types
 data/
-├── kentucky-resources.csv    # Kentucky source data + research log
-├── kentucky-research-log.csv
-├── ohio-resources.csv
-├── ohio-research-log.csv
-├── indiana-resources.csv
-├── indiana-research-log.csv
-├── tennessee-resources.csv
-├── tennessee-research-log.csv
-├── enrichments/              # Batch enrichment JSON
-scripts/                      # Seed generators, migrations, enrich apply
+├── {state}-resources.csv     # Curated resources (one CSV per deployed state)
+├── {state}-research-log.csv  # Source / confidence log per state
+├── enrichments/              # Per-state enrichment JSON audits
+scripts/                      # Build, sync, enrich, seed, and push pipelines
 supabase/
 ├── migrations/               # Schema versions
-└── seed*.sql                 # Generated seed files
+└── seed-*-resources.sql      # Generated seed files per state
 docs/
-└── ARCHITECTURE.md           # Deeper technical architecture notes
+├── ARCHITECTURE.md           # Deeper technical architecture notes
+└── prompts/                  # Per-state resource research overlays
 ```
 
 ---
@@ -496,18 +534,14 @@ Resource cards use a consistent **type badge** system (category, statewide, regi
 
 | Asset | Location | Tooling |
 |-------|----------|---------|
-| Kentucky resources | `data/kentucky-resources.csv` | `npm run seed:resources:kentucky` |
-| Ohio resources | `data/ohio-resources.csv` | `npm run seed:resources:ohio` |
-| Indiana resources | `data/indiana-resources.csv` | `npm run seed:resources:indiana` |
-| Tennessee resources | `data/tennessee-resources.csv` | `npm run seed:resources:tennessee` |
-| Michigan resources | `data/michigan-resources.csv` | `npm run seed:resources:michigan` |
-| Illinois resources | `data/illinois-resources.csv` | `npm run seed:resources:illinois` |
-| West Virginia resources | `data/west-virginia-resources.csv` | `npm run seed:resources:west-virginia` |
-| Georgia resources | `data/georgia-resources.csv` | `npm run seed:resources:georgia` |
-| North Carolina resources | `data/north-carolina-resources.csv` | `npm run seed:resources:north-carolina` |
-| US coverage map | `src/lib/us-map/county-centroids.generated.ts` | `npm run generate:us-map` (also runs on `npm run build`) |
-| Research logs | `data/{state}-research-log.csv` | Generated with each state's build script |
-| Enrichments | `data/enrichments/batch-*.json` | `npm run seed:enrich` |
+| State registry | `src/lib/states/registry.ts` | Onboarding + map coverage source of truth |
+| County lists | `src/lib/{slug}/counties.ts` | Filters / validation |
+| Resources (17 states) | `data/{slug}-resources.csv` | `npm run seed:resources:{slug}` |
+| Research logs | `data/{slug}-research-log.csv` | Generated with each state's build script |
+| Research prompts | `docs/prompts/{slug}-resource-research.md` | Overlay on `multi-state-resource-research.md` |
+| County benefits sync | `scripts/data/*-offices.json` | `python3 scripts/sync-county-benefits-offices.py --state {slug}` |
+| Enrichments | `data/enrichments/{slug}-enriched.json` | `npm run enrich:{slug}` |
+| US coverage map | `src/lib/us-map/county-centroids.generated.ts` | `npm run generate:us-map` (also on `npm run build`) |
 | Field semantics | `.cursor/rules/i18n.mdc` | `eligibility` vs `notes` vs `served_counties` |
 
 **Coverage model**
@@ -515,6 +549,13 @@ Resource cards use a consistent **type badge** system (category, statewide, regi
 - `single` — one county office / location
 - `multi` — listed `served_counties` (pipe-separated in CSV)
 - `statewide` — serves entire state
+
+**Adding a state**
+
+1. Add `src/lib/{slug}/counties.ts` and register it in `src/lib/states/registry.ts`.
+2. Add EN/ES keys under `onboarding.states` and `pathways.firstWeek.introByState`.
+3. Follow `docs/prompts/multi-state-resource-research.md` plus a state overlay under `docs/prompts/`.
+4. Wire `seed:resources:{slug}`, `enrich:{slug}`, and `db:push:{slug}` in `package.json`, then include the slug in `seed:resources:all`.
 
 ---
 
