@@ -284,7 +284,7 @@ Commit and push `render.yaml`, the `start` script that binds to `$PORT`, and `.n
 
 1. Open [Render Dashboard](https://dashboard.render.com) → **New** → **Blueprint**.
 2. Connect `anthonyash91/r2r-resource-library` (or your fork) and select branch `main`.
-3. Apply the Blueprint. It creates `r2r-resource-library` with `npm install && npm run build` / `npm start`.
+3. Apply the Blueprint. It creates `r2r-resource-library` with `npm install --include=dev && npm run build` / `npm start`.
 
 **Option B — Manual Web Service**
 
@@ -310,7 +310,7 @@ In the service **Environment** tab (or Blueprint sync prompts), set:
 | `RESEND_API_KEY` / `EMAIL_FROM` | Email PDF | Optional |
 | `DEEPL_API_KEY` | Admin auto-translate | Optional |
 
-`NODE_VERSION` is set to `22.22.0` via Blueprint / `.node-version`. Render injects `PORT`; `npm start` binds to it.
+`NODE_VERSION` is set to `22.22.0` via Blueprint / `.node-version`. Render injects `PORT`; `npm start` runs `scripts/start-production.js`, which binds Next.js to `0.0.0.0` on that port.
 
 ### 4. Supabase auth allowlist
 
