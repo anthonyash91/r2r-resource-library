@@ -284,7 +284,7 @@ Commit and push `render.yaml`, the `start` script that binds to `$PORT`, and `.n
 
 1. Open [Render Dashboard](https://dashboard.render.com) → **New** → **Blueprint**.
 2. Connect `anthonyash91/r2r-resource-library` (or your fork) and select branch `main`.
-3. Apply the Blueprint. It creates `r2r-resource-library` with `npm ci && npm run build` / `npm start`.
+3. Apply the Blueprint. It creates `r2r-resource-library` with `npm install && npm run build` / `npm start`.
 
 **Option B — Manual Web Service**
 
@@ -292,7 +292,7 @@ Commit and push `render.yaml`, the `start` script that binds to `$PORT`, and `.n
 |---------|--------|
 | Runtime | Node |
 | Branch | `main` |
-| Build command | `npm ci && npm run build` |
+| Build command | `npm install && npm run build` |
 | Start command | `npm start` |
 | Instance | Free (or Starter if the free tier spins down too often) |
 
