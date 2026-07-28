@@ -38,6 +38,7 @@ To commit without updating the README (emergency only): `git commit --no-verify`
 - [Feature guide](#feature-guide)
 - [Tech stack](#tech-stack)
 - [Quick start](#quick-start)
+- [Deploy to Render](#deploy-to-render)
 - [Environment variables](#environment-variables)
 - [Database setup](#database-setup)
 - [Project structure](#project-structure)
@@ -260,12 +261,82 @@ npm run dev
 
 Open **[http://localhost:8080](http://localhost:8080)**.
 
-Production:
+Production locally:
 
 ```bash
 npm run build
 npm start
 ```
+
+---
+
+## Deploy to Render
+
+This app is a **Node Web Service** (SSR + API routes), not a static site. Blueprint: [`render.yaml`](render.yaml).
+
+### 1. Push deploy config
+
+Commit and push `render.yaml`, the `start` script that binds to `$PORT`, and `.node-version` to `main` (Render builds from GitHub).
+
+### 2. Create the service
+
+**Option A — Blueprint**
+
+1. Open [Render Dashboard](https://dashboard.render.com) → **New** → **Blueprint**.
+2. Connect `anthonyash91/r2r-resource-library` (or your fork) and select branch `main`.
+3. Apply the Blueprint. It creates `r2r-resource-library` with `npm ci && npm run build` / `npm start`.
+
+**Option B — Manual Web Service**
+
+| Setting | Value |
+|---------|--------|
+| Runtime | Node |
+| Branch | `main` |
+| Build command | `npm ci && npm run build` |
+| Start command | `npm start` |
+| Instance | Free (or Starter if the free tier spins down too often) |
+
+### 3. Set environment variables
+
+In the service **Environment** tab (or Blueprint sync prompts), set:
+
+| Variable | Required | Notes |
+|----------|----------|--------|
+| `NEXT_PUBLIC_SUPABASE_URL` | Yes | Same as local `.env.local` |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Yes | Supabase anon key |
+| `NEXT_PUBLIC_APP_URL` | Yes | Your Render URL, e.g. `https://r2r-resource-library.onrender.com` (no trailing slash) |
+| `SUPABASE_SERVICE_ROLE_KEY` | Facility / admin scripts | Keep secret; never expose to the browser |
+| `FACILITY_CRYPTO_SECRET` | Production facilities | Long random string |
+| `RESEND_API_KEY` / `EMAIL_FROM` | Email PDF | Optional |
+| `DEEPL_API_KEY` | Admin auto-translate | Optional |
+
+`NODE_VERSION` is set to `22.22.0` via Blueprint / `.node-version`. Render injects `PORT`; `npm start` binds to it.
+
+### 4. Supabase auth allowlist
+
+In Supabase → **Authentication** → **URL configuration**:
+
+- **Site URL:** your Render URL
+- **Redirect URLs:** add `https://YOUR-SERVICE.onrender.com/**` (and keep localhost for local dev)
+
+### 5. Data on production
+
+Render only runs the Next.js app. Resource rows live in **Supabase**. After deploy, seed/push from your machine (with production keys) if the project is empty:
+
+```bash
+# Example for one state — use production SUPABASE_* in .env.local carefully
+npm run db:push:kentucky
+# …or each state's db:push:* / seed SQL in the Supabase SQL Editor
+```
+
+### 6. Verify
+
+1. Open the Render URL — homepage loads.
+2. `/resources` returns live data (not empty mock mode).
+3. Sign-up / login redirects stay on your Render host.
+4. Free tier sleeps after idle; first request can take ~30–60s.
+
+Build note: `npm run build` runs `generate:us-map` (needs **Python 3** + outbound network). Render’s Node image includes Python 3.
 
 ---
 

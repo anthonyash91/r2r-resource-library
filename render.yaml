@@ -1,0 +1,36 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Dashboard: New → Blueprint → connect this repo, or create a Web Service manually
+# using the same build/start commands below.
+
+services:
+  - type: web
+    name: r2r-resource-library
+    runtime: node
+    plan: free
+    region: oregon
+    branch: main
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22.22.0
+      - key: NODE_ENV
+        value: production
+      # Set these in the Render Dashboard (Values → Environment). Do not commit secrets.
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        sync: false
+      - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+        sync: false
+      - key: NEXT_PUBLIC_APP_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: FACILITY_CRYPTO_SECRET
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
+      - key: EMAIL_FROM
+        sync: false
+      - key: DEEPL_API_KEY
+        sync: false

@@ -2,10 +2,13 @@
   "name": "reentry-resource-library",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=22 <25"
+  },
   "scripts": {
     "dev": "next dev -p 8080",
     "build": "npm run generate:us-map && next build",
-    "start": "next start -p 8080",
+    "start": "next start -H 0.0.0.0 -p ${PORT:-8080}",
     "lint": "eslint",
     "prepare": "bash scripts/install-git-hooks.sh",
     "seed:resources:kentucky": "RESOURCES_DEFAULT_STATE=Kentucky RESOURCES_UUID_PREFIX=d1000001 RESOURCES_SEED_OUTPUT=supabase/seed-kentucky-resources.sql RESOURCES_INCLUDE_CATEGORIES=false npx tsx scripts/generate-resources-seed.ts data/kentucky-resources.csv",
