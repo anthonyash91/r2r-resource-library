@@ -1,0 +1,471 @@
+[
+  {
+    "county": "Autauga",
+    "city": "Prattville",
+    "address": "203 North Court Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Baldwin",
+    "city": "Robertsdale",
+    "address": "22259 Palmer Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Barbour",
+    "city": "Clayton",
+    "address": "276 Hwy. 239 South",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Bibb",
+    "city": "Centreville",
+    "address": "84 Library Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Blount",
+    "city": "Oneonta",
+    "address": "55 DHR Lane",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Bullock",
+    "city": "Union Springs",
+    "address": "687 March Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Butler",
+    "city": "Greenville",
+    "address": "182 West Adams Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Calhoun",
+    "city": "Anniston",
+    "address": "415 West 11th St.",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Chambers",
+    "city": "LaFayette",
+    "address": "410 9th Ave. SW",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Cherokee",
+    "city": "Centre",
+    "address": "202 Dean Buttram Sr. Avenue",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Chilton",
+    "city": "Clanton",
+    "address": "324 Health Center Drive",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Choctaw",
+    "city": "Butler",
+    "address": "1003 South Mulberry Avenue",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Clarke",
+    "city": "Grove Hill",
+    "address": "22609 Hwy 84",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Clay",
+    "city": "Lineville",
+    "address": "86930 Highway 9",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Cleburne",
+    "city": "Heflin",
+    "address": "732 Oxford Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Coffee",
+    "city": "Enterprise",
+    "address": "3881 Salem Road",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Colbert",
+    "city": "Tuscumbia",
+    "address": "3105 George Wallace Blvd",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Conecuh",
+    "city": "Evergreen",
+    "address": "856 Liberty Hill Drive",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Coosa",
+    "city": "Rockford",
+    "address": "300 South Jackson",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Covington",
+    "city": "Andalusia",
+    "address": "1515 Martin Luther King Jr Expressway",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Crenshaw",
+    "city": "Luverne",
+    "address": "25 Hospital Drive",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Cullman",
+    "city": "Cullman",
+    "address": "1220 St. Joseph Street NW",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Dale",
+    "city": "Ozark",
+    "address": "513 Carroll Avenue",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Dallas",
+    "city": "Selma",
+    "address": "200 Samuel O. Moseley Drive",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "DeKalb",
+    "city": "Fort Payne",
+    "address": "2301 Briarwood Ave South",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Elmore",
+    "city": "Wetumpka",
+    "address": "8961 U.S. Highway 231",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Escambia",
+    "city": "Brewton",
+    "address": "326 Evergreen Avenue",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Etowah",
+    "city": "Gadsden",
+    "address": "210 Hoke Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Fayette",
+    "city": "Fayette",
+    "address": "410 16th Street NE",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Franklin",
+    "city": "Russellville",
+    "address": "737 Highway 48",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Geneva",
+    "city": "Geneva",
+    "address": "1831 West Magnolia Ave.",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Greene",
+    "city": "Eutaw",
+    "address": "36 Park Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Hale",
+    "city": "Greensboro",
+    "address": "906 Wheelan Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Henry",
+    "city": "Abbeville",
+    "address": "507 Kirkland Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Houston",
+    "city": "Dothan",
+    "address": "1605 Ross Clark Circle",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Jackson",
+    "city": "Scottsboro",
+    "address": "305 Bingham Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Jefferson",
+    "city": "Birmingham",
+    "address": "2001 12th Avenue North",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Lamar",
+    "city": "Vernon",
+    "address": "250 Springfield Road",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Lauderdale",
+    "city": "Florence",
+    "address": "424 Veterans Drive",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Lawrence",
+    "city": "Moulton",
+    "address": "13280 AL Highway 157",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Lee",
+    "city": "Opelika",
+    "address": "1715 Corporate Drive",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Limestone",
+    "city": "Athens",
+    "address": "1007 West Market Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Lowndes",
+    "city": "Hayneville",
+    "address": "382 State Highway 97 South",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Macon",
+    "city": "Tuskegee",
+    "address": "404 North Main Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Madison",
+    "city": "Huntsville",
+    "address": "2206 Oakwood Avenue NW",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Marengo",
+    "city": "Linden",
+    "address": "701 South Shiloh Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Marion",
+    "city": "Hamilton",
+    "address": "760 Industrial Drive",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Marshall",
+    "city": "Guntersville",
+    "address": "180 Bluff Road",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Mobile",
+    "city": "Mobile",
+    "address": "3103 Airport Blvd",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Monroe",
+    "city": "Monroeville",
+    "address": "25 Legion Drive",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Montgomery",
+    "city": "Montgomery",
+    "address": "3030 Mobile Hwy",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Morgan",
+    "city": "Decatur",
+    "address": "507 14th Street SE",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Perry",
+    "city": "Marion",
+    "address": "9851 Hwy 5, South",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Pickens",
+    "city": "Carrollton",
+    "address": "401 Tuscaloosa Avenue",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Pike",
+    "city": "Troy",
+    "address": "717 South Three Notch Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Randolph",
+    "city": "Wedowee",
+    "address": "865 Hillcrest Avenue",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Russell",
+    "city": "Phenix City",
+    "address": "1901 Opelika Road",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "St. Clair",
+    "city": "Pell City",
+    "address": "213 Fox Hollow Boulevard",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Shelby",
+    "city": "Columbiana",
+    "address": "987 Highway 70",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Sumter",
+    "city": "Livingston",
+    "address": "108 West Main St",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Talladega",
+    "city": "Talladega",
+    "address": "1010 Ashland Hwy",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Tallapoosa",
+    "city": "Dadeville",
+    "address": "1279 South Tallassee Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Tuscaloosa",
+    "city": "Tuscaloosa",
+    "address": "3716 12th Avenue, East",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Walker",
+    "city": "Jasper",
+    "address": "1901 Highway 78 East",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Washington",
+    "city": "Chatom",
+    "address": "14921 Saint Stephens Ave",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Wilcox",
+    "city": "Camden",
+    "address": "231 Depot Street",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  },
+  {
+    "county": "Winston",
+    "city": "Double Springs",
+    "address": "156 Blake Drive",
+    "phone": "",
+    "source": "https://dhr.alabama.gov/county-office-contact/"
+  }
+]

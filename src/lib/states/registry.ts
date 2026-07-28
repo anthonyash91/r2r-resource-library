@@ -6,6 +6,15 @@ import { TENNESSEE_COUNTIES } from "@/lib/tennessee/counties";
 import { ILLINOIS_COUNTIES } from "@/lib/illinois/counties";
 import { WEST_VIRGINIA_COUNTIES } from "@/lib/west-virginia/counties";
 import { GEORGIA_COUNTIES } from "@/lib/georgia/counties";
+import { NORTH_CAROLINA_COUNTIES } from "@/lib/north-carolina/counties";
+import { VIRGINIA_COUNTIES } from "@/lib/virginia/counties";
+import { SOUTH_CAROLINA_COUNTIES } from "@/lib/south-carolina/counties";
+import { ALABAMA_COUNTIES } from "@/lib/alabama/counties";
+import { ARIZONA_COUNTIES } from "@/lib/arizona/counties";
+import { FLORIDA_COUNTIES } from "@/lib/florida/counties";
+import { MISSISSIPPI_COUNTIES } from "@/lib/mississippi/counties";
+import { WISCONSIN_COUNTIES } from "@/lib/wisconsin/counties";
+import { TEXAS_COUNTIES } from "@/lib/texas/counties";
 
 export interface OnboardingStateConfig {
   /** Full name stored in the database and user preferences. */
@@ -31,6 +40,15 @@ export const ONBOARDING_STATE_REGISTRY = [
   { name: "Illinois", slug: "illinois", counties: ILLINOIS_COUNTIES },
   { name: "West Virginia", slug: "west-virginia", counties: WEST_VIRGINIA_COUNTIES },
   { name: "Georgia", slug: "georgia", counties: GEORGIA_COUNTIES },
+  { name: "North Carolina", slug: "north-carolina", counties: NORTH_CAROLINA_COUNTIES },
+  { name: "Virginia", slug: "virginia", counties: VIRGINIA_COUNTIES },
+  { name: "South Carolina", slug: "south-carolina", counties: SOUTH_CAROLINA_COUNTIES },
+  { name: "Alabama", slug: "alabama", counties: ALABAMA_COUNTIES },
+  { name: "Arizona", slug: "arizona", counties: ARIZONA_COUNTIES },
+  { name: "Florida", slug: "florida", counties: FLORIDA_COUNTIES },
+  { name: "Mississippi", slug: "mississippi", counties: MISSISSIPPI_COUNTIES },
+  { name: "Wisconsin", slug: "wisconsin", counties: WISCONSIN_COUNTIES },
+  { name: "Texas", slug: "texas", counties: TEXAS_COUNTIES },
 ] as const satisfies readonly OnboardingStateConfig[];
 
 export type OnboardingState = (typeof ONBOARDING_STATE_REGISTRY)[number]["name"];

@@ -1,0 +1,1430 @@
+{
+  "1": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "2": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "3": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "4": {
+    "intake_signals": ""
+  },
+  "5": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "6": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "7": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "8": {
+    "intake_signals": ""
+  },
+  "9": {
+    "intake_signals": ""
+  },
+  "10": {
+    "intake_signals": ""
+  },
+  "11": {
+    "intake_signals": ""
+  },
+  "12": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "13": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "14": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "15": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "16": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "17": {
+    "intake_signals": ""
+  },
+  "18": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "19": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "20": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "21": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "22": {
+    "intake_signals": ""
+  },
+  "23": {
+    "intake_signals": ""
+  },
+  "24": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "25": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "26": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "27": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "28": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "29": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "30": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "31": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "32": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "33": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "34": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "35": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "36": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "37": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "38": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "39": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "40": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "41": {
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "42": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "43": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "44": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "45": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "46": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "47": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "48": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "49": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "50": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "51": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "52": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "53": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "54": {
+    "hours": "Contact for current hours; confirm before visiting",
+    "services": "Employment Academy|Reentry navigation|Fair-chance placement|Workforce development|Alumni support",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "55": {
+    "description": "StepUp Ministry — Wilmington Office serves justice-involved adults and families rebuilding stability after incarceration in New Hanover County. StepUp Wilmington brings fair-chance employment training to New Hanover County, helping justice-involved and long-term unemployed coastal NC residents build job readiness, employer connections, and financial stability through the StepUp Employment Academy model with localized case management and Wilmington-area business partnerships. Staff help justice-involved job seekers build work history, remove record-related barriers, and connect to fair-chance employers in the region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "StepUp Ministry — Wilmington Office sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de New Hanover. El personal ayuda a quienes buscan empleo con antecedentes penales a construir historial laboral, reducir barreras por antecedentes y conectarse con empleadores de segunda oportunidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "services": "Employment Academy|Coastal fair-chance placement|Reentry navigation|Job readiness training|GED and high school equivalency",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "56": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "57": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "58": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "59": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "60": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "61": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "62": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "63": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "64": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "65": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "66": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "67": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "68": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "69": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "70": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "71": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "72": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "73": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "74": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "75": {
+    "description": "Alliance Health — Wake/Durham/Johnston LME/MCO serves justice-involved adults and families rebuilding stability after incarceration in Wake, Durham, and Johnston counties. Alliance Health manages public behavioral health and intellectual/developmental disability services in Wake, Durham, and Johnston counties, connecting Medicaid beneficiaries and uninsured residents to mental health, substance use, and crisis services including peer support for justice-involved adults rebuilding stability after release. Services are available on a sliding fee or Medicaid basis for eligible patients; bring ID and release paperwork when establishing care after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Alliance Health — Wake/Durham/Johnston LME/MCO sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Wake, Durham y Johnston. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Primary medical care|Substance use treatment|Crisis services|Partner referrals|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "76": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "77": {
+    "description": "Trillium Health Resources — Eastern NC LME/MCO serves justice-involved adults and families rebuilding stability after incarceration in 5 North Carolina counties. Trillium Health Resources manages public behavioral health services for 26 eastern NC counties including New Hanover, Brunswick, and Pender, connecting residents to mental health, substance use, and crisis care. Returning citizens in coastal NC access peer support and treatment through Trillium provider networks. Services are available on a sliding fee or Medicaid basis for eligible patients; bring ID and release paperwork when establishing care after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Trillium Health Resources — Eastern NC LME/MCO sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 5 condados de Carolina del Norte. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Primary medical care|Partner referrals|Crisis services|Support groups|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "78": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "79": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "80": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "81": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "82": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "83": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "84": {
+    "intake_signals": ""
+  },
+  "85": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "86": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "87": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "88": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "89": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "90": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "91": {
+    "description": "Food Bank of Central & Eastern North Carolina — Raleigh Branch serves justice-involved adults and families rebuilding stability after incarceration in 5 North Carolina counties. The Food Bank of Central and Eastern North Carolina Raleigh branch on Capital Boulevard distributes food to partner agencies across 34 counties including Wake, Durham, and Johnston, connecting returning citizens to local pantries, mobile distributions, and SNAP application assistance through the regional hunger-relief network. Food assistance does not usually require a criminal-record disclosure; staff can help with SNAP applications and pantry locations by ZIP code. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Food Bank of Central & Eastern North Carolina — Raleigh Branch sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 5 condados de Carolina del Norte. La asistencia alimentaria generalmente no requiere declarar antecedentes penales; el personal puede ayudar con solicitudes SNAP y ubicaciones de despensas por código postal. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Food pantry access|Partner referrals|Mobile pantry|SNAP enrollment|34-county coverage",
+    "intake_signals": ""
+  },
+  "92": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "93": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "94": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "95": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "96": {
+    "description": "Salvation Army of Wake County — Emergency Assistance serves justice-involved adults and families rebuilding stability after incarceration in Wake County. The Salvation Army Wake County provides emergency food pantry, utility and rent assistance, clothing, and case management for low-income Wake County residents including returning citizens rebuilding stability. Social workers connect clients to Healing Transitions, StepUp Ministry, and NCWorks partners across the Triangle. Availability varies by season and donations; call ahead when possible to confirm clothing, hygiene kits, or furniture pickup hours. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Salvation Army of Wake County — Emergency Assistance sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Wake. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "hours": "Contact for current hours; confirm before visiting",
+    "services": "Food pantry access|Rent and utility assistance|Clothing assistance|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "97": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "98": {
+    "intake_signals": ""
+  },
+  "99": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "100": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "101": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "102": {
+    "intake_signals": ""
+  },
+  "103": {
+    "description": "NCDMV — Driver License and ID Card Services serves justice-involved adults and families rebuilding stability after incarceration in throughout North Carolina. The NC Division of Motor Vehicles issues REAL ID-compliant driver licenses and identification cards required for employment, housing applications, and banking after release. Returning citizens can request driving records via myNCDMV, resolve suspensions, and schedule in-person reinstatement visits at driver license offices statewide. Fees, proof of identity, and residency documents apply; reentry resources and legal aid partners often help gather required paperwork. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "NCDMV — Driver License and ID Card Services sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en toda Carolina del Norte. Aplican tarifas, prueba de identidad y documentos de residencia; recursos de reinserción y aliados legales suelen ayudar a reunir el papeleo requerido. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Driver license issuance|Document assistance|Driving records|Suspension resolution|REAL ID compliance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "104": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "105": {
+    "description": "NC Vital Records — Birth Certificate Requests serves justice-involved adults and families rebuilding stability after incarceration in throughout North Carolina. NC Vital Records through NCDHHS issues certified birth certificates needed for DMV ID, employment verification, and benefits applications after incarceration. Returning citizens can order certificates online, by mail, or through county register of deeds offices with valid identification and applicable fees. Fees, proof of identity, and residency documents apply; reentry resources and legal aid partners often help gather required paperwork. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "NC Vital Records — Birth Certificate Requests sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en toda Carolina del Norte. Aplican tarifas, prueba de identidad y documentos de residencia; recursos de reinserción y aliados legales suelen ayudar a reunir el papeleo requerido. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "statewide|id-documentation|birth-certificate|reentry|north-carolina|wake",
+    "services": "Document assistance|Online ordering|Mail requests|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "106": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "107": {
+    "description": "NC Certified Peer Support Specialist Program — NCDHHS serves justice-involved adults and families rebuilding stability after incarceration in throughout North Carolina. The NCDHHS Certified Peer Support Specialist program trains and certifies individuals with 18+ months of recovery from mental illness or substance use disorder to provide Medicaid-billable peer support services statewide, including reentry transition support for people leaving incarceration through LME/MCO provider networks. Peer specialists with lived experience offer mentoring and recovery support; certification requirements vary by resource. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "NC Certified Peer Support Specialist Program — NCDHHS sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en toda Carolina del Norte. Especialistas pares con experiencia vivida ofrecen mentoría y apoyo en recuperación; los requisitos de certificación varían según el recurso. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "CPSS certification pathway|Medicaid enrollment|Reentry transition services|Partner referrals|Recovery community education",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "108": {
+    "description": "NC Council for Recovery — Peer Recovery Supports serves justice-involved adults and families rebuilding stability after incarceration in throughout North Carolina. The NC Council for Recovery (formerly NC Council on Substance Abuse) provides peer recovery support, advocacy, and community education for individuals in recovery from substance use disorders across North Carolina, including justice-involved participants in accountability and drug treatment courts seeking non-clinical peer mentorship. Peer specialists with lived experience offer mentoring and recovery support; certification requirements vary by resource. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "NC Council for Recovery — Peer Recovery Supports sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en toda Carolina del Norte. Especialistas pares con experiencia vivida ofrecen mentoría y apoyo en recuperación; los requisitos de certificación varían según el recurso. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Support groups|Civil rights advocacy|Accountability court supports|Community education|Peer specialist training",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "109": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "110": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "111": {
+    "description": "Durham Recovery Response Center is a statewide or regional referral resource for North Carolinians affected by the criminal justice system. The Durham Recovery Response Center operated through Lincoln Community Health Center provides crisis stabilization and substance use disorder assessment for Durham County residents including justice-involved individuals needing immediate behavioral health intervention before referral to TROSA, SouthLight, or Lincoln CHC ongoing care. Users can search by location, service type, or need to find active providers in Durham County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Durham Recovery Response Center es un recurso de referencia estatal o regional para carolinenses del norte afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Durham. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "durham|substance-use-treatment|crisis|reentry|north-carolina",
+    "services": "Crisis services|SUD assessment|Behavioral health services|Partner referrals",
+    "intake_signals": ""
+  },
+  "112": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "113": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "114": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "115": {
+    "description": "StepUp Ministry — Real World Youth Program serves justice-involved adults and families rebuilding stability after incarceration in Wake County. StepUp Ministry Real World program helps teens ages 14–22 transition to adulthood through weekly mentoring, social-emotional learning, and case management for Wake County youth including those affected by parental incarceration or reentry family reunification. Parental involvement not required for teens 14–22 in the Real World track. Family resources may require participation in treatment or parenting classes; custody status affects some reunification services. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "StepUp Ministry — Real World Youth Program sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Wake. Los recursos familiares pueden requerir participación en tratamiento o clases de crianza; el estado de custodia afecta algunos servicios de reunificación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Children's services|Social-emotional learning|Transition to adulthood|Reentry navigation|Family reunification support",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "116": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "117": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "118": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "119": {
+    "services": "Workforce development|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "120": {
+    "services": "Workforce development|Employment assistance|Veteran employment|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "121": {
+    "services": "Workforce development|Employment assistance|Job readiness training",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "122": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "123": {
+    "description": "Rutherford Health — FQHC Network serves justice-involved adults and families rebuilding stability after incarceration in Rutherford, McDowell, Polk, and Cleveland counties. Rutherford Health operates Federally Qualified Health Center clinics serving Rutherford, McDowell, and Polk counties in western North Carolina foothills, providing primary care, dental, and behavioral health on a sliding-fee scale for uninsured and Medicaid patients including justice-involved adults in rural communities. Services are available on a sliding fee or Medicaid basis for eligible patients; bring ID and release paperwork when establishing care after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Rutherford Health — FQHC Network sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Rutherford, McDowell, Polk y Cleveland. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "124": {
+    "services": "Probation and parole supervision|Partner referrals|Addiction treatment referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "125": {
+    "description": "Sandhills Community College Adult Education provides GED and HiSET preparation for adults in Moore, Hoke, Richmond, and Montgomery counties including returning citizens from the Sandhills region seeking credentials for NCWorks and Fort Liberty area employment. Free classes at the Pinehurst campus connect graduates to regional workforce partners. This resource supports North Carolinians navigating reentry in 5 North Carolina counties.",
+    "description_es": "Sandhills Community College Educación para Adultos ofrece preparación GED e HiSET para adultos en los condados Moore, Hoke, Richmond y Montgomery incluidos ciudadanos que regresan de la región Sandhills que buscan credenciales para NCWorks y empleo en el área de Fort Liberty. Este recurso apoya a carolinenses del norte en reinserción en 5 condados de Carolina del Norte.",
+    "services": "GED and high school equivalency|Partner referrals|Workforce transition",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "126": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "127": {
+    "intake_signals": ""
+  },
+  "128": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "129": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "130": {
+    "intake_signals": ""
+  },
+  "131": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "132": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "133": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "134": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "135": {
+    "intake_signals": ""
+  },
+  "136": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "137": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "138": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "139": {
+    "intake_signals": ""
+  },
+  "140": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "141": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "142": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "143": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "144": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "145": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "146": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "147": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "148": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "149": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "150": {
+    "intake_signals": ""
+  },
+  "151": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "152": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "153": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "154": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "155": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "156": {
+    "services": "Civil legal representation|Housing legal aid|Benefits navigation|Expungement assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "157": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "158": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "159": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "160": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "161": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "162": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "163": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "164": {
+    "services": "Probation and parole supervision|Partner referrals|Addiction treatment referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "165": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "166": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "167": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "168": {
+    "intake_signals": ""
+  },
+  "169": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "170": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "171": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "172": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "173": {
+    "intake_signals": ""
+  },
+  "174": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "175": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "176": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "177": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "178": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "179": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "180": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "181": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "182": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "183": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "184": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "185": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "186": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "187": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "188": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "189": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "190": {
+    "intake_signals": ""
+  },
+  "191": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "192": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "193": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "194": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "195": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "196": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "197": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "198": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "199": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "200": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "201": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "202": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "203": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "204": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "205": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "206": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "207": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "208": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "209": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "210": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "211": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "212": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "213": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "214": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "215": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "216": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "217": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "218": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "219": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "220": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "221": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "222": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "223": {
+    "description": "CaroMont Health provides primary care, emergency services, and community health access for Burke County residents including uninsured and Medicaid patients such as returning citizens establishing medical care after NCDAC release or county jail. Sliding-fee and Medicaid billing help ensure continuity of care—not a walk-in benefits or probation office. This resource supports North Carolinians navigating reentry in Burke County.",
+    "description_es": "CaroMont Health ofrece atención primaria, servicios de emergencia y acceso a salud comunitaria para residentes del condado Burke incluidos pacientes sin seguro y Medicaid como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a carolinenses del norte en reinserción en condado de Burke.",
+    "services": "Primary medical care|Basic needs assistance|Partner referrals|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "224": {
+    "description": "UNC Health Caldwell provides primary care, emergency services, and community health access for Caldwell County residents including uninsured and Medicaid patients such as returning citizens establishing medical care after NCDAC release or county jail. Sliding-fee and Medicaid billing help ensure continuity of care—not a walk-in benefits or probation office. This resource supports North Carolinians navigating reentry in Caldwell County.",
+    "description_es": "UNC Health Caldwell ofrece atención primaria, servicios de emergencia y acceso a salud comunitaria para residentes del condado Caldwell incluidos pacientes sin seguro y Medicaid como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a carolinenses del norte en reinserción en condado de Caldwell.",
+    "services": "Primary medical care|Basic needs assistance|Partner referrals|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "225": {
+    "description": "Hugh Chatham Memorial Hospital provides primary care, emergency services, and community health access for Yadkin County residents including uninsured and Medicaid patients such as returning citizens establishing medical care after NCDAC release or county jail. Sliding-fee and Medicaid billing help ensure continuity of care—not a walk-in benefits or probation office. This resource supports North Carolinians navigating reentry in Yadkin County.",
+    "description_es": "Hugh Chatham Memorial Hospital ofrece atención primaria, servicios de emergencia y acceso a salud comunitaria para residentes del condado Yadkin incluidos pacientes sin seguro y Medicaid como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a carolinenses del norte en reinserción en condado de Yadkin.",
+    "services": "Primary medical care|Basic needs assistance|Partner referrals|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "226": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "227": {
+    "description": "Catawba Valley Medical Center provides primary care, emergency services, and community health access for Catawba County residents including uninsured and Medicaid patients such as returning citizens establishing medical care after NCDAC release or county jail. Sliding-fee and Medicaid billing help ensure continuity of care—not a walk-in benefits or probation office. This resource supports North Carolinians navigating reentry in Catawba County.",
+    "description_es": "Catawba Valley Medical Center ofrece atención primaria, servicios de emergencia y acceso a salud comunitaria para residentes del condado Catawba incluidos pacientes sin seguro y Medicaid como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a carolinenses del norte en reinserción en condado de Catawba.",
+    "services": "Primary medical care|Basic needs assistance|Partner referrals|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "228": {
+    "description": "Davie Medical Center provides primary care, emergency services, and community health access for Davie County residents including uninsured and Medicaid patients such as returning citizens establishing medical care after NCDAC release or county jail. Sliding-fee and Medicaid billing help ensure continuity of care—not a walk-in benefits or probation office. This resource supports North Carolinians navigating reentry in Davie County.",
+    "description_es": "Davie Medical Center ofrece atención primaria, servicios de emergencia y acceso a salud comunitaria para residentes del condado Davie incluidos pacientes sin seguro y Medicaid como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a carolinenses del norte en reinserción en condado de Davie.",
+    "services": "Primary medical care|Basic needs assistance|Partner referrals|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "229": {
+    "description": "Granville Health System provides primary care, emergency services, and community health access for Granville County residents including uninsured and Medicaid patients such as returning citizens establishing medical care after NCDAC release or county jail. Sliding-fee and Medicaid billing help ensure continuity of care—not a walk-in benefits or probation office. This resource supports North Carolinians navigating reentry in Granville County.",
+    "description_es": "Granville Health System ofrece atención primaria, servicios de emergencia y acceso a salud comunitaria para residentes del condado Granville incluidos pacientes sin seguro y Medicaid como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a carolinenses del norte en reinserción en condado de Granville.",
+    "services": "Primary medical care|Basic needs assistance|Partner referrals|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "230": {
+    "description": "Atrium Health Lincoln provides primary care, emergency services, and community health access for Lincoln County residents including uninsured and Medicaid patients such as returning citizens establishing medical care after NCDAC release or county jail. Sliding-fee and Medicaid billing help ensure continuity of care—not a walk-in benefits or probation office. This resource supports North Carolinians navigating reentry in Lincoln County.",
+    "description_es": "Atrium Health Lincoln ofrece atención primaria, servicios de emergencia y acceso a salud comunitaria para residentes del condado Lincoln incluidos pacientes sin seguro y Medicaid como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a carolinenses del norte en reinserción en condado de Lincoln.",
+    "services": "Primary medical care|Basic needs assistance|Partner referrals|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "231": {
+    "description": "Maria Parham Health provides primary care, emergency services, and community health access for Vance County residents including uninsured and Medicaid patients such as returning citizens establishing medical care after NCDAC release or county jail. Sliding-fee and Medicaid billing help ensure continuity of care—not a walk-in benefits or probation office. This resource supports North Carolinians navigating reentry in Vance County.",
+    "description_es": "Maria Parham Health ofrece atención primaria, servicios de emergencia y acceso a salud comunitaria para residentes del condado Vance incluidos pacientes sin seguro y Medicaid como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a carolinenses del norte en reinserción en condado de Vance.",
+    "services": "Primary medical care|Basic needs assistance|Partner referrals|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "232": {
+    "description": "Warren County Memorial Hospital provides primary care, emergency services, and community health access for Warren County residents including uninsured and Medicaid patients such as returning citizens establishing medical care after NCDAC release or county jail. Sliding-fee and Medicaid billing help ensure continuity of care—not a walk-in benefits or probation office. This resource supports North Carolinians navigating reentry in Warren County.",
+    "description_es": "Warren County Memorial Hospital ofrece atención primaria, servicios de emergencia y acceso a salud comunitaria para residentes del condado Warren incluidos pacientes sin seguro y Medicaid como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a carolinenses del norte en reinserción en condado de Warren.",
+    "services": "Primary medical care|Basic needs assistance|Partner referrals|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "233": {
+    "description": "Wilkes Medical Center provides primary care, emergency services, and community health access for Wilkes County residents including uninsured and Medicaid patients such as returning citizens establishing medical care after NCDAC release or county jail. Sliding-fee and Medicaid billing help ensure continuity of care—not a walk-in benefits or probation office. This resource supports North Carolinians navigating reentry in Wilkes County.",
+    "description_es": "Wilkes Medical Center ofrece atención primaria, servicios de emergencia y acceso a salud comunitaria para residentes del condado Wilkes incluidos pacientes sin seguro y Medicaid como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a carolinenses del norte en reinserción en condado de Wilkes.",
+    "services": "Primary medical care|Basic needs assistance|Partner referrals|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "234": {
+    "description": "ECU Health North Hospital (serves Halifax County) is a statewide or regional referral resource for North Carolinians affected by the criminal justice system. ECU Health North Hospital provides emergency, primary care referrals, and community health access for Halifax County residents including uninsured and Medicaid patients such as returning citizens establishing medical care after release from Halifax County Detention Center or VADOC facilities. Users can search by location, service type, or need to find active providers in Halifax County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "ECU Health North Hospital (serves Halifax County) es un recurso de referencia estatal o regional para carolinenses del norte afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Halifax. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Basic needs assistance|Partner referrals|Primary medical care|Medicaid enrollment",
+    "intake_signals": ""
+  },
+  "235": {
+    "description": "FirstHealth Montgomery Memorial Hospital (serves Montgomery County) is a statewide or regional referral resource for North Carolinians affected by the criminal justice system. FirstHealth Montgomery Memorial Hospital provides primary care, emergency services, and specialty referrals for Montgomery County residents including justice-involved adults reestablishing healthcare after NCDAC release. Users can search by location, service type, or need to find active providers in Montgomery County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "FirstHealth Montgomery Memorial Hospital (serves Montgomery County) es un recurso de referencia estatal o regional para carolinenses del norte afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Montgomery. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "montgomery|healthcare|hospital|reentry|north-carolina",
+    "services": "Basic needs assistance|Primary medical care|Partner referrals",
+    "intake_signals": ""
+  },
+  "236": {
+    "description": "FirstHealth Moore Regional Hospital (serves Moore County) is a statewide or regional referral resource for North Carolinians affected by the criminal justice system. FirstHealth Moore Regional Hospital provides comprehensive medical services for Moore County residents including returning citizens needing primary care and behavioral health referrals after incarceration. Users can search by location, service type, or need to find active providers in Moore County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "FirstHealth Moore Regional Hospital (serves Moore County) es un recurso de referencia estatal o regional para carolinenses del norte afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Moore. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "moore|healthcare|hospital|reentry|north-carolina",
+    "services": "Basic needs assistance|Primary medical care|Partner referrals",
+    "intake_signals": ""
+  },
+  "237": {
+    "description": "Atrium Health Richmond (serves Richmond County) serves justice-involved adults and families rebuilding stability after incarceration in Richmond County. Atrium Health Richmond provides emergency and outpatient services for Richmond County residents including justice-involved adults establishing medical care after release from Richmond County Jail. Services are available on a sliding fee or Medicaid basis for eligible patients; bring ID and release paperwork when establishing care after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Atrium Health Richmond (serves Richmond County) sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Richmond. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "richmond|healthcare|hospital|reentry|north-carolina",
+    "services": "Basic needs assistance|Primary medical care|Substance use treatment|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "238": {
+    "description": "Iredell Memorial Hospital (serves Iredell County) serves justice-involved adults and families rebuilding stability after incarceration in Iredell County. Iredell Memorial Hospital provides primary care, emergency services, and community health programs for Iredell County residents including returning citizens reestablishing healthcare after NCDAC release. Services are available on a sliding fee or Medicaid basis for eligible patients; bring ID and release paperwork when establishing care after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Iredell Memorial Hospital (serves Iredell County) sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Iredell. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "iredell|healthcare|hospital|reentry|north-carolina",
+    "services": "Basic needs assistance|Primary medical care|Partner referrals|Community health programs",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "239": {
+    "description": "Novant Health Rowan Medical Center (serves Rowan County) serves justice-involved adults and families rebuilding stability after incarceration in Rowan County. Novant Health Rowan Medical Center provides emergency and outpatient medical services for Rowan County residents including justice-involved adults establishing care after release. Services are available on a sliding fee or Medicaid basis for eligible patients; bring ID and release paperwork when establishing care after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Novant Health Rowan Medical Center (serves Rowan County) sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Rowan. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "rowan|healthcare|hospital|reentry|north-carolina",
+    "services": "Basic needs assistance|Primary medical care|Partner referrals|Substance use treatment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "240": {
+    "description": "Atrium Health Stanly (serves Stanly County) serves justice-involved adults and families rebuilding stability after incarceration in Stanly County. Atrium Health Stanly provides emergency and primary care services for Stanly County residents including returning citizens needing medical continuity after incarceration. Services are available on a sliding fee or Medicaid basis for eligible patients; bring ID and release paperwork when establishing care after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Atrium Health Stanly (serves Stanly County) sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Stanly. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "stanly|healthcare|hospital|reentry|north-carolina",
+    "services": "Basic needs assistance|Primary medical care|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "241": {
+    "description": "Alamance County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Alamance County. Alamance County Department of Social Services office in Burlington processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Alamance County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Alamance County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Alamance. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "242": {
+    "description": "Alexander County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Alexander County. Alexander County Department of Social Services office in Taylorsville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Alexander County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Alexander County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Alexander. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "243": {
+    "description": "Alleghany County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Alleghany County. Alleghany County Department of Social Services office in Sparta processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Alleghany County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Alleghany County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Alleghany. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "244": {
+    "description": "Anson County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Anson County. Anson County Department of Social Services office in Wadesboro processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Anson County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Anson County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Anson. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "245": {
+    "description": "Ashe County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Ashe County. Ashe County Department of Social Services office in Jefferson processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Ashe County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Ashe County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Ashe. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "246": {
+    "description": "Avery County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Avery County. Avery County Department of Social Services office in Newland processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Avery County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Avery County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Avery. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "247": {
+    "description": "Beaufort County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Beaufort County. Beaufort County Department of Social Services office in Washington processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Beaufort County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Beaufort County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Beaufort. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "248": {
+    "description": "Bertie County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Bertie County. Bertie County Department of Social Services office in Bertie processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Bertie County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Bertie County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Bertie. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "249": {
+    "description": "Bladen County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Bladen County. Bladen County Department of Social Services office in Elizabethtown processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Bladen County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Bladen County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Bladen. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "250": {
+    "description": "Brunswick County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Brunswick County. Brunswick County Department of Social Services office in Bolivia processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Brunswick County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Brunswick County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Brunswick. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "251": {
+    "description": "Buncombe County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Buncombe County. Buncombe County Department of Social Services office in Buncombe processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Buncombe County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Buncombe County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Buncombe. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "252": {
+    "description": "Burke County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Burke County. Burke County Department of Social Services office in Morganton processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Burke County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Burke County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Burke. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "253": {
+    "description": "Cabarrus County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Cabarrus County. Cabarrus County Department of Social Services office in Kannapolis processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Cabarrus County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Cabarrus County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Cabarrus. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "254": {
+    "description": "Caldwell County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Caldwell County. Caldwell County Department of Social Services office in Caldwell processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Caldwell County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Caldwell County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Caldwell. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "255": {
+    "description": "Camden County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Camden County. Camden County Department of Social Services office in Camden processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Camden County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Camden County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Camden. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "256": {
+    "description": "Carteret County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Carteret County. Carteret County Department of Social Services office in Beaufort processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Carteret County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Carteret County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Carteret. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "257": {
+    "description": "Caswell County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Caswell County. Caswell County Department of Social Services office in Yanceyville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Caswell County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Caswell County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Caswell. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "258": {
+    "description": "Catawba County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Catawba County. Catawba County Department of Social Services office in Hickory processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Catawba County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Catawba County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Catawba. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "259": {
+    "description": "Chatham County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Chatham County. Chatham County Department of Social Services office in Pittsboro processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Chatham County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Chatham County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Chatham. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "260": {
+    "description": "Cherokee County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Cherokee County. Cherokee County Department of Social Services office in Murphy processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Cherokee County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Cherokee County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Cherokee. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "261": {
+    "description": "Chowan County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Chowan County. Chowan County Department of Social Services office in Edenton processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Chowan County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Chowan County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Chowan. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "262": {
+    "description": "Clay County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Clay County. Clay County Department of Social Services office in Hayesville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Clay County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Clay County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Clay. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "263": {
+    "description": "Cleveland County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Cleveland County. Cleveland County Department of Social Services office in Shelby processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Cleveland County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Cleveland County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Cleveland. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "264": {
+    "description": "Columbus County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Columbus County. Columbus County Department of Social Services office in Whiteville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Columbus County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Columbus County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Columbus. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "265": {
+    "description": "Craven County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Craven County. Craven County Department of Social Services office in New Bern processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Craven County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Craven County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Craven. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "266": {
+    "description": "Cumberland County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Cumberland County. Cumberland County Department of Social Services office in Fayetteville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Cumberland County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Cumberland County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Cumberland. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "267": {
+    "description": "Currituck County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Currituck County. Currituck County Department of Social Services office in Currituck processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Currituck County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Currituck County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Currituck. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "268": {
+    "description": "Dare County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Dare County. Dare County Department of Social Services office in Manteo processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Dare County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Dare County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Dare. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "269": {
+    "description": "Davidson County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Davidson County. Davidson County Department of Social Services office in Lexington processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Davidson County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Davidson County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Davidson. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "270": {
+    "description": "Davie County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Davie County. Davie County Department of Social Services office in Mocksville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Davie County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Davie County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Davie. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "271": {
+    "description": "Duplin County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Duplin County. Duplin County Department of Social Services office in Kenansville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Duplin County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Duplin County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Duplin. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "272": {
+    "description": "Durham County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Durham County. Durham County Department of Social Services office in Durham processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Durham County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Durham County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Durham. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "273": {
+    "description": "Edgecombe County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Edgecombe County. Edgecombe County Department of Social Services office in Tarboro processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Edgecombe County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Edgecombe County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Edgecombe. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "274": {
+    "description": "Forsyth County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Forsyth County. Forsyth County Department of Social Services office in Winston-Salem processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Forsyth County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Forsyth County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Forsyth. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "275": {
+    "description": "Franklin County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Franklin County. Franklin County Department of Social Services office in Louisburg processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Franklin County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Franklin County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Franklin. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "276": {
+    "description": "Gaston County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Gaston County. Gaston County Department of Social Services office in Gastonia processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Gaston County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Gaston County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Gaston. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "277": {
+    "description": "Gates County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Gates County. Gates County Department of Social Services office in Gatesville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Gates County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Gates County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Gates. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "278": {
+    "description": "Graham County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Graham County. Graham County Department of Social Services office in Robbinsville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Graham County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Graham County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Graham. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "279": {
+    "description": "Granville County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Granville County. Granville County Department of Social Services office in Granville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Granville County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Granville County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Granville. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "280": {
+    "description": "Greene County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Greene County. Greene County Department of Social Services office in Snow Hill processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Greene County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Greene County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Greene. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "281": {
+    "description": "Guilford County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Guilford County. Guilford County Department of Social Services office in Greensboro processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Guilford County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Guilford County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Guilford. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "282": {
+    "description": "Halifax County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Halifax County. Halifax County Department of Social Services office in Halifax processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Halifax County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Halifax County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Halifax. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "283": {
+    "description": "Harnett County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Harnett County. Harnett County Department of Social Services office in Lillington processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Harnett County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Harnett County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Harnett. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "284": {
+    "description": "Haywood County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Haywood County. Haywood County Department of Social Services office in Clyde processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Haywood County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Haywood County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Haywood. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "285": {
+    "description": "Henderson County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Henderson County. Henderson County Department of Social Services office in Henderson processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Henderson County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Henderson County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Henderson. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "286": {
+    "description": "Hertford County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Hertford County. Hertford County Department of Social Services office in Winton processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Hertford County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Hertford County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Hertford. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "287": {
+    "description": "Hoke County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Hoke County. Hoke County Department of Social Services office in Raeford processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Hoke County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Hoke County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Hoke. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "288": {
+    "description": "Hyde County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Hyde County. Hyde County Department of Social Services office in Engelhard processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Hyde County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Hyde County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Hyde. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "289": {
+    "description": "Iredell County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Iredell County. Iredell County Department of Social Services office in Statesville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Iredell County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Iredell County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Iredell. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "290": {
+    "description": "Jackson County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Jackson County. Jackson County Department of Social Services office in Sylva processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Jackson County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Jackson County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Jackson. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "291": {
+    "description": "Johnston County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Johnston County. Johnston County Department of Social Services office in Smithfield processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Johnston County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Johnston County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Johnston. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "292": {
+    "description": "Jones County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Jones County. Jones County Department of Social Services office in Trenton processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Jones County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Jones County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Jones. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "293": {
+    "description": "Lee County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Lee County. Lee County Department of Social Services office in Sanford processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Lee County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Lee County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Lee. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "294": {
+    "description": "Lenoir County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Lenoir County. Lenoir County Department of Social Services office in Kinston processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Lenoir County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Lenoir County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Lenoir. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "295": {
+    "description": "Lincoln County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Lincoln County. Lincoln County Department of Social Services office in Lincolnton processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Lincoln County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Lincoln County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Lincoln. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "296": {
+    "description": "Macon County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Macon County. Macon County Department of Social Services office in Franklin processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Macon County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Macon County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Macon. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "297": {
+    "description": "Madison County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Madison County. Madison County Department of Social Services office in Marshall processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Madison County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Madison County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Madison. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "298": {
+    "description": "Martin County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Martin County. Martin County Department of Social Services office in Williamston processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Martin County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Martin County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Martin. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "299": {
+    "description": "McDowell County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in McDowell County. McDowell County Department of Social Services office in Marion processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from McDowell County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "McDowell County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de McDowell. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "300": {
+    "description": "Mecklenburg County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Mecklenburg County. Mecklenburg County Department of Social Services office in Charlotte processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Mecklenburg County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Mecklenburg County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Mecklenburg. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "301": {
+    "description": "Mitchell County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Mitchell County. Mitchell County Department of Social Services office in Bakersville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Mitchell County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Mitchell County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Mitchell. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "302": {
+    "description": "Montgomery County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Montgomery County. Montgomery County Department of Social Services office in Troy processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Montgomery County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Montgomery County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Montgomery. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "303": {
+    "description": "Moore County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Moore County. Moore County Department of Social Services office in Carthage processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Moore County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Moore County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Moore. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "304": {
+    "description": "Nash County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Nash County. Nash County Department of Social Services office in Nash processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Nash County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Nash County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Nash. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "305": {
+    "description": "New Hanover County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in New Hanover County. New Hanover County Department of Social Services office in Wilmington processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from New Hanover County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "New Hanover County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de New Hanover. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "306": {
+    "description": "Northampton County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Northampton County. Northampton County Department of Social Services office in Jackson processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Northampton County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Northampton County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Northampton. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "307": {
+    "description": "Onslow County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Onslow County. Onslow County Department of Social Services office in Jacksonville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Onslow County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Onslow County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Onslow. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "308": {
+    "description": "Orange County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Orange County. Orange County Department of Social Services office in Hillsborough processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Orange County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Orange County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Orange. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "309": {
+    "description": "Pamlico County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Pamlico County. Pamlico County Department of Social Services office in Bayboro processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Pamlico County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Pamlico County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Pamlico. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "310": {
+    "description": "Pasquotank County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Pasquotank County. Pasquotank County Department of Social Services office in Elizabeth City processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Pasquotank County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Pasquotank County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Pasquotank. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "311": {
+    "description": "Pender County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Pender County. Pender County Department of Social Services office in Burgaw processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Pender County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Pender County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Pender. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "312": {
+    "description": "Perquimans County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Perquimans County. Perquimans County Department of Social Services office in Hertford processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Perquimans County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Perquimans County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Perquimans. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "313": {
+    "description": "Person County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Person County. Person County Department of Social Services office in Roxboro processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Person County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Person County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Person. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "314": {
+    "description": "Pitt County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Pitt County. Pitt County Department of Social Services office in Greenville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Pitt County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Pitt County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Pitt. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "315": {
+    "description": "Polk County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Polk County. Polk County Department of Social Services office in Polk processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Polk County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Polk County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Polk. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "316": {
+    "description": "Randolph County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Randolph County. Randolph County Department of Social Services office in Asheboro processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Randolph County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Randolph County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Randolph. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "317": {
+    "description": "Richmond County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Richmond County. Richmond County Department of Social Services office in Rockingham processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Richmond County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Richmond County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Richmond. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "318": {
+    "description": "Robeson County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Robeson County. Robeson County Department of Social Services office in Lumberton processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Robeson County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Robeson County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Robeson. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "319": {
+    "description": "Rockingham County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Rockingham County. Rockingham County Department of Social Services office in Wentworth processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Rockingham County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Rockingham County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Rockingham. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "320": {
+    "description": "Rowan County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Rowan County. Rowan County Department of Social Services office in Salisbury processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Rowan County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Rowan County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Rowan. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "321": {
+    "description": "Rutherford County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Rutherford County. Rutherford County Department of Social Services office in Spindale processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Rutherford County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Rutherford County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Rutherford. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "322": {
+    "description": "Sampson County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Sampson County. Sampson County Department of Social Services office in Clinton processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Sampson County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Sampson County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Sampson. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "323": {
+    "description": "Scotland County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Scotland County. Scotland County Department of Social Services office in Laurinburg processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Scotland County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Scotland County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Scotland. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "324": {
+    "description": "Stanly County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Stanly County. Stanly County Department of Social Services office in Albemarle processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Stanly County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Stanly County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Stanly. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "325": {
+    "description": "Stokes County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Stokes County. Stokes County Department of Social Services office in Danbury processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Stokes County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Stokes County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Stokes. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "326": {
+    "description": "Surry County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Surry County. Surry County Department of Social Services office in Dobson processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Surry County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Surry County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Surry. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "327": {
+    "description": "Swain County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Swain County. Swain County Department of Social Services office in Bryson City processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Swain County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Swain County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Swain. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "328": {
+    "description": "Transylvania County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Transylvania County. Transylvania County Department of Social Services office in Brevard processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Transylvania County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Transylvania County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Transylvania. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "329": {
+    "description": "Tyrrell County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Tyrrell County. Tyrrell County Department of Social Services office in Columbia processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Tyrrell County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Tyrrell County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Tyrrell. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "330": {
+    "description": "Union County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Union County. Union County Department of Social Services office in Union processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Union County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Union County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Union. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "331": {
+    "description": "Vance County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Vance County. Vance County Department of Social Services office in Henderson processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Vance County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Vance County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Vance. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "332": {
+    "description": "Wake County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Wake County. Wake County Department of Social Services office in Raleigh processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Wake County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Wake County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Wake. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "333": {
+    "description": "Warren County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Warren County. Warren County Department of Social Services office in Warrenton processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Warren County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Warren County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Warren. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "334": {
+    "description": "Washington County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Washington County. Washington County Department of Social Services office in Plymouth processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Washington County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Washington County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Washington. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "335": {
+    "description": "Watauga County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Watauga County. Watauga County Department of Social Services office in Boone processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Watauga County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Watauga County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Watauga. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "336": {
+    "description": "Wayne County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Wayne County. Wayne County Department of Social Services office in Goldsboro processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Wayne County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Wayne County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Wayne. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "337": {
+    "description": "Wilkes County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Wilkes County. Wilkes County Department of Social Services office in Wilkesboro processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Wilkes County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Wilkes County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Wilkes. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "338": {
+    "description": "Wilson County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Wilson County. Wilson County Department of Social Services office in Wilson processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Wilson County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Wilson County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Wilson. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "339": {
+    "description": "Yadkin County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Yadkin County. Yadkin County Department of Social Services office in Yadkinville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Yadkin County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Yadkin County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Yadkin. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "340": {
+    "description": "Yancey County DSS — Benefits & Family Support serves justice-involved adults and families rebuilding stability after incarceration in Yancey County. Yancey County Department of Social Services office in Burnsville processes SNAP, Medicaid, NC Health Choice, and Work First applications for North Carolina residents including returning citizens reestablishing food and health benefits after release from Yancey County Jail or NCDAC custody. Bring proof of identity, income, and release or residency documents when applying at a county office or online portal. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Yancey County DSS — Benefits & Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Yancey. Lleve prueba de identidad, ingresos y documentos de liberación o residencia al solicitar en una oficina del condado o portal en línea. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|Document assistance|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  }
+}

@@ -1,0 +1,3062 @@
+{
+  "1": {
+    "notes": "For current intake, call 936-437-2848; visit https://www.tdcj.texas.gov/divisions/rrd/reentry_program.html. Hours vary; check official website.",
+    "notes_es": "Para admisión actual, llame al 936-437-2848; visite https://www.tdcj.texas.gov/divisions/rrd/reentry_program.html. Hours vary; check official website.",
+    "services": "Pre-release planning|Reentry navigation|Partner referrals|Probation and parole supervision",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "2": {
+    "notes": "For current intake, call 512-406-5202; visit https://www.tdcj.texas.gov/divisions/pd/index.html. Hours vary; check official website.",
+    "notes_es": "Para admisión actual, llame al 512-406-5202; visite https://www.tdcj.texas.gov/divisions/pd/index.html. Hours vary; check official website.",
+    "services": "Probation and parole supervision|Partner referrals|Employment compliance|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "3": {
+    "notes": "For current intake, call 877-541-7905; visit https://yourtexasbenefits.com. Hours vary; check official website.",
+    "notes_es": "Para admisión actual, llame al 877-541-7905; visite https://yourtexasbenefits.com. Hours vary; check official website.",
+    "services": "SNAP enrollment|Medicaid enrollment|Cash assistance (TANF)|CHIP enrollment|Benefits renewal",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "4": {
+    "notes": "For current intake, call 800-925-9126; visit https://www.hhs.texas.gov/services/health/medicaid-chip. Hours vary; check official website. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 800-925-9126; visite https://www.hhs.texas.gov/services/health/medicaid-chip. Hours vary; check official website. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "services": "Medicaid enrollment|CHIP application|GED and high school equivalency|Member services|Eligibility determination",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "5": {
+    "notes": "For current intake, call 211; visit https://www.211texas.org. Hours vary; check official website.",
+    "notes_es": "Para admisión actual, llame al 211; visite https://www.211texas.org. Hours vary; check official website.",
+    "services": "Partner referrals|Local program search",
+    "intake_signals": ""
+  },
+  "6": {
+    "notes": "For current intake, visit https://texaslawhelp.org. Hours vary; check official website. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, visite https://texaslawhelp.org. Hours vary; check official website. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "services": "Partner referrals|Expungement assistance|Housing legal resources|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "7": {
+    "notes": "For current intake, call 713-652-0077; visit https://www.lonestarlegal.org. Hours vary; check official website. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 713-652-0077; visite https://www.lonestarlegal.org. Hours vary; check official website. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "services": "Civil legal representation|Housing legal aid|Benefits navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "8": {
+    "notes": "For current intake, call 888-988-9996; visit https://www.trla.org. Hours vary; check official website. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 888-988-9996; visite https://www.trla.org. Hours vary; check official website. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "services": "Civil legal representation|Housing legal aid|Benefits navigation|Immigration legal resources|Expungement assistance",
+    "intake_signals": ""
+  },
+  "9": {
+    "notes": "For current intake, call 800-628-5115; visit https://www.twc.texas.gov/jobseekers/find-work. Hours vary; check official website. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 800-628-5115; visite https://www.twc.texas.gov/jobseekers/find-work. Hours vary; check official website. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "services": "Job search tools|Partner referrals|Workforce development|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "10": {
+    "notes": "For current intake, call 800-252-8387; visit https://www.tvc.texas.gov. Hours vary; check official website.",
+    "notes_es": "Para admisión actual, llame al 800-252-8387; visite https://www.tvc.texas.gov. Hours vary; check official website.",
+    "services": "Benefits navigation|Disability claims navigation|Education benefits guidance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "11": {
+    "notes": "For current intake, call 512-424-2600; visit https://www.dps.texas.gov/section/driver-license. Hours vary; check official website.",
+    "notes_es": "Para admisión actual, llame al 512-424-2600; visite https://www.dps.texas.gov/section/driver-license. Hours vary; check official website.",
+    "services": "Document assistance|ID renewal|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "12": {
+    "notes": "For current intake, call 888-963-7111; visit https://www.dshs.texas.gov/vital-statistics. Hours vary; check official website.",
+    "notes_es": "Para admisión actual, llame al 888-963-7111; visite https://www.dshs.texas.gov/vital-statistics. Hours vary; check official website.",
+    "services": "Document assistance|Online ordering",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "13": {
+    "notes": "For current intake, call 988; visit https://988lifeline.org. Hours vary; check official website. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 988; visite https://988lifeline.org. Hours vary; check official website. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "services": "Crisis services|Behavioral health services",
+    "intake_signals": ""
+  },
+  "14": {
+    "notes": "For current intake, call 800-662-4357; visit https://www.samhsa.gov/find-help/national-helpline. Hours vary; check official website. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, llame al 800-662-4357; visite https://www.samhsa.gov/find-help/national-helpline. Hours vary; check official website. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "services": "Partner referrals|Substance use treatment",
+    "intake_signals": ""
+  },
+  "15": {
+    "notes": "For current intake, visit https://findtreatment.gov. Hours vary; check official website. Bring photo ID, proof of release or supervision, and any court paperwork when applying.",
+    "notes_es": "Para admisión actual, visite https://findtreatment.gov. Hours vary; check official website. Lleve identificación con foto, prueba de liberación o supervisión y documentos judiciales al solicitar.",
+    "services": "Partner referrals|Addiction treatment referrals|Substance use treatment|Residential program finder",
+    "intake_signals": ""
+  },
+  "16": {
+    "notes": "For current intake, call 877-887-6151; visit https://www.tdcj.texas.gov/divisions/rrd/reentry_program.html. Hours vary; check official website.",
+    "notes_es": "Para admisión actual, llame al 877-887-6151; visite https://www.tdcj.texas.gov/divisions/rrd/reentry_program.html. Hours vary; check official website.",
+    "services": "Reentry navigation|Partner referrals|Release planning guidance",
+    "intake_signals": ""
+  },
+  "17": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "18": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "19": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "20": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "21": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "22": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "23": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "24": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "25": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "26": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "27": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "28": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "29": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "30": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "31": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "32": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "33": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "34": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "35": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "36": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "37": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "38": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "39": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "40": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "41": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "42": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "43": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "44": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "45": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "46": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "47": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "48": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "49": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "50": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "51": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "52": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "53": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "54": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "55": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "56": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "57": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "58": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "59": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "60": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "61": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "62": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "63": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "64": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "65": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "66": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "67": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "68": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "69": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "70": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "71": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "72": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "73": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "74": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "75": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "76": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "77": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "78": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "79": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "80": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "81": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "82": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "83": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "84": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "85": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "86": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "87": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "88": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "89": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "90": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "91": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "92": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "93": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "94": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "95": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "96": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "97": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "98": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "99": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "100": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "101": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "102": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "103": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "104": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "105": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "106": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "107": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "108": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "109": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "110": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "111": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "112": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "113": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "114": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "115": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "116": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "117": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "118": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "119": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "120": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "121": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "122": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "123": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "124": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "125": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "126": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "127": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "128": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "129": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "130": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "131": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "132": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "133": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "134": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "135": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "136": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "137": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "138": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "139": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "140": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "141": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "142": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "143": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "144": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "145": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "146": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "147": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "148": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "149": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "150": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "151": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "152": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "153": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "154": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "155": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "156": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "157": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "158": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "159": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "160": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "161": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "162": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "163": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "164": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "165": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "166": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "167": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "168": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "169": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "170": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "171": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "172": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "173": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "174": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "175": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "176": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "177": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "178": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "179": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "180": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "181": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "182": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "183": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "184": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "185": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "186": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "187": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "188": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "189": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "190": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "191": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "192": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "193": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "194": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "195": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "196": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "197": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "198": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "199": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "200": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "201": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "202": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "203": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "204": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "205": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "206": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "207": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "208": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "209": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "210": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "211": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "212": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "213": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "214": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "215": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "216": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "217": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "218": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "219": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "220": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "221": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "222": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "223": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "224": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "225": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "226": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "227": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "228": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "229": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "230": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "231": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "232": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "233": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "234": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "235": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "236": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "237": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "238": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "239": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "240": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "241": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "242": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "243": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "244": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "245": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "246": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "247": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "248": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "249": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "250": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "251": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "252": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "253": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "254": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "255": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "256": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "257": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "258": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "259": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "260": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "261": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "262": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "263": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "264": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "265": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "266": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "267": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "268": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "269": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "270": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "271": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "272": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "273": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "274": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "275": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "276": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "277": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "278": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "279": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "280": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "281": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "282": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "283": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "284": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "285": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "286": {
+    "services": "Probation and parole supervision|Partner referrals|Employment compliance|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "287": {
+    "services": "Probation and parole supervision|Partner referrals|Employment compliance|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "288": {
+    "services": "Probation and parole supervision|Partner referrals|Employment compliance|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "289": {
+    "services": "Probation and parole supervision|Partner referrals|Employment compliance|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "290": {
+    "services": "Probation and parole supervision|Partner referrals|Employment compliance|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "291": {
+    "services": "Probation and parole supervision|Partner referrals|Employment compliance|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "292": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "293": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "294": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "295": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "296": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "297": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "298": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "299": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "300": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "301": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "302": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "303": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "304": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "305": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "306": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "307": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "308": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "309": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "310": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "311": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "312": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "313": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "314": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "315": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "316": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "317": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "318": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "319": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "320": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "321": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "322": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "323": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "324": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "325": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "326": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "327": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "328": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "329": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "330": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "331": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "332": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "333": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "334": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "335": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "336": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "337": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "338": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "339": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "340": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "341": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "342": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "343": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "344": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "345": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "346": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "347": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "348": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "349": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "350": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "351": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "352": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "353": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "354": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "355": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "356": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "357": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "358": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "359": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "360": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "361": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "362": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "363": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "364": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "365": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "366": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "367": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "368": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "369": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "370": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "371": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "372": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "373": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "374": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "375": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "376": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "377": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "378": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "379": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "380": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "381": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "382": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "383": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "384": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "385": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "386": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "387": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "388": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "389": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "390": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "391": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "392": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "393": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "394": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "395": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "396": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "397": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "398": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "399": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "400": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "401": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "402": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "403": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "404": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "405": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "406": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "407": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "408": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "409": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "410": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "411": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "412": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "413": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "414": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "415": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "416": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "417": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "418": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "419": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "420": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "421": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "422": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "423": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "424": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "425": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "426": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "427": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "428": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "429": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "430": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "431": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "432": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "433": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "434": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "435": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "436": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "437": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "438": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "439": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "440": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "441": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "442": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "443": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "444": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "445": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "446": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "447": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "448": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "449": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "450": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "451": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "452": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "453": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "454": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "455": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "456": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "457": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "458": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "459": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "460": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "461": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "462": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "463": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "464": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "465": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "466": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "467": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "468": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "469": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "470": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "471": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "472": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "473": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "474": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "475": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "476": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "477": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "478": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "479": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "480": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "481": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "482": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "483": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "484": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "485": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "486": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "487": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "488": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "489": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "490": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "491": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "492": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "493": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "494": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "495": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "496": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "497": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "498": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "499": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "500": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "501": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "502": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "503": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "504": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "505": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "506": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "507": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "508": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "509": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "510": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "511": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "512": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "513": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "514": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "515": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "516": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "517": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "518": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "519": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "520": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "521": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "522": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "523": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "524": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "525": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "526": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "527": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "528": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "529": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "530": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "531": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "532": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "533": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "534": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "535": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "536": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "537": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "538": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "539": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "540": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "541": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "542": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "543": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "544": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "545": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "546": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "547": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "548": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "549": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "550": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "551": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "552": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "553": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "554": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "555": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "556": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "557": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "558": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "559": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "560": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "561": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "562": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "563": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "564": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "565": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "566": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "567": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "568": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "569": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "570": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "571": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "572": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "573": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "574": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "575": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "576": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "577": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "578": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "579": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "580": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "581": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "582": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "583": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "584": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "585": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "586": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "587": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "588": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "589": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "590": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "591": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "592": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "593": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "594": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "595": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "596": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "597": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "598": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "599": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "600": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "601": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "602": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "603": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "604": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "605": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "606": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "607": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "608": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "609": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "610": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "611": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "612": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "613": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "614": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "615": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "616": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "617": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "618": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "619": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "620": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "621": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "622": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "623": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "624": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "625": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "626": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "627": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "628": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "629": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "630": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "631": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "632": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "633": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "634": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "635": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "636": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "637": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "638": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "639": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "640": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "641": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "642": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "643": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "644": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "645": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "646": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "647": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "648": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "649": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "650": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "651": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "652": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "653": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "654": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "655": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "656": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "657": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "658": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "659": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "660": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "661": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "662": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "663": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "664": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "665": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "666": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "667": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "668": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "669": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "670": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "671": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "672": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "673": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "674": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "675": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "676": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "677": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "678": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "679": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "680": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "681": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "682": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "683": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "684": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "685": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "686": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "687": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "688": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "689": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "690": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "691": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "692": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "693": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "694": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "695": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "696": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "697": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "698": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "699": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "700": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "701": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "702": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "703": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "704": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "705": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "706": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "707": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "708": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "709": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "710": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "711": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "712": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "713": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "714": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "715": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "716": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "717": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "718": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "719": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "720": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "721": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "722": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "723": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "724": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "725": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "726": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "727": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "728": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "729": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "730": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "731": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "732": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "733": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "734": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "735": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "736": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "737": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "738": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "739": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "740": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "741": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "742": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "743": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "744": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "745": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "746": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "747": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "748": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "749": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "750": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "751": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "752": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "753": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "754": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "755": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "756": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "757": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "758": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "759": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "760": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "761": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "762": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "763": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "764": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "765": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "766": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "767": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "768": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "769": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "770": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "771": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "772": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "773": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "774": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "775": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "776": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "777": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "778": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "779": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "780": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "781": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "782": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "783": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "784": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "785": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "786": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "787": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "788": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "789": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "790": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "791": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "792": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "793": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "794": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "795": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "796": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "797": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "798": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "799": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "800": {
+    "description": "Lone Star Legal Aid — Houston is a statewide or regional referral resource for Texans affected by the criminal justice system. Lone Star Legal Aid — Houston connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris, Fort Bend, Montgomery, and Galveston counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Lone Star Legal Aid — Houston es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Harris, Fort Bend, Montgomery y Galveston. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|legal-aid|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "801": {
+    "description": "Texas RioGrande Legal Aid — South Texas is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas RioGrande Legal Aid — South Texas connects justice-involved adults in Bexar County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in 5 Texas counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas RioGrande Legal Aid — South Texas es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en 5 condados de Texas. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "san-antonio|bexar|legal-aid|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "802": {
+    "description": "Houston METRO — Reduced Fare is a statewide or regional referral resource for Texans affected by the criminal justice system. Houston METRO — Reduced Fare connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Houston METRO — Reduced Fare es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Harris. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|transportation|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "803": {
+    "description": "Capital Metro — Austin Transit is a statewide or regional referral resource for Texans affected by the criminal justice system. Capital Metro — Austin Transit connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis, Williamson, and Hays counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Capital Metro — Austin Transit es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Travis, Williamson y Hays. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|transportation|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "804": {
+    "description": "North Texas Food Bank is a statewide or regional referral resource for Texans affected by the criminal justice system. North Texas Food Bank connects justice-involved adults in Dallas County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Dallas, Collin, Tarrant, and Denton counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "North Texas Food Bank es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Dallas, Collin, Tarrant y Denton. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "dallas|dallas|food-nutrition|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "805": {
+    "description": "Central Texas Food Bank is a statewide or regional referral resource for Texans affected by the criminal justice system. Central Texas Food Bank connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis, Williamson, Hays, and Bastrop counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Central Texas Food Bank es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Travis, Williamson, Hays y Bastrop. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|food-nutrition|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "806": {
+    "description": "Goodwill Central Texas — Reentry Employment is a statewide or regional referral resource for Texans affected by the criminal justice system. Goodwill Central Texas — Reentry Employment connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis, Williamson, and Hays counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Goodwill Central Texas — Reentry Employment es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Travis, Williamson y Hays. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|employment|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "807": {
+    "description": "Star of Hope — Houston Shelter is a statewide or regional referral resource for Texans affected by the criminal justice system. Star of Hope — Houston Shelter connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Star of Hope — Houston Shelter es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Harris. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "808": {
+    "description": "Salvation Army — Houston Area Command is a statewide or regional referral resource for Texans affected by the criminal justice system. Salvation Army — Houston Area Command connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris, and Fort Bend counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Salvation Army — Houston Area Command es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Harris y Fort Bend. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|basic-needs|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "809": {
+    "description": "Salvation Army — Dallas is a statewide or regional referral resource for Texans affected by the criminal justice system. Salvation Army — Dallas connects justice-involved adults in Dallas County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Dallas, Tarrant, and Collin counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Salvation Army — Dallas es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Dallas, Tarrant y Collin. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "dallas|dallas|basic-needs|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "810": {
+    "description": "Catholic Charities — Galveston-Houston is a statewide or regional referral resource for Texans affected by the criminal justice system. Catholic Charities — Galveston-Houston connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris, Galveston, and Fort Bend counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Catholic Charities — Galveston-Houston es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Harris, Galveston y Fort Bend. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|basic-needs|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "811": {
+    "description": "United Way of Greater Houston — 211 is a statewide or regional referral resource for Texans affected by the criminal justice system. United Way of Greater Houston — 211 connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris, Fort Bend, and Montgomery counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "United Way of Greater Houston — 211 es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Harris, Fort Bend y Montgomery. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|basic-needs|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "812": {
+    "description": "St. Vincent de Paul — Dallas is a statewide or regional referral resource for Texans affected by the criminal justice system. St. Vincent de Paul — Dallas connects justice-involved adults in Dallas County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Dallas County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "St. Vincent de Paul — Dallas es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Dallas. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "dallas|dallas|basic-needs|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "813": {
+    "description": "Christian Assistance Ministry — San Antonio is a statewide or regional referral resource for Texans affected by the criminal justice system. Christian Assistance Ministry — San Antonio connects justice-involved adults in Bexar County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Bexar County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Christian Assistance Ministry — San Antonio es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Bexar. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "san-antonio|bexar|basic-needs|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "814": {
+    "description": "Austin Area Urban League — Basic Needs is a statewide or regional referral resource for Texans affected by the criminal justice system. Austin Area Urban League — Basic Needs connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis, and Williamson counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Austin Area Urban League — Basic Needs es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Travis y Williamson. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|basic-needs|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "815": {
+    "description": "El Pasoans Fighting Hunger is a statewide or regional referral resource for Texans affected by the criminal justice system. El Pasoans Fighting Hunger connects justice-involved adults in El Paso County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in El Paso County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "El Pasoans Fighting Hunger es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de El Paso. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "el-paso|el-paso|basic-needs|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "816": {
+    "description": "Tarrant Area Food Bank is a statewide or regional referral resource for Texans affected by the criminal justice system. Tarrant Area Food Bank connects justice-involved adults in Tarrant County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Tarrant, Parker, and Johnson counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Tarrant Area Food Bank es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Tarrant, Parker y Johnson. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "fort-worth|tarrant|basic-needs|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "817": {
+    "description": "Coastal Bend Food Bank is a statewide or regional referral resource for Texans affected by the criminal justice system. Coastal Bend Food Bank connects justice-involved adults in Nueces County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Nueces, and San Patricio counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Coastal Bend Food Bank es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Nueces y San Patricio. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "corpus-christi|nueces|basic-needs|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "818": {
+    "description": "Texas Adult Education — Statewide is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Adult Education — Statewide connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in throughout Texas. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Adult Education — Statewide es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Texas. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|education|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "819": {
+    "description": "Houston Community College — Adult Education is a statewide or regional referral resource for Texans affected by the criminal justice system. Houston Community College — Adult Education connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris, and Fort Bend counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Houston Community College — Adult Education es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Harris y Fort Bend. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|education|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "820": {
+    "description": "Dallas College — Adult Education & GED is a statewide or regional referral resource for Texans affected by the criminal justice system. Dallas College — Adult Education & GED connects justice-involved adults in Dallas County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Dallas County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Dallas College — Adult Education & GED es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Dallas. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "dallas|dallas|education|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "821": {
+    "description": "Austin Community College — Adult Education is a statewide or regional referral resource for Texans affected by the criminal justice system. Austin Community College — Adult Education connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis, Williamson, and Hays counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Austin Community College — Adult Education es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Travis, Williamson y Hays. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|education|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "822": {
+    "description": "Alamo Colleges — San Antonio Adult Ed is a statewide or regional referral resource for Texans affected by the criminal justice system. Alamo Colleges — San Antonio Adult Ed connects justice-involved adults in Bexar County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Bexar, and Comal counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Alamo Colleges — San Antonio Adult Ed es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Bexar y Comal. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "san-antonio|bexar|education|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "823": {
+    "description": "El Paso Community College — GED is a statewide or regional referral resource for Texans affected by the criminal justice system. El Paso Community College — GED connects justice-involved adults in El Paso County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in El Paso County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "El Paso Community College — GED es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de El Paso. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "el-paso|el-paso|education|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "824": {
+    "description": "Tarrant County College — Adult Education is a statewide or regional referral resource for Texans affected by the criminal justice system. Tarrant County College — Adult Education connects justice-involved adults in Tarrant County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Tarrant County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Tarrant County College — Adult Education es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Tarrant. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "fort-worth|tarrant|education|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "825": {
+    "description": "Lone Star College — Adult Education is a statewide or regional referral resource for Texans affected by the criminal justice system. Lone Star College — Adult Education connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris, Montgomery, and Fort Bend counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Lone Star College — Adult Education es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Harris, Montgomery y Fort Bend. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|education|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "826": {
+    "description": "Tyler Junior College — Adult Education is a statewide or regional referral resource for Texans affected by the criminal justice system. Tyler Junior College — Adult Education connects justice-involved adults in Smith County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Smith, and Gregg counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Tyler Junior College — Adult Education es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Smith y Gregg. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "tyler|smith|education|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "827": {
+    "description": "Amarillo College — Adult Education is a statewide or regional referral resource for Texans affected by the criminal justice system. Amarillo College — Adult Education connects justice-involved adults in Potter County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Potter, and Randall counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Amarillo College — Adult Education es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Potter y Randall. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "amarillo|potter|education|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "828": {
+    "description": "South Texas College — Adult Education is a statewide or regional referral resource for Texans affected by the criminal justice system. South Texas College — Adult Education connects justice-involved adults in Hidalgo County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Hidalgo, and Starr counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "South Texas College — Adult Education es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Hidalgo y Starr. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "mcallen|hidalgo|education|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "829": {
+    "description": "Midland College — Adult Education is a statewide or regional referral resource for Texans affected by the criminal justice system. Midland College — Adult Education connects justice-involved adults in Midland County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Midland, and Ector counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Midland College — Adult Education es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Midland y Ector. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "midland|midland|education|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "830": {
+    "description": "Texas Family Initiative — Parent Support is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Family Initiative — Parent Support connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis, and Williamson counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Family Initiative — Parent Support es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Travis y Williamson. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|family-children|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "831": {
+    "description": "Children at Risk — Houston is a statewide or regional referral resource for Texans affected by the criminal justice system. Children at Risk — Houston connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris, and Fort Bend counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Children at Risk — Houston es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Harris y Fort Bend. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|family-children|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "832": {
+    "description": "Any Baby Can — San Antonio is a statewide or regional referral resource for Texans affected by the criminal justice system. Any Baby Can — San Antonio connects justice-involved adults in Bexar County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Bexar County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Any Baby Can — San Antonio es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Bexar. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "san-antonio|bexar|family-children|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "833": {
+    "description": "San Antonio Food Bank is a statewide or regional referral resource for Texans affected by the criminal justice system. San Antonio Food Bank connects justice-involved adults in Bexar County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Bexar, Comal, and Guadalupe counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "San Antonio Food Bank es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Bexar, Comal y Guadalupe. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "san-antonio|bexar|food-nutrition|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "834": {
+    "description": "Houston Food Bank is a statewide or regional referral resource for Texans affected by the criminal justice system. Houston Food Bank connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris, Fort Bend, and Montgomery counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Houston Food Bank es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Harris, Fort Bend y Montgomery. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|food-nutrition|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "835": {
+    "description": "The Bridge — Dallas Homeless Recovery is a statewide or regional referral resource for Texans affected by the criminal justice system. The Bridge — Dallas Homeless Recovery connects justice-involved adults in Dallas County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Dallas County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "The Bridge — Dallas Homeless Recovery es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Dallas. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "dallas|dallas|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "836": {
+    "description": "Austin Resource Center for the Homeless (ARCH) is a statewide or regional referral resource for Texans affected by the criminal justice system. Austin Resource Center for the Homeless (ARCH) connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Austin Resource Center for the Homeless (ARCH) es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Travis. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "837": {
+    "description": "SAMMinistries — San Antonio Transitional Housing is a statewide or regional referral resource for Texans affected by the criminal justice system. SAMMinistries — San Antonio Transitional Housing connects justice-involved adults in Bexar County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Bexar County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "SAMMinistries — San Antonio Transitional Housing es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Bexar. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "san-antonio|bexar|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "838": {
+    "description": "Salvation Army — Austin Shelter is a statewide or regional referral resource for Texans affected by the criminal justice system. Salvation Army — Austin Shelter connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis, and Williamson counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Salvation Army — Austin Shelter es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Travis y Williamson. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "839": {
+    "description": "Family Gateway — Dallas Family Shelter is a statewide or regional referral resource for Texans affected by the criminal justice system. Family Gateway — Dallas Family Shelter connects justice-involved adults in Dallas County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Dallas County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Family Gateway — Dallas Family Shelter es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Dallas. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "dallas|dallas|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "840": {
+    "description": "Presbyterian Night Shelter — Fort Worth is a statewide or regional referral resource for Texans affected by the criminal justice system. Presbyterian Night Shelter — Fort Worth connects justice-involved adults in Tarrant County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Tarrant County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Presbyterian Night Shelter — Fort Worth es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Tarrant. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "fort-worth|tarrant|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "841": {
+    "description": "Rescue Mission of El Paso is a statewide or regional referral resource for Texans affected by the criminal justice system. Rescue Mission of El Paso connects justice-involved adults in El Paso County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in El Paso County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Rescue Mission of El Paso es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de El Paso. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "el-paso|el-paso|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "842": {
+    "description": "Corpus Christi Metro Ministries is a statewide or regional referral resource for Texans affected by the criminal justice system. Corpus Christi Metro Ministries connects justice-involved adults in Nueces County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Nueces County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Corpus Christi Metro Ministries es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Nueces. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "corpus-christi|nueces|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "843": {
+    "description": "The Salvation Army — Lubbock Shelter is a statewide or regional referral resource for Texans affected by the criminal justice system. The Salvation Army — Lubbock Shelter connects justice-involved adults in Lubbock County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Lubbock County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "The Salvation Army — Lubbock Shelter es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Lubbock. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "lubbock|lubbock|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "844": {
+    "description": "Tyler Day Nursery — Transitional Support is a statewide or regional referral resource for Texans affected by the criminal justice system. Tyler Day Nursery — Transitional Support connects justice-involved adults in Smith County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Smith County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Tyler Day Nursery — Transitional Support es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Smith. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "tyler|smith|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "845": {
+    "description": "Midland Fair Havens — Transitional Housing is a statewide or regional referral resource for Texans affected by the criminal justice system. Midland Fair Havens — Transitional Housing connects justice-involved adults in Midland County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Midland County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Midland Fair Havens — Transitional Housing es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Midland. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "midland|midland|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "846": {
+    "description": "Rio Grande Valley — Proyecto Azteca Housing is a statewide or regional referral resource for Texans affected by the criminal justice system. Rio Grande Valley — Proyecto Azteca Housing connects justice-involved adults in Hidalgo County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Hidalgo, Starr, and Cameron counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Rio Grande Valley — Proyecto Azteca Housing es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Hidalgo, Starr y Cameron. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "san-juan|hidalgo|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "847": {
+    "description": "Volunteer Legal Services of Central Texas is a statewide or regional referral resource for Texans affected by the criminal justice system. Volunteer Legal Services of Central Texas connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis, Williamson, and Hays counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Volunteer Legal Services of Central Texas es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Travis, Williamson y Hays. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|legal-aid|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "848": {
+    "description": "Legal Aid of NorthWest Texas is a statewide or regional referral resource for Texans affected by the criminal justice system. Legal Aid of NorthWest Texas connects justice-involved adults in Tarrant County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Tarrant, Dallas, Collin, and Denton counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Legal Aid of NorthWest Texas es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Tarrant, Dallas, Collin y Denton. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "fort-worth|tarrant|legal-aid|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "849": {
+    "description": "Lone Star Legal Aid — Beaumont is a statewide or regional referral resource for Texans affected by the criminal justice system. Lone Star Legal Aid — Beaumont connects justice-involved adults in Jefferson County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Jefferson, Orange, and Hardin counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Lone Star Legal Aid — Beaumont es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Jefferson, Orange y Hardin. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "beaumont|jefferson|legal-aid|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "850": {
+    "description": "Texas Legal Services Center — Austin is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Legal Services Center — Austin connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis, and Williamson counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Legal Services Center — Austin es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Travis y Williamson. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|legal-aid|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "851": {
+    "description": "Houston Volunteer Lawyers is a statewide or regional referral resource for Texans affected by the criminal justice system. Houston Volunteer Lawyers connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris, and Fort Bend counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Houston Volunteer Lawyers es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Harris y Fort Bend. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|legal-aid|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "852": {
+    "description": "Disability Rights Texas — Legal Advocacy is a statewide or regional referral resource for Texans affected by the criminal justice system. Disability Rights Texas — Legal Advocacy connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in throughout Texas. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Disability Rights Texas — Legal Advocacy es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Texas. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|legal-aid|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "853": {
+    "description": "Texas Fair Defense Project is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Fair Defense Project connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in throughout Texas. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Fair Defense Project es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Texas. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|legal-aid|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "854": {
+    "description": "Texas County Clerk — Birth Certificate (Travis) is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas County Clerk — Birth Certificate (Travis) connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas County Clerk — Birth Certificate (Travis) es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Travis. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|id-documentation|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "855": {
+    "description": "Harris County Clerk — Vital Records is a statewide or regional referral resource for Texans affected by the criminal justice system. Harris County Clerk — Vital Records connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Harris County Clerk — Vital Records es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Harris. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|id-documentation|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "856": {
+    "description": "Dallas County Clerk — Vital Records is a statewide or regional referral resource for Texans affected by the criminal justice system. Dallas County Clerk — Vital Records connects justice-involved adults in Dallas County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Dallas County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Dallas County Clerk — Vital Records es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Dallas. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "dallas|dallas|id-documentation|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "857": {
+    "description": "Bexar County Clerk — Vital Records is a statewide or regional referral resource for Texans affected by the criminal justice system. Bexar County Clerk — Vital Records connects justice-involved adults in Bexar County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Bexar County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Bexar County Clerk — Vital Records es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Bexar. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "san-antonio|bexar|id-documentation|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "858": {
+    "description": "Texas Offenders Reentry Initiative (TORI) — Peer Support is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Offenders Reentry Initiative (TORI) — Peer Support connects justice-involved adults in Dallas County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Dallas, and Tarrant counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Offenders Reentry Initiative (TORI) — Peer Support es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Dallas y Tarrant. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "dallas|dallas|peer-support|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "859": {
+    "description": "All of Us or None — Texas Chapter is a statewide or regional referral resource for Texans affected by the criminal justice system. All of Us or None — Texas Chapter connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "All of Us or None — Texas Chapter es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Harris. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|peer-support|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "860": {
+    "description": "Texas Reentry Services — Peer Navigation is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Reentry Services — Peer Navigation connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris, and Fort Bend counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Reentry Services — Peer Navigation es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Harris y Fort Bend. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|peer-support|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "861": {
+    "description": "Formerly Incarcerated Peer Support — Austin is a statewide or regional referral resource for Texans affected by the criminal justice system. Formerly Incarcerated Peer Support — Austin connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis, and Williamson counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Formerly Incarcerated Peer Support — Austin es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Travis y Williamson. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|peer-support|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "862": {
+    "description": "TDCJ — Region VI Parole ( Lubbock ) is a statewide or regional referral resource for Texans affected by the criminal justice system. TDCJ — Region VI Parole ( Lubbock ) connects justice-involved adults in Lubbock County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Lubbock, Hale, and Lamb counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "TDCJ — Region VI Parole ( Lubbock ) es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Lubbock, Hale y Lamb. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "lubbock|lubbock|probation-parole|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "863": {
+    "description": "TDCJ — Region VII Parole ( Midland ) is a statewide or regional referral resource for Texans affected by the criminal justice system. TDCJ — Region VII Parole ( Midland ) connects justice-involved adults in Midland County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Midland, Ector, and Howard counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "TDCJ — Region VII Parole ( Midland ) es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Midland, Ector y Howard. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "midland|midland|probation-parole|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "864": {
+    "description": "TDCJ — Region VIII Parole ( Corpus Christi ) is a statewide or regional referral resource for Texans affected by the criminal justice system. TDCJ — Region VIII Parole ( Corpus Christi ) connects justice-involved adults in Nueces County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Nueces, San Patricio, and Kleberg counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "TDCJ — Region VIII Parole ( Corpus Christi ) es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Nueces, San Patricio y Kleberg. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "corpus-christi|nueces|probation-parole|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "865": {
+    "description": "HHSC — Health & Human Services Commission is a statewide or regional referral resource for Texans affected by the criminal justice system. HHSC — Health & Human Services Commission connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in throughout Texas. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "HHSC — Health & Human Services Commission es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Texas. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|state-agency|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "866": {
+    "description": "Texas Health and Human Services — Benefits Helpline is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Health and Human Services — Benefits Helpline connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in throughout Texas. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Health and Human Services — Benefits Helpline es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Texas. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|state-agency|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "867": {
+    "description": "Serenity House — Houston SUD Treatment is a statewide or regional referral resource for Texans affected by the criminal justice system. Serenity House — Houston SUD Treatment connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Serenity House — Houston SUD Treatment es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Harris. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|substance-use-treatment|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "868": {
+    "description": "Phoenix House — Dallas Treatment is a statewide or regional referral resource for Texans affected by the criminal justice system. Phoenix House — Dallas Treatment connects justice-involved adults in Dallas County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Dallas, and Tarrant counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Phoenix House — Dallas Treatment es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Dallas y Tarrant. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "dallas|dallas|substance-use-treatment|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "869": {
+    "description": "Center for Health Care Services — San Antonio is a statewide or regional referral resource for Texans affected by the criminal justice system. Center for Health Care Services — San Antonio connects justice-involved adults in Bexar County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Bexar County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Center for Health Care Services — San Antonio es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Bexar. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "san-antonio|bexar|substance-use-treatment|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "870": {
+    "description": "Integral Care — Austin Behavioral Health is a statewide or regional referral resource for Texans affected by the criminal justice system. Integral Care — Austin Behavioral Health connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis, and Williamson counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Integral Care — Austin Behavioral Health es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Travis y Williamson. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|substance-use-treatment|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "871": {
+    "description": "DART — Dallas Area Rapid Transit Reduced Fare is a statewide or regional referral resource for Texans affected by the criminal justice system. DART — Dallas Area Rapid Transit Reduced Fare connects justice-involved adults in Dallas County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Dallas, Collin, and Denton counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "DART — Dallas Area Rapid Transit Reduced Fare es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Dallas, Collin y Denton. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "dallas|dallas|transportation|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "872": {
+    "description": "VIA Metropolitan Transit — San Antonio is a statewide or regional referral resource for Texans affected by the criminal justice system. VIA Metropolitan Transit — San Antonio connects justice-involved adults in Bexar County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Bexar County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "VIA Metropolitan Transit — San Antonio es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Bexar. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "san-antonio|bexar|transportation|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "873": {
+    "description": "Texas Veterans Commission — Houston is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Veterans Commission — Houston connects justice-involved adults in Harris County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Harris, Fort Bend, and Montgomery counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Veterans Commission — Houston es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Harris, Fort Bend y Montgomery. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "houston|harris|veterans|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "874": {
+    "description": "Texas Veterans Commission — Dallas is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Veterans Commission — Dallas connects justice-involved adults in Dallas County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Dallas, Tarrant, and Collin counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Veterans Commission — Dallas es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Dallas, Tarrant y Collin. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "dallas|dallas|veterans|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "875": {
+    "description": "Texas Veterans Commission — San Antonio is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Veterans Commission — San Antonio connects justice-involved adults in Bexar County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Bexar, and Comal counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Veterans Commission — San Antonio es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Bexar y Comal. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "san-antonio|bexar|veterans|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "876": {
+    "description": "Texas Veterans Commission — Austin is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Veterans Commission — Austin connects justice-involved adults in Travis County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Travis, and Williamson counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Veterans Commission — Austin es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Travis y Williamson. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "austin|travis|veterans|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "877": {
+    "description": "Texas Veterans Commission — El Paso is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Veterans Commission — El Paso connects justice-involved adults in El Paso County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in El Paso County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Veterans Commission — El Paso es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de El Paso. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "el-paso|el-paso|veterans|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "878": {
+    "description": "Texas Veterans Commission — Fort Worth is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Veterans Commission — Fort Worth connects justice-involved adults in Tarrant County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Tarrant, and Parker counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Veterans Commission — Fort Worth es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Tarrant y Parker. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "fort-worth|tarrant|veterans|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "879": {
+    "description": "Texas Veterans Commission — Lubbock is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Veterans Commission — Lubbock connects justice-involved adults in Lubbock County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Lubbock, and Hale counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Veterans Commission — Lubbock es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Lubbock y Hale. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "lubbock|lubbock|veterans|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "880": {
+    "description": "Texas Veterans Commission — Corpus Christi is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Veterans Commission — Corpus Christi connects justice-involved adults in Nueces County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Nueces, and San Patricio counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Veterans Commission — Corpus Christi es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Nueces y San Patricio. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "corpus-christi|nueces|veterans|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "881": {
+    "description": "Texas Veterans Commission — Tyler is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Veterans Commission — Tyler connects justice-involved adults in Smith County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Smith, and Gregg counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Veterans Commission — Tyler es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Smith y Gregg. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "tyler|smith|veterans|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "882": {
+    "description": "Texas Veterans Commission — McAllen is a statewide or regional referral resource for Texans affected by the criminal justice system. Texas Veterans Commission — McAllen connects justice-involved adults in Hidalgo County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Hidalgo, and Starr counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Texas Veterans Commission — McAllen es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Hidalgo y Starr. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "mcallen|hidalgo|veterans|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "883": {
+    "description": "The Salvation Army — Waco Shelter is a statewide or regional referral resource for Texans affected by the criminal justice system. The Salvation Army — Waco Shelter connects justice-involved adults in McLennan County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in McLennan, and Falls counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "The Salvation Army — Waco Shelter es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados McLennan y Falls. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "waco|mclennan|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "884": {
+    "description": "Hope Haven — Amarillo Transitional Housing is a statewide or regional referral resource for Texans affected by the criminal justice system. Hope Haven — Amarillo Transitional Housing connects justice-involved adults in Potter County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Potter, and Randall counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Hope Haven — Amarillo Transitional Housing es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Potter y Randall. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "amarillo|potter|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "885": {
+    "description": "Abilene Hope Haven — Transitional Housing is a statewide or regional referral resource for Texans affected by the criminal justice system. Abilene Hope Haven — Transitional Housing connects justice-involved adults in Taylor County and surrounding areas to essential reentry supports including referrals to Your Texas Benefits, Workforce Solutions, and local treatment providers. Contact the program directly to confirm current hours and intake requirements. Users can search by location, service type, or need to find active providers in Taylor, and Jones counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Abilene Hope Haven — Transitional Housing es un recurso de referencia estatal o regional para texanos afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Taylor y Jones. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "abilene|taylor|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": ""
+  },
+  "886": {
+    "description": "Brazos Valley Homeless Coalition is a regional reentry coalition serving Brazos, and Robertson counties. Partner agencies, faith communities, and workforce organizations meet regularly to share resources and warm referrals for people leaving jail or prison, on probation or parole, and their families. Coordinators help returning citizens connect to housing, employment, treatment, legal aid, and benefits through local partners. This is primarily a networking and navigation council—not an emergency shelter, cash assistance, or crisis line.",
+    "description_es": "Brazos Valley Homeless Coalition es una coalición regional de reinserción que sirve los condados Brazos y Robertson. Agencias aliadas, comunidades de fe y organizaciones laborales se reúnen para compartir recursos y referencias directas para personas que salen de la cárcel o prisión, en libertad condicional o vigilada, y sus familias. Los coordinadores ayudan a conectar a ciudadanos que regresan con vivienda, empleo, tratamiento, asistencia legal y beneficios a través de aliados locales. Es principalmente un consejo de red y navegación—no un refugio de emergencia, asistencia en efectivo ni línea de crisis.",
+    "tags": "bryan|brazos|housing|reentry|texas",
+    "services": "Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  }
+}

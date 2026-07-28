@@ -1,5 +1,119 @@
 [
   {
+    "state": "Alabama",
+    "county": "Autauga",
+    "lon": -86.65864,
+    "lat": 32.50844
+  },
+  {
+    "state": "Alabama",
+    "county": "Blount",
+    "lon": -86.63497,
+    "lat": 33.9505
+  },
+  {
+    "state": "Alabama",
+    "county": "Chambers",
+    "lon": -85.26449,
+    "lat": 32.89244
+  },
+  {
+    "state": "Alabama",
+    "county": "Chilton",
+    "lon": -86.69752,
+    "lat": 32.84032
+  },
+  {
+    "state": "Alabama",
+    "county": "Colbert",
+    "lon": -87.87336,
+    "lat": 34.71231
+  },
+  {
+    "state": "Alabama",
+    "county": "Dale",
+    "lon": -85.61857,
+    "lat": 31.43163
+  },
+  {
+    "state": "Alabama",
+    "county": "Elmore",
+    "lon": -86.20416,
+    "lat": 32.63101
+  },
+  {
+    "state": "Alabama",
+    "county": "Hale",
+    "lon": -87.62391,
+    "lat": 32.7351
+  },
+  {
+    "state": "Alabama",
+    "county": "Lawrence",
+    "lon": -87.26991,
+    "lat": 34.57707
+  },
+  {
+    "state": "Alabama",
+    "county": "Limestone",
+    "lon": -86.94644,
+    "lat": 34.91922
+  },
+  {
+    "state": "Alabama",
+    "county": "Monroe",
+    "lon": -87.38025,
+    "lat": 31.55955
+  },
+  {
+    "state": "Alabama",
+    "county": "Pickens",
+    "lon": -88.1337,
+    "lat": 33.34061
+  },
+  {
+    "state": "Alabama",
+    "county": "Talladega",
+    "lon": -86.10653,
+    "lat": 33.37684
+  },
+  {
+    "state": "Florida",
+    "county": "Marion",
+    "lon": -82.00889,
+    "lat": 29.23405
+  },
+  {
+    "state": "Florida",
+    "county": "Monroe",
+    "lon": -81.08072,
+    "lat": 25.30287
+  },
+  {
+    "state": "Florida",
+    "county": "Orange",
+    "lon": -81.39835,
+    "lat": 28.5775
+  },
+  {
+    "state": "Florida",
+    "county": "St. Lucie",
+    "lon": -80.40738,
+    "lat": 27.36485
+  },
+  {
+    "state": "Florida",
+    "county": "Sumter",
+    "lon": -82.08531,
+    "lat": 28.67173
+  },
+  {
+    "state": "Florida",
+    "county": "Union",
+    "lon": -82.40736,
+    "lat": 30.00204
+  },
+  {
     "state": "Georgia",
     "county": "Appling",
     "lon": -82.30317,
@@ -70,6 +184,60 @@
     "county": "Gilmer",
     "lon": -84.4875,
     "lat": 34.68199
+  },
+  {
+    "state": "Florida",
+    "county": "Alachua",
+    "lon": -82.32711,
+    "lat": 29.65221
+  },
+  {
+    "state": "Florida",
+    "county": "Calhoun",
+    "lon": -85.17906,
+    "lat": 30.39807
+  },
+  {
+    "state": "Florida",
+    "county": "Columbia",
+    "lon": -82.60861,
+    "lat": 30.39898
+  },
+  {
+    "state": "Florida",
+    "county": "Gadsden",
+    "lon": -84.64791,
+    "lat": 30.61539
+  },
+  {
+    "state": "Florida",
+    "county": "Highlands",
+    "lon": -81.20971,
+    "lat": 27.27243
+  },
+  {
+    "state": "Florida",
+    "county": "Holmes",
+    "lon": -85.72899,
+    "lat": 30.8337
+  },
+  {
+    "state": "Florida",
+    "county": "Leon",
+    "lon": -84.16686,
+    "lat": 30.5091
+  },
+  {
+    "state": "Arizona",
+    "county": "Cochise",
+    "lon": -109.30352,
+    "lat": 31.91659
+  },
+  {
+    "state": "Arizona",
+    "county": "Maricopa",
+    "lon": -112.0355,
+    "lat": 33.59359
   },
   {
     "state": "Georgia",
@@ -630,6 +798,60 @@
     "lat": 37.93135
   },
   {
+    "state": "Mississippi",
+    "county": "Alcorn",
+    "lon": -88.61276,
+    "lat": 34.92716
+  },
+  {
+    "state": "Mississippi",
+    "county": "Calhoun",
+    "lon": -89.31201,
+    "lat": 33.92876
+  },
+  {
+    "state": "Mississippi",
+    "county": "Chickasaw",
+    "lon": -88.92538,
+    "lat": 33.91287
+  },
+  {
+    "state": "Mississippi",
+    "county": "Copiah",
+    "lon": -90.46556,
+    "lat": 31.81528
+  },
+  {
+    "state": "Mississippi",
+    "county": "Franklin",
+    "lon": -90.89583,
+    "lat": 31.47603
+  },
+  {
+    "state": "Mississippi",
+    "county": "Hinds",
+    "lon": -90.38491,
+    "lat": 32.36
+  },
+  {
+    "state": "Mississippi",
+    "county": "Jasper",
+    "lon": -89.122,
+    "lat": 31.94733
+  },
+  {
+    "state": "Mississippi",
+    "county": "Jefferson Davis",
+    "lon": -89.80498,
+    "lat": 31.51405
+  },
+  {
+    "state": "Mississippi",
+    "county": "Lauderdale",
+    "lon": -88.59904,
+    "lat": 32.42403
+  },
+  {
     "state": "Michigan",
     "county": "Antrim",
     "lon": -85.31988,
@@ -774,6 +996,168 @@
     "lat": 44.26413
   },
   {
+    "state": "Mississippi",
+    "county": "Leake",
+    "lon": -89.58137,
+    "lat": 32.73612
+  },
+  {
+    "state": "Mississippi",
+    "county": "Leflore",
+    "lon": -90.25331,
+    "lat": 33.55046
+  },
+  {
+    "state": "Mississippi",
+    "county": "Monroe",
+    "lon": -88.44907,
+    "lat": 33.87147
+  },
+  {
+    "state": "Mississippi",
+    "county": "Neshoba",
+    "lon": -89.07602,
+    "lat": 32.78765
+  },
+  {
+    "state": "Mississippi",
+    "county": "Noxubee",
+    "lon": -88.56523,
+    "lat": 33.14212
+  },
+  {
+    "state": "Mississippi",
+    "county": "Pontotoc",
+    "lon": -89.03485,
+    "lat": 34.23405
+  },
+  {
+    "state": "Mississippi",
+    "county": "Prentiss",
+    "lon": -88.57539,
+    "lat": 34.59019
+  },
+  {
+    "state": "Mississippi",
+    "county": "Simpson",
+    "lon": -89.88782,
+    "lat": 31.90196
+  },
+  {
+    "state": "Mississippi",
+    "county": "Tippah",
+    "lon": -88.89087,
+    "lat": 34.81126
+  },
+  {
+    "state": "Mississippi",
+    "county": "Washington",
+    "lon": -90.98185,
+    "lat": 33.26341
+  },
+  {
+    "state": "North Carolina",
+    "county": "Alamance",
+    "lon": -79.41227,
+    "lat": 36.09695
+  },
+  {
+    "state": "North Carolina",
+    "county": "Alleghany",
+    "lon": -81.09464,
+    "lat": 36.506
+  },
+  {
+    "state": "North Carolina",
+    "county": "Bladen",
+    "lon": -78.49796,
+    "lat": 34.53594
+  },
+  {
+    "state": "North Carolina",
+    "county": "Buncombe",
+    "lon": -82.51247,
+    "lat": 35.59763
+  },
+  {
+    "state": "North Carolina",
+    "county": "Caldwell",
+    "lon": -81.48941,
+    "lat": 35.89465
+  },
+  {
+    "state": "North Carolina",
+    "county": "Dare",
+    "lon": -75.67994,
+    "lat": 35.30566
+  },
+  {
+    "state": "North Carolina",
+    "county": "Davidson",
+    "lon": -80.23871,
+    "lat": 35.84188
+  },
+  {
+    "state": "North Carolina",
+    "county": "Forsyth",
+    "lon": -80.30344,
+    "lat": 36.09998
+  },
+  {
+    "state": "North Carolina",
+    "county": "Guilford",
+    "lon": -79.88465,
+    "lat": 36.08386
+  },
+  {
+    "state": "North Carolina",
+    "county": "Hertford",
+    "lon": -76.91685,
+    "lat": 36.36689
+  },
+  {
+    "state": "North Carolina",
+    "county": "Jones",
+    "lon": -77.43021,
+    "lat": 35.03862
+  },
+  {
+    "state": "North Carolina",
+    "county": "Martin",
+    "lon": -77.11437,
+    "lat": 35.89664
+  },
+  {
+    "state": "North Carolina",
+    "county": "Nash",
+    "lon": -77.92752,
+    "lat": 35.93179
+  },
+  {
+    "state": "North Carolina",
+    "county": "Pender",
+    "lon": -77.81451,
+    "lat": 34.42926
+  },
+  {
+    "state": "North Carolina",
+    "county": "Randolph",
+    "lon": -79.8486,
+    "lat": 35.77212
+  },
+  {
+    "state": "North Carolina",
+    "county": "Scotland",
+    "lon": -79.51575,
+    "lat": 34.7623
+  },
+  {
+    "state": "North Carolina",
+    "county": "Stanly",
+    "lon": -80.30045,
+    "lat": 35.2423
+  },
+  {
     "state": "Ohio",
     "county": "Geauga",
     "lon": -81.12302,
@@ -858,6 +1242,24 @@
     "lat": 41.42902
   },
   {
+    "state": "North Carolina",
+    "county": "Vance",
+    "lon": -78.44433,
+    "lat": 36.33876
+  },
+  {
+    "state": "North Carolina",
+    "county": "Wayne",
+    "lon": -77.91935,
+    "lat": 35.36306
+  },
+  {
+    "state": "North Carolina",
+    "county": "Yadkin",
+    "lon": -80.60499,
+    "lat": 36.14445
+  },
+  {
     "state": "Ohio",
     "county": "Allen",
     "lon": -84.15142,
@@ -886,6 +1288,30 @@
     "county": "Fayette",
     "lon": -83.43422,
     "lat": 39.51233
+  },
+  {
+    "state": "South Carolina",
+    "county": "Allendale",
+    "lon": -81.39111,
+    "lat": 32.9785
+  },
+  {
+    "state": "South Carolina",
+    "county": "Bamberg",
+    "lon": -81.12603,
+    "lat": 33.28322
+  },
+  {
+    "state": "South Carolina",
+    "county": "Clarendon",
+    "lon": -80.2355,
+    "lat": 33.69504
+  },
+  {
+    "state": "South Carolina",
+    "county": "Fairfield",
+    "lon": -81.16769,
+    "lat": 34.42716
   },
   {
     "state": "Tennessee",
@@ -990,6 +1416,30 @@
     "lat": 36.2976
   },
   {
+    "state": "South Carolina",
+    "county": "Hampton",
+    "lon": -81.18509,
+    "lat": 32.68923
+  },
+  {
+    "state": "South Carolina",
+    "county": "Jasper",
+    "lon": -81.04198,
+    "lat": 32.28317
+  },
+  {
+    "state": "South Carolina",
+    "county": "Orangeburg",
+    "lon": -80.82762,
+    "lat": 33.41604
+  },
+  {
+    "state": "South Carolina",
+    "county": "Saluda",
+    "lon": -81.72797,
+    "lat": 34.00301
+  },
+  {
     "state": "Tennessee",
     "county": "White",
     "lon": -85.54015,
@@ -1000,6 +1450,192 @@
     "county": "Wilson",
     "lon": -86.27597,
     "lat": 36.18052
+  },
+  {
+    "state": "Virginia",
+    "county": "Montgomery",
+    "lon": -80.42994,
+    "lat": 37.1812
+  },
+  {
+    "state": "Virginia",
+    "county": "Nelson",
+    "lon": -78.94814,
+    "lat": 37.75694
+  },
+  {
+    "state": "Virginia",
+    "county": "Patrick",
+    "lon": -80.2996,
+    "lat": 36.66099
+  },
+  {
+    "state": "Virginia",
+    "county": "Powhatan",
+    "lon": -77.93952,
+    "lat": 37.56405
+  },
+  {
+    "state": "Virginia",
+    "county": "Pulaski",
+    "lon": -80.63097,
+    "lat": 37.08958
+  },
+  {
+    "state": "Virginia",
+    "county": "Rappahannock",
+    "lon": -78.13767,
+    "lat": 38.74738
+  },
+  {
+    "state": "Virginia",
+    "county": "Smyth",
+    "lon": -81.61708,
+    "lat": 36.88099
+  },
+  {
+    "state": "Virginia",
+    "county": "Warren",
+    "lon": -78.19633,
+    "lat": 38.90086
+  },
+  {
+    "state": "Virginia",
+    "county": "Wythe",
+    "lon": -81.12705,
+    "lat": 36.91829
+  },
+  {
+    "state": "Virginia",
+    "county": "Alexandria",
+    "lon": -77.0589,
+    "lat": 38.82045
+  },
+  {
+    "state": "Virginia",
+    "county": "Buena Vista",
+    "lon": -79.36422,
+    "lat": 37.72792
+  },
+  {
+    "state": "Virginia",
+    "county": "Charlottesville",
+    "lon": -78.49091,
+    "lat": 38.03444
+  },
+  {
+    "state": "Virginia",
+    "county": "Emporia",
+    "lon": -77.53831,
+    "lat": 36.69301
+  },
+  {
+    "state": "Virginia",
+    "county": "Harrisonburg",
+    "lon": -78.87062,
+    "lat": 38.45582
+  },
+  {
+    "state": "Virginia",
+    "county": "Hopewell",
+    "lon": -77.30764,
+    "lat": 37.30341
+  },
+  {
+    "state": "Virginia",
+    "county": "Richmond",
+    "lon": -77.47721,
+    "lat": 37.49663
+  },
+  {
+    "state": "Virginia",
+    "county": "Salem",
+    "lon": -80.04352,
+    "lat": 37.2861
+  },
+  {
+    "state": "Virginia",
+    "county": "Waynesboro",
+    "lon": -78.90613,
+    "lat": 38.06566
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Door",
+    "lon": -87.24509,
+    "lat": 45.02508
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Dunn",
+    "lon": -91.95837,
+    "lat": 44.93483
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Fond du Lac",
+    "lon": -88.42629,
+    "lat": 43.80258
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Green",
+    "lon": -89.60468,
+    "lat": 42.55515
+  },
+  {
+    "state": "Wisconsin",
+    "county": "La Crosse",
+    "lon": -91.21195,
+    "lat": 43.9321
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Lincoln",
+    "lon": -89.81225,
+    "lat": 45.38678
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Marathon",
+    "lon": -89.9201,
+    "lat": 44.92283
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Monroe",
+    "lon": -90.75712,
+    "lat": 43.99762
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Polk",
+    "lon": -92.67408,
+    "lat": 45.47641
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Richland",
+    "lon": -90.44014,
+    "lat": 43.32414
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Shawano",
+    "lon": -88.74813,
+    "lat": 44.82485
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Washburn",
+    "lon": -91.79105,
+    "lat": 45.86894
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Wood",
+    "lon": -89.96164,
+    "lat": 44.40608
   },
   {
     "state": "West Virginia",
@@ -1060,6 +1696,252 @@
     "county": "Webster",
     "lon": -80.42927,
     "lat": 38.52479
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Ashland",
+    "lon": -90.68191,
+    "lat": 46.80957
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Barron",
+    "lon": -91.78724,
+    "lat": 45.38017
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Bayfield",
+    "lon": -91.03919,
+    "lat": 46.80738
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Chippewa",
+    "lon": -91.14876,
+    "lat": 45.05573
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Dane",
+    "lon": -89.39283,
+    "lat": 43.02587
+  },
+  {
+    "state": "Virginia",
+    "county": "Amelia",
+    "lon": -77.928,
+    "lat": 37.35121
+  },
+  {
+    "state": "Virginia",
+    "county": "Bath",
+    "lon": -79.86505,
+    "lat": 38.10421
+  },
+  {
+    "state": "Virginia",
+    "county": "Buckingham",
+    "lon": -78.53983,
+    "lat": 37.64159
+  },
+  {
+    "state": "Virginia",
+    "county": "Clarke",
+    "lon": -77.99908,
+    "lat": 39.09547
+  },
+  {
+    "state": "Virginia",
+    "county": "Culpeper",
+    "lon": -77.84029,
+    "lat": 38.45477
+  },
+  {
+    "state": "Virginia",
+    "county": "Floyd",
+    "lon": -80.31339,
+    "lat": 36.9568
+  },
+  {
+    "state": "Virginia",
+    "county": "Goochland",
+    "lon": -77.93998,
+    "lat": 37.71988
+  },
+  {
+    "state": "Virginia",
+    "county": "King William",
+    "lon": -77.07372,
+    "lat": 37.69485
+  },
+  {
+    "state": "Virginia",
+    "county": "Lunenburg",
+    "lon": -78.24678,
+    "lat": 36.97439
+  },
+  {
+    "state": "Virginia",
+    "county": "Madison",
+    "lon": -78.28942,
+    "lat": 38.41065
+  },
+  {
+    "state": "Alabama",
+    "county": "Choctaw",
+    "lon": -88.30402,
+    "lat": 32.02804
+  },
+  {
+    "state": "Alabama",
+    "county": "Clarke",
+    "lon": -87.85492,
+    "lat": 31.6378
+  },
+  {
+    "state": "Alabama",
+    "county": "Cleburne",
+    "lon": -85.52806,
+    "lat": 33.64315
+  },
+  {
+    "state": "Alabama",
+    "county": "Coffee",
+    "lon": -86.04893,
+    "lat": 31.41708
+  },
+  {
+    "state": "Alabama",
+    "county": "Coosa",
+    "lon": -86.31562,
+    "lat": 32.90127
+  },
+  {
+    "state": "Alabama",
+    "county": "Dallas",
+    "lon": -87.08253,
+    "lat": 32.33924
+  },
+  {
+    "state": "Alabama",
+    "county": "Etowah",
+    "lon": -86.06556,
+    "lat": 33.96547
+  },
+  {
+    "state": "Alabama",
+    "county": "Franklin",
+    "lon": -87.9611,
+    "lat": 34.41907
+  },
+  {
+    "state": "Alabama",
+    "county": "Geneva",
+    "lon": -85.88639,
+    "lat": 31.04502
+  },
+  {
+    "state": "Alabama",
+    "county": "Henry",
+    "lon": -85.14857,
+    "lat": 31.58417
+  },
+  {
+    "state": "Alabama",
+    "county": "Jackson",
+    "lon": -86.15689,
+    "lat": 34.65409
+  },
+  {
+    "state": "Alabama",
+    "county": "Lee",
+    "lon": -85.21279,
+    "lat": 32.57959
+  },
+  {
+    "state": "Alabama",
+    "county": "Lowndes",
+    "lon": -86.71958,
+    "lat": 32.16074
+  },
+  {
+    "state": "Alabama",
+    "county": "Macon",
+    "lon": -85.7348,
+    "lat": 32.43614
+  },
+  {
+    "state": "Alabama",
+    "county": "Madison",
+    "lon": -86.55201,
+    "lat": 34.85592
+  },
+  {
+    "state": "Alabama",
+    "county": "Marion",
+    "lon": -87.99875,
+    "lat": 34.12227
+  },
+  {
+    "state": "Alabama",
+    "county": "Marshall",
+    "lon": -86.26975,
+    "lat": 34.54905
+  },
+  {
+    "state": "Alabama",
+    "county": "Mobile",
+    "lon": -88.20349,
+    "lat": 30.57407
+  },
+  {
+    "state": "Alabama",
+    "county": "Montgomery",
+    "lon": -86.21964,
+    "lat": 32.22225
+  },
+  {
+    "state": "Alabama",
+    "county": "Shelby",
+    "lon": -86.67813,
+    "lat": 33.27244
+  },
+  {
+    "state": "Alabama",
+    "county": "Sumter",
+    "lon": -88.17289,
+    "lat": 32.61709
+  },
+  {
+    "state": "Alabama",
+    "county": "Tuscaloosa",
+    "lon": -87.32769,
+    "lat": 33.30181
+  },
+  {
+    "state": "Alabama",
+    "county": "Wilcox",
+    "lon": -87.32938,
+    "lat": 32.01595
+  },
+  {
+    "state": "Alabama",
+    "county": "Bibb",
+    "lon": -87.20104,
+    "lat": 33.01315
+  },
+  {
+    "state": "Alabama",
+    "county": "Bullock",
+    "lon": -85.69904,
+    "lat": 32.08248
+  },
+  {
+    "state": "Alabama",
+    "county": "Calhoun",
+    "lon": -85.91614,
+    "lat": 33.80618
   },
   {
     "state": "Georgia",
@@ -1146,6 +2028,78 @@
     "lat": 34.38078
   },
   {
+    "state": "Florida",
+    "county": "Nassau",
+    "lon": -81.75026,
+    "lat": 30.6526
+  },
+  {
+    "state": "Florida",
+    "county": "Okaloosa",
+    "lon": -86.52563,
+    "lat": 30.69085
+  },
+  {
+    "state": "Florida",
+    "county": "Osceola",
+    "lon": -81.27045,
+    "lat": 28.10084
+  },
+  {
+    "state": "Florida",
+    "county": "Palm Beach",
+    "lon": -80.17455,
+    "lat": 26.5557
+  },
+  {
+    "state": "Florida",
+    "county": "Pasco",
+    "lon": -82.58671,
+    "lat": 28.31093
+  },
+  {
+    "state": "Florida",
+    "county": "Putnam",
+    "lon": -81.69744,
+    "lat": 29.55092
+  },
+  {
+    "state": "Florida",
+    "county": "St. Johns",
+    "lon": -81.42723,
+    "lat": 29.91733
+  },
+  {
+    "state": "Florida",
+    "county": "Santa Rosa",
+    "lon": -87.0348,
+    "lat": 30.77596
+  },
+  {
+    "state": "Florida",
+    "county": "Sarasota",
+    "lon": -82.40603,
+    "lat": 27.1388
+  },
+  {
+    "state": "Florida",
+    "county": "Seminole",
+    "lon": -81.30156,
+    "lat": 28.77921
+  },
+  {
+    "state": "Florida",
+    "county": "Volusia",
+    "lon": -81.26396,
+    "lat": 29.06818
+  },
+  {
+    "state": "Florida",
+    "county": "Walton",
+    "lon": -86.16536,
+    "lat": 30.67291
+  },
+  {
     "state": "Georgia",
     "county": "Atkinson",
     "lon": -82.8595,
@@ -1218,6 +2172,120 @@
     "lat": 33.54596
   },
   {
+    "state": "Florida",
+    "county": "Baker",
+    "lon": -82.21283,
+    "lat": 30.41565
+  },
+  {
+    "state": "Florida",
+    "county": "Bay",
+    "lon": -85.64418,
+    "lat": 30.15966
+  },
+  {
+    "state": "Florida",
+    "county": "Broward",
+    "lon": -80.24349,
+    "lat": 26.13959
+  },
+  {
+    "state": "Florida",
+    "county": "Charlotte",
+    "lon": -82.15963,
+    "lat": 26.87214
+  },
+  {
+    "state": "Florida",
+    "county": "Lee",
+    "lon": -81.99299,
+    "lat": 26.54768
+  },
+  {
+    "state": "Florida",
+    "county": "Madison",
+    "lon": -83.4355,
+    "lat": 30.52185
+  },
+  {
+    "state": "Florida",
+    "county": "Manatee",
+    "lon": -82.58565,
+    "lat": 27.51539
+  },
+  {
+    "state": "Florida",
+    "county": "Citrus",
+    "lon": -82.60652,
+    "lat": 28.84881
+  },
+  {
+    "state": "Florida",
+    "county": "Dixie",
+    "lon": -83.26348,
+    "lat": 29.49644
+  },
+  {
+    "state": "Florida",
+    "county": "Duval",
+    "lon": -81.57656,
+    "lat": 30.34711
+  },
+  {
+    "state": "Florida",
+    "county": "Gilchrist",
+    "lon": -82.81269,
+    "lat": 29.80382
+  },
+  {
+    "state": "Florida",
+    "county": "Glades",
+    "lon": -81.14445,
+    "lat": 27.05385
+  },
+  {
+    "state": "Florida",
+    "county": "Gulf",
+    "lon": -85.31101,
+    "lat": 29.82669
+  },
+  {
+    "state": "Florida",
+    "county": "Hardee",
+    "lon": -81.85829,
+    "lat": 27.52367
+  },
+  {
+    "state": "Florida",
+    "county": "Hendry",
+    "lon": -81.11815,
+    "lat": 26.52562
+  },
+  {
+    "state": "Florida",
+    "county": "Hernando",
+    "lon": -82.53753,
+    "lat": 28.53889
+  },
+  {
+    "state": "Florida",
+    "county": "Indian River",
+    "lon": -80.54103,
+    "lat": 27.68385
+  },
+  {
+    "state": "Florida",
+    "county": "Jackson",
+    "lon": -85.14741,
+    "lat": 30.88032
+  },
+  {
+    "state": "Florida",
+    "county": "Lake",
+    "lon": -81.57127,
+    "lat": 28.84947
+  },
+  {
     "state": "Georgia",
     "county": "Wilkes",
     "lon": -82.71857,
@@ -1228,6 +2296,54 @@
     "county": "Worth",
     "lon": -83.89997,
     "lat": 31.59107
+  },
+  {
+    "state": "Arizona",
+    "county": "Coconino",
+    "lon": -112.21675,
+    "lat": 35.63236
+  },
+  {
+    "state": "Arizona",
+    "county": "Graham",
+    "lon": -109.9904,
+    "lat": 33.02698
+  },
+  {
+    "state": "Arizona",
+    "county": "Greenlee",
+    "lon": -109.10914,
+    "lat": 33.02742
+  },
+  {
+    "state": "Arizona",
+    "county": "La Paz",
+    "lon": -114.33381,
+    "lat": 33.67176
+  },
+  {
+    "state": "Arizona",
+    "county": "Navajo",
+    "lon": -110.16894,
+    "lat": 35.2383
+  },
+  {
+    "state": "Arizona",
+    "county": "Pinal",
+    "lon": -111.22983,
+    "lat": 32.97662
+  },
+  {
+    "state": "Arizona",
+    "county": "Santa Cruz",
+    "lon": -111.02461,
+    "lat": 31.51899
+  },
+  {
+    "state": "Arizona",
+    "county": "Yuma",
+    "lon": -114.37187,
+    "lat": 32.79905
   },
   {
     "state": "Illinois",
@@ -1662,6 +2778,84 @@
     "lat": 33.56611
   },
   {
+    "state": "Mississippi",
+    "county": "Amite",
+    "lon": -90.74949,
+    "lat": 31.0683
+  },
+  {
+    "state": "Mississippi",
+    "county": "Benton",
+    "lon": -89.1872,
+    "lat": 34.8351
+  },
+  {
+    "state": "Mississippi",
+    "county": "Bolivar",
+    "lon": -91.04945,
+    "lat": 33.77677
+  },
+  {
+    "state": "Mississippi",
+    "county": "Carroll",
+    "lon": -89.93663,
+    "lat": 33.42152
+  },
+  {
+    "state": "Mississippi",
+    "county": "Claiborne",
+    "lon": -90.89407,
+    "lat": 31.97329
+  },
+  {
+    "state": "Mississippi",
+    "county": "Covington",
+    "lon": -89.52819,
+    "lat": 31.57558
+  },
+  {
+    "state": "Mississippi",
+    "county": "George",
+    "lon": -88.74629,
+    "lat": 30.87769
+  },
+  {
+    "state": "Mississippi",
+    "county": "Hancock",
+    "lon": -89.45951,
+    "lat": 30.30409
+  },
+  {
+    "state": "Mississippi",
+    "county": "Holmes",
+    "lon": -90.18962,
+    "lat": 33.15895
+  },
+  {
+    "state": "Mississippi",
+    "county": "Humphreys",
+    "lon": -90.50673,
+    "lat": 33.16682
+  },
+  {
+    "state": "Mississippi",
+    "county": "Jackson",
+    "lon": -88.581,
+    "lat": 30.44684
+  },
+  {
+    "state": "Mississippi",
+    "county": "Jones",
+    "lon": -89.25225,
+    "lat": 31.66778
+  },
+  {
+    "state": "Mississippi",
+    "county": "Lamar",
+    "lon": -89.53622,
+    "lat": 31.26333
+  },
+  {
     "state": "Georgia",
     "county": "Muscogee",
     "lon": -84.90007,
@@ -1672,6 +2866,24 @@
     "county": "Quitman",
     "lon": -85.05969,
     "lat": 31.8816
+  },
+  {
+    "state": "South Carolina",
+    "county": "Darlington",
+    "lon": -80.00976,
+    "lat": 34.32227
+  },
+  {
+    "state": "South Carolina",
+    "county": "Dorchester",
+    "lon": -80.35745,
+    "lat": 33.05706
+  },
+  {
+    "state": "South Carolina",
+    "county": "Edgefield",
+    "lon": -82.00997,
+    "lat": 33.73098
   },
   {
     "state": "Tennessee",
@@ -1738,6 +2950,12 @@
     "county": "Grundy",
     "lon": -85.76425,
     "lat": 35.33375
+  },
+  {
+    "state": "Mississippi",
+    "county": "Greene",
+    "lon": -88.56146,
+    "lat": 31.18691
   },
   {
     "state": "Ohio",
@@ -1932,10 +3150,28 @@
     "lat": 40.81028
   },
   {
+    "state": "North Carolina",
+    "county": "Wilkes",
+    "lon": -81.1994,
+    "lat": 36.23174
+  },
+  {
     "state": "Tennessee",
     "county": "Putnam",
     "lon": -85.44384,
     "lat": 36.1452
+  },
+  {
+    "state": "North Carolina",
+    "county": "Wilson",
+    "lon": -77.86866,
+    "lat": 35.67311
+  },
+  {
+    "state": "North Carolina",
+    "county": "Yancey",
+    "lon": -82.36337,
+    "lat": 35.92223
   },
   {
     "state": "Tennessee",
@@ -2136,6 +3372,36 @@
     "lat": 35.72323
   },
   {
+    "state": "South Carolina",
+    "county": "Kershaw",
+    "lon": -80.58947,
+    "lat": 34.25348
+  },
+  {
+    "state": "South Carolina",
+    "county": "Lee",
+    "lon": -80.2527,
+    "lat": 34.12365
+  },
+  {
+    "state": "South Carolina",
+    "county": "McCormick",
+    "lon": -82.26053,
+    "lat": 33.82995
+  },
+  {
+    "state": "South Carolina",
+    "county": "Newberry",
+    "lon": -81.58057,
+    "lat": 34.23833
+  },
+  {
+    "state": "South Carolina",
+    "county": "Oconee",
+    "lon": -83.14929,
+    "lat": 34.70094
+  },
+  {
     "state": "Michigan",
     "county": "Delta",
     "lon": -86.83896,
@@ -2182,6 +3448,48 @@
     "county": "McIntosh",
     "lon": -81.29797,
     "lat": 31.48511
+  },
+  {
+    "state": "Mississippi",
+    "county": "Marion",
+    "lon": -89.81039,
+    "lat": 31.18976
+  },
+  {
+    "state": "Mississippi",
+    "county": "Montgomery",
+    "lon": -89.56198,
+    "lat": 33.43839
+  },
+  {
+    "state": "Mississippi",
+    "county": "Newton",
+    "lon": -89.14666,
+    "lat": 32.37506
+  },
+  {
+    "state": "Mississippi",
+    "county": "Pearl River",
+    "lon": -89.65769,
+    "lat": 30.7757
+  },
+  {
+    "state": "Mississippi",
+    "county": "Quitman",
+    "lon": -90.29629,
+    "lat": 34.2782
+  },
+  {
+    "state": "Mississippi",
+    "county": "Rankin",
+    "lon": -89.96367,
+    "lat": 32.30182
+  },
+  {
+    "state": "Mississippi",
+    "county": "Smith",
+    "lon": -89.4921,
+    "lat": 31.95831
   },
   {
     "state": "Michigan",
@@ -2238,6 +3546,48 @@
     "lat": 41.86924
   },
   {
+    "state": "Mississippi",
+    "county": "Tate",
+    "lon": -89.95126,
+    "lat": 34.67688
+  },
+  {
+    "state": "Mississippi",
+    "county": "Tishomingo",
+    "lon": -88.21824,
+    "lat": 34.77854
+  },
+  {
+    "state": "Mississippi",
+    "county": "Tunica",
+    "lon": -90.43675,
+    "lat": 34.71135
+  },
+  {
+    "state": "Mississippi",
+    "county": "Wayne",
+    "lon": -88.67329,
+    "lat": 31.72029
+  },
+  {
+    "state": "Mississippi",
+    "county": "Webster",
+    "lon": -89.2354,
+    "lat": 33.6038
+  },
+  {
+    "state": "Mississippi",
+    "county": "Wilkinson",
+    "lon": -91.35992,
+    "lat": 31.09633
+  },
+  {
+    "state": "Mississippi",
+    "county": "Yazoo",
+    "lon": -90.49123,
+    "lat": 32.73516
+  },
+  {
     "state": "Michigan",
     "county": "Iron",
     "lon": -88.57865,
@@ -2280,10 +3630,58 @@
     "lat": 43.56733
   },
   {
+    "state": "North Carolina",
+    "county": "Avery",
+    "lon": -81.94239,
+    "lat": 36.06304
+  },
+  {
+    "state": "North Carolina",
+    "county": "Beaufort",
+    "lon": -76.86484,
+    "lat": 35.45971
+  },
+  {
+    "state": "North Carolina",
+    "county": "Brunswick",
+    "lon": -78.19692,
+    "lat": 33.99576
+  },
+  {
+    "state": "North Carolina",
+    "county": "Cabarrus",
+    "lon": -80.65491,
+    "lat": 35.3988
+  },
+  {
     "state": "Georgia",
     "county": "Paulding",
     "lon": -84.83958,
     "lat": 33.84039
+  },
+  {
+    "state": "South Carolina",
+    "county": "Richland",
+    "lon": -80.8681,
+    "lat": 34.05322
+  },
+  {
+    "state": "South Carolina",
+    "county": "Spartanburg",
+    "lon": -82.01911,
+    "lat": 34.97293
+  },
+  {
+    "state": "South Carolina",
+    "county": "Sumter",
+    "lon": -80.36676,
+    "lat": 33.96216
+  },
+  {
+    "state": "South Carolina",
+    "county": "Williamsburg",
+    "lon": -79.59386,
+    "lat": 33.67973
   },
   {
     "state": "Michigan",
@@ -2296,6 +3694,186 @@
     "county": "Wayne",
     "lon": -83.14171,
     "lat": 42.25894
+  },
+  {
+    "state": "North Carolina",
+    "county": "Catawba",
+    "lon": -81.22923,
+    "lat": 35.71385
+  },
+  {
+    "state": "North Carolina",
+    "county": "Chatham",
+    "lon": -79.13833,
+    "lat": 35.70504
+  },
+  {
+    "state": "North Carolina",
+    "county": "Cherokee",
+    "lon": -84.10316,
+    "lat": 35.16341
+  },
+  {
+    "state": "North Carolina",
+    "county": "Chowan",
+    "lon": -76.55775,
+    "lat": 36.08566
+  },
+  {
+    "state": "North Carolina",
+    "county": "Columbus",
+    "lon": -78.56692,
+    "lat": 34.22593
+  },
+  {
+    "state": "North Carolina",
+    "county": "Davie",
+    "lon": -80.52328,
+    "lat": 35.92025
+  },
+  {
+    "state": "North Carolina",
+    "county": "Duplin",
+    "lon": -77.87622,
+    "lat": 34.97569
+  },
+  {
+    "state": "North Carolina",
+    "county": "Edgecombe",
+    "lon": -77.61986,
+    "lat": 35.90651
+  },
+  {
+    "state": "North Carolina",
+    "county": "Franklin",
+    "lon": -78.33523,
+    "lat": 36.09118
+  },
+  {
+    "state": "North Carolina",
+    "county": "Gaston",
+    "lon": -81.15203,
+    "lat": 35.22609
+  },
+  {
+    "state": "North Carolina",
+    "county": "Graham",
+    "lon": -83.86087,
+    "lat": 35.32701
+  },
+  {
+    "state": "North Carolina",
+    "county": "Granville",
+    "lon": -78.62076,
+    "lat": 36.38073
+  },
+  {
+    "state": "North Carolina",
+    "county": "Halifax",
+    "lon": -77.53731,
+    "lat": 36.22393
+  },
+  {
+    "state": "North Carolina",
+    "county": "Haywood",
+    "lon": -83.04235,
+    "lat": 35.62707
+  },
+  {
+    "state": "North Carolina",
+    "county": "Hyde",
+    "lon": -76.19466,
+    "lat": 35.44347
+  },
+  {
+    "state": "North Carolina",
+    "county": "Jackson",
+    "lon": -83.08909,
+    "lat": 35.22589
+  },
+  {
+    "state": "North Carolina",
+    "county": "Lee",
+    "lon": -79.17982,
+    "lat": 35.43916
+  },
+  {
+    "state": "North Carolina",
+    "county": "McDowell",
+    "lon": -82.01851,
+    "lat": 35.735
+  },
+  {
+    "state": "North Carolina",
+    "county": "Madison",
+    "lon": -82.72842,
+    "lat": 35.93324
+  },
+  {
+    "state": "North Carolina",
+    "county": "Mitchell",
+    "lon": -82.24243,
+    "lat": 36.08623
+  },
+  {
+    "state": "North Carolina",
+    "county": "New Hanover",
+    "lon": -77.86911,
+    "lat": 34.13766
+  },
+  {
+    "state": "North Carolina",
+    "county": "Orange",
+    "lon": -79.1638,
+    "lat": 36.10567
+  },
+  {
+    "state": "North Carolina",
+    "county": "Pasquotank",
+    "lon": -76.20166,
+    "lat": 36.23708
+  },
+  {
+    "state": "North Carolina",
+    "county": "Perquimans",
+    "lon": -76.35749,
+    "lat": 36.16797
+  },
+  {
+    "state": "North Carolina",
+    "county": "Pitt",
+    "lon": -77.36163,
+    "lat": 35.495
+  },
+  {
+    "state": "North Carolina",
+    "county": "Richmond",
+    "lon": -79.76464,
+    "lat": 34.96034
+  },
+  {
+    "state": "North Carolina",
+    "county": "Rowan",
+    "lon": -80.52432,
+    "lat": 35.6252
+  },
+  {
+    "state": "North Carolina",
+    "county": "Sampson",
+    "lon": -78.45462,
+    "lat": 34.95245
+  },
+  {
+    "state": "North Carolina",
+    "county": "Stokes",
+    "lon": -80.21185,
+    "lat": 36.48591
+  },
+  {
+    "state": "North Carolina",
+    "county": "Transylvania",
+    "lon": -82.78011,
+    "lat": 35.13656
   },
   {
     "state": "Ohio",
@@ -2344,6 +3922,42 @@
     "county": "Marion",
     "lon": -83.1724,
     "lat": 40.5901
+  },
+  {
+    "state": "South Carolina",
+    "county": "Abbeville",
+    "lon": -82.53987,
+    "lat": 34.15672
+  },
+  {
+    "state": "South Carolina",
+    "county": "Aiken",
+    "lon": -81.64023,
+    "lat": 33.64838
+  },
+  {
+    "state": "South Carolina",
+    "county": "Anderson",
+    "lon": -82.74173,
+    "lat": 34.45675
+  },
+  {
+    "state": "South Carolina",
+    "county": "Calhoun",
+    "lon": -80.81371,
+    "lat": 33.69064
+  },
+  {
+    "state": "South Carolina",
+    "county": "Chester",
+    "lon": -81.10772,
+    "lat": 34.68149
+  },
+  {
+    "state": "South Carolina",
+    "county": "Chesterfield",
+    "lon": -80.2291,
+    "lat": 34.71889
   },
   {
     "state": "Illinois",
@@ -2826,6 +4440,84 @@
     "lat": 37.31326
   },
   {
+    "state": "Virginia",
+    "county": "Suffolk",
+    "lon": -76.5436,
+    "lat": 36.79034
+  },
+  {
+    "state": "Virginia",
+    "county": "Virginia Beach",
+    "lon": -76.00276,
+    "lat": 36.70335
+  },
+  {
+    "state": "Virginia",
+    "county": "Winchester",
+    "lon": -78.17373,
+    "lat": 39.17974
+  },
+  {
+    "state": "Virginia",
+    "county": "Fairfax",
+    "lon": -77.3097,
+    "lat": 38.85156
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Racine",
+    "lon": -87.83889,
+    "lat": 42.75004
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Rusk",
+    "lon": -90.99546,
+    "lat": 45.46503
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Sauk",
+    "lon": -89.90704,
+    "lat": 43.49938
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Sawyer",
+    "lon": -91.03166,
+    "lat": 45.95782
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Taylor",
+    "lon": -90.45215,
+    "lat": 45.22622
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Vernon",
+    "lon": -90.77463,
+    "lat": 43.59626
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Vilas",
+    "lon": -89.28556,
+    "lat": 46.08199
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Waukesha",
+    "lon": -88.26765,
+    "lat": 42.97583
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Winnebago",
+    "lon": -88.57181,
+    "lat": 44.09055
+  },
+  {
     "state": "West Virginia",
     "county": "Grant",
     "lon": -79.25881,
@@ -2952,10 +4644,172 @@
     "lat": 39.27139
   },
   {
+    "state": "Wisconsin",
+    "county": "Buffalo",
+    "lon": -91.7807,
+    "lat": 44.27047
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Burnett",
+    "lon": -92.53218,
+    "lat": 45.85394
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Clark",
+    "lon": -90.68009,
+    "lat": 44.78088
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Columbia",
+    "lon": -89.53867,
+    "lat": 43.46362
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Crawford",
+    "lon": -91.0522,
+    "lat": 43.18214
+  },
+  {
+    "state": "Virginia",
+    "county": "Alleghany",
+    "lon": -80.16008,
+    "lat": 37.73629
+  },
+  {
+    "state": "Virginia",
+    "county": "Appomattox",
+    "lon": -78.82564,
+    "lat": 37.41079
+  },
+  {
+    "state": "Virginia",
+    "county": "Arlington",
+    "lon": -77.10044,
+    "lat": 38.87508
+  },
+  {
+    "state": "Virginia",
+    "county": "Augusta",
+    "lon": -79.21896,
+    "lat": 38.26851
+  },
+  {
+    "state": "Virginia",
+    "county": "Bedford",
+    "lon": -79.60247,
+    "lat": 37.36248
+  },
+  {
+    "state": "Virginia",
+    "county": "Brunswick",
+    "lon": -77.90426,
+    "lat": 36.72674
+  },
+  {
+    "state": "Virginia",
+    "county": "Campbell",
+    "lon": -79.13769,
+    "lat": 37.1935
+  },
+  {
+    "state": "Virginia",
+    "county": "Caroline",
+    "lon": -77.33919,
+    "lat": 38.05824
+  },
+  {
+    "state": "Virginia",
+    "county": "Charles City",
+    "lon": -77.05535,
+    "lat": 37.3186
+  },
+  {
+    "state": "Virginia",
+    "county": "Craig",
+    "lon": -80.27564,
+    "lat": 37.50601
+  },
+  {
+    "state": "Virginia",
+    "county": "Cumberland",
+    "lon": -78.22596,
+    "lat": 37.55025
+  },
+  {
+    "state": "Virginia",
+    "county": "Dickenson",
+    "lon": -82.34609,
+    "lat": 37.14065
+  },
+  {
     "state": "West Virginia",
     "county": "Raleigh",
     "lon": -81.26374,
     "lat": 37.8078
+  },
+  {
+    "state": "Virginia",
+    "county": "Fauquier",
+    "lon": -77.81892,
+    "lat": 38.78575
+  },
+  {
+    "state": "Virginia",
+    "county": "Franklin",
+    "lon": -79.91903,
+    "lat": 36.94234
+  },
+  {
+    "state": "Virginia",
+    "county": "Frederick",
+    "lon": -78.37557,
+    "lat": 39.19991
+  },
+  {
+    "state": "Virginia",
+    "county": "Gloucester",
+    "lon": -76.46766,
+    "lat": 37.34385
+  },
+  {
+    "state": "Virginia",
+    "county": "Greensville",
+    "lon": -77.58015,
+    "lat": 36.79681
+  },
+  {
+    "state": "Virginia",
+    "county": "Hanover",
+    "lon": -77.56743,
+    "lat": 37.87979
+  },
+  {
+    "state": "Virginia",
+    "county": "Highland",
+    "lon": -79.65263,
+    "lat": 38.40432
+  },
+  {
+    "state": "Virginia",
+    "county": "James City",
+    "lon": -76.69929,
+    "lat": 37.24793
+  },
+  {
+    "state": "Virginia",
+    "county": "Lancaster",
+    "lon": -76.4583,
+    "lat": 37.69041
+  },
+  {
+    "state": "Virginia",
+    "county": "Middlesex",
+    "lon": -76.52156,
+    "lat": 37.64643
   },
   {
     "state": "West Virginia",
@@ -2998,6 +4852,18 @@
     "county": "Tyler",
     "lon": -80.93322,
     "lat": 39.46291
+  },
+  {
+    "state": "Virginia",
+    "county": "Essex",
+    "lon": -76.8768,
+    "lat": 37.92088
+  },
+  {
+    "state": "Virginia",
+    "county": "Mathews",
+    "lon": -76.31996,
+    "lat": 37.43249
   },
   {
     "state": "Kentucky",
@@ -3078,6 +4944,18 @@
     "lat": 37.06289
   },
   {
+    "state": "North Carolina",
+    "county": "Wake",
+    "lon": -78.67244,
+    "lat": 35.7956
+  },
+  {
+    "state": "North Carolina",
+    "county": "Washington",
+    "lon": -76.54626,
+    "lat": 35.90021
+  },
+  {
     "state": "Ohio",
     "county": "Athens",
     "lon": -82.06284,
@@ -3094,6 +4972,108 @@
     "county": "Wyoming",
     "lon": -81.56259,
     "lat": 37.62625
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Calumet",
+    "lon": -88.28623,
+    "lat": 44.13192
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Dodge",
+    "lon": -88.73305,
+    "lat": 43.37101
+  },
+  {
+    "state": "Virginia",
+    "county": "Albemarle",
+    "lon": -78.47708,
+    "lat": 38.04321
+  },
+  {
+    "state": "Virginia",
+    "county": "Amherst",
+    "lon": -79.15631,
+    "lat": 37.60719
+  },
+  {
+    "state": "Virginia",
+    "county": "Botetourt",
+    "lon": -79.80022,
+    "lat": 37.47071
+  },
+  {
+    "state": "Virginia",
+    "county": "Carroll",
+    "lon": -80.78586,
+    "lat": 36.67686
+  },
+  {
+    "state": "Virginia",
+    "county": "Dinwiddie",
+    "lon": -77.63564,
+    "lat": 36.98795
+  },
+  {
+    "state": "Virginia",
+    "county": "Fluvanna",
+    "lon": -78.27053,
+    "lat": 37.85134
+  },
+  {
+    "state": "Alabama",
+    "county": "Baldwin",
+    "lon": -87.76329,
+    "lat": 30.52563
+  },
+  {
+    "state": "Alabama",
+    "county": "Clay",
+    "lon": -85.92895,
+    "lat": 33.3291
+  },
+  {
+    "state": "Alabama",
+    "county": "Crenshaw",
+    "lon": -86.29868,
+    "lat": 31.68127
+  },
+  {
+    "state": "Alabama",
+    "county": "Fayette",
+    "lon": -87.6944,
+    "lat": 33.70644
+  },
+  {
+    "state": "Alabama",
+    "county": "Jefferson",
+    "lon": -87.0106,
+    "lat": 33.43753
+  },
+  {
+    "state": "Alabama",
+    "county": "Marengo",
+    "lon": -87.77627,
+    "lat": 32.27717
+  },
+  {
+    "state": "Alabama",
+    "county": "Morgan",
+    "lon": -86.90779,
+    "lat": 34.47995
+  },
+  {
+    "state": "Alabama",
+    "county": "St. Clair",
+    "lon": -86.29594,
+    "lat": 33.71538
+  },
+  {
+    "state": "Alabama",
+    "county": "Washington",
+    "lon": -88.2393,
+    "lat": 31.4071
   },
   {
     "state": "Kentucky",
@@ -3124,6 +5104,18 @@
     "county": "Fairfield",
     "lon": -82.62432,
     "lat": 39.76865
+  },
+  {
+    "state": "Virginia",
+    "county": "Greene",
+    "lon": -78.45757,
+    "lat": 38.39977
+  },
+  {
+    "state": "Florida",
+    "county": "Wakulla",
+    "lon": -84.25687,
+    "lat": 30.09155
   },
   {
     "state": "Georgia",
@@ -3168,6 +5160,78 @@
     "lat": 31.65687
   },
   {
+    "state": "Mississippi",
+    "county": "Attala",
+    "lon": -89.60351,
+    "lat": 33.07991
+  },
+  {
+    "state": "Mississippi",
+    "county": "Clarke",
+    "lon": -88.58198,
+    "lat": 32.01206
+  },
+  {
+    "state": "Mississippi",
+    "county": "Forrest",
+    "lon": -89.33934,
+    "lat": 31.22698
+  },
+  {
+    "state": "Mississippi",
+    "county": "Grenada",
+    "lon": -89.84863,
+    "lat": 33.76789
+  },
+  {
+    "state": "Alabama",
+    "county": "Barbour",
+    "lon": -85.25642,
+    "lat": 31.88918
+  },
+  {
+    "state": "Alabama",
+    "county": "Butler",
+    "lon": -86.71649,
+    "lat": 31.69521
+  },
+  {
+    "state": "Alabama",
+    "county": "Cherokee",
+    "lon": -85.5272,
+    "lat": 34.27876
+  },
+  {
+    "state": "Florida",
+    "county": "Martin",
+    "lon": -80.31477,
+    "lat": 27.11219
+  },
+  {
+    "state": "Florida",
+    "county": "Okeechobee",
+    "lon": -80.84248,
+    "lat": 27.38325
+  },
+  {
+    "state": "Florida",
+    "county": "Polk",
+    "lon": -81.65277,
+    "lat": 28.0652
+  },
+  {
+    "state": "Florida",
+    "county": "Suwannee",
+    "lon": -83.03628,
+    "lat": 30.17145
+  },
+  {
+    "state": "Florida",
+    "county": "Washington",
+    "lon": -85.6666,
+    "lat": 30.63549
+  },
+  {
     "state": "Georgia",
     "county": "Baker",
     "lon": -84.45871,
@@ -3204,6 +5268,18 @@
     "lat": 31.17134
   },
   {
+    "state": "Mississippi",
+    "county": "Itawamba",
+    "lon": -88.2885,
+    "lat": 34.33763
+  },
+  {
+    "state": "Mississippi",
+    "county": "Kemper",
+    "lon": -88.61962,
+    "lat": 32.76454
+  },
+  {
     "state": "Michigan",
     "county": "Calhoun",
     "lon": -85.10348,
@@ -3220,6 +5296,24 @@
     "county": "Genesee",
     "lon": -83.76128,
     "lat": 43.02647
+  },
+  {
+    "state": "South Carolina",
+    "county": "Cherokee",
+    "lon": -81.55599,
+    "lat": 35.06377
+  },
+  {
+    "state": "South Carolina",
+    "county": "Dillon",
+    "lon": -79.32081,
+    "lat": 34.38556
+  },
+  {
+    "state": "South Carolina",
+    "county": "Greenville",
+    "lon": -82.42112,
+    "lat": 35.00279
   },
   {
     "state": "Tennessee",
@@ -3300,6 +5394,30 @@
     "lat": 34.16417
   },
   {
+    "state": "Florida",
+    "county": "Bradford",
+    "lon": -82.15241,
+    "lat": 29.87472
+  },
+  {
+    "state": "Florida",
+    "county": "Clay",
+    "lon": -81.85357,
+    "lat": 29.97534
+  },
+  {
+    "state": "Florida",
+    "county": "DeSoto",
+    "lon": -81.89218,
+    "lat": 27.16413
+  },
+  {
+    "state": "Florida",
+    "county": "Flagler",
+    "lon": -81.28793,
+    "lat": 29.49637
+  },
+  {
     "state": "Michigan",
     "county": "Hillsdale",
     "lon": -84.63355,
@@ -3364,6 +5482,132 @@
     "county": "Sumner",
     "lon": -86.41934,
     "lat": 36.52495
+  },
+  {
+    "state": "South Carolina",
+    "county": "Greenwood",
+    "lon": -82.14193,
+    "lat": 34.12108
+  },
+  {
+    "state": "South Carolina",
+    "county": "Horry",
+    "lon": -78.88672,
+    "lat": 33.87501
+  },
+  {
+    "state": "South Carolina",
+    "county": "Laurens",
+    "lon": -82.05789,
+    "lat": 34.49086
+  },
+  {
+    "state": "South Carolina",
+    "county": "Marlboro",
+    "lon": -79.64095,
+    "lat": 34.6269
+  },
+  {
+    "state": "South Carolina",
+    "county": "Union",
+    "lon": -81.54293,
+    "lat": 34.64831
+  },
+  {
+    "state": "Virginia",
+    "county": "King and Queen",
+    "lon": -76.83499,
+    "lat": 37.62916
+  },
+  {
+    "state": "Virginia",
+    "county": "Louisa",
+    "lon": -77.95943,
+    "lat": 37.96436
+  },
+  {
+    "state": "Alabama",
+    "county": "Conecuh",
+    "lon": -86.90312,
+    "lat": 31.47101
+  },
+  {
+    "state": "Alabama",
+    "county": "Covington",
+    "lon": -86.44246,
+    "lat": 31.1575
+  },
+  {
+    "state": "Alabama",
+    "county": "DeKalb",
+    "lon": -85.68463,
+    "lat": 34.53473
+  },
+  {
+    "state": "Alabama",
+    "county": "Escambia",
+    "lon": -87.21237,
+    "lat": 31.01863
+  },
+  {
+    "state": "Alabama",
+    "county": "Greene",
+    "lon": -87.90719,
+    "lat": 32.76978
+  },
+  {
+    "state": "Alabama",
+    "county": "Houston",
+    "lon": -85.16131,
+    "lat": 31.1098
+  },
+  {
+    "state": "Alabama",
+    "county": "Lamar",
+    "lon": -88.20879,
+    "lat": 33.72829
+  },
+  {
+    "state": "Alabama",
+    "county": "Lauderdale",
+    "lon": -87.64502,
+    "lat": 34.96905
+  },
+  {
+    "state": "Florida",
+    "county": "Hamilton",
+    "lon": -83.01477,
+    "lat": 30.55087
+  },
+  {
+    "state": "Florida",
+    "county": "Lafayette",
+    "lon": -83.14156,
+    "lat": 30.02884
+  },
+  {
+    "state": "Florida",
+    "county": "Liberty",
+    "lon": -84.87909,
+    "lat": 30.26372
+  },
+  {
+    "state": "Arizona",
+    "county": "Apache",
+    "lon": -109.36786,
+    "lat": 35.61269
+  },
+  {
+    "state": "Arizona",
+    "county": "Gila",
+    "lon": -111.01687,
+    "lat": 33.8647
+  },
+  {
+    "state": "Arizona",
+    "county": "Pima",
+    "lon": -111.50566,
+    "lat": 32.09992
   },
   {
     "state": "Georgia",
@@ -3540,6 +5784,30 @@
     "lat": 35.95158
   },
   {
+    "state": "Alabama",
+    "county": "Perry",
+    "lon": -87.37172,
+    "lat": 32.60984
+  },
+  {
+    "state": "Alabama",
+    "county": "Randolph",
+    "lon": -85.45013,
+    "lat": 33.29429
+  },
+  {
+    "state": "Alabama",
+    "county": "Russell",
+    "lon": -85.08579,
+    "lat": 32.3059
+  },
+  {
+    "state": "Alabama",
+    "county": "Tallapoosa",
+    "lon": -85.8055,
+    "lat": 32.76941
+  },
+  {
     "state": "Indiana",
     "county": "Vermillion",
     "lon": -87.502,
@@ -3610,6 +5878,60 @@
     "county": "Williamson",
     "lon": -88.90308,
     "lat": 37.67402
+  },
+  {
+    "state": "Mississippi",
+    "county": "Lawrence",
+    "lon": -90.06408,
+    "lat": 31.55416
+  },
+  {
+    "state": "Mississippi",
+    "county": "Lee",
+    "lon": -88.70817,
+    "lat": 34.25643
+  },
+  {
+    "state": "Mississippi",
+    "county": "Lincoln",
+    "lon": -90.50551,
+    "lat": 31.54363
+  },
+  {
+    "state": "Mississippi",
+    "county": "Lowndes",
+    "lon": -88.33099,
+    "lat": 33.57202
+  },
+  {
+    "state": "Mississippi",
+    "county": "Panola",
+    "lon": -89.96778,
+    "lat": 34.34211
+  },
+  {
+    "state": "Mississippi",
+    "county": "Scott",
+    "lon": -89.63498,
+    "lat": 32.47333
+  },
+  {
+    "state": "Mississippi",
+    "county": "Sunflower",
+    "lon": -90.59163,
+    "lat": 33.59988
+  },
+  {
+    "state": "Mississippi",
+    "county": "Union",
+    "lon": -89.03995,
+    "lat": 34.51583
+  },
+  {
+    "state": "Mississippi",
+    "county": "Winston",
+    "lon": -89.08399,
+    "lat": 33.14802
   },
   {
     "state": "Indiana",
@@ -3714,6 +6036,168 @@
     "lat": 32.28697
   },
   {
+    "state": "North Carolina",
+    "county": "Alexander",
+    "lon": -81.11797,
+    "lat": 35.8896
+  },
+  {
+    "state": "North Carolina",
+    "county": "Anson",
+    "lon": -80.05899,
+    "lat": 34.93223
+  },
+  {
+    "state": "North Carolina",
+    "county": "Ashe",
+    "lon": -81.62357,
+    "lat": 36.48167
+  },
+  {
+    "state": "North Carolina",
+    "county": "Caswell",
+    "lon": -79.3623,
+    "lat": 36.43704
+  },
+  {
+    "state": "North Carolina",
+    "county": "Cleveland",
+    "lon": -81.47564,
+    "lat": 35.26707
+  },
+  {
+    "state": "North Carolina",
+    "county": "Durham",
+    "lon": -78.87254,
+    "lat": 36.03516
+  },
+  {
+    "state": "North Carolina",
+    "county": "Gates",
+    "lon": -76.65796,
+    "lat": 36.45696
+  },
+  {
+    "state": "North Carolina",
+    "county": "Harnett",
+    "lon": -78.83293,
+    "lat": 35.34661
+  },
+  {
+    "state": "North Carolina",
+    "county": "Iredell",
+    "lon": -80.92602,
+    "lat": 35.75325
+  },
+  {
+    "state": "North Carolina",
+    "county": "Lincoln",
+    "lon": -81.26801,
+    "lat": 35.50448
+  },
+  {
+    "state": "North Carolina",
+    "county": "Montgomery",
+    "lon": -79.91775,
+    "lat": 35.34023
+  },
+  {
+    "state": "North Carolina",
+    "county": "Onslow",
+    "lon": -77.39418,
+    "lat": 34.7045
+  },
+  {
+    "state": "North Carolina",
+    "county": "Person",
+    "lon": -78.95554,
+    "lat": 36.46525
+  },
+  {
+    "state": "Virginia",
+    "county": "New Kent",
+    "lon": -77.03589,
+    "lat": 37.50962
+  },
+  {
+    "state": "Virginia",
+    "county": "Northumberland",
+    "lon": -76.36372,
+    "lat": 37.85404
+  },
+  {
+    "state": "Virginia",
+    "county": "Russell",
+    "lon": -82.10062,
+    "lat": 36.92587
+  },
+  {
+    "state": "Virginia",
+    "county": "Stafford",
+    "lon": -77.43202,
+    "lat": 38.36132
+  },
+  {
+    "state": "Virginia",
+    "county": "Bedford",
+    "lon": -79.52274,
+    "lat": 37.33322
+  },
+  {
+    "state": "Virginia",
+    "county": "Danville",
+    "lon": -79.42576,
+    "lat": 36.57283
+  },
+  {
+    "state": "Virginia",
+    "county": "Franklin",
+    "lon": -76.93451,
+    "lat": 36.68613
+  },
+  {
+    "state": "Virginia",
+    "county": "Lynchburg",
+    "lon": -79.19879,
+    "lat": 37.4077
+  },
+  {
+    "state": "Virginia",
+    "county": "Norton",
+    "lon": -82.6282,
+    "lat": 36.93015
+  },
+  {
+    "state": "Virginia",
+    "county": "Portsmouth",
+    "lon": -76.35472,
+    "lat": 36.88307
+  },
+  {
+    "state": "Virginia",
+    "county": "Williamsburg",
+    "lon": -76.70708,
+    "lat": 37.28213
+  },
+  {
+    "state": "Florida",
+    "county": "Miami-Dade",
+    "lon": -80.48078,
+    "lat": 25.40716
+  },
+  {
+    "state": "Florida",
+    "county": "Pinellas",
+    "lon": -82.71854,
+    "lat": 27.84032
+  },
+  {
+    "state": "Florida",
+    "county": "Taylor",
+    "lon": -83.62727,
+    "lat": 29.90124
+  },
+  {
     "state": "Georgia",
     "county": "Stewart",
     "lon": -84.90795,
@@ -3736,6 +6220,24 @@
     "county": "Walton",
     "lon": -83.80851,
     "lat": 33.78337
+  },
+  {
+    "state": "North Carolina",
+    "county": "Rockingham",
+    "lon": -79.80384,
+    "lat": 36.40078
+  },
+  {
+    "state": "North Carolina",
+    "county": "Swain",
+    "lon": -83.53378,
+    "lat": 35.54191
+  },
+  {
+    "state": "North Carolina",
+    "county": "Union",
+    "lon": -80.5612,
+    "lat": 34.92687
   },
   {
     "state": "Ohio",
@@ -3798,6 +6300,66 @@
     "lat": 39.44764
   },
   {
+    "state": "Wisconsin",
+    "county": "Jackson",
+    "lon": -90.80117,
+    "lat": 44.31004
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Langlade",
+    "lon": -89.04033,
+    "lat": 45.22791
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Menominee",
+    "lon": -88.74136,
+    "lat": 45.01067
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Outagamie",
+    "lon": -88.41498,
+    "lat": 44.37623
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Price",
+    "lon": -90.24,
+    "lat": 45.72773
+  },
+  {
+    "state": "Wisconsin",
+    "county": "St. Croix",
+    "lon": -92.59935,
+    "lat": 45.06681
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Trempealeau",
+    "lon": -91.40471,
+    "lat": 44.15939
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Waupaca",
+    "lon": -88.82865,
+    "lat": 44.4826
+  },
+  {
+    "state": "Alabama",
+    "county": "Walker",
+    "lon": -87.26654,
+    "lat": 33.76013
+  },
+  {
+    "state": "Alabama",
+    "county": "Winston",
+    "lon": -87.40118,
+    "lat": 34.17224
+  },
+  {
     "state": "Kentucky",
     "county": "Oldham",
     "lon": -85.47641,
@@ -3834,6 +6396,258 @@
     "lat": 36.70904
   },
   {
+    "state": "Virginia",
+    "county": "Nottoway",
+    "lon": -77.98766,
+    "lat": 37.10884
+  },
+  {
+    "state": "Virginia",
+    "county": "Orange",
+    "lon": -77.94435,
+    "lat": 38.28489
+  },
+  {
+    "state": "Virginia",
+    "county": "Page",
+    "lon": -78.46597,
+    "lat": 38.5417
+  },
+  {
+    "state": "Virginia",
+    "county": "Pittsylvania",
+    "lon": -79.44428,
+    "lat": 36.77249
+  },
+  {
+    "state": "Virginia",
+    "county": "Prince William",
+    "lon": -77.40319,
+    "lat": 38.65088
+  },
+  {
+    "state": "Virginia",
+    "county": "Rockbridge",
+    "lon": -79.41928,
+    "lat": 37.80688
+  },
+  {
+    "state": "Virginia",
+    "county": "Scott",
+    "lon": -82.61782,
+    "lat": 36.679
+  },
+  {
+    "state": "Virginia",
+    "county": "Shenandoah",
+    "lon": -78.6221,
+    "lat": 38.90573
+  },
+  {
+    "state": "Virginia",
+    "county": "Surry",
+    "lon": -76.77861,
+    "lat": 37.15771
+  },
+  {
+    "state": "Virginia",
+    "county": "Sussex",
+    "lon": -77.3242,
+    "lat": 36.95052
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Eau Claire",
+    "lon": -91.39568,
+    "lat": 44.6628
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Florence",
+    "lon": -88.33864,
+    "lat": 45.91129
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Forest",
+    "lon": -88.84012,
+    "lat": 45.79117
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Grant",
+    "lon": -90.75192,
+    "lat": 42.70148
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Green Lake",
+    "lon": -89.05883,
+    "lat": 43.7759
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Iowa",
+    "lon": -90.08702,
+    "lat": 43.00952
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Jefferson",
+    "lon": -88.70577,
+    "lat": 42.98324
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Juneau",
+    "lon": -89.98328,
+    "lat": 43.87469
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Kenosha",
+    "lon": -87.91145,
+    "lat": 42.56682
+  },
+  {
+    "state": "Virginia",
+    "county": "Tazewell",
+    "lon": -81.47841,
+    "lat": 37.2313
+  },
+  {
+    "state": "Virginia",
+    "county": "Washington",
+    "lon": -81.99932,
+    "lat": 36.6883
+  },
+  {
+    "state": "Virginia",
+    "county": "Wise",
+    "lon": -82.77587,
+    "lat": 36.98468
+  },
+  {
+    "state": "Virginia",
+    "county": "Bristol",
+    "lon": -82.19287,
+    "lat": 36.59801
+  },
+  {
+    "state": "Virginia",
+    "county": "Chesapeake",
+    "lon": -76.2808,
+    "lat": 36.71846
+  },
+  {
+    "state": "Virginia",
+    "county": "Covington",
+    "lon": -79.98789,
+    "lat": 37.78765
+  },
+  {
+    "state": "Virginia",
+    "county": "Falls Church",
+    "lon": -77.17174,
+    "lat": 38.88212
+  },
+  {
+    "state": "Virginia",
+    "county": "Galax",
+    "lon": -80.92321,
+    "lat": 36.66218
+  },
+  {
+    "state": "Virginia",
+    "county": "Lexington",
+    "lon": -79.44979,
+    "lat": 37.7798
+  },
+  {
+    "state": "Virginia",
+    "county": "Manassas",
+    "lon": -77.47718,
+    "lat": 38.75791
+  },
+  {
+    "state": "Virginia",
+    "county": "Manassas Park",
+    "lon": -77.45347,
+    "lat": 38.77561
+  },
+  {
+    "state": "Virginia",
+    "county": "Norfolk",
+    "lon": -76.27801,
+    "lat": 36.9033
+  },
+  {
+    "state": "Virginia",
+    "county": "Petersburg",
+    "lon": -77.40865,
+    "lat": 37.22578
+  },
+  {
+    "state": "Virginia",
+    "county": "Radford",
+    "lon": -80.55681,
+    "lat": 37.12157
+  },
+  {
+    "state": "Virginia",
+    "county": "Staunton",
+    "lon": -79.07065,
+    "lat": 38.15319
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Lafayette",
+    "lon": -90.16027,
+    "lat": 42.53677
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Marinette",
+    "lon": -87.8221,
+    "lat": 45.33793
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Marquette",
+    "lon": -89.40691,
+    "lat": 43.7646
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Oconto",
+    "lon": -87.92654,
+    "lat": 44.88873
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Oneida",
+    "lon": -89.47358,
+    "lat": 45.69604
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Pepin",
+    "lon": -92.06585,
+    "lat": 44.53906
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Pierce",
+    "lon": -92.54051,
+    "lat": 44.67708
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Portage",
+    "lon": -89.59816,
+    "lat": 44.42146
+  },
+  {
     "state": "West Virginia",
     "county": "Berkeley",
     "lon": -77.97831,
@@ -3868,6 +6682,24 @@
     "county": "Fayette",
     "lon": -81.09922,
     "lat": 38.03086
+  },
+  {
+    "state": "Florida",
+    "county": "Franklin",
+    "lon": -84.7488,
+    "lat": 29.82665
+  },
+  {
+    "state": "Florida",
+    "county": "Hillsborough",
+    "lon": -82.47222,
+    "lat": 27.86689
+  },
+  {
+    "state": "Florida",
+    "county": "Jefferson",
+    "lon": -83.91266,
+    "lat": 30.43874
   },
   {
     "state": "Indiana",
@@ -3966,6 +6798,12 @@
     "lat": 37.54611
   },
   {
+    "state": "Arizona",
+    "county": "Mohave",
+    "lon": -114.05714,
+    "lat": 35.77529
+  },
+  {
     "state": "Kentucky",
     "county": "Meade",
     "lon": -86.28049,
@@ -3988,6 +6826,120 @@
     "county": "Mason",
     "lon": -83.77371,
     "lat": 38.64116
+  },
+  {
+    "state": "Mississippi",
+    "county": "Adams",
+    "lon": -91.44977,
+    "lat": 31.50256
+  },
+  {
+    "state": "Mississippi",
+    "county": "Choctaw",
+    "lon": -89.23255,
+    "lat": 33.31839
+  },
+  {
+    "state": "Mississippi",
+    "county": "Clay",
+    "lon": -88.78663,
+    "lat": 33.64918
+  },
+  {
+    "state": "Mississippi",
+    "county": "Coahoma",
+    "lon": -90.70751,
+    "lat": 34.24222
+  },
+  {
+    "state": "North Carolina",
+    "county": "Currituck",
+    "lon": -75.90236,
+    "lat": 36.36999
+  },
+  {
+    "state": "North Carolina",
+    "county": "Greene",
+    "lon": -77.76422,
+    "lat": 35.47502
+  },
+  {
+    "state": "North Carolina",
+    "county": "Henderson",
+    "lon": -82.47484,
+    "lat": 35.29573
+  },
+  {
+    "state": "Mississippi",
+    "county": "Issaquena",
+    "lon": -91.06298,
+    "lat": 32.77288
+  },
+  {
+    "state": "Mississippi",
+    "county": "Jefferson",
+    "lon": -91.12645,
+    "lat": 31.77553
+  },
+  {
+    "state": "Mississippi",
+    "county": "Lafayette",
+    "lon": -89.46074,
+    "lat": 34.34057
+  },
+  {
+    "state": "Mississippi",
+    "county": "Harrison",
+    "lon": -89.11003,
+    "lat": 30.40246
+  },
+  {
+    "state": "Mississippi",
+    "county": "Oktibbeha",
+    "lon": -88.891,
+    "lat": 33.41605
+  },
+  {
+    "state": "Mississippi",
+    "county": "Perry",
+    "lon": -88.92286,
+    "lat": 31.16248
+  },
+  {
+    "state": "Mississippi",
+    "county": "Pike",
+    "lon": -90.41923,
+    "lat": 31.03681
+  },
+  {
+    "state": "Mississippi",
+    "county": "Sharkey",
+    "lon": -90.77388,
+    "lat": 32.88843
+  },
+  {
+    "state": "Mississippi",
+    "county": "Stone",
+    "lon": -89.02295,
+    "lat": 30.75868
+  },
+  {
+    "state": "South Carolina",
+    "county": "Colleton",
+    "lon": -80.52794,
+    "lat": 32.69576
+  },
+  {
+    "state": "South Carolina",
+    "county": "Florence",
+    "lon": -79.70541,
+    "lat": 34.09536
+  },
+  {
+    "state": "South Carolina",
+    "county": "Georgetown",
+    "lon": -79.25831,
+    "lat": 33.59623
   },
   {
     "state": "Tennessee",
@@ -4068,6 +7020,12 @@
     "lat": 43.99352
   },
   {
+    "state": "Mississippi",
+    "county": "Walthall",
+    "lon": -90.0262,
+    "lat": 31.07357
+  },
+  {
     "state": "Tennessee",
     "county": "Cocke",
     "lon": -83.10064,
@@ -4086,6 +7044,18 @@
     "lat": 45.34758
   },
   {
+    "state": "Mississippi",
+    "county": "Warren",
+    "lon": -90.99147,
+    "lat": 32.31705
+  },
+  {
+    "state": "Mississippi",
+    "county": "Yalobusha",
+    "lon": -89.7086,
+    "lat": 34.05958
+  },
+  {
     "state": "Ohio",
     "county": "Lake",
     "lon": -81.31061,
@@ -4096,6 +7066,18 @@
     "county": "Lucas",
     "lon": -83.47123,
     "lat": 41.67485
+  },
+  {
+    "state": "South Carolina",
+    "county": "Barnwell",
+    "lon": -81.5035,
+    "lat": 33.22935
+  },
+  {
+    "state": "South Carolina",
+    "county": "Beaufort",
+    "lon": -80.65759,
+    "lat": 32.33905
   },
   {
     "state": "Ohio",
@@ -4248,6 +7230,12 @@
     "lat": 45.93156
   },
   {
+    "state": "South Carolina",
+    "county": "Charleston",
+    "lon": -79.78838,
+    "lat": 32.85628
+  },
+  {
     "state": "Ohio",
     "county": "Cuyahoga",
     "lon": -81.67479,
@@ -4264,6 +7252,66 @@
     "county": "Gallia",
     "lon": -82.26501,
     "lat": 38.74206
+  },
+  {
+    "state": "North Carolina",
+    "county": "Bertie",
+    "lon": -76.90188,
+    "lat": 36.01462
+  },
+  {
+    "state": "North Carolina",
+    "county": "Burke",
+    "lon": -81.7096,
+    "lat": 35.71504
+  },
+  {
+    "state": "North Carolina",
+    "county": "Camden",
+    "lon": -76.13855,
+    "lat": 36.32295
+  },
+  {
+    "state": "North Carolina",
+    "county": "Carteret",
+    "lon": -76.45642,
+    "lat": 34.89468
+  },
+  {
+    "state": "North Carolina",
+    "county": "Johnston",
+    "lon": -78.37278,
+    "lat": 35.46204
+  },
+  {
+    "state": "North Carolina",
+    "county": "Lenoir",
+    "lon": -77.63879,
+    "lat": 35.24861
+  },
+  {
+    "state": "North Carolina",
+    "county": "Macon",
+    "lon": -83.61774,
+    "lat": 35.23288
+  },
+  {
+    "state": "North Carolina",
+    "county": "Mecklenburg",
+    "lon": -80.89828,
+    "lat": 35.20275
+  },
+  {
+    "state": "North Carolina",
+    "county": "Moore",
+    "lon": -79.35367,
+    "lat": 35.26162
+  },
+  {
+    "state": "North Carolina",
+    "county": "Watauga",
+    "lon": -81.73596,
+    "lat": 36.29089
   },
   {
     "state": "Tennessee",
@@ -4296,6 +7344,30 @@
     "lat": 35.12609
   },
   {
+    "state": "South Carolina",
+    "county": "Lancaster",
+    "lon": -80.7449,
+    "lat": 34.77675
+  },
+  {
+    "state": "South Carolina",
+    "county": "York",
+    "lon": -81.13584,
+    "lat": 35.06192
+  },
+  {
+    "state": "North Carolina",
+    "county": "Surry",
+    "lon": -80.71657,
+    "lat": 36.42666
+  },
+  {
+    "state": "North Carolina",
+    "county": "Tyrrell",
+    "lon": -76.17494,
+    "lat": 35.86649
+  },
+  {
     "state": "Ohio",
     "county": "Harrison",
     "lon": -81.14043,
@@ -4314,6 +7386,24 @@
     "lat": 39.00325
   },
   {
+    "state": "South Carolina",
+    "county": "Lexington",
+    "lon": -81.38917,
+    "lat": 33.8898
+  },
+  {
+    "state": "South Carolina",
+    "county": "Marion",
+    "lon": -79.29641,
+    "lat": 33.80291
+  },
+  {
+    "state": "South Carolina",
+    "county": "Pickens",
+    "lon": -82.76036,
+    "lat": 34.97291
+  },
+  {
     "state": "Michigan",
     "county": "Gogebic",
     "lon": -89.97918,
@@ -4324,6 +7414,72 @@
     "county": "Grand Traverse",
     "lon": -85.52776,
     "lat": 44.84701
+  },
+  {
+    "state": "Mississippi",
+    "county": "Madison",
+    "lon": -90.02181,
+    "lat": 32.59526
+  },
+  {
+    "state": "Mississippi",
+    "county": "Marshall",
+    "lon": -89.47795,
+    "lat": 34.73762
+  },
+  {
+    "state": "North Carolina",
+    "county": "Craven",
+    "lon": -77.11291,
+    "lat": 35.14176
+  },
+  {
+    "state": "North Carolina",
+    "county": "Cumberland",
+    "lon": -78.68306,
+    "lat": 34.96365
+  },
+  {
+    "state": "North Carolina",
+    "county": "Northampton",
+    "lon": -77.51996,
+    "lat": 36.4094
+  },
+  {
+    "state": "North Carolina",
+    "county": "Pamlico",
+    "lon": -76.62447,
+    "lat": 35.15344
+  },
+  {
+    "state": "North Carolina",
+    "county": "Polk",
+    "lon": -82.18323,
+    "lat": 35.2293
+  },
+  {
+    "state": "North Carolina",
+    "county": "Robeson",
+    "lon": -79.22533,
+    "lat": 34.58475
+  },
+  {
+    "state": "Florida",
+    "county": "Brevard",
+    "lon": -80.65673,
+    "lat": 28.46408
+  },
+  {
+    "state": "Florida",
+    "county": "Levy",
+    "lon": -82.87086,
+    "lat": 29.1973
+  },
+  {
+    "state": "Arizona",
+    "county": "Yavapai",
+    "lon": -112.44887,
+    "lat": 34.69495
   },
   {
     "state": "Illinois",
@@ -4348,6 +7504,18 @@
     "county": "Clinton",
     "lon": -86.42573,
     "lat": 40.26893
+  },
+  {
+    "state": "Florida",
+    "county": "Collier",
+    "lon": -81.5503,
+    "lat": 26.00736
+  },
+  {
+    "state": "Florida",
+    "county": "Escambia",
+    "lon": -87.38074,
+    "lat": 30.73861
   },
   {
     "state": "Illinois",
@@ -4560,6 +7728,54 @@
     "lat": 39.42966
   },
   {
+    "state": "Virginia",
+    "county": "Fairfax",
+    "lon": -77.18951,
+    "lat": 38.83585
+  },
+  {
+    "state": "Virginia",
+    "county": "Giles",
+    "lon": -80.80136,
+    "lat": 37.35677
+  },
+  {
+    "state": "Virginia",
+    "county": "Grayson",
+    "lon": -81.19236,
+    "lat": 36.62556
+  },
+  {
+    "state": "Virginia",
+    "county": "Halifax",
+    "lon": -78.94806,
+    "lat": 36.63688
+  },
+  {
+    "state": "Virginia",
+    "county": "Henry",
+    "lon": -79.95487,
+    "lat": 36.70241
+  },
+  {
+    "state": "Virginia",
+    "county": "Isle of Wight",
+    "lon": -76.67233,
+    "lat": 36.97474
+  },
+  {
+    "state": "Virginia",
+    "county": "King George",
+    "lon": -77.11003,
+    "lat": 38.29692
+  },
+  {
+    "state": "Virginia",
+    "county": "Lee",
+    "lon": -83.20312,
+    "lat": 36.70747
+  },
+  {
     "state": "Kentucky",
     "county": "Caldwell",
     "lon": -87.85064,
@@ -4570,6 +7786,156 @@
     "county": "Wayne",
     "lon": -81.92579,
     "lat": 31.6
+  },
+  {
+    "state": "Virginia",
+    "county": "Mecklenburg",
+    "lon": -78.36465,
+    "lat": 36.61224
+  },
+  {
+    "state": "Virginia",
+    "county": "Loudoun",
+    "lon": -77.61325,
+    "lat": 39.18761
+  },
+  {
+    "state": "Virginia",
+    "county": "Northampton",
+    "lon": -75.87315,
+    "lat": 37.31936
+  },
+  {
+    "state": "Virginia",
+    "county": "Prince Edward",
+    "lon": -78.4257,
+    "lat": 37.25554
+  },
+  {
+    "state": "Virginia",
+    "county": "Prince George",
+    "lon": -77.28511,
+    "lat": 37.22746
+  },
+  {
+    "state": "Virginia",
+    "county": "Richmond",
+    "lon": -76.71076,
+    "lat": 37.88928
+  },
+  {
+    "state": "Virginia",
+    "county": "Roanoke",
+    "lon": -80.05231,
+    "lat": 37.26488
+  },
+  {
+    "state": "Virginia",
+    "county": "Rockingham",
+    "lon": -79.02244,
+    "lat": 38.57707
+  },
+  {
+    "state": "Virginia",
+    "county": "Southampton",
+    "lon": -77.02947,
+    "lat": 36.68747
+  },
+  {
+    "state": "Virginia",
+    "county": "Spotsylvania",
+    "lon": -77.60432,
+    "lat": 38.18293
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Kewaunee",
+    "lon": -87.51205,
+    "lat": 44.50608
+  },
+  {
+    "state": "Virginia",
+    "county": "Westmoreland",
+    "lon": -76.79352,
+    "lat": 38.15453
+  },
+  {
+    "state": "Virginia",
+    "county": "York",
+    "lon": -76.55359,
+    "lat": 37.22748
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Douglas",
+    "lon": -91.99224,
+    "lat": 46.63243
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Iron",
+    "lon": -90.37903,
+    "lat": 46.48044
+  },
+  {
+    "state": "Virginia",
+    "county": "Colonial Heights",
+    "lon": -77.40181,
+    "lat": 37.24518
+  },
+  {
+    "state": "Virginia",
+    "county": "Fredericksburg",
+    "lon": -77.50181,
+    "lat": 38.30156
+  },
+  {
+    "state": "Virginia",
+    "county": "Hampton",
+    "lon": -76.38287,
+    "lat": 37.03496
+  },
+  {
+    "state": "Virginia",
+    "county": "Newport News",
+    "lon": -76.54182,
+    "lat": 37.11178
+  },
+  {
+    "state": "Virginia",
+    "county": "Poquoson",
+    "lon": -76.35745,
+    "lat": 37.13984
+  },
+  {
+    "state": "Virginia",
+    "county": "Roanoke",
+    "lon": -79.97169,
+    "lat": 37.29672
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Manitowoc",
+    "lon": -87.6287,
+    "lat": 44.11823
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Milwaukee",
+    "lon": -87.89907,
+    "lat": 43.05794
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Ozaukee",
+    "lon": -87.89495,
+    "lat": 43.29576
+  },
+  {
+    "state": "North Carolina",
+    "county": "Clay",
+    "lon": -83.72208,
+    "lat": 35.03407
   },
   {
     "state": "Ohio",
@@ -4584,10 +7950,40 @@
     "lat": 36.36473
   },
   {
+    "state": "Virginia",
+    "county": "Martinsville",
+    "lon": -79.86832,
+    "lat": 36.67236
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Washington",
+    "lon": -88.18728,
+    "lat": 43.42634
+  },
+  {
     "state": "West Virginia",
     "county": "Nicholas",
     "lon": -80.8742,
     "lat": 38.33467
+  },
+  {
+    "state": "Virginia",
+    "county": "Henrico",
+    "lon": -77.33477,
+    "lat": 37.53106
+  },
+  {
+    "state": "Alabama",
+    "county": "Cullman",
+    "lon": -86.8741,
+    "lat": 34.11937
+  },
+  {
+    "state": "Alabama",
+    "county": "Pike",
+    "lon": -85.89975,
+    "lat": 31.82322
   },
   {
     "state": "Kentucky",
@@ -4600,6 +7996,18 @@
     "county": "Cannon",
     "lon": -86.03239,
     "lat": 35.79437
+  },
+  {
+    "state": "Mississippi",
+    "county": "Tallahatchie",
+    "lon": -90.20239,
+    "lat": 33.90659
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Adams",
+    "lon": -89.80586,
+    "lat": 44.01662
   },
   {
     "state": "Georgia",
@@ -4620,10 +8028,40 @@
     "lat": 42.9446
   },
   {
+    "state": "North Carolina",
+    "county": "Warren",
+    "lon": -78.09387,
+    "lat": 36.46603
+  },
+  {
+    "state": "South Carolina",
+    "county": "Berkeley",
+    "lon": -79.94357,
+    "lat": 33.16358
+  },
+  {
     "state": "Georgia",
     "county": "Carroll",
     "lon": -85.11367,
     "lat": 33.60155
+  },
+  {
+    "state": "North Carolina",
+    "county": "Hoke",
+    "lon": -79.179,
+    "lat": 35.00723
+  },
+  {
+    "state": "Mississippi",
+    "county": "DeSoto",
+    "lon": -90.01179,
+    "lat": 34.88853
+  },
+  {
+    "state": "North Carolina",
+    "county": "Rutherford",
+    "lon": -81.99241,
+    "lat": 35.37562
   },
   {
     "state": "Kentucky",
@@ -4692,6 +8130,30 @@
     "lat": 37.71371
   },
   {
+    "state": "Wisconsin",
+    "county": "Rock",
+    "lon": -89.07877,
+    "lat": 42.55833
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Sheboygan",
+    "lon": -87.75534,
+    "lat": 43.72493
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Walworth",
+    "lon": -88.57991,
+    "lat": 42.67451
+  },
+  {
+    "state": "Wisconsin",
+    "county": "Brown",
+    "lon": -87.95996,
+    "lat": 44.58118
+  },
+  {
     "state": "Kentucky",
     "county": "Boyle",
     "lon": -84.8506,
@@ -4746,6 +8208,12 @@
     "lat": 36.89464
   },
   {
+    "state": "Wisconsin",
+    "county": "Waushara",
+    "lon": -89.17842,
+    "lat": 44.13181
+  },
+  {
     "state": "West Virginia",
     "county": "Hardy",
     "lon": -78.79107,
@@ -4762,5 +8230,35 @@
     "county": "Lewis",
     "lon": -80.47726,
     "lat": 38.87695
+  },
+  {
+    "state": "Virginia",
+    "county": "Accomack",
+    "lon": -75.64051,
+    "lat": 37.8
+  },
+  {
+    "state": "Virginia",
+    "county": "Bland",
+    "lon": -81.15856,
+    "lat": 37.16908
+  },
+  {
+    "state": "Virginia",
+    "county": "Buchanan",
+    "lon": -81.88109,
+    "lat": 37.32132
+  },
+  {
+    "state": "Virginia",
+    "county": "Charlotte",
+    "lon": -78.65937,
+    "lat": 37.04199
+  },
+  {
+    "state": "Virginia",
+    "county": "Chesterfield",
+    "lon": -77.44059,
+    "lat": 37.32689
   }
 ]

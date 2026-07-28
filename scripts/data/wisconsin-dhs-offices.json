@@ -1,0 +1,578 @@
+[
+  {
+    "county": "Adams",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5556",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/adams.htm"
+  },
+  {
+    "county": "Ashland",
+    "city": "",
+    "address": "Ashland",
+    "phone": "888-794-5722",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/ashland.htm"
+  },
+  {
+    "county": "Barron",
+    "city": "",
+    "address": "Barron",
+    "phone": "888-283-0012",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/barron.htm"
+  },
+  {
+    "county": "Bayfield",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5722",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/bayfield.htm"
+  },
+  {
+    "county": "Brown",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5747",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/brown.htm"
+  },
+  {
+    "county": "Buffalo",
+    "city": "",
+    "address": "",
+    "phone": "888-627-0430",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/buffalo.htm"
+  },
+  {
+    "county": "Burnett",
+    "city": "",
+    "address": "",
+    "phone": "888-283-0012",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/burnett.htm"
+  },
+  {
+    "county": "Calumet",
+    "city": "",
+    "address": "",
+    "phone": "888-256-4563",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/calumet.htm"
+  },
+  {
+    "county": "Chippewa",
+    "city": "",
+    "address": "Chippewa Falls",
+    "phone": "888-283-0012",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/chippewa.htm"
+  },
+  {
+    "county": "Clark",
+    "city": "",
+    "address": "",
+    "phone": "888-627-0430",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/clark.htm"
+  },
+  {
+    "county": "Columbia",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5556",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/columbia.htm"
+  },
+  {
+    "county": "Crawford",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5780",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/crawford.htm"
+  },
+  {
+    "county": "Dane",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5556",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/dane.htm"
+  },
+  {
+    "county": "Dodge",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5556",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/dodge.htm"
+  },
+  {
+    "county": "Door",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5747",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/door.htm"
+  },
+  {
+    "county": "Douglas",
+    "city": "",
+    "address": "",
+    "phone": "888-283-0012",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/douglas.htm"
+  },
+  {
+    "county": "Dunn",
+    "city": "",
+    "address": "",
+    "phone": "888-283-0012",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/dunn.htm"
+  },
+  {
+    "county": "Eau Claire",
+    "city": "",
+    "address": "Eau Claire",
+    "phone": "888-283-0012",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/eau-claire.htm"
+  },
+  {
+    "county": "Florence",
+    "city": "",
+    "address": "Florence",
+    "phone": "888-794-5722",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/florence.htm"
+  },
+  {
+    "county": "Fond du Lac",
+    "city": "",
+    "address": "Fond du Lac",
+    "phone": "888-446-1239",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/fond-du-lac.htm"
+  },
+  {
+    "county": "Forest",
+    "city": "",
+    "address": "",
+    "phone": "608-316-9151",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/forest.htm"
+  },
+  {
+    "county": "Grant",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5780",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/grant.htm"
+  },
+  {
+    "county": "Green",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5780",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/green.htm"
+  },
+  {
+    "county": "Green Lake",
+    "city": "",
+    "address": "Green Lake",
+    "phone": "888-256-4563",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/green-lake.htm"
+  },
+  {
+    "county": "Iowa",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5780",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/iowa.htm"
+  },
+  {
+    "county": "Iron",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5722",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/iron.htm"
+  },
+  {
+    "county": "Jackson",
+    "city": "",
+    "address": "",
+    "phone": "888-627-0430",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/jackson.htm"
+  },
+  {
+    "county": "Jefferson",
+    "city": "",
+    "address": "Jefferson",
+    "phone": "888-794-5780",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/jefferson.htm"
+  },
+  {
+    "county": "Juneau",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5556",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/juneau.htm"
+  },
+  {
+    "county": "Kenosha",
+    "city": "",
+    "address": "Kenosha",
+    "phone": "888-794-5820",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/kenosha.htm"
+  },
+  {
+    "county": "Kewaunee",
+    "city": "",
+    "address": "Kewaunee",
+    "phone": "888-256-4563",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/kewaunee.htm"
+  },
+  {
+    "county": "La Crosse",
+    "city": "",
+    "address": "La Crosse",
+    "phone": "888-627-0430",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/la-crosse.htm"
+  },
+  {
+    "county": "Lafayette",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5780",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/lafayette.htm"
+  },
+  {
+    "county": "Langlade",
+    "city": "",
+    "address": "",
+    "phone": "888-445-1621",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/langlade.htm"
+  },
+  {
+    "county": "Lincoln",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5722",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/lincoln.htm"
+  },
+  {
+    "county": "Manitowoc",
+    "city": "",
+    "address": "Manitowoc",
+    "phone": "888-256-4563",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/manitowoc.htm"
+  },
+  {
+    "county": "Marathon",
+    "city": "",
+    "address": "",
+    "phone": "888-445-1621",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/marathon.htm"
+  },
+  {
+    "county": "Marinette",
+    "city": "",
+    "address": "Marinette",
+    "phone": "888-794-5747",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/marinette.htm"
+  },
+  {
+    "county": "Marquette",
+    "city": "",
+    "address": "",
+    "phone": "888-256-4563",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/marquette.htm"
+  },
+  {
+    "county": "Menominee",
+    "city": "",
+    "address": "",
+    "phone": "715-799-5137",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/menominee.htm"
+  },
+  {
+    "county": "Milwaukee",
+    "city": "Milwaukee",
+    "address": "Milwaukee Enrollment Services (MilES)",
+    "phone": "888-947-6583",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/milwaukee.htm"
+  },
+  {
+    "county": "Monroe",
+    "city": "",
+    "address": "",
+    "phone": "888-627-0430",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/monroe.htm"
+  },
+  {
+    "county": "Oconto",
+    "city": "",
+    "address": "Oconto",
+    "phone": "888-794-5747",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/oconto.htm"
+  },
+  {
+    "county": "Oneida",
+    "city": "",
+    "address": "",
+    "phone": "888-445-1621",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/oneida.htm"
+  },
+  {
+    "county": "Outagamie",
+    "city": "",
+    "address": "",
+    "phone": "888-256-4563",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/outagamie.htm"
+  },
+  {
+    "county": "Ozaukee",
+    "city": "",
+    "address": "",
+    "phone": "855-293-1822",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/ozaukee.htm"
+  },
+  {
+    "county": "Pepin",
+    "city": "",
+    "address": "",
+    "phone": "888-627-0430",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/pepin.htm"
+  },
+  {
+    "county": "Pierce",
+    "city": "",
+    "address": "",
+    "phone": "888-283-0012",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/pierce.htm"
+  },
+  {
+    "county": "Polk",
+    "city": "",
+    "address": "",
+    "phone": "888-283-0012",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/polk.htm"
+  },
+  {
+    "county": "Portage",
+    "city": "",
+    "address": "",
+    "phone": "888-445-1621",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/portage.htm"
+  },
+  {
+    "county": "Price",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5722",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/price.htm"
+  },
+  {
+    "county": "Racine",
+    "city": "",
+    "address": "Racine",
+    "phone": "888-794-5820",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/racine.htm"
+  },
+  {
+    "county": "Richland",
+    "city": "",
+    "address": "Richland Center",
+    "phone": "888-794-5556",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/richland.htm"
+  },
+  {
+    "county": "Rock",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5780",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/rock.htm"
+  },
+  {
+    "county": "Rusk",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5722",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/rusk.htm"
+  },
+  {
+    "county": "Sauk",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5556",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/sauk.htm"
+  },
+  {
+    "county": "Sawyer",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5722",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/sawyer.htm"
+  },
+  {
+    "county": "Shawano",
+    "city": "",
+    "address": "Shawano",
+    "phone": "888-794-5747",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/shawano.htm"
+  },
+  {
+    "county": "Sheboygan",
+    "city": "",
+    "address": "Sheboygan",
+    "phone": "888-794-5556",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/sheboygan.htm"
+  },
+  {
+    "county": "St. Croix",
+    "city": "",
+    "address": "",
+    "phone": "888-283-0012",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/st-croix.htm"
+  },
+  {
+    "county": "Taylor",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5722",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/taylor.htm"
+  },
+  {
+    "county": "Trempealeau",
+    "city": "",
+    "address": "",
+    "phone": "888-627-0430",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/trempealeau.htm"
+  },
+  {
+    "county": "Vernon",
+    "city": "",
+    "address": "",
+    "phone": "888-627-0430",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/vernon.htm"
+  },
+  {
+    "county": "Vilas",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5722",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/vilas.htm"
+  },
+  {
+    "county": "Walworth",
+    "city": "",
+    "address": "",
+    "phone": "855-293-1822",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/walworth.htm"
+  },
+  {
+    "county": "Washburn",
+    "city": "",
+    "address": "",
+    "phone": "888-283-0012",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/washburn.htm"
+  },
+  {
+    "county": "Washington",
+    "city": "",
+    "address": "",
+    "phone": "888-446-1239",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/washington.htm"
+  },
+  {
+    "county": "Waukesha",
+    "city": "",
+    "address": "Waukesha",
+    "phone": "888-446-1239",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/waukesha.htm"
+  },
+  {
+    "county": "Waupaca",
+    "city": "",
+    "address": "Waupaca",
+    "phone": "888-256-4563",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/waupaca.htm"
+  },
+  {
+    "county": "Waushara",
+    "city": "",
+    "address": "",
+    "phone": "888-256-4563",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/waushara.htm"
+  },
+  {
+    "county": "Winnebago",
+    "city": "",
+    "address": "",
+    "phone": "888-256-4563",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/winnebago.htm"
+  },
+  {
+    "county": "Wood",
+    "city": "",
+    "address": "",
+    "phone": "888-794-5722",
+    "website": "https://access.wi.gov",
+    "source": "https://www.dhs.wisconsin.gov/em/wood.htm"
+  }
+]

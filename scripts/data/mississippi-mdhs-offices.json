@@ -1,0 +1,576 @@
+[
+  {
+    "county": "Adams",
+    "city": "Natchez",
+    "address": "150 East Franklin",
+    "phone": "(601) 442-1482",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Alcorn",
+    "city": "Corinth",
+    "address": "2690 S Harper Road",
+    "phone": "(662) 286-2205",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Amite",
+    "city": "Liberty",
+    "address": "185 Irene St",
+    "phone": "(601) 657-8066",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Attala",
+    "city": "Kosciusko",
+    "address": "717 Fairground Rd",
+    "phone": "(662) 289-4881",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Benton",
+    "city": "Ashland",
+    "address": "183 Court St",
+    "phone": "(662) 224-6245",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Bolivar",
+    "city": "Cleveland",
+    "address": "212 North Pearman Ave",
+    "phone": "(662) 843-8311",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Calhoun",
+    "city": "Pittsboro",
+    "address": "237 South Murphree St",
+    "phone": "(662) 412-3169",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Carroll",
+    "city": "Carrollton",
+    "address": "205 Lee St",
+    "phone": "(662) 464-5961",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Chickasaw",
+    "city": "Houston",
+    "address": "210 South Monroe St",
+    "phone": "(662) 456-3724",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Choctaw",
+    "city": "Ackerman",
+    "address": "583 West Main St",
+    "phone": "(662) 285-6269",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Claiborne",
+    "city": "Port Gibson",
+    "address": "417 Industrial Dr",
+    "phone": "(601) 437-5115",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Clarke",
+    "city": "Quitman",
+    "address": "29 Harris Ave",
+    "phone": "(601) 776-3756",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Clay",
+    "city": "West Point",
+    "address": "266 Washington St",
+    "phone": "(662) 494-3843",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Coahoma",
+    "city": "Clarksdale",
+    "address": "923 Ohio Ave",
+    "phone": "(662) 624-3050",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Copiah",
+    "city": "Hazlehurst",
+    "address": "640 Georgetown St, Suite 2",
+    "phone": "(601) 894-2321",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Covington",
+    "city": "Collins",
+    "address": "107 Arrington Ave",
+    "phone": "(601) 765-6585",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "DeSoto",
+    "city": "Hernando",
+    "address": "3210 HWY 51 South",
+    "phone": "(662) 449-9396",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Forrest",
+    "city": "Hattiesburg",
+    "address": "1604 W Pine St",
+    "phone": "(601) 554-4350",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Franklin",
+    "city": "Meadville",
+    "address": "90 Mill Rd",
+    "phone": "(601) 384-5837",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "George",
+    "city": "Lucedale",
+    "address": "38 London St, Suite B",
+    "phone": "(601) 947-7551",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Greene",
+    "city": "Leakesville",
+    "address": "1008 Jackson Ave",
+    "phone": "(601) 394-2362",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Grenada",
+    "city": "Grenada",
+    "address": "1240 Fairground Rd, Suite B",
+    "phone": "(662) 226-1971",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Hancock",
+    "city": "Bay St. Louis",
+    "address": "856 Hwy 90, Suite D",
+    "phone": "(228) 467-4565",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Harrison",
+    "city": "Gulfport",
+    "address": "10260 Larkin Smith Dr",
+    "phone": "(228) 897-5600",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Hinds",
+    "city": "Jackson",
+    "address": "4777 Medgar Evers Blvd",
+    "phone": "(601) 362-9892",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Holmes",
+    "city": "Lexington",
+    "address": "22419 Depot St",
+    "phone": "(662) 834-1221",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Humphreys",
+    "city": "Belzoni",
+    "address": "16463 US Hwy 49, Suite C",
+    "phone": "(662) 247-2323",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Issaquena",
+    "city": "Mayersville",
+    "address": "129 Court St",
+    "phone": "(662) 873-6296",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Itawamba",
+    "city": "Fulton",
+    "address": "305 West Cedar St",
+    "phone": "(662) 862-9781",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Jackson",
+    "city": "Pascagoula",
+    "address": "5343 Jefferson Ave, Suite 7",
+    "phone": "(228) 769-3275",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Jasper",
+    "city": "Bay Springs",
+    "address": "37 West 8th Ave",
+    "phone": "(601) 764-2151",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Jefferson",
+    "city": "Fayette",
+    "address": "235 Medgar Evers Blvd",
+    "phone": "(601) 786-3571",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Jefferson Davis",
+    "city": "Prentiss",
+    "address": "1185 Frontage Rd",
+    "phone": "(601) 792-4206",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Jones",
+    "city": "Laurel",
+    "address": "5110 Hwy 11 North",
+    "phone": "(601) 426-1200",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Kemper",
+    "city": "De Kalb",
+    "address": "110 Ponderosa Ave",
+    "phone": "(601) 743-5826",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Lafayette",
+    "city": "Oxford",
+    "address": "72 F.D. Buddy East Parkway, Suite 301",
+    "phone": "(662) 234-1861",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Lamar",
+    "city": "Purvis",
+    "address": "207 Main St",
+    "phone": "(601) 794-1050",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Lauderdale",
+    "city": "Meridian",
+    "address": "5224 Valley St",
+    "phone": "(601) 483-3337",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Lawrence",
+    "city": "Monticello",
+    "address": "1200 Nola Rd",
+    "phone": "(601) 587-7632",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Leake",
+    "city": "Carthage",
+    "address": "202 Co Brooks St, Suite 103",
+    "phone": "(601) 267-3242",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Lee",
+    "city": "Tupelo",
+    "address": "220 South Industrial Rd, Suite A",
+    "phone": "(662) 841-9050",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Leflore",
+    "city": "Greenwood",
+    "address": "216 Hwy 7 South",
+    "phone": "(662) 453-3124",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Lincoln",
+    "city": "Brookhaven",
+    "address": "300 East Chickasaw St",
+    "phone": "(601) 833-3311",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Lowndes",
+    "city": "Columbus",
+    "address": "1604 College St",
+    "phone": "(662) 328-5278",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Madison",
+    "city": "Canton",
+    "address": "867 Martin Luther King",
+    "phone": "(601) 859-1276",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Marion",
+    "city": "Columbia",
+    "address": "1111 Hwy 98 Bypass, Suite C",
+    "phone": "(601) 736-6383",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Marshall",
+    "city": "Holly Springs",
+    "address": "230 East College St",
+    "phone": "(662) 252-4511",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Monroe",
+    "city": "Aberdeen",
+    "address": "104 1/2 N Mattuba St",
+    "phone": "(662) 369-2872",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Montgomery",
+    "city": "Winona",
+    "address": "705 Alberta Dr",
+    "phone": "(662) 283-2922",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Neshoba",
+    "city": "Philadelphia",
+    "address": "1016 Holland Ave",
+    "phone": "(601) 656-1451",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Newton",
+    "city": "Decatur",
+    "address": "14712 Hwy 15 South",
+    "phone": "(601) 635-4490",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Noxubee",
+    "city": "Macon",
+    "address": "601 West Pearl St",
+    "phone": "(662) 726-5884",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Oktibbeha",
+    "city": "Starkville",
+    "address": "48 Lynn Lane",
+    "phone": "(662) 323-1566",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Panola",
+    "city": "Batesville",
+    "address": "240 Tower Dr",
+    "phone": "(662) 563-6292",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Pearl River",
+    "city": "Poplarville",
+    "address": "153 Savannah Millard Rd, Suite C",
+    "phone": "(601) 403-2221",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Perry",
+    "city": "New Augusta",
+    "address": "201 1st West",
+    "phone": "(601) 964-8374",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Pike",
+    "city": "Magnolia",
+    "address": "1002 Warren Krout Rd",
+    "phone": "(601) 684-7100",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Pontotoc",
+    "city": "Pontotoc",
+    "address": "341 C Center Ridge Dr",
+    "phone": "(662) 489-3923",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Prentiss",
+    "city": "Booneville",
+    "address": "200 Bridge Street",
+    "phone": "(662) 728-3118",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Quitman",
+    "city": "Marks",
+    "address": "1054 Martin Luther King Dr",
+    "phone": "(662) 326-8021",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Rankin",
+    "city": "Brandon",
+    "address": "603 Marquette Rd",
+    "phone": "(601) 825-8820",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Scott",
+    "city": "Forest",
+    "address": "521 Airport Rd",
+    "phone": "(601) 469-1628",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Sharkey",
+    "city": "Rolling Fork",
+    "address": "613 Martin Luther King Jr St",
+    "phone": "(662) 873-2655",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Simpson",
+    "city": "Mendenhall",
+    "address": "109 West Pine, Suite 1",
+    "phone": "(601) 847-3815",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Smith",
+    "city": "Raleigh",
+    "address": "353 Hwy 37",
+    "phone": "(601) 782-4505",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Stone",
+    "city": "Wiggins",
+    "address": "648 Fairgrounds St",
+    "phone": "(601) 928-4996",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Sunflower",
+    "city": "Indianola",
+    "address": "225 Martin Luther King Dr",
+    "phone": "(662) 887-2051",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Tallahatchie",
+    "city": "Charleston",
+    "address": "181 South Market St",
+    "phone": "(662) 647-5571",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Tate",
+    "city": "Senatobia",
+    "address": "1428 Browns Ferry Rd",
+    "phone": "(662) 562-4478",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Tippah",
+    "city": "Ripley",
+    "address": "159 Bails Rd",
+    "phone": "(662) 837-9307",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Tishomingo",
+    "city": "Iuka",
+    "address": "1008 Battleground Dr, Room 104",
+    "phone": "(662) 423-7020",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Tunica",
+    "city": "Tunica",
+    "address": "1490 Edwards Ave",
+    "phone": "(662) 363-1771",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Union",
+    "city": "New Albany",
+    "address": "923 Fairground Spur Rd",
+    "phone": "(662) 534-1984",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Walthall",
+    "city": "Tylertown",
+    "address": "901 Union Rd",
+    "phone": "(601) 876-2191",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Warren",
+    "city": "Vicksburg",
+    "address": "1316 Openwood St",
+    "phone": "(601) 636-1512",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Washington",
+    "city": "Greenville",
+    "address": "925 Main St",
+    "phone": "(662) 335-6051",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Wayne",
+    "city": "Waynesboro",
+    "address": "1104-A Cedar St",
+    "phone": "(601) 735-4752",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Webster",
+    "city": "Eupora",
+    "address": "53 Government Ave",
+    "phone": "(662) 258-4771",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Wilkinson",
+    "city": "Woodville",
+    "address": "1391 Hwy 61 South",
+    "phone": "(601) 888-4311",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Winston",
+    "city": "Louisville",
+    "address": "165 Vance St",
+    "phone": "(662) 773-8034",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Yalobusha",
+    "city": "Coffeeville",
+    "address": "217 Frostland Dr",
+    "phone": "(662) 473-2951",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  },
+  {
+    "county": "Yazoo",
+    "city": "Yazoo City",
+    "address": "1315 Grady Ave",
+    "phone": "(662) 746-5821",
+    "source": "https://www.mdhs.ms.gov/contact/"
+  }
+]

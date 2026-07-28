@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Search, CircleCheck } from "lucide-react";
-import { cn, resourcesHeroPadding, checkIconClass } from "@/lib/utils";
-import { HeroSurfaceOrbs } from "@/components/layout/hero-surface-orbs";
+import { MapPin, Search } from "lucide-react";
+import { cn, resourcesHeroPadding } from "@/lib/utils";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { useSiteHeaderOffset } from "@/hooks/use-site-header-offset";
 import { buildResourcesPageHref } from "@/lib/resources-page";
 import {
@@ -16,6 +16,8 @@ import { useTranslations } from "@/i18n/locale-context";
 import { ResourceFiltersPanel } from "@/components/resources/resource-filters-panel";
 import type { ResourceFilterOptions } from "@/components/resources/use-resource-filter-options";
 import { useResourceFilterDraftOptional } from "@/components/resources/resource-filter-draft-context";
+import { HeroDecorativeShapes } from "@/components/home/hero-decorative-shapes";
+import { HeroSurfaceOrbs } from "@/components/layout/hero-surface-orbs";
 
 interface HeroSearchBarProps {
   placeholder?: string;
@@ -138,6 +140,75 @@ export function HeroSearchBar({
   );
 }
 
+interface HeroDualSearchBarProps {
+  defaultNeed?: string;
+  defaultZip?: string;
+}
+
+export function HeroDualSearchBar({ defaultNeed = "", defaultZip = "" }: HeroDualSearchBarProps) {
+  const router = useRouter();
+  const { t } = useTranslations();
+
+  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const need = ((formData.get("need") as string) ?? "").trim();
+    const zip = ((formData.get("zip") as string) ?? "").trim();
+    const params: { q?: string; zip?: string } = {};
+    if (zip) params.zip = zip;
+    if (need) params.q = need;
+    router.push(
+      Object.keys(params).length > 0
+        ? buildResourcesPageHref(params, "results")
+        : buildResourcesPageHref()
+    );
+  };
+
+  return (
+    <form
+      onSubmit={handleSearch}
+      role="search"
+      aria-label={t("resources.searchAria")}
+      className="mx-auto w-full max-w-[760px]"
+    >
+      <div className="flex flex-col gap-2 rounded-[15px] border border-[var(--line)] bg-white p-2 sm:flex-row sm:items-center sm:gap-1">
+        <div className="flex min-w-0 flex-[1.5] items-center gap-2.5 px-3 py-3 sm:px-4">
+          <Search className="h-[19px] w-[19px] shrink-0 text-muted-foreground" aria-hidden="true" />
+          <input
+            name="need"
+            type="text"
+            defaultValue={defaultNeed}
+            placeholder={t("home.heroNeedPlaceholder")}
+            aria-label={t("home.heroNeedPlaceholder")}
+            className="hero-search-input min-h-[44px] w-full text-base text-foreground placeholder:text-muted-foreground"
+          />
+        </div>
+        <div className="hidden h-7 w-px shrink-0 bg-[var(--line)] sm:block" aria-hidden="true" />
+        <div className="flex min-w-0 flex-[0.85] items-center gap-2 px-3 py-3 sm:max-w-[148px] sm:px-4">
+          <MapPin className="h-[17px] w-[17px] shrink-0 text-muted-foreground" aria-hidden="true" />
+          <input
+            name="zip"
+            type="text"
+            inputMode="numeric"
+            pattern="[0-9]*"
+            maxLength={5}
+            defaultValue={defaultZip}
+            placeholder={t("home.heroZipPlaceholder")}
+            aria-label={t("home.heroZipPlaceholder")}
+            className="hero-search-input min-h-[44px] w-full text-base text-foreground placeholder:text-muted-foreground"
+          />
+        </div>
+        <button
+          type="submit"
+          className="inline-flex min-h-[52px] w-full shrink-0 cursor-pointer items-center justify-center rounded-[11px] bg-[var(--coral)] px-8 font-heading text-base font-bold text-white transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2 sm:w-auto"
+        >
+          {t("common.search")}
+        </button>
+      </div>
+    </form>
+  );
+}
+
 interface HeroSectionProps {
   headline: string;
   subheadline: string;
@@ -159,7 +230,7 @@ function renderHeadline(headline: string, highlight: string) {
   return (
     <>
       {before}
-      <span className="hero-headline-highlight">{highlight}</span>
+      <span className="text-primary">{highlight}</span>
       {after}
     </>
   );
@@ -182,55 +253,55 @@ export function HeroSection({
       : t("home.stateCountCovered", { count: stateCount });
 
   const statItems = [
-    t("home.vettedResources", { count: resourceStat }),
-    statesLabel,
-    t("home.freeAlways"),
+    { label: t("home.vettedResources", { count: resourceStat }), dot: "bg-primary" },
+    { label: statesLabel, dot: "bg-[#FF9D6C]" },
+    { label: t("home.freeAlways"), dot: "bg-[var(--coral)]" },
   ];
 
   return (
-    <section className="app-hero-surface relative flex min-h-[calc(100dvh-var(--site-header-height))] flex-col justify-center overflow-hidden px-4 py-16 sm:px-6 lg:px-8">
-      <HeroSurfaceOrbs variant="home" />
+    <section className="home-hero-wash relative overflow-hidden px-4 pb-0 pt-16 text-center sm:px-9 sm:pt-[82px]">
+      <HeroDecorativeShapes />
 
-      <div className="relative mx-auto w-full max-w-5xl text-center">
-        <h1 className="mb-5 text-4xl font-bold leading-[1.08] text-primary-foreground sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
-          {renderHeadline(headline, headlineHighlight)}
-        </h1>
+      <div className="relative mx-auto max-w-[1180px]">
+        <ScrollReveal variant="fade-up">
+          <h1 className="mx-auto max-w-[860px] font-heading text-4xl font-extrabold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-[56px]">
+            {renderHeadline(headline, headlineHighlight)}
+          </h1>
+          <p className="mx-auto mt-4 max-w-[740px] font-sans text-[18px] font-normal leading-[1.65] text-muted-foreground">
+            {subheadline}
+          </p>
+        </ScrollReveal>
 
-        <p className="mx-auto mb-10 max-w-3xl text-lg leading-relaxed text-primary-foreground/90 sm:text-xl">
-          {subheadline}
-        </p>
+        <ScrollReveal variant="fade-up" delay={75}>
+          <div className="mt-8 flex flex-col gap-10">
+            <HeroDualSearchBar />
+            <div className="mb-2 flex flex-wrap items-center justify-center gap-1.5 sm:mb-3 sm:gap-2">
+              <span className="text-[13px] font-medium leading-none text-muted-foreground">
+                {t("home.popular")}
+              </span>
+              {popularTags.map(({ label, slug }) => (
+                <Link
+                  key={slug}
+                  href={buildResourcesPageHref({ category: slug }, "results")}
+                  className="rounded-full bg-[#EFEAFE] px-[14px] py-1.5 font-heading text-[13px] font-semibold leading-none text-[var(--accent-ink)] transition-opacity hover:opacity-80 focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2"
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </ScrollReveal>
 
-        <HeroSearchBar />
-
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-2">
-          <span className="text-sm font-medium text-primary-foreground/80 sm:text-base">
-            {t("home.popular")}
-          </span>
-          {popularTags.map(({ label, slug }) => (
-            <Link
-              key={slug}
-              href={buildResourcesPageHref({ category: slug }, "results")}
-              className={cn(
-                "rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-1.5 text-sm font-medium text-primary-foreground transition-colors",
-                "hover:bg-primary-foreground/20 focus-visible:outline focus-visible:outline-3 focus-visible:outline-primary-foreground/60 focus-visible:outline-offset-2"
-              )}
-            >
-              {label}
-            </Link>
-          ))}
-        </div>
-
-        <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-primary-foreground/90 sm:text-base">
-          {statItems.map((item) => (
-            <li key={item} className="flex items-center gap-2">
-              <CircleCheck
-                className={cn("h-5 w-5 shrink-0", checkIconClass)}
-                aria-hidden="true"
-              />
-              {item}
-            </li>
-          ))}
-        </ul>
+        <ScrollReveal variant="fade-up" delay={150}>
+          <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 font-sans text-[14px] font-medium text-muted-foreground sm:mt-[24px]">
+            {statItems.map(({ label, dot }) => (
+              <li key={label} className="inline-flex items-center gap-1.5">
+                <span className={cn("inline-block h-1.5 w-1.5 rounded-full", dot)} aria-hidden="true" />
+                {label}
+              </li>
+            ))}
+          </ul>
+        </ScrollReveal>
       </div>
     </section>
   );

@@ -311,6 +311,9 @@ npm run seed:resources:west-virginia
 # Georgia → supabase/seed-georgia-resources.sql
 npm run seed:resources:georgia
 
+# North Carolina → supabase/seed-north-carolina-resources.sql
+npm run seed:resources:north-carolina
+
 # All states (also regenerates US map data from deployed state registry)
 npm run seed:resources:all
 ```
@@ -328,6 +331,7 @@ npm run db:push:michigan
 npm run db:push:illinois
 npm run db:push:west-virginia
 npm run db:push:georgia
+npm run db:push:north-carolina
 ```
 
 Apply CSV enrichments (also auto-tags `intake_signals` from eligibility/notes):
@@ -500,6 +504,7 @@ Resource cards use a consistent **type badge** system (category, statewide, regi
 | Illinois resources | `data/illinois-resources.csv` | `npm run seed:resources:illinois` |
 | West Virginia resources | `data/west-virginia-resources.csv` | `npm run seed:resources:west-virginia` |
 | Georgia resources | `data/georgia-resources.csv` | `npm run seed:resources:georgia` |
+| North Carolina resources | `data/north-carolina-resources.csv` | `npm run seed:resources:north-carolina` |
 | US coverage map | `src/lib/us-map/county-centroids.generated.ts` | `npm run generate:us-map` (also runs on `npm run build`) |
 | Research logs | `data/{state}-research-log.csv` | Generated with each state's build script |
 | Enrichments | `data/enrichments/batch-*.json` | `npm run seed:enrich` |

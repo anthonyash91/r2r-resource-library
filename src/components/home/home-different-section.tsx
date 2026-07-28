@@ -1,0 +1,126 @@
+import { CircleCheck, Clock, Lock } from "lucide-react";
+import { getServerTranslator } from "@/i18n/server";
+import { homeLightSectionShellClass, homeSectionAfterDarkBandClass, homeSectionSubtitleClass, homeSectionSubtitleMaxWidthClass } from "@/components/home/home-section-divider";
+import { cn } from "@/lib/utils";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
+
+const FEATURES = [
+  {
+    icon: CircleCheck,
+    iconBg: "bg-[#EFEAFE]",
+    iconColor: "text-[var(--accent-ink)]",
+    titleKey: "home.differentVerifiedTitle",
+    descKey: "home.differentVerifiedDesc",
+  },
+  {
+    icon: Lock,
+    iconBg: "bg-[#FFE7E0]",
+    iconColor: "text-[#E0593F]",
+    titleKey: "home.differentPrivateTitle",
+    descKey: "home.differentPrivateDesc",
+  },
+  {
+    icon: Clock,
+    iconBg: "bg-[#FFF3D6]",
+    iconColor: "text-[#C79114]",
+    titleKey: "home.differentFreeTitle",
+    descKey: "home.differentFreeDesc",
+  },
+] as const;
+
+export async function HomeDifferentSection() {
+  const { t } = await getServerTranslator();
+
+  return (
+    <section
+      className={cn(homeLightSectionShellClass, homeSectionAfterDarkBandClass, "text-center")}
+      aria-labelledby="home-different-heading"
+    >
+      <ScrollReveal variant="fade-up">
+        <h2
+          id="home-different-heading"
+          className="font-heading text-[32px] font-extrabold tracking-tight text-foreground sm:text-[38px]"
+        >
+          {t("home.differentTitle")}
+        </h2>
+        <p className={cn(homeSectionSubtitleClass, homeSectionSubtitleMaxWidthClass)}>
+          {t("home.differentSubtitle")}
+        </p>
+      </ScrollReveal>
+
+      <div className="home-split-grid">
+        <ScrollReveal variant="zoom-in" className="home-split-visual">
+          <div className="relative w-full max-w-[420px] px-1.5 py-2">
+            <div className="rounded-[18px] border border-[var(--line)] bg-white p-6">
+              <div className="mb-3.5 flex items-center justify-between gap-2">
+                <span className="rounded-[14px] bg-[#EFEAFE] px-3 py-1.5 font-heading text-[11px] font-bold uppercase text-[#5A3FC7]">
+                  {t("home.mockCategoryHousing")}
+                </span>
+                <span className="inline-flex items-center gap-1 rounded-[14px] bg-[#E4F6EE] px-3 py-1.5 font-heading text-[11px] font-bold text-[var(--success)]">
+                  <CircleCheck className="h-3 w-3" strokeWidth={3.4} aria-hidden="true" />
+                  {t("home.mockVerified")}
+                </span>
+              </div>
+              <div className="font-heading text-[19px] font-bold text-foreground">
+                {t("home.mockResourceName")}
+              </div>
+              <div className="mt-2 flex flex-wrap items-center gap-2.5 text-[13px] font-medium text-muted-foreground">
+                <span>{t("home.mockDistance")}</span>
+                <span className="h-[3px] w-[3px] rounded-full bg-[#C7C5D2]" aria-hidden="true" />
+                <span className="font-semibold text-[var(--success)]">{t("home.mockOpenNow")}</span>
+                <span className="h-[3px] w-[3px] rounded-full bg-[#C7C5D2]" aria-hidden="true" />
+                <span>{t("home.mockBeds")}</span>
+              </div>
+              <div className="my-4 h-px bg-[var(--line)]" />
+              <div className="mb-4 flex flex-wrap gap-1.5">
+                {[t("home.mockTagFairChance"), t("home.mockTagNoFee"), t("home.mockTagReferrals")].map(
+                  (tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-[13px] border border-[var(--line)] px-2.5 py-1.5 font-heading text-[11px] font-semibold text-[#5b6075]"
+                    >
+                      {tag}
+                    </span>
+                  )
+                )}
+              </div>
+              <div className="flex gap-2.5">
+                <div className="flex-1 rounded-[9px] bg-primary py-3 text-center font-heading text-[13px] font-bold text-primary-foreground">
+                  {t("home.mockCallNow")}
+                </div>
+                <div className="flex-1 rounded-[9px] border-[1.5px] border-[var(--line)] py-3 text-center font-heading text-[13px] font-bold text-foreground">
+                  {t("home.mockSave")}
+                </div>
+              </div>
+            </div>
+            <div className="absolute -right-2 -top-1.5 rotate-[4deg] rounded-[11px] bg-[var(--coral)] px-2.5 py-2 text-center font-heading text-[10px] font-bold leading-tight text-white">
+              {t("home.mockCheckedBadge")}
+            </div>
+          </div>
+        </ScrollReveal>
+
+        <div className="home-split-features">
+          {FEATURES.map(({ icon: Icon, iconBg, iconColor, titleKey, descKey }, index) => (
+            <ScrollReveal key={titleKey} variant="fade-up" delay={index * 75}>
+              <div className="flex gap-4">
+                <div
+                  className={`flex h-[46px] w-[46px] shrink-0 items-center justify-center rounded-xl ${iconBg}`}
+                >
+                  <Icon className={`h-[22px] w-[22px] ${iconColor}`} strokeWidth={2} aria-hidden="true" />
+                </div>
+                <div>
+                  <h3 className="font-heading text-lg font-bold leading-[1.2] text-foreground">
+                    {t(titleKey)}
+                  </h3>
+                  <p className="mt-1.5 text-[15px] leading-[1.6] text-muted-foreground">
+                    {t(descKey)}
+                  </p>
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

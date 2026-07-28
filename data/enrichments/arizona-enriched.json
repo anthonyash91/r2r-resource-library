@@ -1,0 +1,862 @@
+{
+  "1": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "2": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "3": {
+    "intake_signals": ""
+  },
+  "4": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "5": {
+    "intake_signals": ""
+  },
+  "6": {
+    "intake_signals": ""
+  },
+  "7": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "8": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "9": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "10": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "11": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "12": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "13": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "14": {
+    "intake_signals": ""
+  },
+  "15": {
+    "intake_signals": ""
+  },
+  "16": {
+    "intake_signals": ""
+  },
+  "17": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "18": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "19": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "20": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "21": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "22": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "23": {
+    "services": "Employment assistance|Partner referrals|Clothing assistance|Tool assistance|Support groups",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "24": {
+    "services": "Emergency shelter|Substance use treatment|Workforce development|Reentry navigation|Food bank access",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "25": {
+    "services": "Supportive housing|Substance use treatment|Reentry navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "26": {
+    "services": "Reentry coaching|Job readiness training|Counseling|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "27": {
+    "services": "Primary medical care|Behavioral health services|Partner referrals|AHCCCS enrollment support",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "28": {
+    "description": "Mountain Park Health Center operates Federally Qualified Health Center clinics across Maricopa County providing primary care, dental, behavioral health, and pharmacy services with sliding fees for uninsured patients including returning citizens. The Tempe-Baseline clinic serves central metro neighborhoods with AHCCCS and Medicare acceptance and same-day sick visits. FQHC medical home—not an emergency room or benefits office. This resource supports Arizonans navigating reentry in Maricopa County.",
+    "description_es": "Mountain Park Health Center opera clínicas FQHC en el condado Maricopa ofreciendo atención primaria, dental, salud conductual y farmacia con tarifas móviles para pacientes sin seguro incluidos ciudadanos que regresan. Este recurso apoya a arizonenses en reinserción en condado de Maricopa.",
+    "services": "Primary medical care|Behavioral health services",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "29": {
+    "services": "Food pantry access|Mobile pantry|SNAP enrollment|Community food partners|Nutrition programs",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "30": {
+    "services": "Substance use treatment|Addiction treatment referrals|Crisis services|Support groups",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "31": {
+    "services": "Workforce development|Supportive housing|Financial empowerment|Partner referrals|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "32": {
+    "services": "Primary medical care|Behavioral health services|Substance use treatment|Support groups",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "33": {
+    "services": "Employment assistance|Job readiness training|Digital skills|Partner referrals|Workforce development",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "34": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "35": {
+    "services": "Workforce development|Employment assistance|Clothing assistance|Reentry navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "36": {
+    "description": "Primavera Foundation provides shelter, workforce development, and housing programs for homeless and low-income adults in Pima County including men returning from incarceration through the Men's Shelter and Homeless Intervention Program. Case managers connect residents to Pima County One-Stop, DES benefits, and El Rio Health. Direct homeless services—not a county probation office. This resource supports Arizonans navigating reentry in Pima County.",
+    "description_es": "Primavera Foundation ofrece refugio, desarrollo de la fuerza laboral y programas de vivienda para adultos sin hogar y de bajos ingresos en el condado Pima incluidos hombres que regresan de la encarcelación. Este recurso apoya a arizonenses en reinserción en condado de Pima.",
+    "services": "Emergency shelter|Workforce development|Supportive housing|Reentry navigation|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "37": {
+    "services": "Counseling|Homeless services|Refugee support|Immigration services|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "38": {
+    "services": "Primary medical care|Behavioral health services|AHCCCS enrollment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "39": {
+    "services": "Employment assistance|Workforce development|Fair-chance employers|Job search labs",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "40": {
+    "services": "Substance use treatment|Opioid treatment program|Addiction treatment referrals|Support groups|Primary medical care",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "41": {
+    "description": "Catholic Community Services of Southern Arizona provides emergency food, rent and utility assistance, and case management for vulnerable Pima County residents including returning citizens at the Tucson Broadway office. Staff connect clients to DES, Primavera housing, and Southern Arizona Legal Aid. Emergency assistance—not probation supervision. This resource supports Arizonans navigating reentry in Pima County.",
+    "description_es": "Catholic Community Services del Sur de Arizona ofrece alimentos de emergencia, asistencia de renta y servicios públicos y manejo de casos para residentes vulnerables del condado Pima incluidos ciudadanos que regresan. Este recurso apoya a arizonenses en reinserción en condado de Pima.",
+    "services": "Food pantry access|Rent and utility assistance|Reentry navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "42": {
+    "services": "Primary medical care|Behavioral health services|AHCCCS support",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "43": {
+    "services": "Emergency shelter|Food pantry access|Substance use treatment|Reentry navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "44": {
+    "services": "Substance use treatment|Primary medical care|Crisis services|Addiction treatment referrals|Support groups",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "45": {
+    "services": "Employment assistance|Workforce development|Job readiness training|Job search tools",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "46": {
+    "services": "Basic needs assistance|Substance use treatment|Rent and utility assistance|Discharge planning",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "47": {
+    "services": "Counseling|Employment assistance|Disability support|Reentry navigation|Refugee services",
+    "intake_signals": ""
+  },
+  "48": {
+    "services": "Crisis services|Support groups|Addiction treatment referrals",
+    "intake_signals": ""
+  },
+  "49": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "50": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "51": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "52": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "53": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "54": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "55": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "56": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "57": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "58": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "59": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "60": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "61": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "62": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "63": {
+    "description": "A New Leaf Rapid Rehousing helps families and individuals experiencing homelessness in Maricopa County—including parents returning from incarceration—move quickly into permanent housing with short-term rental assistance and case management. Housing specialists connect participants to DES benefits, ARIZONA@WORK, and Valleywise Health while stabilizing leases across the East Valley. This resource supports Arizonans navigating reentry in Maricopa County.",
+    "description_es": "A New Leaf Rapid Rehousing ayuda a familias y personas sin hogar en el condado Maricopa—incluidos padres que regresan de la encarcelación—a trasladarse rápidamente a vivienda permanente con asistencia de alquiler a corto plazo y manejo de casos. Este recurso apoya a arizonenses en reinserción en condado de Maricopa.",
+    "services": "Housing navigation|Rent and utility assistance|Reentry navigation|Benefits navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "64": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "65": {
+    "services": "Emergency shelter|Housing navigation|Reentry navigation|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "66": {
+    "services": "Emergency shelter|Substance use treatment|Workforce programs|Job readiness training|Spiritual support",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "67": {
+    "description": "MANA House — Veterans Transitional Housing serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. MANA House provides transitional housing and peer support for homeless and justice-involved veterans in Maricopa County through U.S. VETS and community partners, connecting residents to VA benefits, ARIZONA@WORK veteran staff, and permanent housing. Veteran-focused housing—not a general population emergency shelter. VA eligibility and discharge status affect which benefits apply; ask specifically for justice-involved veteran or VJO/HCRV services when calling. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "MANA House — Veterans Transitional Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. La elegibilidad del VA y el tipo de baja afectan qué beneficios aplican; pida específicamente servicios VJO/HCRV o para veteranos en el sistema de justicia al llamar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Transitional housing|Support groups|Benefits navigation|Partner referrals|Permanent housing planning",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "68": {
+    "description": "Adelante Healthcare — Mesa is a statewide or regional referral resource for Arizonans affected by the criminal justice system. Adelante Healthcare operates community health centers in Maricopa and Pinal counties with primary care, behavioral health, and dental services including sliding-fee care for uninsured justice-involved patients. The Mesa clinic coordinates AHCCCS enrollment with DES and referrals from Community Bridges and ADCRR reentry staff. Users can search by location, service type, or need to find active providers in Maricopa, and Pinal counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Adelante Healthcare — Mesa es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Maricopa y Pinal. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Primary medical care|Behavioral health services|AHCCCS enrollment support",
+    "intake_signals": ""
+  },
+  "69": {
+    "description": "Chiricahua Community Health Centers — Sierra Vista serves justice-involved adults and families rebuilding stability after incarceration in Cochise County. Chiricahua Community Health Centers provide Federally Qualified Health Center primary care, behavioral health, and pharmacy services for Cochise County residents including justice-involved adults returning from ADCRR and county jail with sliding-fee and AHCCCS acceptance. Services are available on a sliding fee or Medicaid basis for eligible patients; bring ID and release paperwork when establishing care after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Chiricahua Community Health Centers — Sierra Vista sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Cochise. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Primary medical care|Behavioral health services",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "70": {
+    "description": "Community Medical Services — Phoenix MAT serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Community Medical Services operates opioid treatment programs with medication-assisted treatment at multiple Maricopa County clinics for justice-involved adults referred from drug courts, ADCRR, and Community Bridges. AHCCCS and cash-pay options support daily dosing and counseling. Treatment may require assessment, insurance or Medicaid enrollment, and referral from courts or corrections for some beds—call intake to confirm openings. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Community Medical Services — Phoenix MAT sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. El tratamiento puede requerir evaluación, seguro o Medicaid y referencia de tribunales o correcciones para algunas plazas—llame a admisión para confirmar disponibilidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Addiction treatment referrals|Opioid treatment program|Counseling|Probation and parole supervision|AHCCCS billing",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "71": {
+    "description": "Banner Behavioral Health — Phoenix serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Banner Behavioral Health provides inpatient and outpatient psychiatric and substance use treatment for Maricopa County adults including justice-involved patients through AHCCCS and commercial insurance at the Banner University Medical Center behavioral health campus. Treatment may require assessment, insurance or Medicaid enrollment, and referral from courts or corrections for some beds—call intake to confirm openings. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Banner Behavioral Health — Phoenix sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. El tratamiento puede requerir evaluación, seguro o Medicaid y referencia de tribunales o correcciones para algunas plazas—llame a admisión para confirmar disponibilidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Substance use treatment|Crisis services|Dual diagnosis treatment|Discharge planning",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "72": {
+    "description": "Spectrum Healthcare — Prescott serves justice-involved adults and families rebuilding stability after incarceration in Yavapai County. Spectrum Healthcare provides integrated mental health and substance use disorder treatment for Yavapai County residents including justice-involved adults through outpatient, crisis, and peer support programs contracted with AHCCCS RBHA. Treatment may require assessment, insurance or Medicaid enrollment, and referral from courts or corrections for some beds—call intake to confirm openings. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Spectrum Healthcare — Prescott sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Yavapai. El tratamiento puede requerir evaluación, seguro o Medicaid y referencia de tribunales o correcciones para algunas plazas—llame a admisión para confirmar disponibilidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Substance use treatment|Crisis services|Support groups|Primary medical care|Partner referrals",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "73": {
+    "description": "Southern Arizona Legal Aid — Tucson serves justice-involved adults and families rebuilding stability after incarceration in 5 Arizona counties. Southern Arizona Legal Aid provides free civil legal assistance to low-income residents of Pima, Santa Cruz, Cochise, and surrounding counties including housing, benefits, and limited record relief for justice-involved clients—not criminal defense. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Southern Arizona Legal Aid — Tucson ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en 5 condados de Arizona. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Civil legal representation|Housing legal aid|Benefits navigation|Expungement assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "74": {
+    "description": "Volunteer Lawyers Program — Maricopa County serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. The Maricopa County Volunteer Lawyers Program connects low-income residents to pro bono attorneys for civil matters including family law, housing, and consumer issues through the Maricopa County Bar Foundation—not criminal defense or full-scope CLS replacement. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Volunteer Lawyers Program — Maricopa County ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Maricopa. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Partner referrals|Civil legal representation|Housing legal help|Primary medical care",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "75": {
+    "description": "Arizona Recovery Coalition is a regional reentry coalition serving throughout Arizona. Partner agencies, faith communities, and workforce organizations meet regularly to share resources and warm referrals for people leaving jail or prison, on probation or parole, and their families. Coordinators help returning citizens connect to housing, employment, treatment, legal aid, and benefits through local partners. This is primarily a networking and navigation council—not an emergency shelter, cash assistance, or crisis line.",
+    "description_es": "Arizona Recovery Coalition es una coalición regional de reinserción que sirve en todo Arizona. Agencias aliadas, comunidades de fe y organizaciones laborales se reúnen para compartir recursos y referencias directas para personas que salen de la cárcel o prisión, en libertad condicional o vigilada, y sus familias. Los coordinadores ayudan a conectar a ciudadanos que regresan con vivienda, empleo, tratamiento, asistencia legal y beneficios a través de aliados locales. Es principalmente un consejo de red y navegación—no un refugio de emergencia, asistencia en efectivo ni línea de crisis.",
+    "services": "Support groups|Civil rights advocacy|Partner referrals|Systems navigation|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "76": {
+    "description": "Recovery Empowerment Network — Phoenix serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Recovery Empowerment Network provides peer-operated wellness centers, recovery coaching, and drop-in support for adults with mental health and substance use challenges in Maricopa County including justice-involved members building community after release. Peer specialists with lived experience offer mentoring and recovery support; certification requirements vary by resource. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Recovery Empowerment Network — Phoenix sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Especialistas pares con experiencia vivida ofrecen mentoría y apoyo en recuperación; los requisitos de certificación varían según el recurso. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Peer-operated wellness center|Support groups|Drop-in support|Community building|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "77": {
+    "description": "ARIZONA@WORK — Phoenix Metro serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. The ARIZONA@WORK Phoenix Metro center on Van Buren Street connects central Phoenix job seekers including justice-involved adults to WIOA training, career fairs, and fair-chance employer partnerships through the Maricopa County workforce board. Staff help justice-involved job seekers build work history, remove record-related barriers, and connect to fair-chance employers in the region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "ARIZONA@WORK — Phoenix Metro sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. El personal ayuda a quienes buscan empleo con antecedentes penales a construir historial laboral, reducir barreras por antecedentes y conectarse con empleadores de segunda oportunidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Employment assistance|Workforce development|Fair-chance employers|Job readiness training",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "78": {
+    "description": "ARIZONA@WORK — Flagstaff is a statewide or regional referral resource for Arizonans affected by the criminal justice system. ARIZONA@WORK Flagstaff connects Coconino County job seekers including justice-involved adults from northern Arizona correctional releases to career coaching, WIOA referrals, and rural fair-chance employment navigation. Users can search by location, service type, or need to find active providers in Coconino County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "ARIZONA@WORK — Flagstaff es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Coconino. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Employment assistance|Workforce development|Rural job search|Job readiness training",
+    "intake_signals": ""
+  },
+  "79": {
+    "description": "ARIZONA@WORK — Yuma serves justice-involved adults and families rebuilding stability after incarceration in Yuma County. ARIZONA@WORK Yuma connects Yuma County job seekers including justice-involved adults to career coaching, agricultural and logistics employer networks, and WIOA training through the regional workforce board. Staff help justice-involved job seekers build work history, remove record-related barriers, and connect to fair-chance employers in the region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "ARIZONA@WORK — Yuma sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Yuma. El personal ayuda a quienes buscan empleo con antecedentes penales a construir historial laboral, reducir barreras por antecedentes y conectarse con empleadores de segunda oportunidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Employment assistance|Workforce development|Partner referrals|Bilingual services",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "80": {
+    "description": "ID Theft Resource — Arizona Attorney General serves justice-involved adults and families rebuilding stability after incarceration in throughout Arizona. The Arizona Attorney General Identity Theft Resource Unit helps victims—including justice-involved individuals whose identity was compromised—restore credit, dispute fraudulent records, and obtain guidance on replacing identification documents needed for MVD and DES applications. Fees, proof of identity, and residency documents apply; reentry resources and legal aid partners often help gather required paperwork. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "ID Theft Resource — Arizona Attorney General sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Arizona. Aplican tarifas, prueba de identidad y documentos de residencia; recursos de reinserción y aliados legales suelen ayudar a reunir el papeleo requerido. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Identity theft recovery|Credit dispute guidance|Document assistance|Fraud reporting|Civil legal representation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "81": {
+    "description": "Arizona Transformation Project serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. The Arizona Transformation Project provides reentry mentoring, family reunification support, and community navigation for justice-involved men and women returning to Maricopa County through volunteer mentors and partnerships with St. Joseph the Worker and Community Bridges. Coalition and navigator resources connect returning citizens to local partners—they rarely provide emergency shelter, cash aid, or 24/7 crisis response on their own. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Arizona Transformation Project sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Las coaliciones y recursos de navegación conectan a ciudadanos que regresan con aliados locales—rara vez ofrecen refugio de emergencia, efectivo o respuesta de crisis 24/7 por sí solos. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Children's services|Parenting services|Community navigation|Volunteer support|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "82": {
+    "description": "Middle Ground Prison Reform serves justice-involved adults and families rebuilding stability after incarceration in throughout Arizona. Middle Ground Prison Reform advocates for fair correctional policies and connects Arizona families and returning citizens to reentry resources, visitation support, and policy education across Maricopa County and statewide—not direct cash or housing placement. Coalition and navigator resources connect returning citizens to local partners—they rarely provide emergency shelter, cash aid, or 24/7 crisis response on their own. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Middle Ground Prison Reform sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Arizona. Las coaliciones y recursos de navegación conectan a ciudadanos que regresan con aliados locales—rara vez ofrecen refugio de emergencia, efectivo o respuesta de crisis 24/7 por sí solos. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Civil rights advocacy|Partner referrals|Visitation guidance|Correctional policy education",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "83": {
+    "description": "Salvation Army — Phoenix Family Services serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. The Salvation Army Phoenix Family Services campus provides emergency food, clothing, utility assistance, and seasonal shelter beds for low-income Maricopa County families including justice-involved households seeking stabilization after release. Availability varies by season and donations; call ahead when possible to confirm clothing, hygiene kits, or furniture pickup hours. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Salvation Army — Phoenix Family Services sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Food pantry access|Clothing assistance|Rent and utility assistance|Emergency shelter|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "84": {
+    "description": "Nogales Community Development — Food Bank is a statewide or regional referral resource for Arizonans affected by the criminal justice system. Nogales Community Development food bank and emergency services support low-income Santa Cruz County families including justice-involved households on the Arizona-Mexico border with food distribution and DES benefits referrals. Users can search by location, service type, or need to find active providers in Santa Cruz County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Nogales Community Development — Food Bank es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Santa Cruz. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Food pantry access|Basic needs assistance|Partner referrals|Bilingual services|Benefits navigation",
+    "intake_signals": ""
+  },
+  "85": {
+    "description": "Gila County Health & Emergency Management — Public Health is a statewide or regional referral resource for Arizonans affected by the criminal justice system. Gila County Health Department connects rural Gila County residents including justice-involved adults to public health services, immunizations, and referrals to Copper Basin Medical Center and ARIZONA@WORK Globe for care and employment after release. Users can search by location, service type, or need to find active providers in Gila County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Gila County Health & Emergency Management — Public Health es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Gila. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Primary medical care|Partner referrals|Rural navigation|Emergency preparedness info",
+    "intake_signals": ""
+  },
+  "86": {
+    "description": "SEABHS — Safford Behavioral Health serves justice-involved adults and families rebuilding stability after incarceration in Graham, and Greenlee counties. Southeastern Arizona Behavioral Health Services provides outpatient mental health and substance use treatment for Graham and Greenlee county residents including justice-involved adults through AHCCCS and sliding-fee programs. Treatment may require assessment, insurance or Medicaid enrollment, and referral from courts or corrections for some beds—call intake to confirm openings. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "SEABHS — Safford Behavioral Health sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Graham y Greenlee. El tratamiento puede requerir evaluación, seguro o Medicaid y referencia de tribunales o correcciones para algunas plazas—llame a admisión para confirmar disponibilidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Substance use treatment|Primary medical care|Behavioral health services|Partner referrals",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "87": {
+    "description": "Native Health — Phoenix serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Native Health provides culturally competent primary care, behavioral health, and wellness programs for Native and non-Native families in Maricopa County including justice-involved adults through sliding-fee and AHCCCS services at the Phoenix clinic. Services are available on a sliding fee or Medicaid basis for eligible patients; bring ID and release paperwork when establishing care after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Native Health — Phoenix sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Primary medical care|Behavioral health services|Partner referrals|Culturally competent care",
+    "intake_signals": ""
+  },
+  "88": {
+    "description": "La Paz Regional Hospital — Parker serves justice-involved adults and families rebuilding stability after incarceration in La Paz County. La Paz Regional Hospital serves La Paz County with emergency, inpatient, and outpatient care and financial assistance for uninsured patients including justice-involved adults returning to the Colorado River communities. Services are available on a sliding fee or Medicaid basis for eligible patients; bring ID and release paperwork when establishing care after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "La Paz Regional Hospital — Parker sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de La Paz. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Basic needs assistance|Substance use treatment|Rent and utility assistance|Discharge planning",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "89": {
+    "description": "Hope Lives — Peer Recovery Center serves justice-involved adults and families rebuilding stability after incarceration in Yavapai County. Hope Lives operates a peer recovery community center in Prescott offering drop-in support, recovery meetings, and navigation to Spectrum Healthcare and West Yavapai Guidance Clinic for justice-involved members in Yavapai County. Peer specialists with lived experience offer mentoring and recovery support; certification requirements vary by resource. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Hope Lives — Peer Recovery Center sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Yavapai. Especialistas pares con experiencia vivida ofrecen mentoría y apoyo en recuperación; los requisitos de certificación varían según el recurso. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Support groups|Drop-in support|Partner referrals|Treatment navigation|Community building",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "90": {
+    "description": "Navajo County Public Health Services District is a statewide or regional referral resource for Arizonans affected by the criminal justice system. Navajo County Public Health Services District connects rural Navajo, Apache, and northern Gila county residents including justice-involved adults to public health programs, immunizations, and referrals to North Country HealthCare and regional providers. Users can search by location, service type, or need to find active providers in Navajo County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Navajo County Public Health Services District es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Navajo. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Public health programs|Primary medical care|Partner referrals|Emergency preparedness",
+    "intake_signals": ""
+  },
+  "91": {
+    "description": "Pinal County Public Health — Casa Grande is a statewide or regional referral resource for Arizonans affected by the criminal justice system. Pinal County Public Health connects residents including justice-involved adults to immunizations, WIC, and referrals to regional FQHC clinics and ARIZONA@WORK Pinal for health and employment services in central Arizona. Users can search by location, service type, or need to find active providers in Pinal County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Pinal County Public Health — Casa Grande es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Pinal. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Primary medical care|WIC|Partner referrals|Regional provider navigation",
+    "intake_signals": ""
+  },
+  "92": {
+    "description": "U.S. VETS — Prescott is a statewide or regional referral resource for Arizonans affected by the criminal justice system. U.S. VETS Prescott provides transitional housing, case management, and employment support for homeless veterans in Yavapai County including justice-involved veterans through VA benefits coordination and ARIZONA@WORK referrals. Users can search by location, service type, or need to find active providers in Yavapai County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "U.S. VETS — Prescott es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Yavapai. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Transitional housing|Reentry navigation|Benefits navigation|Employment assistance|Permanent housing planning",
+    "intake_signals": ""
+  },
+  "93": {
+    "description": "Goodwill of Southern Arizona — Tucson serves justice-involved adults and families rebuilding stability after incarceration in Pima County. Goodwill of Southern Arizona connects Pima County job seekers including fair-chance hires to career centers, thrift social enterprise jobs, and digital skills training through the Tucson career hub. Staff help justice-involved job seekers build work history, remove record-related barriers, and connect to fair-chance employers in the region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Goodwill of Southern Arizona — Tucson sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Pima. El personal ayuda a quienes buscan empleo con antecedentes penales a construir historial laboral, reducir barreras por antecedentes y conectarse con empleadores de segunda oportunidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Employment assistance|Social enterprise jobs|Digital skills|Partner referrals|Workforce development",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "94": {
+    "description": "AWEE — Tucson Career Center is a statewide or regional referral resource for Arizonans affected by the criminal justice system. AWEE's Tucson career center provides employment training and job placement for Pima County adults including justice-involved participants through specialized reentry employment tracks and DES referrals. Users can search by location, service type, or need to find active providers in Pima County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "AWEE — Tucson Career Center es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Pima. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Workforce development|Employment assistance|Reentry navigation|Job readiness training|Partner referrals",
+    "intake_signals": ""
+  },
+  "95": {
+    "description": "St. Vincent de Paul — Phoenix serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Society of St. Vincent de Paul Phoenix provides food boxes, rent and utility assistance, and furniture for low-income Maricopa County families including returning citizens through parish-based caseworker visits and the main dining room. Availability varies by season and donations; call ahead when possible to confirm clothing, hygiene kits, or furniture pickup hours. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "St. Vincent de Paul — Phoenix sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Food boxes|Rent and utility assistance|Basic needs assistance|Food pantry access",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "96": {
+    "description": "Copper Basin Medical Center — Globe serves justice-involved adults and families rebuilding stability after incarceration in Gila County. Copper Basin Medical Center is Gila County's community hospital providing emergency, inpatient, and outpatient care with financial assistance for uninsured patients including justice-involved adults returning to rural central Arizona. Services are available on a sliding fee or Medicaid basis for eligible patients; bring ID and release paperwork when establishing care after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Copper Basin Medical Center — Globe sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Gila. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Basic needs assistance|Substance use treatment|Rent and utility assistance|Discharge planning",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "97": {
+    "description": "Little Colorado Medical Center — Winslow serves justice-involved adults and families rebuilding stability after incarceration in Navajo County. Little Colorado Medical Center serves Navajo County with emergency and outpatient care and financial counseling for uninsured and justice-involved patients in the Winslow and Holbrook region of northeastern Arizona. Services are available on a sliding fee or Medicaid basis for eligible patients; bring ID and release paperwork when establishing care after incarceration. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Little Colorado Medical Center — Winslow sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Navajo. Los servicios están disponibles con tarifa móvil o Medicaid para pacientes elegibles; lleve identificación y documentos de liberación al establecer atención después de la encarcelación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Basic needs assistance|Substance use treatment|Counseling|Primary medical care|Discharge planning",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "98": {
+    "description": "ADCRR — Phoenix Community Corrections Field Office is a statewide or regional referral resource for Arizonans affected by the criminal justice system. The ADCRR Phoenix Community Corrections field office supervises parolees and probationers in central Maricopa County, coordinating compliance reporting and referrals to St. Joseph the Worker, Community Bridges, and ARIZONA@WORK for justice-involved adults under state supervision. Users can search by location, service type, or need to find active providers in Maricopa County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "ADCRR — Phoenix Community Corrections Field Office es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Maricopa. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Probation and parole supervision|Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "99": {
+    "description": "ADCRR — Tucson Community Corrections Field Office serves justice-involved adults and families rebuilding stability after incarceration in Pima County. The ADCRR Tucson Community Corrections field office supervises parolees and probationers in Pima County, connecting supervisees to CODAC, Primavera, Pima County One-Stop, and El Rio Health as conditions of release. This office handles supervision compliance and reporting—not emergency reentry navigation; ask your officer for referrals to local reentry partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "ADCRR — Tucson Community Corrections Field Office sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Pima. Esta oficina maneja cumplimiento de supervisión e informes—no navegación de crisis de reinserción; pida a su oficial referencias a aliados locales de reinserción. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Probation and parole supervision|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "100": {
+    "description": "Maricopa County Adult Probation serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Maricopa County Adult Probation supervises county probationers through field offices across the Phoenix metro, connecting clients to local treatment, employment, and housing partners as court-ordered conditions—not a benefits or emergency shelter intake center. This office handles supervision compliance and reporting—not emergency reentry navigation; ask your officer for referrals to local reentry partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Maricopa County Adult Probation sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Esta oficina maneja cumplimiento de supervisión e informes—no navegación de crisis de reinserción; pida a su oficial referencias a aliados locales de reinserción. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Probation and parole supervision|Addiction treatment referrals|Employment compliance|Community reporting|Reentry navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "101": {
+    "description": "Pima County Adult Probation is a statewide or regional referral resource for Arizonans affected by the criminal justice system. Pima County Adult Probation supervises county probationers from the Tucson headquarters and regional field offices, coordinating referrals to CODAC, Primavera, and Southern Arizona Legal Aid for justice-involved adults under county court supervision. Users can search by location, service type, or need to find active providers in Pima County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Pima County Adult Probation es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Pima. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Probation and parole supervision|Partner referrals|Court compliance support|Employment reporting|Reentry navigation",
+    "intake_signals": ""
+  },
+  "102": {
+    "description": "Maricopa Community Colleges — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Maricopa Community Colleges Adult Education provides free GED and High School Equivalency preparation, English language classes, and citizenship instruction at campuses across Maricopa County for returning citizens rebuilding credentials for ARIZONA@WORK and employer requirements. Classes are typically free or low-cost for Arizona adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Maricopa Community Colleges — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Las clases suelen ser gratuitas o de bajo costo para adultos en Arizona; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED and high school equivalency|Citizenship instruction|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "103": {
+    "description": "Rio Salado College — Adult Basic Education serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Rio Salado College Adult Basic Education offers free GED preparation, English language learning, and college bridge courses at locations across Maricopa County for justice-involved adults including students referred from Maricopa County jails and ADCRR reentry programs. Classes are typically free or low-cost for Arizona adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Rio Salado College — Adult Basic Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Las clases suelen ser gratuitas o de bajo costo para adultos en Arizona; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED and high school equivalency|Adult Basic Education|College bridge courses|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "104": {
+    "description": "Pima Community College — Adult Basic Education is a statewide or regional referral resource for Arizonans affected by the criminal justice system. Pima Community College Adult Basic Education offers free GED preparation and English language classes for Pima County adults including justice-involved students at Desert Vista and other Tucson campuses, with referrals from Pima County Jail education programs. Users can search by location, service type, or need to find active providers in Pima County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Pima Community College — Adult Basic Education es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Pima. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "GED and high school equivalency|Adult Basic Education|Workforce development|Partner referrals",
+    "intake_signals": ""
+  },
+  "105": {
+    "description": "Yavapai College — Adult Basic Education serves justice-involved adults and families rebuilding stability after incarceration in Yavapai County. Yavapai College Adult Basic Education provides free GED and High School Equivalency preparation for adults in Yavapai County including justice-involved residents at Prescott and Verde Valley campuses, with connections to ARIZONA@WORK and West Yavapai Guidance Clinic. Classes are typically free or low-cost for Arizona adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Yavapai College — Adult Basic Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Yavapai. Las clases suelen ser gratuitas o de bajo costo para adultos en Arizona; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED and high school equivalency|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "106": {
+    "description": "Maricopa County Veterans Service Office is a statewide or regional referral resource for Arizonans affected by the criminal justice system. The Maricopa County Veterans Service Office helps veterans and families file VA disability claims, education benefits, and emergency assistance referrals through accredited benefits counselors at the downtown Phoenix office. Users can search by location, service type, or need to find active providers in Maricopa County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Maricopa County Veterans Service Office es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Maricopa. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Benefits navigation|Basic needs assistance|DD-214 guidance",
+    "intake_signals": ""
+  },
+  "107": {
+    "description": "Pima County Veterans Service Office is a statewide or regional referral resource for Arizonans affected by the criminal justice system. The Pima County Veterans Service Office provides accredited VA benefits counseling, disability claims assistance, and referrals to veteran housing and employment partners for justice-involved veterans in Tucson. Users can search by location, service type, or need to find active providers in Pima County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Pima County Veterans Service Office es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Pima. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Benefits navigation|Disability claims|Education benefits|Partner referrals",
+    "intake_signals": ""
+  },
+  "108": {
+    "description": "Valley Metro — Reduced Fare & ADA Paratransit serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Valley Metro provides public transit, reduced fares for seniors and people with disabilities, and ADA paratransit (Dial-a-Ride) across Maricopa County helping justice-involved adults reach probation appointments, ARIZONA@WORK, and medical visits. Reduced-fare resources typically require application and proof of income or disability; IDs are needed to receive a pass or card. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Valley Metro — Reduced Fare & ADA Paratransit sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Los recursos de tarifa reducida suelen requerir solicitud y prueba de ingresos o discapacidad; se necesita identificación para recibir un pase o tarjeta. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Public bus and light rail|Bus pass assistance|Transportation assistance|Trip planning|Regional transit passes",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "109": {
+    "description": "Community Legal Services — Mesa Office serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Community Legal Services Mesa office provides free civil legal aid to low-income east valley residents including housing, public benefits, and record relief matters for justice-involved clients in Maricopa County—not criminal defense. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Community Legal Services — Mesa Office ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Maricopa. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Housing legal aid|Benefits navigation|Expungement assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "110": {
+    "description": "Community Legal Services — West Valley Office serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. The Community Legal Services West Valley office serves low-income residents of west Maricopa County with civil legal aid including eviction defense, public benefits appeals, and record relief guidance for returning citizens. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Community Legal Services — West Valley Office ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Maricopa. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Civil legal representation|Housing legal aid|Benefits navigation|Set-aside guidance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "111": {
+    "description": "Community Legal Services — Yuma Office serves justice-involved adults and families rebuilding stability after incarceration in Yuma County. The Community Legal Services Yuma office provides free civil legal aid to low-income Yuma County residents including agricultural workers and justice-involved clients with housing, benefits, and family law needs. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Community Legal Services — Yuma Office ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Yuma. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Civil legal representation|Housing legal aid|Benefits navigation|Bilingual services",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "112": {
+    "description": "Arizona Recovered Citizens United serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Arizona Recovered Citizens United organizes peer support, civic engagement, and reentry navigation for formerly incarcerated Arizonans in Maricopa County through mutual aid networks and partnerships with Arizona Transformation Project. Peer specialists with lived experience offer mentoring and recovery support; certification requirements vary by resource. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Arizona Recovered Citizens United sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Especialistas pares con experiencia vivida ofrecen mentoría y apoyo en recuperación; los requisitos de certificación varían según el recurso. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Support groups|Civic engagement|Reentry navigation|Mutual aid|Civil rights advocacy",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "113": {
+    "description": "Mohave County Peer Support Center is a statewide or regional referral resource for Arizonans affected by the criminal justice system. Mohave County behavioral health peer support services connect justice-involved adults in rural Mohave County to certified peer specialists, recovery groups, and referrals to West Yavapai Guidance Clinic satellite and Kingman Regional Medical Center. Users can search by location, service type, or need to find active providers in Mohave County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Mohave County Peer Support Center es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Mohave. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Support groups|Recovery groups|Behavioral health services|Partner referrals",
+    "intake_signals": ""
+  },
+  "114": {
+    "description": "Coconino County Peer Support Services serves justice-involved adults and families rebuilding stability after incarceration in Coconino County. Coconino County Health and Human Services peer support programs connect justice-involved adults in Flagstaff and rural northern Arizona to recovery coaching and North Country HealthCare behavioral health follow-up. Peer specialists with lived experience offer mentoring and recovery support; certification requirements vary by resource. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Coconino County Peer Support Services sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Coconino. Especialistas pares con experiencia vivida ofrecen mentoría y apoyo en recuperación; los requisitos de certificación varían según el recurso. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Support groups|Behavioral health services|Partner referrals|Community wellness",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "115": {
+    "description": "Reentry Coalition of Pima County is a regional reentry coalition serving Pima County. Partner agencies, faith communities, and workforce organizations meet regularly to share resources and warm referrals for people leaving jail or prison, on probation or parole, and their families. Coordinators help returning citizens connect to housing, employment, treatment, legal aid, and benefits through local partners. This is primarily a networking and navigation council—not an emergency shelter, cash assistance, or crisis line.",
+    "description_es": "Reentry Coalition of Pima County es una coalición regional de reinserción que sirve condado de Pima. Agencias aliadas, comunidades de fe y organizaciones laborales se reúnen para compartir recursos y referencias directas para personas que salen de la cárcel o prisión, en libertad condicional o vigilada, y sus familias. Los coordinadores ayudan a conectar a ciudadanos que regresan con vivienda, empleo, tratamiento, asistencia legal y beneficios a través de aliados locales. Es principalmente un consejo de red y navegación—no un refugio de emergencia, asistencia en efectivo ni línea de crisis.",
+    "services": "Partner referrals|Reentry navigation|Systems planning",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "116": {
+    "description": "Sunrise Community — Reentry Employment is a statewide or regional referral resource for Arizonans affected by the criminal justice system. Sunrise Community provides employment services and day programs for adults with disabilities in Pima County including justice-involved individuals who qualify for vocational supports through DES and RSA referrals. Users can search by location, service type, or need to find active providers in Pima County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Sunrise Community — Reentry Employment es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Pima. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Vocational day programs|Supported employment|Employment assistance|Partner referrals",
+    "intake_signals": ""
+  },
+  "117": {
+    "description": "Yavapai County Veterans Service Office is a statewide or regional referral resource for Arizonans affected by the criminal justice system. The Yavapai County Veterans Service Office provides VA benefits counseling and emergency assistance referrals for veterans in Prescott, Prescott Valley, and Verde Valley including justice-involved veterans. Users can search by location, service type, or need to find active providers in Yavapai County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Yavapai County Veterans Service Office es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Yavapai. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Benefits navigation|Disability claims|Basic needs assistance|Education benefits|Employment preference guidance",
+    "intake_signals": ""
+  },
+  "118": {
+    "description": "Mohave County Veterans Service Office is a statewide or regional referral resource for Arizonans affected by the criminal justice system. The Mohave County Veterans Service Office helps veterans in Kingman, Lake Havasu City, and Colorado City access VA disability claims, pension assistance, and referrals to rural veteran housing partners. Users can search by location, service type, or need to find active providers in Mohave County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Mohave County Veterans Service Office es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Mohave. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Benefits navigation|Pension assistance|Partner referrals",
+    "intake_signals": ""
+  },
+  "119": {
+    "description": "Sun Tran — Tucson Paratransit serves justice-involved adults and families rebuilding stability after incarceration in Pima County. Sun Tran and Sun Van paratransit provide public bus service and ADA complementary paratransit for eligible Pima County riders including justice-involved adults traveling to probation, CODAC, and Pima County One-Stop appointments. Reduced-fare resources typically require application and proof of income or disability; IDs are needed to receive a pass or card. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Sun Tran — Tucson Paratransit sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Pima. Los recursos de tarifa reducida suelen requerir solicitud y prueba de ingresos o discapacidad; se necesita identificación para recibir un pase o tarjeta. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Transportation assistance|Bus pass assistance|Trip planning|Regional transit",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "120": {
+    "description": "Arizona Center for Disability Law serves justice-involved adults and families rebuilding stability after incarceration in throughout Arizona. The Arizona Center for Disability Law provides free advocacy for Arizonans with disabilities including justice-involved individuals facing discrimination in employment, housing, and benefits access under the ADA and Arizona law. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Arizona Center for Disability Law ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en en todo Arizona. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Civil rights advocacy|ADA employment claims|Housing discrimination|Benefits access appeals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "121": {
+    "description": "Florence Project — Immigrant Legal Services serves justice-involved adults and families rebuilding stability after incarceration in 5 Arizona counties. The Florence Project provides free legal services to detained and formerly detained immigrants in Arizona including justice-involved non-citizens facing deportation proceedings, with offices in Florence and Phoenix. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Florence Project — Immigrant Legal Services ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en 5 condados de Arizona. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Civil legal representation|Detention visitation|Know Your Rights orientation|Bond hearings|Post-release immigration support",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "122": {
+    "description": "Central Arizona College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Pinal County. Central Arizona College Adult Education offers free GED and High School Equivalency preparation for Pinal County adults including justice-involved residents at Coolidge and Aravaipa campuses. Classes are typically free or low-cost for Arizona adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Central Arizona College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Pinal. Las clases suelen ser gratuitas o de bajo costo para adultos en Arizona; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED and high school equivalency|Workforce development|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "123": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "124": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "125": {
+    "services": "Job readiness training|Workforce development|Employment assistance|Career workshops",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "126": {
+    "services": "Primary medical care|Behavioral health services",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "127": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "128": {
+    "services": "Job readiness training|Workforce development|Employment assistance|Career workshops",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "129": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "130": {
+    "description": "Arizona at Work — Greenlee County is a statewide or regional referral resource for Arizonans affected by the criminal justice system. Arizona at Work Greenlee County connects job seekers in Arizona's smallest county—including justice-involved adults from ADCRR release—to resume coaching, WIOA training referrals, and fair-chance employment navigation in Clifton and Morenci. Staff coordinate with SEABHS, DES benefits, and southeastern Arizona workforce partners. Users can search by location, service type, or need to find active providers in Greenlee County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Arizona at Work — Greenlee County es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Greenlee. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Job readiness training|Workforce development|Employment assistance",
+    "intake_signals": ""
+  },
+  "131": {
+    "description": "Greenlee County Community Food Bank distributes emergency food boxes and partners with St. Mary's Food Bank Alliance to serve food-insecure residents in Clifton, Duncan, and Morenci including returning citizens reestablishing food security after release from ADCRR custody or county jail. Pantry services require referral or income screening—not a walk-in benefits office. This resource supports Arizonans navigating reentry in Greenlee County.",
+    "description_es": "Greenlee County Community Food Bank distribuye cajas de alimentos de emergencia y se asocia con St. Mary's Food Bank Alliance para servir a residentes con inseguridad alimentaria en Clifton, Duncan y Morenci incluidos ciudadanos que regresan. Este recurso apoya a arizonenses en reinserción en condado de Greenlee.",
+    "services": "Food pantry access|St. Mary's Food Bank partnership|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "132": {
+    "services": "Job readiness training|Workforce development|Employment assistance|Career workshops",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "133": {
+    "description": "La Paz Regional Hospital provides primary care, emergency services, and community health outreach for La Paz County residents including uninsured and AHCCCS Medicaid patients such as returning citizens establishing local medical care after release from ADCRR custody or county jail. Direct clinical services—not a walk-in benefits or probation office. This resource supports Arizonans navigating reentry in La Paz County.",
+    "description_es": "La Paz Regional Hospital brinda atención primaria, servicios de emergencia y alcance de salud comunitaria para residentes del condado La Paz incluidos pacientes sin seguro y Medicaid AHCCCS como ciudadanos que regresan. Este recurso apoya a arizonenses en reinserción en condado de La Paz.",
+    "services": "Primary medical care|Basic needs assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "134": {
+    "services": "Job readiness training|Workforce development|Employment assistance|Career workshops",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "135": {
+    "description": "Navajo County Adult Probation is a statewide or regional referral resource for Arizonans affected by the criminal justice system. Navajo County Adult Probation supervises probationers across northeastern Arizona, connecting justice-involved adults to Arizona at Work centers, North Country HealthCare, and DES benefits partners as conditions of community supervision. Assigned officers handle compliance reporting and referrals—not emergency housing or SNAP intake. Users can search by location, service type, or need to find active providers in Navajo County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Navajo County Adult Probation es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Navajo. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Probation and parole supervision|Community reporting|Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "136": {
+    "services": "Job readiness training|Workforce development|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "137": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "138": {
+    "services": "Job readiness training|Workforce development|Employment assistance|Career workshops",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "139": {
+    "description": "Cobre Valley Regional Medical Center provides primary care, emergency services, and community health outreach for Gila County residents including uninsured and AHCCCS Medicaid patients such as returning citizens establishing local medical care after release from Gila County Jail or ADCRR custody. Direct clinical services—not a walk-in benefits office. This resource supports Arizonans navigating reentry in Gila County.",
+    "description_es": "Cobre Valley Regional Medical Center brinda atención primaria, servicios de emergencia y alcance de salud comunitaria para residentes del condado Gila incluidos pacientes sin seguro y Medicaid AHCCCS como ciudadanos que regresan. Este recurso apoya a arizonenses en reinserción en condado de Gila.",
+    "services": "Primary medical care|Basic needs assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "140": {
+    "services": "Job readiness training|Workforce development|Employment assistance|Career workshops",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "141": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "142": {
+    "services": "Probation and parole supervision|Community reporting|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "143": {
+    "description": "Rehoboth Community Development Corporation operates transitional and affordable rental housing programs for low-income Maricopa County households including returning citizens rebuilding stable tenancy after incarceration. Property management and supportive services connect residents to St. Joseph the Worker and Community Legal Services for employment and tenant-rights support. This resource supports Arizonans navigating reentry in Maricopa County.",
+    "description_es": "Rehoboth Community Development Corporation opera programas de vivienda de alquiler transicional y asequible para hogares de bajos ingresos del condado Maricopa incluidos ciudadanos que regresan que reconstruyen arrendamiento estable después de la encarcelación. Este recurso apoya a arizonenses en reinserción en condado de Maricopa.",
+    "services": "Affordable rental housing|Transitional housing|Tenant support|Partner referrals|Supportive housing",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "144": {
+    "description": "Family Promise of Greater Phoenix serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Family Promise of Greater Phoenix provides emergency shelter, case management, and rehousing for homeless families in Maricopa County including parents returning from incarceration seeking reunification with children. Congregation-based shelter network connects families to DES benefits, ARIZONA@WORK, and permanent housing partners. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Family Promise of Greater Phoenix sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Emergency shelter|Reentry navigation|Housing navigation|Benefits navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "145": {
+    "services": "Emergency DV shelter|Transitional housing|Domestic violence support|Civil rights advocacy|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "146": {
+    "description": "Halle Women's Center — Transitional Housing serves justice-involved adults and families rebuilding stability after incarceration in Pima County. Halle Women's Center provides transitional housing and supportive services for homeless women in Pima County including justice-involved women released from Arizona State Prison Complex Tucson or Pima County Jail. Case managers coordinate CODAC treatment, Primavera employment programs, and DES benefits enrollment. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Halle Women's Center — Transitional Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Pima. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Transitional housing|Reentry navigation|Employment assistance|Partner referrals|Benefits navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "147": {
+    "services": "Housing navigation|Parenting services|Family reunification support|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "148": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "149": {
+    "services": "Partner referrals|Basic needs assistance|GED and high school equivalency|Student support|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "150": {
+    "description": "Greenlee County Community Development coordinates affordable housing lists, emergency rental assistance referrals, and homeless prevention navigation for low-income residents in Greenlee and eastern Graham counties including returning citizens from Safford area correctional releases. County housing navigation—not a 24-hour walk-in shelter. This resource supports Arizonans navigating reentry in Greenlee, and Graham counties.",
+    "description_es": "El Desarrollo Comunitario del condado Greenlee coordina listas de vivienda asequible, referencias de asistencia de alquiler de emergencia y navegación de prevención de falta de vivienda para residentes de bajos ingresos en Greenlee y el este del condado Graham. Este recurso apoya a arizonenses en reinserción en los condados Greenlee y Graham.",
+    "services": "Supportive housing|Rent and utility assistance|Emergency shelter|Counseling",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "151": {
+    "description": "La Paz County — Housing & Community Development is a statewide or regional referral resource for Arizonans affected by the criminal justice system. La Paz County Community Development connects low-income residents in Parker and the Colorado River communities to emergency rental assistance, weatherization referrals, and homeless prevention resources for justice-involved adults returning to rural western Arizona. County office—not an emergency shelter. Users can search by location, service type, or need to find active providers in La Paz County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "La Paz County — Housing & Community Development es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de La Paz. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Rent and utility assistance|Emergency shelter|Partner referrals|Counseling",
+    "intake_signals": ""
+  },
+  "152": {
+    "services": "Partner referrals|Rent and utility assistance|Emergency shelter|Housing navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "153": {
+    "description": "Gila County Housing & Community Action serves justice-involved adults and families rebuilding stability after incarceration in Gila County. Gila County Community Action Program coordinates emergency rental assistance, utility help, and homeless prevention for low-income households in Gila and eastern Maricopa foothill communities including returning citizens released to Globe and Payson. Community action navigation—not a walk-in emergency shelter. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Gila County Housing & Community Action sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Gila. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Rent and utility assistance|Emergency shelter|Counseling",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "154": {
+    "description": "Maricopa County Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Maricopa County School Superintendent Adult Education programs provide free High School Equivalency and English language instruction at community sites across Maricopa County for justice-involved adults rebuilding education credentials after release from county jail or state prison. Classes are typically free or low-cost for Arizona adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Maricopa County Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Las clases suelen ser gratuitas o de bajo costo para adultos en Arizona; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED and high school equivalency|Workforce development",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "155": {
+    "description": "Arizona Western College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Yuma, and La Paz counties. Arizona Western College Adult Education offers free GED preparation and English language classes for Yuma and La Paz county adults including justice-involved students returning from Arizona State Prison Complex Yuma and county jail releases. Classes are typically free or low-cost for Arizona adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Arizona Western College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Yuma y La Paz. Las clases suelen ser gratuitas o de bajo costo para adultos en Arizona; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED and high school equivalency|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "156": {
+    "description": "Cochise College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Cochise County. Cochise College Adult Education provides free GED and High School Equivalency classes for Cochise County adults including justice-involved residents at Sierra Vista and Douglas campuses, coordinating with Fort Huachuca-area workforce partners. Classes are typically free or low-cost for Arizona adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Cochise College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Cochise. Las clases suelen ser gratuitas o de bajo costo para adultos en Arizona; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED and high school equivalency|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "157": {
+    "description": "Coconino Community College — Adult Education is a statewide or regional referral resource for Arizonans affected by the criminal justice system. Coconino Community College Adult Education offers free GED preparation and English language instruction for northern Arizona adults including justice-involved Flagstaff residents, with referrals from Coconino County Jail programs and North Country HealthCare. Users can search by location, service type, or need to find active providers in Coconino County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Coconino Community College — Adult Education es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Coconino. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "GED and high school equivalency|Partner referrals",
+    "intake_signals": ""
+  },
+  "158": {
+    "description": "Society of St. Vincent de Paul Phoenix provides emergency food boxes, clothing, utility assistance, and furniture for low-income Maricopa County households including returning citizens reestablishing basic needs after incarceration. Vincentian volunteers operate neighborhood conferences and a central dining room—not a benefits application office. This resource supports Arizonans navigating reentry in Maricopa County.",
+    "description_es": "La Sociedad de San Vicente de Paul Phoenix ofrece cajas de alimentos de emergencia, ropa, asistencia con servicios públicos y muebles para hogares de bajos ingresos del condado Maricopa incluidos ciudadanos que regresan. Este recurso apoya a arizonenses en reinserción en condado de Maricopa.",
+    "services": "Food pantry access|Clothing assistance|Rent and utility assistance|Basic needs assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "159": {
+    "description": "Interfaith Community Services — Tucson serves justice-involved adults and families rebuilding stability after incarceration in Pima County. Interfaith Community Services provides emergency food, financial assistance, and basic needs navigation for low-income Pima County households including returning citizens, operating a food bank and utility assistance program in northwest Tucson. Availability varies by season and donations; call ahead when possible to confirm clothing, hygiene kits, or furniture pickup hours. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Interfaith Community Services — Tucson sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Pima. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Food pantry access|Rent and utility assistance|Basic needs assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "160": {
+    "description": "Yuma Community Food Bank serves justice-involved adults and families rebuilding stability after incarceration in Yuma, and La Paz counties. Yuma Community Food Bank distributes emergency groceries and partners with Crossroads Mission and DES Yuma to support low-income households in Yuma and La Paz counties including returning citizens rebuilding food security after incarceration. Availability varies by season and donations; call ahead when possible to confirm clothing, hygiene kits, or furniture pickup hours. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Yuma Community Food Bank sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Yuma y La Paz. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Food pantry access|Grocery boxes|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "161": {
+    "description": "Arizona's Children Association — Family Support serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Arizona's Children Association provides foster care, kinship support, and family preservation services for vulnerable Maricopa County families including justice-involved parents working toward reunification after CPS or criminal justice involvement. Case managers coordinate DES child care subsidies and housing partners. Family resources may require participation in treatment or parenting classes; custody status affects some reunification services. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Arizona's Children Association — Family Support sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Los recursos familiares pueden requerir participación en tratamiento o clases de crianza; el estado de custodia afecta algunos servicios de reunificación. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Parenting services|Family reunification support|Partner referrals",
+    "intake_signals": ""
+  },
+  "162": {
+    "description": "Community Food Bank of Southern Arizona serves justice-involved adults and families rebuilding stability after incarceration in Pima, Santa Cruz, Cochise, and Graham counties. Community Food Bank of Southern Arizona distributes groceries through partner agencies and direct programs across Pima, Santa Cruz, Cochise, and Graham counties for low-income households including returning citizens reestablishing food security after incarceration. Food assistance does not usually require a criminal-record disclosure; staff can help with SNAP applications and pantry locations by ZIP code. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Community Food Bank of Southern Arizona sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Pima, Santa Cruz, Cochise y Graham. La asistencia alimentaria generalmente no requiere declarar antecedentes penales; el personal puede ayudar con solicitudes SNAP y ubicaciones de despensas por código postal. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Food pantry access|Partner referrals|Nutrition programs",
+    "intake_signals": ""
+  },
+  "163": {
+    "description": "Maricopa County Recorder — Voter Registration & ID is a statewide or regional referral resource for Arizonans affected by the criminal justice system. The Maricopa County Recorder's Office assists residents with voter registration, replacement voter ID cards, and guidance on restoring voting rights after felony convictions under Arizona law. Staff provide forms and referrals to Arizona MVD and Community Legal Services—not DMV licensing services. Users can search by location, service type, or need to find active providers in Maricopa County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Maricopa County Recorder — Voter Registration & ID es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Maricopa. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Civil rights advocacy|Voter ID guidance|Partner referrals|Counseling",
+    "intake_signals": ""
+  },
+  "164": {
+    "description": "DNA People's Legal Services — Flagstaff Office serves justice-involved adults and families rebuilding stability after incarceration in Coconino, Navajo, and Apache counties. DNA People's Legal Services Flagstaff office provides free civil legal assistance to low-income residents of Coconino, Navajo, and Apache counties including public benefits, housing, and family law for justice-involved clients on tribal and non-tribal lands—not criminal defense. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "DNA People's Legal Services — Flagstaff Office ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en los condados Coconino, Navajo y Apache. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Civil legal representation|Benefits navigation|Housing legal aid|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "165": {
+    "description": "ADCRR — Kingman Community Corrections is a statewide or regional referral resource for Arizonans affected by the criminal justice system. The ADCRR Kingman Community Corrections office supervises parolees and probationers in Mohave County, coordinating referrals to Mohave County ARIZONA@WORK, Kingman DES office, and regional behavioral health providers for justice-involved adults under state supervision. Users can search by location, service type, or need to find active providers in Mohave County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "ADCRR — Kingman Community Corrections es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Mohave. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Probation and parole supervision|Partner referrals",
+    "intake_signals": ""
+  },
+  "166": {
+    "description": "ADCRR — Florence Complex Reentry Coordination serves justice-involved adults and families rebuilding stability after incarceration in Pinal, Maricopa, and Pima counties. ADCRR staff at Arizona State Prison Complex Florence coordinate pre-release reentry planning and community corrections handoffs for individuals returning to Pinal, Maricopa, and Pima counties, connecting supervisees to ARIZONA@WORK, DES benefits, and local housing partners. This office handles supervision compliance and reporting—not emergency reentry navigation; ask your officer for referrals to local reentry partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "ADCRR — Florence Complex Reentry Coordination sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Pinal, Maricopa y Pima. Esta oficina maneja cumplimiento de supervisión e informes—no navegación de crisis de reinserción; pida a su oficial referencias a aliados locales de reinserción. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Pre-release planning|Probation and parole supervision|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "167": {
+    "description": "Arizona Department of Housing — Homelessness & Rental Assistance serves justice-involved adults and families rebuilding stability after incarceration in throughout Arizona. The Arizona Department of Housing administers statewide homelessness prevention, emergency rental assistance, and affordable housing programs that justice-involved Arizonans may access through regional housing navigators and coordinated entry systems in Maricopa, Pima, and rural counties. State offices provide information and referrals statewide; county and nonprofit partners deliver most direct services. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Arizona Department of Housing — Homelessness & Rental Assistance sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Arizona. Las oficinas estatales ofrecen información y referencias en todo el estado; socios del condado y sin fines de lucro prestan la mayoría de servicios directos. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Rent and utility assistance|Homelessness prevention|Supportive housing|Housing navigation",
+    "intake_signals": ""
+  },
+  "168": {
+    "description": "Arizona Attorney General — Victim Services is a statewide or regional referral resource for Arizonans affected by the criminal justice system. The Arizona Attorney General Victim Services Division provides crime victim compensation, restitution assistance, and referral navigation for eligible Arizonans including justice-involved crime victims and witnesses—not criminal defense representation. Users can search by location, service type, or need to find active providers in throughout Arizona. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Arizona Attorney General — Victim Services es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Arizona. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "statewide|victim-services|compensation|reentry|arizona|maricopa|state-agency",
+    "services": "Crime victim compensation|Restitution assistance|Civil rights advocacy|Application support",
+    "intake_signals": ""
+  },
+  "169": {
+    "description": "Valley Metro — Reduced Fare & Reentry Transit serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Valley Metro provides public bus and light rail service across Maricopa County with reduced-fare passes for low-income riders including justice-involved adults returning from incarceration who need affordable transportation to ARIZONA@WORK, DES offices, and treatment appointments. Reduced-fare resources typically require application and proof of income or disability; IDs are needed to receive a pass or card. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Valley Metro — Reduced Fare & Reentry Transit sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Los recursos de tarifa reducida suelen requerir solicitud y prueba de ingresos o discapacidad; se necesita identificación para recibir un pase o tarjeta. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Bus and light rail service|Reduced-fare passes|Transportation assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "170": {
+    "description": "Arizona Department of Veterans Services — Yuma County Office is a statewide or regional referral resource for Arizonans affected by the criminal justice system. The Arizona Department of Veterans Services Yuma County office provides free VA benefits claims assistance, discharge upgrade guidance, and referral navigation for justice-involved veterans in Yuma and La Paz counties through the state county veterans service officer network. Users can search by location, service type, or need to find active providers in Yuma, and La Paz counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Arizona Department of Veterans Services — Yuma County Office es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Yuma y La Paz. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Benefits navigation|Discharge upgrade guidance|Primary medical care|Partner referrals",
+    "intake_signals": ""
+  },
+  "171": {
+    "description": "Arizona Department of Veterans Services — Coconino County Office is a statewide or regional referral resource for Arizonans affected by the criminal justice system. The Arizona Department of Veterans Services Coconino County office assists northern Arizona veterans including justice-involved veterans in Flagstaff, Navajo, and Apache counties with VA disability claims, healthcare enrollment, and referrals to North Country HealthCare and ARIZONA@WORK Flagstaff. Users can search by location, service type, or need to find active providers in Coconino, Navajo, and Apache counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Arizona Department of Veterans Services — Coconino County Office es un recurso de referencia estatal o regional para arizonenses afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Coconino, Navajo y Apache. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Benefits navigation|Primary medical care|Partner referrals",
+    "intake_signals": ""
+  },
+  "172": {
+    "description": "Arizona Department of Veterans Services — Mohave County Office serves justice-involved adults and families rebuilding stability after incarceration in Mohave County. The Arizona Department of Veterans Services Mohave County office provides free VA claims assistance and benefits navigation for veterans in Kingman, Lake Havasu City, and Bullhead City including justice-involved veterans coordinating with Mohave County ARIZONA@WORK and regional behavioral health providers. VA eligibility and discharge status affect which benefits apply; ask specifically for justice-involved veteran or VJO/HCRV services when calling. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Arizona Department of Veterans Services — Mohave County Office sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Mohave. La elegibilidad del VA y el tipo de baja afectan qué beneficios aplican; pida específicamente servicios VJO/HCRV o para veteranos en el sistema de justicia al llamar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Benefits navigation|Primary medical care|Disability navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "173": {
+    "description": "United Food Bank — Emergency Food Distribution serves justice-involved adults and families rebuilding stability after incarceration in Maricopa, Pinal, and Gila counties. United Food Bank distributes emergency groceries through partner pantries and direct programs across eastern Maricopa, Pinal, and Gila counties for low-income households including returning citizens reestablishing food security after incarceration. Availability varies by season and donations; call ahead when possible to confirm clothing, hygiene kits, or furniture pickup hours. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "United Food Bank — Emergency Food Distribution sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Maricopa, Pinal y Gila. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Food pantry access|Partner referrals|Mobile pantry|Nutrition programs",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "174": {
+    "description": "Chicanos Por La Causa — Workforce & Education serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Chicanos Por La Causa workforce and education programs offer GED preparation, digital literacy, and job training for Maricopa County adults including justice-involved participants referred from ARIZONA@WORK and community corrections partners. Classes are typically free or low-cost for Arizona adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Chicanos Por La Causa — Workforce & Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Las clases suelen ser gratuitas o de bajo costo para adultos en Arizona; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED and high school equivalency|Job readiness training|Workforce navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "175": {
+    "description": "Literacy Volunteers of Maricopa County serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Literacy Volunteers of Maricopa County provides free adult literacy, ESL, and GED tutoring for low-literacy adults in Maricopa County including justice-involved learners rebuilding education skills after release from county jail or state prison. Classes are typically free or low-cost for Arizona adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Literacy Volunteers of Maricopa County sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Las clases suelen ser gratuitas o de bajo costo para adultos en Arizona; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED and high school equivalency|One-on-one tutoring",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "176": {
+    "description": "Literacy Connects — Tucson Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Pima County. Literacy Connects offers free adult literacy, GED support, and English language instruction for Pima County adults including justice-involved learners at Tucson community learning sites. Classes are typically free or low-cost for Arizona adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Literacy Connects — Tucson Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Pima. Las clases suelen ser gratuitas o de bajo costo para adultos en Arizona; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED and high school equivalency|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "177": {
+    "description": "Homeward Bound — Transitional Housing serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. Homeward Bound provides transitional housing and supportive services for homeless families and single adults in Maricopa County including justice-involved parents reunifying with children, with case management connecting residents to ARIZONA@WORK and DES benefits. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Homeward Bound — Transitional Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Maricopa. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Transitional housing|Reentry navigation|Family reunification support|Partner referrals|Benefits navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "178": {
+    "description": "Volunteer Lawyers Program — State Bar of Arizona serves justice-involved adults and families rebuilding stability after incarceration in Maricopa County. The State Bar of Arizona Volunteer Lawyers Program connects low-income Maricopa County residents including justice-involved clients to pro bono civil attorneys for housing, benefits, family law, and limited record relief matters—not criminal defense. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Volunteer Lawyers Program — State Bar of Arizona ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Maricopa. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Partner referrals|Housing legal help|Benefits navigation|Clinics",
+    "intake_signals": "accepts_criminal_record"
+  }
+}

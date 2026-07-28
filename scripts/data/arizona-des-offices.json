@@ -1,0 +1,107 @@
+[
+  {
+    "county": "Apache",
+    "city": "Show Low",
+    "address": "1500 S. White Mountain Road",
+    "phone": "(928) 537-7100",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "Cochise",
+    "city": "Sierra Vista",
+    "address": "3401 E. Nebraska Street",
+    "phone": "(520) 458-4200",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "Coconino",
+    "city": "Flagstaff",
+    "address": "3803 N. Sentinel Drive",
+    "phone": "(928) 779-6900",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "Gila",
+    "city": "Globe",
+    "address": "605 S. Central Avenue",
+    "phone": "(928) 425-7631",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "Graham",
+    "city": "Safford",
+    "address": "817 W. 8th Street",
+    "phone": "(928) 428-4690",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "Greenlee",
+    "city": "Clifton",
+    "address": "615 N. Coronado Boulevard",
+    "phone": "(928) 865-4145",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "La Paz",
+    "city": "Parker",
+    "address": "1200 S. California Avenue",
+    "phone": "(928) 669-6133",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "Maricopa",
+    "city": "Phoenix",
+    "address": "1789 W. Jefferson Street",
+    "phone": "(602) 542-9935",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "Mohave",
+    "city": "Kingman",
+    "address": "1040 Kino Avenue",
+    "phone": "(928) 753-0714",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "Navajo",
+    "city": "Holbrook",
+    "address": "103 W. Hopi Drive",
+    "phone": "(928) 524-4100",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "Pima",
+    "city": "Tucson",
+    "address": "195 N. Stone Avenue",
+    "phone": "(520) 884-5500",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "Pinal",
+    "city": "Casa Grande",
+    "address": "820 E. Cottonwood Lane",
+    "phone": "(520) 836-0900",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "Santa Cruz",
+    "city": "Nogales",
+    "address": "856 N. Morley Avenue",
+    "phone": "(520) 287-2800",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "Yavapai",
+    "city": "Prescott Valley",
+    "address": "1500 S. Montezuma Street",
+    "phone": "(928) 771-4200",
+    "source": "https://des.az.gov/find-your-local-office"
+  },
+  {
+    "county": "Yuma",
+    "city": "Yuma",
+    "address": "1500 S. Redondo Center Drive",
+    "phone": "(928) 539-1900",
+    "source": "https://des.az.gov/find-your-local-office"
+  }
+]

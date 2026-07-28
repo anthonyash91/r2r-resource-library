@@ -1,0 +1,343 @@
+source_url,source_type,date_accessed,confidence,notes,id_reference
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 1: MDOC — Reentry & Community Corrections,1
+https://www.mdoc.ms.gov/ProbationParole,government,2026-07-06,high,Resource id 2: MDOC — Probation & Parole Field Operations,2
+https://access.ms.gov,government,2026-07-06,high,Resource id 3: access.ms.gov — MDHS Benefits Portal,3
+https://medicaid.ms.gov,government,2026-07-06,high,Resource id 4: Mississippi Division of Medicaid,4
+https://www.ms211.org,nonprofit,2026-07-06,high,Resource id 5: 211 Mississippi,5
+https://www.mslegalservices.org,nonprofit,2026-07-06,high,Resource id 6: Mississippi Center for Legal Services — Statewide Intake,6
+https://msworks.ms.gov,government,2026-07-06,high,Resource id 7: Mississippi Works — WIN Job Center Network,7
+https://www.mdrs.ms.gov,government,2026-07-06,high,Resource id 8: MDRS — Vocational Rehabilitation Services,8
+https://www.msva.ms.gov,government,2026-07-06,high,Resource id 9: Mississippi Veterans Affairs,9
+https://www.dps.ms.gov/driver-services,government,2026-07-06,high,Resource id 10: Mississippi DPS — Driver License Division,10
+https://msdh.ms.gov/vitalrecords,government,2026-07-06,high,Resource id 11: MSDH — Vital Records,11
+https://988lifeline.org,government,2026-07-06,high,Resource id 12: 988 Suicide & Crisis Lifeline — Mississippi,12
+https://www.samhsa.gov/find-help/national-helpline,government,2026-07-06,high,Resource id 13: SAMHSA National Helpline,13
+https://findtreatment.gov,government,2026-07-06,high,Resource id 14: FindTreatment.gov — Mississippi Provider Search,14
+https://dmh.ms.gov,government,2026-07-06,high,Resource id 15: Mississippi Department of Mental Health (DMH),15
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 16: Mississippi Reentry Council,16
+https://www.stewpot.org,nonprofit,2026-07-06,high,Resource id 17: Stewpot Community Services — Jackson,17
+https://www.gatewaymission.org,nonprofit,2026-07-06,high,Resource id 18: Gateway Rescue Mission — Jackson,18
+https://www.hindsbh.org,nonprofit,2026-07-06,high,Resource id 19: Hinds Behavioral Health Services,19
+https://www.catholiccharitiesjackson.org,nonprofit,2026-07-06,high,Resource id 20: Catholic Charities — Jackson Housing & Reentry,20
+https://www.opendoorshomeless.org,nonprofit,2026-07-06,high,Resource id 21: Open Doors Homeless Coalition — Gulf Coast,21
+https://www.coastalfamilyhealth.org,nonprofit,2026-07-06,high,Resource id 22: Coastal Family Health Center — Gulfport,22
+https://www.backbaymission.org,nonprofit,2026-07-06,high,Resource id 23: Back Bay Mission — Biloxi,23
+https://www.regionii.org,nonprofit,2026-07-06,high,Resource id 24: Region II Mental Health Services — Tupelo,24
+https://www.pbmhr.org,nonprofit,2026-07-06,high,Resource id 25: Pine Belt Mental Healthcare Resources — Hattiesburg,25
+https://www.weemsmh.com,nonprofit,2026-07-06,high,Resource id 26: Weems Community Mental Health Center — Meridian,26
+https://www.ccsms.org,nonprofit,2026-07-06,high,Resource id 27: Community Counseling Services — Columbus,27
+https://www.deltahealthalliance.org,nonprofit,2026-07-06,high,Resource id 28: Delta Health Alliance — Greenville,28
+https://www.communicare.org,nonprofit,2026-07-06,high,Resource id 29: Communicare — Oxford,29
+https://msworks.ms.gov,government,2026-07-06,high,Resource id 30: Mississippi WIN Job Center — Jackson Metro,30
+https://msworks.ms.gov,government,2026-07-06,high,Resource id 31: Mississippi WIN Job Center — Gulf Coast,31
+https://msworks.ms.gov,government,2026-07-06,high,Resource id 32: Mississippi WIN Job Center — Tupelo,32
+https://msworks.ms.gov,government,2026-07-06,high,Resource id 33: Mississippi WIN Job Center — Hattiesburg,33
+https://msworks.ms.gov,government,2026-07-06,high,Resource id 34: Mississippi WIN Job Center — Meridian,34
+https://msworks.ms.gov,government,2026-07-06,high,Resource id 35: Mississippi WIN Job Center — Columbus,35
+https://msworks.ms.gov,government,2026-07-06,high,Resource id 36: Mississippi WIN Job Center — Greenville,36
+https://msworks.ms.gov,government,2026-07-06,high,Resource id 37: Mississippi WIN Job Center — Oxford,37
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 38: Adams County MDHS — Benefits & Family Support,38
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 39: Alcorn County MDHS — Benefits & Family Support,39
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 40: Amite County MDHS — Benefits & Family Support,40
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 41: Attala County MDHS — Benefits & Family Support,41
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 42: Benton County MDHS — Benefits & Family Support,42
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 43: Bolivar County MDHS — Benefits & Family Support,43
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 44: Calhoun County MDHS — Benefits & Family Support,44
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 45: Carroll County MDHS — Benefits & Family Support,45
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 46: Chickasaw County MDHS — Benefits & Family Support,46
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 47: Choctaw County MDHS — Benefits & Family Support,47
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 48: Claiborne County MDHS — Benefits & Family Support,48
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 49: Clarke County MDHS — Benefits & Family Support,49
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 50: Clay County MDHS — Benefits & Family Support,50
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 51: Coahoma County MDHS — Benefits & Family Support,51
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 52: Copiah County MDHS — Benefits & Family Support,52
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 53: Covington County MDHS — Benefits & Family Support,53
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 54: DeSoto County MDHS — Benefits & Family Support,54
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 55: Forrest County MDHS — Benefits & Family Support,55
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 56: Franklin County MDHS — Benefits & Family Support,56
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 57: George County MDHS — Benefits & Family Support,57
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 58: Greene County MDHS — Benefits & Family Support,58
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 59: Grenada County MDHS — Benefits & Family Support,59
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 60: Hancock County MDHS — Benefits & Family Support,60
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 61: Harrison County MDHS — Benefits & Family Support,61
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 62: Hinds County MDHS — Benefits & Family Support,62
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 63: Holmes County MDHS — Benefits & Family Support,63
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 64: Humphreys County MDHS — Benefits & Family Support,64
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 65: Issaquena County MDHS — Benefits & Family Support,65
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 66: Itawamba County MDHS — Benefits & Family Support,66
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 67: Jackson County MDHS — Benefits & Family Support,67
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 68: Jasper County MDHS — Benefits & Family Support,68
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 69: Jefferson County MDHS — Benefits & Family Support,69
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 70: Jefferson Davis County MDHS — Benefits & Family Support,70
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 71: Jones County MDHS — Benefits & Family Support,71
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 72: Kemper County MDHS — Benefits & Family Support,72
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 73: Lafayette County MDHS — Benefits & Family Support,73
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 74: Lamar County MDHS — Benefits & Family Support,74
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 75: Lauderdale County MDHS — Benefits & Family Support,75
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 76: Lawrence County MDHS — Benefits & Family Support,76
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 77: Leake County MDHS — Benefits & Family Support,77
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 78: Lee County MDHS — Benefits & Family Support,78
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 79: Leflore County MDHS — Benefits & Family Support,79
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 80: Lincoln County MDHS — Benefits & Family Support,80
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 81: Lowndes County MDHS — Benefits & Family Support,81
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 82: Madison County MDHS — Benefits & Family Support,82
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 83: Marion County MDHS — Benefits & Family Support,83
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 84: Marshall County MDHS — Benefits & Family Support,84
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 85: Monroe County MDHS — Benefits & Family Support,85
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 86: Montgomery County MDHS — Benefits & Family Support,86
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 87: Neshoba County MDHS — Benefits & Family Support,87
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 88: Newton County MDHS — Benefits & Family Support,88
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 89: Noxubee County MDHS — Benefits & Family Support,89
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 90: Oktibbeha County MDHS — Benefits & Family Support,90
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 91: Panola County MDHS — Benefits & Family Support,91
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 92: Pearl River County MDHS — Benefits & Family Support,92
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 93: Perry County MDHS — Benefits & Family Support,93
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 94: Pike County MDHS — Benefits & Family Support,94
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 95: Pontotoc County MDHS — Benefits & Family Support,95
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 96: Prentiss County MDHS — Benefits & Family Support,96
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 97: Quitman County MDHS — Benefits & Family Support,97
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 98: Rankin County MDHS — Benefits & Family Support,98
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 99: Scott County MDHS — Benefits & Family Support,99
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 100: Sharkey County MDHS — Benefits & Family Support,100
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 101: Simpson County MDHS — Benefits & Family Support,101
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 102: Smith County MDHS — Benefits & Family Support,102
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 103: Stone County MDHS — Benefits & Family Support,103
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 104: Sunflower County MDHS — Benefits & Family Support,104
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 105: Tallahatchie County MDHS — Benefits & Family Support,105
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 106: Tate County MDHS — Benefits & Family Support,106
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 107: Tippah County MDHS — Benefits & Family Support,107
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 108: Tishomingo County MDHS — Benefits & Family Support,108
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 109: Tunica County MDHS — Benefits & Family Support,109
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 110: Union County MDHS — Benefits & Family Support,110
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 111: Walthall County MDHS — Benefits & Family Support,111
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 112: Warren County MDHS — Benefits & Family Support,112
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 113: Washington County MDHS — Benefits & Family Support,113
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 114: Wayne County MDHS — Benefits & Family Support,114
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 115: Webster County MDHS — Benefits & Family Support,115
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 116: Wilkinson County MDHS — Benefits & Family Support,116
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 117: Winston County MDHS — Benefits & Family Support,117
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 118: Yalobusha County MDHS — Benefits & Family Support,118
+https://www.mdhs.ms.gov/contact/,government,2026-07-06,high,Resource id 119: Yazoo County MDHS — Benefits & Family Support,119
+https://www.doorsofhopems.org,nonprofit,2026-07-06,high,Resource id 120: Doors of Hope — Transitional Housing,120
+https://salvationarmyalm.org/jackson,nonprofit,2026-07-06,high,Resource id 121: Salvation Army — Center of Hope Jackson,121
+https://salvationarmyalm.org/gulfport,nonprofit,2026-07-06,high,Resource id 122: Salvation Army — Gulf Coast Shelter,122
+https://www.harborhousems.org,nonprofit,2026-07-06,high,Resource id 123: Harbor House Family Violence Center,123
+https://centralusa.salvationarmy.org/tupelo,nonprofit,2026-07-06,high,Resource id 124: Salvation Army Red Shield Lodge — Tupelo,124
+https://www.housingcorp.org,nonprofit,2026-07-06,high,Resource id 125: Elizabeth Gwin Village — Supportive Housing,125
+https://www.jacksonfreeclinic.org,nonprofit,2026-07-06,high,Resource id 126: Jackson Free Clinic,126
+https://www.carmichaelhealth.org,nonprofit,2026-07-06,high,Resource id 127: G.A. Carmichael Family Health Center,127
+https://www.nmhs.net,nonprofit,2026-07-06,high,Resource id 128: North Mississippi Medical Center — Tupelo,128
+https://www.deltregional.com,nonprofit,2026-07-06,high,Resource id 129: Delta Regional Medical Center — Greenville,129
+https://merithealthriverregion.com,nonprofit,2026-07-06,high,Resource id 130: Merit Health River Region — Meridian,130
+https://www.baptistonline.org,nonprofit,2026-07-06,high,Resource id 131: Baptist Memorial Hospital — Oxford,131
+https://www.goodwillms.org,nonprofit,2026-07-06,high,Resource id 132: Goodwill Industries of Mississippi — Jackson,132
+https://www.jobcorps.gov,government,2026-07-06,high,Resource id 133: Mississippi Job Corps — Jackson Center,133
+https://www.mcef.net,nonprofit,2026-07-06,high,Resource id 134: Mississippi Construction Education Foundation,134
+https://www.smpdd.com,government,2026-07-06,high,Resource id 135: Southern Mississippi Planning and Development District — Workforce,135
+https://www.trpdd.com,government,2026-07-06,high,Resource id 136: Three Rivers Planning and Development District — Workforce,136
+https://www.mslegalservices.org,nonprofit,2026-07-06,high,Resource id 137: Mississippi Center for Legal Services — Hattiesburg Office,137
+https://www.mslegalservices.org,nonprofit,2026-07-06,high,Resource id 138: Mississippi Center for Legal Services — Gulfport Office,138
+https://www.mslegalservices.org,nonprofit,2026-07-06,high,Resource id 139: Mississippi Center for Legal Services — Tupelo Office,139
+https://www.mslegalservices.org,nonprofit,2026-07-06,high,Resource id 140: Mississippi Center for Legal Services — Greenwood Office,140
+https://www.region8mhs.org,nonprofit,2026-07-06,high,Resource id 141: Region 8 Mental Health Services — Jackson Substance Use,141
+https://www.region8mhs.org,nonprofit,2026-07-06,high,Resource id 142: Region 8 Mental Health Services — Brandon,142
+https://www.region10mhs.com,nonprofit,2026-07-06,high,Resource id 143: Region 10 Mental Health Services — Corinth,143
+https://www.region12mhs.com,nonprofit,2026-07-06,high,Resource id 144: Region 12 Mental Health Services — Ellisville,144
+https://www.region6mhs.com,nonprofit,2026-07-06,high,Resource id 145: Region 6 Mental Health Services — Clarksdale,145
+https://www.va.gov/jackson-health-care,government,2026-07-06,high,Resource id 146: G.V. (Sonny) Montgomery VA Medical Center,146
+https://www.va.gov/gulf-coast-health-care,government,2026-07-06,high,Resource id 147: VA Gulf Coast Veterans Health Care System — Biloxi,147
+https://www.msva.ms.gov/veterans-homes,government,2026-07-06,high,Resource id 148: Veterans of Foreign Wars — Mississippi State Veterans Home,148
+https://www.deltregional.com,nonprofit,2026-07-06,high,Resource id 149: Delta Regional Medical Center — Veterans Outreach,149
+https://www.msfoodnet.org,nonprofit,2026-07-06,high,Resource id 150: Mississippi Food Network,150
+https://www.gulfportpolice.com,government,2026-07-06,high,Resource id 151: Gulf Coast Public Safety Feed the Needy,151
+https://www.svdpjackson.org,nonprofit,2026-07-06,high,Resource id 152: St. Vincent de Paul — Jackson Food Pantry,152
+https://www.extratable.org,nonprofit,2026-07-06,high,Resource id 153: Extra Table — Hattiesburg,153
+https://www.midsouthfoodbank.org,nonprofit,2026-07-06,high,Resource id 154: Mid-South Food Bank — North Mississippi,154
+https://www.namims.org,nonprofit,2026-07-06,high,Resource id 155: NAMI Mississippi,155
+https://aacms.org,nonprofit,2026-07-06,high,Resource id 156: Alcoholics Anonymous — Central Mississippi Intergroup,156
+https://www.oxfordhouse.org,nonprofit,2026-07-06,high,Resource id 157: Oxford House — Mississippi Chapters,157
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 158: Mississippi Reentry Project — Peer Navigation,158
+https://www.gccfn.org,nonprofit,2026-07-06,high,Resource id 159: Gulf Coast Center for Nonviolence — Peer Support,159
+https://www.mdoc.ms.gov/ProbationParole,government,2026-07-06,high,Resource id 160: MDOC — Jackson Probation & Parole Field Office,160
+https://www.mdoc.ms.gov/ProbationParole,government,2026-07-06,high,Resource id 161: MDOC — Gulfport Probation & Parole Field Office,161
+https://www.mdoc.ms.gov/ProbationParole,government,2026-07-06,high,Resource id 162: MDOC — Tupelo Probation & Parole Field Office,162
+https://www.mdoc.ms.gov/ProbationParole,government,2026-07-06,high,Resource id 163: MDOC — Hattiesburg Probation & Parole Field Office,163
+https://www.mdoc.ms.gov/ProbationParole,government,2026-07-06,high,Resource id 164: MDOC — Meridian Probation & Parole Field Office,164
+https://www.mdoc.ms.gov/ProbationParole,government,2026-07-06,high,Resource id 165: MDOC — Columbus Probation & Parole Field Office,165
+https://www.mdoc.ms.gov/ProbationParole,government,2026-07-06,high,Resource id 166: MDOC — Greenville Probation & Parole Field Office,166
+https://www.mdoc.ms.gov/ProbationParole,government,2026-07-06,high,Resource id 167: MDOC — Oxford Probation & Parole Field Office,167
+https://www.mdoc.ms.gov/ProbationParole,government,2026-07-06,high,Resource id 168: MDOC — Parchman Probation & Parole Field Office,168
+https://www.hindscc.edu,nonprofit,2026-07-06,high,Resource id 169: Hinds Community College — Adult Education,169
+https://www.mgccc.edu,nonprofit,2026-07-06,high,Resource id 170: Mississippi Gulf Coast Community College — Adult Education,170
+https://www.iccms.edu,nonprofit,2026-07-06,high,Resource id 171: Itawamba Community College — Adult Basic Education,171
+https://www.prcc.edu,nonprofit,2026-07-06,high,Resource id 172: Pearl River Community College — Adult Education,172
+https://www.mcc.cc.ms.us,nonprofit,2026-07-06,high,Resource id 173: Meridian Community College — Adult Education,173
+https://www.eastms.edu,nonprofit,2026-07-06,high,Resource id 174: East Mississippi Community College — Adult Education,174
+https://www.msdelta.edu,nonprofit,2026-07-06,high,Resource id 175: Mississippi Delta Community College — Adult Education,175
+https://www.northwestms.edu,nonprofit,2026-07-06,high,Resource id 176: Northwest Mississippi Community College — Adult Education,176
+https://www.mdcps.ms.gov,government,2026-07-06,high,Resource id 177: Mississippi Department of Child Protection Services — Reunification,177
+https://www.mycanopy.org,nonprofit,2026-07-06,high,Resource id 178: Canopy Children's Solutions — Jackson,178
+https://mdes.ms.gov/win-job-centers/greenville-win-job-center/,government,2026-07-06,high,Resource id 179: Greenville WIN Job Center (serves Issaquena County),179
+https://www.deltahealthalliance.org,nonprofit,2026-07-06,high,Resource id 180: Delta Health Alliance — Issaquena Outreach,180
+https://mdes.ms.gov/win-job-centers/greenville-win-job-center/,government,2026-07-06,high,Resource id 181: Greenville WIN Job Center (serves Sharkey County),181
+https://www.wwiscaa.net,nonprofit,2026-07-06,high,Resource id 182: WWISCAA — Sharkey-Issaquena Services,182
+https://mdes.ms.gov/win-job-centers/natchez-win-job-center/,government,2026-07-06,high,Resource id 183: Natchez WIN Job Center (serves Jefferson County),183
+https://www.smrmc.com,nonprofit,2026-07-06,high,Resource id 184: Southwest Mississippi Regional Medical Center,184
+https://mdes.ms.gov/win-job-centers/natchez-win-job-center/,government,2026-07-06,high,Resource id 185: Natchez WIN Job Center (serves Wilkinson County),185
+https://www.fieldhealth.org,nonprofit,2026-07-06,high,Resource id 186: Field Memorial Community Hospital,186
+https://mdes.ms.gov/win-job-centers/greenwood-win-job-center/,government,2026-07-06,high,Resource id 187: Greenwood WIN Job Center (serves Quitman County),187
+https://www.region1mhc.org,nonprofit,2026-07-06,high,Resource id 188: Region I Mental Health Center — Quitman County Office,188
+https://mdes.ms.gov/win-job-centers/meridian-win-job-center/,government,2026-07-06,high,Resource id 189: Meridian WIN Job Center (serves Kemper County),189
+https://www.ochsner.org/locations/ochsner-stennis-hospital/,nonprofit,2026-07-06,high,Resource id 190: Ochsner Stennis Hospital,190
+https://mdes.ms.gov/win-job-centers/meridian-win-job-center/,government,2026-07-06,high,Resource id 191: Meridian WIN Job Center (serves Clarke County),191
+https://www.ochsner.org/locations/ochsner-watkins-hospital/,nonprofit,2026-07-06,high,Resource id 192: Ochsner Watkins Hospital,192
+https://mdes.ms.gov/win-job-centers/greenwood-win-job-center/,government,2026-07-06,high,Resource id 193: Greenwood WIN Job Center (serves Humphreys County),193
+https://www.glh.org,nonprofit,2026-07-06,high,Resource id 194: Greenwood Leflore Hospital,194
+https://mdes.ms.gov/win-job-centers/hattiesburg-win-job-center/,government,2026-07-06,high,Resource id 195: Hattiesburg WIN Job Center (serves Jefferson Davis County),195
+https://www.jdch.org,nonprofit,2026-07-06,high,Resource id 196: Jefferson Davis Community Hospital,196
+https://mdes.ms.gov/win-job-centers/hattiesburg-win-job-center/,government,2026-07-06,high,Resource id 197: Hattiesburg WIN Job Center (serves Perry County),197
+https://www.forresthealth.org/our-locations/locations-profile/perry-county-general-hospital/,nonprofit,2026-07-06,high,Resource id 198: Perry County General Hospital,198
+https://www.mshomecorp.com,government,2026-07-06,high,Resource id 199: Mississippi Home Corporation — Rental Assistance,199
+https://www.pcwmission.org,nonprofit,2026-07-06,high,Resource id 200: Pinebelt Christian Women's Mission — Transitional Housing,200
+https://www.tupelohabitat.org,nonprofit,2026-07-06,high,Resource id 201: Tupelo Lee County Habitat for Humanity — Reentry Housing,201
+https://www.meridianha.org,government,2026-07-06,high,Resource id 202: Meridian Housing Authority — Family Self-Sufficiency,202
+https://www.chauthority.org,government,2026-07-06,high,Resource id 203: Columbus Housing Authority — Reentry Support,203
+https://sdrha.org,government,2026-07-06,high,Resource id 204: South Delta Regional Housing Authority — Greenville,204
+https://www.umc.edu,nonprofit,2026-07-06,high,Resource id 205: University of Mississippi Medical Center — Charity Care,205
+https://www.memorialhealthcare.com,nonprofit,2026-07-06,high,Resource id 206: Memorial Hospital at Gulfport,206
+https://www.region7mhs.com,nonprofit,2026-07-06,high,Resource id 207: Region 7 Mental Health Services — West Point,207
+https://www.region9mhs.com,nonprofit,2026-07-06,high,Resource id 208: Region 9 Mental Health Services — Laurel,208
+https://www.region3mhs.com,nonprofit,2026-07-06,high,Resource id 209: Region 3 Mental Health Services — Tupelo Satellite,209
+https://msworks.ms.gov,government,2026-07-06,high,Resource id 210: Mississippi WIN Job Center — Laurel,210
+https://msworks.ms.gov,government,2026-07-06,high,Resource id 211: Mississippi WIN Job Center — McComb,211
+https://msworks.ms.gov,government,2026-07-06,high,Resource id 212: Mississippi WIN Job Center — Southaven,212
+https://msworks.ms.gov,government,2026-07-06,high,Resource id 213: Mississippi WIN Job Center — Vicksburg,213
+https://www.nmrls.org,nonprofit,2026-07-06,high,Resource id 214: North Mississippi Rural Legal Services,214
+https://www.mvlp.org,nonprofit,2026-07-06,high,Resource id 215: Mississippi Volunteer Lawyers Project,215
+https://www.region15mhs.com,nonprofit,2026-07-06,high,Resource id 216: Region 15 Mental Health Services — Greenwood,216
+https://www.region4mhs.com,nonprofit,2026-07-06,high,Resource id 217: Region 4 Mental Health Services — Batesville,217
+https://www.region11mhs.com,nonprofit,2026-07-06,high,Resource id 218: Region 11 Mental Health Services — Poplarville,218
+https://www.msva.ms.gov,government,2026-07-06,high,Resource id 219: Mississippi Veterans Affairs — Hinds County VSO,219
+https://www.msva.ms.gov,government,2026-07-06,high,Resource id 220: Mississippi Veterans Affairs — Harrison County VSO,220
+https://www.va.gov/gulf-coast-health-care,government,2026-07-06,high,Resource id 221: Veterans Recovery Resources — Gulf Coast,221
+https://www.edwardsstreetfellowshipcenter.org,nonprofit,2026-07-06,high,Resource id 222: Edwards Street Fellowship Center — Food Pantry,222
+https://salvationarmyalm.org/meridian,nonprofit,2026-07-06,high,Resource id 223: Salvation Army — Meridian Food Pantry,223
+https://www.sfxbiloxi.com,nonprofit,2026-07-06,high,Resource id 224: St. Francis Xavier Catholic Church — Food Pantry,224
+https://www.goodsamaritanoxford.org,nonprofit,2026-07-06,high,Resource id 225: Good Samaritan Center — Oxford Food Pantry,225
+https://dmh.ms.gov,government,2026-07-06,high,Resource id 226: Mississippi Department of Mental Health — Peer Support Specialists,226
+https://namississippi.org,nonprofit,2026-07-06,high,Resource id 227: Narcotics Anonymous — Mississippi Area,227
+https://www.regionii.org,nonprofit,2026-07-06,high,Resource id 228: Region II Mental Health — Peer Support Program,228
+https://www.pbmhr.org,nonprofit,2026-07-06,high,Resource id 229: Pine Belt Mental Healthcare — Peer Recovery Support,229
+https://www.communicare.org,nonprofit,2026-07-06,high,Resource id 230: Communicare — Peer Support Services,230
+https://www.catholiccharitiesgulfcoast.org,nonprofit,2026-07-06,high,Resource id 231: Catholic Charities — Gulf Coast Basic Needs,231
+https://www.mccsa.org,nonprofit,2026-07-06,high,Resource id 232: Multi-County Community Service Agency — North Delta,232
+https://www.msfoodnet.org,nonprofit,2026-07-06,high,Resource id 233: Mississippi Food Network — Statewide Food Bank,233
+https://centralusa.salvationarmy.org/jackson,nonprofit,2026-07-06,high,Resource id 234: Salvation Army — Jackson Area Command,234
+https://www.svdpbiloxi.org,nonprofit,2026-07-06,high,Resource id 235: St. Vincent de Paul — Gulf Coast,235
+https://www.catholiccharitiesjackson.org,nonprofit,2026-07-06,high,Resource id 236: Catholic Charities — North Mississippi,236
+https://www.unitedwaysems.org,nonprofit,2026-07-06,high,Resource id 237: United Way of Southeast Mississippi — Basic Needs,237
+https://www.mccb.edu,government,2026-07-06,high,Resource id 238: Mississippi Community College Board — Adult Education,238
+https://www.mdcps.ms.gov,government,2026-07-06,high,Resource id 239: Mississippi Department of Child Protection Services — Family Support,239
+https://www.co.hinds.ms.us,government,2026-07-06,high,Resource id 240: Hinds County Circuit Clerk — Voter Registration,240
+https://www.harrisoncountyms.gov,government,2026-07-06,high,Resource id 241: Harrison County Circuit Clerk — Voter Registration,241
+https://www.nmrls.com,nonprofit,2026-07-06,high,Resource id 242: North Mississippi Rural Legal Services — Oxford,242
+https://www.gulfcoastlaw.org,nonprofit,2026-07-06,high,Resource id 243: Gulf Coast Center for Law — Biloxi,243
+https://www.splcenter.org,nonprofit,2026-07-06,high,Resource id 244: Southern Poverty Law Center — Mississippi Reentry Advocacy,244
+https://msreentry.org,nonprofit,2026-07-06,high,Resource id 245: Mississippi Center for Re-Entry,245
+https://rechfoundationms.org/m-o-r-e/,nonprofit,2026-07-06,high,Resource id 246: RECH Foundation — M.O.R.E. Reentry Program,246
+https://www.msprisonindustries.com,government,2026-07-06,high,Resource id 247: Mississippi Prison Industries — Reentry Employment,247
+https://www.marcreentry.org,nonprofit,2026-07-06,high,Resource id 248: Mississippi Association Returning Citizens (MARC),248
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 249: Mississippi Department of Employment Security — UI & Labor,249
+https://msdh.ms.gov,government,2026-07-06,high,Resource id 250: Mississippi State Department of Health — Public Health,250
+https://www.jacksonms.gov/jtran,government,2026-07-06,high,Resource id 251: Jackson Transit Authority — JTRAN,251
+https://www.coasttransit.com,government,2026-07-06,high,Resource id 252: Coast Transit Authority — Gulfport Biloxi,252
+https://mdot.ms.gov,government,2026-07-06,high,Resource id 253: Mississippi Department of Transportation — Rural Transit,253
+https://www.msva.ms.gov,government,2026-07-06,high,Resource id 254: Mississippi Veterans Affairs — Gulf Coast Office,254
+https://www.feedingthegulfcoast.org,nonprofit,2026-07-06,high,Resource id 255: Feeding the Gulf Coast — Mobile Pantry,255
+https://www.prcc.edu,government,2026-07-06,high,Resource id 256: Pearl River Community College — Adult Education,256
+https://www.smcc.edu,government,2026-07-06,high,Resource id 257: Southwest Mississippi Community College — Adult Education,257
+https://www.colin.edu,government,2026-07-06,high,Resource id 258: Copiah-Lincoln Community College — Adult Education,258
+https://www.mscenterforjustice.org,nonprofit,2026-07-06,high,Resource id 259: Mississippi Center for Justice — Reentry Legal Clinic,259
+https://www.msva.ms.gov,government,2026-07-06,high,Resource id 260: Mississippi Veterans Affairs — North Mississippi Office,260
+https://www.region1mhc.org,nonprofit,2026-07-06,high,Resource id 261: Region I Mental Health Center,261
+https://www.region1mhc.org,nonprofit,2026-07-06,high,Resource id 262: Region I Mental Health Center — SUD Services,262
+https://www.region2mhc.org,nonprofit,2026-07-06,high,Resource id 263: Region II Mental Health Center,263
+https://www.region2mhc.org,nonprofit,2026-07-06,high,Resource id 264: Region II Mental Health Center — SUD Services,264
+https://www.region3mhc.org,nonprofit,2026-07-06,high,Resource id 265: Region III Mental Health Center,265
+https://www.region3mhc.org,nonprofit,2026-07-06,high,Resource id 266: Region III Mental Health Center — SUD Services,266
+https://www.region4mhc.org,nonprofit,2026-07-06,high,Resource id 267: Region IV Mental Health Center,267
+https://www.region4mhc.org,nonprofit,2026-07-06,high,Resource id 268: Region IV Mental Health Center — SUD Services,268
+https://www.region6mhc.org,nonprofit,2026-07-06,high,Resource id 269: Region VI Mental Health Center,269
+https://www.region6mhc.org,nonprofit,2026-07-06,high,Resource id 270: Region VI Mental Health Center — SUD Services,270
+https://www.region7mhc.org,nonprofit,2026-07-06,high,Resource id 271: Region VII Mental Health Center,271
+https://www.region7mhc.org,nonprofit,2026-07-06,high,Resource id 272: Region VII Mental Health Center — SUD Services,272
+https://www.region8mhc.org,nonprofit,2026-07-06,high,Resource id 273: Region VIII Mental Health Center,273
+https://www.region8mhc.org,nonprofit,2026-07-06,high,Resource id 274: Region VIII Mental Health Center — SUD Services,274
+https://www.region9mhc.org,nonprofit,2026-07-06,high,Resource id 275: Region IX Mental Health Center,275
+https://www.region9mhc.org,nonprofit,2026-07-06,high,Resource id 276: Region IX Mental Health Center — SUD Services,276
+https://www.region10mhc.org,nonprofit,2026-07-06,high,Resource id 277: Region X Mental Health Center,277
+https://www.region10mhc.org,nonprofit,2026-07-06,high,Resource id 278: Region X Mental Health Center — SUD Services,278
+https://www.region11mhc.org,nonprofit,2026-07-06,high,Resource id 279: Region XI Mental Health Center,279
+https://www.region11mhc.org,nonprofit,2026-07-06,high,Resource id 280: Region XI Mental Health Center — SUD Services,280
+https://www.region12mhc.org,nonprofit,2026-07-06,high,Resource id 281: Region XII Mental Health Center,281
+https://www.region12mhc.org,nonprofit,2026-07-06,high,Resource id 282: Region XII Mental Health Center — SUD Services,282
+https://www.region13mhc.org,nonprofit,2026-07-06,high,Resource id 283: Region XIII Mental Health Center,283
+https://www.region13mhc.org,nonprofit,2026-07-06,high,Resource id 284: Region XIII Mental Health Center — SUD Services,284
+https://www.region14mhc.org,nonprofit,2026-07-06,high,Resource id 285: Region XIV Mental Health Center,285
+https://www.region14mhc.org,nonprofit,2026-07-06,high,Resource id 286: Region XIV Mental Health Center — SUD Services,286
+https://www.region15mhc.org,nonprofit,2026-07-06,high,Resource id 287: Region XV Mental Health Center,287
+https://www.region15mhc.org,nonprofit,2026-07-06,high,Resource id 288: Region XV Mental Health Center — SUD Services,288
+https://www.weemsmh.com,nonprofit,2026-07-06,high,Resource id 289: Weems Community Mental Health Center,289
+https://www.weemsmh.com,nonprofit,2026-07-06,high,Resource id 290: Weems Community Mental Health Center — SUD Services,290
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 291: MDOC Community Corrections — District 1,291
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 292: MDOC Community Corrections — District 2,292
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 293: MDOC Community Corrections — District 3,293
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 294: MDOC Community Corrections — District 4,294
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 295: MDOC Community Corrections — District 5,295
+https://www.msfoodnet.org,nonprofit,2026-07-06,high,Resource id 296: Mississippi Food Network — Jackson Hub,296
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 297: WIN Job Center — Jackson,297
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 298: WIN Job Center — Gulfport,298
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 299: WIN Job Center — Biloxi,299
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 300: WIN Job Center — Hattiesburg,300
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 301: WIN Job Center — Meridian,301
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 302: WIN Job Center — Columbus,302
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 303: WIN Job Center — Tupelo,303
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 304: WIN Job Center — Greenville,304
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 305: WIN Job Center — Oxford,305
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 306: WIN Job Center — McComb,306
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 307: WIN Job Center — Natchez,307
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 308: WIN Job Center — Brookhaven,308
+https://www.mslegalservices.org,nonprofit,2026-07-06,high,Resource id 309: Mississippi Center for Legal Services — Jackson Office,309
+https://www.hchra.org,nonprofit,2026-07-06,high,Resource id 310: Hinds County Human Resource Agency,310
+https://www.casm.org,nonprofit,2026-07-06,high,Resource id 311: Community Action of South Mississippi,311
+https://www.prairieopp.org,nonprofit,2026-07-06,high,"Resource id 312: Prairie Opportunity, Inc.",312
+https://www.wwiscaa.org,nonprofit,2026-07-06,high,Resource id 313: WWISCAA — Washington County,313
+https://www.lift-inc.org,nonprofit,2026-07-06,high,"Resource id 314: LIFT, Inc. — Northeast Mississippi",314
+https://www.prvop.org,nonprofit,2026-07-06,high,Resource id 315: Pearl River Valley Opportunity,315
+https://www.mccsa.org,nonprofit,2026-07-06,high,Resource id 316: Multi-County Community Service Agency,316
+https://www.swmsopp.org,nonprofit,2026-07-06,high,Resource id 317: Southwest Mississippi Opportunity,317
+https://www.midstateopp.org,nonprofit,2026-07-06,high,Resource id 318: Mid-State Opportunity,318
+https://www.coahomaopp.org,nonprofit,2026-07-06,high,Resource id 319: Coahoma Opportunities,319
+https://www.ccs-ms.org,nonprofit,2026-07-06,high,Resource id 320: Community Counseling Services — Attala County SUD,320
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 321: MDOC Community Corrections — Carroll County Supervision,321
+https://www.nmhs.net,nonprofit,2026-07-06,high,Resource id 322: North Mississippi Medical Center — Carroll County Clinic,322
+https://www.swmsopp.org,nonprofit,2026-07-06,high,Resource id 323: Southwest Mississippi Opportunity — Claiborne Housing,323
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 324: MDOC Community Corrections — Coahoma Field Unit,324
+https://www.region1mhc.org,nonprofit,2026-07-06,high,Resource id 325: Region I Mental Health Center — DeSoto County Services,325
+https://www.parkwoodbhs.com,nonprofit,2026-07-06,high,Resource id 326: Parkwood Behavioral Health System — DeSoto SUD,326
+https://www.grenadahospital.com,nonprofit,2026-07-06,high,Resource id 327: Grenada Lake Medical Center,327
+https://www.communicare.org,nonprofit,2026-07-06,high,Resource id 328: Communicare — Holmes County SUD,328
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 329: MDOC Community Corrections — Jasper County,329
+https://mdes.ms.gov,government,2026-07-06,high,Resource id 330: WIN Job Center — Carthage,330
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 331: MDOC Community Corrections — Leake County,331
+https://www.weemsmh.com,nonprofit,2026-07-06,high,Resource id 332: Weems Community Mental Health — Leake SUD,332
+https://www.mccsa.org,nonprofit,2026-07-06,high,Resource id 333: Multi-County CSA — Leake Housing,333
+https://msdh.ms.gov,government,2026-07-06,high,Resource id 334: Montgomery County Health Department,334
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 335: MDOC Community Corrections — Quitman County,335
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 336: MDOC Community Corrections — Scott County,336
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 337: MDOC Community Corrections — Smith County,337
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 338: MDOC Community Corrections — Tallahatchie County,338
+https://affordablehousinghub.org/housing/mississippi/warren-county/vicksburg/housing-authority-of-the-city-of-vicksburg-2027-authority,government,2026-07-06,high,Resource id 339: Housing Authority of the City of Vicksburg,339
+https://www.weemsmh.com,nonprofit,2026-07-06,high,Resource id 340: Weems Community Mental Health — Winston SUD,340
+https://www.mdoc.ms.gov,government,2026-07-06,high,Resource id 341: MDOC Community Corrections — Calhoun County,341
+https://www.ngcah.com/noxubee-general-hospital,nonprofit,2026-07-06,high,Resource id 342: Noxubee General Hospital — Winston County Care,342

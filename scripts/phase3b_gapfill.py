@@ -1489,7 +1489,7 @@ def register_tier_a_indiana_gaps(add):
         coverage="single",
         _source="https://www.in.gov/dwd/workone/region-4/",
         _source_type="government",
-        _confidence="medium",
+        _confidence="high",
     )
 
 
@@ -1817,3 +1817,126 @@ def register_phase3b_georgia(add, entries=None):
 
     existing_fa = collect_financial_assistance_counties(entries or [])
     register_county_benefits_georgia(add, existing_fa)
+
+
+def _dss_desc_en(county: str, city: str) -> str:
+    return (
+        f"{county} County Department of Social Services office in {city} processes SNAP, Medicaid, "
+        f"NC Health Choice, and Work First applications for North Carolina residents including returning "
+        f"citizens reestablishing food and health benefits after release from {county} County Jail or NCDAC custody."
+    )
+
+
+def _dss_desc_es(county: str, city: str) -> str:
+    return (
+        f"La oficina del Departamento de Servicios Sociales del condado {county} en {city} procesa solicitudes "
+        f"de SNAP, Medicaid, NC Health Choice y Work First para residentes de Carolina del Norte, incluidos "
+        f"ciudadanos que regresan que restablecen beneficios alimentarios y de salud después de la liberación."
+    )
+
+
+def _dss_nc(county, city, address, phone, region, desc_en, desc_es, source):
+    return dict(
+        name=f"{county} County DSS — Benefits & Family Support",
+        category="financial-assistance",
+        region=region,
+        description=desc_en,
+        description_es=desc_es,
+        address=address,
+        city=city,
+        phone=phone or "1-866-719-0141",
+        email="",
+        website="https://www.ncdhhs.gov/divisions/social-services/local-dss-directory",
+        eligibility=f"{county} County residents meeting income and household-size requirements for SNAP, Medicaid, and Work First; criminal record generally not a barrier.",
+        eligibility_es=f"Residentes del condado {county} que cumplan requisitos de ingresos para SNAP, Medicaid y Work First; los antecedentes penales generalmente no son barrera.",
+        notes="Apply online at epass.nc.gov or visit the county DSS office; call 1-866-719-0141 for NC FAST help.",
+        notes_es="Solicite en epass.nc.gov o visite la oficina DSS del condado; llame al 1-866-719-0141 para ayuda NC FAST.",
+        hours="Typically Monday–Friday business hours; call ahead",
+        tags=f"{county.lower()}|north-carolina|benefits|SNAP|Medicaid|DSS|reentry",
+        services="SNAP enrollment|Medicaid and NC Health Choice|Work First cash assistance|Document verification|ePASS application help",
+        county=county,
+        served_counties=county,
+        coverage="single",
+        _source=source or "https://www.ncdhhs.gov/divisions/social-services/local-dss-directory",
+        _source_type="government",
+        _confidence="high",
+    )
+
+
+def register_phase3b_north_carolina(add, entries=None):
+    """Phase 3b: DSS county benefits (registry) for all 100 NC counties."""
+
+    from county_benefits_registry import collect_financial_assistance_counties, register_county_benefits_north_carolina
+
+    existing_fa = collect_financial_assistance_counties(entries or [])
+    register_county_benefits_north_carolina(add, existing_fa)
+
+
+def _dhr_desc_en(county: str, city: str) -> str:
+    return (
+        f"The {county} County Department of Human Resources office in {city} processes SNAP, "
+        f"Medicaid, Family Assistance (TANF), and child care subsidy applications for Alabama "
+        f"residents including returning citizens reestablishing food and health benefits after "
+        f"release from {county} County Jail or ADOC custody. County DHR staff help verify "
+        f"identity and income and accept applications submitted through the MyDHR portal."
+    )
+
+
+def _dhr_desc_es(county: str, city: str) -> str:
+    return (
+        f"La oficina del Departamento de Recursos Humanos del condado {county} en {city} procesa "
+        f"solicitudes de SNAP, Medicaid, Asistencia Familiar (TANF) y subsidios de cuidado infantil "
+        f"para residentes de Alabama, incluidos ciudadanos que regresan que restablecen beneficios "
+        f"alimentarios y de salud después de salir de la cárcel del condado {county} o de la custodia "
+        f"de ADOC. El personal del condado ayuda a verificar identidad e ingresos y acepta solicitudes "
+        f"presentadas a través del portal MyDHR."
+    )
+
+
+def _dhr_al(county, city, address, phone, region, desc_en, desc_es, source):
+    return dict(
+        name=f"{county} County DHR — Benefits & Family Support",
+        category="financial-assistance",
+        region=region,
+        description=desc_en,
+        description_es=desc_es,
+        address=address,
+        city=city,
+        phone=phone or "1-800-410-5827",
+        email="",
+        website="https://mydhr.alabama.gov",
+        eligibility=(
+            f"{county} County residents meeting income and household-size requirements for SNAP, "
+            f"Medicaid, and Family Assistance; criminal record generally not a barrier."
+        ),
+        eligibility_es=(
+            f"Residentes del condado {county} que cumplan requisitos de ingresos y tamaño de hogar "
+            f"para SNAP, Medicaid y Asistencia Familiar; los antecedentes penales generalmente no son barrera."
+        ),
+        notes=(
+            "Apply online at mydhr.alabama.gov or visit the county DHR office; call 1-800-410-5827 "
+            "for statewide MyDHR help; bring ID and release paperwork if recently released."
+        ),
+        notes_es=(
+            "Solicite en mydhr.alabama.gov o visite la oficina DHR del condado; llame al 1-800-410-5827 "
+            "para ayuda estatal de MyDHR; traiga identificación y documentos de liberación si fue liberado recientemente."
+        ),
+        hours="Typically Monday–Friday, 8:00 a.m.–4:30 p.m. CT; call ahead",
+        tags=f"{county.lower()}|alabama|benefits|SNAP|Medicaid|DHR|reentry",
+        services="SNAP enrollment|Medicaid application help|Family Assistance (TANF)|Child care subsidies|MyDHR application help",
+        county=county,
+        served_counties=county,
+        coverage="single",
+        _source=source or "https://dhr.alabama.gov/county-office-contact/",
+        _source_type="government",
+        _confidence="high",
+    )
+
+
+def register_phase3b_alabama(add, entries=None):
+    """Phase 3b: DHR county benefits (registry) for all 67 AL counties."""
+
+    from county_benefits_registry import collect_financial_assistance_counties, register_county_benefits_alabama
+
+    existing_fa = collect_financial_assistance_counties(entries or [])
+    register_county_benefits_alabama(add, existing_fa)

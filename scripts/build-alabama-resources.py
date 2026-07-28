@@ -1,0 +1,1053 @@
+#!/usr/bin/env python3
+"""Generate alabama-resources.csv and alabama-research-log.csv.
+
+RESOURCES_UUID_PREFIX comment dc000001
+"""
+import csv
+from collections import Counter
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+RESOURCES_PATH = ROOT / "data" / "alabama-resources.csv"
+LOG_PATH = ROOT / "data" / "alabama-research-log.csv"
+DATE = "2026-07-06"
+
+COLUMNS = [
+    "id", "name", "category", "region", "description", "description_es",
+    "address", "city", "phone", "email", "website", "eligibility", "eligibility_es",
+    "notes", "notes_es", "hours", "tags", "services", "county", "served_counties", "coverage",
+]
+LOG_COLUMNS = ["source_url", "source_type", "date_accessed", "confidence", "notes", "id_reference"]
+
+ENTRIES = []
+
+
+def add(**kw):
+    ENTRIES.append(kw)
+
+
+# --- Phase 1: Statewide backbone ---
+add(
+    name="ADOC — Reentry & Rehabilitation Services",
+    category="state-agency", region="Statewide",
+    description="The Alabama Department of Corrections coordinates statewide reentry planning that begins at intake and continues through pre-release programming and community supervision. Reentry staff connect people leaving state custody to housing referrals, MyDHR benefits enrollment, Alabama Career Center workforce services, and local reentry coalitions across all 67 counties. This office provides planning, programming, and referrals coordinated through facility case managers—not a walk-in crisis line or emergency cash provider.",
+    description_es="El Departamento de Correcciones de Alabama coordina la planificación estatal de reinserción que comienza al ingreso y continúa durante la programación previa a la liberación y la supervisión comunitaria. El personal de reinserción conecta a las personas que salen de custodia estatal con referencias de vivienda, inscripción en beneficios de MyDHR, servicios laborales de Alabama Career Center y coaliciones locales de reinserción en los 67 condados. Esta oficina ofrece planificación y referencias, no es una línea de crisis.",
+    address="301 South Ripley Street", city="Montgomery", phone="334-353-3883", email="",
+    website="https://doc.alabama.gov/ReEntryInfo",
+    eligibility="Individuals in ADOC custody preparing for release or recently released; families and community partners may use published reentry resources and planning guides.",
+    eligibility_es="Personas en custodia de ADOC que se preparan para la liberación o recién liberadas; familias y aliados comunitarios pueden usar los recursos publicados de reinserción.",
+    notes="Review the reentry resource guide at doc.alabama.gov/ReEntryInfo; coordinate through facility reentry coordinators and assigned supervision officers after release.",
+    notes_es="Revise la guía de recursos de reinserción en doc.alabama.gov/ReEntryInfo; coordine con los coordinadores de reinserción de la instalación y el oficial de supervisión asignado.",
+    hours="State office Monday–Friday business hours",
+    tags="statewide|reentry|ADOC|DOC|pre-release|prison",
+    services="Pre-release planning|Transitional programming coordination|Community partner referrals|Reentry resource navigation|Supervision linkage",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://doc.alabama.gov/ReEntryInfo", _source_type="government", _confidence="high",
+)
+add(
+    name="Alabama Bureau of Pardons and Paroles — Statewide",
+    category="probation-parole", region="Statewide",
+    description="The Alabama Bureau of Pardons and Paroles supervises people on parole and probation and processes pardon, parole, and clemency applications through field offices across the state. Officers connect supervisees to employment, treatment, and housing referrals as conditions of supervision, and the Board hears pardon and parole cases on a published statewide docket. Supervision and hearings only—not a source of emergency cash or shelter.",
+    description_es="La Junta de Indultos y Libertad Condicional de Alabama supervisa a personas en libertad condicional y probatoria y procesa solicitudes de indulto, libertad condicional y clemencia a través de oficinas de campo en todo el estado. Los oficiales conectan a los supervisados con referencias de empleo, tratamiento y vivienda como condiciones de supervisión, y la Junta escucha casos en un calendario estatal publicado. Solo supervisión y audiencias, no efectivo de emergencia ni refugio.",
+    address="RSA Tower, 201 Monroe Street", city="Montgomery", phone="334-242-8700", email="",
+    website="https://paroles.alabama.gov",
+    eligibility="Individuals under active parole or probation supervision, or eligible to apply for pardon, parole, or clemency under Alabama law.",
+    eligibility_es="Personas bajo supervisión activa de libertad condicional o probatoria, o elegibles para solicitar indulto, libertad condicional o clemencia según la ley de Alabama.",
+    notes="Find field office locations and hearing dockets at paroles.alabama.gov; contact your assigned supervision officer for case-specific questions.",
+    notes_es="Encuentre ubicaciones de oficinas de campo y calendarios de audiencias en paroles.alabama.gov; contacte a su oficial de supervisión asignado para preguntas específicas.",
+    hours="Field offices Monday–Friday business hours",
+    tags="statewide|probation-parole|pardons|paroles|reentry",
+    services="Parole supervision|Probation supervision|Pardon and clemency hearings|Field office referrals|Reentry condition compliance support",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://paroles.alabama.gov", _source_type="government", _confidence="high",
+)
+add(
+    name="MyDHR — Alabama Benefits Portal",
+    category="financial-assistance", region="Statewide",
+    description="MyDHR is Alabama's official online portal for applying for and managing SNAP food assistance, Family Assistance (TANF) cash benefits, child care subsidies, and Medicaid referrals through county Department of Human Resources offices. Justice-involved Alabamians can apply for food and cash support after release, and county DHR staff assist with verification and recertification at all 67 county offices statewide.",
+    description_es="MyDHR es el portal en línea oficial de Alabama para solicitar y administrar asistencia alimentaria SNAP, beneficios en efectivo de Asistencia Familiar (TANF), subsidios de cuidado infantil y referencias de Medicaid a través de oficinas del Departamento de Recursos Humanos del condado. Los alabameños en reinserción pueden solicitar apoyo alimentario y en efectivo después de la liberación; el personal del condado ayuda con verificación y recertificación en las 67 oficinas.",
+    address="50 Ripley Street", city="Montgomery", phone="1-800-382-0499", email="", website="https://mydhr.alabama.gov",
+    eligibility="Alabama residents meeting income and household-size requirements for SNAP, TANF, or child care assistance; criminal record is generally not a barrier to SNAP eligibility.",
+    eligibility_es="Residentes de Alabama que cumplan requisitos de ingresos y tamaño del hogar para SNAP, TANF o asistencia de cuidado infantil; los antecedentes penales generalmente no son barrera para SNAP.",
+    notes="Apply online at mydhr.alabama.gov or visit your county DHR office; call 1-800-382-0499 for application help; bring ID and release documents.",
+    notes_es="Solicite en línea en mydhr.alabama.gov o visite su oficina DHR del condado; llame al 1-800-382-0499 para ayuda; traiga identificación y documentos de liberación.",
+    hours="Online 24/7; county DHR office hours vary",
+    tags="statewide|benefits|SNAP|TANF|MyDHR|reentry",
+    services="SNAP enrollment|TANF cash assistance|Child care subsidy applications|Medicaid referral|County DHR office locator",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://mydhr.alabama.gov", _source_type="government", _confidence="high",
+)
+add(
+    name="Alabama Medicaid Agency",
+    category="healthcare", region="Statewide",
+    description="The Alabama Medicaid Agency administers health coverage for eligible low-income residents, pregnant women, children, and people with disabilities statewide, including plan first family planning coverage and coordination with the ACA marketplace. Returning citizens can apply for Medicaid before or immediately after release to secure prescription and primary care coverage; recipient services staff help with enrollment questions and eligibility appeals by phone.",
+    description_es="La Agencia de Medicaid de Alabama administra la cobertura de salud para residentes elegibles de bajos ingresos, mujeres embarazadas, niños y personas con discapacidades en todo el estado, incluida la cobertura de planificación familiar Plan First y coordinación con el mercado de la ACA. Los ciudadanos que regresan pueden solicitar Medicaid antes o inmediatamente después de la liberación para asegurar cobertura de recetas y atención primaria.",
+    address="501 Dexter Avenue", city="Montgomery", phone="1-800-362-1504", email="",
+    website="https://medicaid.alabama.gov",
+    eligibility="Alabama residents meeting income and category requirements (children, pregnant women, disabled adults, some low-income parents); Alabama has not expanded Medicaid to all low-income adults.",
+    eligibility_es="Residentes de Alabama que cumplan requisitos de ingresos y categoría (niños, mujeres embarazadas, adultos discapacitados, algunos padres de bajos ingresos); Alabama no ha expandido Medicaid a todos los adultos de bajos ingresos.",
+    notes="Apply through mydhr.alabama.gov or call 1-800-362-1504; ask about presumptive eligibility for pregnant applicants and disability-based categories.",
+    notes_es="Solicite a través de mydhr.alabama.gov o llame al 1-800-362-1504; pregunte sobre elegibilidad presuntiva para embarazadas y categorías por discapacidad.",
+    hours="Recipient call center Monday–Friday, 8:00 a.m.–5:00 p.m. CT",
+    tags="statewide|healthcare|Medicaid|health-insurance|reentry",
+    services="Medicaid application assistance|Eligibility determination|Plan First family planning coverage|Recipient services helpline|Appeals support",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://medicaid.alabama.gov", _source_type="government", _confidence="high",
+)
+add(
+    name="Alabama 211",
+    category="state-agency", region="Statewide",
+    description="Alabama 211 is a free statewide information and referral service connecting residents to health and human services including housing, food, utilities, employment, and crisis support across all 67 counties. United Way-supported navigators, coordinated through Connect Alabama 211, help callers find local programs by need and ZIP code by phone or online. Alabama 211 is a referral service—not a direct-service provider.",
+    description_es="Alabama 211 es un servicio gratuito de información y referencia estatal que conecta a residentes con servicios de salud y humanos incluyendo vivienda, alimentos, servicios públicos, empleo y apoyo en crisis en los 67 condados. Navegadores apoyados por United Way, coordinados a través de Connect Alabama 211, ayudan a encontrar programas locales por necesidad y código postal. Es un servicio de referencia, no un proveedor directo.",
+    address="", city="", phone="211", email="", website="https://www.uwca.org/211",
+    eligibility="Open to all Alabama residents; no criminal-record restrictions stated.",
+    eligibility_es="Abierto a todos los residentes de Alabama; sin restricciones de antecedentes indicadas.",
+    notes="Dial 211 from any Alabama phone, or 1-888-421-1266 if 211 is unavailable in your area; search resources online at uwca.org/211.",
+    notes_es="Marque 211 desde cualquier teléfono de Alabama, o 1-888-421-1266 si 211 no está disponible en su área; busque recursos en uwca.org/211.",
+    hours="Available during published service hours; check uwca.org/211",
+    tags="statewide|hotline|211|referral-only|basic-needs",
+    services="Information and referral|Housing resource navigation|Benefits referrals|Crisis resource connections",
+    county="", served_counties="", coverage="statewide",
+    _source="https://www.uwca.org/211", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Legal Services Alabama — Statewide Intake",
+    category="legal-aid", region="Statewide",
+    description="Legal Services Alabama is the state's primary nonprofit civil legal aid provider serving low-income Alabamians with housing, public benefits, family law, and criminal record relief including expungement and certificates of eligibility under Alabama's Clean Slate law. Centralized statewide intake routes callers to regional offices in Birmingham, Montgomery, Mobile, Huntsville, and Dothan—not criminal defense representation.",
+    description_es="Legal Services Alabama es el principal proveedor sin fines de lucro de asistencia legal civil del estado que sirve a personas de bajos ingresos con vivienda, beneficios públicos, derecho familiar y alivio de antecedentes penales incluida la expungación bajo la ley Clean Slate de Alabama. La admisión centralizada enruta a oficinas regionales en Birmingham, Montgomery, Mobile, Huntsville y Dothan, no defensa penal.",
+    address="2001 Park Place North, Suite 700", city="Montgomery", phone="1-866-456-4995", email="",
+    website="https://www.alslegal.org",
+    eligibility="Low-income Alabama residents with non-criminal legal problems; LSC income limits apply; offense-type restrictions may apply for record relief eligibility.",
+    eligibility_es="Residentes de Alabama de bajos ingresos con problemas legales no penales; aplican límites de ingresos LSC; pueden aplicar restricciones por tipo de delito para alivio de antecedentes.",
+    notes="Apply online at alslegal.org or call 1-866-456-4995; regional offices serve specific counties listed on the website.",
+    notes_es="Solicite en alslegal.org o llame al 1-866-456-4995; las oficinas regionales sirven condados específicos listados en el sitio web.",
+    hours="Intake Monday–Friday business hours; online application 24/7",
+    tags="statewide|legal-aid|low-income|expungement|clean-slate|hotline",
+    services="Civil legal representation|Expungement assistance|Housing legal aid|Benefits advocacy|Regional office referrals",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://www.alslegal.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Alabama Career Center System",
+    category="employment", region="Statewide",
+    description="The Alabama Career Center System, operated by the Alabama Department of Labor, connects job seekers—including justice-involved Alabamians—to career centers, job matching, unemployment services, and WIOA training referrals through local workforce boards covering all 67 counties. Fair-chance employer partnerships and reentry-focused case management coordinate through Career Center offices for returning citizens seeking sustainable employment.",
+    description_es="El Sistema de Centros de Carrera de Alabama, operado por el Departamento de Trabajo de Alabama, conecta a buscadores de empleo—incluidos alabameños con antecedentes penales—con centros de carrera, coincidencia de empleo, servicios de desempleo y referencias de capacitación WIOA a través de juntas de fuerza laboral locales en los 67 condados. Las alianzas de empleo de segunda oportunidad se coordinan a través de las oficinas de Career Center.",
+    address="649 Monroe Street", city="Montgomery", phone="334-242-8003", email="",
+    website="https://joblink.alabama.gov",
+    eligibility="Open to Alabama job seekers including justice-involved individuals; core career center services are free.",
+    eligibility_es="Abierto a buscadores de empleo de Alabama incluidas personas con antecedentes penales; servicios básicos del centro de carrera son gratuitos.",
+    notes="Find your nearest Career Center at joblink.alabama.gov; register online for job search tools and WIOA training referrals.",
+    notes_es="Encuentre su Career Center más cercano en joblink.alabama.gov; regístrese en línea para herramientas de búsqueda de empleo y referencias de capacitación WIOA.",
+    hours="Career centers Monday–Friday business hours",
+    tags="statewide|employment|career-center|WIOA|fair-chance|reentry",
+    services="Job search assistance|Career coaching|WIOA training referrals|Unemployment services|Fair-chance employment navigation",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://joblink.alabama.gov", _source_type="government", _confidence="high",
+)
+add(
+    name="AIDT — Alabama Industrial Development Training",
+    category="employment", region="Statewide",
+    description="AIDT is Alabama's workforce development agency providing free industrial and manufacturing skills training, pre-employment assessments, and employer-specific training programs statewide, including at the Alabama Robotics Technology Park. Justice-involved Alabamians can access short-term credential training in welding, forklift operation, industrial maintenance, and other in-demand trades that connect directly to regional employer partnerships.",
+    description_es="AIDT es la agencia de desarrollo de fuerza laboral de Alabama que ofrece capacitación gratuita en habilidades industriales y de manufactura, evaluaciones previas al empleo y programas de capacitación específicos para empleadores en todo el estado, incluido el Alabama Robotics Technology Park. Los alabameños con antecedentes penales pueden acceder a capacitación de credenciales a corto plazo en soldadura, operación de montacargas y mantenimiento industrial.",
+    address="3920 Trade Center Way", city="Montgomery", phone="334-242-4158", email="",
+    website="https://www.aidt.edu",
+    eligibility="Alabama residents seeking industrial or manufacturing job skills training; some programs require employer sponsorship or referral from a Career Center.",
+    eligibility_es="Residentes de Alabama que buscan capacitación en habilidades industriales o de manufactura; algunos programas requieren patrocinio del empleador o referencia de un Career Center.",
+    notes="Browse current training programs at aidt.edu; ask your Alabama Career Center about AIDT referrals and the Alabama Robotics Technology Park schedule.",
+    notes_es="Explore los programas de capacitación actuales en aidt.edu; pregunte en su Alabama Career Center sobre referencias a AIDT y el calendario del Alabama Robotics Technology Park.",
+    hours="Training schedules vary by program and site",
+    tags="statewide|employment|AIDT|workforce-training|manufacturing|reentry",
+    services="Industrial skills training|Manufacturing credential programs|Pre-employment assessments|Employer-specific training|Robotics technology training",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://www.aidt.edu", _source_type="government", _confidence="high",
+)
+add(
+    name="Alabama Department of Rehabilitation Services (ADRS)",
+    category="employment", region="Statewide",
+    description="The Alabama Department of Rehabilitation Services helps Alabamians with disabilities—including justice-involved individuals with qualifying disabilities—prepare for, obtain, and maintain employment through vocational counseling, assistive technology, training, and job placement at district offices statewide. ADRS coordinates with Career Centers and ADOC reentry programs for disability employment supports before and after release.",
+    description_es="El Departamento de Servicios de Rehabilitación de Alabama ayuda a alabameños con discapacidades—incluidas personas con antecedentes penales con discapacidades calificadas—a prepararse, obtener y mantener empleo mediante consejería vocacional, tecnología de asistencia, capacitación y colocación laboral en oficinas de distrito en todo el estado. ADRS coordina con Career Centers y programas de reinserción de ADOC.",
+    address="602 South Lawrence Street", city="Montgomery", phone="1-800-441-7607", email="",
+    website="https://www.rehab.alabama.gov",
+    eligibility="Alabama residents with physical, mental, or developmental disabilities that create employment barriers; eligibility determined through ADRS assessment.",
+    eligibility_es="Residentes de Alabama con discapacidades físicas, mentales o del desarrollo que crean barreras laborales; elegibilidad determinada por evaluación de ADRS.",
+    notes="Apply at rehab.alabama.gov or call 1-800-441-7607; district office locations are listed on the ADRS website.",
+    notes_es="Solicite en rehab.alabama.gov o llame al 1-800-441-7607; las ubicaciones de oficinas de distrito están en el sitio web de ADRS.",
+    hours="District offices Monday–Friday business hours",
+    tags="statewide|employment|ADRS|disability|vocational-rehabilitation|reentry",
+    services="Vocational counseling|Job placement|Assistive technology|Skills training|Disability employment supports",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://www.rehab.alabama.gov", _source_type="government", _confidence="high",
+)
+add(
+    name="Alabama Department of Mental Health (ADMH)",
+    category="healthcare", region="Statewide",
+    description="The Alabama Department of Mental Health oversees the statewide network of Community Mental Health Centers and substance use treatment providers serving Alabamians with mental illness, substance use disorders, and developmental disabilities. ADMH funds crisis services, the Alabama Warm Line peer support line, and treatment coordination for justice-involved individuals through regional centers—not a direct crisis hotline itself.",
+    description_es="El Departamento de Salud Mental de Alabama supervisa la red estatal de Centros Comunitarios de Salud Mental y proveedores de tratamiento de uso de sustancias que sirven a alabameños con enfermedades mentales, trastornos por uso de sustancias y discapacidades del desarrollo. ADMH financia servicios de crisis, la línea de apoyo entre pares Alabama Warm Line y coordinación de tratamiento para personas con antecedentes penales.",
+    address="100 North Union Street", city="Montgomery", phone="334-242-3454", email="",
+    website="https://mh.alabama.gov",
+    eligibility="Alabama residents seeking mental health, substance use, or developmental disability services; individual center eligibility and fees vary by income.",
+    eligibility_es="Residentes de Alabama que buscan servicios de salud mental, uso de sustancias o discapacidad del desarrollo; la elegibilidad y tarifas varían por centro e ingresos.",
+    notes="Find your local Community Mental Health Center at mh.alabama.gov; call 988 for immediate crisis support statewide.",
+    notes_es="Encuentre su Centro Comunitario de Salud Mental local en mh.alabama.gov; llame al 988 para apoyo inmediato en crisis en todo el estado.",
+    hours="State office Monday–Friday business hours; local centers vary",
+    tags="statewide|healthcare|ADMH|mental-health|substance-use|reentry",
+    services="Community mental health center referrals|Substance use treatment coordination|Crisis services funding|Peer support program oversight|Developmental disability services",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://mh.alabama.gov", _source_type="government", _confidence="high",
+)
+add(
+    name="Alabama Prisoner Reentry Commission",
+    category="reentry-organizations", region="Statewide",
+    description="The Alabama Prisoner Reentry Commission coordinates state agencies, faith communities, and community-based providers around a shared statewide reentry strategy, connecting justice-involved Alabamians and local reentry coalitions to housing, employment, and treatment partners. The commission convenes policy and coalition-building work—not direct emergency services or a walk-in office for individuals seeking immediate help.",
+    description_es="La Comisión de Reinserción de Prisioneros de Alabama coordina agencias estatales, comunidades de fe y proveedores comunitarios en torno a una estrategia estatal compartida de reinserción, conectando a alabameños con antecedentes penales y coaliciones locales de reinserción con aliados de vivienda, empleo y tratamiento. La comisión convoca trabajo de política y coalición, no servicios de emergencia directos.",
+    address="301 South Ripley Street", city="Montgomery", phone="", email="",
+    website="https://doc.alabama.gov/ReentryCommission",
+    eligibility="Justice-involved Alabama residents, agencies, and community partners seeking reentry coalition connections and statewide policy information.",
+    eligibility_es="Residentes de Alabama con antecedentes penales, agencias y aliados comunitarios que buscan conexiones con coaliciones de reinserción e información de políticas estatales.",
+    notes="Visit doc.alabama.gov for commission updates and member organization directories; contact local reentry coalitions listed by county for direct services.",
+    notes_es="Visite doc.alabama.gov para actualizaciones de la comisión y directorios de organizaciones miembros; contacte coaliciones locales de reinserción por condado para servicios directos.",
+    hours="Contact for current meeting schedule",
+    tags="statewide|reentry|coalition|policy|referral-only",
+    services="Coalition coordination|Reentry policy advocacy|Local reentry partner directory|Interagency collaboration",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://doc.alabama.gov/ReentryCommission", _source_type="government", _confidence="high",
+)
+add(
+    name="Alabama Law Enforcement Agency — Driver License Division",
+    category="id-documentation", region="Statewide",
+    description="The Alabama Law Enforcement Agency's Driver License Division issues state ID cards and driver's licenses required for employment, housing, and benefits enrollment after release. Returning citizens can apply for an Alabama ID at driver license offices statewide with proof of identity and residency. Not a vital records office—contact the Center for Health Statistics for birth certificates.",
+    description_es="La División de Licencias de Conducir de la Agencia de Cumplimiento de la Ley de Alabama emite tarjetas de identificación estatal y licencias de conducir necesarias para empleo, vivienda e inscripción en beneficios después de la liberación. Los ciudadanos que regresan pueden solicitar una identificación de Alabama en oficinas de licencias con prueba de identidad y residencia. No es oficina de registros vitales.",
+    address="201 South Union Street", city="Montgomery", phone="334-242-4400", email="",
+    website="https://www.alea.gov",
+    eligibility="Alabama residents with required identity and residency documentation; fees apply for ID cards and licenses; fee waivers may apply for indigent applicants under state law.",
+    eligibility_es="Residentes de Alabama con documentación requerida de identidad y residencia; aplican tarifas para tarjetas de identificación; pueden aplicar exenciones para solicitantes indigentes.",
+    notes="Find driver license offices at alea.gov/dld; bring certified birth certificate or passport plus proof of Alabama residency; ask about the indigent ID fee waiver.",
+    notes_es="Encuentre oficinas en alea.gov/dld; traiga certificado de nacimiento o pasaporte más prueba de residencia; pregunte sobre la exención de tarifa de identificación para indigentes.",
+    hours="Driver license office hours vary; check alea.gov",
+    tags="statewide|id-documentation|ALEA|drivers-license|state-id|reentry",
+    services="State ID card issuance|Driver's license services|ID renewal|Driver license office locator|Indigent fee waiver information",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://www.alea.gov", _source_type="government", _confidence="high",
+)
+add(
+    name="Alabama Department of Veterans Affairs",
+    category="veterans", region="Statewide",
+    description="The Alabama Department of Veterans Affairs helps justice-involved veterans access VA benefits, disability claims, education benefits, and housing resources through county veterans service offices across all 67 counties. Veterans released from incarceration may qualify for VA health care, vocational rehabilitation, and veterans treatment court supports. Benefits navigation and claims advocacy—not emergency shelter.",
+    description_es="El Departamento de Asuntos de Veteranos de Alabama ayuda a veteranos con antecedentes penales a acceder a beneficios del VA, reclamaciones de discapacidad, beneficios educativos y recursos de vivienda a través de oficinas de servicios para veteranos del condado en los 67 condados. Los veteranos liberados pueden calificar para atención médica del VA, rehabilitación vocacional y tribunales de tratamiento para veteranos.",
+    address="1350 Congressman W.L. Dickinson Drive", city="Montgomery", phone="334-242-5077", email="",
+    website="https://va.alabama.gov",
+    eligibility="Honorably discharged or qualifying Alabama veterans and their dependents; service documentation required.",
+    eligibility_es="Veteranos de Alabama con baja honorable o calificados y sus dependientes; se requiere documentación de servicio.",
+    notes="Find your county veterans service office at va.alabama.gov; free benefits claims assistance available at all 67 county offices.",
+    notes_es="Encuentre su oficina de servicios para veteranos del condado en va.alabama.gov; asistencia gratuita con reclamaciones disponible en las 67 oficinas.",
+    hours="County offices Monday–Friday business hours",
+    tags="statewide|veterans|VA-benefits|reentry|justice-involved-veterans",
+    services="VA benefits claims assistance|Disability claims navigation|Education benefits guidance|Veterans treatment court support|County VSO referrals",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://va.alabama.gov", _source_type="government", _confidence="high",
+)
+add(
+    name="988 Suicide & Crisis Lifeline — Alabama",
+    category="healthcare", region="Statewide",
+    description="Free confidential 24/7 crisis support for people experiencing mental health emergencies, suicidal thoughts, or substance use crises in Alabama. Trained specialists provide immediate support and can connect callers to local mobile crisis teams through Alabama Community Mental Health Center partners. Available to anyone—not reentry-specific but essential for justice-involved individuals in crisis.",
+    description_es="Apoyo gratuito y confidencial 24/7 para emergencias de salud mental, pensamientos suicidas o crisis por uso de sustancias en Alabama. Especialistas capacitados ofrecen apoyo inmediato y conexión a equipos de crisis móviles a través de aliados de Centros Comunitarios de Salud Mental de Alabama. Disponible para cualquier persona, esencial para personas con antecedentes penales en crisis.",
+    address="", city="", phone="988", email="", website="https://988lifeline.org",
+    eligibility="Open to anyone in Alabama experiencing a mental health or suicide crisis; no eligibility restrictions.",
+    eligibility_es="Abierto a cualquier persona en Alabama en crisis de salud mental o suicidio; sin restricciones.",
+    notes="Call or text 988; Spanish-language support available. For immediate physical danger call 911.",
+    notes_es="Llame o envíe texto al 988; soporte en español disponible. Para peligro físico inmediato llame al 911.",
+    hours="Available 24/7",
+    tags="statewide|hotline|crisis|mental-health|988",
+    services="Crisis counseling|Suicide prevention support|Mental health referrals|Substance use crisis support",
+    county="", served_counties="", coverage="statewide",
+    _source="https://988lifeline.org", _source_type="government", _confidence="high",
+)
+add(
+    name="SAMHSA National Helpline",
+    category="substance-use-treatment", region="Statewide",
+    description="Free confidential 24/7 treatment referral and information service for individuals and families facing mental health or substance use disorders. Provides referrals to local treatment facilities and community organizations in Alabama and nationwide. Spanish-language support available through trained specialists for justice-involved individuals seeking SUD or mental health treatment after release.",
+    description_es="Servicio gratuito y confidencial 24/7 de referencia e información para personas y familias con trastornos de salud mental o uso de sustancias. Proporciona referencias a centros de tratamiento locales en Alabama y a nivel nacional. Soporte en español disponible para personas con antecedentes penales que buscan tratamiento después de la liberación.",
+    address="", city="", phone="800-662-4357", email="", website="https://www.samhsa.gov/find-help/national-helpline",
+    eligibility="Open to anyone in the United States seeking substance use or mental health treatment information and referrals.",
+    eligibility_es="Abierto a cualquier persona en Estados Unidos que busque información y referencias de tratamiento.",
+    notes="TTY 800-487-4889; also use FindTreatment.gov to search Alabama providers online.",
+    notes_es="TTY 800-487-4889; también use FindTreatment.gov para buscar proveedores en Alabama.",
+    hours="Available 24/7",
+    tags="statewide|hotline|substance-use|treatment-referral|national",
+    services="Treatment referrals|Substance use information|Mental health resource navigation",
+    county="", served_counties="", coverage="statewide",
+    _source="https://www.samhsa.gov/find-help/national-helpline", _source_type="government", _confidence="high",
+)
+add(
+    name="FindTreatment.gov — Alabama Provider Search",
+    category="substance-use-treatment", region="Statewide",
+    description="SAMHSA's online treatment locator helping Alabama residents find substance use and mental health treatment providers by location, service type, and payment options including Medicaid. Justice-involved individuals can search outpatient, residential, and MAT providers before or after release from ADOC custody or county jails across all 67 counties.",
+    description_es="Localizador en línea de SAMHSA que ayuda a residentes de Alabama a encontrar proveedores de tratamiento de uso de sustancias y salud mental por ubicación, tipo de servicio y opciones de pago incluido Medicaid. Personas con antecedentes penales pueden buscar proveedores ambulatorios, residenciales y TMO antes o después de la liberación.",
+    address="", city="", phone="", email="", website="https://findtreatment.gov",
+    eligibility="Open to anyone searching for treatment; provider admission rules vary.",
+    eligibility_es="Abierto a cualquier persona que busque tratamiento; las reglas de admisión varían según el proveedor.",
+    notes="Search findtreatment.gov by Alabama county or city; filter for MAT, outpatient, or residential services.",
+    notes_es="Busque en findtreatment.gov por condado o ciudad de Alabama; filtre por TMO, ambulatorio o residencial.",
+    hours="Website 24/7",
+    tags="statewide|substance-use|online|MAT|treatment-locator",
+    services="Treatment provider search|MAT locator|Outpatient program finder|Residential program finder",
+    county="", served_counties="", coverage="statewide",
+    _source="https://findtreatment.gov", _source_type="government", _confidence="high",
+)
+add(
+    name="Alabama Appleseed Center for Law & Justice",
+    category="reentry-organizations", region="Statewide",
+    description="Alabama Appleseed Center for Law & Justice is a nonprofit research and advocacy organization working to reform Alabama's fines-and-fees system, expand fair-chance employment, and improve outcomes for justice-involved Alabamians statewide. Staff publish policy research and connect returning citizens to legal resources and coalition partners—not direct cash assistance or emergency housing.",
+    description_es="Alabama Appleseed Center for Law & Justice es una organización sin fines de lucro de investigación y defensa que trabaja para reformar el sistema de multas y tarifas de Alabama, expandir el empleo de segunda oportunidad y mejorar resultados para alabameños con antecedentes penales en todo el estado. El personal publica investigación de políticas y conecta a ciudadanos que regresan con recursos legales y aliados de coalición.",
+    address="207 Montgomery Street, Suite 425", city="Montgomery", phone="334-263-0086", email="",
+    website="https://www.alabamaappleseed.org",
+    eligibility="Justice-involved Alabama residents and advocates seeking fair-chance policy information, legal referrals, or coalition connections.",
+    eligibility_es="Residentes de Alabama con antecedentes penales y defensores que buscan información sobre políticas de segunda oportunidad, referencias legales o conexiones con coaliciones.",
+    notes="Visit alabamaappleseed.org for policy reports and fair-chance resources; connects to Legal Services Alabama and local workforce partners.",
+    notes_es="Visite alabamaappleseed.org para informes de políticas y recursos de segunda oportunidad; conecta con Legal Services Alabama y aliados de fuerza laboral locales.",
+    hours="Monday–Friday business hours",
+    tags="statewide|reentry|fair-chance|policy|referral-only",
+    services="Fair-chance policy advocacy|Legal resource referrals|Fines and fees reform research|Coalition coordination",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://www.alabamaappleseed.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Alabama DHR — Family Assistance Division",
+    category="financial-assistance", region="Statewide",
+    description="The Family Assistance Division of the Alabama Department of Human Resources administers the Family Assistance (TANF) cash assistance program and coordinates work-support activities for low-income families statewide, including returning parents rebuilding stability after incarceration. County DHR offices process applications, redeterminations, and work-participation requirements alongside SNAP and Medicaid intake through the same MyDHR system.",
+    description_es="La División de Asistencia Familiar del Departamento de Recursos Humanos de Alabama administra el programa de asistencia en efectivo Family Assistance (TANF) y coordina actividades de apoyo laboral para familias de bajos ingresos en todo el estado, incluidos padres que regresan y reconstruyen estabilidad tras la encarcelación. Las oficinas DHR del condado procesan solicitudes, redeterminaciones y requisitos de participación laboral junto con SNAP y Medicaid.",
+    address="50 Ripley Street", city="Montgomery", phone="334-242-1900", email="",
+    website="https://dhr.alabama.gov/family-assistance-division",
+    eligibility="Low-income Alabama families with dependent children meeting TANF income and work-participation requirements; time limits and work requirements apply.",
+    eligibility_es="Familias de Alabama de bajos ingresos con hijos dependientes que cumplan requisitos de ingresos y participación laboral de TANF; aplican límites de tiempo y requisitos laborales.",
+    notes="Apply through mydhr.alabama.gov or your county DHR office; ask about work-participation exemptions for recent releases and caregiving responsibilities.",
+    notes_es="Solicite a través de mydhr.alabama.gov o su oficina DHR del condado; pregunte sobre exenciones de participación laboral para liberaciones recientes y responsabilidades de cuidado.",
+    hours="County DHR offices Monday–Friday business hours",
+    tags="statewide|benefits|TANF|family-assistance|DHR|reentry",
+    services="TANF cash assistance|Work-participation coordination|County DHR referrals|Redetermination support",
+    county="Montgomery", served_counties="", coverage="statewide",
+    _source="https://dhr.alabama.gov/family-assistance-division", _source_type="government", _confidence="high",
+)
+
+# --- Phase 2: Major metro anchors ---
+add(
+    name="Cooper Green Mercy Health Services",
+    category="healthcare", region="Birmingham metro",
+    description="Cooper Green Mercy Health Services is Jefferson County's safety-net outpatient health system providing primary care, dental, pharmacy, and specialty referrals on a sliding fee scale for uninsured and low-income residents, including returning citizens without Medicaid or private insurance. The clinic coordinates with county DHR and local reentry partners to help patients establish ongoing care shortly after release from Jefferson County Jail or ADOC custody.",
+    description_es="Cooper Green Mercy Health Services es el sistema de salud ambulatorio de red de seguridad del condado Jefferson que ofrece atención primaria, dental, farmacia y referencias de especialidad con tarifa móvil para residentes sin seguro y de bajos ingresos, incluidos ciudadanos que regresan sin Medicaid ni seguro privado. La clínica coordina con DHR del condado y aliados locales de reinserción.",
+    address="1515 6th Avenue South", city="Birmingham", phone="205-930-3300", email="",
+    website="https://www.coopergreenhealth.org",
+    eligibility="Jefferson County residents who are uninsured or underinsured; sliding-fee scale based on household income; proof of residency required.",
+    eligibility_es="Residentes del condado Jefferson sin seguro o con seguro insuficiente; escala de tarifas móviles basada en ingresos del hogar; se requiere prueba de residencia.",
+    notes="Call 205-930-3300 to schedule an appointment; bring proof of Jefferson County residency and any release paperwork to your first visit.",
+    notes_es="Llame al 205-930-3300 para programar una cita; traiga prueba de residencia en el condado Jefferson y documentos de liberación a su primera visita.",
+    hours="Monday–Friday, 8:00 a.m.–4:30 p.m.",
+    tags="birmingham|jefferson|healthcare|sliding-fee|safety-net|reentry",
+    services="Primary care|Dental care|Pharmacy services|Specialty referrals|Sliding-fee scale enrollment",
+    county="Jefferson", served_counties="Jefferson", coverage="single",
+    _source="https://www.coopergreenhealth.org", _source_type="government", _confidence="high",
+)
+add(
+    name="Pathways, Inc. — Women's Homeless Shelter",
+    category="housing", region="Birmingham metro",
+    description="Pathways, Inc. operates Birmingham's dedicated emergency shelter and supportive services for women experiencing homelessness, including women recently released from incarceration who need immediate housing stability. Case managers help residents access benefits, employment services, and permanent housing placements while providing meals, case management, and a safe overnight shelter in downtown Birmingham.",
+    description_es="Pathways, Inc. opera el refugio de emergencia y servicios de apoyo dedicado de Birmingham para mujeres sin hogar, incluidas mujeres recién liberadas de encarcelación que necesitan estabilidad de vivienda inmediata. Los administradores de casos ayudan a las residentes a acceder a beneficios, servicios de empleo y colocación en vivienda permanente mientras ofrecen comidas y refugio seguro nocturno en el centro de Birmingham.",
+    address="3600 8th Avenue South", city="Birmingham", phone="205-322-6640", email="",
+    website="https://pathwayshome.org",
+    eligibility="Adult women experiencing homelessness in the Birmingham area; justice-involved women welcome; intake assessment required.",
+    eligibility_es="Mujeres adultas sin hogar en el área de Birmingham; mujeres con antecedentes penales bienvenidas; se requiere evaluación de admisión.",
+    notes="Call 205-322-6640 for shelter intake; connects to Jefferson County DHR and Birmingham workforce partners for ongoing stability.",
+    notes_es="Llame al 205-322-6640 para admisión al refugio; conecta con DHR del condado Jefferson y aliados de fuerza laboral de Birmingham.",
+    hours="Shelter intake daily; call ahead to confirm availability",
+    tags="birmingham|jefferson|housing|shelter|women|reentry",
+    services="Emergency shelter for women|Case management|Benefits navigation|Employment referrals|Permanent housing placement assistance",
+    county="Jefferson", served_counties="Jefferson", coverage="single",
+    _source="https://pathwayshome.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="YWCA Central Alabama — Family Violence Program",
+    category="family-children", region="Birmingham metro",
+    description="YWCA Central Alabama's Family Violence Program provides emergency shelter, a 24-hour crisis line, counseling, and legal advocacy for survivors of domestic violence and their children across the Birmingham metro area, including justice-involved survivors navigating both safety planning and court obligations. Case managers connect families to housing, benefits, and children's services while maintaining confidential shelter locations.",
+    description_es="El Programa de Violencia Familiar de YWCA Central Alabama proporciona refugio de emergencia, línea de crisis 24 horas, consejería y defensa legal para sobrevivientes de violencia doméstica y sus hijos en el área metropolitana de Birmingham, incluidas sobrevivientes con antecedentes penales. Los administradores de casos conectan a las familias con vivienda, beneficios y servicios infantiles manteniendo ubicaciones de refugio confidenciales.",
+    address="309 23rd Street North", city="Birmingham", phone="205-322-9922", email="",
+    website="https://ywcabham.org",
+    eligibility="Survivors of domestic violence and their children in the greater Birmingham area; 24-hour crisis line open to anyone seeking safety information.",
+    eligibility_es="Sobrevivientes de violencia doméstica y sus hijos en el área metropolitana de Birmingham; línea de crisis de 24 horas abierta a cualquiera que busque información de seguridad.",
+    notes="Call the 24-hour crisis line at 205-322-9922; shelter location is confidential for resident safety.",
+    notes_es="Llame a la línea de crisis de 24 horas al 205-322-9922; la ubicación del refugio es confidencial por la seguridad de las residentes.",
+    hours="Crisis line available 24/7",
+    tags="birmingham|jefferson|family-children|domestic-violence|shelter|crisis-line",
+    services="Emergency shelter|24-hour crisis line|Legal advocacy|Counseling|Children's services",
+    county="Jefferson", served_counties="Jefferson", coverage="single",
+    _source="https://ywcabham.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="The King's Home",
+    category="housing", region="Birmingham metro",
+    description="The King's Home operates residential recovery and transitional housing campuses in the Birmingham metro area for women and children affected by trauma, homelessness, and substance use, including women referred through the justice system. Programs combine faith-based counseling, education, vocational training, and family reunification support across multiple campus locations serving the greater Birmingham region.",
+    description_es="The King's Home opera campus de recuperación residencial y vivienda transicional en el área metropolitana de Birmingham para mujeres y niños afectados por trauma, falta de vivienda y uso de sustancias, incluidas mujeres referidas por el sistema de justicia. Los programas combinan consejería basada en la fe, educación, capacitación vocacional y apoyo de reunificación familiar.",
+    address="1719 Kings Home Drive", city="Chelsea", phone="205-664-2465", email="",
+    website="https://thekingshome.org",
+    eligibility="Women and children experiencing homelessness, trauma, or substance use disorders in the Birmingham region; justice-involved referrals accepted per program policy.",
+    eligibility_es="Mujeres y niños que enfrentan falta de vivienda, trauma o trastornos por uso de sustancias en la región de Birmingham; se aceptan referencias con antecedentes penales según política del programa.",
+    notes="Call 205-664-2465 for program intake; multiple campuses serve Jefferson and Shelby counties with residential recovery and family housing tracks.",
+    notes_es="Llame al 205-664-2465 para admisión; múltiples campus sirven a los condados Jefferson y Shelby con recuperación residencial y vivienda familiar.",
+    hours="Residential program; contact admissions for intake hours",
+    tags="birmingham|shelby|jefferson|housing|recovery|women|children",
+    services="Residential recovery housing|Transitional housing|Vocational training|Family reunification support|Faith-based counseling",
+    county="Shelby", served_counties="Shelby|Jefferson", coverage="multi",
+    _source="https://thekingshome.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="One Roof — Metro Birmingham Continuum of Care",
+    category="basic-needs", region="Birmingham metro",
+    description="One Roof is the lead agency for the Metro Birmingham Continuum of Care, coordinating homeless services, coordinated entry, and the regional Homeless Management Information System across Jefferson, Shelby, St. Clair, and Blount counties. Returning citizens experiencing homelessness can connect through coordinated entry to shelter, rapid rehousing, and permanent supportive housing providers in the network. One Roof is a coordination hub—not a direct shelter provider.",
+    description_es="One Roof es la agencia líder del Continuo de Cuidado Metro Birmingham, coordinando servicios para personas sin hogar, entrada coordinada y el Sistema de Información de Manejo de Personas sin Hogar regional en los condados Jefferson, Shelby, St. Clair y Blount. Los ciudadanos que regresan y enfrentan falta de vivienda pueden conectarse a través de entrada coordinada con refugio, realojamiento rápido y vivienda de apoyo permanente.",
+    address="2 20th Street North, Suite 1200", city="Birmingham", phone="205-458-8550", email="",
+    website="https://oneroofonline.org",
+    eligibility="Individuals and families experiencing or at risk of homelessness in the Metro Birmingham region; coordinated entry assessment determines referral priority.",
+    eligibility_es="Personas y familias que enfrentan o están en riesgo de falta de vivienda en la región Metro Birmingham; la evaluación de entrada coordinada determina la prioridad de referencia.",
+    notes="Contact 205-458-8550 or visit oneroofonline.org to locate a coordinated entry access point; bring ID if available for faster processing.",
+    notes_es="Contacte al 205-458-8550 o visite oneroofonline.org para localizar un punto de acceso de entrada coordinada; traiga identificación si está disponible.",
+    hours="Coordinated entry access points vary; check oneroofonline.org",
+    tags="birmingham|jefferson|basic-needs|coordinated-entry|homelessness|continuum-of-care",
+    services="Coordinated entry assessment|Shelter and housing referrals|Homeless Management Information System|Regional provider network coordination",
+    county="Jefferson", served_counties="Jefferson|Shelby|St. Clair|Blount", coverage="multi",
+    _source="https://oneroofonline.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Christ Health Center — Hoover",
+    category="healthcare", region="Birmingham metro",
+    description="Christ Health Center's Hoover clinic provides faith-based primary care, behavioral health, and dental services on a sliding fee scale for uninsured and underinsured residents of the greater Birmingham area, including returning citizens reestablishing care after release. The Hoover site complements the flagship Woodlawn clinic with expanded appointment availability for South Jefferson County patients.",
+    description_es="La clínica de Christ Health Center en Hoover ofrece atención primaria basada en la fe, salud conductual y servicios dentales con tarifa móvil para residentes sin seguro o con seguro insuficiente del área metropolitana de Birmingham, incluidos ciudadanos que regresan y restablecen atención después de la liberación. El sitio de Hoover complementa la clínica insignia de Woodlawn.",
+    address="1749 Old Montgomery Highway", city="Hoover", phone="205-957-4372", email="",
+    website="https://christhealthcenter.org",
+    eligibility="Uninsured and underinsured residents of the Birmingham metro area; sliding-fee scale based on household income.",
+    eligibility_es="Residentes sin seguro o con seguro insuficiente del área metropolitana de Birmingham; escala de tarifas móviles basada en ingresos del hogar.",
+    notes="Call 205-957-4372 to schedule an appointment; ask about behavioral health and dental services available at the Hoover site.",
+    notes_es="Llame al 205-957-4372 para programar una cita; pregunte sobre servicios de salud conductual y dentales disponibles en el sitio de Hoover.",
+    hours="Monday–Friday, 8:00 a.m.–5:00 p.m.",
+    tags="birmingham|jefferson|hoover|healthcare|sliding-fee|faith-based",
+    services="Primary care|Behavioral health counseling|Dental care|Sliding-fee scale enrollment",
+    county="Jefferson", served_counties="Jefferson", coverage="single",
+    _source="https://christhealthcenter.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Jefferson County Committee for Economic Opportunity (JCCEO)",
+    category="basic-needs", region="Birmingham metro",
+    description="JCCEO is Jefferson County's Community Action Agency, operating Head Start, weatherization, energy assistance, and family self-sufficiency programs for low-income residents including returning citizens rebuilding household stability. JCCEO's network of neighborhood centers across Birmingham helps families access utility assistance, food resources, and case management alongside employment and benefits referrals.",
+    description_es="JCCEO es la Agencia de Acción Comunitaria del condado Jefferson, que opera Head Start, ponderación climática, asistencia energética y programas de autosuficiencia familiar para residentes de bajos ingresos incluidos ciudadanos que regresan y reconstruyen estabilidad del hogar. La red de centros vecinales de JCCEO en Birmingham ayuda a las familias a acceder a asistencia de servicios públicos y recursos alimentarios.",
+    address="2601 5th Avenue North", city="Birmingham", phone="205-328-1122", email="",
+    website="https://www.jcceo.org",
+    eligibility="Low-income Jefferson County residents meeting federal poverty guidelines; program-specific eligibility varies by service.",
+    eligibility_es="Residentes de bajos ingresos del condado Jefferson que cumplan las pautas federales de pobreza; la elegibilidad varía según el servicio.",
+    notes="Call 205-328-1122 for the nearest neighborhood center; ask about energy assistance and family self-sufficiency case management.",
+    notes_es="Llame al 205-328-1122 para el centro vecinal más cercano; pregunte sobre asistencia energética y manejo de casos de autosuficiencia familiar.",
+    hours="Monday–Friday business hours; center hours vary",
+    tags="birmingham|jefferson|basic-needs|community-action|energy-assistance|reentry",
+    services="Head Start|Energy and utility assistance|Weatherization|Family self-sufficiency case management|Food resource referrals",
+    county="Jefferson", served_counties="Jefferson", coverage="single",
+    _source="https://www.jcceo.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Family Guidance Center of Alabama",
+    category="substance-use-treatment", region="Montgomery metro",
+    description="Family Guidance Center of Alabama provides outpatient substance use and mental health counseling, medication-assisted treatment referrals, and court-ordered assessment services for adults and adolescents in the Montgomery area, including individuals referred through drug court and probation. Licensed counselors coordinate treatment plans with the Alabama Bureau of Pardons and Paroles and River Region court systems.",
+    description_es="Family Guidance Center of Alabama ofrece consejería ambulatoria de uso de sustancias y salud mental, referencias de tratamiento asistido por medicamentos y servicios de evaluación ordenados por la corte para adultos y adolescentes en el área de Montgomery, incluidas personas referidas por tribunales de drogas y probatoria. Los consejeros con licencia coordinan planes de tratamiento con la Junta de Libertad Condicional de Alabama.",
+    address="4144 Carmichael Court", city="Montgomery", phone="334-244-9575", email="",
+    website="https://www.familyguidancecenter.org",
+    eligibility="Adults and adolescents in the River Region seeking substance use or mental health counseling; court-ordered assessments accepted with referral paperwork.",
+    eligibility_es="Adultos y adolescentes en la región River Region que buscan consejería de uso de sustancias o salud mental; se aceptan evaluaciones ordenadas por la corte con documentación de referencia.",
+    notes="Call 334-244-9575 to schedule an intake assessment; bring probation or drug court referral paperwork if applicable.",
+    notes_es="Llame al 334-244-9575 para programar una evaluación de admisión; traiga documentación de referencia de probatoria o tribunal de drogas si corresponde.",
+    hours="Monday–Friday business hours",
+    tags="montgomery|substance-use-treatment|outpatient|drug-court|reentry",
+    services="Outpatient substance use counseling|Mental health counseling|Court-ordered assessments|MAT referrals|Case coordination with probation",
+    county="Montgomery", served_counties="Montgomery", coverage="single",
+    _source="https://www.familyguidancecenter.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Montgomery Area Mental Health Authority",
+    category="healthcare", region="Montgomery metro",
+    description="Montgomery Area Mental Health Authority is the region's designated Community Mental Health Center, providing outpatient psychiatric care, substance use treatment, crisis intervention, and case management for River Region residents including justice-involved adults released from Montgomery County Jail or ADOC facilities. Sliding-fee services and Medicaid billing help ensure continuity of care after release.",
+    description_es="Montgomery Area Mental Health Authority es el Centro Comunitario de Salud Mental designado de la región, que ofrece atención psiquiátrica ambulatoria, tratamiento de uso de sustancias, intervención en crisis y manejo de casos para residentes de River Region incluidos adultos con antecedentes penales liberados de la cárcel del condado Montgomery o instalaciones de ADOC.",
+    address="4361 Narrow Lane Road", city="Montgomery", phone="334-273-7400", email="",
+    website="https://www.mamha.net",
+    eligibility="River Region residents seeking mental health or substance use services; sliding-fee scale based on income; Medicaid and most insurance accepted.",
+    eligibility_es="Residentes de River Region que buscan servicios de salud mental o uso de sustancias; escala de tarifas móviles según ingresos; se acepta Medicaid y la mayoría de los seguros.",
+    notes="Call 334-273-7400 for intake; ask about same-day crisis intervention appointments for individuals recently released from custody.",
+    notes_es="Llame al 334-273-7400 para admisión; pregunte sobre citas de intervención en crisis el mismo día para personas recién liberadas.",
+    hours="Monday–Friday, 8:00 a.m.–5:00 p.m.; crisis services available beyond regular hours",
+    tags="montgomery|healthcare|CMHC|mental-health|substance-use|reentry",
+    services="Outpatient psychiatric care|Substance use treatment|Crisis intervention|Case management|Sliding-fee scale enrollment",
+    county="Montgomery", served_counties="Montgomery", coverage="single",
+    _source="https://www.mamha.net", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="The Salvation Army of Montgomery — Center of Hope",
+    category="housing", region="Montgomery metro",
+    description="The Salvation Army of Montgomery's Center of Hope provides emergency shelter, meals, and case management for men, women, and families experiencing homelessness in the River Region, including returning citizens with nowhere else to go after release. Case managers connect residents to Alabama Career Center employment services, MyDHR benefits, and permanent housing programs while guests stabilize.",
+    description_es="El Center of Hope del Ejército de Salvación de Montgomery proporciona refugio de emergencia, comidas y manejo de casos para hombres, mujeres y familias sin hogar en River Region, incluidos ciudadanos que regresan sin otro lugar adonde ir después de la liberación. Los administradores de casos conectan a los residentes con servicios de empleo, beneficios de MyDHR y programas de vivienda permanente.",
+    address="1150 Ann Street", city="Montgomery", phone="334-262-1650", email="",
+    website="https://montgomeryal.salvationarmy.org",
+    eligibility="Men, women, and families experiencing homelessness in the Montgomery area; walk in or call for same-day intake assessment.",
+    eligibility_es="Hombres, mujeres y familias sin hogar en el área de Montgomery; ingrese sin cita o llame para evaluación de admisión el mismo día.",
+    notes="Call 334-262-1650 for shelter intake; case management connects to Career Center employment services and MyDHR benefits enrollment.",
+    notes_es="Llame al 334-262-1650 para admisión al refugio; el manejo de casos conecta con servicios de empleo de Career Center e inscripción en beneficios de MyDHR.",
+    hours="Shelter 24/7; intake assessments during business hours",
+    tags="montgomery|housing|emergency-shelter|families|reentry|faith-based",
+    services="Emergency shelter|Meals|Case management|Employment referrals|Benefits navigation",
+    county="Montgomery", served_counties="Montgomery", coverage="single",
+    _source="https://montgomeryal.salvationarmy.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Montgomery Housing Authority — Family Self-Sufficiency Program",
+    category="financial-assistance", region="Montgomery metro",
+    description="The Montgomery Housing Authority's Family Self-Sufficiency Program helps Housing Choice Voucher participants, including returning citizens in subsidized housing, build savings and achieve economic independence through case management, goal-setting, and an escrow account that grows as household earned income increases. Participants receive coordinated referrals to employment, education, and financial coaching partners.",
+    description_es="El Programa de Autosuficiencia Familiar de la Autoridad de Vivienda de Montgomery ayuda a los participantes del Vale de Elección de Vivienda, incluidos ciudadanos que regresan en vivienda subsidiada, a generar ahorros y lograr independencia económica mediante manejo de casos, establecimiento de metas y una cuenta de depósito en garantía que crece con el ingreso del hogar.",
+    address="525 South Lawrence Street", city="Montgomery", phone="334-206-7500", email="",
+    website="https://mhaal.org",
+    eligibility="Current Montgomery Housing Authority Housing Choice Voucher or public housing participants; enrollment is voluntary and requires a five-year contract of participation.",
+    eligibility_es="Participantes actuales del Vale de Elección de Vivienda o vivienda pública de la Autoridad de Vivienda de Montgomery; la inscripción es voluntaria y requiere un contrato de participación de cinco años.",
+    notes="Call 334-206-7500 to ask about Family Self-Sufficiency enrollment; must already hold an MHA voucher or public housing unit.",
+    notes_es="Llame al 334-206-7500 para preguntar sobre la inscripción en Autosuficiencia Familiar; debe tener ya un vale de MHA o unidad de vivienda pública.",
+    hours="Monday–Friday business hours",
+    tags="montgomery|financial-assistance|housing-authority|self-sufficiency|savings",
+    services="Escrow savings account|Case management|Goal-setting coaching|Employment and education referrals",
+    county="Montgomery", served_counties="Montgomery", coverage="single",
+    _source="https://mhaal.org", _source_type="government", _confidence="high",
+)
+add(
+    name="Common Ground — Montgomery Homeless Resource Center",
+    category="basic-needs", region="Montgomery metro",
+    description="Common Ground is a daytime resource center in Montgomery offering showers, mail service, ID assistance, and case management referrals for people experiencing homelessness in the River Region, including individuals recently released from incarceration without a fixed address. Staff help guests connect to shelter beds, MyDHR benefits, and Alabama Career Center employment services.",
+    description_es="Common Ground es un centro de recursos diurno en Montgomery que ofrece duchas, servicio de correo, ayuda con identificación y referencias de manejo de casos para personas sin hogar en River Region, incluidas personas recién liberadas de encarcelación sin dirección fija. El personal ayuda a los huéspedes a conectarse con camas de refugio, beneficios de MyDHR y servicios de empleo.",
+    address="1075 Woodley Road", city="Montgomery", phone="334-782-3450", email="",
+    website="https://www.commongroundmontgomery.org",
+    eligibility="Adults experiencing homelessness in the Montgomery area; walk-in day services available without appointment.",
+    eligibility_es="Adultos sin hogar en el área de Montgomery; servicios diurnos sin cita disponibles sin necesidad de programar.",
+    notes="Walk in during posted hours for showers, mail, and referrals; call 334-782-3450 to confirm current hours and services.",
+    notes_es="Ingrese durante el horario publicado para duchas, correo y referencias; llame al 334-782-3450 para confirmar el horario actual.",
+    hours="Weekday daytime hours; call to confirm",
+    tags="montgomery|basic-needs|day-center|homelessness|reentry",
+    services="Showers and hygiene|Mail service|ID assistance|Case management referrals|Shelter bed connections",
+    county="Montgomery", served_counties="Montgomery", coverage="single",
+    _source="https://www.commongroundmontgomery.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Goodwill Southern Rivers — Montgomery Career Center",
+    category="employment", region="Montgomery metro",
+    description="Goodwill Southern Rivers operates a career center in Montgomery offering job readiness training, resume assistance, and fair-chance employer connections for adults facing employment barriers, including returning citizens. Program staff coordinate with Alabama Career Center and probation partners to place participants in retail, warehouse, and service-sector jobs with ongoing job coaching support.",
+    description_es="Goodwill Southern Rivers opera un centro de carrera en Montgomery que ofrece capacitación de preparación laboral, asistencia con currículum y conexiones con empleadores de segunda oportunidad para adultos que enfrentan barreras de empleo, incluidos ciudadanos que regresan. El personal del programa coordina con Alabama Career Center y aliados de probatoria para colocar a los participantes en empleos minoristas, de almacén y de servicios.",
+    address="2320 Eastern Boulevard", city="Montgomery", phone="334-262-2225", email="",
+    website="https://goodwillsr.org",
+    eligibility="Adults in the Montgomery area facing employment barriers, including justice-involved individuals; program enrollment through career center intake.",
+    eligibility_es="Adultos en el área de Montgomery que enfrentan barreras de empleo, incluidas personas con antecedentes penales; inscripción en el programa a través de la admisión del centro de carrera.",
+    notes="Call 334-262-2225 to schedule an intake appointment; job coaching continues after placement to support retention.",
+    notes_es="Llame al 334-262-2225 para programar una cita de admisión; el coaching laboral continúa después de la colocación para apoyar la retención.",
+    hours="Monday–Friday business hours",
+    tags="montgomery|employment|goodwill|job-readiness|fair-chance|reentry",
+    services="Job readiness training|Resume assistance|Fair-chance employer connections|Job coaching|Retail and warehouse job placement",
+    county="Montgomery", served_counties="Montgomery", coverage="single",
+    _source="https://goodwillsr.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Housing First, Inc. — Mobile",
+    category="basic-needs", region="Mobile metro",
+    description="Housing First, Inc. leads the Mobile area's Continuum of Care, operating coordinated entry, the regional Homeless Management Information System, and rapid rehousing programs for people experiencing homelessness across Mobile and Baldwin counties. Returning citizens without stable housing can access a single point of entry connecting them to emergency shelter, rapid rehousing, and permanent supportive housing partners in the network.",
+    description_es="Housing First, Inc. lidera el Continuo de Cuidado del área de Mobile, operando entrada coordinada, el Sistema de Información de Manejo de Personas sin Hogar regional y programas de realojamiento rápido para personas sin hogar en los condados Mobile y Baldwin. Los ciudadanos que regresan sin vivienda estable pueden acceder a un punto único de entrada que los conecta con refugio de emergencia y vivienda de apoyo permanente.",
+    address="851 Dauphin Street, Suite 200", city="Mobile", phone="251-450-3345", email="",
+    website="https://housingfirstinc.org",
+    eligibility="Individuals and families experiencing or at risk of homelessness in Mobile or Baldwin counties; coordinated entry assessment determines referral priority.",
+    eligibility_es="Personas y familias que enfrentan o están en riesgo de falta de vivienda en los condados Mobile o Baldwin; la evaluación de entrada coordinada determina la prioridad de referencia.",
+    notes="Call 251-450-3345 or visit housingfirstinc.org to find a coordinated entry access point in the Mobile area.",
+    notes_es="Llame al 251-450-3345 o visite housingfirstinc.org para encontrar un punto de acceso de entrada coordinada en el área de Mobile.",
+    hours="Coordinated entry access points vary; check housingfirstinc.org",
+    tags="mobile|basic-needs|coordinated-entry|homelessness|continuum-of-care",
+    services="Coordinated entry assessment|Rapid rehousing referrals|Homeless Management Information System|Regional provider network coordination",
+    county="Mobile", served_counties="Mobile|Baldwin", coverage="multi",
+    _source="https://housingfirstinc.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="AltaPointe Health",
+    category="healthcare", region="Mobile metro",
+    description="AltaPointe Health is the Gulf Coast region's largest behavioral health provider, offering outpatient psychiatric care, substance use treatment, crisis stabilization, and integrated primary care across dozens of Mobile-area locations, including services for justice-involved adults released from Mobile County Metro Jail. AltaPointe accepts Medicaid and operates a 24-hour crisis line for the region.",
+    description_es="AltaPointe Health es el mayor proveedor de salud conductual de la región de la Costa del Golfo, que ofrece atención psiquiátrica ambulatoria, tratamiento de uso de sustancias, estabilización de crisis y atención primaria integrada en docenas de ubicaciones del área de Mobile, incluidos servicios para adultos con antecedentes penales liberados de la cárcel del condado Mobile. AltaPointe acepta Medicaid y opera una línea de crisis de 24 horas.",
+    address="6900 AltaPointe Parkway", city="Mobile", phone="251-450-2211", email="",
+    website="https://www.altapointe.org",
+    eligibility="Mobile-area residents seeking mental health, substance use, or integrated primary care services; Medicaid and sliding-fee options available.",
+    eligibility_es="Residentes del área de Mobile que buscan servicios de salud mental, uso de sustancias o atención primaria integrada; opciones de Medicaid y tarifa móvil disponibles.",
+    notes="Call 251-450-2211 for intake; 24-hour crisis line available for immediate behavioral health emergencies.",
+    notes_es="Llame al 251-450-2211 para admisión; línea de crisis de 24 horas disponible para emergencias de salud conductual inmediatas.",
+    hours="Outpatient clinics Monday–Friday; crisis line available 24/7",
+    tags="mobile|healthcare|CMHC|mental-health|substance-use|crisis-line|reentry",
+    services="Outpatient psychiatric care|Substance use treatment|Crisis stabilization|Integrated primary care|24-hour crisis line",
+    county="Mobile", served_counties="Mobile", coverage="single",
+    _source="https://www.altapointe.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Dumas Wesley Community Center",
+    category="family-children", region="Mobile metro",
+    description="Dumas Wesley Community Center serves low-income women and children in Mobile's Maysville neighborhood with a licensed child development center, the Sybil H. Smith Family Village transitional housing program for mothers experiencing homelessness, and family support services, including support for mothers reuniting with children after incarceration. Case managers coordinate benefits, employment, and parenting support.",
+    description_es="Dumas Wesley Community Center sirve a mujeres y niños de bajos ingresos en el vecindario Maysville de Mobile con un centro de desarrollo infantil con licencia, el programa de vivienda transicional Sybil H. Smith Family Village para madres sin hogar, y servicios de apoyo familiar, incluido apoyo para madres que se reúnen con sus hijos después de la encarcelación.",
+    address="1006 Kenneth Street", city="Mobile", phone="251-479-0092", email="",
+    website="https://dumaswesley.org",
+    eligibility="Low-income women and children in the Mobile area, including mothers experiencing homelessness or reunifying after incarceration; program-specific intake required.",
+    eligibility_es="Mujeres y niños de bajos ingresos en el área de Mobile, incluidas madres sin hogar o que se reúnen tras la encarcelación; se requiere admisión específica del programa.",
+    notes="Call 251-479-0092 for intake information; Family Village transitional housing has a structured application and waitlist process.",
+    notes_es="Llame al 251-479-0092 para información de admisión; la vivienda transicional Family Village tiene un proceso estructurado de solicitud y lista de espera.",
+    hours="Monday–Friday business hours",
+    tags="mobile|family-children|housing|childcare|women|reentry",
+    services="Transitional housing for mothers|Licensed child development center|Family reunification support|Case management|Parenting support",
+    county="Mobile", served_counties="Mobile", coverage="single",
+    _source="https://dumaswesley.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Mobile Housing Board — Family Self-Sufficiency Program",
+    category="financial-assistance", region="Mobile metro",
+    description="The Mobile Housing Board's Family Self-Sufficiency Program helps Housing Choice Voucher and public housing participants, including returning citizens in subsidized housing, build savings and achieve economic independence through five-year case management contracts and an escrow account funded by rising earned income. Participants receive coordinated referrals to employment and education partners across Mobile.",
+    description_es="El Programa de Autosuficiencia Familiar de la Junta de Vivienda de Mobile ayuda a los participantes del Vale de Elección de Vivienda y vivienda pública, incluidos ciudadanos que regresan en vivienda subsidiada, a generar ahorros y lograr independencia económica mediante contratos de manejo de casos de cinco años y una cuenta de depósito en garantía financiada por el aumento de ingresos ganados.",
+    address="151 South Claiborne Street", city="Mobile", phone="251-434-2200", email="",
+    website="https://mobilehousing.org",
+    eligibility="Current Mobile Housing Board Housing Choice Voucher or public housing participants; enrollment is voluntary and requires a five-year contract of participation.",
+    eligibility_es="Participantes actuales del Vale de Elección de Vivienda o vivienda pública de la Junta de Vivienda de Mobile; la inscripción es voluntaria y requiere un contrato de cinco años.",
+    notes="Call 251-434-2200 to ask about Family Self-Sufficiency enrollment; must already hold a Mobile Housing Board voucher or unit.",
+    notes_es="Llame al 251-434-2200 para preguntar sobre la inscripción en Autosuficiencia Familiar; debe tener ya un vale o unidad de la Junta de Vivienda de Mobile.",
+    hours="Monday–Friday business hours",
+    tags="mobile|financial-assistance|housing-authority|self-sufficiency|savings",
+    services="Escrow savings account|Case management|Goal-setting coaching|Employment and education referrals",
+    county="Mobile", served_counties="Mobile", coverage="single",
+    _source="https://mobilehousing.org", _source_type="government", _confidence="high",
+)
+add(
+    name="Goodwill Easter Seals of the Gulf Coast — Mobile",
+    category="employment", region="Mobile metro",
+    description="Goodwill Easter Seals of the Gulf Coast operates career services and vocational training in Mobile for adults with disabilities and employment barriers, including justice-involved residents seeking job placement and skills certification. The center offers job coaching, retail and warehouse training tracks, and fair-chance employer partnerships coordinated with local Career Center and probation staff.",
+    description_es="Goodwill Easter Seals of the Gulf Coast opera servicios de carrera y capacitación vocacional en Mobile para adultos con discapacidades y barreras de empleo, incluidos residentes con antecedentes penales que buscan colocación laboral y certificación de habilidades. El centro ofrece coaching laboral, capacitación minorista y de almacén, y alianzas con empleadores de segunda oportunidad.",
+    address="5 Beltline Park North", city="Mobile", phone="251-473-7475", email="",
+    website="https://www.goodwillsouth.org",
+    eligibility="Mobile-area adults with disabilities or employment barriers, including justice-involved individuals; intake assessment required for vocational programs.",
+    eligibility_es="Adultos del área de Mobile con discapacidades o barreras de empleo, incluidas personas con antecedentes penales; se requiere evaluación de admisión para programas vocacionales.",
+    notes="Call 251-473-7475 to schedule an intake appointment; ask about fair-chance employer partnerships and retail training tracks.",
+    notes_es="Llame al 251-473-7475 para programar una cita de admisión; pregunte sobre alianzas con empleadores de segunda oportunidad y capacitación minorista.",
+    hours="Monday–Friday business hours",
+    tags="mobile|employment|goodwill|vocational-training|fair-chance|reentry",
+    services="Vocational training|Job coaching|Fair-chance employer connections|Retail and warehouse job placement|Skills certification",
+    county="Mobile", served_counties="Mobile", coverage="single",
+    _source="https://www.goodwillsouth.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Catholic Social Services of Mobile",
+    category="basic-needs", region="Mobile metro",
+    description="Catholic Social Services of Mobile provides emergency financial assistance, food pantry access, immigration services, and case management for low-income residents across Mobile and Baldwin counties, including returning citizens facing utility shutoffs or eviction shortly after release. Bilingual staff assist Spanish-speaking clients with benefits navigation and referrals to housing and legal partners.",
+    description_es="Catholic Social Services of Mobile proporciona asistencia financiera de emergencia, acceso a despensa de alimentos, servicios de inmigración y manejo de casos para residentes de bajos ingresos en los condados Mobile y Baldwin, incluidos ciudadanos que regresan y enfrentan cortes de servicios públicos o desalojo poco después de la liberación. El personal bilingüe asiste a clientes de habla hispana.",
+    address="400 Government Street", city="Mobile", phone="251-434-1550", email="",
+    website="https://cssmobile.org",
+    eligibility="Low-income residents of Mobile and Baldwin counties facing financial crisis; documentation of need and residency generally required.",
+    eligibility_es="Residentes de bajos ingresos de los condados Mobile y Baldwin que enfrentan crisis financiera; generalmente se requiere documentación de necesidad y residencia.",
+    notes="Call 251-434-1550 for an appointment; bring a utility shutoff notice or eviction notice if seeking emergency financial assistance.",
+    notes_es="Llame al 251-434-1550 para una cita; traiga un aviso de corte de servicios públicos o de desalojo si busca asistencia financiera de emergencia.",
+    hours="Monday–Friday business hours",
+    tags="mobile|basic-needs|emergency-assistance|food-pantry|bilingual|reentry",
+    services="Emergency financial assistance|Food pantry|Immigration services|Case management|Housing and legal referrals",
+    county="Mobile", served_counties="Mobile|Baldwin", coverage="multi",
+    _source="https://cssmobile.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="First Stop, Inc. — Huntsville",
+    category="basic-needs", region="Huntsville metro",
+    description="First Stop, Inc. is Huntsville's crisis intervention and resource navigation center, providing emergency financial assistance, a 24-hour crisis line, and case management for individuals and families facing homelessness, domestic violence, or sudden crisis, including returning citizens with nowhere else to turn. Staff connect clients to shelter, MyDHR benefits, and Madison County employment partners.",
+    description_es="First Stop, Inc. es el centro de intervención en crisis y navegación de recursos de Huntsville, que proporciona asistencia financiera de emergencia, una línea de crisis de 24 horas y manejo de casos para personas y familias que enfrentan falta de vivienda, violencia doméstica o crisis repentina, incluidos ciudadanos que regresan sin otro lugar adonde acudir.",
+    address="602 Andrew Jackson Way NE", city="Huntsville", phone="256-536-1666", email="",
+    website="https://firststopinc.org",
+    eligibility="Madison County residents facing a housing, domestic violence, or financial crisis; 24-hour crisis line open to anyone seeking immediate help.",
+    eligibility_es="Residentes del condado Madison que enfrentan una crisis de vivienda, violencia doméstica o financiera; línea de crisis de 24 horas abierta a cualquiera que busque ayuda inmediata.",
+    notes="Call the 24-hour crisis line at 256-536-1666; walk-in case management available during business hours.",
+    notes_es="Llame a la línea de crisis de 24 horas al 256-536-1666; manejo de casos sin cita disponible durante el horario comercial.",
+    hours="Crisis line available 24/7; office Monday–Friday business hours",
+    tags="huntsville|madison|basic-needs|crisis-line|emergency-assistance|reentry",
+    services="24-hour crisis line|Emergency financial assistance|Case management|Shelter referrals|Benefits navigation",
+    county="Madison", served_counties="Madison", coverage="single",
+    _source="https://firststopinc.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Huntsville Housing Authority — Family Self-Sufficiency Program",
+    category="financial-assistance", region="Huntsville metro",
+    description="The Huntsville Housing Authority's Family Self-Sufficiency Program helps Housing Choice Voucher participants, including returning citizens in subsidized housing, build savings and reduce dependence on public assistance through case management, goal-setting, and an escrow account that grows with household earned income over a five-year contract term.",
+    description_es="El Programa de Autosuficiencia Familiar de la Autoridad de Vivienda de Huntsville ayuda a los participantes del Vale de Elección de Vivienda, incluidos ciudadanos que regresan en vivienda subsidiada, a generar ahorros y reducir la dependencia de la asistencia pública mediante manejo de casos, establecimiento de metas y una cuenta de depósito en garantía durante un contrato de cinco años.",
+    address="1717 Northside Drive", city="Huntsville", phone="256-534-0503", email="",
+    website="https://hsvha.org",
+    eligibility="Current Huntsville Housing Authority Housing Choice Voucher or public housing participants; enrollment is voluntary and requires a five-year contract of participation.",
+    eligibility_es="Participantes actuales del Vale de Elección de Vivienda o vivienda pública de la Autoridad de Vivienda de Huntsville; la inscripción es voluntaria y requiere un contrato de cinco años.",
+    notes="Call 256-534-0503 to ask about Family Self-Sufficiency enrollment; must already hold an HHA voucher or public housing unit.",
+    notes_es="Llame al 256-534-0503 para preguntar sobre la inscripción en Autosuficiencia Familiar; debe tener ya un vale o unidad de vivienda pública de HHA.",
+    hours="Monday–Friday business hours",
+    tags="huntsville|madison|financial-assistance|housing-authority|self-sufficiency|savings",
+    services="Escrow savings account|Case management|Goal-setting coaching|Employment and education referrals",
+    county="Madison", served_counties="Madison", coverage="single",
+    _source="https://hsvha.org", _source_type="government", _confidence="high",
+)
+add(
+    name="Still Serving Veterans",
+    category="veterans", region="Huntsville metro",
+    description="Still Serving Veterans, headquartered in Huntsville, provides free career counseling, benefits claims assistance, and housing stability navigation for veterans across North Alabama, including justice-involved veterans transitioning from incarceration or facing homelessness. Case managers help veterans access VA disability compensation, education benefits, and employment placement with area employers.",
+    description_es="Still Serving Veterans, con sede en Huntsville, proporciona consejería laboral gratuita, asistencia con reclamaciones de beneficios y navegación de estabilidad de vivienda para veteranos en el norte de Alabama, incluidos veteranos con antecedentes penales en transición desde la encarcelación o que enfrentan falta de vivienda. Los administradores de casos ayudan a los veteranos a acceder a compensación por discapacidad del VA.",
+    address="8500 Madison Boulevard", city="Madison", phone="256-883-7035", email="",
+    website="https://stillservingveterans.org",
+    eligibility="Veterans of any era residing in North Alabama; honorable or general discharge generally required for VA benefits claims assistance.",
+    eligibility_es="Veteranos de cualquier era que residan en el norte de Alabama; generalmente se requiere baja honorable o general para asistencia con reclamaciones de beneficios del VA.",
+    notes="Call 256-883-7035 to schedule a veteran services appointment; bring DD-214 discharge paperwork if available.",
+    notes_es="Llame al 256-883-7035 para programar una cita de servicios para veteranos; traiga el formulario de baja DD-214 si está disponible.",
+    hours="Monday–Friday business hours",
+    tags="huntsville|madison|veterans|VA-benefits|employment|reentry",
+    services="VA benefits claims assistance|Career counseling|Housing stability navigation|Employment placement|Education benefits guidance",
+    county="Madison", served_counties="Madison", coverage="single",
+    _source="https://stillservingveterans.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Manna House",
+    category="food-nutrition", region="Huntsville metro",
+    description="Manna House operates a large-scale food pantry and utility assistance program in Huntsville, distributing groceries and household essentials to thousands of Madison County families each month, including returning citizens rebuilding a household after release. Clients can shop the pantry directly, and case workers help connect families to MyDHR benefits and other basic-needs partners.",
+    description_es="Manna House opera una despensa de alimentos a gran escala y un programa de asistencia con servicios públicos en Huntsville, distribuyendo comestibles y artículos esenciales del hogar a miles de familias del condado Madison cada mes, incluidos ciudadanos que regresan y reconstruyen un hogar después de la liberación. Los clientes pueden comprar directamente en la despensa.",
+    address="2020 Vernon Street SW", city="Huntsville", phone="256-536-3363", email="",
+    website="https://mannahousehsv.org",
+    eligibility="Madison County residents in need of food or utility assistance; proof of residency and income documentation typically requested.",
+    eligibility_es="Residentes del condado Madison que necesitan asistencia alimentaria o de servicios públicos; generalmente se solicita prueba de residencia y documentación de ingresos.",
+    notes="Call 256-536-3363 for pantry hours and eligibility documents; utility assistance funds are limited and available on a first-come basis.",
+    notes_es="Llame al 256-536-3363 para conocer el horario de la despensa y los documentos de elegibilidad; los fondos de asistencia con servicios públicos son limitados.",
+    hours="Pantry hours vary; call ahead to confirm",
+    tags="huntsville|madison|food-nutrition|food-pantry|utility-assistance|reentry",
+    services="Food pantry|Utility assistance|Household essentials distribution|Benefits referrals",
+    county="Madison", served_counties="Madison", coverage="single",
+    _source="https://mannahousehsv.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Crisis Services of North Alabama",
+    category="healthcare", region="Huntsville metro",
+    description="Crisis Services of North Alabama operates a 24-hour crisis line, mobile crisis response, and suicide prevention services for residents across the Huntsville region, coordinating with the 988 Suicide and Crisis Lifeline and local hospitals to divert people in mental health crisis away from jail when possible. Justice-involved individuals experiencing a behavioral health emergency can request mobile crisis dispatch.",
+    description_es="Crisis Services of North Alabama opera una línea de crisis de 24 horas, respuesta móvil de crisis y servicios de prevención del suicidio para residentes de la región de Huntsville, coordinando con la Línea 988 y hospitales locales para desviar a personas en crisis de salud mental de la cárcel cuando sea posible. Las personas con antecedentes penales en emergencia de salud conductual pueden solicitar despacho de crisis móvil.",
+    address="4040 Memorial Parkway SW", city="Huntsville", phone="256-716-1000", email="",
+    website="https://crisisservicesnal.org",
+    eligibility="Anyone in the Huntsville region experiencing a mental health or suicide crisis; no eligibility restrictions for crisis line calls.",
+    eligibility_es="Cualquier persona en la región de Huntsville que experimente una crisis de salud mental o suicidio; sin restricciones de elegibilidad para llamadas a la línea de crisis.",
+    notes="Call the 24-hour crisis line at 256-716-1000 or dial 988; ask about mobile crisis team dispatch for in-person response.",
+    notes_es="Llame a la línea de crisis de 24 horas al 256-716-1000 o marque 988; pregunte sobre el despacho del equipo de crisis móvil para respuesta en persona.",
+    hours="Available 24/7",
+    tags="huntsville|madison|healthcare|crisis-line|mobile-crisis|mental-health",
+    services="24-hour crisis line|Mobile crisis response|Suicide prevention|Hospital and law enforcement coordination",
+    county="Madison", served_counties="Madison", coverage="single",
+    _source="https://crisisservicesnal.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="CED Mental Health Center",
+    category="substance-use-treatment", region="Huntsville metro",
+    description="CED Mental Health Center is a Community Mental Health Center serving Madison, Marshall, and Jackson counties with outpatient psychiatric care, substance use disorder treatment, and case management for adults and children, including justice-involved individuals referred through drug court or probation. Sliding-fee services and Medicaid billing support continuity of care after release from incarceration.",
+    description_es="CED Mental Health Center es un Centro Comunitario de Salud Mental que sirve a los condados Madison, Marshall y Jackson con atención psiquiátrica ambulatoria, tratamiento de trastornos por uso de sustancias y manejo de casos para adultos y niños, incluidas personas con antecedentes penales referidas por tribunal de drogas o probatoria. Servicios de tarifa móvil y facturación de Medicaid apoyan la continuidad de la atención tras la liberación.",
+    address="4040 Memorial Parkway SW", city="Huntsville", phone="256-533-1970", email="",
+    website="https://cedmhc.org",
+    eligibility="Residents of Madison, Marshall, or Jackson counties seeking mental health or substance use treatment; sliding-fee scale and Medicaid accepted.",
+    eligibility_es="Residentes de los condados Madison, Marshall o Jackson que buscan tratamiento de salud mental o uso de sustancias; se acepta escala de tarifas móviles y Medicaid.",
+    notes="Call 256-533-1970 for intake; bring drug court or probation referral paperwork if applicable.",
+    notes_es="Llame al 256-533-1970 para admisión; traiga documentación de referencia de tribunal de drogas o probatoria si corresponde.",
+    hours="Monday–Friday business hours",
+    tags="huntsville|madison|substance-use-treatment|CMHC|drug-court|reentry",
+    services="Outpatient substance use treatment|Psychiatric care|Case management|Court-referral coordination",
+    county="Madison", served_counties="Madison|Marshall|Jackson", coverage="multi",
+    _source="https://cedmhc.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Salvation Army of Tuscaloosa",
+    category="housing", region="Tuscaloosa metro",
+    description="The Salvation Army of Tuscaloosa provides emergency shelter, meals, and case management for individuals and families experiencing homelessness in West Alabama, including returning citizens released from Tuscaloosa County Jail without stable housing. Case managers connect residents to employment services, MyDHR benefits, and longer-term housing programs while guests stabilize at the shelter.",
+    description_es="El Ejército de Salvación de Tuscaloosa proporciona refugio de emergencia, comidas y manejo de casos para personas y familias sin hogar en el oeste de Alabama, incluidos ciudadanos que regresan liberados de la cárcel del condado Tuscaloosa sin vivienda estable. Los administradores de casos conectan a los residentes con servicios de empleo, beneficios de MyDHR y programas de vivienda a largo plazo.",
+    address="2101 Stillman Boulevard", city="Tuscaloosa", phone="205-345-8878", email="",
+    website="https://tuscaloosaal.salvationarmy.org",
+    eligibility="Individuals and families experiencing homelessness in the Tuscaloosa area; walk in or call for same-day intake assessment.",
+    eligibility_es="Personas y familias sin hogar en el área de Tuscaloosa; ingrese sin cita o llame para evaluación de admisión el mismo día.",
+    notes="Call 205-345-8878 for shelter intake; case management connects to Career Center employment services and MyDHR benefits.",
+    notes_es="Llame al 205-345-8878 para admisión al refugio; el manejo de casos conecta con servicios de empleo de Career Center y beneficios de MyDHR.",
+    hours="Shelter 24/7; intake assessments during business hours",
+    tags="tuscaloosa|housing|emergency-shelter|reentry|faith-based",
+    services="Emergency shelter|Meals|Case management|Employment referrals|Benefits navigation",
+    county="Tuscaloosa", served_counties="Tuscaloosa", coverage="single",
+    _source="https://tuscaloosaal.salvationarmy.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Turning Point of West Alabama",
+    category="family-children", region="Tuscaloosa metro",
+    description="Turning Point of West Alabama provides emergency shelter, a 24-hour crisis line, forensic exams, and court advocacy for survivors of domestic violence and sexual assault across Tuscaloosa and surrounding counties, including justice-involved survivors navigating protective orders and family court. Confidential shelter and children's services help families rebuild safety and stability.",
+    description_es="Turning Point of West Alabama proporciona refugio de emergencia, línea de crisis de 24 horas, exámenes forenses y defensa judicial para sobrevivientes de violencia doméstica y agresión sexual en Tuscaloosa y condados circundantes, incluidas sobrevivientes con antecedentes penales que navegan órdenes de protección y tribunales familiares. Servicios confidenciales de refugio e infantiles ayudan a las familias.",
+    address="2801 Loop Road", city="Tuscaloosa", phone="205-758-0808", email="",
+    website="https://turningpointwa.org",
+    eligibility="Survivors of domestic violence or sexual assault in West Alabama and their children; 24-hour crisis line open to anyone seeking safety information.",
+    eligibility_es="Sobrevivientes de violencia doméstica o agresión sexual en el oeste de Alabama y sus hijos; línea de crisis de 24 horas abierta a cualquiera que busque información de seguridad.",
+    notes="Call the 24-hour crisis line at 205-758-0808; shelter location is confidential for resident safety.",
+    notes_es="Llame a la línea de crisis de 24 horas al 205-758-0808; la ubicación del refugio es confidencial por la seguridad de las residentes.",
+    hours="Crisis line available 24/7",
+    tags="tuscaloosa|family-children|domestic-violence|shelter|crisis-line",
+    services="Emergency shelter|24-hour crisis line|Court advocacy|Forensic exam coordination|Children's services",
+    county="Tuscaloosa", served_counties="Tuscaloosa", coverage="single",
+    _source="https://turningpointwa.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Temporary Emergency Services (TES) of Tuscaloosa",
+    category="basic-needs", region="Tuscaloosa metro",
+    description="Temporary Emergency Services provides emergency food, clothing, furniture, and utility assistance for low-income households in Tuscaloosa County, including returning citizens establishing a household after release with little more than the clothes they were released in. Referral partners across West Alabama route clients to TES for immediate material needs while longer-term case management continues elsewhere.",
+    description_es="Temporary Emergency Services proporciona alimentos de emergencia, ropa, muebles y asistencia con servicios públicos para hogares de bajos ingresos en el condado Tuscaloosa, incluidos ciudadanos que regresan y establecen un hogar después de la liberación con poco más que la ropa con la que salieron. Aliados de referencia en el oeste de Alabama envían clientes a TES para necesidades materiales inmediatas.",
+    address="2637 Kicker Road", city="Tuscaloosa", phone="205-758-5535", email="",
+    website="https://tesofalabama.org",
+    eligibility="Low-income Tuscaloosa County households in need of emergency food, clothing, or furniture; referral from a partner agency is often required.",
+    eligibility_es="Hogares de bajos ingresos del condado Tuscaloosa que necesitan alimentos, ropa o muebles de emergencia; a menudo se requiere referencia de una agencia aliada.",
+    notes="Call 205-758-5535 for current referral requirements; many partner agencies including DHR and local churches can provide a TES referral.",
+    notes_es="Llame al 205-758-5535 para conocer los requisitos actuales de referencia; muchas agencias aliadas incluida DHR y iglesias locales pueden proporcionar una referencia a TES.",
+    hours="Monday–Friday business hours",
+    tags="tuscaloosa|basic-needs|emergency-assistance|furniture|clothing|reentry",
+    services="Emergency food assistance|Clothing distribution|Furniture assistance|Utility assistance referrals",
+    county="Tuscaloosa", served_counties="Tuscaloosa", coverage="single",
+    _source="https://tesofalabama.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Indian Rivers Behavioral Health",
+    category="substance-use-treatment", region="Tuscaloosa metro",
+    description="Indian Rivers Behavioral Health is the Community Mental Health Center serving Tuscaloosa, Pickens, Fayette, and Bibb counties with outpatient psychiatric care, substance use treatment, and crisis services for adults and children, including individuals referred through Tuscaloosa County drug court and probation. Sliding-fee services and Medicaid billing help returning citizens continue care after release.",
+    description_es="Indian Rivers Behavioral Health es el Centro Comunitario de Salud Mental que sirve a los condados Tuscaloosa, Pickens, Fayette y Bibb con atención psiquiátrica ambulatoria, tratamiento de uso de sustancias y servicios de crisis para adultos y niños, incluidas personas referidas por el tribunal de drogas y probatoria del condado Tuscaloosa. Servicios de tarifa móvil y facturación de Medicaid ayudan a continuar la atención tras la liberación.",
+    address="2801 Kicker Road", city="Tuscaloosa", phone="205-345-1600", email="",
+    website="https://www.indianrivers.org",
+    eligibility="Residents of Tuscaloosa, Pickens, Fayette, or Bibb counties seeking mental health or substance use treatment; sliding-fee scale and Medicaid accepted.",
+    eligibility_es="Residentes de los condados Tuscaloosa, Pickens, Fayette o Bibb que buscan tratamiento de salud mental o uso de sustancias; se acepta escala de tarifas móviles y Medicaid.",
+    notes="Call 205-345-1600 for intake; bring drug court or probation referral paperwork if applicable.",
+    notes_es="Llame al 205-345-1600 para admisión; traiga documentación de referencia de tribunal de drogas o probatoria si corresponde.",
+    hours="Monday–Friday business hours; crisis services available beyond regular hours",
+    tags="tuscaloosa|substance-use-treatment|CMHC|drug-court|reentry",
+    services="Outpatient substance use treatment|Psychiatric care|Crisis services|Case management",
+    county="Tuscaloosa", served_counties="Tuscaloosa|Pickens|Fayette|Bibb", coverage="multi",
+    _source="https://www.indianrivers.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Shelton State Community College — Adult Education",
+    category="education", region="Tuscaloosa metro",
+    description="Shelton State Community College's Adult Education program offers free GED preparation, adult basic education, and English language classes for West Alabama residents, including justice-involved adults working toward a high school equivalency credential needed for employment and further training. Classes lead into Shelton State's career technical programs and Alabama Career Center job placement services.",
+    description_es="El programa de Educación para Adultos de Shelton State Community College ofrece preparación gratuita para el GED, educación básica para adultos y clases de inglés para residentes del oeste de Alabama, incluidos adultos con antecedentes penales que trabajan para obtener una credencial de equivalencia de escuela secundaria necesaria para el empleo. Las clases conducen a los programas técnicos de carrera de Shelton State.",
+    address="9500 Old Greensboro Road", city="Tuscaloosa", phone="205-391-2211", email="",
+    website="https://www.sheltonstate.edu",
+    eligibility="West Alabama residents age 16 and older not enrolled in secondary school; no cost for GED preparation and adult basic education classes.",
+    eligibility_es="Residentes del oeste de Alabama de 16 años o más que no estén inscritos en la escuela secundaria; sin costo para la preparación del GED y clases de educación básica para adultos.",
+    notes="Call 205-391-2211 to register for adult education classes; ask about testing schedules and evening class options.",
+    notes_es="Llame al 205-391-2211 para inscribirse en clases de educación para adultos; pregunte sobre horarios de exámenes y opciones de clases nocturnas.",
+    hours="Class schedules vary; day and evening sections offered",
+    tags="tuscaloosa|education|GED|adult-education|reentry",
+    services="GED preparation|Adult basic education|English language classes|Career technical program referrals",
+    county="Tuscaloosa", served_counties="Tuscaloosa", coverage="single",
+    _source="https://www.sheltonstate.edu", _source_type="government", _confidence="high",
+)
+add(
+    name="SpectraCare Health Systems",
+    category="substance-use-treatment", region="Dothan metro",
+    description="SpectraCare Health Systems is the Community Mental Health Center serving the Wiregrass region, providing outpatient psychiatric care, substance use disorder treatment, and crisis services for adults and children across Houston, Henry, Dale, Geneva, and Barbour counties, including individuals referred through Houston County drug court and probation. Sliding-fee services help returning citizens continue treatment after release.",
+    description_es="SpectraCare Health Systems es el Centro Comunitario de Salud Mental que sirve a la región Wiregrass, proporcionando atención psiquiátrica ambulatoria, tratamiento de trastornos por uso de sustancias y servicios de crisis para adultos y niños en los condados Houston, Henry, Dale, Geneva y Barbour, incluidas personas referidas por el tribunal de drogas y probatoria del condado Houston.",
+    address="3423 Ross Clark Circle", city="Dothan", phone="334-712-0568", email="",
+    website="https://spectracarehs.org",
+    eligibility="Residents of the Wiregrass region seeking mental health or substance use treatment; sliding-fee scale and Medicaid accepted.",
+    eligibility_es="Residentes de la región Wiregrass que buscan tratamiento de salud mental o uso de sustancias; se acepta escala de tarifas móviles y Medicaid.",
+    notes="Call 334-712-0568 for intake; bring drug court or probation referral paperwork if applicable.",
+    notes_es="Llame al 334-712-0568 para admisión; traiga documentación de referencia de tribunal de drogas o probatoria si corresponde.",
+    hours="Monday–Friday business hours; crisis services available beyond regular hours",
+    tags="dothan|houston|substance-use-treatment|CMHC|wiregrass|drug-court|reentry",
+    services="Outpatient substance use treatment|Psychiatric care|Crisis services|Case management",
+    county="Houston", served_counties="Houston|Henry|Dale|Geneva|Barbour", coverage="multi",
+    _source="https://spectracarehs.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="House of Ruth",
+    category="family-children", region="Dothan metro",
+    description="House of Ruth provides emergency shelter, a 24-hour crisis line, and advocacy for survivors of domestic violence and their children across the Wiregrass region, including justice-involved survivors balancing safety planning with court obligations. Confidential shelter, counseling, and legal advocacy help families in Houston and surrounding counties rebuild stability after crisis.",
+    description_es="House of Ruth proporciona refugio de emergencia, línea de crisis de 24 horas y defensa para sobrevivientes de violencia doméstica y sus hijos en la región Wiregrass, incluidas sobrevivientes con antecedentes penales que equilibran la planificación de seguridad con obligaciones judiciales. Refugio confidencial, consejería y defensa legal ayudan a las familias en el condado Houston y condados circundantes.",
+    address="P.O. Box 969", city="Dothan", phone="334-794-4000", email="",
+    website="https://houseofruthdothan.org",
+    eligibility="Survivors of domestic violence and their children in the Wiregrass region; 24-hour crisis line open to anyone seeking safety information.",
+    eligibility_es="Sobrevivientes de violencia doméstica y sus hijos en la región Wiregrass; línea de crisis de 24 horas abierta a cualquiera que busque información de seguridad.",
+    notes="Call the 24-hour crisis line at 334-794-4000; shelter location is confidential for resident safety.",
+    notes_es="Llame a la línea de crisis de 24 horas al 334-794-4000; la ubicación del refugio es confidencial por la seguridad de las residentes.",
+    hours="Crisis line available 24/7",
+    tags="dothan|houston|family-children|domestic-violence|shelter|crisis-line",
+    services="Emergency shelter|24-hour crisis line|Legal advocacy|Counseling|Children's services",
+    county="Houston", served_counties="Houston", coverage="single",
+    _source="https://houseofruthdothan.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Wiregrass Rehabilitation Center",
+    category="employment", region="Dothan metro",
+    description="Wiregrass Rehabilitation Center provides vocational evaluation, job skills training, and supported employment services for adults with disabilities and employment barriers in the Wiregrass region, including justice-involved individuals with qualifying disabilities referred by ADRS. Programs include contract work training, job coaching, and placement support with area employers in and around Dothan.",
+    description_es="Wiregrass Rehabilitation Center proporciona evaluación vocacional, capacitación en habilidades laborales y servicios de empleo con apoyo para adultos con discapacidades y barreras de empleo en la región Wiregrass, incluidas personas con antecedentes penales con discapacidades calificadas referidas por ADRS. Los programas incluyen capacitación laboral por contrato, coaching laboral y apoyo de colocación.",
+    address="1160 Honeysuckle Road", city="Dothan", phone="334-793-0111", email="",
+    website="https://wiregrassrehab.org",
+    eligibility="Adults with disabilities or significant employment barriers in the Wiregrass region; referral from ADRS or self-referral accepted for vocational evaluation.",
+    eligibility_es="Adultos con discapacidades o barreras significativas de empleo en la región Wiregrass; se acepta referencia de ADRS o autorreferencia para evaluación vocacional.",
+    notes="Call 334-793-0111 to schedule a vocational evaluation; ADRS referral can help expedite enrollment.",
+    notes_es="Llame al 334-793-0111 para programar una evaluación vocacional; la referencia de ADRS puede ayudar a acelerar la inscripción.",
+    hours="Monday–Friday business hours",
+    tags="dothan|houston|employment|vocational-rehabilitation|disability|reentry",
+    services="Vocational evaluation|Job skills training|Supported employment|Job coaching|Employer placement support",
+    county="Houston", served_counties="Houston", coverage="single",
+    _source="https://wiregrassrehab.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Southeast Alabama Medical Center Foundation — Charity Care",
+    category="healthcare", region="Dothan metro",
+    description="The Southeast Alabama Medical Center Foundation coordinates charity care and financial assistance applications for uninsured and underinsured Wiregrass-region patients receiving hospital and outpatient care at SAMC in Dothan, including returning citizens needing follow-up care after a health issue identified during incarceration. Financial counselors help patients apply for charity care write-offs and Medicaid.",
+    description_es="La Fundación del Centro Médico del Sureste de Alabama coordina la atención caritativa y las solicitudes de asistencia financiera para pacientes sin seguro o con seguro insuficiente de la región Wiregrass que reciben atención hospitalaria y ambulatoria en SAMC en Dothan, incluidos ciudadanos que regresan y necesitan atención de seguimiento. Los consejeros financieros ayudan a los pacientes a solicitar exenciones de atención caritativa y Medicaid.",
+    address="1108 Ross Clark Circle", city="Dothan", phone="334-793-8701", email="",
+    website="https://www.samc.org",
+    eligibility="Uninsured or underinsured patients of Southeast Alabama Medical Center meeting income guidelines for charity care; financial counseling appointment required.",
+    eligibility_es="Pacientes sin seguro o con seguro insuficiente del Centro Médico del Sureste de Alabama que cumplan las pautas de ingresos para atención caritativa; se requiere cita de consejería financiera.",
+    notes="Call 334-793-8701 and ask for financial counseling; bring recent pay stubs or proof of income for the charity care application.",
+    notes_es="Llame al 334-793-8701 y pida consejería financiera; traiga recibos de pago recientes o prueba de ingresos para la solicitud de atención caritativa.",
+    hours="Monday–Friday business hours",
+    tags="dothan|houston|healthcare|charity-care|hospital|financial-assistance",
+    services="Charity care application assistance|Financial counseling|Medicaid application referral|Hospital bill assistance",
+    county="Houston", served_counties="Houston", coverage="single",
+    _source="https://www.samc.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Salvation Army of the Shoals",
+    category="housing", region="Florence metro",
+    description="The Salvation Army of the Shoals provides emergency shelter, meals, and case management for individuals and families experiencing homelessness in Florence and the surrounding Shoals area, including returning citizens released from Lauderdale County Jail without stable housing. Case managers connect residents to Career Center employment services, MyDHR benefits, and longer-term housing options.",
+    description_es="El Ejército de Salvación de los Shoals proporciona refugio de emergencia, comidas y manejo de casos para personas y familias sin hogar en Florence y el área circundante de los Shoals, incluidos ciudadanos que regresan liberados de la cárcel del condado Lauderdale sin vivienda estable. Los administradores de casos conectan a los residentes con servicios de empleo y beneficios de MyDHR.",
+    address="410 East College Street", city="Florence", phone="256-764-8464", email="",
+    website="https://shoals.salvationarmy.org",
+    eligibility="Individuals and families experiencing homelessness in the Shoals area; walk in or call for same-day intake assessment.",
+    eligibility_es="Personas y familias sin hogar en el área de los Shoals; ingrese sin cita o llame para evaluación de admisión el mismo día.",
+    notes="Call 256-764-8464 for shelter intake; case management connects to Career Center employment services and MyDHR benefits.",
+    notes_es="Llame al 256-764-8464 para admisión al refugio; el manejo de casos conecta con servicios de empleo de Career Center y beneficios de MyDHR.",
+    hours="Shelter 24/7; intake assessments during business hours",
+    tags="florence|lauderdale|housing|emergency-shelter|reentry|faith-based",
+    services="Emergency shelter|Meals|Case management|Employment referrals|Benefits navigation",
+    county="Lauderdale", served_counties="Lauderdale", coverage="single",
+    _source="https://shoals.salvationarmy.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Christian Service Center of the Shoals",
+    category="basic-needs", region="Florence metro",
+    description="Christian Service Center of the Shoals operates a food pantry, clothing closet, and emergency utility and rent assistance program for low-income residents of Florence and the surrounding Shoals area, including returning citizens establishing a household after release. Volunteers and case workers help clients access one-time emergency assistance and referrals to longer-term benefits programs.",
+    description_es="Christian Service Center of the Shoals opera una despensa de alimentos, un armario de ropa y un programa de asistencia de emergencia con servicios públicos y alquiler para residentes de bajos ingresos de Florence y el área circundante de los Shoals, incluidos ciudadanos que regresan y establecen un hogar después de la liberación. Voluntarios y trabajadores de caso ayudan a los clientes a acceder a asistencia de emergencia única.",
+    address="223 West Tuscaloosa Street", city="Florence", phone="256-764-8118", email="",
+    website="https://cscshoals.org",
+    eligibility="Low-income residents of the Shoals area in need of food, clothing, or emergency utility and rent assistance; proof of residency and need typically required.",
+    eligibility_es="Residentes de bajos ingresos del área de los Shoals que necesitan alimentos, ropa o asistencia de emergencia con servicios públicos y alquiler; generalmente se requiere prueba de residencia y necesidad.",
+    notes="Call 256-764-8118 for pantry hours and emergency assistance eligibility; bring a shutoff or eviction notice for utility or rent help.",
+    notes_es="Llame al 256-764-8118 para conocer el horario de la despensa y la elegibilidad para asistencia de emergencia; traiga un aviso de corte o desalojo.",
+    hours="Monday–Friday business hours",
+    tags="florence|lauderdale|basic-needs|food-pantry|emergency-assistance|reentry",
+    services="Food pantry|Clothing closet|Emergency utility assistance|Emergency rent assistance",
+    county="Lauderdale", served_counties="Lauderdale", coverage="single",
+    _source="https://cscshoals.org", _source_type="nonprofit", _confidence="high",
+)
+add(
+    name="Northwest Shoals Community College — Adult Education",
+    category="education", region="Florence metro",
+    description="Northwest Shoals Community College's Adult Education program offers free GED preparation, adult basic education, and workforce readiness classes for residents of the Shoals area, including justice-involved adults working toward a high school equivalency credential needed for employment. Classes lead into career technical programs and coordination with the local Alabama Career Center office.",
+    description_es="El programa de Educación para Adultos de Northwest Shoals Community College ofrece preparación gratuita para el GED, educación básica para adultos y clases de preparación laboral para residentes del área de los Shoals, incluidos adultos con antecedentes penales que trabajan para obtener una credencial de equivalencia de escuela secundaria. Las clases conducen a programas técnicos de carrera y coordinación con la oficina local de Alabama Career Center.",
+    address="800 George Wallace Boulevard", city="Muscle Shoals", phone="256-331-5210", email="",
+    website="https://www.nwscc.edu",
+    eligibility="Shoals-area residents age 16 and older not enrolled in secondary school; no cost for GED preparation and adult basic education classes.",
+    eligibility_es="Residentes del área de los Shoals de 16 años o más que no estén inscritos en la escuela secundaria; sin costo para la preparación del GED y clases de educación básica para adultos.",
+    notes="Call 256-331-5210 to register for adult education classes; ask about testing schedules and evening class options.",
+    notes_es="Llame al 256-331-5210 para inscribirse en clases de educación para adultos; pregunte sobre horarios de exámenes y opciones de clases nocturnas.",
+    hours="Class schedules vary; day and evening sections offered",
+    tags="florence|lauderdale|muscle-shoals|education|GED|adult-education|reentry",
+    services="GED preparation|Adult basic education|Workforce readiness classes|Career technical program referrals",
+    county="Lauderdale", served_counties="Lauderdale|Colbert", coverage="multi",
+    _source="https://www.nwscc.edu", _source_type="government", _confidence="high",
+)
+add(
+    name="Alabama Career Center — Florence",
+    category="employment", region="Florence metro",
+    description="The Alabama Career Center office in Florence connects Shoals-area job seekers—including justice-involved residents—to job search assistance, unemployment services, and WIOA training referrals coordinated through the North Alabama workforce region. Fair-chance employer relationships and on-site resource rooms help returning citizens build resumes and apply for local manufacturing and service-sector jobs.",
+    description_es="La oficina de Alabama Career Center en Florence conecta a los buscadores de empleo del área de los Shoals—incluidos residentes con antecedentes penales—con asistencia de búsqueda de empleo, servicios de desempleo y referencias de capacitación WIOA coordinadas a través de la región de fuerza laboral del norte de Alabama. Las relaciones con empleadores de segunda oportunidad y salas de recursos ayudan a los ciudadanos que regresan.",
+    address="602 South Court Street", city="Florence", phone="256-767-4711", email="",
+    website="https://joblink.alabama.gov",
+    eligibility="Open to Shoals-area job seekers including justice-involved individuals; core career center services are free.",
+    eligibility_es="Abierto a buscadores de empleo del área de los Shoals incluidas personas con antecedentes penales; servicios básicos del centro de carrera son gratuitos.",
+    notes="Visit joblink.alabama.gov to find the Florence office hours; walk-in resource room available for job search and resume help.",
+    notes_es="Visite joblink.alabama.gov para conocer el horario de la oficina de Florence; sala de recursos disponible sin cita para búsqueda de empleo y ayuda con currículum.",
+    hours="Monday–Friday business hours",
+    tags="florence|lauderdale|employment|career-center|WIOA|fair-chance|reentry",
+    services="Job search assistance|Resume help|WIOA training referrals|Unemployment services|Fair-chance employment navigation",
+    county="Lauderdale", served_counties="Lauderdale", coverage="single",
+    _source="https://joblink.alabama.gov", _source_type="government", _confidence="high",
+)
+
+# --- Phase 3/4: Program-level expansion ---
+from alabama_phase4_expansion import register_phase4
+register_phase4(add)
+
+from alabama_category_fill import register_category_fill
+register_category_fill(add)
+
+from alabama_thin_counties import register_thin_counties
+register_thin_counties(add)
+
+from alabama_rural_depth import register_rural_depth
+register_rural_depth(add)
+
+from phase3b_gapfill import register_phase3b_alabama
+register_phase3b_alabama(add, ENTRIES)
+
+
+def _dedupe_entries(entries: list[dict]) -> list[dict]:
+    """Keep one row per (name, county); prefer wider served_counties and fuller address."""
+    best: dict[tuple[str, str], dict] = {}
+    order: list[tuple[str, str]] = []
+    for entry in entries:
+        key = (entry["name"].strip().lower(), (entry.get("county") or "").strip().lower())
+        if key not in best:
+            best[key] = entry
+            order.append(key)
+            continue
+        cur = best[key]
+        cur_n = len([c for c in (cur.get("served_counties") or "").split("|") if c.strip()])
+        new_n = len([c for c in (entry.get("served_counties") or "").split("|") if c.strip()])
+        cur_addr = len(cur.get("address") or "")
+        new_addr = len(entry.get("address") or "")
+        if new_n > cur_n or (new_n == cur_n and new_addr > cur_addr):
+            best[key] = entry
+    return [best[k] for k in order]
+
+
+ENTRIES = _dedupe_entries(ENTRIES)
+
+for entry in ENTRIES:
+    if entry.get("coverage") == "single" and not entry.get("served_counties") and entry.get("county"):
+        entry["served_counties"] = entry["county"]
+
+log_rows = []
+for i, e in enumerate(ENTRIES, start=1):
+    e["id"] = str(i)
+    log_rows.append({
+        "source_url": e.pop("_source"),
+        "source_type": e.pop("_source_type"),
+        "date_accessed": DATE,
+        "confidence": e.pop("_confidence"),
+        "notes": f"Resource id {i}: {e['name']}",
+        "id_reference": str(i),
+    })
+
+with RESOURCES_PATH.open("w", newline="", encoding="utf-8") as f:
+    w = csv.DictWriter(f, fieldnames=COLUMNS, quoting=csv.QUOTE_MINIMAL)
+    w.writeheader()
+    for e in ENTRIES:
+        row = {c: e.get(c, "") for c in COLUMNS}
+        w.writerow(row)
+
+with LOG_PATH.open("w", newline="", encoding="utf-8") as f:
+    w = csv.DictWriter(f, fieldnames=LOG_COLUMNS, quoting=csv.QUOTE_MINIMAL)
+    w.writeheader()
+    w.writerows(log_rows)
+
+cats = Counter(e["category"] for e in ENTRIES)
+low = [e for e in log_rows if e["confidence"] == "medium"]
+print(f"Total rows: {len(ENTRIES)}")
+print("Category counts:")
+for k, v in sorted(cats.items()):
+    print(f"  {k}: {v}")
+print(f"Low confidence: {len(low)}")

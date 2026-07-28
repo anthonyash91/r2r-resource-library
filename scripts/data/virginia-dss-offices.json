@@ -1,0 +1,1626 @@
+[
+  {
+    "county": "Accomack",
+    "served": [
+      "Accomack"
+    ],
+    "agency": "Accomack Department of Social Services",
+    "city": "Accomack",
+    "address": "P. O. Box 210",
+    "phone": "(757) 787-1530",
+    "website": "http://www.co.accomack.va.us/departments/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Albemarle",
+    "served": [
+      "Albemarle"
+    ],
+    "agency": "Albemarle County Department of Social Services",
+    "city": "Charlottesville",
+    "address": "1600 Fifth St., Suite A",
+    "phone": "(434) 972-4011",
+    "website": "http://www.albemarle.org/government/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Alexandria",
+    "served": [
+      "Alexandria"
+    ],
+    "agency": "Alexandria Department of Community and Human Services",
+    "city": "Alexandria",
+    "address": "4850 Mark Center Dr.",
+    "phone": "(703) 746-5700",
+    "website": "http://www.alexandriava.gov/DCHS",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Alleghany",
+    "served": [
+      "Alleghany",
+      "Covington"
+    ],
+    "agency": "Alleghany-Covington Department of Social Services",
+    "city": "Covington",
+    "address": "110 Rosedale Ave., Suite B",
+    "phone": "(540) 444-7100",
+    "website": "http://www.co.alleghany.va.us/social-services/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Amelia",
+    "served": [
+      "Amelia"
+    ],
+    "agency": "Amelia Department of Social Services",
+    "city": "Amelia",
+    "address": "P.O. Box 136",
+    "phone": "(804) 561-2681",
+    "website": "http://www.ameliacova.com/departments/social_services/index.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Amherst",
+    "served": [
+      "Amherst"
+    ],
+    "agency": "Amherst Department of Social Services",
+    "city": "Amherst",
+    "address": "P. O. Box 414",
+    "phone": "(434) 946-9330",
+    "website": "http://www.countyofamherst.com/department/index.php?structureid=18",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Appomattox",
+    "served": [
+      "Appomattox"
+    ],
+    "agency": "Appomattox Department of Social Services",
+    "city": "Appomattox",
+    "address": "PO Box 549",
+    "phone": "(434) 352-7125",
+    "website": "",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Arlington",
+    "served": [
+      "Arlington"
+    ],
+    "agency": "Arlington County Department of Human Services",
+    "city": "Arlington",
+    "address": "2100 Washington Blvd. - 1st Fl.",
+    "phone": "(703) 228-1350",
+    "website": "http://www.arlingtonva.us/Departments/HumanServices/HumanServicesMain.aspx",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Augusta",
+    "served": [
+      "Augusta",
+      "Staunton"
+    ],
+    "agency": "Shenandoah Valley Dept. of Social Services (Staunton-Augusta Office)",
+    "city": "Verona",
+    "address": "P.O. Box 7",
+    "phone": "(540) 245-5800",
+    "website": "http://www.co.augusta.va.us/government/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Bath",
+    "served": [
+      "Bath"
+    ],
+    "agency": "Bath County Department of Social Services",
+    "city": "Warm Springs",
+    "address": "P.O. Box 7",
+    "phone": "(540) 839-7271",
+    "website": "",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Bedford",
+    "served": [
+      "Bedford"
+    ],
+    "agency": "Bedford Department of Social Services",
+    "city": "Bedford",
+    "address": "PO Box 1187",
+    "phone": "(540) 586-7750",
+    "website": "http://www.bedfordcountyva.gov/departments/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Bland",
+    "served": [
+      "Bland"
+    ],
+    "agency": "Bland County Department of Social Services",
+    "city": "Bland",
+    "address": "P.O. Box 55, Bland County Court House, Suite 208",
+    "phone": "(276) 688-4111",
+    "website": "https://www.blandcountyva.gov/departments/social_services/index.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Botetourt",
+    "served": [
+      "Botetourt"
+    ],
+    "agency": "Botetourt County Department of Social Services",
+    "city": "Daleville",
+    "address": "P. O. Box 99",
+    "phone": "540-591-5961 Ext. 306",
+    "website": "http://www.botetourtva.gov/356/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Bristol",
+    "served": [
+      "Bristol"
+    ],
+    "agency": "Bristol City Department of Social Services",
+    "city": "Bristol",
+    "address": "355 Bristol East Road",
+    "phone": "(276) 645-7450",
+    "website": "",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Brunswick",
+    "served": [
+      "Brunswick"
+    ],
+    "agency": "Brunswick County Department of Social Services",
+    "city": "Lawrenceville",
+    "address": "201 Sharp St., Suite 100",
+    "phone": "(434) 848-2142",
+    "website": "http://www.brunswickco.com/community/social_services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Buchanan",
+    "served": [
+      "Buchanan"
+    ],
+    "agency": "Buchanan County Department of Social Services",
+    "city": "Grundy",
+    "address": "3174 Slate Creek Road",
+    "phone": "(276) 935-8106",
+    "website": "http://www.bcdss.org/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Buckingham",
+    "served": [
+      "Buckingham"
+    ],
+    "agency": "Buckingham County Department of Social Services",
+    "city": "Buckingham Court House",
+    "address": "Route 60, P. O. Box 170",
+    "phone": "(434) 969-4246",
+    "website": "http://www.buckinghamcountyva.org/services/social_services/index.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Buena Vista",
+    "served": [
+      "Rockbridge",
+      "Buena Vista",
+      "Lexington"
+    ],
+    "agency": "Rockbridge-Buena Vista-Lexington Area Social Services",
+    "city": "Lexington",
+    "address": "20 E. Preston St.",
+    "phone": "(540) 463-7143",
+    "website": "",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Campbell",
+    "served": [
+      "Campbell"
+    ],
+    "agency": "Campbell County Department of Social Services",
+    "city": "Rustburg",
+    "address": "69 Kabler Lane",
+    "phone": "(434) 332-9585",
+    "website": "http://www.co.campbell.va.us/295/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Caroline",
+    "served": [
+      "Caroline"
+    ],
+    "agency": "Caroline Department of Social Services",
+    "city": "Bowling Green",
+    "address": "17202 Richmond Turnpike, P.O. Box 430",
+    "phone": "(804) 633-5071",
+    "website": "http://co.caroline.va.us/278/Social-Services-Department",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Carroll",
+    "served": [
+      "Carroll"
+    ],
+    "agency": "Carroll County Department of Social Services",
+    "city": "Hillsville",
+    "address": "Carroll Co. Governmental Complex, 605-8 Pine St.",
+    "phone": "(276) 730-3130",
+    "website": "http://carrollcountyva.gov/services/childrens_social_services/index.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Charles City",
+    "served": [
+      "Charles City"
+    ],
+    "agency": "Charles City Department of Social Services",
+    "city": "Charles City",
+    "address": "P.O. Box 98",
+    "phone": "(804) 652-1708",
+    "website": "http://www.co.charles-city.va.us/177/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Charlotte",
+    "served": [
+      "Charlotte"
+    ],
+    "agency": "Charlotte County Department of Social Services",
+    "city": "Charlotte Court House",
+    "address": "PO Box 440",
+    "phone": "(434) 542-5164",
+    "website": "http://www.charlottecountyva.gov/departments/social_services.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Charlottesville",
+    "served": [
+      "Charlottesville"
+    ],
+    "agency": "Charlottesville Department of Social Services",
+    "city": "Charlottesville",
+    "address": "P.O. Box 911",
+    "phone": "(434) 970-3451",
+    "website": "http://www.charlottesville.org/Index.aspx?page=36",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Chesapeake",
+    "served": [
+      "Chesapeake"
+    ],
+    "agency": "Chesapeake Department of Social Services",
+    "city": "Chesapeake",
+    "address": "P.O. Box 15098",
+    "phone": "(757) 382-2000",
+    "website": "http://www.cityofchesapeake.net/358/Chesapeake-Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Chesterfield",
+    "served": [
+      "Chesterfield",
+      "Colonial Heights"
+    ],
+    "agency": "Chesterfield/Colonial Heights Department of Social Services",
+    "city": "Chesterfield",
+    "address": "P.O. Box 430",
+    "phone": "(804) 748-1100",
+    "website": "http://www.chesterfield.gov/569/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Clarke",
+    "served": [
+      "Clarke"
+    ],
+    "agency": "Clarke County Department of Social Services",
+    "city": "Berryville",
+    "address": "311 E. Main St.",
+    "phone": "(540) 955-3700",
+    "website": "http://www.clarkecounty.gov/government/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Colonial Heights",
+    "served": [
+      "Chesterfield",
+      "Colonial Heights"
+    ],
+    "agency": "Chesterfield/Colonial Heights Department of Social Services",
+    "city": "Chesterfield",
+    "address": "P.O. Box 430",
+    "phone": "(804) 748-1100",
+    "website": "http://www.chesterfield.gov/569/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Covington",
+    "served": [
+      "Alleghany",
+      "Covington"
+    ],
+    "agency": "Alleghany-Covington Department of Social Services",
+    "city": "Covington",
+    "address": "110 Rosedale Ave., Suite B",
+    "phone": "(540) 444-7100",
+    "website": "http://www.co.alleghany.va.us/social-services/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Craig",
+    "served": [
+      "Craig"
+    ],
+    "agency": "Craig County Department of Social Services",
+    "city": "New Castle",
+    "address": "P. O. Box 330",
+    "phone": "(540) 864-5117",
+    "website": "https://www.craigcountyva.gov/181/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Culpeper",
+    "served": [
+      "Culpeper"
+    ],
+    "agency": "Culpeper County Human Services",
+    "city": "Culpeper",
+    "address": "1835 Industry Drive",
+    "phone": "(540) 727-0372",
+    "website": "http://web.culpepercounty.gov/humanservices",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Cumberland",
+    "served": [
+      "Cumberland"
+    ],
+    "agency": "Cumberland County Department of Social Services",
+    "city": "Cumberland",
+    "address": "P. O. Box 33",
+    "phone": "(804) 492-4915",
+    "website": "http://cumberlandcounty.virginia.gov/227/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Danville",
+    "served": [
+      "Danville"
+    ],
+    "agency": "Danville Division of Social Services",
+    "city": "Danville",
+    "address": "P. O. Box 3300",
+    "phone": "(434) 799-6543",
+    "website": "http://www.danville-va.gov/index.aspx?nid=304",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Dickenson",
+    "served": [
+      "Dickenson"
+    ],
+    "agency": "Dickenson County Department of Social Services",
+    "city": "Clintwood",
+    "address": "1280 Browning Hollow",
+    "phone": "(276) 926-1661",
+    "website": "http://dickensonva.org/119/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Dinwiddie",
+    "served": [
+      "Dinwiddie"
+    ],
+    "agency": "Dinwiddie Department of Social Services",
+    "city": "Dinwiddie",
+    "address": "P.O. Box 107",
+    "phone": "(804) 469-4524",
+    "website": "http://www.dinwiddieva.us/609/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Emporia",
+    "served": [
+      "Greensville",
+      "Emporia"
+    ],
+    "agency": "Greensville/Emporia Department of Social Services",
+    "city": "Emporia",
+    "address": "1100 Greensville County Circle",
+    "phone": "(434) 634-6576",
+    "website": "http://www.greensvillecountyva.gov/departments/outside_agencies/social_services.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Essex",
+    "served": [
+      "Essex"
+    ],
+    "agency": "Essex Department of Social Services",
+    "city": "Tappahannock",
+    "address": "P.O. Box 1004",
+    "phone": "(804) 443-3561",
+    "website": "https://www.essexva.gov/1245/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Fairfax",
+    "served": [
+      "Fairfax",
+      "Fairfax City",
+      "Falls Church"
+    ],
+    "agency": "Fairfax County Department of Family Services",
+    "city": "Fairfax",
+    "address": "12011 Government Center Parkway, Suite 232",
+    "phone": "(703) 324-7500",
+    "website": "http://www.fairfaxcounty.gov/dfs/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Fairfax City",
+    "served": [
+      "Fairfax",
+      "Fairfax City",
+      "Falls Church"
+    ],
+    "agency": "Fairfax County Department of Family Services",
+    "city": "Fairfax",
+    "address": "12011 Government Center Parkway, Suite 232",
+    "phone": "(703) 324-7500",
+    "website": "http://www.fairfaxcounty.gov/dfs/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Falls Church",
+    "served": [
+      "Fairfax",
+      "Fairfax City",
+      "Falls Church"
+    ],
+    "agency": "Fairfax County Department of Family Services",
+    "city": "Fairfax",
+    "address": "12011 Government Center Parkway, Suite 232",
+    "phone": "(703) 324-7500",
+    "website": "http://www.fairfaxcounty.gov/dfs/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Fauquier",
+    "served": [
+      "Fauquier"
+    ],
+    "agency": "Fauquier County Department of Social Services",
+    "city": "Warrenton",
+    "address": "320 Hospital Drive, Suite 11",
+    "phone": "(540) 422-8400",
+    "website": "http://www.fauquiercounty.gov/government/departments-h-z/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Floyd",
+    "served": [
+      "Floyd"
+    ],
+    "agency": "Floyd County Department of Social Services",
+    "city": "Floyd",
+    "address": "P.O. Box 314",
+    "phone": "(540) 745-9316",
+    "website": "http://www.floydcova.org/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Fluvanna",
+    "served": [
+      "Fluvanna"
+    ],
+    "agency": "Fluvanna County Department of Social Services",
+    "city": "Fork Union",
+    "address": "P.O. Box 98",
+    "phone": "(434) 842-8221",
+    "website": "http://www.fluvannacounty.org/socialservices",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Franklin",
+    "served": [
+      "Franklin"
+    ],
+    "agency": "Franklin County Department of Social Services",
+    "city": "Rocky Mount",
+    "address": "120 East Court Street",
+    "phone": "(540) 483-9247",
+    "website": "http://www.franklincountyva.gov/361/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Franklin City",
+    "served": [
+      "Franklin City"
+    ],
+    "agency": "Franklin City Department of Social Services",
+    "city": "Franklin",
+    "address": "PO Box 601",
+    "phone": "(757) 562-8520",
+    "website": "http://franklinva.gov/government/departments_h-z/social_services/index.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Frederick",
+    "served": [
+      "Frederick"
+    ],
+    "agency": "Frederick County Department of Social Services",
+    "city": "Winchester",
+    "address": "107 N. Kent St., Third Floor",
+    "phone": "(540) 665-5688",
+    "website": "http://www.fcva.us/departments/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Fredericksburg",
+    "served": [
+      "Fredericksburg"
+    ],
+    "agency": "Fredericksburg Department of Social Services",
+    "city": "Fredericksburg",
+    "address": "Suite 100",
+    "phone": "(540) 372-1032",
+    "website": "http://www.fredericksburgva.gov/index.aspx?NID=491",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Galax",
+    "served": [
+      "Galax"
+    ],
+    "agency": "Galax City Department of Social Services",
+    "city": "Galax",
+    "address": "105 E. Center St, P.O. Box 166",
+    "phone": "(276) 236-8111",
+    "website": "",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Giles",
+    "served": [
+      "Giles"
+    ],
+    "agency": "Giles County Department of Social Services",
+    "city": "Narrows",
+    "address": "211 Main St., Suite 109",
+    "phone": "(540) 726-8315",
+    "website": "http://virginiasmtnplayground.com/social-services/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Gloucester",
+    "served": [
+      "Gloucester"
+    ],
+    "agency": "Gloucester Department of Social Services",
+    "city": "Gloucester",
+    "address": "6641 Short Lane",
+    "phone": "(804) 693-2671",
+    "website": "http://www.gloucesterva.info/289/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Goochland",
+    "served": [
+      "Goochland"
+    ],
+    "agency": "Goochland Department of Social Services",
+    "city": "Goochland",
+    "address": "P.O. Box 34",
+    "phone": "(804) 556-5880",
+    "website": "http://www.goochlandva.us/364/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Grayson",
+    "served": [
+      "Grayson"
+    ],
+    "agency": "Grayson County Department of Social Services",
+    "city": "Independence",
+    "address": "P.O. Box 434",
+    "phone": "(276) 773-2452",
+    "website": "http://www.graysoncountydss.org/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Greene",
+    "served": [
+      "Greene"
+    ],
+    "agency": "Greene County Department of Social Services",
+    "city": "Ruckersville",
+    "address": "8767 Seminole Trail, Suite 201",
+    "phone": "(434) 985-5246",
+    "website": "http://www.greenecountyva.gov/189/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Greensville",
+    "served": [
+      "Greensville",
+      "Emporia"
+    ],
+    "agency": "Greensville/Emporia Department of Social Services",
+    "city": "Emporia",
+    "address": "1100 Greensville County Circle",
+    "phone": "(434) 634-6576",
+    "website": "http://www.greensvillecountyva.gov/departments/outside_agencies/social_services.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Halifax",
+    "served": [
+      "Halifax"
+    ],
+    "agency": "Halifax County Department of Social Services",
+    "city": "Halifax",
+    "address": "P. O. Box 1189",
+    "phone": "(434) 476-6594",
+    "website": "http://www.halifaxcountyva.gov/201/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Hampton",
+    "served": [
+      "Hampton"
+    ],
+    "agency": "Hampton Human Services",
+    "city": "Hampton",
+    "address": "400 Butler Farm Road, Suite 200",
+    "phone": "(757) 727-1800",
+    "website": "http://hampton.gov/269/Human-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Hanover",
+    "served": [
+      "Hanover"
+    ],
+    "agency": "Hanover County Department of Social Services",
+    "city": "Ashland",
+    "address": "12304 S. Washington Highway",
+    "phone": "(804) 365-4100",
+    "website": "http://www.hanovercounty.gov/Social-Services/881/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Harrisonburg",
+    "served": [
+      "Harrisonburg",
+      "Rockingham"
+    ],
+    "agency": "Harrisonburg-Rockingham Dept. of Social Services",
+    "city": "Harrisonburg",
+    "address": "P.O. Box 809",
+    "phone": "(540) 574-5100",
+    "website": "http://www.rockinghamcountyva.gov/index.aspx?nid=206",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Henrico",
+    "served": [
+      "Henrico"
+    ],
+    "agency": "Henrico County Department of Social Services",
+    "city": "Henrico",
+    "address": "P.O. Box 90775",
+    "phone": "(804) 501-4001",
+    "website": "http://henrico.us/dss/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Henry",
+    "served": [
+      "Henry",
+      "Martinsville"
+    ],
+    "agency": "Henry-Martinsville Department of Social Services",
+    "city": "Martinsville",
+    "address": "P.O. Drawer 4946",
+    "phone": "(276) 656-4300",
+    "website": "http://www.henrycountyva.gov/248/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Highland",
+    "served": [
+      "Highland"
+    ],
+    "agency": "Highland County Department of Social Services",
+    "city": "Monterey",
+    "address": "P.O. Box 247",
+    "phone": "(540) 468-2199",
+    "website": "http://www.highlandcova.org/highland-county-department-social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Hopewell",
+    "served": [
+      "Hopewell"
+    ],
+    "agency": "Hopewell Department of Social Services",
+    "city": "Hopewell",
+    "address": "316 E. Cawson Street",
+    "phone": "(804) 541-2330",
+    "website": "http://hopewellva.gov/257/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Isle of Wight",
+    "served": [
+      "Isle of Wight"
+    ],
+    "agency": "Isle of Wight Department of Social Services",
+    "city": "Isle of Wight",
+    "address": "PO Box 102",
+    "phone": "(757) 365-0880",
+    "website": "http://www.iowdss.com",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "James City",
+    "served": [
+      "James City"
+    ],
+    "agency": "James City County Department of Social Services",
+    "city": "Williamsburg",
+    "address": "5249 Old Towne Road",
+    "phone": "(757) 259-3100",
+    "website": "http://www.jamescitycountyva.gov/290/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "King and Queen",
+    "served": [
+      "King and Queen"
+    ],
+    "agency": "King and Queen Department of Social Services",
+    "city": "King and Queen Courthouse",
+    "address": "242 Allen Circle, P.O. Box 7",
+    "phone": "(804) 769-5003",
+    "website": "http://www.kingandqueenco.net/html/Govt/socser.html",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "King George",
+    "served": [
+      "King George"
+    ],
+    "agency": "King George Department of Social Services",
+    "city": "King George",
+    "address": "P.O. Box 130",
+    "phone": "(540) 775-3544",
+    "website": "http://www.kinggeorgecountyva.gov/222/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "King William",
+    "served": [
+      "King William"
+    ],
+    "agency": "King William Department of Social Services",
+    "city": "King William",
+    "address": "P.O. Box 187",
+    "phone": "(804) 769-4905",
+    "website": "http://www.kingwilliamcounty.us/245/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Lancaster",
+    "served": [
+      "Lancaster"
+    ],
+    "agency": "Lancaster County Department of Social Services",
+    "city": "Lancaster",
+    "address": "P.O. Box 308",
+    "phone": "(804) 462-5141",
+    "website": "http://www.lancova.com/page1.asp?pageID=111",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Lee",
+    "served": [
+      "Lee"
+    ],
+    "agency": "Lee County Department of Social Services",
+    "city": "Jonesville",
+    "address": "P.O. Box 348",
+    "phone": "(276) 346-1010",
+    "website": "http://www.leecountydss.com/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Lexington",
+    "served": [
+      "Rockbridge",
+      "Buena Vista",
+      "Lexington"
+    ],
+    "agency": "Rockbridge-Buena Vista-Lexington Area Social Services",
+    "city": "Lexington",
+    "address": "20 E. Preston St.",
+    "phone": "(540) 463-7143",
+    "website": "",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Loudoun",
+    "served": [
+      "Loudoun"
+    ],
+    "agency": "Loudoun County Department of Family Services",
+    "city": "Leesburg",
+    "address": "PO Box 7400",
+    "phone": "(703) 777-0353",
+    "website": "http://www.loudoun.gov/107/Family-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Louisa",
+    "served": [
+      "Louisa"
+    ],
+    "agency": "Louisa County Department of Human Services",
+    "city": "Louisa",
+    "address": "PO Box 425",
+    "phone": "(540) 967-1320",
+    "website": "http://www.louisacounty.com/238/Human-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Lunenburg",
+    "served": [
+      "Lunenburg"
+    ],
+    "agency": "Lunenburg County Department of Social Services",
+    "city": "Lunenburg",
+    "address": "11387 Courthouse Road",
+    "phone": "(434) 696-2134",
+    "website": "http://lunenburgva.gov/services/social_services.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Lynchburg",
+    "served": [
+      "Lynchburg"
+    ],
+    "agency": "Lynchburg Department of Human Services",
+    "city": "Lynchburg",
+    "address": "P.O. Box 6798",
+    "phone": "(434) 455-5850",
+    "website": "http://www.lynchburgva.gov/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Madison",
+    "served": [
+      "Madison"
+    ],
+    "agency": "Madison County Department of Social Services",
+    "city": "Madison",
+    "address": "P.O. Box 176",
+    "phone": "(540) 948-5521",
+    "website": "http://www.madisonco.virginia.gov/192/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Manassas",
+    "served": [
+      "Manassas"
+    ],
+    "agency": "Manassas City Department of Family Services",
+    "city": "Manassas",
+    "address": "9324 West Street",
+    "phone": "(703) 361-8277",
+    "website": "http://www.manassasva.gov/social_services/index.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Manassas Park",
+    "served": [
+      "Manassas Park"
+    ],
+    "agency": "Manassas Park Department of Social Services",
+    "city": "Manassas Park",
+    "address": "100 Nadia Street, 2nd Floor",
+    "phone": "(703) 335-8880",
+    "website": "http://www.manassasparkva.gov/departments/social_services/services.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Martinsville",
+    "served": [
+      "Henry",
+      "Martinsville"
+    ],
+    "agency": "Henry-Martinsville Department of Social Services",
+    "city": "Martinsville",
+    "address": "P.O. Drawer 4946",
+    "phone": "(276) 656-4300",
+    "website": "http://www.henrycountyva.gov/248/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Mathews",
+    "served": [
+      "Mathews"
+    ],
+    "agency": "Mathews Department of Social Services",
+    "city": "Mathews",
+    "address": "P.O. Box 925",
+    "phone": "(804) 725-7192",
+    "website": "http://www.mathewscountyva.gov/205/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Mecklenburg",
+    "served": [
+      "Mecklenburg"
+    ],
+    "agency": "Mecklenburg County Department of Social Services",
+    "city": "Boydton",
+    "address": "P.O. Box 400",
+    "phone": "(434) 738-6138",
+    "website": "http://www.mecklenburgva.com/206/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Middlesex",
+    "served": [
+      "Middlesex"
+    ],
+    "agency": "Middlesex County Department of Social Services",
+    "city": "Urbanna",
+    "address": "P.O. Box 216",
+    "phone": "(804) 758-2348",
+    "website": "http://www.co.middlesex.va.us/202/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Montgomery",
+    "served": [
+      "Montgomery"
+    ],
+    "agency": "Montgomery County Department of Social Services",
+    "city": "Christiansburg",
+    "address": "210 S. Pepper St., Suite B",
+    "phone": "(540) 382-6990",
+    "website": "http://montva.com/1/departments-services/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Nelson",
+    "served": [
+      "Nelson"
+    ],
+    "agency": "Nelson County Department of Social Services",
+    "city": "Lovingston",
+    "address": "P.O. Box 357",
+    "phone": "(434) 263-7163",
+    "website": "http://www.nelsoncounty-va.gov/departments/social-services/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "New Kent",
+    "served": [
+      "New Kent"
+    ],
+    "agency": "New Kent Department of Social Services",
+    "city": "New Kent",
+    "address": "P.O. Box 229",
+    "phone": "(804) 966-1853",
+    "website": "http://www.newkent-va.us/339/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Newport News",
+    "served": [
+      "Newport News"
+    ],
+    "agency": "Newport News Department of Human Services",
+    "city": "Newport News",
+    "address": "Rouse Tower, 6060 Jefferson Ave.",
+    "phone": "(757) 926-6300",
+    "website": "http://www.nnva.gov/human-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Norfolk",
+    "served": [
+      "Norfolk"
+    ],
+    "agency": "Norfolk Department of Human Services",
+    "city": "Norfolk",
+    "address": "741 Monticello Avenue",
+    "phone": "(757) 664-6000",
+    "website": "http://www.norfolk.gov/295/Human-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Northampton",
+    "served": [
+      "Northampton"
+    ],
+    "agency": "Northampton County Department of Social Services",
+    "city": "Eastville",
+    "address": "P.O. Box 568",
+    "phone": "(757) 678-5153",
+    "website": "http://www.co.northampton.va.us/government/departments_elected_offices/social_services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Northumberland",
+    "served": [
+      "Northumberland"
+    ],
+    "agency": "Northumberland County Department of Social Services",
+    "city": "Heathsville",
+    "address": "P.O. Box 399",
+    "phone": "(804) 580-3477",
+    "website": "http://www.co.northumberland.va.us/social-service",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Norton",
+    "served": [
+      "Norton"
+    ],
+    "agency": "Norton City Department of Social Services",
+    "city": "Norton",
+    "address": "PO Box 378",
+    "phone": "(276) 679-2701",
+    "website": "http://www.nortonva.gov/82/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Nottoway",
+    "served": [
+      "Nottoway"
+    ],
+    "agency": "Nottoway County Department of Social Services",
+    "city": "Nottoway",
+    "address": "P. O. Box 26",
+    "phone": "(434) 645-8494",
+    "website": "http://nottoway.org/index.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Orange",
+    "served": [
+      "Orange"
+    ],
+    "agency": "Orange County Department of Social Services",
+    "city": "Orange",
+    "address": "146 N. Madison Road, Suite 201",
+    "phone": "(540) 672-6166",
+    "website": "http://orangecountyva.gov/index.aspx?nid=391",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Page",
+    "served": [
+      "Page"
+    ],
+    "agency": "Page County Department of Social Services",
+    "city": "Stanley",
+    "address": "P.O. Box 47",
+    "phone": "(540) 778-1053",
+    "website": "http://www.pagecounty.virginia.gov/190/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Patrick",
+    "served": [
+      "Patrick"
+    ],
+    "agency": "Patrick County Department of Social Services",
+    "city": "Stuart",
+    "address": "106 Rucker St., Suite 128",
+    "phone": "(276) 694-3328",
+    "website": "http://www.co.patrick.va.us/213/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Petersburg",
+    "served": [
+      "Petersburg"
+    ],
+    "agency": "Petersburg Department of Social Services",
+    "city": "Petersburg",
+    "address": "3811 Corporate Rd.",
+    "phone": "(804) 861-4720",
+    "website": "http://www.petersburg-va.org/Index.aspx?NID=187",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Pittsylvania",
+    "served": [
+      "Pittsylvania"
+    ],
+    "agency": "Pittsylvania County Department of Social Services",
+    "city": "Chatham",
+    "address": "P.O. Box E",
+    "phone": "(434) 432-7281",
+    "website": "http://www.pittsylvaniacountyva.gov/590/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Poquoson",
+    "served": [
+      "York",
+      "Poquoson"
+    ],
+    "agency": "York/Poquoson Social Services",
+    "city": "Yorktown",
+    "address": "301 Goodwin Neck Road",
+    "phone": "(757) 890-3787",
+    "website": "http://www.yorkcounty.gov/159/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Portsmouth",
+    "served": [
+      "Portsmouth"
+    ],
+    "agency": "Portsmouth Department of Social Services",
+    "city": "Portsmouth",
+    "address": "1701 High St., Suite 101",
+    "phone": "(757) 405-1800",
+    "website": "http://portsmouthva.gov/384/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Powhatan",
+    "served": [
+      "Powhatan"
+    ],
+    "agency": "Powhatan County Department of Social Services",
+    "city": "Powhatan",
+    "address": "3908 Old Buckingham Road - Suite 2",
+    "phone": "(804) 598-5630",
+    "website": "http://www.powhatanva.gov/271/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Prince Edward",
+    "served": [
+      "Prince Edward"
+    ],
+    "agency": "Prince Edward County Department of Social Services",
+    "city": "Farmville",
+    "address": "56B SMI Way",
+    "phone": "(434) 392-3113",
+    "website": "http://www.co.prince-edward.va.us/Departments/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Prince George",
+    "served": [
+      "Prince George"
+    ],
+    "agency": "Prince George Department of Social Services",
+    "city": "Prince George",
+    "address": "P.O. Box 68",
+    "phone": "(804) 733-2650",
+    "website": "http://www.princegeorgecountyva.gov/residents/social_services/index.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Prince William",
+    "served": [
+      "Prince William"
+    ],
+    "agency": "Prince William County Department of Social Services",
+    "city": "Manassas",
+    "address": "7987 Ashton Ave., Suite 200",
+    "phone": "(703) 792-7500",
+    "website": "http://www.pwcva.gov/department/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Pulaski",
+    "served": [
+      "Pulaski"
+    ],
+    "agency": "Pulaski County Department of Social Services",
+    "city": "Pulaski",
+    "address": "53 Commerce Street",
+    "phone": "(540) 980-7995",
+    "website": "http://www.pcdss.org/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Radford",
+    "served": [
+      "Radford"
+    ],
+    "agency": "Radford City Department of Social Services",
+    "city": "Radford",
+    "address": "928 W. Main St.",
+    "phone": "(540) 731-3663",
+    "website": "http://www.radfordva.gov/254/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Rappahannock",
+    "served": [
+      "Rappahannock"
+    ],
+    "agency": "Rappahannock County Department of Social Services",
+    "city": "Washington",
+    "address": "P.O. Box 87",
+    "phone": "(540) 675-3313",
+    "website": "http://www.rappahannockcountyva.gov/government/departments/social_services.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Richmond",
+    "served": [
+      "Richmond"
+    ],
+    "agency": "Richmond County Department of Social Services",
+    "city": "Warsaw",
+    "address": "P.O. Box 35",
+    "phone": "(804) 333-4088",
+    "website": "http://co.richmond.va.us/departments/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Richmond City",
+    "served": [
+      "Richmond City"
+    ],
+    "agency": "Richmond City Department of Social Services",
+    "city": "Richmond",
+    "address": "P.O. Box 10129",
+    "phone": "(804) 646-7000",
+    "website": "http://www.rva.gov/social-services/social-services-main",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Roanoke",
+    "served": [
+      "Roanoke",
+      "Salem"
+    ],
+    "agency": "Roanoke County Department of Social Services",
+    "city": "Salem",
+    "address": "P. O. Box 1127",
+    "phone": "(540) 387-6087",
+    "website": "http://www.roanokecountyva.gov/90/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Roanoke City",
+    "served": [
+      "Roanoke City"
+    ],
+    "agency": "Roanoke City Department of Social Services",
+    "city": "Roanoke",
+    "address": "1510 Williamson Road, N.E.",
+    "phone": "(540) 853-2591",
+    "website": "http://www.roanokeva.gov/292/HumanSocial-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Rockbridge",
+    "served": [
+      "Rockbridge",
+      "Buena Vista",
+      "Lexington"
+    ],
+    "agency": "Rockbridge-Buena Vista-Lexington Area Social Services",
+    "city": "Lexington",
+    "address": "20 E. Preston St.",
+    "phone": "(540) 463-7143",
+    "website": "",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Rockingham",
+    "served": [
+      "Harrisonburg",
+      "Rockingham"
+    ],
+    "agency": "Harrisonburg-Rockingham Dept. of Social Services",
+    "city": "Harrisonburg",
+    "address": "P.O. Box 809",
+    "phone": "(540) 574-5100",
+    "website": "http://www.rockinghamcountyva.gov/index.aspx?nid=206",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Russell",
+    "served": [
+      "Russell"
+    ],
+    "agency": "Russell County Department of Social Services",
+    "city": "Lebanon",
+    "address": "135 Highlands Drive , Suite B",
+    "phone": "(276) 889-3031",
+    "website": "http://www.rcdss.org/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Salem",
+    "served": [
+      "Roanoke",
+      "Salem"
+    ],
+    "agency": "Roanoke County Department of Social Services",
+    "city": "Salem",
+    "address": "P. O. Box 1127",
+    "phone": "(540) 387-6087",
+    "website": "http://www.roanokecountyva.gov/90/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Scott",
+    "served": [
+      "Scott"
+    ],
+    "agency": "Scott County Department of Social Services",
+    "city": "Gate City",
+    "address": "190 Beech Street, Suite 101",
+    "phone": "(276) 386-3631",
+    "website": "http://www.scottcountyva.com/335/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Shenandoah",
+    "served": [
+      "Shenandoah"
+    ],
+    "agency": "Shenandoah County Department of Social Services",
+    "city": "Woodstock",
+    "address": "Shenandoah County Government Center, 494 N. Main St., Suite 200",
+    "phone": "(540) 459-6226",
+    "website": "http://www.shenandoahcountyva.gov/346/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Smyth",
+    "served": [
+      "Smyth"
+    ],
+    "agency": "Smyth County Department of Social Services",
+    "city": "Marion",
+    "address": "121 Bagley Circle, Suite 200",
+    "phone": "(276) 783-8148",
+    "website": "",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Southampton",
+    "served": [
+      "Southampton"
+    ],
+    "agency": "Southampton County Department of Social Services",
+    "city": "Courtland",
+    "address": "P.O. Box 550",
+    "phone": "(757) 653-3080",
+    "website": "http://www.southamptoncounty.org/departments/social_services/index.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Spotsylvania",
+    "served": [
+      "Spotsylvania"
+    ],
+    "agency": "Spotsylvania Department of Social Services",
+    "city": "Spotsylvania",
+    "address": "P.O. Box 249",
+    "phone": "(540) 507-7898",
+    "website": "http://www.spotsylvania.va.us/299/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Stafford",
+    "served": [
+      "Stafford"
+    ],
+    "agency": "Stafford County Department of Social Services",
+    "city": "Stafford",
+    "address": "P.O. Box 7",
+    "phone": "(540) 658-8720",
+    "website": "http://staffordcountyva.gov/government/departments_p-z/social_services/index.php",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Staunton",
+    "served": [
+      "Augusta",
+      "Staunton"
+    ],
+    "agency": "Shenandoah Valley Dept. of Social Services (Staunton-Augusta Office)",
+    "city": "Verona",
+    "address": "P.O. Box 7",
+    "phone": "(540) 245-5800",
+    "website": "http://www.co.augusta.va.us/government/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Suffolk",
+    "served": [
+      "Suffolk"
+    ],
+    "agency": "Suffolk Department of Social Services",
+    "city": "Suffolk",
+    "address": "P.O. Box 1818",
+    "phone": "(757) 514-7450",
+    "website": "http://www.suffolkva.us/760/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Surry",
+    "served": [
+      "Surry"
+    ],
+    "agency": "Surry Department of Social Services",
+    "city": "Surry",
+    "address": "P.O. Box 263",
+    "phone": "(757) 294-5240",
+    "website": "http://www.surrycountyva.gov/167/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Sussex",
+    "served": [
+      "Sussex"
+    ],
+    "agency": "Sussex Department of Social Services",
+    "city": "Stony Creek",
+    "address": "20103 Princeton Road",
+    "phone": "(434) 246-1083",
+    "website": "http://www.sussexcountyva.gov/departments/social-services-department/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Tazewell",
+    "served": [
+      "Tazewell"
+    ],
+    "agency": "Tazewell County Department of Social Services",
+    "city": "Tazewell",
+    "address": "P.O. Box 149",
+    "phone": "(276) 988-8500",
+    "website": "http://tazewellcountyva.org/government/department-of-social-services/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Virginia Beach",
+    "served": [
+      "Virginia Beach"
+    ],
+    "agency": "Virginia Beach Department of Human Services",
+    "city": "Virginia Beach",
+    "address": "3432 Virginia Beach Blvd.",
+    "phone": "(757) 385-3200",
+    "website": "http://hs.virginiabeach.gov/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Warren",
+    "served": [
+      "Warren"
+    ],
+    "agency": "Warren County Department of Social Services",
+    "city": "Front Royal",
+    "address": "465 W 15th Street, Suite 100",
+    "phone": "(540) 635-3430",
+    "website": "http://warrencountyva.gov/388/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Washington",
+    "served": [
+      "Washington"
+    ],
+    "agency": "Washington County Department of Social Services",
+    "city": "Bristol",
+    "address": "15068 Lee Highway, Suite 100",
+    "phone": "(276) 645-5000",
+    "website": "https://www.washcova.com/board-of-social-services/",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Waynesboro",
+    "served": [
+      "Waynesboro"
+    ],
+    "agency": "Shenandoah Valley Dept. of Social Services (Waynesboro Office)",
+    "city": "Waynesboro",
+    "address": "1200 Shenandoah Ave.",
+    "phone": "(540) 942-6646",
+    "website": "http://www.co.augusta.va.us/government/social-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Westmoreland",
+    "served": [
+      "Westmoreland"
+    ],
+    "agency": "Westmoreland Department of Social Services",
+    "city": "Montross",
+    "address": "P.O. Box 302",
+    "phone": "(804) 493-9305",
+    "website": "https://www.westmoreland-county.org/195/Department-of-Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Williamsburg",
+    "served": [
+      "Williamsburg"
+    ],
+    "agency": "Williamsburg Human Services",
+    "city": "Williamsburg",
+    "address": "401 Lafayette St.",
+    "phone": "(757) 220-6161",
+    "website": "http://www.williamsburgva.gov/government/departments-a-h/human-services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Winchester",
+    "served": [
+      "Winchester"
+    ],
+    "agency": "Winchester Department of Social Services",
+    "city": "Winchester",
+    "address": "24 Baker Street",
+    "phone": "(540) 662-3807",
+    "website": "http://www.winchesterva.gov/Government/Departments/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Wise",
+    "served": [
+      "Wise"
+    ],
+    "agency": "Wise County Department of Social Services",
+    "city": "Wise",
+    "address": "10365 Pinnacle Drive",
+    "phone": "(276) 328-8056",
+    "website": "http://www.wisecounty.org/221/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "Wythe",
+    "served": [
+      "Wythe"
+    ],
+    "agency": "Wythe County Department of Social Services",
+    "city": "Wytheville",
+    "address": "290 S. Sixth Street, Suite 200",
+    "phone": "(276) 228-5493",
+    "website": "http://www.wytheco.org/177/Department-of-Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  },
+  {
+    "county": "York",
+    "served": [
+      "York",
+      "Poquoson"
+    ],
+    "agency": "York/Poquoson Social Services",
+    "city": "Yorktown",
+    "address": "301 Goodwin Neck Road",
+    "phone": "(757) 890-3787",
+    "website": "http://www.yorkcounty.gov/159/Social-Services",
+    "source": "https://www.dss.virginia.gov/localagency/index.php"
+  }
+]

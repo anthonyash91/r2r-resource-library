@@ -51,8 +51,8 @@ export function ScrollReveal({
   variant = "fade-up",
   delay = 0,
   once = true,
-  threshold = 0.08,
-  rootMargin = "0px 0px -48px 0px",
+  threshold = 0.12,
+  rootMargin = "0px 0px -7% 0px",
   revealOnMountIfVisible = false,
   revealOnScrollDownOnly = false,
 }: ScrollRevealProps) {

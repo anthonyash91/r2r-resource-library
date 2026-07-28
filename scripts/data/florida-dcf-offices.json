@@ -1,0 +1,471 @@
+[
+  {
+    "county": "Alachua",
+    "city": "Gainesville",
+    "address": "1000 NE 16th Avenue, Building J",
+    "phone": "866-762-2237",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Baker",
+    "city": "Macclenny",
+    "address": "5000-1 Norwood Avenue",
+    "phone": "904-723-2000",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Bay",
+    "city": "Panama City",
+    "address": "2505 West 15th Street",
+    "phone": "850-747-5400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Bradford",
+    "city": "Starke",
+    "address": "1000 NE 16th Avenue, Building J",
+    "phone": "352-264-6400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Brevard",
+    "city": "Cocoa",
+    "address": "801 Dixon Boulevard, Suite 1103",
+    "phone": "321-633-2000",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Broward",
+    "city": "Sunrise",
+    "address": "3511 N Pine Island Road",
+    "phone": "954-467-4700",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Calhoun",
+    "city": "Blountstown",
+    "address": "2505 West 15th Street",
+    "phone": "850-747-5400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Charlotte",
+    "city": "Port Charlotte",
+    "address": "2295 Victoria Avenue, Room 110",
+    "phone": "866-762-2237",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Citrus",
+    "city": "Lecanto",
+    "address": "212 S Apopka Avenue",
+    "phone": "352-527-5900",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Clay",
+    "city": "Green Cove Springs",
+    "address": "5000-1 Norwood Avenue",
+    "phone": "904-723-2000",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Collier",
+    "city": "Naples",
+    "address": "2295 Victoria Avenue, Room 110",
+    "phone": "239-332-6600",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Columbia",
+    "city": "Lake City",
+    "address": "1000 NE 16th Avenue, Building J",
+    "phone": "386-719-6200",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "DeSoto",
+    "city": "Arcadia",
+    "address": "2295 Victoria Avenue, Room 110",
+    "phone": "863-993-4600",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Dixie",
+    "city": "Cross City",
+    "address": "1000 NE 16th Avenue, Building J",
+    "phone": "352-264-6400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Duval",
+    "city": "Jacksonville",
+    "address": "5000-1 Norwood Avenue",
+    "phone": "904-723-2000",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Escambia",
+    "city": "Pensacola",
+    "address": "33 Brent Lane, Suite 103",
+    "phone": "850-595-8900",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Flagler",
+    "city": "Bunnell",
+    "address": "5000-1 Norwood Avenue",
+    "phone": "904-723-2000",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Franklin",
+    "city": "Apalachicola",
+    "address": "2505 West 15th Street",
+    "phone": "850-747-5400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Gadsden",
+    "city": "Quincy",
+    "address": "2810 Sharer Road, Unit 24",
+    "phone": "850-921-8400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Gilchrist",
+    "city": "Trenton",
+    "address": "1000 NE 16th Avenue, Building J",
+    "phone": "352-264-6400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Glades",
+    "city": "Moore Haven",
+    "address": "2295 Victoria Avenue, Room 110",
+    "phone": "863-993-4600",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Gulf",
+    "city": "Port St. Joe",
+    "address": "2505 West 15th Street",
+    "phone": "850-747-5400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Hamilton",
+    "city": "Jasper",
+    "address": "1000 NE 16th Avenue, Building J",
+    "phone": "386-719-6200",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Hardee",
+    "city": "Wauchula",
+    "address": "9393 North Florida Avenue",
+    "phone": "813-558-5500",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Hendry",
+    "city": "LaBelle",
+    "address": "2295 Victoria Avenue, Room 110",
+    "phone": "863-993-4600",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Hernando",
+    "city": "Brooksville",
+    "address": "9393 North Florida Avenue",
+    "phone": "352-796-6640",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Highlands",
+    "city": "Sebring",
+    "address": "9393 North Florida Avenue",
+    "phone": "863-471-5500",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Hillsborough",
+    "city": "Tampa",
+    "address": "9393 North Florida Avenue",
+    "phone": "813-558-5500",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Holmes",
+    "city": "Bonifay",
+    "address": "2505 West 15th Street",
+    "phone": "850-747-5400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Indian River",
+    "city": "Vero Beach",
+    "address": "801 Dixon Boulevard, Suite 1103",
+    "phone": "772-778-5600",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Jackson",
+    "city": "Marianna",
+    "address": "2505 West 15th Street",
+    "phone": "850-747-5400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Jefferson",
+    "city": "Monticello",
+    "address": "2810 Sharer Road, Unit 24",
+    "phone": "850-921-8400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Lafayette",
+    "city": "Mayo",
+    "address": "1000 NE 16th Avenue, Building J",
+    "phone": "386-719-6200",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Lake",
+    "city": "Tavares",
+    "address": "609 North Powers Drive, Suite 324",
+    "phone": "352-742-8400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Lee",
+    "city": "Fort Myers",
+    "address": "2295 Victoria Avenue, Room 110",
+    "phone": "239-332-6600",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Leon",
+    "city": "Tallahassee",
+    "address": "2810 Sharer Road, Unit 24",
+    "phone": "850-921-8400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Levy",
+    "city": "Bronson",
+    "address": "1000 NE 16th Avenue, Building J",
+    "phone": "352-264-6400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Liberty",
+    "city": "Bristol",
+    "address": "2810 Sharer Road, Unit 24",
+    "phone": "850-921-8400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Madison",
+    "city": "Madison",
+    "address": "1000 NE 16th Avenue, Building J",
+    "phone": "386-719-6200",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Manatee",
+    "city": "Bradenton",
+    "address": "9393 North Florida Avenue",
+    "phone": "941-713-6100",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Marion",
+    "city": "Ocala",
+    "address": "212 S Apopka Avenue",
+    "phone": "352-732-3000",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Martin",
+    "city": "Stuart",
+    "address": "801 Dixon Boulevard, Suite 1103",
+    "phone": "772-778-5600",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Miami-Dade",
+    "city": "Miami",
+    "address": "5400 NW 22nd Avenue",
+    "phone": "305-636-2200",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Monroe",
+    "city": "Key West",
+    "address": "5400 NW 22nd Avenue",
+    "phone": "305-636-2200",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Nassau",
+    "city": "Fernandina Beach",
+    "address": "5000-1 Norwood Avenue",
+    "phone": "904-723-2000",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Okaloosa",
+    "city": "Fort Walton Beach",
+    "address": "33 Brent Lane, Suite 103",
+    "phone": "850-595-8900",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Okeechobee",
+    "city": "Okeechobee",
+    "address": "2295 Victoria Avenue, Room 110",
+    "phone": "863-993-4600",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Orange",
+    "city": "Orlando",
+    "address": "609 North Powers Drive, Suite 324",
+    "phone": "407-245-2700",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Osceola",
+    "city": "Kissimmee",
+    "address": "609 North Powers Drive, Suite 324",
+    "phone": "407-742-8400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Palm Beach",
+    "city": "Belle Glade",
+    "address": "2990 North Main Street",
+    "phone": "561-992-1900",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Pasco",
+    "city": "New Port Richey",
+    "address": "9393 North Florida Avenue",
+    "phone": "727-834-3200",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Pinellas",
+    "city": "St. Petersburg",
+    "address": "9393 North Florida Avenue",
+    "phone": "727-524-2900",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Polk",
+    "city": "Lakeland",
+    "address": "9393 North Florida Avenue",
+    "phone": "863-519-5500",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Putnam",
+    "city": "Palatka",
+    "address": "5000-1 Norwood Avenue",
+    "phone": "904-723-2000",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Santa Rosa",
+    "city": "Milton",
+    "address": "33 Brent Lane, Suite 103",
+    "phone": "850-595-8900",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Sarasota",
+    "city": "Sarasota",
+    "address": "2295 Victoria Avenue, Room 110",
+    "phone": "941-713-6100",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Seminole",
+    "city": "Sanford",
+    "address": "609 North Powers Drive, Suite 324",
+    "phone": "407-742-8400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "St. Johns",
+    "city": "St. Augustine",
+    "address": "5000-1 Norwood Avenue",
+    "phone": "904-723-2000",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "St. Lucie",
+    "city": "Fort Pierce",
+    "address": "801 Dixon Boulevard, Suite 1103",
+    "phone": "772-778-5600",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Sumter",
+    "city": "Bushnell",
+    "address": "212 S Apopka Avenue",
+    "phone": "352-732-3000",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Suwannee",
+    "city": "Live Oak",
+    "address": "1000 NE 16th Avenue, Building J",
+    "phone": "386-719-6200",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Taylor",
+    "city": "Perry",
+    "address": "1000 NE 16th Avenue, Building J",
+    "phone": "386-719-6200",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Union",
+    "city": "Lake Butler",
+    "address": "1000 NE 16th Avenue, Building J",
+    "phone": "386-719-6200",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Volusia",
+    "city": "Daytona Beach",
+    "address": "5000-1 Norwood Avenue",
+    "phone": "904-723-2000",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Wakulla",
+    "city": "Crawfordville",
+    "address": "2810 Sharer Road, Unit 24",
+    "phone": "850-921-8400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Walton",
+    "city": "DeFuniak Springs",
+    "address": "33 Brent Lane, Suite 103",
+    "phone": "850-595-8900",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  },
+  {
+    "county": "Washington",
+    "city": "Chipley",
+    "address": "2505 West 15th Street",
+    "phone": "850-747-5400",
+    "source": "https://www.myflfamilies.com/service-programs/access/apply-now"
+  }
+]

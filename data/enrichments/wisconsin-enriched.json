@@ -1,0 +1,1402 @@
+{
+  "1": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "2": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "3": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "4": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "5": {
+    "intake_signals": ""
+  },
+  "6": {
+    "intake_signals": ""
+  },
+  "7": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "8": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "9": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "10": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "11": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "12": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "13": {
+    "intake_signals": ""
+  },
+  "14": {
+    "intake_signals": ""
+  },
+  "15": {
+    "intake_signals": ""
+  },
+  "16": {
+    "intake_signals": ""
+  },
+  "17": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "18": {
+    "intake_signals": "accepts_criminal_record|walk_in_ok"
+  },
+  "19": {
+    "services": "Emergency shelter|Transitional housing|Reentry navigation|Benefits navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "20": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "21": {
+    "services": "Primary medical care|Behavioral health services",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "22": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "23": {
+    "services": "Emergency shelter|Supportive housing|Reentry navigation|Benefits navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "24": {
+    "services": "Emergency shelter|Food pantry access|Reentry navigation|Benefits navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "25": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "26": {
+    "services": "Daytime services|Partner referrals|Food pantry access|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "27": {
+    "services": "Job readiness training|Workforce development|Employment assistance|Career workshops",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "28": {
+    "description": "Job Center of Wisconsin — Madison serves justice-involved adults and families rebuilding stability after incarceration in Dane County. The Madison Job Center connects Dane County job seekers including justice-involved adults to WIOA-funded training, resume assistance, and fair-chance employment navigation. Staff coordinate with JustDane, Porchlight, and Dane County DHS for reentry stabilization. Staff help justice-involved job seekers build work history, remove record-related barriers, and connect to fair-chance employers in the region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Job Center of Wisconsin — Madison sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Dane. El personal ayuda a quienes buscan empleo con antecedentes penales a construir historial laboral, reducir barreras por antecedentes y conectarse con empleadores de segunda oportunidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Job readiness training|Workforce development|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "29": {
+    "description": "Job Center of Wisconsin — Green Bay serves justice-involved adults and families rebuilding stability after incarceration in 5 Wisconsin counties. The Green Bay Job Center connects Brown County and northeast Wisconsin job seekers including justice-involved adults to WIOA training, resume assistance, and fair-chance employer connections. Staff coordinate with NEW Community Shelter and county DHS offices for reentry stabilization. Staff help justice-involved job seekers build work history, remove record-related barriers, and connect to fair-chance employers in the region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Job Center of Wisconsin — Green Bay sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 5 condados de Wisconsin. El personal ayuda a quienes buscan empleo con antecedentes penales a construir historial laboral, reducir barreras por antecedentes y conectarse con empleadores de segunda oportunidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Job readiness training|Workforce development|Employment assistance|Career workshops",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "30": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "31": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "32": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "33": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "34": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "35": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "36": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "37": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "38": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "39": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "40": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "41": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "42": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "43": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "44": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "45": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "46": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "47": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "48": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "49": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "50": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "51": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "52": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "53": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "54": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "55": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "56": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "57": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "58": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "59": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "60": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "61": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "62": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "63": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "64": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "65": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "66": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "67": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "68": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "69": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "70": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "71": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "72": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "73": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "74": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "75": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "76": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "77": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "78": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "79": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "80": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "81": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "82": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "83": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "84": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "85": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "86": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "87": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "88": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "89": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "90": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "91": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "92": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "93": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "94": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "95": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "96": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "97": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "98": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "99": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "100": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "101": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "102": {
+    "description": "The Salvation Army Emergency Lodge in Milwaukee provides emergency shelter, meals, and case management for men, women, and families experiencing homelessness in Milwaukee County including returning citizens with nowhere else to go after release from WDOC custody or Milwaukee County Jail. Case managers connect residents to Job Center of Wisconsin, ACCESS Wisconsin benefits, and permanent housing programs. This resource supports Wisconsinites navigating reentry in Milwaukee County.",
+    "description_es": "El Emergency Lodge del Ejército de Salvación en Milwaukee proporciona refugio de emergencia, comidas y manejo de casos para hombres, mujeres y familias sin hogar en el condado Milwaukee incluidos ciudadanos que regresan sin otro lugar adonde ir después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Milwaukee.",
+    "services": "Emergency shelter|Food pantry access|Reentry navigation|Partner referrals|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "103": {
+    "services": "Emergency shelter|Housing navigation|Supportive housing|Reentry navigation|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "104": {
+    "description": "Freedom House — Appleton Transitional Housing serves justice-involved adults and families rebuilding stability after incarceration in Outagamie, Winnebago, and Calumet counties. Freedom House provides transitional housing and case management for homeless families in the Fox Valley including justice-involved parents reunifying with children after release from WDOC custody or Outagamie County Jail. Case managers connect residents to Job Center of Wisconsin Appleton, ACCESS Wisconsin, and Second Harvest Foodbank. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Freedom House — Appleton Transitional Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Outagamie, Winnebago y Calumet. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Transitional housing|Reentry navigation|Family reunification support|Benefits navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "105": {
+    "description": "Couleecap — La Crosse Housing Programs is a statewide or regional referral resource for Wisconsinites affected by the criminal justice system. Couleecap administers emergency shelter referrals, rapid rehousing, and homeless prevention programs for low-income La Crosse County households including returning citizens from WDOC release. Housing navigators connect clients to Job Center of Wisconsin La Crosse, ACCESS Wisconsin, and regional behavioral health providers. Users can search by location, service type, or need to find active providers in La Crosse, Vernon, Monroe, and Crawford counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Couleecap — La Crosse Housing Programs es un recurso de referencia estatal o regional para habitantes de Wisconsin afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados La Crosse, Vernon, Monroe y Crawford. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Partner referrals|Housing navigation|Emergency shelter|Reentry navigation|Benefits navigation",
+    "intake_signals": ""
+  },
+  "106": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "107": {
+    "description": "Job Center of Wisconsin — Kenosha serves justice-involved adults and families rebuilding stability after incarceration in Kenosha, and Racine counties. The Kenosha Job Center connects Kenosha and Racine county job seekers including justice-involved adults to WIOA-funded training, resume assistance, and fair-chance employment navigation. Staff coordinate with HALO Inc, Hope Center Racine, and WDOC Region 2 field offices for reentry stabilization. Staff help justice-involved job seekers build work history, remove record-related barriers, and connect to fair-chance employers in the region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Job Center of Wisconsin — Kenosha sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Kenosha y Racine. El personal ayuda a quienes buscan empleo con antecedentes penales a construir historial laboral, reducir barreras por antecedentes y conectarse con empleadores de segunda oportunidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Job readiness training|Workforce development|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "108": {
+    "description": "Job Center of Wisconsin — La Crosse serves justice-involved adults and families rebuilding stability after incarceration in La Crosse, Vernon, Monroe, and Buffalo counties. The La Crosse Job Center connects western Wisconsin job seekers including justice-involved adults to WIOA training, resume assistance, and fair-chance employer navigation. Staff link returning citizens to Couleecap housing programs and county DHS benefits offices. Staff help justice-involved job seekers build work history, remove record-related barriers, and connect to fair-chance employers in the region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Job Center of Wisconsin — La Crosse sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados La Crosse, Vernon, Monroe y Buffalo. El personal ayuda a quienes buscan empleo con antecedentes penales a construir historial laboral, reducir barreras por antecedentes y conectarse con empleadores de segunda oportunidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Job readiness training|Workforce development|Employment assistance|Career workshops",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "109": {
+    "description": "Job Center of Wisconsin — Eau Claire serves justice-involved adults and families rebuilding stability after incarceration in 5 Wisconsin counties. The Eau Claire Job Center connects northwest Wisconsin job seekers including justice-involved adults to WIOA-funded training, resume assistance, and fair-chance employment navigation. Staff coordinate with county DHS offices and regional treatment providers for reentry stabilization. Staff help justice-involved job seekers build work history, remove record-related barriers, and connect to fair-chance employers in the region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Job Center of Wisconsin — Eau Claire sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 5 condados de Wisconsin. El personal ayuda a quienes buscan empleo con antecedentes penales a construir historial laboral, reducir barreras por antecedentes y conectarse con empleadores de segunda oportunidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Job readiness training|Workforce development|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "110": {
+    "services": "Substance use treatment|Addiction treatment referrals|Dual-diagnosis care|Rent and utility assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "111": {
+    "description": "Tellurian — Madison Behavioral Health is a statewide or regional referral resource for Wisconsinites affected by the criminal justice system. Tellurian provides outpatient substance use disorder treatment, mental health services, and crisis stabilization for Dane County adults including justice-involved individuals under WDOC supervision or drug court referral. Sliding-fee and BadgerCare Plus billing support continuity of care after release. Users can search by location, service type, or need to find active providers in Dane County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Tellurian — Madison Behavioral Health es un recurso de referencia estatal o regional para habitantes de Wisconsin afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Dane. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Substance use treatment|Counseling|Crisis services|Probation and parole supervision|Primary medical care",
+    "intake_signals": ""
+  },
+  "112": {
+    "description": "Libertas Treatment Center — Green Bay is a statewide or regional referral resource for Wisconsinites affected by the criminal justice system. Libertas Treatment Center provides outpatient substance use disorder treatment including MAT and group counseling for Brown County and northeast Wisconsin adults including justice-involved individuals referred by WDOC or self-referral. Accepts BadgerCare Plus and offers sliding-fee services for uninsured patients. Users can search by location, service type, or need to find active providers in Brown, Outagamie, Winnebago, and Kewaunee counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Libertas Treatment Center — Green Bay es un recurso de referencia estatal o regional para habitantes de Wisconsin afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Brown, Outagamie, Winnebago y Kewaunee. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Substance use treatment|Addiction treatment referrals|Counseling|Primary medical care",
+    "intake_signals": ""
+  },
+  "113": {
+    "description": "Legal Action of Wisconsin — Milwaukee Office serves justice-involved adults and families rebuilding stability after incarceration in Milwaukee County. The Legal Action of Wisconsin Milwaukee office provides civil legal representation for low-income Milwaukee County residents including housing, public benefits, family law, and expungement matters for justice-involved adults. Does not handle criminal defense—contact centralized intake at 888-278-0633 for eligibility screening. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Legal Action of Wisconsin — Milwaukee Office ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Milwaukee. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Civil legal representation|Expungement assistance|Housing legal aid|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "114": {
+    "description": "Legal Action of Wisconsin — Madison Office serves justice-involved adults and families rebuilding stability after incarceration in Dane County. Legal Action of Wisconsin — Madison Office provides free civil legal aid for low-income Dane County residents including housing, public benefits, family law, and record-related matters for justice-involved clients. Does not handle criminal defense. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Legal Action of Wisconsin — Madison Office ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Dane. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "dane|legal-aid|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "115": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "116": {
+    "description": "Veterans Outreach of Wisconsin — Racine/Kenosha serves justice-involved adults and families rebuilding stability after incarceration in Racine, and Kenosha counties. Veterans Outreach of Wisconsin provides transitional housing, case management, and peer support for homeless and at-risk veterans in Racine and Kenosha counties including justice-involved veterans released from incarceration. Staff connect residents to WDVA benefits claims assistance, VA health care, and Job Center of Wisconsin Kenosha. VA eligibility and discharge status affect which benefits apply; ask specifically for justice-involved veteran or VJO/HCRV services when calling. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Veterans Outreach of Wisconsin — Racine/Kenosha sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Racine y Kenosha. La elegibilidad del VA y el tipo de baja afectan qué beneficios aplican; pida específicamente servicios VJO/HCRV o para veteranos en el sistema de justicia al llamar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Transitional veteran housing|Reentry navigation|Support groups|Benefits navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "117": {
+    "description": "Feeding America Eastern Wisconsin — Milwaukee serves justice-involved adults and families rebuilding stability after incarceration in 18 Wisconsin counties. Feeding America Eastern Wisconsin distributes food to partner pantries and meal sites across eastern Wisconsin for food-insecure households including returning citizens navigating SNAP and pantry resources. Availability varies by season and donations; call ahead when possible to confirm clothing, hygiene kits, or furniture pickup hours. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Feeding America Eastern Wisconsin — Milwaukee sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 18 condados de Wisconsin. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "milwaukee|basic-needs|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "118": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "119": {
+    "description": "Paul's Pantry — Green Bay serves justice-involved adults and families rebuilding stability after incarceration in Brown County. Paul's Pantry provides free grocery assistance to low-income Green Bay and Brown County households including returning citizens establishing food security after release. Clients may shop monthly for fresh and shelf-stable foods while coordinating FoodShare enrollment through ACCESS Wisconsin and county DHS offices. Food assistance does not usually require a criminal-record disclosure; staff can help with SNAP applications and pantry locations by ZIP code. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Paul's Pantry — Green Bay sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Brown. La asistencia alimentaria generalmente no requiere declarar antecedentes penales; el personal puede ayudar con solicitudes SNAP y ubicaciones de despensas por código postal. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Free grocery assistance|Food pantry access|Partner referrals|Monthly shopping program",
+    "intake_signals": ""
+  },
+  "120": {
+    "description": "Western Wisconsin Community Action Agency — Eau Claire serves justice-involved adults and families rebuilding stability after incarceration in 6 Wisconsin counties. Western Wisconsin Community Action Agency provides emergency assistance, energy assistance, and basic-needs navigation for low-income Eau Claire County households including returning citizens from WDOC release. Case managers connect clients to Job Center of Wisconsin Eau Claire, ACCESS Wisconsin benefits, and regional housing partners. Availability varies by season and donations; call ahead when possible to confirm clothing, hygiene kits, or furniture pickup hours. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Western Wisconsin Community Action Agency — Eau Claire sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 6 condados de Wisconsin. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Basic needs assistance|Rent and utility assistance|Basic-needs navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "121": {
+    "description": "Catholic Charities — La Crosse Basic Needs is a statewide or regional referral resource for Wisconsinites affected by the criminal justice system. Catholic Charities of the Diocese of La Crosse provides emergency financial assistance, food pantry referrals, and case management for low-income La Crosse County households including returning citizens stabilizing after release from WDOC custody or county jail. Staff coordinate with Couleecap housing programs and Job Center La Crosse. Users can search by location, service type, or need to find active providers in La Crosse, Vernon, and Monroe counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Catholic Charities — La Crosse Basic Needs es un recurso de referencia estatal o regional para habitantes de Wisconsin afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados La Crosse, Vernon y Monroe. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "la-crosse|basic-needs|emergency-assistance|reentry|wisconsin",
+    "services": "Rent and utility assistance|Partner referrals|Reentry navigation|Benefits navigation",
+    "intake_signals": ""
+  },
+  "122": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "123": {
+    "description": "Job Center of Wisconsin — Appleton serves justice-involved adults and families rebuilding stability after incarceration in Outagamie, Winnebago, and Calumet counties. The Appleton Job Center connects Fox Valley job seekers including justice-involved adults to WIOA training, resume assistance, and fair-chance employment navigation at the Menasha workforce hub. Staff coordinate with Freedom House, Libertas Treatment Center Green Bay, and Outagamie County DHS. Staff help justice-involved job seekers build work history, remove record-related barriers, and connect to fair-chance employers in the region. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Job Center of Wisconsin — Appleton sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Outagamie, Winnebago y Calumet. El personal ayuda a quienes buscan empleo con antecedentes penales a construir historial laboral, reducir barreras por antecedentes y conectarse con empleadores de segunda oportunidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Job readiness training|Workforce development|Employment assistance|Career workshops",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "124": {
+    "intake_signals": ""
+  },
+  "125": {
+    "tags": "milwaukee|probation-parole|WDOC|reentry|wisconsin",
+    "services": "Probation and parole supervision|Partner referrals|Employment compliance|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "126": {
+    "description": "WDOC — Region 2 Probation & Parole (Kenosha/Racine) serves justice-involved adults and families rebuilding stability after incarceration in Kenosha, and Racine counties. WDOC Region 2 Probation and Parole supervises clients in Kenosha and Racine counties, connecting supervisees to HALO Inc, Hope Center Racine, and Job Center of Wisconsin Kenosha as conditions of community supervision. This office handles supervision compliance and reporting—not emergency reentry navigation; ask your officer for referrals to local reentry partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "WDOC — Region 2 Probation & Parole (Kenosha/Racine) sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Kenosha y Racine. Esta oficina maneja cumplimiento de supervisión e informes—no navegación de crisis de reinserción; pida a su oficial referencias a aliados locales de reinserción. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Probation and parole supervision|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "127": {
+    "description": "WDOC — Region 3 Probation & Parole (Madison) serves justice-involved adults and families rebuilding stability after incarceration in 5 Wisconsin counties. WDOC Region 3 Probation and Parole supervises clients in Dane and surrounding south-central Wisconsin counties, connecting supervisees to JustDane, Porchlight, and Job Center of Wisconsin Madison as conditions of release. This office handles supervision compliance and reporting—not emergency reentry navigation; ask your officer for referrals to local reentry partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "WDOC — Region 3 Probation & Parole (Madison) sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 5 condados de Wisconsin. Esta oficina maneja cumplimiento de supervisión e informes—no navegación de crisis de reinserción; pida a su oficial referencias a aliados locales de reinserción. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Probation and parole supervision|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "128": {
+    "description": "WDOC — Region 4 Probation & Parole (Appleton/Oshkosh) serves justice-involved adults and families rebuilding stability after incarceration in 5 Wisconsin counties. WDOC Region 4 Probation and Parole supervises clients in the Fox Valley including Outagamie, Winnebago, and Calumet counties, connecting supervisees to Freedom House, Job Center Appleton, and Libertas Treatment Center partners. This office handles supervision compliance and reporting—not emergency reentry navigation; ask your officer for referrals to local reentry partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "WDOC — Region 4 Probation & Parole (Appleton/Oshkosh) sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 5 condados de Wisconsin. Esta oficina maneja cumplimiento de supervisión e informes—no navegación de crisis de reinserción; pida a su oficial referencias a aliados locales de reinserción. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Probation and parole supervision|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "129": {
+    "description": "WDOC — Region 5 Probation & Parole (Green Bay) serves justice-involved adults and families rebuilding stability after incarceration in 5 Wisconsin counties. WDOC Region 5 Probation and Parole supervises clients in Brown, Door, Kewaunee, and northeast Wisconsin counties, connecting supervisees to NEW Community Shelter, Job Center Green Bay, and county DHS benefits offices. This office handles supervision compliance and reporting—not emergency reentry navigation; ask your officer for referrals to local reentry partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "WDOC — Region 5 Probation & Parole (Green Bay) sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 5 condados de Wisconsin. Esta oficina maneja cumplimiento de supervisión e informes—no navegación de crisis de reinserción; pida a su oficial referencias a aliados locales de reinserción. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Probation and parole supervision|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "130": {
+    "description": "WDOC — Region 6 Probation & Parole (La Crosse) serves justice-involved adults and families rebuilding stability after incarceration in 5 Wisconsin counties. WDOC Region 6 Probation and Parole supervises clients in La Crosse and western Wisconsin counties, connecting supervisees to Couleecap, Job Center La Crosse, and regional behavioral health providers as conditions of community supervision. This office handles supervision compliance and reporting—not emergency reentry navigation; ask your officer for referrals to local reentry partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "WDOC — Region 6 Probation & Parole (La Crosse) sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 5 condados de Wisconsin. Esta oficina maneja cumplimiento de supervisión e informes—no navegación de crisis de reinserción; pida a su oficial referencias a aliados locales de reinserción. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "la-crosse|probation-parole|WDOC|reentry|wisconsin",
+    "services": "Probation and parole supervision|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "131": {
+    "description": "WDOC — Region 7 Probation & Parole (Eau Claire) serves justice-involved adults and families rebuilding stability after incarceration in 6 Wisconsin counties. WDOC Region 7 Probation and Parole supervises clients in Eau Claire and northwest Wisconsin counties, connecting supervisees to Job Center Eau Claire, Western Wisconsin Community Action Agency, and county DHS offices as conditions of release. This office handles supervision compliance and reporting—not emergency reentry navigation; ask your officer for referrals to local reentry partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "WDOC — Region 7 Probation & Parole (Eau Claire) sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 6 condados de Wisconsin. Esta oficina maneja cumplimiento de supervisión e informes—no navegación de crisis de reinserción; pida a su oficial referencias a aliados locales de reinserción. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "eau-claire|probation-parole|WDOC|reentry|wisconsin",
+    "services": "Probation and parole supervision|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "132": {
+    "description": "WDOC — Region 8 Probation & Parole (Wausau) serves justice-involved adults and families rebuilding stability after incarceration in 5 Wisconsin counties. WDOC Region 8 Probation and Parole supervises clients in Marathon, Portage, Wood, and north-central Wisconsin counties, connecting supervisees to Wisconsin Judicare, Job Center Wausau, and regional treatment providers as conditions of community supervision. This office handles supervision compliance and reporting—not emergency reentry navigation; ask your officer for referrals to local reentry partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "WDOC — Region 8 Probation & Parole (Wausau) sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 5 condados de Wisconsin. Esta oficina maneja cumplimiento de supervisión e informes—no navegación de crisis de reinserción; pida a su oficial referencias a aliados locales de reinserción. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Probation and parole supervision|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "133": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "134": {
+    "description": "Second Harvest Foodbank — Northwestern Wisconsin serves justice-involved adults and families rebuilding stability after incarceration in 5 Wisconsin counties. Second Harvest Foodbank northwestern Wisconsin partner network supplies emergency food pantries across Eau Claire, Chippewa, and Barron counties for low-income households including justice-involved adults reestablishing food security after release. Pantry finder online—not direct individual warehouse walk-in. Food assistance does not usually require a criminal-record disclosure; staff can help with SNAP applications and pantry locations by ZIP code. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Second Harvest Foodbank — Northwestern Wisconsin sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 5 condados de Wisconsin. La asistencia alimentaria generalmente no requiere declarar antecedentes penales; el personal puede ayudar con solicitudes SNAP y ubicaciones de despensas por código postal. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Food pantry access|Mobile pantry distribution|Partner agency supply|Pantry finder",
+    "intake_signals": ""
+  },
+  "135": {
+    "description": "Milwaukee Area Technical College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Milwaukee, Waukesha, Washington, and Ozaukee counties. Milwaukee Area Technical College Adult Education provides free GED and High School Equivalency Diploma preparation, English language classes, and workforce credential pathways for Milwaukee County adults including returning citizens rebuilding credentials for Job Center of Wisconsin and employer requirements. Classes are typically free or low-cost for Wisconsin adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Milwaukee Area Technical College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Milwaukee, Waukesha, Washington y Ozaukee. Las clases suelen ser gratuitas o de bajo costo para adultos en Wisconsin; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED and high school equivalency|Workforce development|Employment assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "136": {
+    "description": "Madison College — Adult Basic Education serves justice-involved adults and families rebuilding stability after incarceration in Dane, Rock, Green, and Iowa counties. Madison College Adult Basic Education offers free GED and High School Equivalency classes, English language instruction, and college transition support for Dane County adults including justice-involved learners at the Truax and regional campuses. Classes are typically free or low-cost for Wisconsin adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Madison College — Adult Basic Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Dane, Rock, Green y Iowa. Las clases suelen ser gratuitas o de bajo costo para adultos en Wisconsin; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED and high school equivalency|Workforce development|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "137": {
+    "description": "Fox Valley Technical College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Outagamie, Winnebago, Calumet, and Waupaca counties. Fox Valley Technical College Adult Education provides free GED preparation and English language classes for Outagamie and Winnebago county adults including returning citizens rebuilding credentials for Job Center of Wisconsin Appleton and regional employers. Classes are typically free or low-cost for Wisconsin adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Fox Valley Technical College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Outagamie, Winnebago, Calumet y Waupaca. Las clases suelen ser gratuitas o de bajo costo para adultos en Wisconsin; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED and high school equivalency|Workforce development|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "138": {
+    "intake_signals": ""
+  },
+  "139": {
+    "intake_signals": ""
+  },
+  "140": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "141": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "142": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "143": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "144": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "145": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "146": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "147": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "148": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "149": {
+    "description": "Prevea Health — Green Bay provides primary care, behavioral health, and community health services for Brown County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Brown County.",
+    "description_es": "Prevea Health — Green Bay ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Brown incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Brown.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "150": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "151": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "152": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "153": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "154": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "155": {
+    "description": "ThedaCare — Fox Valley provides primary care, behavioral health, and community health services for Calumet County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Calumet County.",
+    "description_es": "ThedaCare — Fox Valley ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Calumet incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Calumet.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "156": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "157": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "158": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "159": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "160": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "161": {
+    "description": "Access Community Health Centers provides primary care, behavioral health, and community health services for Columbia County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Columbia County.",
+    "description_es": "Access Community Health Centers ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Columbia incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Columbia.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "162": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "163": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "164": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "165": {
+    "description": "Access Community Health Centers provides primary care, behavioral health, and community health services for Dane County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Dane County.",
+    "description_es": "Access Community Health Centers ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Dane incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Dane.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "166": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "167": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "168": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "169": {
+    "description": "Prevea Health — Green Bay provides primary care, behavioral health, and community health services for Door County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Door County.",
+    "description_es": "Prevea Health — Green Bay ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Door incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Door.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "170": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "171": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "172": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "173": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "174": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "175": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "176": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "177": {
+    "description": "Prevea Health — Green Bay provides primary care, behavioral health, and community health services for Florence County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Florence County.",
+    "description_es": "Prevea Health — Green Bay ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Florence incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Florence.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "178": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "179": {
+    "description": "ThedaCare — Fox Valley provides primary care, behavioral health, and community health services for Fond du Lac County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Fond du Lac County.",
+    "description_es": "ThedaCare — Fox Valley ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Fond du Lac incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Fond du Lac.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "180": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "181": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "182": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "183": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "184": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "185": {
+    "description": "Access Community Health Centers provides primary care, behavioral health, and community health services for Green County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Green County.",
+    "description_es": "Access Community Health Centers ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Green incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Green.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "186": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "187": {
+    "description": "ThedaCare — Fox Valley provides primary care, behavioral health, and community health services for Green Lake County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Green Lake County.",
+    "description_es": "ThedaCare — Fox Valley ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Green Lake incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Green Lake.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "188": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "189": {
+    "description": "Access Community Health Centers provides primary care, behavioral health, and community health services for Iowa County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Iowa County.",
+    "description_es": "Access Community Health Centers ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Iowa incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Iowa.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "190": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "191": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "192": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "193": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "194": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "195": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "196": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "197": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "198": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "199": {
+    "description": "Aurora Health Care — Kenosha provides primary care, behavioral health, and community health services for Kenosha County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Kenosha County.",
+    "description_es": "Aurora Health Care — Kenosha ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Kenosha incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Kenosha.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "200": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "201": {
+    "description": "Prevea Health — Green Bay provides primary care, behavioral health, and community health services for Kewaunee County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Kewaunee County.",
+    "description_es": "Prevea Health — Green Bay ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Kewaunee incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Kewaunee.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "202": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "203": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "204": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "205": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "206": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "207": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "208": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "209": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "210": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "211": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "212": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "213": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "214": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "215": {
+    "description": "Prevea Health — Green Bay provides primary care, behavioral health, and community health services for Marinette County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Marinette County.",
+    "description_es": "Prevea Health — Green Bay ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Marinette incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Marinette.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "216": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "217": {
+    "description": "ThedaCare — Fox Valley provides primary care, behavioral health, and community health services for Marquette County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Marquette County.",
+    "description_es": "ThedaCare — Fox Valley ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Marquette incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Marquette.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "218": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "219": {
+    "description": "Prevea Health — Green Bay provides primary care, behavioral health, and community health services for Menominee County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Menominee County.",
+    "description_es": "Prevea Health — Green Bay ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Menominee incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Menominee.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "220": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "221": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "222": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "223": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "224": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "225": {
+    "description": "Prevea Health — Green Bay provides primary care, behavioral health, and community health services for Oconto County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Oconto County.",
+    "description_es": "Prevea Health — Green Bay ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Oconto incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Oconto.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "226": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "227": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "228": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "229": {
+    "description": "ThedaCare — Fox Valley provides primary care, behavioral health, and community health services for Outagamie County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Outagamie County.",
+    "description_es": "ThedaCare — Fox Valley ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Outagamie incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Outagamie.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "230": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "231": {
+    "description": "ProHealth Care — Waukesha provides primary care, behavioral health, and community health services for Ozaukee County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Ozaukee County.",
+    "description_es": "ProHealth Care — Waukesha ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Ozaukee incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Ozaukee.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "232": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "233": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "234": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "235": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "236": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "237": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "238": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "239": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "240": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "241": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "242": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "243": {
+    "description": "Aurora Health Care — Kenosha provides primary care, behavioral health, and community health services for Racine County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Racine County.",
+    "description_es": "Aurora Health Care — Kenosha ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Racine incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Racine.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "244": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "245": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "246": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "247": {
+    "description": "Access Community Health Centers provides primary care, behavioral health, and community health services for Rock County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Rock County.",
+    "description_es": "Access Community Health Centers ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Rock incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Rock.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "248": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "249": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "250": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "251": {
+    "description": "Access Community Health Centers provides primary care, behavioral health, and community health services for Sauk County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Sauk County.",
+    "description_es": "Access Community Health Centers ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Sauk incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Sauk.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "252": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "253": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "254": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "255": {
+    "description": "Prevea Health — Green Bay provides primary care, behavioral health, and community health services for Shawano County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Shawano County.",
+    "description_es": "Prevea Health — Green Bay ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Shawano incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Shawano.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "256": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "257": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "258": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "259": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "260": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "261": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "262": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "263": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "264": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "265": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "266": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "267": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "268": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "269": {
+    "description": "Aurora Health Care — Kenosha provides primary care, behavioral health, and community health services for Walworth County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Walworth County.",
+    "description_es": "Aurora Health Care — Kenosha ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Walworth incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Walworth.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "270": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "271": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "272": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "273": {
+    "description": "ProHealth Care — Waukesha provides primary care, behavioral health, and community health services for Washington County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Washington County.",
+    "description_es": "ProHealth Care — Waukesha ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Washington incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Washington.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "274": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "275": {
+    "description": "ProHealth Care — Waukesha provides primary care, behavioral health, and community health services for Waukesha County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Waukesha County.",
+    "description_es": "ProHealth Care — Waukesha ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Waukesha incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Waukesha.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "276": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "277": {
+    "description": "ThedaCare — Fox Valley provides primary care, behavioral health, and community health services for Waupaca County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Waupaca County.",
+    "description_es": "ThedaCare — Fox Valley ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Waupaca incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Waupaca.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "278": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "279": {
+    "description": "ThedaCare — Fox Valley provides primary care, behavioral health, and community health services for Waushara County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Waushara County.",
+    "description_es": "ThedaCare — Fox Valley ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Waushara incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Waushara.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "280": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "281": {
+    "description": "ThedaCare — Fox Valley provides primary care, behavioral health, and community health services for Winnebago County residents including uninsured and BadgerCare Plus patients such as returning citizens establishing medical care after release from WDOC custody or county jail. Sliding-fee and Medicaid billing help ensure continuity of care after incarceration—not a walk-in benefits or probation reporting office. This resource supports Wisconsinites navigating reentry in Winnebago County.",
+    "description_es": "ThedaCare — Fox Valley ofrece atención primaria, salud conductual y servicios de salud comunitaria para residentes del condado Winnebago incluidos pacientes sin seguro y BadgerCare Plus como ciudadanos que regresan que establecen atención médica después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Winnebago.",
+    "services": "Primary medical care|Behavioral health services|Medicaid enrollment",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "282": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "283": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "284": {
+    "services": "Reentry navigation|Employment coaching|Supportive services|Benefits navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "285": {
+    "description": "Ex-Incarcerated People Organizing (EXPO) — Wisconsin serves justice-involved adults and families rebuilding stability after incarceration in throughout Wisconsin. EXPO Wisconsin organizes formerly incarcerated leaders for policy advocacy, peer support, and community navigation connecting justice-involved Wisconsinites to housing, employment, and voting-rights resources after release. Grassroots organizing and peer navigation—not emergency shelter or direct cash assistance. Coalition and navigator resources connect returning citizens to local partners—they rarely provide emergency shelter, cash aid, or 24/7 crisis response on their own. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Ex-Incarcerated People Organizing (EXPO) — Wisconsin sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Wisconsin. Las coaliciones y recursos de navegación conectan a ciudadanos que regresan con aliados locales—rara vez ofrecen refugio de emergencia, efectivo o respuesta de crisis 24/7 por sí solos. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Civil rights advocacy|Peer navigation|Partner referrals|Voting rights assistance",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "286": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "287": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "288": {
+    "description": "Green Bay Metro — Public Transit serves justice-involved adults and families rebuilding stability after incarceration in Brown County. Green Bay Metro provides fixed-route bus service in Green Bay and Ashwaubenon with reduced-fare programs for seniors, people with disabilities, and qualifying riders including returning citizens who need affordable transportation to Job Center Green Bay, probation reporting, and treatment appointments. Reduced-fare resources typically require application and proof of income or disability; IDs are needed to receive a pass or card. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Green Bay Metro — Public Transit sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Brown. Los recursos de tarifa reducida suelen requerir solicitud y prueba de ingresos o discapacidad; se necesita identificación para recibir un pase o tarjeta. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Transportation assistance|Reduced-fare programs|Route schedules|Trip planning",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "289": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "290": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "291": {
+    "description": "Racine County Human Services — Family & Children's Services is a statewide or regional referral resource for Wisconsinites affected by the criminal justice system. Racine County Human Services provides child care subsidy referrals, family support, and reunification navigation for low-income Racine County households including justice-involved parents returning from WDOC custody or Racine County Jail. Coordinates with Hope Center Racine and Job Center Kenosha—not emergency housing intake. Users can search by location, service type, or need to find active providers in Racine County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Racine County Human Services — Family & Children's Services es un recurso de referencia estatal o regional para habitantes de Wisconsin afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Racine. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "services": "Child care assistance|Family reunification support|Parenting services|Partner referrals",
+    "intake_signals": ""
+  },
+  "292": {
+    "services": "Support groups|Children's services|Community navigation|Sobriety support|Partner referrals",
+    "intake_signals": ""
+  },
+  "293": {
+    "intake_signals": "accepts_criminal_record"
+  },
+  "294": {
+    "description": "Society of St. Vincent de Paul Milwaukee provides emergency food, clothing, furniture, and household goods for low-income Milwaukee County residents including returning citizens reestablishing a household after release from WDOC custody or Milwaukee County Jail. Conference-based home visits and pantry referrals—not a walk-in probation or benefits office. This resource supports Wisconsinites navigating reentry in Milwaukee County.",
+    "description_es": "La Sociedad de San Vicente de Paúl Milwaukee ofrece alimentos de emergencia, ropa, muebles y artículos del hogar para residentes de bajos ingresos del condado Milwaukee incluidos ciudadanos que regresan que restablecen un hogar después de la liberación. Este recurso apoya a habitantes de Wisconsin en reinserción en condado de Milwaukee.",
+    "services": "Food pantry access|Clothing assistance|Basic needs assistance|Home visits",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "295": {
+    "description": "Northcentral Technical College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in 6 Wisconsin counties. Northcentral Technical College Adult Education offers GED/HSED preparation, English language learning, and workforce credentials for justice-involved adults in north-central Wisconsin seeking employment through Job Center Wausau after release from WDOC custody or Marathon County Jail. Classes are typically free or low-cost for Wisconsin adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Northcentral Technical College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 6 condados de Wisconsin. Las clases suelen ser gratuitas o de bajo costo para adultos en Wisconsin; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED/HSED preparation|GED and high school equivalency|Workforce development|Employment assistance|Adult basic education",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "296": {
+    "description": "Lakeshore Technical College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Manitowoc, Sheboygan, Kewaunee, and Calumet counties. Lakeshore Technical College provides GED/HSED completion, adult basic education, and skilled trades pathways for justice-involved adults in Manitowoc and Sheboygan counties connecting to Job Center Oshkosh and ACCESS Wisconsin after release. Classes are typically free or low-cost for Wisconsin adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Lakeshore Technical College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Manitowoc, Sheboygan, Kewaunee y Calumet. Las clases suelen ser gratuitas o de bajo costo para adultos en Wisconsin; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED/HSED preparation|Adult basic education|Skilled trades pathways|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "297": {
+    "description": "Mid-State Technical College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Wood, Adams, Portage, and Juneau counties. Mid-State Technical College Adult Education offers GED/HSED classes, literacy support, and workforce training for central Wisconsin residents including returning citizens in Wood, Adams, and Portage counties preparing for Job Center employment services. Classes are typically free or low-cost for Wisconsin adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Mid-State Technical College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Wood, Adams, Portage y Juneau. Las clases suelen ser gratuitas o de bajo costo para adultos en Wisconsin; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "GED/HSED classes|GED and high school equivalency|Workforce development|Employment assistance|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "298": {
+    "description": "Legal Action of Wisconsin — Racine Office serves justice-involved adults and families rebuilding stability after incarceration in Racine County. Legal Action of Wisconsin Racine office provides free civil legal aid for low-income Racine County residents including eviction defense, public benefits appeals, family law, and record-related civil matters for justice-involved clients. Does not provide criminal defense representation. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Legal Action of Wisconsin — Racine Office ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Racine. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "services": "Civil legal representation|Housing legal aid|Benefits navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "299": {
+    "description": "Legal Action of Wisconsin — Kenosha Office serves justice-involved adults and families rebuilding stability after incarceration in Kenosha County. Legal Action of Wisconsin Kenosha office serves low-income Kenosha County residents with civil legal aid including housing, benefits, and family law matters for justice-involved clients seeking stability after release from WDOC custody or Kenosha County Jail. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Legal Action of Wisconsin — Kenosha Office ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Kenosha. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "kenosha|legal-aid|low-income|reentry|wisconsin",
+    "services": "Civil legal representation|Housing legal aid|Benefits navigation|Partner referrals",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "300": {
+    "description": "Salvation Army — Fox Cities Shelter serves justice-involved adults and families rebuilding stability after incarceration in Outagamie, Winnebago, and Calumet counties. The Salvation Army Fox Cities provides emergency shelter and case management for homeless adults and families in the Fox Valley including justice-involved residents after WDOC release. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Salvation Army — Fox Cities Shelter sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Outagamie, Winnebago y Calumet. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "outagamie|housing|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "301": {
+    "description": "Hope Center Racine — Emergency Shelter serves justice-involved adults and families rebuilding stability after incarceration in Racine County. Hope Center Racine provides emergency shelter, meals, and housing navigation for homeless adults in Racine County including returning citizens from WDOC custody and Racine County Jail. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Hope Center Racine — Emergency Shelter sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Racine. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "racine|housing|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "302": {
+    "description": "Kenosha Human Development Services — Housing is a statewide or regional referral resource for Wisconsinites affected by the criminal justice system. KHDS administers homeless prevention, rapid rehousing, and shelter referrals for low-income Kenosha County households including justice-involved adults rebuilding housing after incarceration. Users can search by location, service type, or need to find active providers in Kenosha County. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Kenosha Human Development Services — Housing es un recurso de referencia estatal o regional para habitantes de Wisconsin afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en condado de Kenosha. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "kenosha|housing|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "303": {
+    "description": "Western Dairyland — Housing Assistance is a statewide or regional referral resource for Wisconsinites affected by the criminal justice system. Western Dairyland Community Action Agency provides emergency shelter referrals, rental assistance, and homeless prevention for low-income western Wisconsin residents including returning citizens in Eau Claire and surrounding counties. Users can search by location, service type, or need to find active providers in 37 Wisconsin counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Western Dairyland — Housing Assistance es un recurso de referencia estatal o regional para habitantes de Wisconsin afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en 37 condados de Wisconsin. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "eau-claire|housing|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "304": {
+    "description": "Northwest Wisconsin Community Services Agency — Housing serves justice-involved adults and families rebuilding stability after incarceration in Douglas, Bayfield, Ashland, and Iron counties. Northwest Wisconsin Community Services Agency provides emergency shelter, rental assistance, and housing case management for low-income Douglas County residents including justice-involved adults after release from Douglas County Jail or WDOC custody. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Northwest Wisconsin Community Services Agency — Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Douglas, Bayfield, Ashland y Iron. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "douglas|housing|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "305": {
+    "description": "Central Wisconsin Community Action Council — Housing is a statewide or regional referral resource for Wisconsinites affected by the criminal justice system. Central Wisconsin Community Action Council provides homeless prevention, emergency shelter referrals, and rental assistance for low-income central Wisconsin households including returning citizens in Wood, Adams, and Juneau counties. Users can search by location, service type, or need to find active providers in Wood, Adams, Juneau, and Portage counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Central Wisconsin Community Action Council — Housing es un recurso de referencia estatal o regional para habitantes de Wisconsin afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en los condados Wood, Adams, Juneau y Portage. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "wood|housing|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "306": {
+    "description": "South Central Wisconsin Community Action Program — Housing serves justice-involved adults and families rebuilding stability after incarceration in 7 Wisconsin counties. South Central Wisconsin CAP provides homeless prevention, rapid rehousing, and rental assistance for low-income Rock County households including justice-involved adults returning from WDOC custody to Janesville and Beloit. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "South Central Wisconsin Community Action Program — Housing sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 7 condados de Wisconsin. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "rock|housing|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "307": {
+    "description": "Community Action Coalition for South Central WI — Housing is a regional reentry coalition serving Dane, Columbia, and Sauk counties. Partner agencies, faith communities, and workforce organizations meet regularly to share resources and warm referrals for people leaving jail or prison, on probation or parole, and their families. Coordinators help returning citizens connect to housing, employment, treatment, legal aid, and benefits through local partners. This is primarily a networking and navigation council—not an emergency shelter, cash assistance, or crisis line.",
+    "description_es": "Community Action Coalition for South Central WI — Housing es una coalición regional de reinserción que sirve los condados Dane, Columbia y Sauk. Agencias aliadas, comunidades de fe y organizaciones laborales se reúnen para compartir recursos y referencias directas para personas que salen de la cárcel o prisión, en libertad condicional o vigilada, y sus familias. Los coordinadores ayudan a conectar a ciudadanos que regresan con vivienda, empleo, tratamiento, asistencia legal y beneficios a través de aliados locales. Es principalmente un consejo de red y navegación—no un refugio de emergencia, asistencia en efectivo ni línea de crisis.",
+    "tags": "dane|housing|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "308": {
+    "description": "Hebron Housing Services — Waukesha serves justice-involved adults and families rebuilding stability after incarceration in Waukesha, Washington, and Ozaukee counties. Hebron Housing Services provides emergency shelter, rapid rehousing, and supportive housing for homeless Waukesha County households including justice-involved adults after release from WDOC custody or county jail. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Hebron Housing Services — Waukesha sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Waukesha, Washington y Ozaukee. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "waukesha|housing|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "309": {
+    "description": "House of the Good Shepherd — Green Bay serves justice-involved adults and families rebuilding stability after incarceration in Brown County. House of the Good Shepherd provides emergency shelter and supportive housing for women and children experiencing homelessness in Brown County including justice-involved mothers reunifying with children after incarceration. Resources may include case management, sobriety requirements, or referral from corrections partners—confirm admission steps before visiting. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "House of the Good Shepherd — Green Bay sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Brown. Los recursos pueden incluir manejo de casos, requisitos de sobriedad o referencia de socios correccionales—confirme los pasos de admisión antes de visitar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "brown|housing|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "310": {
+    "description": "St. Ben's Community Meal — Milwaukee serves justice-involved adults and families rebuilding stability after incarceration in Milwaukee County. St. Ben's Community Meal serves daily meals and basic-needs navigation for people experiencing homelessness and poverty in Milwaukee including returning citizens without stable housing after release. Availability varies by season and donations; call ahead when possible to confirm clothing, hygiene kits, or furniture pickup hours. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "St. Ben's Community Meal — Milwaukee sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Milwaukee. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "milwaukee|basic-needs|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "311": {
+    "description": "The River Food Pantry — Madison serves justice-involved adults and families rebuilding stability after incarceration in Dane County. The River Food Pantry provides groceries, hygiene items, and resource navigation for low-income Dane County households including justice-involved adults reestablishing food security after release. Availability varies by season and donations; call ahead when possible to confirm clothing, hygiene kits, or furniture pickup hours. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "The River Food Pantry — Madison sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Dane. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "dane|basic-needs|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "312": {
+    "description": "St. Vincent de Paul — Madison District Council serves justice-involved adults and families rebuilding stability after incarceration in Dane County. Society of St. Vincent de Paul Madison provides emergency food, clothing, furniture, and utility assistance for low-income Dane County residents including justice-involved adults rebuilding stability after incarceration. Availability varies by season and donations; call ahead when possible to confirm clothing, hygiene kits, or furniture pickup hours. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "St. Vincent de Paul — Madison District Council sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Dane. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "dane|basic-needs|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "313": {
+    "description": "Community Clothes Closet — Menasha serves justice-involved adults and families rebuilding stability after incarceration in Winnebago, Outagamie, and Calumet counties. Community Clothes Closet provides free clothing, hygiene kits, and basic household items for low-income Fox Valley residents including justice-involved adults preparing for job interviews after release. Availability varies by season and donations; call ahead when possible to confirm clothing, hygiene kits, or furniture pickup hours. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Community Clothes Closet — Menasha sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en los condados Winnebago, Outagamie y Calumet. La disponibilidad varía según la temporada y donaciones; llame cuando sea posible para confirmar horarios de ropa, kits de higiene o muebles. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "winnebago|basic-needs|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "314": {
+    "description": "La Crosse County Hunger Task Force is a statewide or regional referral resource for Wisconsinites affected by the criminal justice system. La Crosse County Hunger Task Force coordinates emergency food distribution and pantry referrals for food-insecure western Wisconsin residents including returning citizens connecting to ACCESS Wisconsin and Job Center La Crosse. Users can search by location, service type, or need to find active providers in 6 Wisconsin counties. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "La Crosse County Hunger Task Force es un recurso de referencia estatal o regional para habitantes de Wisconsin afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en 6 condados de Wisconsin. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "la-crosse|basic-needs|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "315": {
+    "description": "Legal Action of Wisconsin — Green Bay Office serves justice-involved adults and families rebuilding stability after incarceration in Brown County. Legal Action of Wisconsin — Green Bay Office provides free civil legal aid for low-income Brown County residents including housing, public benefits, family law, and record-related matters for justice-involved clients. Does not handle criminal defense. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Legal Action of Wisconsin — Green Bay Office ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Brown. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "brown|legal-aid|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "316": {
+    "description": "Legal Action of Wisconsin — Wausau Office serves justice-involved adults and families rebuilding stability after incarceration in Marathon County. Legal Action of Wisconsin — Wausau Office provides free civil legal aid for low-income Marathon County residents including housing, public benefits, family law, and record-related matters for justice-involved clients. Does not handle criminal defense. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Legal Action of Wisconsin — Wausau Office ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Marathon. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "marathon|legal-aid|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "317": {
+    "description": "Legal Action of Wisconsin — Oshkosh Office serves justice-involved adults and families rebuilding stability after incarceration in Winnebago County. Legal Action of Wisconsin — Oshkosh Office provides free civil legal aid for low-income Winnebago County residents including housing, public benefits, family law, and record-related matters for justice-involved clients. Does not handle criminal defense. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Legal Action of Wisconsin — Oshkosh Office ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Winnebago. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "winnebago|legal-aid|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "318": {
+    "description": "Wisconsin Judicare — Wausau serves justice-involved adults and families rebuilding stability after incarceration in Marathon County. Wisconsin Judicare — Wausau provides free civil legal aid for low-income Marathon County residents including housing, public benefits, family law, and record-related matters for justice-involved clients. Does not handle criminal defense. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Wisconsin Judicare — Wausau ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Marathon. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "marathon|legal-aid|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "319": {
+    "description": "Wisconsin Judicare — Rhinelander serves justice-involved adults and families rebuilding stability after incarceration in Oneida County. Wisconsin Judicare — Rhinelander provides free civil legal aid for low-income Oneida County residents including housing, public benefits, family law, and record-related matters for justice-involved clients. Does not handle criminal defense. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Wisconsin Judicare — Rhinelander ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Oneida. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "oneida|legal-aid|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "320": {
+    "description": "Wisconsin Judicare — Superior serves justice-involved adults and families rebuilding stability after incarceration in Douglas County. Wisconsin Judicare — Superior provides free civil legal aid for low-income Douglas County residents including housing, public benefits, family law, and record-related matters for justice-involved clients. Does not handle criminal defense. Representation is limited to civil legal matters—not active criminal cases. Income, household size, and offense type determine eligibility for record relief. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Wisconsin Judicare — Superior ofrece asistencia legal civil gratuita o de bajo costo para residentes de bajos ingresos en condado de Douglas. Los abogados ayudan con sellado o eliminación de antecedentes, desalojos, beneficios y otros asuntos civiles—no casos penales activos. La representación se limita a asuntos legales civiles—no casos penales activos. Ingresos, tamaño del hogar y tipo de delito determinan la elegibilidad para alivio de antecedentes. Contacte la oficina para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "douglas|legal-aid|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "321": {
+    "description": "Northeast Wisconsin Technical College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Brown County. Northeast Wisconsin Technical College — Adult Education offers GED/HSED preparation, adult basic education, and workforce-aligned skills training for justice-involved adults in Brown County seeking credentials for Job Center of Wisconsin employment services after release. Classes are typically free or low-cost for Wisconsin adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Northeast Wisconsin Technical College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Brown. Las clases suelen ser gratuitas o de bajo costo para adultos en Wisconsin; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "brown|education|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "322": {
+    "description": "Western Technical College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in La Crosse County. Western Technical College — Adult Education offers GED/HSED preparation, adult basic education, and workforce-aligned skills training for justice-involved adults in La Crosse County seeking credentials for Job Center of Wisconsin employment services after release. Classes are typically free or low-cost for Wisconsin adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Western Technical College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de La Crosse. Las clases suelen ser gratuitas o de bajo costo para adultos en Wisconsin; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "la-crosse|education|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "323": {
+    "description": "Chippewa Valley Technical College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Eau Claire County. Chippewa Valley Technical College — Adult Education offers GED/HSED preparation, adult basic education, and workforce-aligned skills training for justice-involved adults in Eau Claire County seeking credentials for Job Center of Wisconsin employment services after release. Classes are typically free or low-cost for Wisconsin adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Chippewa Valley Technical College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Eau Claire. Las clases suelen ser gratuitas o de bajo costo para adultos en Wisconsin; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "eau-claire|education|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "324": {
+    "description": "Waukesha County Technical College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Waukesha County. Waukesha County Technical College — Adult Education offers GED/HSED preparation, adult basic education, and workforce-aligned skills training for justice-involved adults in Waukesha County seeking credentials for Job Center of Wisconsin employment services after release. Classes are typically free or low-cost for Wisconsin adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Waukesha County Technical College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Waukesha. Las clases suelen ser gratuitas o de bajo costo para adultos en Wisconsin; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "waukesha|education|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "325": {
+    "description": "Gateway Technical College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Kenosha County. Gateway Technical College — Adult Education offers GED/HSED preparation, adult basic education, and workforce-aligned skills training for justice-involved adults in Kenosha County seeking credentials for Job Center of Wisconsin employment services after release. Classes are typically free or low-cost for Wisconsin adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Gateway Technical College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Kenosha. Las clases suelen ser gratuitas o de bajo costo para adultos en Wisconsin; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "kenosha|education|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "326": {
+    "description": "Blackhawk Technical College — Adult Education serves justice-involved adults and families rebuilding stability after incarceration in Rock County. Blackhawk Technical College — Adult Education offers GED/HSED preparation, adult basic education, and workforce-aligned skills training for justice-involved adults in Rock County seeking credentials for Job Center of Wisconsin employment services after release. Classes are typically free or low-cost for Wisconsin adults; orientation may be required before enrollment in GED or vocational tracks. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Blackhawk Technical College — Adult Education sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Rock. Las clases suelen ser gratuitas o de bajo costo para adultos en Wisconsin; puede requerirse orientación antes de inscribirse en GED o capacitación vocacional. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "rock|education|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "327": {
+    "description": "Milwaukee County Veterans Service Office serves justice-involved adults and families rebuilding stability after incarceration in Milwaukee County. The Milwaukee County Veterans Service Office helps justice-involved veterans access VA health care, disability compensation, education benefits, and housing resources through accredited benefits counselors in Milwaukee County. Free claims assistance—not emergency shelter. VA eligibility and discharge status affect which benefits apply; ask specifically for justice-involved veteran or VJO/HCRV services when calling. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Milwaukee County Veterans Service Office sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Milwaukee. La elegibilidad del VA y el tipo de baja afectan qué beneficios aplican; pida específicamente servicios VJO/HCRV o para veteranos en el sistema de justicia al llamar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "milwaukee|veterans|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "328": {
+    "description": "Dane County Veterans Service Office serves justice-involved adults and families rebuilding stability after incarceration in Dane County. The Dane County Veterans Service Office helps justice-involved veterans access VA health care, disability compensation, education benefits, and housing resources through accredited benefits counselors in Dane County. Free claims assistance—not emergency shelter. VA eligibility and discharge status affect which benefits apply; ask specifically for justice-involved veteran or VJO/HCRV services when calling. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Dane County Veterans Service Office sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Dane. La elegibilidad del VA y el tipo de baja afectan qué beneficios aplican; pida específicamente servicios VJO/HCRV o para veteranos en el sistema de justicia al llamar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "dane|veterans|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "329": {
+    "description": "Brown County Veterans Service Office serves justice-involved adults and families rebuilding stability after incarceration in Brown County. The Brown County Veterans Service Office helps justice-involved veterans access VA health care, disability compensation, education benefits, and housing resources through accredited benefits counselors in Brown County. Free claims assistance—not emergency shelter. VA eligibility and discharge status affect which benefits apply; ask specifically for justice-involved veteran or VJO/HCRV services when calling. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Brown County Veterans Service Office sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Brown. La elegibilidad del VA y el tipo de baja afectan qué beneficios aplican; pida específicamente servicios VJO/HCRV o para veteranos en el sistema de justicia al llamar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "brown|veterans|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "330": {
+    "description": "Waukesha County Veterans Service Office serves justice-involved adults and families rebuilding stability after incarceration in Waukesha County. The Waukesha County Veterans Service Office helps justice-involved veterans access VA health care, disability compensation, education benefits, and housing resources through accredited benefits counselors in Waukesha County. Free claims assistance—not emergency shelter. VA eligibility and discharge status affect which benefits apply; ask specifically for justice-involved veteran or VJO/HCRV services when calling. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Waukesha County Veterans Service Office sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Waukesha. La elegibilidad del VA y el tipo de baja afectan qué beneficios aplican; pida específicamente servicios VJO/HCRV o para veteranos en el sistema de justicia al llamar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "waukesha|veterans|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "331": {
+    "description": "Racine County Veterans Service Office serves justice-involved adults and families rebuilding stability after incarceration in Racine County. The Racine County Veterans Service Office helps justice-involved veterans access VA health care, disability compensation, education benefits, and housing resources through accredited benefits counselors in Racine County. Free claims assistance—not emergency shelter. VA eligibility and discharge status affect which benefits apply; ask specifically for justice-involved veteran or VJO/HCRV services when calling. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Racine County Veterans Service Office sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Racine. La elegibilidad del VA y el tipo de baja afectan qué beneficios aplican; pida específicamente servicios VJO/HCRV o para veteranos en el sistema de justicia al llamar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "racine|veterans|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "332": {
+    "description": "Kenosha County Veterans Service Office serves justice-involved adults and families rebuilding stability after incarceration in Kenosha County. The Kenosha County Veterans Service Office helps justice-involved veterans access VA health care, disability compensation, education benefits, and housing resources through accredited benefits counselors in Kenosha County. Free claims assistance—not emergency shelter. VA eligibility and discharge status affect which benefits apply; ask specifically for justice-involved veteran or VJO/HCRV services when calling. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Kenosha County Veterans Service Office sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Kenosha. La elegibilidad del VA y el tipo de baja afectan qué beneficios aplican; pida específicamente servicios VJO/HCRV o para veteranos en el sistema de justicia al llamar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "kenosha|veterans|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "333": {
+    "description": "Marathon County Veterans Service Office serves justice-involved adults and families rebuilding stability after incarceration in Marathon County. The Marathon County Veterans Service Office helps justice-involved veterans access VA health care, disability compensation, education benefits, and housing resources through accredited benefits counselors in Marathon County. Free claims assistance—not emergency shelter. VA eligibility and discharge status affect which benefits apply; ask specifically for justice-involved veteran or VJO/HCRV services when calling. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Marathon County Veterans Service Office sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en condado de Marathon. La elegibilidad del VA y el tipo de baja afectan qué beneficios aplican; pida específicamente servicios VJO/HCRV o para veteranos en el sistema de justicia al llamar. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "marathon|veterans|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "334": {
+    "description": "ForwardHealth — BadgerCare Plus Enrollment serves justice-involved adults and families rebuilding stability after incarceration in throughout Wisconsin. ForwardHealth administers BadgerCare Plus and Medicaid managed care enrollment for eligible low-income Wisconsin residents statewide through ACCESS Wisconsin and county DHS eligibility offices. Returning citizens can apply before or immediately after release for prescription and primary care coverage. State offices provide information and referrals statewide; county and nonprofit partners deliver most direct services. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "ForwardHealth — BadgerCare Plus Enrollment sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Wisconsin. Las oficinas estatales ofrecen información y referencias en todo el estado; socios del condado y sin fines de lucro prestan la mayoría de servicios directos. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "dane|state-agency|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "335": {
+    "description": "Wisconsin Works (W-2) — Employment & Training serves justice-involved adults and families rebuilding stability after incarceration in throughout Wisconsin. Wisconsin Works (W-2) provides employment, training, and case management for eligible parents transitioning from cash assistance to work across Wisconsin, coordinated through county W-2 agencies and ACCESS Wisconsin. Justice-involved parents may qualify for W-2 placement and support services. State offices provide information and referrals statewide; county and nonprofit partners deliver most direct services. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Wisconsin Works (W-2) — Employment & Training sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Wisconsin. Las oficinas estatales ofrecen información y referencias en todo el estado; socios del condado y sin fines de lucro prestan la mayoría de servicios directos. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "statewide|state-agency|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  },
+  "336": {
+    "description": "Wisconsin DMV — ID Petition Process (Voter ID) serves justice-involved adults and families rebuilding stability after incarceration in throughout Wisconsin. Wisconsin DMV provides free state ID cards for voting and general identification through the ID Petition Process for residents who lack required documents, helping returning citizens obtain IDs needed for employment, housing, and benefits enrollment after release. Fees, proof of identity, and residency documents apply; reentry resources and legal aid partners often help gather required paperwork. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Wisconsin DMV — ID Petition Process (Voter ID) sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Wisconsin. Aplican tarifas, prueba de identidad y documentos de residencia; recursos de reinserción y aliados legales suelen ayudar a reunir el papeleo requerido. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "statewide|id-documentation|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "337": {
+    "description": "Wisconsin Register of Deeds Association — Vital Records Guide serves justice-involved adults and families rebuilding stability after incarceration in throughout Wisconsin. County Register of Deeds offices issue Wisconsin birth certificates and marriage records needed for state ID, benefits, and employment verification. Returning citizens can order certified copies through their county of birth or the Wisconsin Vital Records Office in Madison. Fees, proof of identity, and residency documents apply; reentry resources and legal aid partners often help gather required paperwork. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Wisconsin Register of Deeds Association — Vital Records Guide sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en en todo Wisconsin. Aplican tarifas, prueba de identidad y documentos de residencia; recursos de reinserción y aliados legales suelen ayudar a reunir el papeleo requerido. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "dane|id-documentation|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "338": {
+    "description": "Rogers Behavioral Health — Addiction Recovery serves justice-involved adults and families rebuilding stability after incarceration in 5 Wisconsin counties. Rogers Behavioral Health provides residential and outpatient substance use and mental health treatment including specialized programs for justice-involved adults in Wisconsin, accepting Medicaid and offering MAT at select sites. Clinical treatment—not a walk-in probation or benefits office. Treatment may require assessment, insurance or Medicaid enrollment, and referral from courts or corrections for some beds—call intake to confirm openings. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "Rogers Behavioral Health — Addiction Recovery sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 5 condados de Wisconsin. El tratamiento puede requerir evaluación, seguro o Medicaid y referencia de tribunales o correcciones para algunas plazas—llame a admisión para confirmar disponibilidad. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "waukesha|substance-use-treatment|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record|referral_required"
+  },
+  "339": {
+    "description": "WDOC — Agent Station Oshkosh serves justice-involved adults and families rebuilding stability after incarceration in 7 Wisconsin counties. The WDOC Oshkosh agent station supervises probationers and parolees in the Fox Valley region, connecting supervisees to Job Center Appleton, ACCESS Wisconsin, and regional treatment providers as conditions of release. Contact your assigned agent—not a walk-in benefits intake center. This office handles supervision compliance and reporting—not emergency reentry navigation; ask your officer for referrals to local reentry partners. Contact this resource to confirm current intake steps, required documents, and whether walk-ins or referrals are accepted.",
+    "description_es": "WDOC — Agent Station Oshkosh sirve a adultos con antecedentes penales y familias que reconstruyen estabilidad después de la encarcelación en 7 condados de Wisconsin. Esta oficina maneja cumplimiento de supervisión e informes—no navegación de crisis de reinserción; pida a su oficial referencias a aliados locales de reinserción. Contacte este recurso para confirmar pasos de admisión, documentos requeridos y si aceptan visitas sin cita o referencias.",
+    "tags": "winnebago|probation-parole|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": "accepts_criminal_record"
+  },
+  "340": {
+    "description": "Wisconsin Innocence Project — Reentry Legal Navigation is a statewide or regional referral resource for Wisconsinites affected by the criminal justice system. The Wisconsin Innocence Project at UW Law School provides legal education, record-relief navigation resources, and referrals for wrongfully convicted and justice-impacted Wisconsinites seeking expungement and civil legal support after release. Legal education and referrals—not emergency housing or cash assistance. Users can search by location, service type, or need to find active providers in throughout Wisconsin. Specialists or online tools help match people to housing, treatment, employment, legal aid, or benefits resources operated by other organizations. This entry describes a navigation hub—staff here do not replace direct services at partner agencies.",
+    "description_es": "Wisconsin Innocence Project — Reentry Legal Navigation es un recurso de referencia estatal o regional para habitantes de Wisconsin afectados por el sistema de justicia penal. Los usuarios pueden buscar por ubicación, tipo de servicio o necesidad para encontrar proveedores activos en en todo Wisconsin. Herramientas en línea o especialistas ayudan a conectar con vivienda, tratamiento, empleo, asistencia legal o beneficios operados por otras organizaciones. Esta entrada describe un centro de navegación—el personal no reemplaza servicios directos en agencias aliadas.",
+    "tags": "dane|reentry-organizations|reentry|wisconsin",
+    "services": "Program services|Partner referrals|Reentry navigation",
+    "intake_signals": ""
+  }
+}

@@ -1,16 +1,18 @@
 /** Nav header app name color */
-export const siteBrandNavTitleColorClass = "text-[#101729]";
+export const siteBrandNavTitleColorClass = "text-foreground";
 
 /** Shared typography + layout for header/footer site branding. */
 export const siteBrandTitleClass =
-  "block h-5 truncate text-lg font-bold leading-5";
+  "block truncate font-heading text-[19px] font-extrabold leading-none tracking-tight";
+
+export const siteBrandHeaderLogoClass = "h-[34px] w-[34px]";
 
 export const siteBrandTaglineClass =
   "block h-5 truncate text-sm leading-5";
 
 export const siteBrandLogoClass = "h-10 w-auto";
 
-export const siteBrandLockupGapClass = "gap-3";
+export const siteBrandLockupGapClass = "gap-[11px]";
 
 export const siteBrandTextOffsetClass = "translate-y-[2px]";
 

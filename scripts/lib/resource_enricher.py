@@ -120,6 +120,132 @@ STATE_PRESETS: dict[str, dict[str, str]] = {
         "residents_es": "residentes de Georgia",
         "tag": "georgia",
     },
+    "North Carolina": {
+        "name": "North Carolina",
+        "demonym": "North Carolinians",
+        "demonym_es": "carolinenses del norte",
+        "throughout": "throughout North Carolina",
+        "throughout_es": "en toda Carolina del Norte",
+        "counties_n": "North Carolina counties",
+        "counties_n_es": "condados de Carolina del Norte",
+        "adults": "North Carolina adults",
+        "adults_es": "adultos en Carolina del Norte",
+        "residents": "North Carolina residents",
+        "residents_es": "residentes de Carolina del Norte",
+        "tag": "north-carolina",
+    },
+    "Virginia": {
+        "name": "Virginia",
+        "demonym": "Virginians",
+        "demonym_es": "virginianos",
+        "throughout": "throughout Virginia",
+        "throughout_es": "en toda Virginia",
+        "counties_n": "Virginia localities",
+        "counties_n_es": "localidades de Virginia",
+        "adults": "Virginia adults",
+        "adults_es": "adultos en Virginia",
+        "residents": "Virginia residents",
+        "residents_es": "residentes de Virginia",
+        "tag": "virginia",
+    },
+    "South Carolina": {
+        "name": "South Carolina",
+        "demonym": "South Carolinians",
+        "demonym_es": "carolinenses del sur",
+        "throughout": "throughout South Carolina",
+        "throughout_es": "en toda Carolina del Sur",
+        "counties_n": "South Carolina counties",
+        "counties_n_es": "condados de Carolina del Sur",
+        "adults": "South Carolina adults",
+        "adults_es": "adultos en Carolina del Sur",
+        "residents": "South Carolina residents",
+        "residents_es": "residentes de Carolina del Sur",
+        "tag": "south-carolina",
+    },
+    "Alabama": {
+        "name": "Alabama",
+        "demonym": "Alabamians",
+        "demonym_es": "alabameños",
+        "throughout": "throughout Alabama",
+        "throughout_es": "en todo Alabama",
+        "counties_n": "Alabama counties",
+        "counties_n_es": "condados de Alabama",
+        "adults": "Alabama adults",
+        "adults_es": "adultos en Alabama",
+        "residents": "Alabama residents",
+        "residents_es": "residentes de Alabama",
+        "tag": "alabama",
+    },
+    "Arizona": {
+        "name": "Arizona",
+        "demonym": "Arizonans",
+        "demonym_es": "arizonenses",
+        "throughout": "throughout Arizona",
+        "throughout_es": "en todo Arizona",
+        "counties_n": "Arizona counties",
+        "counties_n_es": "condados de Arizona",
+        "adults": "Arizona adults",
+        "adults_es": "adultos en Arizona",
+        "residents": "Arizona residents",
+        "residents_es": "residentes de Arizona",
+        "tag": "arizona",
+    },
+    "Florida": {
+        "name": "Florida",
+        "demonym": "Floridians",
+        "demonym_es": "floridanos",
+        "throughout": "throughout Florida",
+        "throughout_es": "en todo Florida",
+        "counties_n": "Florida counties",
+        "counties_n_es": "condados de Florida",
+        "adults": "Florida adults",
+        "adults_es": "adultos en Florida",
+        "residents": "Florida residents",
+        "residents_es": "residentes de Florida",
+        "tag": "florida",
+    },
+    "Mississippi": {
+        "name": "Mississippi",
+        "demonym": "Mississippians",
+        "demonym_es": "misisipianos",
+        "throughout": "throughout Mississippi",
+        "throughout_es": "en todo Mississippi",
+        "counties_n": "Mississippi counties",
+        "counties_n_es": "condados de Mississippi",
+        "adults": "Mississippi adults",
+        "adults_es": "adultos en Mississippi",
+        "residents": "Mississippi residents",
+        "residents_es": "residentes de Mississippi",
+        "tag": "mississippi",
+    },
+    "Wisconsin": {
+        "name": "Wisconsin",
+        "demonym": "Wisconsinites",
+        "demonym_es": "habitantes de Wisconsin",
+        "throughout": "throughout Wisconsin",
+        "throughout_es": "en todo Wisconsin",
+        "counties_n": "Wisconsin counties",
+        "counties_n_es": "condados de Wisconsin",
+        "adults": "Wisconsin adults",
+        "adults_es": "adultos en Wisconsin",
+        "residents": "Wisconsin residents",
+        "residents_es": "residentes de Wisconsin",
+        "tag": "wisconsin",
+    },
+    "Texas": {
+        "name": "Texas",
+        "demonym": "Texans",
+        "demonym_es": "texanos",
+        "throughout": "throughout Texas",
+        "throughout_es": "en todo Texas",
+        "counties_n": "Texas counties",
+        "counties_n_es": "condados de Texas",
+        "adults": "Texas adults",
+        "adults_es": "adultos en Texas",
+        "residents": "Texas residents",
+        "residents_es": "residentes de Texas",
+        "tag": "texas",
+    },
 }
 
 _STATE = STATE_PRESETS["Ohio"]
@@ -138,6 +264,24 @@ def infer_state_from_csv_path(path: str) -> str:
         return "Illinois"
     if "west-virginia" in stem or "west_virginia" in stem:
         return "West Virginia"
+    if "south-carolina" in stem or "south_carolina" in stem:
+        return "South Carolina"
+    if "alabama" in stem:
+        return "Alabama"
+    if "arizona" in stem:
+        return "Arizona"
+    if "florida" in stem:
+        return "Florida"
+    if "mississippi" in stem:
+        return "Mississippi"
+    if "wisconsin" in stem:
+        return "Wisconsin"
+    if "texas" in stem:
+        return "Texas"
+    if "virginia" in stem:
+        return "Virginia"
+    if "north-carolina" in stem or "north_carolina" in stem:
+        return "North Carolina"
     if "georgia" in stem:
         return "Georgia"
     if "tennessee" in stem:

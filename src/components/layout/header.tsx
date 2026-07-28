@@ -18,17 +18,17 @@ import {
 import { HeaderBrandingLockup } from "@/components/layout/header-branding-lockup";
 import {
   HEADER_SHELL_TRANSITION,
-  headerButtonSizeClass,
+  headerCtaClass,
   headerHomeLinkClass,
   headerIconActionClass,
   headerIconButtonClass,
   headerMobileLinkClass,
   headerNavLinkClass,
+  headerOutlineActionClass,
+  headerTextActionClass,
 } from "@/components/layout/header-control-styles";
-import { parseNavTaglinePhrases } from "@/lib/nav-tagline-phrases";
 import { cn } from "@/lib/utils";
 import { useAuth } from "@/lib/auth-context";
-import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useTranslations } from "@/i18n/locale-context";
 import { useFacilityTabletStatus } from "@/hooks/use-facility-tablet-status";
@@ -46,25 +46,25 @@ function getNavLayout(locale: Locale, loading: boolean, user: unknown, isAdmin: 
 }
 
 const DESKTOP_NAV_CLASSES: Record<NavLayout, string> = {
-  en: "hidden min-[1400px]:flex",
+  en: "hidden min-[1180px]:flex",
   "es-guest": "hidden min-[1180px]:flex",
-  "es-user": "hidden min-[1380px]:flex",
-  "es-admin": "hidden min-[1540px]:flex",
+  "es-user": "hidden min-[1280px]:flex",
+  "es-admin": "hidden min-[1380px]:flex",
 };
 
 const MOBILE_NAV_CLASSES: Record<NavLayout, string> = {
-  en: "min-[1400px]:hidden",
+  en: "min-[1180px]:hidden",
   "es-guest": "min-[1180px]:hidden",
-  "es-user": "min-[1380px]:hidden",
-  "es-admin": "min-[1540px]:hidden",
+  "es-user": "min-[1280px]:hidden",
+  "es-admin": "min-[1380px]:hidden",
 };
 
 import type { SiteBranding } from "@/i18n/localize-content";
 
 const COMPACT_ENTER_Y = 72;
 const COMPACT_EXIT_Y = 8;
-const FULL_HEADER_HEIGHT = "5rem";
-const COMPACT_HEADER_HEIGHT = "3.5rem";
+const FULL_HEADER_HEIGHT = "4.375rem";
+const COMPACT_HEADER_HEIGHT = "3.25rem";
 
 interface HeaderProps {
   branding: SiteBranding;
@@ -76,6 +76,7 @@ export function Header({ branding }: HeaderProps) {
   const { user, isAdmin, signOut, loading, signingOut } = useAuth();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isCompact, setIsCompact] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const isCompactRef = useRef(false);
   const scrollRafRef = useRef<number | null>(null);
   const { t, locale } = useTranslations();
@@ -116,6 +117,8 @@ export function Header({ branding }: HeaderProps) {
       scrollRafRef.current = null;
       const y = window.scrollY;
 
+      setIsScrolled(y > 8);
+
       if (!isCompactRef.current && y >= COMPACT_ENTER_Y) {
         applyCompact(true);
       } else if (isCompactRef.current && y <= COMPACT_EXIT_Y) {
@@ -139,44 +142,39 @@ export function Header({ branding }: HeaderProps) {
     };
   }, []);
 
-  const taglinePhrases = useMemo(
-    () =>
-      parseNavTaglinePhrases(branding.navTagline, [
-        t("nav.taglinePhrase1"),
-        t("nav.taglinePhrase2"),
-        t("nav.taglinePhrase3"),
-      ]),
-    [branding.navTagline, t]
-  );
-
   const navLinks = useMemo(
     () => [
       { href: "/resources", label: t("nav.findResources"), icon: Search },
+      { href: "/#how-it-works", label: t("nav.howItWorks"), icon: BookOpen },
+      { href: "/contact", label: t("nav.forCaseWorkers"), icon: BookOpen },
+      { href: "/about", label: t("nav.about"), icon: BookOpen },
       ...(user
         ? [
             { href: "/saved", label: t("nav.saved"), icon: Heart },
             { href: "/dashboard", label: t("nav.dashboard"), icon: LayoutDashboard },
           ]
         : []),
-      { href: "/faq", label: t("nav.faqShort"), icon: BookOpen },
     ],
     [t, user]
   );
 
-  const isActive = (href: string) =>
-    pathname === href || (href !== "/" && pathname.startsWith(href));
+  const isActive = (href: string) => {
+    if (href.startsWith("/#")) {
+      return pathname === "/";
+    }
+    return pathname === href || (href !== "/" && pathname.startsWith(href));
+  };
 
   const mobileLinkIcon = "h-5 w-5 shrink-0 text-primary";
 
   return (
     <header
       data-compact={isCompact || undefined}
+      data-scrolled={isScrolled || undefined}
       className={cn(
-        "sticky top-0 z-[60] shrink-0 border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/90",
+        "app-site-header sticky top-0 z-[60] shrink-0 border-b border-border bg-card transition-[box-shadow] duration-300 ease-out",
         HEADER_SHELL_TRANSITION,
-        isCompact
-          ? "min-h-[var(--site-header-height-compact)] shadow-sm"
-          : "min-h-[var(--site-header-height)]"
+        isCompact && "shadow-sm"
       )}
     >
       <a href="#main-content" className="skip-link">
@@ -185,12 +183,8 @@ export function Header({ branding }: HeaderProps) {
 
       <div
         className={cn(
-          "mx-auto flex w-full items-center justify-between gap-3 px-4 sm:gap-4 sm:px-6 lg:px-8",
-          HEADER_SHELL_TRANSITION,
-          isCompact
-            ? "min-h-[var(--site-header-height-compact)]"
-            : "min-h-[var(--site-header-height)]",
-          locale === "es" ? "max-w-none" : "max-w-7xl"
+          "app-site-header__inner mx-auto flex w-full max-w-[1280px] items-center justify-between gap-4 px-4 sm:px-9",
+          HEADER_SHELL_TRANSITION
         )}
       >
         <Link
@@ -198,16 +192,14 @@ export function Header({ branding }: HeaderProps) {
           className={headerHomeLinkClass()}
           aria-label={t("nav.homeAriaLabel", { brand: branding.brandName })}
         >
-          <HeaderBrandingLockup
-            brandName={branding.brandName}
-            taglinePhrases={taglinePhrases}
-            textWrapperClassName="hidden min-w-0 sm:flex"
-            compact={isCompact}
-          />
+          <HeaderBrandingLockup brandName={branding.brandName} compact={isCompact} />
         </Link>
 
         <nav
-          className={cn("shrink-0 flex-nowrap items-center gap-1", desktopNavClasses)}
+          className={cn(
+            "min-w-0 flex-1 flex-nowrap items-center justify-center gap-6 lg:gap-8",
+            desktopNavClasses
+          )}
           aria-label={t("nav.mainNav")}
         >
           {navLinks.map(({ href, label }) => (
@@ -222,10 +214,10 @@ export function Header({ branding }: HeaderProps) {
           ))}
         </nav>
 
-        <div className="flex shrink-0 items-center gap-2">
-          <LanguageSwitcher compact={isCompact} />
+        <div className="flex shrink-0 items-center gap-3 sm:gap-[18px]">
+          <LanguageSwitcher compact={isCompact} minimal />
 
-          <div className={cn("shrink-0 items-center gap-2", desktopNavClasses)}>
+          <div className={cn("shrink-0 items-center gap-3 sm:gap-[18px]", desktopNavClasses)}>
             {!loading && (
               <>
                 {user ? (
@@ -236,39 +228,34 @@ export function Header({ branding }: HeaderProps) {
                         className={headerIconActionClass(isCompact, isActive("/admin"))}
                         aria-current={isActive("/admin") ? "page" : undefined}
                       >
-                        <Settings className="h-5 w-5 shrink-0" aria-hidden="true" />
+                        <Settings className="h-4 w-4 shrink-0" aria-hidden="true" />
                         {t("nav.admin")}
                       </Link>
                     )}
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className={cn("shrink-0 whitespace-nowrap", headerButtonSizeClass(isCompact))}
+                    <button
+                      type="button"
+                      className={cn(headerOutlineActionClass(isCompact), "gap-1.5")}
                       onClick={handleSignOut}
-                      loading={signingOut}
+                      disabled={signingOut}
+                      aria-busy={signingOut || undefined}
                     >
-                      <LogOut className="h-5 w-5" aria-hidden="true" />
+                      {signingOut ? (
+                        <Loader2 className="h-4 w-4 shrink-0 animate-spin" aria-hidden="true" />
+                      ) : (
+                        <LogOut className="h-4 w-4 shrink-0" aria-hidden="true" />
+                      )}
                       {t("nav.signOut")}
-                    </Button>
+                    </button>
                   </>
                 ) : (
                   <>
-                    <Link href={signInHref} className="shrink-0">
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        className={cn("whitespace-nowrap", headerButtonSizeClass(isCompact))}
-                      >
-                        <LogIn className="h-5 w-5" aria-hidden="true" />
-                        {t("nav.signIn")}
-                      </Button>
+                    <Link href={signInHref} className={headerTextActionClass(isCompact)}>
+                      {t("nav.signIn")}
                     </Link>
                     {showCreateAccount ? (
-                    <Link href="/signup" className="shrink-0">
-                      <Button size="sm" className={cn("whitespace-nowrap", headerButtonSizeClass(isCompact))}>
-                        {t("nav.createAccount")}
-                      </Button>
-                    </Link>
+                      <Link href="/signup" className={headerCtaClass(isCompact)}>
+                        {t("nav.getStarted")}
+                      </Link>
                     ) : null}
                   </>
                 )}
@@ -284,7 +271,7 @@ export function Header({ branding }: HeaderProps) {
             aria-controls="mobile-menu"
             aria-label={mobileOpen ? t("common.closeMenu") : t("common.openMenu")}
           >
-            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
       </div>
@@ -292,7 +279,7 @@ export function Header({ branding }: HeaderProps) {
       {mobileOpen && (
         <nav
           id="mobile-menu"
-          className={cn("border-t border-border bg-card px-4 py-4", mobileNavClasses)}
+          className={cn("border-t border-border bg-card px-4 py-4 sm:px-9", mobileNavClasses)}
           aria-label={t("nav.mobileNav")}
         >
           <ul className="space-y-1">
@@ -367,12 +354,12 @@ export function Header({ branding }: HeaderProps) {
                       <Link
                         href="/signup"
                         className={cn(
-                          headerMobileLinkClass(false),
-                          "bg-primary font-semibold text-primary-foreground hover:bg-primary-hover"
+                          headerCtaClass(false),
+                          "flex w-full justify-center"
                         )}
                         onClick={() => setMobileOpen(false)}
                       >
-                        {t("nav.createAccount")}
+                        {t("nav.getStarted")}
                       </Link>
                     </li>
                     ) : null}

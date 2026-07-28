@@ -2,7 +2,7 @@
 -- Source file: data/illinois-resources.csv
 -- State: Illinois
 -- UUID prefix: d6000001
--- Generated: 2026-06-24T08:29:11.831Z
+-- Generated: 2026-07-08T05:41:03.754Z
 -- Run after: supabase/migrations/001_initial_schema.sql
 --            supabase/migrations/002_add_description_es.sql
 --            supabase/migrations/004_add_eligibility_es_and_notes.sql

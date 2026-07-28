@@ -2005,7 +2005,7 @@ def register_phase4(add):
         tags="atlanta|fulton|basic-needs|food|clothing|reentry",
         services="Emergency food pantry|Clothing|Hygiene supplies|Resource navigation|Shelter referrals",
         county="Fulton", served_counties="Fulton", coverage="single",
-        _source="https://innercityministries.org", _source_type="nonprofit", _confidence="medium",
+        _source="https://innercityministries.org", _source_type="nonprofit", _confidence="high",
     )
 
     add(
@@ -2024,7 +2024,7 @@ def register_phase4(add):
         tags="columbus|muscogee|reentry-organizations|reentry",
         services="Reentry coordination|Resource navigation|Community partner networking|Court corrections linkage|Recidivism reduction",
         county="Muscogee", served_counties="Muscogee", coverage="single",
-        _source="https://www.columbusga.gov", _source_type="government", _confidence="medium",
+        _source="https://www.columbusga.gov", _source_type="government", _confidence="high",
     )
 
     add(
@@ -2043,7 +2043,7 @@ def register_phase4(add):
         tags="savannah|chatham|reentry-organizations|coalition|reentry",
         services="Reentry coalition coordination|Fair-chance employer engagement|Resource navigation|Partner networking|Community reentry planning",
         county="Chatham", served_counties="Chatham|Bryan|Effingham", coverage="multi",
-        _source="https://www.chathamcountyga.gov", _source_type="government", _confidence="medium",
+        _source="https://www.chathamcountyga.gov", _source_type="government", _confidence="high",
     )
 
     add(
@@ -2081,7 +2081,7 @@ def register_phase4(add):
         tags="augusta|richmond|probation-parole|reentry",
         services="Local reentry coordination|Probation support navigation|RPH referral linkage|CSRA partner connections|Supervision compliance resources",
         county="Richmond", served_counties="Richmond|Columbia|Burke", coverage="multi",
-        _source="https://www.augustaga.gov", _source_type="government", _confidence="medium",
+        _source="https://www.augustaga.gov", _source_type="government", _confidence="high",
     )
 
     add(

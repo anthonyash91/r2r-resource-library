@@ -20,6 +20,15 @@ STATES = [
     ("Illinois", "illinois", "src/lib/illinois/counties.ts", "illinois-resources.csv"),
     ("West Virginia", "west-virginia", "src/lib/west-virginia/counties.ts", "west-virginia-resources.csv"),
     ("Georgia", "georgia", "src/lib/georgia/counties.ts", "georgia-resources.csv"),
+    ("North Carolina", "north-carolina", "src/lib/north-carolina/counties.ts", "north-carolina-resources.csv"),
+    ("Virginia", "virginia", "src/lib/virginia/counties.ts", "virginia-resources.csv"),
+    ("South Carolina", "south-carolina", "src/lib/south-carolina/counties.ts", "south-carolina-resources.csv"),
+    ("Alabama", "alabama", "src/lib/alabama/counties.ts", "alabama-resources.csv"),
+    ("Arizona", "arizona", "src/lib/arizona/counties.ts", "arizona-resources.csv"),
+    ("Florida", "florida", "src/lib/florida/counties.ts", "florida-resources.csv"),
+    ("Mississippi", "mississippi", "src/lib/mississippi/counties.ts", "mississippi-resources.csv"),
+    ("Wisconsin", "wisconsin", "src/lib/wisconsin/counties.ts", "wisconsin-resources.csv"),
+    ("Texas", "texas", "src/lib/texas/counties.ts", "texas-resources.csv"),
 ]
 
 DISPLAY_TO_SLUG = {

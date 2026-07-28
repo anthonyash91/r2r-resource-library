@@ -14,7 +14,14 @@ import { cn } from "@/lib/utils";
 
 const DISMISS_KEY = "reentry_onboarding_banner_dismissed";
 
-const bannerShellClass = "border-b border-primary/20 bg-secondary/80 px-4 py-4 sm:px-6 lg:px-8";
+const bannerShellClass =
+  "border-b border-border bg-[var(--soft)] px-4 py-2.5 sm:px-9";
+
+const onboardingCtaClass =
+  "inline-flex h-auto min-h-0 items-center justify-center rounded-[9px] bg-[var(--coral)] px-3.5 py-1.5 font-heading text-[13px] font-bold leading-none text-white transition-colors hover:bg-[var(--coral-hover)] focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2";
+
+const onboardingDismissClass =
+  "inline-flex h-auto min-h-0 cursor-pointer items-center justify-center rounded-[9px] px-2 py-1.5 font-heading text-[13px] font-semibold leading-none text-muted-foreground transition-colors hover:text-foreground focus-visible:outline focus-visible:outline-3 focus-visible:outline-ring focus-visible:outline-offset-2";
 
 function FacilitySessionBanner({ hasAccount }: { hasAccount: boolean }) {
   const { t } = useTranslations();
@@ -67,26 +74,30 @@ function OnboardingPromptBannerContent({
 
   return (
     <div className={cn(bannerShellClass, "relative")}>
-      <div className="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="pr-8 sm:pr-0">
-          <p className="text-base font-semibold text-foreground">{t("onboarding.bannerTitle")}</p>
-          <p className="mt-1 text-sm text-muted-foreground">{t("onboarding.bannerDesc")}</p>
+      <div className="mx-auto flex max-w-[1180px] flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+        <div className="min-w-0 pr-8 sm:pr-0">
+          <p className="font-heading text-sm font-semibold leading-snug text-foreground">
+            {t("onboarding.bannerTitle")}
+          </p>
+          <p className="mt-0.5 text-[13px] leading-snug text-muted-foreground">
+            {t("onboarding.bannerDesc")}
+          </p>
         </div>
-        <div className="flex flex-wrap items-center gap-2">
-          <Link href="/get-started">
-            <Button size="sm">{t("onboarding.bannerCta")}</Button>
+        <div className="flex shrink-0 flex-wrap items-center gap-2">
+          <Link href="/get-started" className={onboardingCtaClass}>
+            {t("onboarding.bannerCta")}
           </Link>
-          <Button type="button" variant="ghost" size="sm" onClick={onDismiss}>
+          <button type="button" className={onboardingDismissClass} onClick={onDismiss}>
             {t("onboarding.bannerDismiss")}
-          </Button>
+          </button>
         </div>
         <button
           type="button"
           onClick={onDismiss}
-          className="absolute right-3 top-3 rounded-lg p-2 text-muted-foreground hover:bg-muted sm:hidden"
+          className="absolute right-3 top-2 rounded-md p-1 text-muted-foreground hover:bg-muted sm:hidden"
           aria-label={t("onboarding.bannerDismiss")}
         >
-          <X className="h-5 w-5" aria-hidden="true" />
+          <X className="h-4 w-4" aria-hidden="true" />
         </button>
       </div>
     </div>

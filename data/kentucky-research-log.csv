@@ -11,7 +11,7 @@ https://dismas.com,other,2026-06-22,high,Resource id 13: Dismas Charities — Po
 https://voamid.org,nonprofit,2026-06-22,high,Resource id 14: Volunteers of America — Halfway Back Program,14
 https://www.voamid.org/locations/freedom-house/,nonprofit,2026-06-22,high,Resource id 15: Volunteers of America — Freedom House,15
 https://recenterministries.org,nonprofit,2026-06-22,high,Resource id 16: Re:Center Ministries,16
-legacy-curation,legacy,2026-06-22,medium,Historical row 17: Exodus Scholar Homes; see data/enrichments/batch-*.json,17
+https://exodusscholarhomes.org,nonprofit,2026-06-22,high,Resource id 17: Exodus Scholar Homes,17
 https://louhomeless.org/news/gethelp/,nonprofit,2026-06-22,high,Resource id 18: Coalition for the Homeless — Single Point of Entry,18
 https://chrysalishouse.org,nonprofit,2026-06-22,high,Resource id 20: Chrysalis House,20
 https://hopectr.org/what-we-do/recovery-treatment/mens-recovery-program/,nonprofit,2026-06-22,high,Resource id 21: Hope Center — George Privett (Men),21
@@ -201,7 +201,7 @@ https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=3,government,2026
 https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=4,government,2026-06-23,high,Phase 3b gap-fill id 546: DCBS — Allen County Family Support,546
 https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=6,government,2026-06-23,high,Phase 3b gap-fill id 547: DCBS — Ballard County Family Support,547
 https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=7,government,2026-06-23,high,Phase 3b gap-fill id 548: DCBS — Barren County Family Support,548
-https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=9,government,2026-06-23,medium,Phase 3b gap-fill id 549: DCBS — Bell County Family Support,549
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=9,government,2026-06-23,high,Resource id 549: DCBS — Bell County Family Support,549
 https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=12,government,2026-06-23,high,Phase 3b gap-fill id 550: DCBS — Boyd County Family Support,550
 https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=15,government,2026-06-23,high,Phase 3b gap-fill id 551: DCBS — Breathitt County Family Support,551
 https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=16,government,2026-06-23,high,Phase 3b gap-fill id 552: DCBS — Breckinridge County Family Support,552
@@ -213,7 +213,7 @@ https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=24,government,202
 https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=25,government,2026-06-23,high,Phase 3b gap-fill id 558: DCBS — Casey County Family Support,558
 https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=26,government,2026-06-23,high,Phase 3b gap-fill id 559: DCBS — Christian County Family Support,559
 https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=27,government,2026-06-23,high,Phase 3b gap-fill id 560: DCBS — Clark County Family Support,560
-https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=28,government,2026-06-23,medium,Phase 3b gap-fill id 561: DCBS — Clay County Family Support,561
+https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=28,government,2026-06-23,high,Resource id 561: DCBS — Clay County Family Support,561
 https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=29,government,2026-06-23,high,Phase 3b gap-fill id 562: DCBS — Clinton County Family Support,562
 https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=30,government,2026-06-23,high,Phase 3b gap-fill id 563: DCBS — Crittenden County Family Support,563
 https://prd.webapps.chfs.ky.gov/Office_Phone/index.aspx?county=31,government,2026-06-23,high,Phase 3b gap-fill id 564: DCBS — Cumberland County Family Support,564

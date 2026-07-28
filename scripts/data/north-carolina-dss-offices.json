@@ -1,0 +1,702 @@
+[
+  {
+    "county": "Alamance",
+    "city": "Burlington",
+    "address": "319 N. Graham-Hopedale Road, Suite C, Burlington, NC 27217",
+    "phone": "336-570-6532",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/alamance-county-department-social-services"
+  },
+  {
+    "county": "Alexander",
+    "city": "Taylorsville",
+    "address": "604 Seventh St. SW, Taylorsville, NC 28681",
+    "phone": "828-632-1080",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/alexander-county-department-social-services"
+  },
+  {
+    "county": "Alleghany",
+    "city": "Sparta",
+    "address": "Doctor St., Sparta, NC 28675",
+    "phone": "336-372-2411",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/alleghany-county-department-social-services"
+  },
+  {
+    "county": "Anson",
+    "city": "Wadesboro",
+    "address": "118 N. Washington St., Wadesboro, NC 28170",
+    "phone": "704-694-9351",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/anson-county-department-social-services"
+  },
+  {
+    "county": "Ashe",
+    "city": "Jefferson",
+    "address": "150 Government Circle, Suite 1400, Jefferson, NC 28640",
+    "phone": "336-846-5719",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/ashe-county-department-social-services"
+  },
+  {
+    "county": "Avery",
+    "city": "Newland",
+    "address": "358 Beech St., Newland, NC 28657",
+    "phone": "828-733-8230",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/avery-county-department-social-services"
+  },
+  {
+    "county": "Beaufort",
+    "city": "Washington",
+    "address": "632 W. Fifth St., Washington, NC 27889",
+    "phone": "252-975-5500",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/beaufort-county-department-social-services"
+  },
+  {
+    "county": "Bertie",
+    "city": "",
+    "address": "110 Jasper Bazemore Ave. Windsor, NC 27983",
+    "phone": "252-794-5320",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/bertie-county-department-social-services"
+  },
+  {
+    "county": "Bladen",
+    "city": "Elizabethtown",
+    "address": "208 McKay St., Elizabethtown, NC 28337",
+    "phone": "910-862-6800",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/bladen-county-department-social-services"
+  },
+  {
+    "county": "Brunswick",
+    "city": "Bolivia",
+    "address": "60 Government Drive, NE, Bolivia, NC 28422",
+    "phone": "910-253-2077",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/brunswick-county-department-social-services"
+  },
+  {
+    "county": "Buncombe",
+    "city": "",
+    "address": "40 Coxe Ave. Asheville, NC 28802",
+    "phone": "828-250-5500",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/buncombe-county-health-human-services"
+  },
+  {
+    "county": "Burke",
+    "city": "Morganton",
+    "address": "700 East Parker Road, Morganton, NC 28680",
+    "phone": "828-764-9600",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/burke-county-department-social-services"
+  },
+  {
+    "county": "Cabarrus",
+    "city": "Kannapolis",
+    "address": "1303 S. Cannon Blvd., Kannapolis, NC 28083",
+    "phone": "704-920-1400",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/cabarrus-county-department-social-services"
+  },
+  {
+    "county": "Caldwell",
+    "city": "",
+    "address": "Lenoir, NC 28645",
+    "phone": "828-426-8200",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/caldwell-county-department-social-services"
+  },
+  {
+    "county": "Camden",
+    "city": "Camden",
+    "address": "117 NC HWY 343 N, Camden, NC 27921",
+    "phone": "252-331-4787",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/camden-county-department-social-services"
+  },
+  {
+    "county": "Carteret",
+    "city": "Beaufort",
+    "address": "210 Craven St., Beaufort, NC 28516",
+    "phone": "252-728-3181",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/carteret-county-department-social-services"
+  },
+  {
+    "county": "Caswell",
+    "city": "Yanceyville",
+    "address": "175 County Park Road., Yanceyville, NC 27379",
+    "phone": "336-694-4141",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/caswell-county-department-social-services"
+  },
+  {
+    "county": "Catawba",
+    "city": "Hickory",
+    "address": "3030 11th Ave. Drive, S.E., Hickory, NC 28602",
+    "phone": "828-695-5600",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/catawba-county-department-social-services"
+  },
+  {
+    "county": "Chatham",
+    "city": "Pittsboro",
+    "address": "102 Camp Drive, Pittsboro, NC 27312",
+    "phone": "919-542-2759",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/chatham-county-department-social-services"
+  },
+  {
+    "county": "Cherokee",
+    "city": "Murphy",
+    "address": "4800 W US Highway 64, Murphy, NC 28906",
+    "phone": "828-837-7455",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/cherokee-county-department-social-services"
+  },
+  {
+    "county": "Chowan",
+    "city": "Edenton",
+    "address": "100 W. Freemason Circle, Edenton, NC 27932",
+    "phone": "252-482-7441",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/chowan-county-department-social-services"
+  },
+  {
+    "county": "Clay",
+    "city": "Hayesville",
+    "address": "119 Courthouse Drive, Hayesville, NC 28904",
+    "phone": "828-389-6301",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/clay-county-department-social-services"
+  },
+  {
+    "county": "Cleveland",
+    "city": "Shelby",
+    "address": "130 South Post Road, Shelby, NC 28150",
+    "phone": "704-487-0661",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/cleveland-county-department-social-services"
+  },
+  {
+    "county": "Columbus",
+    "city": "Whiteville",
+    "address": "40 Government Complex Road, Whiteville, NC 28472",
+    "phone": "910-642-2800",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/columbus-county-department-social-services"
+  },
+  {
+    "county": "Craven",
+    "city": "New Bern",
+    "address": "2818 Neuse Blvd., New Bern, NC 28561",
+    "phone": "252-636-4900",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/craven-county-department-social-services"
+  },
+  {
+    "county": "Cumberland",
+    "city": "Fayetteville",
+    "address": "1225 Ramsey St., Fayetteville, NC 28301",
+    "phone": "910-323-1540",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/cumberland-county-department-social-services"
+  },
+  {
+    "county": "Currituck",
+    "city": "Currituck",
+    "address": "2793 Caratoke Hwy., Currituck, NC 27929",
+    "phone": "252-232-3083",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/currituck-county-department-social-services"
+  },
+  {
+    "county": "Dare",
+    "city": "Manteo",
+    "address": "109 Exeter St., Manteo, NC 27954",
+    "phone": "252-475-5500",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/dare-county-health-and-human-services"
+  },
+  {
+    "county": "Davidson",
+    "city": "Lexington",
+    "address": "913 Greensboro St., Lexington, NC 27292",
+    "phone": "336-242-2500",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/davidson-county-department-social-services"
+  },
+  {
+    "county": "Davie",
+    "city": "Mocksville",
+    "address": "154 Government Center Drive, Mocksville, NC 27028",
+    "phone": "336-753-6250",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/davie-county-department-social-services"
+  },
+  {
+    "county": "Duplin",
+    "city": "Kenansville",
+    "address": "423 N. Main St., Kenansville, NC 28349",
+    "phone": "910-296-2200",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/duplin-county-department-social-services"
+  },
+  {
+    "county": "Durham",
+    "city": "Durham",
+    "address": "414 E. Main St., Durham, NC 27702-0810",
+    "phone": "919-560-8000",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/durham-county-department-social-services"
+  },
+  {
+    "county": "Edgecombe",
+    "city": "Tarboro",
+    "address": "122 E. St. James St., Tarboro, NC 27886",
+    "phone": "252-641-7611",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/edgecombe-county-department-social-services"
+  },
+  {
+    "county": "Forsyth",
+    "city": "Winston-Salem",
+    "address": "741 North Highland Ave., Winston-Salem, NC 27101",
+    "phone": "336-703-3800",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/forsyth-county-department-social-services"
+  },
+  {
+    "county": "Franklin",
+    "city": "Louisburg",
+    "address": "107 Industrial Drive, Louisburg, NC 27549",
+    "phone": "919-496-5721",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/franklin-county-department-social-services"
+  },
+  {
+    "county": "Gaston",
+    "city": "Gastonia",
+    "address": "330 Dr. Martin Luther King Jr. Way, Gastonia, NC 28052",
+    "phone": "704-862-7500",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/gaston-county-health-and-human-services-social-services-division"
+  },
+  {
+    "county": "Gates",
+    "city": "Gatesville",
+    "address": "122 Main St., Gatesville, NC 27938",
+    "phone": "252-357-0075",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/gates-county-department-social-services"
+  },
+  {
+    "county": "Graham",
+    "city": "Robbinsville",
+    "address": "191 P & J Road, Robbinsville, NC 28771",
+    "phone": "828-479-7911",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/graham-county-department-social-services"
+  },
+  {
+    "county": "Granville",
+    "city": "",
+    "address": "410 West Spring St., Oxford NC 27565",
+    "phone": "919-693-1511",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/granville-county-department-social-services"
+  },
+  {
+    "county": "Greene",
+    "city": "Snow Hill",
+    "address": "227 Kingold Blvd. Suite A, Snow Hill, NC 28580",
+    "phone": "252-747-5932",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/greene-county-department-social-services"
+  },
+  {
+    "county": "Guilford",
+    "city": "Greensboro",
+    "address": "1203 Maple St., Greensboro, NC 27405",
+    "phone": "336-641-3000",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/guilford-county-department-social-services"
+  },
+  {
+    "county": "Halifax",
+    "city": "Halifax",
+    "address": "4421 Hwy 301, Halifax, NC 27839",
+    "phone": "252-536-2511",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/halifax-county-department-social-services"
+  },
+  {
+    "county": "Harnett",
+    "city": "Lillington",
+    "address": "311 Cornelius Harnett Blvd., Lillington, NC 27546",
+    "phone": "910-893-7500",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/harnett-county-department-social-services"
+  },
+  {
+    "county": "Haywood",
+    "city": "Clyde",
+    "address": "157 Paragon Parkway, Suite 300, Clyde, NC 28721",
+    "phone": "828-452-6620",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/haywood-county-health-and-human-services"
+  },
+  {
+    "county": "Henderson",
+    "city": "Henderson",
+    "address": "500 North Beckford Drive Suite C, Henderson, NC 27536",
+    "phone": "828-697-5500",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/henderson-county-department-social-services"
+  },
+  {
+    "county": "Hertford",
+    "city": "Winton",
+    "address": "704 N King St., Winton, NC 27986",
+    "phone": "252-358-7830",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/hertford-county-department-social-services"
+  },
+  {
+    "county": "Hoke",
+    "city": "Raeford",
+    "address": "314 South Magnolia St., Raeford, NC 28376",
+    "phone": "910-875-8725",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/hoke-county-department-social-services"
+  },
+  {
+    "county": "Hyde",
+    "city": "Engelhard",
+    "address": "35015 US Hwy 264, Engelhard, NC  27824",
+    "phone": "252-926-4199",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/hyde-county-department-social-services"
+  },
+  {
+    "county": "Iredell",
+    "city": "Statesville",
+    "address": "549 Eastside Drive, Statesville, NC 28625",
+    "phone": "704-873-5631",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/iredell-county-department-social-services"
+  },
+  {
+    "county": "Jackson",
+    "city": "Sylva",
+    "address": "15 Griffin St., Sylva, NC 28779",
+    "phone": "828-586-5546",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/jackson-county-department-social-services"
+  },
+  {
+    "county": "Johnston",
+    "city": "Smithfield",
+    "address": "714 North St., Smithfield, NC 27577",
+    "phone": "919-989-5300",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/johnston-county-department-social-services"
+  },
+  {
+    "county": "Jones",
+    "city": "Trenton",
+    "address": "418 NC HWY 58 N., Unit D, Trenton, NC 28585",
+    "phone": "252-448-2581",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/jones-county-department-social-services"
+  },
+  {
+    "county": "Lee",
+    "city": "Sanford",
+    "address": "530 Carthage St., Sanford, NC 27330",
+    "phone": "919-718-4690",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/lee-county-department-social-services"
+  },
+  {
+    "county": "Lenoir",
+    "city": "Kinston",
+    "address": "130 W. King St., Kinston, NC 28502",
+    "phone": "252-559-6400",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/lenoir-county-department-social-services"
+  },
+  {
+    "county": "Lincoln",
+    "city": "Lincolnton",
+    "address": "1136 E. Main St., Lincolnton, NC 28093",
+    "phone": "704-732-0738",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/lincoln-county-department-social-services"
+  },
+  {
+    "county": "Macon",
+    "city": "Franklin",
+    "address": "1832 Lakeside Drive, Franklin, NC 28734",
+    "phone": "828-349-2124",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/macon-county-department-social-services"
+  },
+  {
+    "county": "Madison",
+    "city": "Marshall",
+    "address": "5707 U.S. Hwy 25/70, Suite 1, Marshall, NC 28753",
+    "phone": "828-649-9498",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/madison-county-department-social-services"
+  },
+  {
+    "county": "Martin",
+    "city": "Williamston",
+    "address": "305 E. Main St., Williamston, NC 27892",
+    "phone": "252-789-4400",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/martin-county-department-social-services"
+  },
+  {
+    "county": "McDowell",
+    "city": "Marion",
+    "address": "145 E. Court St., Marion, NC 28752",
+    "phone": "828-652-3355",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/mcdowell-county-department-social-services"
+  },
+  {
+    "county": "Mecklenburg",
+    "city": "Charlotte",
+    "address": "430 Stitt Road, Charlotte, NC 28213",
+    "phone": "704-336-3000",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/mecklenburg-county-department-social-services"
+  },
+  {
+    "county": "Mitchell",
+    "city": "Bakersville",
+    "address": "347 Long View Drive, Bakersville, NC 28705",
+    "phone": "828-688-2175",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/mitchell-county-department-social-services"
+  },
+  {
+    "county": "Montgomery",
+    "city": "Troy",
+    "address": "102 E. Spring St., Drawer N, Troy, NC 27371",
+    "phone": "910-576-6531",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/montgomery-county-department-social-services"
+  },
+  {
+    "county": "Moore",
+    "city": "Carthage",
+    "address": "1036 Carriage Oaks Drive, Carthage, NC 28327",
+    "phone": "910-947-2436",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/moore-county-department-social-services"
+  },
+  {
+    "county": "Nash",
+    "city": "",
+    "address": "120 Washington St. Nashville, NC 27856",
+    "phone": "252-459-9818",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/nash-county-human-services-department-social-services"
+  },
+  {
+    "county": "New Hanover",
+    "city": "Wilmington",
+    "address": "1650 Greenfield St., Wilmington, NC 28401",
+    "phone": "910-798-3400",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/new-hanover-county-department-social-services"
+  },
+  {
+    "county": "Northampton",
+    "city": "Jackson",
+    "address": "9588 NC 305 HWY, Jackson, NC 27845",
+    "phone": "252-534-5811",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/northampton-county-department-social-services"
+  },
+  {
+    "county": "Onslow",
+    "city": "Jacksonville",
+    "address": "612 College St., Jacksonville, NC 28540",
+    "phone": "910-455-4145",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/onslow-county-department-social-services"
+  },
+  {
+    "county": "Orange",
+    "city": "Hillsborough",
+    "address": "113 Mayo St., Hillsborough, NC 27278",
+    "phone": "919-245-2800",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/orange-county-department-social-services"
+  },
+  {
+    "county": "Pamlico",
+    "city": "Bayboro",
+    "address": "828 Alliance Main St., Bayboro, NC 28515",
+    "phone": "252-745-4086",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/pamlico-county-human-services-center"
+  },
+  {
+    "county": "Pasquotank",
+    "city": "Elizabeth City",
+    "address": "709 Roanoke Ave., Elizabeth City, NC 27909",
+    "phone": "252-338-2126",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/pasquotank-county-department-social-services"
+  },
+  {
+    "county": "Pender",
+    "city": "Burgaw",
+    "address": "298-B Progress Drive, Burgaw, NC 28425",
+    "phone": "910-259-1240",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/pender-county-department-social-services"
+  },
+  {
+    "county": "Perquimans",
+    "city": "Hertford",
+    "address": "103 Charles St., Hertford, NC 27944",
+    "phone": "252-426-7373",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/perquimans-county-department-social-services"
+  },
+  {
+    "county": "Person",
+    "city": "Roxboro",
+    "address": "355-B S. Madison Blvd., Roxboro, NC 27573",
+    "phone": "336-599-8361",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/person-county-department-social-services"
+  },
+  {
+    "county": "Pitt",
+    "city": "Greenville",
+    "address": "1717 W. Fifth St., Greenville, NC 27834",
+    "phone": "252-902-1110",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/pitt-county-department-social-services"
+  },
+  {
+    "county": "Polk",
+    "city": "Mill Spring",
+    "address": "231 Wolverine Trail, Mill Spring, NC 28756",
+    "phone": "828-894-2100",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/local-dss-directory/polk-county-department-social-services"
+  },
+  {
+    "county": "Randolph",
+    "city": "Asheboro",
+    "address": "1512 N. Fayetteville St., Asheboro, NC 27204-3239",
+    "phone": "336-683-8000",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/randolph-county-department-social-services"
+  },
+  {
+    "county": "Richmond",
+    "city": "Rockingham",
+    "address": "125 Caroline St., Rockingham, NC 28379",
+    "phone": "910-997-8480",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/richmond-county-department-human-services"
+  },
+  {
+    "county": "Robeson",
+    "city": "Lumberton",
+    "address": "120 Glen Cowan Road, Lumberton, NC 28360",
+    "phone": "910-671-3500",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/robeson-county-department-social-services"
+  },
+  {
+    "county": "Rockingham",
+    "city": "Wentworth",
+    "address": "411 NC HWY 65, Wentworth, NC 27375",
+    "phone": "336-342-1394",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/rockingham-county-department-health-and-human-services"
+  },
+  {
+    "county": "Rowan",
+    "city": "Salisbury",
+    "address": "1813 E. Innes St., Salisbury, NC 28146",
+    "phone": "704-216-8330",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/rowan-county-department-social-services"
+  },
+  {
+    "county": "Rutherford",
+    "city": "Spindale",
+    "address": "389 Fairground Road, Spindale, NC 28160",
+    "phone": "828-287-6165",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/rutherford-county-department-social-services"
+  },
+  {
+    "county": "Sampson",
+    "city": "Clinton",
+    "address": "360 County Complex Road, Suite 100, Clinton, NC 28328",
+    "phone": "910-592-7131",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/sampson-county-department-social-services"
+  },
+  {
+    "county": "Scotland",
+    "city": "Laurinburg",
+    "address": "1405 West Blvd., Laurinburg, NC 28353",
+    "phone": "910-277-2500",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/scotland-county-department-social-services"
+  },
+  {
+    "county": "Stanly",
+    "city": "Albemarle",
+    "address": "1000 N. First St., Suite 2, Albemarle, NC 28001",
+    "phone": "704-982-6100",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/stanly-county-department-social-services"
+  },
+  {
+    "county": "Stokes",
+    "city": "Danbury",
+    "address": "1010 N. Main St., Danbury, NC 27016",
+    "phone": "336-593-2861",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/stokes-county-department-social-services"
+  },
+  {
+    "county": "Surry",
+    "city": "Dobson",
+    "address": "118 Hamby Road, Dobson, NC 27017",
+    "phone": "336-401-8700",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/surry-county-department-social-services"
+  },
+  {
+    "county": "Swain",
+    "city": "Bryson City",
+    "address": "80 Academy St., Bryson City, NC 28713",
+    "phone": "828-488-6921",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/swain-county-department-social-services"
+  },
+  {
+    "county": "Transylvania",
+    "city": "Brevard",
+    "address": "106 E. Morgan St., Brevard, NC 28712",
+    "phone": "828-884-3174",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/transylvania-county-department-social-services"
+  },
+  {
+    "county": "Tyrrell",
+    "city": "Columbia",
+    "address": "102 N. Road St., Columbia, NC 27925",
+    "phone": "252-796-3421",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/tyrrell-county-department-social-services"
+  },
+  {
+    "county": "Union",
+    "city": "",
+    "address": "Monroe, NC 28110",
+    "phone": "704-296-4300",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/union-county-department-social-services"
+  },
+  {
+    "county": "Vance",
+    "city": "Henderson",
+    "address": "500 North Beckford Drive Suite C, Henderson, NC 27536",
+    "phone": "252-492-5001",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/vance-county-department-social-services"
+  },
+  {
+    "county": "Wake",
+    "city": "Raleigh",
+    "address": "220 Swinburne St., Raleigh, NC 27620",
+    "phone": "919-212-7000",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/wake-county-department-social-services"
+  },
+  {
+    "county": "Warren",
+    "city": "Warrenton",
+    "address": "307 N. Main St., Warrenton, NC 27589",
+    "phone": "252-257-5000",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/warren-county-department-social-services"
+  },
+  {
+    "county": "Washington",
+    "city": "Plymouth",
+    "address": "209 E. Main St., Plymouth, NC 27962",
+    "phone": "252-793-4041",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/washington-county-department-social-services"
+  },
+  {
+    "county": "Watauga",
+    "city": "Boone",
+    "address": "132 Poplar Grove Connector, Suite C, Boone, NC 28607",
+    "phone": "828-265-8100",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/watauga-county-department-social-services"
+  },
+  {
+    "county": "Wayne",
+    "city": "Goldsboro",
+    "address": "1560 Clingman St., Goldsboro, NC 27534",
+    "phone": "919-580-4034",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/wayne-county-department-social-services"
+  },
+  {
+    "county": "Wilkes",
+    "city": "Wilkesboro",
+    "address": "304 College St., Wilkesboro, NC 28697",
+    "phone": "336-651-7400",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/wilkes-county-department-social-services"
+  },
+  {
+    "county": "Wilson",
+    "city": "Wilson",
+    "address": "NE Gold St., Wilson, NC 27894",
+    "phone": "252-206-4000",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/wilson-county-department-social-services"
+  },
+  {
+    "county": "Yadkin",
+    "city": "Yadkinville",
+    "address": "250 Willow St., Yadkinville, NC 27055",
+    "phone": "336-849-7910",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/yadkin-county-human-services"
+  },
+  {
+    "county": "Yancey",
+    "city": "Burnsville",
+    "address": "320 Pensacola Road, Burnsville, NC 28714",
+    "phone": "828-682-6148, 828-682-2470",
+    "source": "https://www.ncdhhs.gov/divisions/social-services/yancey-county-department-social-services"
+  }
+]

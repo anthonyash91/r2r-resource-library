@@ -309,7 +309,7 @@ def register_phase4(add):
         tags="toledo|lucas|housing|navigation|reentry",
         services="Housing navigation|Coordinated entry|Transitional housing referrals|Permanent housing referrals",
         county="Lucas", served_counties="Lucas", coverage="single",
-        _source="https://www.nwohousing.org", _source_type="nonprofit", _confidence="medium",
+        _source="https://www.nwohousing.org", _source_type="nonprofit", _confidence="high",
     )
 
     # --- HEALTHCARE (17) ---
@@ -790,7 +790,7 @@ def register_phase4(add):
         tags="youngstown|mahoning|employment|ohiomeansjobs|reentry",
         services="Career services|Training referrals|Employment assistance|Job search support",
         county="Mahoning", served_counties="Mahoning", coverage="single",
-        _source="https://ohiomeansjobs.ohio.gov", _source_type="government", _confidence="medium",
+        _source="https://ohiomeansjobs.ohio.gov", _source_type="government", _confidence="high",
     )
 
     # --- EDUCATION (11) ---
@@ -948,7 +948,7 @@ def register_phase4(add):
         tags="toledo|lucas|education|GED|workforce|reentry",
         services="GED preparation|Workforce readiness|Adult education|Job skills classes",
         county="Lucas", served_counties="Lucas", coverage="single",
-        _source="https://www.oasisohio.org", _source_type="nonprofit", _confidence="medium",
+        _source="https://www.oasisohio.org", _source_type="nonprofit", _confidence="high",
     )
     add(
         name="LifeWorks Ohio — Aspire GED",
@@ -965,7 +965,7 @@ def register_phase4(add):
         tags="cleveland|cuyahoga|education|GED|aspire|reentry",
         services="GED preparation|Adult education|Community-based classes|Workforce readiness",
         county="Cuyahoga", served_counties="Cuyahoga", coverage="single",
-        _source="https://www.lifeworksohio.org", _source_type="nonprofit", _confidence="medium",
+        _source="https://www.lifeworksohio.org", _source_type="nonprofit", _confidence="high",
     )
     add(
         name="Pickaway-Ross Career & Technology Center — ABLE",
@@ -1347,7 +1347,7 @@ def register_phase4(add):
         tags="toledo|lucas|probation|court-supervision|reentry",
         services="Probation supervision|Court compliance|Treatment referrals|Reentry coalition referrals",
         county="Lucas", served_counties="Lucas", coverage="single",
-        _source="https://co.lucas.oh.us", _source_type="government", _confidence="medium",
+        _source="https://co.lucas.oh.us", _source_type="government", _confidence="high",
     )
     add(
         name="Summit County Adult Probation Department",
@@ -1364,7 +1364,7 @@ def register_phase4(add):
         tags="akron|summit|probation|court-supervision|reentry",
         services="Probation supervision|Community control monitoring|Coalition partner referrals|Treatment referrals",
         county="Summit", served_counties="Summit", coverage="single",
-        _source="https://www.summitoh.net", _source_type="government", _confidence="medium",
+        _source="https://www.summitoh.net", _source_type="government", _confidence="high",
     )
     add(
         name="Stark County Adult Probation Department",
@@ -1381,7 +1381,7 @@ def register_phase4(add):
         tags="canton|stark|probation|court-supervision|reentry",
         services="Probation supervision|Community control|Reentry coalition referrals|Compliance monitoring",
         county="Stark", served_counties="Stark", coverage="single",
-        _source="https://www.starkcountyohio.gov", _source_type="government", _confidence="medium",
+        _source="https://www.starkcountyohio.gov", _source_type="government", _confidence="high",
     )
     add(
         name="Butler County Adult Probation Department",
@@ -1398,7 +1398,7 @@ def register_phase4(add):
         tags="hamilton|butler|probation|court-supervision|reentry",
         services="Probation supervision|Community control|Reentry coalition referrals|Compliance support",
         county="Butler", served_counties="Butler", coverage="single",
-        _source="https://www.butlercountyohio.org", _source_type="government", _confidence="medium",
+        _source="https://www.butlercountyohio.org", _source_type="government", _confidence="high",
     )
     add(
         name="Ohio DRC — Parole Field Offices (Regional)",

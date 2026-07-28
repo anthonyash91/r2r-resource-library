@@ -66,6 +66,11 @@ import {
   filterLoadedResources,
   narrowResourcePool,
 } from "@/lib/filter-loaded-resources";
+import {
+  buildPopularTags,
+  getPopularCategorySlugs,
+  type PopularTag,
+} from "@/lib/popular-category-tags";
 
 export async function getCategories(): Promise<Category[]> {
   const locale = await getServerLocale();
@@ -296,8 +301,17 @@ export async function getAccessibilityContentAdmin() {
 }
 
 export async function getFeaturedResources(limit = MAX_FEATURED_RESOURCES): Promise<Resource[]> {
-  const featured = await getResources({ featured: true, status: "active" });
-  return featured.slice(0, limit);
+  const active = await getResources({ status: "active" });
+  const featured = active.filter((resource) => resource.is_featured);
+
+  if (featured.length >= limit) {
+    return featured.slice(0, limit);
+  }
+
+  const seen = new Set(featured.map((resource) => resource.id));
+  const fillers = active.filter((resource) => !seen.has(resource.id));
+
+  return [...featured, ...fillers].slice(0, limit);
 }
 
 export async function getHomepageContentAdmin(): Promise<Record<string, string>> {
@@ -821,4 +835,13 @@ export async function getCmsPageBySlug(slug: string): Promise<CmsPage | null> {
 export async function getCategoryBySlug(slug: string): Promise<Category | null> {
   const categories = await getCategories();
   return categories.find((c) => c.slug === slug) ?? null;
+}
+
+export async function getPopularCategoryTags(
+  categories: Category[]
+): Promise<PopularTag[]> {
+  const locale = await getServerLocale();
+  const { t } = createTranslator(locale);
+  const slugs = await getPopularCategorySlugs();
+  return buildPopularTags(categories, slugs, t);
 }

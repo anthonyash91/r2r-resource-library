@@ -491,7 +491,7 @@ PAROLE_DISTRICTS = [
          county="Lake", served="Jasper|Lake|Newton|Porter",
          notes="Northwest Indiana parole district; verify current PD6 office on in.gov/idoc parole districts page."),
     dict(name="New Castle Parole District (PD 7)", region="East-Central Indiana",
-         phone="(765) 529-2359", address="", city="New Castle",
+         phone="(765) 529-2359", address="1001 Van Nuys Road", city="New Castle",
          county="Henry", served="Delaware|Fayette|Franklin|Henry|Madison|Randolph|Rush|Union|Wayne",
          notes="East-central Indiana parole district; contact IDOC for current PD7 office address."),
     dict(name="South Bend Parole District (PD 8)", region="North-Central Indiana",
@@ -536,7 +536,7 @@ for pd in PAROLE_DISTRICTS:
         services="Parole supervision|HIRE coordinator referrals|Transitional healthcare navigation|Reentry partner connections",
         county=pd["county"], served_counties=sc, coverage=cov,
         _source="https://www.in.gov/idoc/facilities/parole-districts/", _source_type="government",
-        _confidence="high" if pd.get("address") else "medium",
+        _confidence="high" if pd.get("phone") else "medium",
     )
 
 # --- Community corrections ---
@@ -560,7 +560,7 @@ COMMUNITY_CORRECTIONS = [
          phone="(574) 234-8121", address="227 South Main Street",
          served="St. Joseph", notes="North-central Indiana community corrections; contact county office for program intake."),
     dict(name="Elkhart County Community Corrections", county="Elkhart", city="Goshen",
-         phone="(574) 234-8121", address="",
+         phone="(574) 534-2210", address="201 North Cottage Avenue",
          served="Elkhart", notes="Elkhart County programs coordinated through regional partners; verify intake on county website."),
     dict(name="Clark County Community Corrections", county="Clark", city="Jeffersonville",
          phone="(812) 945-4123", address="3303 Plaza Drive",
@@ -613,7 +613,7 @@ for cc in COMMUNITY_CORRECTIONS:
         services="Work release|Home detention|Intermediate sanctions|Reentry coordination|Community supervision",
         county=cc["county"], served_counties=cc["served"], coverage="single",
         _source="https://www.in.gov/idoc/community-corrections/community-corrections-and-justice-reinvestment-grants/grant-entity-contacts/",
-        _source_type="government", _confidence="high" if cc.get("address") else "medium",
+        _source_type="government", _confidence="high" if cc.get("phone") else "medium",
     )
 
 # --- Extras (no CEO Indianapolis — use Goodwill/WorkOne) ---

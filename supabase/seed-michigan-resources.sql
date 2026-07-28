@@ -2,7 +2,7 @@
 -- Source file: data/michigan-resources.csv
 -- State: Michigan
 -- UUID prefix: d5000001
--- Generated: 2026-06-24T07:30:47.096Z
+-- Generated: 2026-07-08T05:41:03.228Z
 -- Run after: supabase/migrations/001_initial_schema.sql
 --            supabase/migrations/002_add_description_es.sql
 --            supabase/migrations/004_add_eligibility_es_and_notes.sql

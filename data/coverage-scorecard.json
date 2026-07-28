@@ -1,11 +1,11 @@
 {
-  "total_counties": 635,
-  "tier_a_slots": 5080,
-  "tier_a_filled": 3069,
-  "tier_a_fill_rate": 0.6041,
-  "tier_a_fill_pct": 60.4,
-  "full_tier_a_counties": 25,
-  "weak_counties": 124,
+  "total_counties": 1237,
+  "tier_a_slots": 9896,
+  "tier_a_filled": 6058,
+  "tier_a_fill_rate": 0.6122,
+  "tier_a_fill_pct": 61.2,
+  "full_tier_a_counties": 121,
+  "weak_counties": 278,
   "targets": {
     "floor_pct": 50.0,
     "target_90d_pct": 70.0,
@@ -55,8 +55,50 @@
       "tier_a_fill_rate": 0.8205,
       "full_tier_a_counties": 9,
       "weak_counties": 0
+    },
+    "Georgia": {
+      "counties": 159,
+      "tier_a_fill_rate": 0.6494,
+      "full_tier_a_counties": 5,
+      "weak_counties": 11
+    },
+    "North Carolina": {
+      "counties": 100,
+      "tier_a_fill_rate": 0.3912,
+      "full_tier_a_counties": 2,
+      "weak_counties": 67
+    },
+    "Virginia": {
+      "counties": 133,
+      "tier_a_fill_rate": 0.4746,
+      "full_tier_a_counties": 0,
+      "weak_counties": 67
+    },
+    "South Carolina": {
+      "counties": 46,
+      "tier_a_fill_rate": 0.7201,
+      "full_tier_a_counties": 3,
+      "weak_counties": 2
+    },
+    "Alabama": {
+      "counties": 67,
+      "tier_a_fill_rate": 0.6362,
+      "full_tier_a_counties": 3,
+      "weak_counties": 7
+    },
+    "Arizona": {
+      "counties": 15,
+      "tier_a_fill_rate": 0.6917,
+      "full_tier_a_counties": 1,
+      "weak_counties": 0
+    },
+    "Mississippi": {
+      "counties": 82,
+      "tier_a_fill_rate": 1.0,
+      "full_tier_a_counties": 82,
+      "weak_counties": 0
     }
   },
   "status": "IN_PROGRESS",
-  "generated": "2026-06-24"
+  "generated": "2026-07-06"
 }

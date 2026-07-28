@@ -43,6 +43,14 @@ const SOURCES = [
   { csv: "data/illinois-resources.csv", uuidPrefix: "d6000001" },
   { csv: "data/west-virginia-resources.csv", uuidPrefix: "d7000001" },
   { csv: "data/georgia-resources.csv", uuidPrefix: "d8000001" },
+  { csv: "data/north-carolina-resources.csv", uuidPrefix: "d9000001" },
+  { csv: "data/virginia-resources.csv", uuidPrefix: "da000001" },
+  { csv: "data/south-carolina-resources.csv", uuidPrefix: "db000001" },
+  { csv: "data/alabama-resources.csv", uuidPrefix: "dc000001" },
+  { csv: "data/arizona-resources.csv", uuidPrefix: "dd000001" },
+  { csv: "data/florida-resources.csv", uuidPrefix: "de000001" },
+  { csv: "data/mississippi-resources.csv", uuidPrefix: "df000001" },
+  { csv: "data/wisconsin-resources.csv", uuidPrefix: "e0000001" },
 ] as const;
 
 function parseCsv(content: string): string[][] {

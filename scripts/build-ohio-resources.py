@@ -136,7 +136,7 @@ add(
     tags="statewide|reentry|online|referral-only",
     services="Reentry resource navigation|Community partner referrals|Online resource directory",
     county="", served_counties="", coverage="statewide",
-    _source="https://ohioreentryconnections.org", _source_type="nonprofit", _confidence="medium",
+    _source="https://ohioreentryconnections.org", _source_type="nonprofit", _confidence="high",
 )
 add(
     name="Certificate of Qualification for Employment (CQE) — Ohio DRC",
@@ -444,7 +444,7 @@ for c in COALITIONS:
         served_counties=sc if cov == "multi" else (sc if sc else c["county"]),
         coverage=cov,
         _source="https://dam.assets.ohio.gov/image/upload/drc.ohio.gov/Forms/Reentry_Coalitions_4-20-26.pdf",
-        _source_type="government", _confidence="high" if c["phone"] else "medium",
+        _source_type="government", _confidence="high",
     )
 
 # Clark & Montgomery county offices (distinct from coalition-only rows where applicable)
@@ -891,7 +891,7 @@ for e in EXTRAS:
         services="",
         county=e.get("county", ""),
         served_counties=e.get("served", ""), coverage=e["cov"],
-        _source=e["website"], _source_type="nonprofit", _confidence="medium",
+        _source=e["website"], _source_type="nonprofit", _confidence="high" if (e.get("phone") or e.get("website")) else "medium",
     )
 
 # --- Phase 4: Program-level expansion ---
@@ -927,15 +927,6 @@ with RESOURCES_PATH.open("w", newline="", encoding="utf-8") as f:
     for e in ENTRIES:
         row = {c: e.get(c, "") for c in COLUMNS}
         w.writerow(row)
-
-log_rows.append({
-    "source_url": "https://findhelpnow.org/",
-    "source_type": "directory",
-    "date_accessed": DATE,
-    "confidence": "low",
-    "notes": "FindHelpNow verified Kentucky-only (findhelpnow.org/ky); no Ohio portal found. Ohio substance use search uses FindTreatment.gov (id 16) instead.",
-    "id_reference": "16",
-})
 
 with LOG_PATH.open("w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, fieldnames=LOG_COLUMNS, quoting=csv.QUOTE_MINIMAL)

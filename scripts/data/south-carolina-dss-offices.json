@@ -1,0 +1,324 @@
+[
+  {
+    "address": "Suite 1",
+    "city": "Abbeville",
+    "phone": "(864) 366-5481",
+    "county": "Abbeville",
+    "source": "https://dss.sc.gov/contact-dss/upstate-region/abbeville/"
+  },
+  {
+    "address": "Suite 183",
+    "city": "North Augusta",
+    "phone": "(803) 649-1111",
+    "county": "Aiken",
+    "source": "https://dss.sc.gov/contact-dss/midlands-region/aiken/"
+  },
+  {
+    "address": "521 Barnwell Hwy",
+    "city": "Allendale",
+    "phone": "(803) 584-7048",
+    "county": "Allendale",
+    "source": "https://dss.sc.gov/contact-dss/lowcountry-region/allendale/"
+  },
+  {
+    "address": "224 McGee Rd.",
+    "city": "Anderson",
+    "phone": "(864) 260-4100",
+    "county": "Anderson",
+    "source": "https://dss.sc.gov/contact-dss/upstate-region/anderson/"
+  },
+  {
+    "address": "374 Log Branch Rd.",
+    "city": "Bamberg",
+    "phone": "(803) 245-4363",
+    "county": "Bamberg",
+    "source": "https://dss.sc.gov/contact-dss/midlands-region/bamberg/"
+  },
+  {
+    "address": "P.O. Box 1306",
+    "city": "Barnwell",
+    "phone": "(803) 541-1200",
+    "county": "Barnwell",
+    "source": "https://dss.sc.gov/contact-dss/midlands-region/barnwell/"
+  },
+  {
+    "address": "P.O. Box 1065",
+    "city": "Beaufort",
+    "phone": "(843) 255-6081",
+    "county": "Beaufort",
+    "source": "https://dss.sc.gov/contact-dss/lowcountry-region/beaufort/"
+  },
+  {
+    "address": "2 Belt Drive",
+    "city": "Moncks Corner",
+    "phone": "(843) 761-8044",
+    "county": "Berkeley",
+    "source": "https://dss.sc.gov/contact-dss/lowcountry-region/berkeley/"
+  },
+  {
+    "address": "PO Box 467",
+    "city": "St Matthews",
+    "phone": "(803) 874-3384",
+    "county": "Calhoun",
+    "source": "https://dss.sc.gov/contact-dss/lowcountry-region/calhoun/"
+  },
+  {
+    "address": "3685 Rivers Ave., Suite 101",
+    "city": "N. Charleston",
+    "phone": "(843) 953-9400",
+    "county": "Charleston",
+    "source": "https://dss.sc.gov/contact-dss/lowcountry-region/charleston/"
+  },
+  {
+    "address": "113 West Buford Street",
+    "city": "Gaffney",
+    "phone": "(864) 487-2704",
+    "county": "Cherokee",
+    "source": "https://dss.sc.gov/contact-dss/upstate-region/cherokee/"
+  },
+  {
+    "address": "(Use PO Box as mailing address.)",
+    "city": "Chester",
+    "phone": "(803) 377-8131",
+    "county": "Chester",
+    "source": "https://dss.sc.gov/contact-dss/midlands-region/chester/"
+  },
+  {
+    "address": "203 Perry Wiley Way",
+    "city": "Chesterfield",
+    "phone": "(843) 623-2147",
+    "county": "Chesterfield",
+    "source": "https://dss.sc.gov/contact-dss/pee-dee-region/chesterfield/"
+  },
+  {
+    "address": "236 Commerce Street Suite 2",
+    "city": "Manning",
+    "phone": "(803) 435-4303",
+    "county": "Clarendon",
+    "source": "https://dss.sc.gov/contact-dss/pee-dee-region/clarendon/"
+  },
+  {
+    "address": "215 S. Lemacks St.",
+    "city": "Walterboro",
+    "phone": "(843) 549-1894",
+    "county": "Colleton",
+    "source": "https://dss.sc.gov/contact-dss/lowcountry-region/colleton/"
+  },
+  {
+    "address": "528 Cartersville Hwy",
+    "city": "Lamar",
+    "phone": "(843) 332-2231",
+    "county": "Darlington",
+    "source": "https://dss.sc.gov/contact-dss/pee-dee-region/darlington/"
+  },
+  {
+    "address": "PO Box 1307",
+    "city": "Dillon",
+    "phone": "(843) 774-3461",
+    "county": "Dillon",
+    "source": "https://dss.sc.gov/contact-dss/pee-dee-region/dillon/"
+  },
+  {
+    "address": "201 Johnston St.",
+    "city": "St. George",
+    "phone": "(843) 821-0444",
+    "county": "Dorchester",
+    "source": "https://dss.sc.gov/contact-dss/lowcountry-region/dorchester/"
+  },
+  {
+    "address": "PO Box 644",
+    "city": "Edgefield",
+    "phone": "(803) 637-4040",
+    "county": "Edgefield",
+    "source": "https://dss.sc.gov/contact-dss/midlands-region/edgefield/"
+  },
+  {
+    "address": "PO Box 210",
+    "city": "Winnsboro",
+    "phone": "(803) 635-5502",
+    "county": "Fairfield",
+    "source": "https://dss.sc.gov/contact-dss/midlands-region/fairfield/"
+  },
+  {
+    "address": "345 S. Ron McNair Blvd.",
+    "city": "Lake City",
+    "phone": "(843) 669-3354",
+    "county": "Florence",
+    "source": "https://dss.sc.gov/contact-dss/pee-dee-region/florence/"
+  },
+  {
+    "address": "330 Dozier St.",
+    "city": "Georgetown",
+    "phone": "(843) 546-5134",
+    "county": "Georgetown",
+    "source": "https://dss.sc.gov/contact-dss/pee-dee-region/georgetown/"
+  },
+  {
+    "address": "352 Halton Rd. Suite 100",
+    "city": "Greenville",
+    "phone": "(864) 467-7797",
+    "county": "Greenville",
+    "source": "https://dss.sc.gov/contact-dss/upstate-region/greenville/"
+  },
+  {
+    "address": "PO Box 1096",
+    "city": "Greenwood",
+    "phone": "(864) 229-5258",
+    "county": "Greenwood",
+    "source": "https://dss.sc.gov/contact-dss/upstate-region/greenwood/"
+  },
+  {
+    "address": "102 Ginn Altman Ave., Ste. A",
+    "city": "Hampton",
+    "phone": "(803) 943-3641",
+    "county": "Hampton",
+    "source": "https://dss.sc.gov/contact-dss/lowcountry-region/hampton/"
+  },
+  {
+    "address": "9630 Scipio Lane",
+    "city": "Myrtle Beach",
+    "phone": "(843) 366-1600",
+    "county": "Horry",
+    "source": "https://dss.sc.gov/contact-dss/pee-dee-region/horry/"
+  },
+  {
+    "address": "P.O. Box 1359",
+    "city": "Ridgeland",
+    "phone": "(843) 726-7747",
+    "county": "Jasper",
+    "source": "https://dss.sc.gov/contact-dss/lowcountry-region/jasper/"
+  },
+  {
+    "address": "110 E. Dekalb St.",
+    "city": "Camden",
+    "phone": "(803) 432-7676",
+    "county": "Kershaw",
+    "source": "https://dss.sc.gov/contact-dss/midlands-region/kershaw/"
+  },
+  {
+    "address": "PO Box 1719",
+    "city": "Lancaster",
+    "phone": "(803) 286-6914",
+    "county": "Lancaster",
+    "source": "https://dss.sc.gov/contact-dss/midlands-region/lancaster/"
+  },
+  {
+    "address": "P.O. Box 119",
+    "city": "Clinton",
+    "phone": "(864) 833-0100",
+    "county": "Laurens",
+    "source": "https://dss.sc.gov/contact-dss/upstate-region/laurens/"
+  },
+  {
+    "address": "PO Box 389",
+    "city": "Bishopville",
+    "phone": "(803) 484-5376",
+    "county": "Lee",
+    "source": "https://dss.sc.gov/contact-dss/pee-dee-region/lee/"
+  },
+  {
+    "address": "P.O. Box 84129",
+    "city": "Lexington",
+    "phone": "(803) 785-7333",
+    "county": "Lexington",
+    "source": "https://dss.sc.gov/contact-dss/midlands-region/lexington/"
+  },
+  {
+    "address": "137 Airport Court, Suite A",
+    "city": "Mullins",
+    "phone": "(843) 423-4623",
+    "county": "Marion",
+    "source": "https://dss.sc.gov/contact-dss/pee-dee-region/marion/"
+  },
+  {
+    "address": "P.O. Drawer 120",
+    "city": "Bennettsville",
+    "phone": "(843) 479-7181",
+    "county": "Marlboro",
+    "source": "https://dss.sc.gov/contact-dss/pee-dee-region/marlboro/"
+  },
+  {
+    "address": "215 N. Mine St., Hwy 28 N.",
+    "city": "McCormick",
+    "phone": "(864) 465-2140",
+    "county": "McCormick",
+    "source": "https://dss.sc.gov/contact-dss/midlands-region/mccormick/"
+  },
+  {
+    "address": "PO Box 309",
+    "city": "Newberry",
+    "phone": "(803) 321-2155",
+    "county": "Newberry",
+    "source": "https://dss.sc.gov/contact-dss/upstate-region/newberry/"
+  },
+  {
+    "address": "223A Kenneth St.",
+    "city": "Walhalla",
+    "phone": "(864) 638-4400",
+    "county": "Oconee",
+    "source": "https://dss.sc.gov/contact-dss/upstate-region/oconee/"
+  },
+  {
+    "address": "P.O. Box 1087",
+    "city": "Orangeburg",
+    "phone": "(803) 531-3101",
+    "county": "Orangeburg",
+    "source": "https://dss.sc.gov/contact-dss/lowcountry-region/orangeburg/"
+  },
+  {
+    "address": "212 McDaniel Ave.",
+    "city": "Pickens",
+    "phone": "(864) 898-5810",
+    "county": "Pickens",
+    "source": "https://dss.sc.gov/contact-dss/upstate-region/pickens/"
+  },
+  {
+    "address": "117 Henry Street",
+    "city": "Eastover",
+    "phone": "(803) 714-7300",
+    "county": "Richland",
+    "source": "https://dss.sc.gov/contact-dss/midlands-region/richland/"
+  },
+  {
+    "address": "P.O. Box 276",
+    "city": "Saluda",
+    "phone": "(864) 445-2139",
+    "county": "Saluda",
+    "source": "https://dss.sc.gov/contact-dss/midlands-region/saluda/"
+  },
+  {
+    "address": "630 Chesnee Hwy.",
+    "city": "Spartanburg",
+    "phone": "(864) 596-3001",
+    "county": "Spartanburg",
+    "source": "https://dss.sc.gov/contact-dss/upstate-region/spartanburg/"
+  },
+  {
+    "address": "115 N Harvin Street",
+    "city": "Sumter",
+    "phone": "(803) 773-5531",
+    "county": "Sumter",
+    "source": "https://dss.sc.gov/contact-dss/pee-dee-region/sumter/"
+  },
+  {
+    "address": "200 S. Mountain St.",
+    "city": "Union",
+    "phone": "(864) 429-1660",
+    "county": "Union",
+    "source": "https://dss.sc.gov/contact-dss/upstate-region/union/"
+  },
+  {
+    "address": "PO Box 389",
+    "city": "Kingstree",
+    "phone": "(843) 355-5411",
+    "county": "Williamsburg",
+    "source": "https://dss.sc.gov/contact-dss/pee-dee-region/williamsburg/"
+  },
+  {
+    "address": "933 Heckle Blvd.",
+    "city": "Rock Hill",
+    "phone": "(803) 684-2315",
+    "county": "York",
+    "source": "https://dss.sc.gov/contact-dss/midlands-region/york/"
+  }
+]

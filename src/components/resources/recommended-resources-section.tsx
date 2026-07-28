@@ -4,8 +4,9 @@ import type { Resource } from "@/types";
 import { ResourceMasonry } from "@/components/resources/resource-masonry";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { homeSectionSubtitleClass, homeSectionSubtitleWideMaxWidthClass } from "@/components/home/home-section-divider";
 import { getServerTranslator } from "@/i18n/server";
-import { cn, pageSectionPadding, pageSectionHeadingClass, pageSectionSubtitleClass, pageSectionBandClass, type PageSectionBand } from "@/lib/utils";
+import { cn, pageSectionHeadingClass, pageSectionSubtitleClass, pageSectionBandClass, type PageSectionBand } from "@/lib/utils";
 import { buildResourcesPageHref, RECOMMENDED_RESOURCES_ID } from "@/lib/resources-page";
 import { RecommendedPreferencesSummary } from "@/components/resources/recommended-preferences-summary";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
@@ -87,23 +88,22 @@ export async function RecommendedResourcesSection({
       className={cn(
         "scroll-mt-[var(--site-header-offset)]",
         variant === "home"
-          ? pageSectionBandClass(band)
-          : "rounded-xl border border-border bg-card p-6",
-        variant === "home" && pageSectionPadding
+          ? cn(pageSectionBandClass(band), "px-4 sm:px-9")
+          : "rounded-xl border border-border bg-card p-6"
       )}
       aria-labelledby="recommended-resources-heading"
     >
       <div className={variant === "home" ? "mx-auto max-w-7xl" : undefined}>
         {variant === "home" ? (
           <ScrollReveal variant="fade-up">
-            <header className="mb-8 text-center">
+            <header className="text-center">
               <div className="mb-2 flex items-center justify-center gap-2">
                 <Star className="h-6 w-6 text-warning" aria-hidden="true" />
                 <h2 id="recommended-resources-heading" className={pageSectionHeadingClass}>
                   {title}
                 </h2>
               </div>
-              <p className={cn(pageSectionSubtitleClass, "mx-auto max-w-2xl")}>
+              <p className={cn(homeSectionSubtitleClass, homeSectionSubtitleWideMaxWidthClass)}>
                 {t("home.recommendedSubtitle")}
               </p>
             </header>
