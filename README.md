@@ -284,7 +284,7 @@ Commit and push `render.yaml`, the `start` script that binds to `$PORT`, and `.n
 
 1. Open [Render Dashboard](https://dashboard.render.com) → **New** → **Blueprint**.
 2. Connect `anthonyash91/r2r-resource-library` (or your fork) and select branch `main`.
-3. Apply the Blueprint. It creates `r2r-resource-library` with `npm install --include=dev && npm run build` / `npm start`.
+3. Apply the Blueprint. It creates `r2r-resource-library` with a standalone Next.js build and `node scripts/start-production.js`.
 
 **Option B — Manual Web Service**
 
@@ -292,7 +292,8 @@ Commit and push `render.yaml`, the `start` script that binds to `$PORT`, and `.n
 |---------|--------|
 | Runtime | Node |
 | Branch | `main` |
-| Build command | `npm install --include=dev && npm run build` |
+| Build command | `npm install --include=dev && npm run build && cp -r public .next/standalone/public && mkdir -p .next/standalone/.next && cp -r .next/static .next/standalone/.next/static` |
+| Start command | `node scripts/start-production.js` |
 | Start command | `npm start` |
 | Instance | Free (or Starter if the free tier spins down too often) |
 
@@ -310,7 +311,9 @@ In the service **Environment** tab (or Blueprint sync prompts), set:
 | `RESEND_API_KEY` / `EMAIL_FROM` | Email PDF | Optional |
 | `DEEPL_API_KEY` | Admin auto-translate | Optional |
 
-`NODE_VERSION` is set to `22.22.0` via Blueprint / `.node-version`. Render injects `PORT`; `npm start` runs `scripts/start-production.js`, which binds Next.js to `0.0.0.0` on that port.
+`NODE_VERSION` is set to `22.22.0` via Blueprint / `.node-version`. Render injects `PORT` (Blueprint defaults to `10000`). Start runs `scripts/start-production.js`, which launches the Next.js **standalone** server on `0.0.0.0`.
+
+If the deploy keeps failing with “No open HTTP ports”, the Free tier (512MB) may be OOMing Next.js — upgrade the instance to **Starter** or check logs for `Killed` / out-of-memory.
 
 ### 4. Supabase auth allowlist
 

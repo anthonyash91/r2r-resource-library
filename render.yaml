@@ -9,12 +9,20 @@ services:
     plan: free
     region: oregon
     branch: main
-    buildCommand: npm install --include=dev && npm run build
-    startCommand: npm start
+    # Install build tools, build Next standalone, copy static assets into standalone.
+    buildCommand: npm install --include=dev && npm run build && cp -r public .next/standalone/public && mkdir -p .next/standalone/.next && cp -r .next/static .next/standalone/.next/static
+    # Bypass `npm start` so Render's port scanner attaches to the Node process that listens.
+    startCommand: node scripts/start-production.js
     healthCheckPath: /
     envVars:
       - key: NODE_VERSION
         value: 22.22.0
+      - key: PORT
+        value: "10000"
+      - key: HOSTNAME
+        value: "0.0.0.0"
+      - key: NODE_OPTIONS
+        value: "--max-old-space-size=460"
       # Do not set NODE_ENV=production here — it makes npm skip
       # devDependencies (e.g. @tailwindcss/postcss) during the build.
       # Set these in the Render Dashboard (Values → Environment). Do not commit secrets.
