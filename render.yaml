@@ -9,14 +9,14 @@ services:
     plan: free
     region: oregon
     branch: main
-    buildCommand: npm install && npm run build
+    buildCommand: npm install --include=dev && npm run build
     startCommand: npm start
     healthCheckPath: /
     envVars:
       - key: NODE_VERSION
         value: 22.22.0
-      - key: NODE_ENV
-        value: production
+      # Do not set NODE_ENV=production here — it makes npm skip
+      # devDependencies (e.g. @tailwindcss/postcss) during the build.
       # Set these in the Render Dashboard (Values → Environment). Do not commit secrets.
       - key: NEXT_PUBLIC_SUPABASE_URL
         sync: false

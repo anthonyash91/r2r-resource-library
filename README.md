@@ -292,7 +292,7 @@ Commit and push `render.yaml`, the `start` script that binds to `$PORT`, and `.n
 |---------|--------|
 | Runtime | Node |
 | Branch | `main` |
-| Build command | `npm install && npm run build` |
+| Build command | `npm install --include=dev && npm run build` |
 | Start command | `npm start` |
 | Instance | Free (or Starter if the free tier spins down too often) |
 
