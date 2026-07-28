@@ -1,31 +1,29 @@
 # Render Blueprint — https://render.com/docs/blueprint-spec
-# Dashboard: New → Blueprint → connect this repo, or create a Web Service manually
-# using the same build/start commands below.
+#
+# CRITICAL: Next.js standalone reads process.env.HOSTNAME for the listen address.
+# Render sets HOSTNAME to the container name by default, so the app binds there
+# instead of 0.0.0.0 and Render's port scanner fails with:
+#   "No open HTTP ports detected on 0.0.0.0"
+# The startCommand below forces HOSTNAME=0.0.0.0 for the Node process.
 
 services:
   - type: web
     name: r2r-resource-library
     runtime: node
-    plan: free
+    plan: starter
     region: oregon
     branch: main
-    # Install build tools, build Next standalone, copy static assets into standalone.
-    buildCommand: npm install --include=dev && npm run build && cp -r public .next/standalone/public && mkdir -p .next/standalone/.next && cp -r .next/static .next/standalone/.next/static
-    # Bypass `npm start` so Render's port scanner attaches to the Node process that listens.
-    startCommand: node scripts/start-production.js
-    healthCheckPath: /
+    buildCommand: bash scripts/render-build.sh
+    startCommand: HOSTNAME=0.0.0.0 node .next/standalone/server.js
     envVars:
       - key: NODE_VERSION
         value: 22.22.0
       - key: PORT
         value: "10000"
-      - key: HOSTNAME
-        value: "0.0.0.0"
       - key: NODE_OPTIONS
-        value: "--max-old-space-size=460"
-      # Do not set NODE_ENV=production here — it makes npm skip
-      # devDependencies (e.g. @tailwindcss/postcss) during the build.
-      # Set these in the Render Dashboard (Values → Environment). Do not commit secrets.
+        value: "--max-old-space-size=768"
+      # Do NOT set HOSTNAME here — use startCommand prefix only.
+      # Do NOT set NODE_ENV=production here — skips Tailwind postcss at build.
       - key: NEXT_PUBLIC_SUPABASE_URL
         sync: false
       - key: NEXT_PUBLIC_SUPABASE_ANON_KEY

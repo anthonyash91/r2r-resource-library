@@ -276,15 +276,16 @@ This app is a **Node Web Service** (SSR + API routes), not a static site. Bluepr
 
 ### 1. Push deploy config
 
-Commit and push `render.yaml`, the `start` script that binds to `$PORT`, and `.node-version` to `main` (Render builds from GitHub).
+Commit and push `render.yaml`, `scripts/render-build.sh`, and `.node-version` to `main`.
 
 ### 2. Create the service
 
 **Option A — Blueprint**
 
 1. Open [Render Dashboard](https://dashboard.render.com) → **New** → **Blueprint**.
-2. Connect `anthonyash91/r2r-resource-library` (or your fork) and select branch `main`.
-3. Apply the Blueprint. It creates `r2r-resource-library` with a standalone Next.js build and `node scripts/start-production.js`.
+2. Connect `anthonyash91/r2r-resource-library` and select branch `main`.
+3. Apply the Blueprint (creates `r2r-resource-library`).
+4. Open the Blueprint → **Manual Sync** if the service still has an old start command.
 
 **Option B — Manual Web Service**
 
@@ -292,10 +293,11 @@ Commit and push `render.yaml`, the `start` script that binds to `$PORT`, and `.n
 |---------|--------|
 | Runtime | Node |
 | Branch | `main` |
-| Build command | `npm install --include=dev && npm run build && cp -r public .next/standalone/public && mkdir -p .next/standalone/.next && cp -r .next/static .next/standalone/.next/static` |
-| Start command | `node scripts/start-production.js` |
-| Start command | `npm start` |
-| Instance | Free (or Starter if the free tier spins down too often) |
+| Build command | `bash scripts/render-build.sh` |
+| Start command | `HOSTNAME=0.0.0.0 node .next/standalone/server.js` |
+| Instance | **Starter** (recommended; Free 512MB often fails) |
+
+> **Why `HOSTNAME=0.0.0.0` is required:** Next.js standalone binds to `process.env.HOSTNAME`. Render sets `HOSTNAME` to the container name, so the app listens on the wrong address and you get `No open HTTP ports detected on 0.0.0.0`. Prefix the start command (do **not** leave a Dashboard `HOSTNAME` env var set to the container name).
 
 ### 3. Set environment variables
 
@@ -311,9 +313,7 @@ In the service **Environment** tab (or Blueprint sync prompts), set:
 | `RESEND_API_KEY` / `EMAIL_FROM` | Email PDF | Optional |
 | `DEEPL_API_KEY` | Admin auto-translate | Optional |
 
-`NODE_VERSION` is set to `22.22.0` via Blueprint / `.node-version`. Render injects `PORT` (Blueprint defaults to `10000`). Start runs `scripts/start-production.js`, which launches the Next.js **standalone** server on `0.0.0.0`.
-
-If the deploy keeps failing with “No open HTTP ports”, the Free tier (512MB) may be OOMing Next.js — upgrade the instance to **Starter** or check logs for `Killed` / out-of-memory.
+`NODE_VERSION` is `22.22.0`. `PORT` defaults to `10000`. Start must be exactly `HOSTNAME=0.0.0.0 node .next/standalone/server.js`.
 
 ### 4. Supabase auth allowlist
 
